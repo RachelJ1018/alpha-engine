@@ -19,6 +19,7 @@ from modules.price_fetcher  import fetch_prices, get_market_regime
 from modules.analyzer       import run_analysis
 from modules.report_generator import generate_report
 from modules.signal_tracker import record_signals, update_outcomes
+from modules.notification   import send_daily_notification
 
 def header(msg):
     print(f"\n{'─'*50}")
@@ -123,6 +124,12 @@ def main():
         print("  No strong candidates today. Stay in cash.")
 
     print("═"*50)
+
+    # 9. Notify (only on full run, skipped if no channels configured)
+    if not args.news_only and not args.price_only:
+        conn = get_conn()
+        send_daily_notification(regime, conn)
+        conn.close()
 
 if __name__ == "__main__":
     main()

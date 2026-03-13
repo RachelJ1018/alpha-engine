@@ -1,0 +1,55 @@
+name: Daily Alpha Engine
+
+on:
+  schedule:
+    # 7:30am PT (UTC-7 summer / UTC-8 winter) = 14:30 UTC
+    - cron: '30 14 * * 1-5'   # Mon-Fri 7:30am PT
+
+  workflow_dispatch:           # manual trigger from Actions tab
+    inputs:
+      no_notify:
+        description: 'Skip notifications'
+        required: false
+        default: 'false'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Alpha Engine
+        env:
+          # LLM provider
+          GOOGLE_API_KEY:  ${{ secrets.GOOGLE_API_KEY }}
+          THESIS_PROVIDER: google
+
+          # Email notification (leave secrets empty to skip)
+          EMAIL_SENDER:    ${{ secrets.EMAIL_SENDER }}
+          EMAIL_PASSWORD:  ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECEIVERS: ${{ secrets.EMAIL_RECEIVERS }}
+
+          # WeChat via PushPlus (leave secret empty to skip)
+          PUSHPLUS_TOKEN:  ${{ secrets.PUSHPLUS_TOKEN }}
+
+        run: python run_daily.py --no-open
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ github.run_id }}
+          path: reports/
+          retention-days: 30
