@@ -141,6 +141,7 @@ def migrate_db():
         ("signal_outcomes",  "atr_at_signal",   "REAL"),
         ("signal_outcomes",  "paper_pnl_pct",   "REAL"),
         ("signal_outcomes",  "paper_exit",      "TEXT"),   # HIT_STOP/HIT_TARGET/T5_EXIT/PENDING
+        ("signal_outcomes",  "event_type",      "TEXT"),   # earnings/macro/ma/ai/product/regulation/layoff/general
     ]
     for table, col, coltype in migrations:
         try:

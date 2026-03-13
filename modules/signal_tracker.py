@@ -21,10 +21,31 @@ TRACK_ACTIONS  = {"ACTIONABLE", "WATCHLIST", "MONITOR"}
 ATR_MULTIPLIER = 1.2
 REWARD_RATIO   = 2.0   # 2R target
 
+_EVENT_PRIORITY = {
+    "earnings": 10, "ma": 9, "regulation": 8, "ai": 7,
+    "product": 6, "macro": 5, "layoff": 4, "general": 1,
+}
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Helpers
 # ─────────────────────────────────────────────────────────────────────────────
+
+
+def _best_event_type(conn, symbol: str) -> str:
+    """Return the highest-priority event_type from recent news for symbol."""
+    rows = conn.execute("""
+        SELECT event_type FROM news_articles
+        WHERE symbols LIKE ?
+          AND published_at >= datetime('now', '-48 hours')
+          AND event_type IS NOT NULL
+        ORDER BY importance_score DESC
+        LIMIT 10
+    """, (f'%"{symbol}"%',)).fetchall()
+    types = [r["event_type"] for r in rows if r["event_type"]]
+    if not types:
+        return "general"
+    return max(types, key=lambda e: _EVENT_PRIORITY.get(e.lower(), 0))
 
 def _pnl_pct(entry: float, price: float, direction: str) -> float:
     if not entry or not price:
@@ -93,17 +114,19 @@ def record_signals(regime: dict, run_date: str = None, verbose: bool = True) -> 
             stop_price   = round(entry + stop_dist,   2)
             target_price = round(entry - target_dist, 2)
 
+        event_type = _best_event_type(conn, c["symbol"])
+
         try:
             conn.execute("""
                 INSERT OR IGNORE INTO signal_outcomes
                 (symbol, signal_date, signal, final_score, regime, direction,
                  strategy_bucket, entry_price, atr_at_signal, stop_price, target_price,
-                 outcome, paper_exit)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?,'PENDING','PENDING')
+                 event_type, outcome, paper_exit)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,'PENDING','PENDING')
             """, (
                 c["symbol"], run_date, c["action"], c["final_score"],
                 regime_label, c["direction"], c["strategy_bucket"],
-                entry, atr, stop_price, target_price,
+                entry, atr, stop_price, target_price, event_type,
             ))
             saved += 1
         except Exception:

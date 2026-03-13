@@ -20,6 +20,28 @@ from modules.db import get_conn
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 
 # ---------------------------------------------------------------------
+# Data-driven weights  (written by weight_optimizer.py --apply)
+# ---------------------------------------------------------------------
+
+_WEIGHTS_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "weights.json")
+
+
+def _load_weights() -> dict:
+    if not os.path.exists(_WEIGHTS_FILE):
+        return {}
+    try:
+        with open(_WEIGHTS_FILE) as f:
+            data = json.load(f)
+        print(f"[analyzer] Loaded data-driven weights from {_WEIGHTS_FILE}")
+        return data
+    except Exception as e:
+        print(f"[analyzer] Warning: could not load weights.json: {e}")
+        return {}
+
+
+_weights_data: dict = _load_weights()
+
+# ---------------------------------------------------------------------
 # Static config
 # ---------------------------------------------------------------------
 
@@ -50,6 +72,16 @@ SOURCE_TIER = {
     "benzinga": 0.35,
     "unknown": 0.40,
 }
+
+# Apply event_importance overrides from weight_optimizer if present
+if _weights_data.get("event_importance"):
+    for _k, _v in _weights_data["event_importance"].items():
+        if _k in EVENT_IMPORTANCE:          # only update known keys
+            EVENT_IMPORTANCE[_k] = float(_v)
+
+# Layer multipliers: scale each component before summing (1.0 = no change)
+_LAYER_MULTS: dict = _weights_data.get("layer_multipliers", {})
+
 
 def normalize_event_type(article) -> str:
     """
@@ -601,13 +633,14 @@ def compute_final_score(
     freshness_score: float,
     risk_penalty_score: float,
 ) -> float:
+    m = _LAYER_MULTS
     raw = (
-        event_edge_score
-        + market_conf_score
-        + regime_fit_score
-        + relative_opp_score
-        + freshness_score
-        - risk_penalty_score
+        event_edge_score   * m.get("event_edge_score",   1.0)
+        + market_conf_score  * m.get("market_conf_score",  1.0)
+        + regime_fit_score   * m.get("regime_fit_score",   1.0)
+        + relative_opp_score * m.get("relative_opp_score", 1.0)
+        + freshness_score    * m.get("freshness_score",    1.0)
+        - risk_penalty_score * m.get("risk_penalty_score", 1.0)
     )
     return _clamp(raw, 0, 100)
 

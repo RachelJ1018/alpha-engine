@@ -1,5 +1,5 @@
 """
-evaluator.py — three evaluation reports for Alpha Engine
+evaluator.py — evaluation reports for Alpha Engine
 
 1. signal_stability_report(conn, days)  → signal volume, score distribution, event mix
 2. score_return_buckets(conn)           → does higher score → better return?
@@ -274,3 +274,139 @@ def paper_trade_summary(conn) -> dict:
         "action_breakdown": action_breakdown,
         "regime_breakdown": regime_breakdown,
     }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 4. Event Type Breakdown
+# ─────────────────────────────────────────────────────────────────────────────
+
+_EVENT_ORDER = ["earnings", "ma", "regulation", "ai", "product", "macro", "layoff", "general"]
+
+
+def event_type_breakdown(conn) -> list:
+    """
+    Answers: Which catalyst type actually produces returns?
+
+    Groups resolved signal_outcomes by event_type.
+    Each row: {event_type, count, avg_t5_pnl, avg_paper_pnl,
+               paper_win_rate, hit_stop_pct, hit_target_pct}
+    """
+    rows = conn.execute("""
+        SELECT event_type, paper_exit, paper_pnl_pct,
+               t5_pnl_pct, outcome
+        FROM signal_outcomes
+        WHERE event_type IS NOT NULL AND outcome != 'PENDING'
+    """).fetchall()
+
+    if not rows:
+        return []
+
+    rows = [dict(r) for r in rows]
+
+    # Collect all event types present, ordered by priority
+    seen = {r["event_type"] for r in rows if r["event_type"]}
+    ordered = [e for e in _EVENT_ORDER if e in seen]
+    ordered += [e for e in seen if e not in _EVENT_ORDER]  # catch unknowns
+
+    result = []
+    for evt in ordered:
+        subset = [r for r in rows if r["event_type"] == evt]
+        resolved = [r for r in subset
+                    if r["paper_exit"] in ("HIT_STOP", "HIT_TARGET", "T5_EXIT")]
+        wins = [r for r in resolved
+                if r["paper_exit"] == "HIT_TARGET"
+                or (r["paper_exit"] == "T5_EXIT" and (r["paper_pnl_pct"] or 0) > 0)]
+        stops  = sum(1 for r in resolved if r["paper_exit"] == "HIT_STOP")
+        targets = sum(1 for r in resolved if r["paper_exit"] == "HIT_TARGET")
+
+        n = len(resolved)
+        result.append({
+            "event_type":      evt,
+            "count":           len(subset),
+            "resolved":        n,
+            "avg_t5_pnl":      _safe_avg([r["t5_pnl_pct"] for r in subset]),
+            "avg_paper_pnl":   _safe_avg([r["paper_pnl_pct"] for r in resolved]),
+            "paper_win_rate":  round(len(wins) / n * 100, 1) if n else None,
+            "hit_stop_pct":    round(stops   / n * 100, 1) if n else None,
+            "hit_target_pct":  round(targets / n * 100, 1) if n else None,
+        })
+
+    return result
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 5. Weight Calibration Suggestions
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Current EVENT_IMPORTANCE from analyzer.py (mirrored here to avoid circular import)
+_CURRENT_WEIGHTS = {
+    "earnings":   1.00,
+    "macro":      0.85,
+    "ma":         0.85,
+    "ai":         0.80,
+    "regulation": 0.75,
+    "layoff":     0.60,
+    "product":    0.55,
+    "general":    0.20,
+}
+
+_MIN_SIGNALS_FOR_SUGGESTION = 3   # don't suggest adjustments with tiny samples
+
+
+def weight_calibration_suggestions(conn) -> list:
+    """
+    Compares actual signal performance per event_type vs current EVENT_IMPORTANCE weights.
+
+    Returns list of {event_type, current_weight, count, paper_win_rate,
+                     avg_paper_pnl, verdict, suggestion}
+    where verdict ∈ {RAISE, LOWER, OK, INSUFFICIENT_DATA}
+    and suggestion is a human-readable note.
+    """
+    breakdown = event_type_breakdown(conn)
+    if not breakdown:
+        return []
+
+    suggestions = []
+    for row in breakdown:
+        evt   = row["event_type"]
+        n     = row["resolved"]
+        wr    = row["paper_win_rate"]
+        pnl   = row["avg_paper_pnl"]
+        cur_w = _CURRENT_WEIGHTS.get(evt, 0.50)
+
+        if n < _MIN_SIGNALS_FOR_SUGGESTION or wr is None:
+            verdict    = "INSUFFICIENT_DATA"
+            suggestion = f"Only {n} resolved signal(s) — need ≥{_MIN_SIGNALS_FOR_SUGGESTION} to calibrate."
+        elif wr >= 60 and (pnl or 0) >= 1.5:
+            verdict    = "RAISE"
+            suggestion = (
+                f"{evt}: {wr:.0f}% win rate, avg P&L {pnl:+.1f}% — "
+                f"outperforming. Consider raising EVENT_IMPORTANCE['{evt}'] "
+                f"from {cur_w:.2f} toward {min(cur_w + 0.10, 1.0):.2f}."
+            )
+        elif wr <= 40 and (pnl or 0) <= -1.0:
+            verdict    = "LOWER"
+            suggestion = (
+                f"{evt}: {wr:.0f}% win rate, avg P&L {pnl:+.1f}% — "
+                f"underperforming. Consider lowering EVENT_IMPORTANCE['{evt}'] "
+                f"from {cur_w:.2f} toward {max(cur_w - 0.10, 0.05):.2f}."
+            )
+        else:
+            verdict    = "OK"
+            suggestion = (
+                f"{evt}: {wr:.0f}% win rate, avg P&L {pnl:+.1f}% — "
+                f"within acceptable range. Current weight {cur_w:.2f} looks reasonable."
+            )
+
+        suggestions.append({
+            "event_type":     evt,
+            "current_weight": cur_w,
+            "count":          row["count"],
+            "resolved":       n,
+            "paper_win_rate": wr,
+            "avg_paper_pnl":  pnl,
+            "verdict":        verdict,
+            "suggestion":     suggestion,
+        })
+
+    return suggestions
