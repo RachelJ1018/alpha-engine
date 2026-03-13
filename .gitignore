@@ -11,7 +11,9 @@ env/
 
 # Data
 data/*.db
+!data/alpha.db
 data/*.json
+!data/weights.json
 
 # IDE
 .idea/
