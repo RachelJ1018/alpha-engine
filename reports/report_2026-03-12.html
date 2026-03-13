@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report — 2026-03-12</title>
+<style>
+  * {box-sizing:border-box;margin:0;padding:0}
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0b0f1a;color:#e2e8f0;padding:24px;max-width:920px;margin:0 auto;line-height:1.5
+  }
+  h1 {font-size:22px;font-weight:700;color:#f1f5f9;margin-bottom:4px}
+  h2 {font-size:14px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin:28px 0 12px}
+  .meta {font-size:12px;color:#475569;margin-bottom:24px}
+  .regime-bar {
+    background:#111827;border:.5px solid #1e293b;border-left:3px solid #ef4444;
+    border-radius:6px;padding:12px 16px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center
+  }
+  .regime-label {font-size:13px;font-weight:600;color:#ef4444}
+  .spy-chg {font-size:20px;font-weight:700;color:#ef4444}
+
+  .card {
+    background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:18px 20px;margin-bottom:12px
+  }
+  .card-header {
+    display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px
+  }
+  .ticker {font-size:20px;font-weight:800;color:#f1f5f9;margin-right:10px;letter-spacing:.04em}
+  .action-badge {font-size:10px;font-weight:700;padding:3px 8px;border-radius:3px;letter-spacing:.06em;margin-right:6px}
+  .dir-badge {font-size:12px;font-weight:700}
+  .score-box {text-align:center}
+  .price-row {font-size:13px;color:#94a3b8;margin-bottom:8px}
+  .score-bar-wrap {height:3px;background:#1e293b;border-radius:2px;margin-bottom:14px}
+  .score-bar {height:3px;border-radius:2px;transition:width .5s}
+
+  .section-label {
+    font-size:9px;font-weight:700;color:#475569;letter-spacing:.1em;margin-bottom:5px;margin-top:10px
+  }
+  .score-detail {
+    font-size:12px;color:#94a3b8;line-height:1.7;margin-bottom:12px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+  .meta-chip {
+    display:inline-block;background:#1e293b;color:#cbd5e1;font-size:11px;padding:3px 8px;border-radius:999px;margin-bottom:12px
+  }
+  .thesis {
+    font-size:13px;color:#cbd5e1;line-height:1.6;margin-bottom:14px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+
+  .levels {display:flex;flex-direction:column;gap:6px}
+  .level-row {display:flex;gap:12px;font-size:12px;align-items:baseline}
+  .level-label {color:#475569;min-width:74px;font-size:10px;font-weight:600;letter-spacing:.06em}
+  .level-val {color:#94a3b8}
+  .level-val.stop {color:#f87171}
+  .level-val.target {color:#22c55e}
+  .level-val.risk {color:#fb923c;font-style:italic}
+
+  .news-item {border-bottom:.5px solid #1e293b;padding:10px 0}
+  .news-item:last-child {border-bottom:none}
+  .news-title {font-size:13px;color:#cbd5e1;line-height:1.4;margin-bottom:3px}
+  .news-meta {font-size:11px;color:#475569}
+  .news-meta code {background:#1e293b;color:#94a3b8;padding:1px 5px;border-radius:2px;font-size:10px}
+
+  .risk-box {background:#111827;border:.5px solid #1e293b;border-left:3px solid #ef4444;border-radius:6px;padding:14px 18px}
+  .risk-box li {font-size:13px;color:#94a3b8;margin-bottom:6px;padding-left:4px}
+</style>
+</head>
+<body>
+<h1>📊 Daily Research Report</h1>
+<div class="meta">Generated: 2026-03-12 — Alpha Engine Local</div>
+
+<div class="regime-bar">
+  <div>
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">MARKET REGIME</div>
+    <div class="regime-label">BEAR</div>
+    <div style="font-size:12px;color:#64748b;margin-top:2px">
+      Market under pressure. Be cautious with longs and size smaller.
+    </div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">SPY TODAY</div>
+    <div class="spy-chg">-1.52%</div>
+  </div>
+</div>
+
+<h2>🎯 Research Ideas</h2>
+
+<div class="card" style="border-left:3px solid #f59e0b">
+  <div class="card-header">
+    <div>
+      <span class="ticker">NVDA</span>
+      <span class="action-badge" style="background:#f59e0b22;color:#f59e0b">WATCHLIST</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">66</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $183.14
+    <span style="color:#ef4444">-1.6%</span>
+    &nbsp;·&nbsp; RSI: 43.6
+    &nbsp;·&nbsp; Vol: 0.88x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:65%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 19.1/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 10.5/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_short</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">Texas Instruments Incorporated (TXN) Partners With Nvidia for Safe Deployment of Robots. Headline tone is positive, but current market regime and price action keep this setup in watchlist status.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Prefer confirmation near $183.14; avoid chasing extended moves.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Risk below/above $190.53; MA20 reference $185.28.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial target near $170.82 over 3-5 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Thesis fails if market regime flips sharply or follow-through does not appear.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">PLTR</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">62</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $153.50
+    <span style="color:#22c55e">+1.2%</span>
+    &nbsp;·&nbsp; RSI: 70.7
+    &nbsp;·&nbsp; Vol: 1.11x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:61%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 20.1/25 ·
+    MarketConf: 17.0/20 ·
+    RegimeFit: 6.5/15 ·
+    RelOpp: 13.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -2.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">As Palantir Stock Falters, This Profit Strategy Counts On Further Weakness. Headline tone is positive, but current market regime and price action keep this setup in monitor status.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Prefer confirmation near $153.50; avoid chasing extended moves.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Risk below/above $145.48; MA20 reference $141.70.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial target near $166.86 over 3-5 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Thesis fails if market regime flips sharply or follow-through does not appear.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">GOOGL</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">57</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $303.55
+    <span style="color:#ef4444">-1.7%</span>
+    &nbsp;·&nbsp; RSI: 37.5
+    &nbsp;·&nbsp; Vol: 0.73x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:57%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 10.8/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 10.5/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_short</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">Disney Investors Just Got Really Bad News from Alphabet. Headline tone is positive, but current market regime and price action keep this setup in monitor status.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Prefer confirmation near $303.55; avoid chasing extended moves.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Risk below/above $312.60; MA20 reference $306.36.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial target near $288.47 over 3-5 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Thesis fails if market regime flips sharply or follow-through does not appear.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">TSLA</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">55</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $395.01
+    <span style="color:#ef4444">-3.1%</span>
+    &nbsp;·&nbsp; RSI: 41.8
+    &nbsp;·&nbsp; Vol: 0.91x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:55%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 12.4/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 10.5/15 ·
+    RelOpp: 13.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -1.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_short</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">Tesla Crashes 18% – Here’s Why Wall Street Is Getting Nervous. Headline tone is negative, but current market regime and price action keep this setup in monitor status.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Prefer confirmation near $395.01; avoid chasing extended moves.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Risk below/above $411.78; MA20 reference $406.12.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial target near $367.05 over 3-5 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Thesis fails if market regime flips sharply or follow-through does not appear.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">AMD</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">52</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $197.74
+    <span style="color:#ef4444">-3.5%</span>
+    &nbsp;·&nbsp; RSI: 48.6
+    &nbsp;·&nbsp; Vol: 0.78x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:51%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 10.8/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 10.5/15 ·
+    RelOpp: 11.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -1.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_short</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">Advanced Micro Devices (AMD) Enters a Multi-Year Partnership With Adeia. Headline tone is positive, but current market regime and price action keep this setup in monitor status.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Prefer confirmation near $197.74; avoid chasing extended moves.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Risk below/above $209.00; MA20 reference $201.86.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial target near $178.97 over 3-5 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Thesis fails if market regime flips sharply or follow-through does not appear.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">AMZN</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">49</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $209.53
+    <span style="color:#ef4444">-1.5%</span>
+    &nbsp;·&nbsp; RSI: 49.3
+    &nbsp;·&nbsp; Vol: 0.89x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:48%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 12.4/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 5.5/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -2.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_long</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">Cathie Wood Is Still Buying Amazon Stock. Should You?. Headline tone is positive, but current market regime and price action keep this setup in monitor status.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Prefer confirmation near $209.53; avoid chasing extended moves.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Risk below/above $202.55; MA20 reference $208.89.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial target near $221.16 over 3-5 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Thesis fails if market regime flips sharply or follow-through does not appear.</span></div>
+  </div>
+</div>
+
+
+
+<h2>🌍 Macro Watchlist</h2>
+<div class="card" style="border-left:3px solid #64748b">
+  <div style="font-size:12px;color:#94a3b8"><code>AAPL</code> MONITOR | 52 · <code>BAC</code> MONITOR | 52 · <code>META</code> MONITOR | 50 · <code>JPM</code> MONITOR | 50 · <code>MSFT</code> MONITOR | 50 · <code>UBER</code> MONITOR | 50 · <code>NFLX</code> MONITOR | 48 · <code>AVGO</code> IGNORE | 48 · <code>TSM</code> IGNORE | 45 · <code>SMCI</code> IGNORE | 44 · <code>CRM</code> IGNORE | 44 · <code>COIN</code> IGNORE | 43</div>
+</div>
+
+
+<h2>📰 Key News</h2>
+<div style="background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:14px 18px">
+
+<div class="news-item">
+  <div style="display:flex;gap:8px;align-items:flex-start">
+    <span style="color:#94a3b8;font-size:14px;flex-shrink:0">◆</span>
+    <div>
+      <div class="news-title">Fears of 1970s-style stagflation arise with oil spike to $100. How big a threat is it?</div>
+      <div class="news-meta">
+        CNBC Markets · macro · sent +0.00
+        · imp 0.85
+        · nov 1.00
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="news-item">
+  <div style="display:flex;gap:8px;align-items:flex-start">
+    <span style="color:#22c55e;font-size:14px;flex-shrink:0">▲</span>
+    <div>
+      <div class="news-title">Trump raises the stakes on China with Section 301 trade probe, weeks before Beijing summit</div>
+      <div class="news-meta">
+        CNBC Markets · regulation · sent +1.00
+        · imp 0.80
+        · nov 1.00
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="news-item">
+  <div style="display:flex;gap:8px;align-items:flex-start">
+    <span style="color:#94a3b8;font-size:14px;flex-shrink:0">◆</span>
+    <div>
+      <div class="news-title">Why Section 301 probes matter — and what they mean for Trump's tariffs</div>
+      <div class="news-meta">
+        CNBC Markets · regulation · sent +0.00
+        · imp 0.70
+        · nov 1.00
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="news-item">
+  <div style="display:flex;gap:8px;align-items:flex-start">
+    <span style="color:#94a3b8;font-size:14px;flex-shrink:0">◆</span>
+    <div>
+      <div class="news-title">Tariff Turmoil</div>
+      <div class="news-meta">
+        Yahoo Finance · general · sent +0.00
+        · imp 0.30
+        · nov 1.00
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="news-item">
+  <div style="display:flex;gap:8px;align-items:flex-start">
+    <span style="color:#94a3b8;font-size:14px;flex-shrink:0">◆</span>
+    <div>
+      <div class="news-title">Analyst Report: Oracle Corp</div>
+      <div class="news-meta">
+        Yahoo Finance · general · sent +0.00
+        · imp 0.30
+        · nov 1.00
+         · <code>ORCL</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="news-item">
+  <div style="display:flex;gap:8px;align-items:flex-start">
+    <span style="color:#94a3b8;font-size:14px;flex-shrink:0">◆</span>
+    <div>
+      <div class="news-title">Gig workers feel pain at the pump as gas prices hit 21-month highs</div>
+      <div class="news-meta">
+        CNBC Markets · general · sent +0.00
+        · imp 0.30
+        · nov 1.00
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<h2>🛡 Research Risk Rules</h2>
+<div class="risk-box">
+  <ul style="list-style:none;padding:0">
+    <li>📌 Define risk limits before entering any position.</li>
+    <li>⚠ Prefer smaller size in bear or choppy regimes.</li>
+    <li>🚫 Avoid chasing names already extended on the day.</li>
+    <li>🎯 Focus on the best few ideas rather than too many weak ones.</li>
+    <li>🌍 Reassess long theses if broad market conditions deteriorate sharply.</li>
+  </ul>
+</div>
+
+<div style="margin-top:24px;font-size:11px;color:#334155;border-top:.5px solid #1e293b;padding-top:16px">
+  ⚠ This is a personal research tool, not financial advice.
+</div>
+</body>
+</html>
