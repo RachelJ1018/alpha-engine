@@ -638,7 +638,7 @@ def _build_thesis_prompt(
     ma20  = _safe_float(price_row["ma_20"],        0.0) if price_row else None
     ma50  = _safe_float(price_row["ma_50"],        0.0) if price_row else None
 
-    headlines_str = "\n".join(f"- {h}" for h in news_headlines[:5]) or "- No major symbol-specific headlines"
+    headlines_str = "\n".join(f"[{i+1}] {h}" for i, h in enumerate(news_headlines[:5])) or "[0] No symbol-specific headlines"
     regime_str    = regime.get("regime", "neutral").upper()
     spy_chg       = regime.get("spy_change", 0.0)
 
@@ -646,7 +646,8 @@ def _build_thesis_prompt(
 Return ONLY valid JSON — no markdown, no extra text.
 Schema:
 {
-  "thesis": "2 sentences max. Must reference the direction explicitly (LONG or SHORT) and the key catalyst.",
+  "thesis": "2 sentences max. State direction (LONG or SHORT), key catalyst, and cite the supporting headline(s) using [N].",
+  "sources": "headline numbers cited, e.g. '1,2' — use '0' if no headlines",
   "entry_note": "specific but conservative entry guidance",
   "stop_loss_note": "specific invalidation or stop guidance",
   "target_note": "specific initial target / timeframe",
@@ -663,7 +664,7 @@ IMPORTANT: The suggested direction is {direction}. Justify WHY {direction}, not 
 Market regime: {regime_str} | SPY: {spy_chg:+.2f}%
 Price: ${price:.2f} ({chg:+.2f}%) | RSI: {rsi} | Vol: {vr}x | MA20: {ma20} | MA50: {ma50}
 
-Top headlines:
+Top headlines (cite by [N] in thesis):
 {headlines_str}
 
 Signals: event={news_scores.get('best_event_type')} | sentiment={news_scores.get('sentiment'):.2f} | novelty={news_scores.get('novelty'):.2f}

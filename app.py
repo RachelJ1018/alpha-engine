@@ -437,6 +437,46 @@ with tab_eval:
     eval_days = st.slider("Lookback window (days)", 7, 90, 30, key="eval_days")
     eval_conn = _eval_gc()
 
+    # ── 0. Pipeline Health ────────────────────────────────────────────────
+    st.subheader("🔧 0 — Pipeline Health")
+    _runs = eval_conn.execute("""
+        SELECT run_date, run_at, news_fetched, prices_fetched, candidates_found,
+               market_regime, spy_change_pct, steps_json
+        FROM daily_runs ORDER BY run_date DESC LIMIT 14
+    """).fetchall()
+
+    if not _runs:
+        st.info("No pipeline runs recorded yet.")
+    else:
+        _run_rows = []
+        for _r in _runs:
+            _steps = {}
+            try:
+                _steps = {s["step"]: s for s in json.loads(_r["steps_json"] or "[]")}
+            except Exception:
+                pass
+
+            def _fmt_step(name, _steps=_steps):
+                if name not in _steps:
+                    return "—"
+                s = _steps[name]
+                return f"{'✅' if s['ok'] else '❌'} {s['ms']}ms"
+
+            _total_ms = sum(s.get("ms", 0) for s in _steps.values())
+            _run_rows.append({
+                "Date":     _r["run_date"],
+                "Regime":   _r["market_regime"] or "—",
+                "SPY":      f"{_r['spy_change_pct']:+.2f}%" if _r["spy_change_pct"] is not None else "—",
+                "News":     _fmt_step("news"),
+                "Prices":   _fmt_step("prices"),
+                "Analysis": _fmt_step("analysis"),
+                "Report":   _fmt_step("report"),
+                "Total":    f"{_total_ms//1000}s" if _total_ms > 0 else f"{_r['candidates_found'] or 0} cands",
+            })
+        st.dataframe(pd.DataFrame(_run_rows), use_container_width=True, hide_index=True)
+
+    st.divider()
+
     # ── 1. Signal Stability ───────────────────────────────────────────────
     st.subheader("📊 1 — Signal Stability")
     stab = signal_stability_report(eval_conn, days=eval_days)

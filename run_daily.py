@@ -7,7 +7,7 @@ Usage:
     python run_daily.py --price-only # only fetch prices
     python run_daily.py --report     # only regenerate report
 """
-import sys, os, argparse
+import sys, os, argparse, time, json
 from datetime import datetime, date
 
 # Make sure modules are importable
@@ -20,6 +20,18 @@ from modules.analyzer       import run_analysis
 from modules.report_generator import generate_report
 from modules.signal_tracker import record_signals, update_outcomes
 from modules.notification   import send_daily_notification
+
+class _PipelineLog:
+    """Records per-step timing and success/failure for the daily run."""
+    def __init__(self):
+        self._steps = []
+
+    def record(self, name: str, ok: bool, elapsed_ms: int, detail: str = ""):
+        self._steps.append({"step": name, "ok": ok, "ms": elapsed_ms, "detail": detail})
+
+    def to_json(self) -> str:
+        return json.dumps(self._steps)
+
 
 def header(msg):
     print(f"\n{'─'*50}")
@@ -45,16 +57,29 @@ def main():
     news_count   = 0
     price_count  = 0
     candidates   = 0
+    plog         = _PipelineLog()
 
     # 2. News
     if not args.price_only and not args.report:
         header("Fetching news")
-        news_count = collect_news()
+        _t = time.time()
+        try:
+            news_count = collect_news()
+            plog.record("news", True, int((time.time()-_t)*1000), f"{news_count} new")
+        except Exception as e:
+            plog.record("news", False, int((time.time()-_t)*1000), str(e)[:80])
+            print(f"[news] ERROR: {e}")
 
     # 3. Prices
     if not args.news_only and not args.report:
         header("Fetching prices")
-        price_count = fetch_prices()
+        _t = time.time()
+        try:
+            price_count = fetch_prices()
+            plog.record("prices", True, int((time.time()-_t)*1000), f"{price_count} symbols")
+        except Exception as e:
+            plog.record("prices", False, int((time.time()-_t)*1000), str(e)[:80])
+            print(f"[prices] ERROR: {e}")
 
     # 4. Market regime
     conn = get_conn()
@@ -68,21 +93,34 @@ def main():
     # 6. Analyze
     if not args.news_only and not args.price_only:
         header("Running analysis")
-        candidates = run_analysis(regime)
-        record_signals(regime, today)
+        _t = time.time()
+        try:
+            candidates = run_analysis(regime)
+            record_signals(regime, today)
+            plog.record("analysis", True, int((time.time()-_t)*1000), f"{candidates} candidates")
+        except Exception as e:
+            plog.record("analysis", False, int((time.time()-_t)*1000), str(e)[:80])
+            print(f"[analysis] ERROR: {e}")
 
     # 7. Report
     header("Generating report")
-    report_md = generate_report(regime)
+    _t = time.time()
+    try:
+        report_md = generate_report(regime)
+        plog.record("report", True, int((time.time()-_t)*1000), "HTML + MD")
+    except Exception as e:
+        plog.record("report", False, int((time.time()-_t)*1000), str(e)[:80])
+        print(f"[report] ERROR: {e}")
+        report_md = ""
 
     # 7. Log the run
     conn = get_conn()
     conn.execute("""
         INSERT OR REPLACE INTO daily_runs
-        (run_date, run_at, news_fetched, prices_fetched, candidates_found, market_regime, spy_change_pct)
-        VALUES (?,?,?,?,?,?,?)
+        (run_date, run_at, news_fetched, prices_fetched, candidates_found, market_regime, spy_change_pct, steps_json)
+        VALUES (?,?,?,?,?,?,?,?)
     """, (today, datetime.now().isoformat(), news_count, price_count,
-          candidates, regime.get("regime"), regime.get("spy_change", 0)))
+          candidates, regime.get("regime"), regime.get("spy_change", 0), plog.to_json()))
     conn.commit()
     conn.close()
 

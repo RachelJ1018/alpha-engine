@@ -142,6 +142,7 @@ def migrate_db():
         ("signal_outcomes",  "paper_pnl_pct",   "REAL"),
         ("signal_outcomes",  "paper_exit",      "TEXT"),   # HIT_STOP/HIT_TARGET/T5_EXIT/PENDING
         ("signal_outcomes",  "event_type",      "TEXT"),   # earnings/macro/ma/ai/product/regulation/layoff/general
+        ("daily_runs",       "steps_json",      "TEXT"),   # JSON array of per-step {step,ok,ms,detail}
     ]
     for table, col, coltype in migrations:
         try:
