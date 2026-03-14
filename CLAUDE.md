@@ -177,6 +177,17 @@ python -m modules.weight_optimizer --apply
 - Add `from __future__ import annotations` for newer syntax
 - SQLite rows: use `dict(row)` not `row.get()` on sqlite3.Row objects
 
-## Watchlist (24 symbols)
-AAPL, AMD, AMZN, ARM, AVGO, GOOGL, JPM, META, MSFT, NVDA, PLTR, QQQ, SPY,
-TSLA, TSM, BAC, COIN, CRM, GS, MU, NFLX, SMCI, SOFI, UBER
+## Watchlist (31 active symbols)
+| Sector | Symbols |
+|---|---|
+| Technology (11) | AAPL, AMD, AMZN, ARM, AVGO, GOOGL, META, MSFT, NVDA, PLTR, TSM |
+| ETF (6) | GLD, IWM, QQQ, SMH, SPY, TLT, XLF |
+| Finance (5) | BAC, COIN, GS, JPM, SOFI |
+| Consumer (2) | COST, WMT |
+| Healthcare (2) | LLY, UNH |
+| Energy (1) | XOM |
+| Industrial (1) | LMT |
+| Automotive (1) | TSLA |
+| Media (1) | NFLX |
+
+Disabled (history preserved): CRM, MU, SMCI, UBER
