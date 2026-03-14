@@ -36,6 +36,9 @@ jobs:
           GOOGLE_API_KEY:  ${{ secrets.GOOGLE_API_KEY }}
           THESIS_PROVIDER: google
 
+          # News enrichment (optional — leave empty to skip)
+          TAVILY_API_KEY:  ${{ secrets.TAVILY_API_KEY }}
+
           # Email notification (leave secrets empty to skip)
           EMAIL_SENDER:    ${{ secrets.EMAIL_SENDER }}
           EMAIL_PASSWORD:  ${{ secrets.EMAIL_PASSWORD }}
