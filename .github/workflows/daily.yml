@@ -38,6 +38,7 @@ jobs:
 
           # News enrichment (optional — leave empty to skip)
           TAVILY_API_KEY:  ${{ secrets.TAVILY_API_KEY }}
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
 
           # Email notification (leave secrets empty to skip)
           EMAIL_SENDER:    ${{ secrets.EMAIL_SENDER }}
