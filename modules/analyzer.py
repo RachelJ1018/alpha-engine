@@ -73,6 +73,19 @@ EVENT_IMPORTANCE = {
     **_LOADED_WEIGHTS.get("event_importance", {}),
 }
 
+# Discrete strength points used directly in score_event_edge().
+# Hard catalysts (earnings/ma/macro) dominate; hype events (ai/product) earn less.
+EVENT_STRENGTH = {
+    "earnings":   8,
+    "ma":         7,
+    "macro":      7,
+    "regulation": 6,
+    "ai":         5,
+    "product":    4,
+    "layoff":     3,
+    "general":    1,
+}
+
 # Layer multipliers — applied in compute_final_score().
 # Default 1.0 = no change. weight_optimizer.py --apply updates these
 # based on which layers actually correlate with t+5 P&L in your DB.
@@ -401,16 +414,14 @@ def score_event_edge(news_scores: Dict[str, Any], articles: List[Any]) -> float:
         return 4.0
 
     source_q  = _safe_float(news_scores.get("source_quality"),    0.4)
-    event_imp = _safe_float(news_scores.get("event_importance"),   0.2)
     novelty   = _safe_float(news_scores.get("novelty"),            0.5)
     importance = _safe_float(news_scores.get("importance"),        0.3)
     mixedness = _safe_float(news_scores.get("mixedness"),          0.0)
     count     = int(news_scores.get("count", 0))
 
-    score  = source_q  * 7.0
-    score += event_imp * 8.0
-    score += novelty   * 4.0
-    score += importance * 4.0
+    best_evt   = news_scores.get("best_event_type", "general")
+    evt_points = EVENT_STRENGTH.get(best_evt, 1)
+    score      = source_q * 6.0 + evt_points + novelty * 3.0 + importance * 3.0
     if count >= 2: score += 1.5
     if count >= 4: score += 1.0
     score -= mixedness * 3.0
@@ -432,41 +443,40 @@ def score_regime_fit(direction: str, regime: Dict[str, Any], best_event_type: st
 
     return _clamp(base, 0, 15)
 
-def score_relative_opportunity(symbol: str, price_row: Optional[Any], conn) -> float:
-    """0-15: liquidity, extension, and 52-week positioning."""
+def score_relative_opportunity(symbol: str, price_row: Optional[Any], conn, direct_count: int = 0, direction: str = "LONG") -> float:
+    """0-15: catalyst density, RSI positioning, ATR%, and dollar volume."""
     if not price_row:
         return 7.0
 
-    score      = 7.0
-    market_cap = _safe_float(price_row["market_cap"],   0.0)
-    chg        = _safe_float(price_row["change_pct"],   0.0)
-    atr        = _safe_float(price_row["atr_14"],        0.0)
-    px         = _safe_float(price_row["close_price"],   0.0)
+    score = 3.0   # base (lower — earned, not given)
+    atr   = _safe_float(price_row["atr_14"],      0.0)
+    px    = _safe_float(price_row["close_price"],  0.0)
 
-    if market_cap >= 20_000_000_000: score += 3.0
-    elif market_cap >= 5_000_000_000: score += 1.5
+    # Catalyst density (replaces 52-week-high distance)
+    if direct_count >= 3:   score += 5
+    elif direct_count >= 1: score += 3
+    else:                   score += 1
 
-    if abs(chg) <= 2.5:  score += 2.0
-    elif abs(chg) > 5.0: score -= 2.5
+    # Not crowded (RSI) — reward un-extended setups in thesis direction
+    rsi = _safe_float(price_row["rsi_14"], 50.0)
+    if direction == "LONG":
+        if rsi <= 58:   score += 4
+        elif rsi <= 68: score += 2
+    else:
+        if rsi >= 42:   score += 4
+        elif rsi >= 32: score += 2
 
-    if atr > 0 and px > 0:
-        atr_pct = atr / px * 100
-        if atr_pct < 4.0:  score += 2.0
-        elif atr_pct > 7.0: score -= 2.0
+    # Risk/reward via ATR%
+    atr_pct = atr / px * 100 if atr > 0 and px > 0 else 4.0
+    if atr_pct < 2.0:   score += 4
+    elif atr_pct < 3.5: score += 3
+    elif atr_pct < 5.0: score += 2
+    else:               score += 1
 
-    # Distance from 52-week high — more room to move = more relative opportunity
-    high_52 = _safe_float(price_row["week_high_52"], 0.0)
-    if high_52 > 0 and px > 0:
-        pct_from_high = (high_52 - px) / high_52
-        if pct_from_high > 0.30:    score += 4.0   # deep discount
-        elif pct_from_high > 0.15:  score += 2.0
-        elif pct_from_high < 0.03:  score -= 2.0   # near 52-week high — extended
-
-    row = conn.execute(
-        "SELECT priority FROM watched_symbols WHERE symbol=?", (symbol,)
-    ).fetchone()
-    if row and int(row["priority"] or 2) == 1:
-        score += 1.0
+    # Execution quality (dollar volume: avg_volume * price)
+    dollar_vol = _safe_float(price_row["avg_volume"], 0) * _safe_float(price_row["close_price"], 0)
+    if dollar_vol > 50_000_000:  score += 2
+    elif dollar_vol > 10_000_000: score += 1
 
     return _clamp(score, 0, 15)
 
@@ -925,7 +935,7 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
         event_edge_score    = score_event_edge(news_scores, all_articles)
         market_conf_score   = score_market_confirmation(price_row, direction, news_scores)
         regime_fit_score    = score_regime_fit(direction, regime, news_scores["best_event_type"])
-        relative_opp_score  = score_relative_opportunity(sym, price_row, conn)
+        relative_opp_score  = score_relative_opportunity(sym, price_row, conn, direct_count=symbol_specific_count, direction=direction)
         freshness_score     = score_freshness(all_articles)
         risk_penalty_score  = score_risk_penalty(price_row, direction, news_scores, regime)
 

@@ -23,6 +23,22 @@ ACTION_COLOR = {
     "IGNORE":     "#ef4444",
 }
 
+SECTOR_MAP = {
+    "AAPL":"tech",  "AMD":"tech",   "AMZN":"tech",  "ARM":"tech",   "AVGO":"tech",
+    "GOOGL":"tech", "META":"tech",  "MSFT":"tech",  "NVDA":"tech",  "PLTR":"tech",
+    "TSM":"tech",   "SMH":"tech",
+    "BAC":"finance","COIN":"finance","GS":"finance", "JPM":"finance","SOFI":"finance",
+    "XLF":"finance",
+    "GLD":"commodity",
+    "IWM":"etf",    "QQQ":"etf",    "SPY":"etf",    "TLT":"bond",
+    "COST":"consumer","WMT":"consumer",
+    "LLY":"healthcare","UNH":"healthcare",
+    "XOM":"energy",
+    "LMT":"industrial",
+    "TSLA":"auto",
+    "NFLX":"media",
+}
+
 REGIME_DESC = {
     "bull":    "📈 BULL — Broad market rising. Long setups have better follow-through.",
     "bear":    "📉 BEAR — Market under pressure. Be cautious with longs and size smaller.",
@@ -157,6 +173,32 @@ def generate_report(regime: dict, verbose: bool = True) -> str:
 
     lines.append("")
 
+    top_trade = actionable[0] if actionable else (watchlist[0] if watchlist else None)
+    if top_trade:
+        t = top_trade
+        price = _safe_num(t["close_price"])
+        atr   = _safe_num(t["atr_14"])
+        stop_dist = max(atr * 1.2, price * 0.015)
+        if t["direction"] == "LONG":
+            stop   = price - stop_dist
+            target = price + stop_dist * 2
+        else:
+            stop   = price + stop_dist
+            target = price - stop_dist * 2
+        risk_pct   = stop_dist / price * 100 if price > 0 else 0
+        reward_pct = stop_dist * 2 / price * 100 if price > 0 else 0
+
+        lines.append("---")
+        lines.append("## 🏆 Top Trade\n")
+        lines.append(f"**{t['symbol']} — {t['direction']} | {t['action']} | Score: {_safe_num(t['final_score']):.0f}**\n")
+        lines.append(f"> {t['thesis'] or '—'}\n")
+        lines.append(
+            f"| Entry | Stop | Target | Risk | Reward |"
+            f"\n|-------|------|--------|------|--------|"
+            f"\n| ~${price:.2f} | ${stop:.2f} (-{risk_pct:.1f}%) | ${target:.2f} (+{reward_pct:.1f}%) | 1R | 2R |"
+        )
+        lines.append("")
+
     lines.append("---")
     lines.append("## 🎯 Research Ideas\n")
     index_symbols = {"SPY", "QQQ"}
@@ -169,7 +211,14 @@ def generate_report(regime: dict, verbose: bool = True) -> str:
     ]
     macro_watch_ideas = [c for c in candidates if (c["strategy_bucket"] or "") == "macro_watch"]
 
-    idea_list = stock_ideas
+    sector_counts: dict = {}
+    deduped = []
+    for c in stock_ideas:
+        sec = SECTOR_MAP.get(c["symbol"], "other")
+        if sector_counts.get(sec, 0) < 2:
+            deduped.append(c)
+            sector_counts[sec] = sector_counts.get(sec, 0) + 1
+    idea_list = deduped
     if not idea_list:
       idea_list = [c for c in candidates if c["action"] in ("ACTIONABLE", "WATCHLIST", "MONITOR") and (c["strategy_bucket"] or "") != "macro_watch"][:5]
     if not idea_list:
@@ -314,6 +363,60 @@ def build_html(today, regime, candidates, news_items, macro_watch_ideas=None):
         "neutral": "#f59e0b",
         "choppy": "#94a3b8",
     }.get(regime_label, "#94a3b8")
+
+    top_trade = next((c for c in candidates if c["action"] == "ACTIONABLE"), None)
+    if not top_trade:
+        top_trade = next((c for c in candidates if c["action"] == "WATCHLIST"), None)
+
+    top_trade_html = ""
+    if top_trade:
+        t = top_trade
+        tt_price = _safe_num(t["close_price"])
+        tt_atr   = _safe_num(t["atr_14"])
+        tt_stop_dist = max(tt_atr * 1.2, tt_price * 0.015)
+        if t["direction"] == "LONG":
+            tt_stop   = tt_price - tt_stop_dist
+            tt_target = tt_price + tt_stop_dist * 2
+        else:
+            tt_stop   = tt_price + tt_stop_dist
+            tt_target = tt_price - tt_stop_dist * 2
+        tt_risk_pct   = tt_stop_dist / tt_price * 100 if tt_price > 0 else 0
+        tt_reward_pct = tt_stop_dist * 2 / tt_price * 100 if tt_price > 0 else 0
+        tt_action_color = ACTION_COLOR.get(t["action"], "#94a3b8")
+        tt_bg    = "#1e3a5f" if t["direction"] == "LONG" else "#3a1e1e"
+        tt_dir_color = "#22c55e" if t["direction"] == "LONG" else "#ef4444"
+        tt_score = _safe_num(t["final_score"])
+        tt_score_color = _score_color(tt_score)
+        top_trade_html = f"""
+<div class="card" style="background:{tt_bg};border-left:3px solid {tt_action_color}">
+  <div class="card-header">
+    <div>
+      <span class="ticker">{t["symbol"]}</span>
+      <span class="action-badge" style="background:{tt_action_color}22;color:{tt_action_color}">{t["action"]}</span>
+      <span class="dir-badge" style="color:{tt_dir_color}">{"&#9650; LONG" if t["direction"]=="LONG" else "&#9660; SHORT"}</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:{tt_score_color}">{tt_score:.0f}</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+  <div class="thesis" style="margin-bottom:14px">{t["thesis"] or "—"}</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:12px">
+    <div style="text-align:center;background:#0b0f1a;border-radius:4px;padding:8px">
+      <div style="color:#475569;font-size:9px;letter-spacing:.1em">ENTRY</div>
+      <div style="color:#f1f5f9;font-weight:600">~${tt_price:.2f}</div>
+    </div>
+    <div style="text-align:center;background:#0b0f1a;border-radius:4px;padding:8px">
+      <div style="color:#475569;font-size:9px;letter-spacing:.1em">STOP</div>
+      <div style="color:#f87171;font-weight:600">${tt_stop:.2f} (-{tt_risk_pct:.1f}%)</div>
+    </div>
+    <div style="text-align:center;background:#0b0f1a;border-radius:4px;padding:8px">
+      <div style="color:#475569;font-size:9px;letter-spacing:.1em">TARGET</div>
+      <div style="color:#22c55e;font-weight:600">${tt_target:.2f} (+{tt_reward_pct:.1f}%)</div>
+    </div>
+  </div>
+</div>
+"""
 
     cards_html = ""
     for c in candidates[:8]:
@@ -496,6 +599,9 @@ def build_html(today, regime, candidates, news_items, macro_watch_ideas=None):
     <div class="spy-chg">{spy_chg:+.2f}%</div>
   </div>
 </div>
+
+<h2>🏆 Top Trade</h2>
+{top_trade_html if top_trade_html else '<div class="card" style="color:#64748b;font-size:13px">No actionable or watchlist trade today.</div>'}
 
 <h2>🎯 Research Ideas</h2>
 {cards_html if cards_html else '<div class="card">No research ideas generated today.</div>'}
