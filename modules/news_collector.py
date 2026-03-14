@@ -90,21 +90,114 @@ NAME_TO_TICKER = {
     "bytedance": "NVDA",  # ByteDance stories usually move NVDA (chip export)
 }
 
-def extract_tickers(text: str) -> list:
-    text_lower = (text or "").lower()
-    found = set()
+# Institutions that often appear as *analyst* ("Goldman upgrades X") rather
+# than as the stock being written about.  Used in extract_tickers() below.
+_ANALYST_NAMES = frozenset({
+    "bank of america", "goldman sachs", "goldman",
+    "jpmorgan", "jp morgan", "morgan stanley", "wells fargo",
+    "barclays", "ubs", "mizuho", "needham", "jefferies",
+    "piper sandler", "raymond james", "deutsche bank",
+    "bernstein", "wedbush", "keybanc", "stifel",
+})
 
-    # 1. Direct ticker symbols (uppercase words)
+# Verb phrases that, when found within ~80 chars AFTER an institution name,
+# signal it is acting as analyst-of-another-stock, not as the news subject.
+_ANALYST_VERBS = (
+    " is betting", " bets ", " upgrade", " downgrade",
+    " initiat", " reiter",
+    " maintains a buy", " maintains a sell", " maintains hold",
+    " price target on", " target on ", " target price",
+    " bullish on ", " bearish on ",
+    " rates ", " cut price", " raise price",
+)
+
+
+def _is_analyst_action(name: str, text_lower: str) -> bool:
+    """True if the institution name is followed by an analyst-action verb."""
+    idx = text_lower.find(name)
+    if idx == -1:
+        return False
+    snippet = text_lower[idx: idx + len(name) + 80]
+    return any(v in snippet for v in _ANALYST_VERBS)
+
+
+def extract_tickers(text: str, title: str = "") -> list:
+    """
+    Extract watchlist tickers from article text.
+
+    title (optional): when provided, enables two quality improvements:
+      1. Analyst-context filter: if a financial institution name
+         (e.g. "Bank of America") appears in analyst-action context
+         ("is betting that QCOM will underperform") AND other tickers
+         are present, the institution ticker is dropped — it's the
+         analyst, not the subject.
+      2. Title-priority cap: tickers found only in the body (not the
+         headline) are capped at 2 when title has matches, or dropped
+         entirely when body has >3 body-only tickers and title has none
+         (prevents TipRanks/PR wire sidebar lists from inflating scores).
+    """
+    text_lower  = (text  or "").lower()
+    title_lower = (title or "").lower()
+
+    # ── Step 1: collect all raw candidates from full text ─────────────────
+    raw: set = set()
+    for t in TICKER_RE.findall(text or ""):
+        if t in SP500_SAMPLE:
+            raw.add(t)
+    for name, ticker in NAME_TO_TICKER.items():
+        if name in text_lower:
+            raw.add(ticker)
+
+    # ── Step 2: analyst-context filter (needs title for best accuracy) ────
+    found: set = set()
+    for name, ticker in NAME_TO_TICKER.items():
+        if name not in text_lower:
+            continue
+        others = raw - {ticker}
+        # Drop institution ticker when: it's a known analyst name,
+        # other stocks are present (the actual subjects), and it appears
+        # right before an analyst-action verb.
+        if (name in _ANALYST_NAMES
+                and others
+                and _is_analyst_action(name, text_lower)):
+            continue
+        found.add(ticker)
+
+    # Re-add direct TICKER_RE matches — they bypass the name filter
     for t in TICKER_RE.findall(text or ""):
         if t in SP500_SAMPLE:
             found.add(t)
 
-    # 2. Company name lookup
-    for name, ticker in NAME_TO_TICKER.items():
-        if name in text_lower:
-            found.add(ticker)
+    if not title:
+        return list(found)
 
-    return list(found)
+    # ── Step 3: title-priority cap (blocks sidebar ticker lists) ──────────
+    title_found: set = set()
+    for t in TICKER_RE.findall(title):
+        if t in SP500_SAMPLE:
+            title_found.add(t)
+    for name, ticker in NAME_TO_TICKER.items():
+        if name not in title_lower:
+            continue
+        others = found - {ticker}
+        if (name in _ANALYST_NAMES
+                and others
+                and _is_analyst_action(name, title_lower)):
+            continue
+        title_found.add(ticker)
+
+    body_only = found - title_found
+    if title_found:
+        # A few extra body mentions are fine
+        body_cap = 2
+    elif len(body_only) <= 3:
+        # No title tickers, small body set — probably legitimate
+        body_cap = len(body_only)
+    else:
+        # No title tickers + large body set = sidebar/related-ticker dump
+        body_cap = 0
+
+    return list(title_found | set(sorted(body_only)[:body_cap]))
 
 # ── Event classifier (keyword-based, fast, no API cost) ──────────────────
 EVENT_KEYWORDS = {
@@ -263,7 +356,7 @@ def collect_tavily_news(symbols: list, api_key: str, days: int = 2,
 
                 source_name = _extract_domain(url)
                 full_text   = f"{title} {content}"
-                tickers     = extract_tickers(full_text)
+                tickers     = extract_tickers(full_text, title=title)
                 if sym not in tickers:
                     tickers.append(sym)
 
@@ -336,7 +429,7 @@ def collect_serpapi_news(symbols: list, api_key: str, verbose: bool = True) -> i
                     pass
 
                 full_text = f"{title} {snippet}"
-                tickers   = extract_tickers(full_text)
+                tickers   = extract_tickers(full_text, title=title)
                 if sym not in tickers:
                     tickers.append(sym)
 
@@ -392,7 +485,7 @@ def collect_news(verbose=True):
                         pass
 
                 full_text = f"{title} {summary}"
-                tickers   = extract_tickers(full_text)
+                tickers   = extract_tickers(full_text, title=title)
                 event     = classify_event(full_text)
                 sent      = quick_sentiment(full_text)
                 nov       = novelty_score(title, conn)
