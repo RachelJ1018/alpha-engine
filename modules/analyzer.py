@@ -723,7 +723,7 @@ def _call_google(system: str, user: str, direction: str = "LONG") -> Dict[str, A
     )
     payload = {
         "contents": [{"parts": [{"text": f"{system}\n\n{user}"}]}],
-        "generationConfig": {"temperature": 0.3, "maxOutputTokens": 1200},
+        "generationConfig": {"temperature": 0.3, "maxOutputTokens": 1800},
     }
     r = requests.post(url, json=payload, timeout=30)
     d = r.json()
