@@ -59,6 +59,7 @@ def _price_at_n(conn, symbol: str, signal_date: str, n: int):
     rows = conn.execute("""
         SELECT snapshot_date, close_price FROM price_snapshots
         WHERE symbol = ? AND snapshot_date > ?
+          AND close_price IS NOT NULL
         ORDER BY snapshot_date ASC
     """, (symbol, signal_date)).fetchall()
     if len(rows) >= n:
@@ -72,6 +73,7 @@ def _all_prices_after(conn, symbol: str, signal_date: str, max_days: int = 10):
     rows = conn.execute("""
         SELECT snapshot_date, close_price FROM price_snapshots
         WHERE symbol = ? AND snapshot_date > ?
+          AND close_price IS NOT NULL
         ORDER BY snapshot_date ASC LIMIT ?
     """, (symbol, signal_date, max_days)).fetchall()
     return [(float(r["close_price"]), r["snapshot_date"]) for r in rows]
