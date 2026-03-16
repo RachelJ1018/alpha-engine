@@ -86,6 +86,67 @@ def _format_tickers(symbols_json: str, limit: int = 3) -> str:
     return " ".join(f"`{s}`" for s in syms[:limit])
 
 
+_SOURCE_CRED = {
+    "reuters": 1.0, "associated press": 0.9, " ap": 0.9,
+    "bloomberg": 0.9, "wsj": 0.9, "financial times": 0.9, "ft.com": 0.9,
+    "marketwatch": 0.75, "cnbc": 0.75, "barron": 0.75, "investing.com": 0.65,
+    "yahoo finance": 0.55, "benzinga": 0.35, "seeking alpha": 0.35,
+}
+
+
+def _news_source_cred(source: str) -> float:
+    s = (source or "").lower()
+    for k, v in _SOURCE_CRED.items():
+        if k in s:
+            return v
+    return 0.5
+
+
+def _primary_symbol(symbols_json: str) -> str:
+    try:
+        syms = json.loads(symbols_json or "[]")
+        return syms[0] if syms else "MACRO"
+    except Exception:
+        return "MACRO"
+
+
+def select_key_news(articles, max_total: int = 8) -> list:
+    """Select diverse, high-quality news for the Key News section.
+
+    Three filters:
+      1. Novelty gate  — drop repeated coverage (novelty_score < 0.5)
+      2. Quality sort  — importance × novelty × source credibility
+      3. Per-symbol cap — max 2 articles per primary ticker
+    """
+    rows = [dict(a) for a in articles]
+
+    # 1. Drop low-novelty (same event, different outlet)
+    rows = [r for r in rows if _safe_num(r.get("novelty_score")) >= 0.5]
+
+    # 2. Sort by composite quality
+    rows.sort(
+        key=lambda r: (
+            _safe_num(r.get("importance_score"))
+            * _safe_num(r.get("novelty_score"))
+            * _news_source_cred(r.get("source") or "")
+        ),
+        reverse=True,
+    )
+
+    # 3. Per-symbol cap: max 2 per primary ticker
+    sym_count: dict = {}
+    filtered = []
+    for r in rows:
+        primary = _primary_symbol(r.get("symbols") or "[]")
+        if sym_count.get(primary, 0) < 2:
+            filtered.append(r)
+            sym_count[primary] = sym_count.get(primary, 0) + 1
+        if len(filtered) >= max_total:
+            break
+
+    return filtered
+
+
 def generate_report(regime: dict, verbose: bool = True) -> str:
     conn = get_conn()
     today = date.today().isoformat()
@@ -119,8 +180,9 @@ def generate_report(regime: dict, verbose: bool = True) -> str:
       AND LOWER(title) NOT LIKE '%think about%'
       AND LOWER(title) NOT LIKE '%thinks about%'
     ORDER BY importance_score DESC, published_at DESC
-    LIMIT 10
+    LIMIT 30
 """).fetchall()
+    selected_news = select_key_news(top_news)
 
     spy_chg = regime.get("spy_change", 0)
     regime_label = regime.get("regime", "unknown")
@@ -293,19 +355,20 @@ def generate_report(regime: dict, verbose: bool = True) -> str:
     lines.append("---")
     lines.append("## 📰 Key News (Last 24h)\n")
 
-    for news in top_news[:8]:
-        sent = _safe_num(news["sentiment_score"])
-        emoji = "🟢" if sent > 0.1 else "🔴" if sent < -0.1 else "⚪"
-        tickers_str = _format_tickers(news["symbols"], limit=3)
-        lines.append(f"{emoji} **[{news['source']}]** {news['title']}")
-        if tickers_str:
-            lines.append(f"   *Tickers: {tickers_str}*")
-        display_evt = normalize_event_type_for_display(news)
-        lines.append(
-              f"   *{display_evt} · sentiment: {sent:+.2f} · "
-              f"importance: {_safe_num(news['importance_score']):.2f} · "
-              f"novelty: {_safe_num(news['novelty_score']):.2f}*\n"
-          )
+    # Group by primary symbol so each ticker's narrative is visible at a glance
+    news_groups: dict = {}
+    for n in selected_news:
+        primary = _primary_symbol(n.get("symbols") or "[]")
+        news_groups.setdefault(primary, []).append(n)
+
+    for sym, items in news_groups.items():
+        evt_label = normalize_event_type_for_display(items[0])
+        lines.append(f"**{sym}**  ·  {evt_label}")
+        for n in items:
+            sent = _safe_num(n.get("sentiment_score"))
+            arrow = "▲" if sent > 0.1 else "▼" if sent < -0.1 else "◆"
+            lines.append(f"  {arrow} {n['title']}  [{n['source']}]")
+        lines.append("")
 
     lines.append("---")
     lines.append("## 🛡 Research Risk Rules\n")
@@ -330,7 +393,7 @@ def generate_report(regime: dict, verbose: bool = True) -> str:
     with open(latest_md, "w") as f:
         f.write(report_md)
 
-    html = build_html(today, regime, idea_list, top_news, macro_watch_ideas)
+    html = build_html(today, regime, idea_list, selected_news, macro_watch_ideas)
     with open(html_path, "w") as f:
         f.write(html)
 
@@ -484,36 +547,35 @@ def build_html(today, regime, candidates, news_items, macro_watch_ideas=None):
 </div>
 """
 
+    # Group news by primary symbol
+    news_by_sym: dict = {}
+    for n in (news_items or []):
+        primary = _primary_symbol(n.get("symbols") or "[]")
+        news_by_sym.setdefault(primary, []).append(n)
+
     news_html = ""
-    for n in (news_items or [])[:6]:
-        sent = _safe_num(n["sentiment_score"])
-        sc = "#22c55e" if sent > 0.1 else "#ef4444" if sent < -0.1 else "#94a3b8"
-        display_evt = normalize_event_type_for_display(n)
-        try:
-            syms = json.loads(n["symbols"] or "[]")
-        except Exception:
-            syms = []
-
-        chips = ""
-        if syms:
-            chips = " · " + " ".join(f'<code>{s}</code>' for s in syms[:3])
-
-        news_html += f"""
-<div class="news-item">
-  <div style="display:flex;gap:8px;align-items:flex-start">
-    <span style="color:{sc};font-size:14px;flex-shrink:0">{"▲" if sent > 0.1 else "▼" if sent < -0.1 else "◆"}</span>
-    <div>
-      <div class="news-title">{n["title"]}</div>
-      <div class="news-meta">
-        {n["source"]} · {display_evt} · sent {sent:+.2f}
-        · imp {_safe_num(n["importance_score"]):.2f}
-        · nov {_safe_num(n["novelty_score"]):.2f}
-        {chips}
-      </div>
-    </div>
-  </div>
-</div>
-"""
+    for sym, items in news_by_sym.items():
+        evt_label = normalize_event_type_for_display(items[0])
+        items_html = ""
+        for n in items:
+            sent  = _safe_num(n.get("sentiment_score"))
+            sc    = "#22c55e" if sent > 0.1 else "#ef4444" if sent < -0.1 else "#94a3b8"
+            arrow = "&#9650;" if sent > 0.1 else "&#9660;" if sent < -0.1 else "&#9670;"
+            title = n.get("title") or ""
+            src   = n.get("source") or ""
+            items_html += (
+                f'<div class="news-item">'
+                f'<span style="color:{sc};flex-shrink:0">{arrow}</span>'
+                f'<span class="news-title">{title}</span>'
+                f'<span class="news-src">[{src}]</span>'
+                f'</div>\n'
+            )
+        news_html += (
+            f'<div class="news-group">'
+            f'<div class="news-group-header"><code>{sym}</code>&nbsp;&nbsp;·&nbsp;&nbsp;{evt_label}</div>'
+            f'{items_html}'
+            f'</div>\n'
+        )
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -572,11 +634,15 @@ def build_html(today, regime, candidates, news_items, macro_watch_ideas=None):
   .level-val.target {{color:#22c55e}}
   .level-val.risk {{color:#fb923c;font-style:italic}}
 
-  .news-item {{border-bottom:.5px solid #1e293b;padding:10px 0}}
-  .news-item:last-child {{border-bottom:none}}
-  .news-title {{font-size:13px;color:#cbd5e1;line-height:1.4;margin-bottom:3px}}
-  .news-meta {{font-size:11px;color:#475569}}
-  .news-meta code {{background:#1e293b;color:#94a3b8;padding:1px 5px;border-radius:2px;font-size:10px}}
+  .news-group {{margin-bottom:14px}}
+  .news-group-header {{
+    font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:.06em;text-transform:uppercase;
+    padding-bottom:5px;border-bottom:.5px solid #1e293b;margin-bottom:4px
+  }}
+  .news-group-header code {{background:#1e293b;color:#94a3b8;padding:1px 5px;border-radius:2px;font-size:11px}}
+  .news-item {{display:flex;gap:8px;align-items:baseline;padding:3px 0;font-size:12px}}
+  .news-title {{color:#cbd5e1;flex:1;line-height:1.4}}
+  .news-src {{color:#475569;flex-shrink:0;white-space:nowrap;font-size:11px}}
 
   .risk-box {{background:#111827;border:.5px solid #1e293b;border-left:3px solid #ef4444;border-radius:6px;padding:14px 18px}}
   .risk-box li {{font-size:13px;color:#94a3b8;margin-bottom:6px;padding-left:4px}}

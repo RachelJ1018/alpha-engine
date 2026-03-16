@@ -12,7 +12,7 @@ Design goals:
 
 import json
 import os
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from typing import Any, Dict, List, Optional
 
 from modules.db import get_conn
@@ -85,6 +85,9 @@ EVENT_STRENGTH = {
     "layoff":     3,
     "general":    1,
 }
+
+# Symbols that tend to outperform during market selloffs (used in strategy bucketing)
+DEFENSIVE_SYMBOLS = frozenset({"WMT", "LLY", "XOM", "GLD", "TLT"})
 
 # Layer multipliers — applied in compute_final_score().
 # Default 1.0 = no change. weight_optimizer.py --apply updates these
@@ -429,8 +432,16 @@ def score_event_edge(news_scores: Dict[str, Any], articles: List[Any]) -> float:
     return _clamp(score, 0, 25)
 
 def score_regime_fit(direction: str, regime: Dict[str, Any], best_event_type: str) -> float:
-    """0-15: favor setups aligned with market regime, but don't hard-ban longs in bear."""
-    reg = (regime or {}).get("regime", "unknown")
+    """0-15: favor setups aligned with market regime AND today's actual SPY pressure.
+
+    Two-part score:
+      1. Regime base  — reflects multi-day trend label (bull/bear/neutral/choppy)
+      2. Day modifier — rewards setups that flow WITH today's SPY move,
+                        penalizes setups that fight it.
+    Prevents the "SPY -1%  →  system finds bounce longs" pattern.
+    """
+    reg     = (regime or {}).get("regime", "unknown")
+    spy_chg = _safe_float((regime or {}).get("spy_change", 0.0), 0.0)
 
     if reg == "bull":      base = 11.0 if direction == "LONG"  else 6.0
     elif reg == "bear":    base = 10.5 if direction == "SHORT" else 5.5
@@ -438,65 +449,134 @@ def score_regime_fit(direction: str, regime: Dict[str, Any], best_event_type: st
     elif reg == "neutral": base = 8.0
     else:                  base = 7.0
 
+    # Day-pressure modifier: aligns RegimeFit with today's actual market direction.
+    # Thresholds: -1.5% strong sell, -0.75% moderate, -0.3% slight; mirror for up days.
+    if direction == "LONG":
+        if   spy_chg <= -1.5:  base -= 3.0
+        elif spy_chg <= -0.75: base -= 1.5
+        elif spy_chg <= -0.3:  base -= 0.5
+        elif spy_chg >=  1.0:  base += 1.5
+        elif spy_chg >=  0.5:  base += 0.5
+    else:  # SHORT
+        if   spy_chg <= -1.5:  base += 3.0
+        elif spy_chg <= -0.75: base += 1.5
+        elif spy_chg <= -0.3:  base += 0.5
+        elif spy_chg >=  1.0:  base -= 1.5
+        elif spy_chg >=  0.5:  base -= 0.5
+
     if best_event_type in ("earnings", "ma", "regulation"):
         base += 1.0
 
     return _clamp(base, 0, 15)
 
-def score_relative_opportunity(symbol: str, price_row: Optional[Any], conn, direct_count: int = 0, direction: str = "LONG") -> float:
-    """0-15: catalyst density, RSI positioning, ATR%, and dollar volume."""
+def score_relative_opportunity(price_row: Optional[Any]) -> float:
+    """0-15: distance from 52-week high + ATR space, scaled by volume confidence.
+
+    distance_score (0-10): room to run before prior resistance
+    atr_score      (0-5):  minimum volatility needed for short-term edge
+    vol_multiplier (0.2-1.0): low-volume setups get a hard haircut
+    """
     if not price_row:
         return 7.0
 
-    score = 3.0   # base (lower — earned, not given)
-    atr   = _safe_float(price_row["atr_14"],      0.0)
-    px    = _safe_float(price_row["close_price"],  0.0)
+    px      = _safe_float(price_row["close_price"],  0.0)
+    high_52 = _safe_float(price_row["week_high_52"], 0.0)
+    vr      = _safe_float(price_row["volume_ratio"], 1.0)
+    atr     = _safe_float(price_row["atr_14"],       0.0)
+    atr_pct = atr / px if atr > 0 and px > 0 else 0.0
 
-    # Catalyst density (replaces 52-week-high distance)
-    if direct_count >= 3:   score += 5
-    elif direct_count >= 1: score += 3
-    else:                   score += 1
+    # Distance from 52-week high
+    dist = (high_52 - px) / high_52 if high_52 > 0 else 0.0
+    if dist > 0.30:        distance_score = 10
+    elif dist > 0.15:      distance_score = 7
+    elif dist > 0.05:      distance_score = 4
+    elif dist < 0.03:      distance_score = 0   # near high — chasing risk
+    else:                  distance_score = 2
 
-    # Not crowded (RSI) — reward un-extended setups in thesis direction
-    rsi = _safe_float(price_row["rsi_14"], 50.0)
-    if direction == "LONG":
-        if rsi <= 58:   score += 4
-        elif rsi <= 68: score += 2
-    else:
-        if rsi >= 42:   score += 4
-        elif rsi >= 32: score += 2
+    # ATR space: too tight = no short-term edge
+    if atr_pct > 0.025:    atr_score = 5
+    elif atr_pct > 0.015:  atr_score = 3
+    elif atr_pct > 0.008:  atr_score = 1
+    else:                  atr_score = 0
 
-    # Risk/reward via ATR%
-    atr_pct = atr / px * 100 if atr > 0 and px > 0 else 4.0
-    if atr_pct < 2.0:   score += 4
-    elif atr_pct < 3.5: score += 3
-    elif atr_pct < 5.0: score += 2
-    else:               score += 1
+    raw = distance_score + atr_score  # max 15
 
-    # Execution quality (dollar volume: avg_volume * price)
-    dollar_vol = _safe_float(price_row["avg_volume"], 0) * _safe_float(price_row["close_price"], 0)
-    if dollar_vol > 50_000_000:  score += 2
-    elif dollar_vol > 10_000_000: score += 1
+    # Volume as confidence multiplier — low volume = don't trust the setup
+    if vr >= 1.5:          vol_mult = 1.00
+    elif vr >= 1.0:        vol_mult = 0.85
+    elif vr >= 0.7:        vol_mult = 0.65
+    elif vr >= 0.5:        vol_mult = 0.40
+    else:                  vol_mult = 0.20
 
-    return _clamp(score, 0, 15)
+    return _clamp(round(raw * vol_mult, 1), 0, 15)
+
+def _compute_freshness(published_at: str, now: Optional[datetime] = None) -> float:
+    """Piecewise freshness score 0-10. Age in minutes for intra-day separation.
+
+    Breakpoints (approximate):
+      0 min  → 10.0   (just published)
+      60 min →  9.7
+      120 min → 9.4
+      180 min → 8.8
+      360 min → 7.0
+      720 min → 5.7
+      1440 min → 3.0  (24 h)
+      2880 min → 1.1  (48 h)
+      4200 min → 0.0  (70 h)
+    """
+    if now is None:
+        now = datetime.now(timezone.utc)
+    try:
+        pub = datetime.fromisoformat(str(published_at).replace("Z", "+00:00"))
+        if pub.tzinfo is None:
+            pub = pub.replace(tzinfo=timezone.utc)
+    except Exception:
+        return 5.0  # unknown age → neutral
+
+    age_min = (now - pub).total_seconds() / 60
+
+    if age_min < 0:
+        return 10.0
+    elif age_min < 120:    # 0–2 h: breaking, 10.0 → 9.4
+        return round(10.0 - age_min * 0.005, 1)
+    elif age_min < 360:    # 2–6 h: same morning, 9.4 → 7.0
+        return round(9.4 - (age_min - 120) * 0.010, 1)
+    elif age_min < 1440:   # 6–24 h: rest of day, 7.0 → 3.0
+        return round(7.0 - (age_min - 360) * 0.0037, 1)
+    elif age_min < 2880:   # 24–48 h: yesterday, 3.0 → 1.1
+        return round(3.0 - (age_min - 1440) * 0.0013, 1)
+    else:                  # 48 h+: older
+        return max(0.0, round(1.1 - (age_min - 2880) * 0.00083, 1))
+
 
 def score_freshness(articles: List[Any]) -> float:
-    """0-10: reward new information."""
+    """0-10: reward new information.
+
+    Anchored to the most-recent article; small density bonus when ≥2 of
+    the top-3 articles are fresh (< 6 h, freshness > 7.0).
+    This measures news value rather than RSS fetch latency.
+    """
     if not articles:
         return 3.0
 
-    best = 3.0
-    for a in articles:
-        hrs = _hours_since(a["published_at"])
-        nov = _safe_float(a["novelty_score"], 0.5)
-        if hrs is None:    age_score = 4.0
-        elif hrs <= 6:     age_score = 9.0
-        elif hrs <= 24:    age_score = 7.0
-        elif hrs <= 48:    age_score = 5.0
-        else:              age_score = 2.5
-        best = max(best, age_score * 0.6 + nov * 4.0)
+    now = datetime.now(timezone.utc)
 
-    return _clamp(best, 0, 10)
+    sorted_arts = sorted(
+        articles,
+        key=lambda a: (a["published_at"] or ""),
+        reverse=True,
+    )
+
+    top_freshness = _compute_freshness(sorted_arts[0]["published_at"] or "", now)
+
+    # Density bonus: multiple fresh articles signal an active news cycle
+    fresh_count = sum(
+        1 for a in sorted_arts[:3]
+        if _compute_freshness(a["published_at"] or "", now) > 7.0
+    )
+    density_bonus = 0.5 if fresh_count >= 2 else 0.0
+
+    return _clamp(top_freshness + density_bonus, 0, 10)
 
 def score_risk_penalty(price_row: Optional[Any], direction: str, news_scores: Dict[str, Any], regime: Dict[str, Any]) -> float:
     """0-15 (subtracted): penalize overextension, volatility, mixed signals, weak macro fit."""
@@ -534,12 +614,43 @@ def score_risk_penalty(price_row: Optional[Any], direction: str, news_scores: Di
 
     return _clamp(penalty, 0, 15)
 
-def map_strategy_bucket(best_event_type: str, direction: str) -> str:
-    evt = (best_event_type or "general").lower()
-    if evt == "earnings":             return "post_earnings_drift"
-    if direction == "SHORT":          return "event_short"
-    if evt in ("ai", "product", "ma"): return "sympathy_play"
-    return "event_long"
+def classify_strategy_bucket(
+    symbol: str,
+    event_type: str,
+    sentiment: float,
+    volume_ratio: float,
+    rsi: float,
+    price_vs_ma20: float,   # (price - ma20) / ma20
+    price_vs_ma50: float,
+    spy_change: float,
+    days_to_earnings: int,  # -1 = unknown
+    regime: str,
+) -> str:
+    # 1. Earnings: hard time anchor
+    if event_type == "earnings":
+        if 0 < days_to_earnings <= 5:
+            return "pre_earnings_drift"
+        return "post_earnings_drift"
+
+    # 2. Oversold mean-reversion: RSI extreme + far below MA20
+    if rsi < 35 and price_vs_ma20 < -0.05:
+        return "mean_reversion_long"
+
+    # 3. Relative strength: stock holds up while market sells off
+    if spy_change < -0.3 and price_vs_ma20 > 0:
+        if symbol in DEFENSIVE_SYMBOLS:
+            return "defensive_rotation"
+        return "relative_strength_long"
+
+    # 4. Event breakout: non-earnings catalyst + elevated volume
+    if event_type in ("product", "ma", "regulation") and volume_ratio > 1.3:
+        return "event_breakout"
+
+    # 5. Macro beta rebound: macro catalyst in weak/neutral market
+    if event_type == "macro" and regime in ("bear", "neutral"):
+        return "macro_beta_rebound"
+
+    return "general_setup"
 
 def compute_final_score(
     event_edge_score: float,
@@ -936,7 +1047,7 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
         event_edge_score    = score_event_edge(news_scores, all_articles)
         market_conf_score   = score_market_confirmation(price_row, direction, news_scores)
         regime_fit_score    = score_regime_fit(direction, regime, news_scores["best_event_type"])
-        relative_opp_score  = score_relative_opportunity(sym, price_row, conn, direct_count=symbol_specific_count, direction=direction)
+        relative_opp_score  = score_relative_opportunity(price_row)
         freshness_score     = score_freshness(all_articles)
         risk_penalty_score  = score_risk_penalty(price_row, direction, news_scores, regime)
 
@@ -974,7 +1085,21 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
         elif low_value:
             strategy_bucket = "opinion_watch"
         else:
-            strategy_bucket = map_strategy_bucket(news_scores["best_event_type"], direction)
+            _px   = _safe_float(price_row["close_price"] if price_row else None, 0.0)
+            _ma20 = _safe_float(price_row["ma_20"]       if price_row else None, _px)
+            _ma50 = _safe_float(price_row["ma_50"]       if price_row else None, _px)
+            strategy_bucket = classify_strategy_bucket(
+                symbol=sym,
+                event_type=news_scores["best_event_type"],
+                sentiment=_safe_float(news_scores.get("sentiment"), 0.0),
+                volume_ratio=_safe_float(price_row["volume_ratio"] if price_row else None, 1.0),
+                rsi=_safe_float(price_row["rsi_14"] if price_row else None, 50.0),
+                price_vs_ma20=(_px - _ma20) / _ma20 if _ma20 > 0 else 0.0,
+                price_vs_ma50=(_px - _ma50) / _ma50 if _ma50 > 0 else 0.0,
+                spy_change=_safe_float(regime.get("spy_change"), 0.0),
+                days_to_earnings=-1,
+                regime=regime.get("regime", "neutral"),
+            )
 
         if low_value:
             event_edge_score = min(event_edge_score, 9.0)
