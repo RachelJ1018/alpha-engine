@@ -23,6 +23,12 @@ try:
 except ImportError:
     _MULTI_AGENT_AVAILABLE = False
 
+try:
+    from modules.options_flow import score_options_flow
+    _OPTIONS_FLOW_AVAILABLE = True
+except ImportError:
+    _OPTIONS_FLOW_AVAILABLE = False
+
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 GOOGLE_API_KEY    = os.environ.get("GOOGLE_API_KEY", "")
 GROQ_API_KEY      = os.environ.get("GROQ_API_KEY", "")
@@ -1051,6 +1057,16 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
         technical_score   = score_technical(price_row)
 
         event_edge_score    = score_event_edge(news_scores, all_articles)
+
+        # Options flow boost: aligns institutional options activity with thesis direction
+        if _OPTIONS_FLOW_AVAILABLE:
+            _current_price = dict(price_row).get("close_price") if price_row else None
+            _options_boost = score_options_flow(sym, direction, _current_price)
+            if _options_boost != 0.0:
+                event_edge_score = _clamp(event_edge_score + _options_boost, 0, 25)
+                if verbose:
+                    print(f"[analyze] {sym:6s} options_boost={_options_boost:+.1f}")
+
         market_conf_score   = score_market_confirmation(price_row, direction, news_scores)
         regime_fit_score    = score_regime_fit(direction, regime, news_scores["best_event_type"])
         relative_opp_score  = score_relative_opportunity(price_row)
