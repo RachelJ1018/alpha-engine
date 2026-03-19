@@ -17,6 +17,12 @@ from typing import Any, Dict, List, Optional
 
 from modules.db import get_conn
 
+try:
+    from modules.multi_agent_thesis import generate_multi_agent_thesis
+    _MULTI_AGENT_AVAILABLE = True
+except ImportError:
+    _MULTI_AGENT_AVAILABLE = False
+
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 GOOGLE_API_KEY    = os.environ.get("GOOGLE_API_KEY", "")
 GROQ_API_KEY      = os.environ.get("GROQ_API_KEY", "")
@@ -1133,17 +1139,54 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
             "final_score":        final_score,
         }
 
-        thesis_data = call_claude_for_thesis(
-            symbol=sym,
-            company_name=company_name,
-            news_headlines=headlines,
-            price_row=price_row,
-            news_scores=news_scores,
-            component_scores=component_scores,
-            regime=regime,
-            direction=direction,
-            action=action,
-        )
+        if THESIS_PROVIDER.lower() == "multi_agent" and _MULTI_AGENT_AVAILABLE:
+            _score_map = {
+                "EventEdge":    event_edge_score,
+                "MarketConf":   market_conf_score,
+                "RegimeFit":    regime_fit_score,
+                "RelOpp":       relative_opp_score,
+                "Freshness":    freshness_score,
+                "RiskPenalty":  risk_penalty_score,
+            }
+            _price_dict = dict(price_row) if price_row else {}
+            _tr = generate_multi_agent_thesis(
+                symbol=sym,
+                direction=direction,
+                score_components=_score_map,
+                price_data=_price_dict,
+                news_items=articles[:5],
+                market_regime=regime.get("regime", "neutral"),
+                action_label=action,
+                provider="auto",
+            )
+            # Map ThesisResult → dict shape the DB insert expects
+            # entry/stop/target notes are extracted from the risk report (first 3 sentences)
+            _risk_sentences = [s.strip() for s in _tr.risk_report.replace("\n", " ").split(".") if s.strip()]
+            thesis_data = {
+                "thesis":          _tr.summary,
+                "entry_note":      _risk_sentences[0] + "." if len(_risk_sentences) > 0 else "",
+                "stop_loss_note":  _risk_sentences[1] + "." if len(_risk_sentences) > 1 else "",
+                "target_note":     _risk_sentences[2] + "." if len(_risk_sentences) > 2 else "",
+                "risk_note":       _tr.risk_report[:200],
+                "direction":       direction,
+                "conviction":      _tr.conviction,
+            }
+            print(
+                f"[analyze] {sym:6s} multi-agent thesis "
+                f"conviction={_tr.conviction} fallback={_tr.fallback}"
+            )
+        else:
+            thesis_data = call_claude_for_thesis(
+                symbol=sym,
+                company_name=company_name,
+                news_headlines=headlines,
+                price_row=price_row,
+                news_scores=news_scores,
+                component_scores=component_scores,
+                regime=regime,
+                direction=direction,
+                action=action,
+            )
 
         direction_final = thesis_data.get("direction", direction)
         news_ids = json.dumps([a["id"] for a in articles[:5]])
