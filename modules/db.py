@@ -124,6 +124,8 @@ def migrate_db():
     conn = get_conn()
     migrations = [
         ("price_snapshots",  "atr_14",             "REAL"),
+        ("price_snapshots",  "day_high",           "REAL"),
+        ("price_snapshots",  "day_low",            "REAL"),
         ("trade_candidates", "event_edge_score",   "REAL"),
         ("trade_candidates", "market_conf_score",  "REAL"),
         ("trade_candidates", "regime_fit_score",   "REAL"),
@@ -143,6 +145,10 @@ def migrate_db():
         ("signal_outcomes",  "paper_exit",      "TEXT"),   # HIT_STOP/HIT_TARGET/T5_EXIT/PENDING
         ("signal_outcomes",  "event_type",      "TEXT"),   # earnings/macro/ma/ai/product/regulation/layoff/general
         ("daily_runs",       "steps_json",      "TEXT"),   # JSON array of per-step {step,ok,ms,detail}
+        ("trade_candidates", "thesis_conviction", "TEXT"),
+        ("trade_candidates", "thesis_technical",  "TEXT"),
+        ("trade_candidates", "thesis_news",       "TEXT"),
+        ("trade_candidates", "thesis_risk",       "TEXT"),
     ]
     for table, col, coltype in migrations:
         try:

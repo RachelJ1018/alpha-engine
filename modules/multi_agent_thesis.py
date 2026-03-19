@@ -302,20 +302,39 @@ def _call_groq(prompt: str, model: str = "llama-3.3-70b-versatile", max_tokens: 
 
 
 def _call_gemini(prompt: str, max_tokens: int = 600) -> str:
-    """Call Google Gemini API."""
+    """Call Google Gemini API using streaming to ensure complete JSON output."""
     import requests
     api_key = os.environ.get("GOOGLE_API_KEY")
     url = (
         f"https://generativelanguage.googleapis.com/v1beta/models/"
-        f"gemini-3-flash-preview:generateContent?key={api_key}"
+        f"gemini-3-flash-preview:streamGenerateContent?alt=sse&key={api_key}"
     )
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"maxOutputTokens": max_tokens, "temperature": 0.3},
     }
-    resp = requests.post(url, json=payload, timeout=30)
+    resp = requests.post(url, json=payload, stream=True, timeout=60)
     resp.raise_for_status()
-    return resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+
+    chunks = []
+    for line in resp.iter_lines():
+        if not line:
+            continue
+        if isinstance(line, bytes):
+            line = line.decode("utf-8")
+        if not line.startswith("data:"):
+            continue
+        data_str = line[len("data:"):].strip()
+        if data_str == "[DONE]":
+            break
+        try:
+            data = json.loads(data_str)
+            text = data["candidates"][0]["content"]["parts"][0]["text"]
+            chunks.append(text)
+        except (json.JSONDecodeError, KeyError, IndexError):
+            pass
+
+    return "".join(chunks)
 
 
 def _llm_call(prompt: str, provider: str, is_synthesis: bool = False) -> tuple[str, str]:
@@ -336,7 +355,7 @@ def _llm_call(prompt: str, provider: str, is_synthesis: bool = False) -> tuple[s
     else:
         order = ["groq", "gemini", "anthropic"]
 
-    max_tokens = 1000 if is_synthesis else 600
+    max_tokens = 1500 if is_synthesis else 800
 
     for p in order:
         try:
@@ -540,7 +559,7 @@ def generate_multi_agent_thesis(
     # ── Agent 4: Synthesis ──
     synth_prompt = _synthesis_prompt(
         symbol, direction, action_label, score_components,
-        tech_text, news_text, risk_text
+        tech_text[:500], news_text[:500], risk_text[:500]
     )
     synth_raw, synth_provider = _llm_call(synth_prompt, provider, is_synthesis=True)
 

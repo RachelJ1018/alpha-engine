@@ -57,7 +57,9 @@ def fetch_prices(symbols=None, verbose=True):
             volume  = hist["Volume"]
             last    = float(close.iloc[-1])
             prev    = float(close.iloc[-2])
-            chg_pct = round((last - prev) / prev * 100, 2)
+            chg_pct  = round((last - prev) / prev * 100, 2)
+            day_high = round(float(hist["High"].iloc[-1]), 4)
+            day_low  = round(float(hist["Low"].iloc[-1]),  4)
 
             avg_vol    = float(volume.iloc[:-1].mean())
             today_vol  = float(volume.iloc[-1])
@@ -77,10 +79,12 @@ def fetch_prices(symbols=None, verbose=True):
             conn.execute("""
                 INSERT OR REPLACE INTO price_snapshots
                 (symbol, snapshot_date, close_price, change_pct, volume, avg_volume,
-                 volume_ratio, rsi_14, ma_20, ma_50, above_ma20, week_high_52, week_low_52, market_cap, atr_14)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                 volume_ratio, rsi_14, ma_20, ma_50, above_ma20, week_high_52, week_low_52,
+                 market_cap, atr_14, day_high, day_low)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """, (sym, today, last, chg_pct, today_vol, avg_vol,
-                  vol_ratio, rsi, ma20, ma50, above_ma20, week_high, week_low, mktcap, atr))
+                  vol_ratio, rsi, ma20, ma50, above_ma20, week_high, week_low, mktcap, atr,
+                  day_high, day_low))
             saved += 1
 
         except Exception as e:

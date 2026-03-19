@@ -69,14 +69,22 @@ def _price_at_n(conn, symbol: str, signal_date: str, n: int):
 
 
 def _all_prices_after(conn, symbol: str, signal_date: str, max_days: int = 10):
-    """Return list of (close_price, date) for up to max_days trading days after signal_date."""
+    """Return list of (close_price, date, day_high, day_low) for up to max_days trading days."""
     rows = conn.execute("""
-        SELECT snapshot_date, close_price FROM price_snapshots
+        SELECT snapshot_date, close_price, day_high, day_low FROM price_snapshots
         WHERE symbol = ? AND snapshot_date > ?
           AND close_price IS NOT NULL
         ORDER BY snapshot_date ASC LIMIT ?
     """, (symbol, signal_date, max_days)).fetchall()
-    return [(float(r["close_price"]), r["snapshot_date"]) for r in rows]
+    return [
+        (
+            float(r["close_price"]),
+            r["snapshot_date"],
+            float(r["day_high"]) if r["day_high"] else None,
+            float(r["day_low"])  if r["day_low"]  else None,
+        )
+        for r in rows
+    ]
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -169,40 +177,31 @@ def update_outcomes(verbose: bool = True) -> int:
         if not daily:
             continue
 
-        # Fill t+1 / t+3 / t+5 point-in-time prices
+        # Fill t+1 / t+3 / t+5 point-in-time prices (EOD close for P&L)
         t1_price = t1_date = t3_price = t3_date = t5_price = t5_date = None
-        if len(daily) >= 1:  t1_price, t1_date = daily[0]
-        if len(daily) >= 3:  t3_price, t3_date = daily[2]
-        if len(daily) >= 5:  t5_price, t5_date = daily[4]
+        if len(daily) >= 1:  t1_price, t1_date = daily[0][0], daily[0][1]
+        if len(daily) >= 3:  t3_price, t3_date = daily[2][0], daily[2][1]
+        if len(daily) >= 5:  t5_price, t5_date = daily[4][0], daily[4][1]
 
         t1_pnl = _pnl_pct(entry, t1_price, direction)
         t3_pnl = _pnl_pct(entry, t3_price, direction)
         t5_pnl = _pnl_pct(entry, t5_price, direction)
 
-        # Paper trade exit: scan each day for stop or target breach (daily close approx)
+        # Paper trade exit: use intraday high/low to detect stop/target breach
+        # Falls back to close if day_high/day_low not yet populated (older rows)
         paper_exit   = "PENDING"
         paper_pnl    = None
         exit_price   = None
 
-        for close, _ in daily[:5]:   # only look within t+5
+        for close, _, day_high, day_low in daily[:5]:
+            hi = day_high if day_high is not None else close
+            lo = day_low  if day_low  is not None else close
             if direction == "LONG":
-                if stop and close <= stop:
-                    paper_exit  = "HIT_STOP"
-                    exit_price  = stop
-                    break
-                if target and close >= target:
-                    paper_exit  = "HIT_TARGET"
-                    exit_price  = target
-                    break
+                if stop   and lo <= stop:    paper_exit = "HIT_STOP";   exit_price = stop;   break
+                if target and hi >= target:  paper_exit = "HIT_TARGET"; exit_price = target; break
             else:
-                if stop and close >= stop:
-                    paper_exit  = "HIT_STOP"
-                    exit_price  = stop
-                    break
-                if target and close <= target:
-                    paper_exit  = "HIT_TARGET"
-                    exit_price  = target
-                    break
+                if stop   and hi >= stop:    paper_exit = "HIT_STOP";   exit_price = stop;   break
+                if target and lo <= target:  paper_exit = "HIT_TARGET"; exit_price = target; break
 
         # If t+5 data available and still no stop/target hit → T5_EXIT
         if paper_exit == "PENDING" and t5_price is not None:

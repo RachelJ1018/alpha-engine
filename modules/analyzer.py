@@ -1163,13 +1163,17 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
             # entry/stop/target notes are extracted from the risk report (first 3 sentences)
             _risk_sentences = [s.strip() for s in _tr.risk_report.replace("\n", " ").split(".") if s.strip()]
             thesis_data = {
-                "thesis":          _tr.summary,
-                "entry_note":      _risk_sentences[0] + "." if len(_risk_sentences) > 0 else "",
-                "stop_loss_note":  _risk_sentences[1] + "." if len(_risk_sentences) > 1 else "",
-                "target_note":     _risk_sentences[2] + "." if len(_risk_sentences) > 2 else "",
-                "risk_note":       _tr.risk_report[:200],
-                "direction":       direction,
-                "conviction":      _tr.conviction,
+                "thesis":            _tr.summary,
+                "entry_note":        _risk_sentences[0] + "." if len(_risk_sentences) > 0 else "",
+                "stop_loss_note":    _risk_sentences[1] + "." if len(_risk_sentences) > 1 else "",
+                "target_note":       _risk_sentences[2] + "." if len(_risk_sentences) > 2 else "",
+                "risk_note":         _tr.risk_report[:200],
+                "direction":         direction,
+                "conviction":        _tr.conviction,
+                "thesis_conviction": _tr.conviction,
+                "thesis_technical":  _tr.technical_report[:1000],
+                "thesis_news":       _tr.news_report[:1000],
+                "thesis_risk":       _tr.risk_report[:1000],
             }
             print(
                 f"[analyze] {sym:6s} multi-agent thesis "
@@ -1200,9 +1204,10 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
                 action, news_ids,
                 event_edge_score, market_conf_score, regime_fit_score,
                 relative_opp_score, freshness_score, risk_penalty_score,
-                strategy_bucket
+                strategy_bucket,
+                thesis_conviction, thesis_technical, thesis_news, thesis_risk
             )
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             (
                 today, sym, company_name, direction_final, final_score,
@@ -1218,6 +1223,10 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
                 event_edge_score, market_conf_score, regime_fit_score,
                 relative_opp_score, freshness_score, risk_penalty_score,
                 strategy_bucket,
+                thesis_data.get("thesis_conviction"),
+                thesis_data.get("thesis_technical"),
+                thesis_data.get("thesis_news"),
+                thesis_data.get("thesis_risk"),
             ),
         )
         candidates_created += 1
