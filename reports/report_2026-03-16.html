@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report — 2026-03-16</title>
+<style>
+  * {box-sizing:border-box;margin:0;padding:0}
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0b0f1a;color:#e2e8f0;padding:24px;max-width:920px;margin:0 auto;line-height:1.5
+  }
+  h1 {font-size:22px;font-weight:700;color:#f1f5f9;margin-bottom:4px}
+  h2 {font-size:14px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin:28px 0 12px}
+  .meta {font-size:12px;color:#475569;margin-bottom:24px}
+  .regime-bar {
+    background:#111827;border:.5px solid #1e293b;border-left:3px solid #22c55e;
+    border-radius:6px;padding:12px 16px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center
+  }
+  .regime-label {font-size:13px;font-weight:600;color:#22c55e}
+  .spy-chg {font-size:20px;font-weight:700;color:#22c55e}
+
+  .card {
+    background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:18px 20px;margin-bottom:12px
+  }
+  .card-header {
+    display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px
+  }
+  .ticker {font-size:20px;font-weight:800;color:#f1f5f9;margin-right:10px;letter-spacing:.04em}
+  .action-badge {font-size:10px;font-weight:700;padding:3px 8px;border-radius:3px;letter-spacing:.06em;margin-right:6px}
+  .dir-badge {font-size:12px;font-weight:700}
+  .score-box {text-align:center}
+  .price-row {font-size:13px;color:#94a3b8;margin-bottom:8px}
+  .score-bar-wrap {height:3px;background:#1e293b;border-radius:2px;margin-bottom:14px}
+  .score-bar {height:3px;border-radius:2px;transition:width .5s}
+
+  .section-label {
+    font-size:9px;font-weight:700;color:#475569;letter-spacing:.1em;margin-bottom:5px;margin-top:10px
+  }
+  .score-detail {
+    font-size:12px;color:#94a3b8;line-height:1.7;margin-bottom:12px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+  .meta-chip {
+    display:inline-block;background:#1e293b;color:#cbd5e1;font-size:11px;padding:3px 8px;border-radius:999px;margin-bottom:12px
+  }
+  .thesis {
+    font-size:13px;color:#cbd5e1;line-height:1.6;margin-bottom:14px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+
+  .levels {display:flex;flex-direction:column;gap:6px}
+  .level-row {display:flex;gap:12px;font-size:12px;align-items:baseline}
+  .level-label {color:#475569;min-width:74px;font-size:10px;font-weight:600;letter-spacing:.06em}
+  .level-val {color:#94a3b8}
+  .level-val.stop {color:#f87171}
+  .level-val.target {color:#22c55e}
+  .level-val.risk {color:#fb923c;font-style:italic}
+
+  .news-group {margin-bottom:14px}
+  .news-group-header {
+    font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:.06em;text-transform:uppercase;
+    padding-bottom:5px;border-bottom:.5px solid #1e293b;margin-bottom:4px
+  }
+  .news-group-header code {background:#1e293b;color:#94a3b8;padding:1px 5px;border-radius:2px;font-size:11px}
+  .news-item {display:flex;gap:8px;align-items:baseline;padding:3px 0;font-size:12px}
+  .news-title {color:#cbd5e1;flex:1;line-height:1.4}
+  .news-src {color:#475569;flex-shrink:0;white-space:nowrap;font-size:11px}
+
+  .risk-box {background:#111827;border:.5px solid #1e293b;border-left:3px solid #ef4444;border-radius:6px;padding:14px 18px}
+  .risk-box li {font-size:13px;color:#94a3b8;margin-bottom:6px;padding-left:4px}
+</style>
+</head>
+<body>
+<h1>📊 Daily Research Report</h1>
+<div class="meta">Generated: 2026-03-16 — Alpha Engine Local</div>
+
+<div class="regime-bar">
+  <div>
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">MARKET REGIME</div>
+    <div class="regime-label">BULL</div>
+    <div style="font-size:12px;color:#64748b;margin-top:2px">
+      Broad market rising. Long setups have better follow-through.
+    </div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">SPY TODAY</div>
+    <div class="spy-chg">+1.02%</div>
+  </div>
+</div>
+
+<h2>🏆 Top Trade</h2>
+
+<div class="card" style="background:#1e3a5f;border-left:3px solid #f59e0b">
+  <div class="card-header">
+    <div>
+      <span class="ticker">AVGO</span>
+      <span class="action-badge" style="background:#f59e0b22;color:#f59e0b">WATCHLIST</span>
+      <span class="dir-badge" style="color:#22c55e">&#9650; LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">64</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+  <div class="thesis" style="margin-bottom:14px">LONG. Broadcom is positioned for a recovery driven by multiple analyst upgrades [1, 5] and positive sentiment following its recent earnings beat [2]. The high sentiment score and bull market backdrop support a move to reclaim key moving averages ahead of Q1 results [4].</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:12px">
+    <div style="text-align:center;background:#0b0f1a;border-radius:4px;padding:8px">
+      <div style="color:#475569;font-size:9px;letter-spacing:.1em">ENTRY</div>
+      <div style="color:#f1f5f9;font-weight:600">~$324.92</div>
+    </div>
+    <div style="text-align:center;background:#0b0f1a;border-radius:4px;padding:8px">
+      <div style="color:#475569;font-size:9px;letter-spacing:.1em">STOP</div>
+      <div style="color:#f87171;font-weight:600">$308.07 (-5.2%)</div>
+    </div>
+    <div style="text-align:center;background:#0b0f1a;border-radius:4px;padding:8px">
+      <div style="color:#475569;font-size:9px;letter-spacing:.1em">TARGET</div>
+      <div style="color:#22c55e;font-weight:600">$358.62 (+10.4%)</div>
+    </div>
+  </div>
+</div>
+
+
+<h2>🎯 Research Ideas</h2>
+
+<div class="card" style="border-left:3px solid #f59e0b">
+  <div class="card-header">
+    <div>
+      <span class="ticker">AVGO</span>
+      <span class="action-badge" style="background:#f59e0b22;color:#f59e0b">WATCHLIST</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">64</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $324.92
+    <span style="color:#22c55e">+0.9%</span>
+    &nbsp;·&nbsp; RSI: 49.7
+    &nbsp;·&nbsp; Vol: 1.07x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:63%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 19.3/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 13.5/15 ·
+    RelOpp: 10.2/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. Broadcom is positioned for a recovery driven by multiple analyst upgrades [1, 5] and positive sentiment following its recent earnings beat [2]. The high sentiment score and bull market backdrop support a move to reclaim key moving averages ahead of Q1 results [4].</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter at $325.00 or on a breakout above $326.50 to confirm intraday momentum.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $318.50, representing a break of recent consolidation lows.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$329.40 (MA20) followed by $332.60 (MA50) over the next 1-3 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Price remains below major moving averages, posing a risk of technical resistance despite fundamental upgrades.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">BAC</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">59</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $47.06
+    <span style="color:#22c55e">+0.7%</span>
+    &nbsp;·&nbsp; RSI: 34.4
+    &nbsp;·&nbsp; Vol: 0.72x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:58%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 18.6/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 13.5/15 ·
+    RelOpp: 7.8/15 ·
+    Freshness: 7.8/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. BAC is technically oversold with an RSI of 34.4, positioned for a mean-reversion bounce as it maintains high market influence through strategic price target resets for tech leaders [1, 3, 4]. The broader bull market regime provides a supportive backdrop for this recovery play.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Limit order at $47.00-$47.10 to capitalize on the current oversold technical setup.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $46.15 to protect against further breakdown below recent support levels.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$48.50, aiming for a short-term recovery toward the 20-day moving average within 2-3 sessions.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Persistent selling pressure leading to a technical breakdown despite the low RSI reading.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">GOOGL</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">58</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $305.56
+    <span style="color:#22c55e">+1.1%</span>
+    &nbsp;·&nbsp; RSI: 44.3
+    &nbsp;·&nbsp; Vol: 0.7x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:57%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 18.6/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 13.5/15 ·
+    RelOpp: 4.5/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. GOOGL is in a technical buy zone following an earnings beat and a major AI partnership with Apple [3, 4, 5]. Strong AI momentum and positive market sentiment outweigh concerns regarding cloud capital expenditures [2, 5].</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">$305.60 - $306.10 (confirming break above MA20)</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">$298.50 (below psychological $300 support)</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$318.50 (MA50 level) / 5-10 trading days</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Increased AI infrastructure spending compressing near-term free cash flow</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">IWM</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">52</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $248.92
+    <span style="color:#22c55e">+0.9%</span>
+    &nbsp;·&nbsp; RSI: 31.8
+    &nbsp;·&nbsp; Vol: 1.15x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:52%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 14.5/25 ·
+    MarketConf: 12.0/20 ·
+    RegimeFit: 12.5/15 ·
+    RelOpp: 6.0/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -2.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">general_setup</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. Fed rate cuts and seasonal tailwinds provide a strong macro catalyst for small-cap outperformance [4][5]. With RSI at 31.8, IWM is technically oversold and positioned for a mean-reversion bounce toward its moving averages.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter at market or on a slight pullback to $248.00 to capitalize on the oversold RSI signal.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $244.50, representing a break below recent support levels.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial target of $258.36 (MA20) over a 5-10 day swing horizon.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Persistent relative weakness in small-caps compared to large-caps despite favorable macro headlines.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">TSLA</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">52</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $395.56
+    <span style="color:#22c55e">+1.1%</span>
+    &nbsp;·&nbsp; RSI: 42.3
+    &nbsp;·&nbsp; Vol: 0.91x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:52%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 11.1/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 12.5/15 ·
+    RelOpp: 7.8/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">general_setup</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. TSLA is positioned for a mean-reversion bounce from oversold RSI levels (42.3) amid a broader market rally [3]. Anticipated analyst commentary [4] may serve as a catalyst to reclaim the 20-day moving average.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Entry on a break above $398.00 with volume confirmation or a retest of $395.00 support.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Exit if price closes below $389.00, invalidating the intraday support.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$403.73 (MA20) within 1-2 trading sessions.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Negative sentiment from analyst calls or further relative weakness compared to peers.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">GS</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">52</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $794.77
+    <span style="color:#22c55e">+1.6%</span>
+    &nbsp;·&nbsp; RSI: 27.7
+    &nbsp;·&nbsp; Vol: 0.68x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:52%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 15.3/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 12.5/15 ·
+    RelOpp: 4.8/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -1.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">mean_reversion_long</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. GS is positioned for a mean-reversion bounce from extreme oversold levels (RSI 27.7) as its own bullish research on tech leaders [2,3,4] signals institutional confidence. The broader bull market regime provides a supportive backdrop for a recovery toward the 20-day moving average.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter at current market price ($794.77) or on a minor pullback to $792.00.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Close position if price breaks below $775.00, indicating a failure of the oversold support.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$825.00 initial target for a short-term relief rally over the next 1-3 sessions.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Persistent downward momentum despite oversold signals, as price remains well below the MA20.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">COST</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">49</div>
+      <div style="font-size:10px;color:#64748b">/ 100</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $1001.74
+    <span style="color:#ef4444">-0.7%</span>
+    &nbsp;·&nbsp; RSI: 51.2
+    &nbsp;·&nbsp; Vol: 0.51x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:48%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 16.1/25 ·
+    MarketConf: 9.0/20 ·
+    RegimeFit: 13.5/15 ·
+    RelOpp: 2.8/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -2.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. Strong membership fee growth of 13% [3] and a bullish 20% rally projection from Bernstein [4] outweigh temporary same-store sales misses. The stock's position above key moving averages in a bull regime suggests the current dip is a tactical entry point [1].</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Entry near $1,000 psychological support or the 20-day MA ($998.21).</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Daily close below $985 to account for volatility around the 20-day MA.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$1,025 - $1,035 range over the next 5-10 trading sessions.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Macro volatility from the upcoming Fed interest rate decision and Powell press conference [5].</span></div>
+  </div>
+</div>
+
+
+
+<h2>🌍 Macro Watchlist</h2>
+<div class="card" style="border-left:3px solid #64748b">
+  <div style="font-size:12px;color:#94a3b8"><code>SOFI</code> IGNORE | 44</div>
+</div>
+
+
+<h2>📰 Key News</h2>
+<div style="background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:14px 18px">
+<div class="news-group"><div class="news-group-header"><code>MU</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#94a3b8;flex-shrink:0">&#9670;</span><span class="news-title">Nvidia, Nebius, Meta, Micron, Strategy, Structure Therapeutics, Dollar Tree, and More Movers</span><span class="news-src">[Barron's]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>AMZN</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Amazon's stock soars 10% on third-quarter beat, increased spending guidance</span><span class="news-src">[CNBC]</span></div>
+<div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">BofA reiterates Buy on Amazon stock, $275 target on Prime pricing</span><span class="news-src">[Investing.com]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>MSFT</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">Hogan, Microsoft EVP, strategy, sells $5m in MSFT stock</span><span class="news-src">[Investing.com]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>META</code>&nbsp;&nbsp;·&nbsp;&nbsp;ma</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">AMD stock surges 14% on Meta AI partnership deal</span><span class="news-src">[Investing.com]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>COST</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">Costco stock sinks after US same-store sales miss forecasts as consumers weigh value push, tariff pressures</span><span class="news-src">[Yahoo Finance]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>AVGO</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Goldman Sachs Reiterates Buy Rating on Broadcom (AVGO) Stock</span><span class="news-src">[Yahoo Finance]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>NVDA</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Here's Why Nvidia Stock Fell -- Even After Reporting 73% Revenue Growth</span><span class="news-src">[The Motley Fool]</span></div>
+</div>
+
+</div>
+
+<h2>🛡 Research Risk Rules</h2>
+<div class="risk-box">
+  <ul style="list-style:none;padding:0">
+    <li>📌 Define risk limits before entering any position.</li>
+    <li>⚠ Prefer smaller size in bear or choppy regimes.</li>
+    <li>🚫 Avoid chasing names already extended on the day.</li>
+    <li>🎯 Focus on the best few ideas rather than too many weak ones.</li>
+    <li>🌍 Reassess long theses if broad market conditions deteriorate sharply.</li>
+  </ul>
+</div>
+
+<div style="margin-top:24px;font-size:11px;color:#334155;border-top:.5px solid #1e293b;padding-top:16px">
+  ⚠ This is a personal research tool, not financial advice.
+</div>
+</body>
+</html>
