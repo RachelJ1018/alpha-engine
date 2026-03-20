@@ -31,9 +31,8 @@ def _safe(v, default=0.0):
     except Exception:
         return default
 
-def _llm_chat(context: str, messages: list) -> str:
+def _llm_chat(context: str, messages: list, provider: str = "auto") -> str:
     """Follow-up chat using existing multi_agent_thesis._llm_call routing."""
-    provider = os.environ.get("THESIS_PROVIDER", "auto")
     prompt = f"You are an equity research assistant.\n\nContext:\n{context}\n\n" + \
              "\n".join(f"{'User' if m['role']=='user' else 'Assistant'}: {m['content']}" for m in messages[:-1]) + \
              f"\n\nUser: {messages[-1]['content']}\n\nAssistant:"
@@ -103,12 +102,24 @@ with st.sidebar:
     )
 
     st.divider()
-    st.subheader("🔑 Claude API Key")
+    st.subheader("🔑 API Keys")
+    google_api_key_input = st.text_input(
+        "Google API Key (Gemini · recommended)",
+        type="password",
+        value=os.environ.get("GOOGLE_API_KEY", ""),
+        help="Free tier: 1500 req/day. Used for thesis generation and chat.",
+    )
     api_key_input = st.text_input(
         "Anthropic API Key (optional)",
         type="password",
         value=os.environ.get("ANTHROPIC_API_KEY", ""),
-        help="Enables AI-generated trade theses. Without it uses rule-based fallback.",
+        help="Fallback if Google key not set.",
+    )
+    thesis_provider = st.selectbox(
+        "Thesis Provider",
+        ["google", "auto", "groq", "anthropic", "none"],
+        index=0,
+        help="google = Gemini Flash (recommended). auto = tries Anthropic→Groq→Gemini.",
     )
 
 # ── Derived values ───────────────────────────────────────────────────────
@@ -139,8 +150,11 @@ with tab_today:
         run_btn = st.button("🚀 Run Analysis", type="primary", use_container_width=True)
 
     if run_btn:
+        if google_api_key_input:
+            os.environ["GOOGLE_API_KEY"] = google_api_key_input
         if api_key_input:
             os.environ["ANTHROPIC_API_KEY"] = api_key_input
+        os.environ["THESIS_PROVIDER"] = thesis_provider
 
         progress = st.progress(0, text="Starting pipeline…")
         log_box  = st.empty()
@@ -391,7 +405,7 @@ with tab_today:
                 if _q:
                     st.session_state[_chat_key].append({"role": "user", "content": _q})
                     with st.spinner("Thinking…"):
-                        _ans = _llm_chat(_ctx, st.session_state[_chat_key])
+                        _ans = _llm_chat(_ctx, st.session_state[_chat_key], thesis_provider)
                     st.session_state[_chat_key].append({"role": "assistant", "content": _ans})
                     st.rerun()
             shown += 1
