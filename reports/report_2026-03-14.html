@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report — 2026-03-14</title>
+<style>
+  * {box-sizing:border-box;margin:0;padding:0}
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0b0f1a;color:#e2e8f0;padding:24px;max-width:920px;margin:0 auto;line-height:1.5
+  }
+  h1 {font-size:22px;font-weight:700;color:#f1f5f9;margin-bottom:4px}
+  h2 {font-size:14px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin:28px 0 12px}
+  .meta {font-size:12px;color:#475569;margin-bottom:24px}
+  .regime-bar {
+    background:#111827;border:.5px solid #1e293b;border-left:3px solid #f59e0b;
+    border-radius:6px;padding:12px 16px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center
+  }
+  .regime-label {font-size:13px;font-weight:600;color:#f59e0b}
+  .spy-chg {font-size:20px;font-weight:700;color:#ef4444}
+
+  .card {
+    background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:18px 20px;margin-bottom:12px
+  }
+  .card-header {
+    display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px
+  }
+  .ticker {font-size:20px;font-weight:800;color:#f1f5f9;margin-right:10px;letter-spacing:.04em}
+  .action-badge {font-size:10px;font-weight:700;padding:3px 8px;border-radius:3px;letter-spacing:.06em;margin-right:6px}
+  .dir-badge {font-size:12px;font-weight:700}
+  .score-box {text-align:center}
+  .price-row {font-size:13px;color:#94a3b8;margin-bottom:8px}
+  .score-bar-wrap {height:3px;background:#1e293b;border-radius:2px;margin-bottom:14px}
+  .score-bar {height:3px;border-radius:2px;transition:width .5s}
+
+  .section-label {
+    font-size:9px;font-weight:700;color:#475569;letter-spacing:.1em;margin-bottom:5px;margin-top:10px
+  }
+  .score-detail {
+    font-size:12px;color:#94a3b8;line-height:1.7;margin-bottom:12px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+  .meta-chip {
+    display:inline-block;background:#1e293b;color:#cbd5e1;font-size:11px;padding:3px 8px;border-radius:999px;margin-bottom:12px
+  }
+  .thesis {
+    font-size:13px;color:#cbd5e1;line-height:1.6;margin-bottom:14px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+
+  .levels {display:flex;flex-direction:column;gap:6px}
+  .level-row {display:flex;gap:12px;font-size:12px;align-items:baseline}
+  .level-label {color:#475569;min-width:74px;font-size:10px;font-weight:600;letter-spacing:.06em}
+  .level-val {color:#94a3b8}
+  .level-val.stop {color:#f87171}
+  .level-val.target {color:#22c55e}
+  .level-val.risk {color:#fb923c;font-style:italic}
+
+  .news-group {margin-bottom:14px}
+  .news-group-header {
+    font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:.06em;text-transform:uppercase;
+    padding-bottom:5px;border-bottom:.5px solid #1e293b;margin-bottom:4px
+  }
+  .news-group-header code {background:#1e293b;color:#94a3b8;padding:1px 5px;border-radius:2px;font-size:11px}
+  .news-item {display:flex;gap:8px;align-items:baseline;padding:3px 0;font-size:12px}
+  .news-title {color:#cbd5e1;flex:1;line-height:1.4}
+  .news-src {color:#475569;flex-shrink:0;white-space:nowrap;font-size:11px}
+
+  .risk-box {background:#111827;border:.5px solid #1e293b;border-left:3px solid #ef4444;border-radius:6px;padding:14px 18px}
+  .risk-box li {font-size:13px;color:#94a3b8;margin-bottom:6px;padding-left:4px}
+</style>
+</head>
+<body>
+<h1>📊 Daily Research Report</h1>
+<div class="meta">Generated: 2026-03-14 — Alpha Engine Local</div>
+
+<div class="regime-bar">
+  <div>
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">MARKET REGIME</div>
+    <div class="regime-label">NEUTRAL</div>
+    <div style="font-size:12px;color:#64748b;margin-top:2px">
+      Mixed conditions. Prefer selective, cleaner setups only.
+    </div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">SPY TODAY</div>
+    <div class="spy-chg">-0.57%</div>
+  </div>
+</div>
+
+<h2>🏆 Top Trade</h2>
+<div class="card" style="color:#64748b;font-size:13px">No actionable or watchlist trade today.</div>
+
+<h2>🎯 Research Ideas</h2>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">JPM</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">60</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $283.44
+    <span style="color:#22c55e">+0.2%</span>
+    &nbsp;·&nbsp; RSI: 31.9
+    &nbsp;·&nbsp; Vol: 0.83x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:70%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 18.6/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_short</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">SHORT JPM as the stock remains in a firm downtrend below its MA20 and MA50, further pressured by CEO Jamie Dimon's bearish warnings on inflation and macro risks. Negative sentiment and broader market weakness suggest continued momentum toward lower support levels despite the oversold RSI.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a confirmed break below $283.00 or a failed retest of $286.00 intraday resistance.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $291.50, representing a reversal above recent consolidation and toward the MA20.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$275.00 initial target within a 2-5 day timeframe.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">An RSI of 31.9 indicates the stock is near oversold territory, risking a sharp technical mean-reversion bounce.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">MSFT</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">57</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $395.55
+    <span style="color:#ef4444">-1.6%</span>
+    &nbsp;·&nbsp; RSI: 59.2
+    &nbsp;·&nbsp; Vol: 0.77x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:67%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 19.3/25 ·
+    MarketConf: 8.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_long</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG MSFT as analyst reiterations from William Blair and Jefferies highlight attractive valuation and AI growth potential despite recent broad market selling. The thesis anticipates a technical bounce from the $395 support level as sentiment remains highly positive.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a confirmed intraday reversal above $396.00 or a reclaim of the $400.00 psychological level.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Daily close below $389.00, invalidating the current valuation support thesis.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$410.00 initial target for a mean-reversion move within 5-10 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Continued macro-driven weakness in the SPY dragging down mega-cap tech regardless of individual fundamentals.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">META</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">57</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $613.71
+    <span style="color:#ef4444">-3.8%</span>
+    &nbsp;·&nbsp; RSI: 40.4
+    &nbsp;·&nbsp; Vol: 1.25x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:66%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 17.2/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -1.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">sympathy_play</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. The -3.83% sell-off provides a mean-reversion entry near oversold RSI levels as the market underprices the high-sentiment launch of a new AI engineering team. This strategic expansion acts as a fundamental catalyst for a short-term recovery toward the 20-day moving average.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a confirmed bounce from the $610 support level or a reclaim of $615 on volume.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Daily close below $600 or a break of the current intraday low.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$630.00 to $635.00 gap-fill area within 1-3 trading sessions.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Broad market correlation risk if SPY weakness accelerates and overrides idiosyncratic AI catalysts.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">NVDA</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">57</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $180.25
+    <span style="color:#ef4444">-1.6%</span>
+    &nbsp;·&nbsp; RSI: 39.3
+    &nbsp;·&nbsp; Vol: 0.89x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:66%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 18.6/25 ·
+    MarketConf: 8.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">sympathy_play</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. NVDA is approaching oversold conditions (RSI 39.3) near psychological support, with new software partnerships with Palantir and Thinking Machines Lab providing immediate fundamental catalysts for a reversal. The thesis anticipates a technical bounce as the stock stabilizes following a period of underperformance relative to its moving averages.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Limit orders near $180.00 or on a confirmed reclaim of $181.50 intraday.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Daily close below $177.50, which marks a breakdown of the current support structure.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$185.00 to $185.50 (MA20/MA50 convergence) within 1-3 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Broader market weakness (SPY -0.57%) dragging down high-beta tech despite positive idiosyncratic news.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">BAC</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">56</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $46.72
+    <span style="color:#ef4444">-0.9%</span>
+    &nbsp;·&nbsp; RSI: 29.9
+    &nbsp;·&nbsp; Vol: 0.81x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:66%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 15.8/25 ·
+    MarketConf: 12.0/20 ·
+    RegimeFit: 9.0/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -2.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_short</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">SHORT BAC as the stock exhibits strong bearish momentum, trading well below its MA20 and MA50 amid negative regulatory signals and broader market weakness. The breakdown below $47 suggests a continuation of the downtrend despite oversold technical indicators.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a breakdown below $46.70 or a weak retest of $47.10.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Stop loss set at $48.25, representing a reclaim of the recent breakdown level.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial price target of $45.00 with a 1-3 day tactical horizon.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Extremely low RSI (29.9) indicates high potential for a sharp technical relief rally.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">PLTR</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">56</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $150.95
+    <span style="color:#ef4444">-1.7%</span>
+    &nbsp;·&nbsp; RSI: 74.2
+    &nbsp;·&nbsp; Vol: 0.86x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:65%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 17.1/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -2.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_short</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">SHORT PLTR as technical overextension (RSI 74.2) and failure to reclaim the 50-day moving average suggest a 'sell the news' reversal following the Nvidia announcement. Bearish momentum is likely to persist as the stock remains below key resistance despite high-novelty AI catalysts.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a break below the $150.00 psychological level or a rejected retest of $152.50.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Invalidation on a daily close above the 50-day moving average at $153.85.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial target at the 20-day moving average of $142.79 within 3-5 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Unexpected institutional accumulation following the Nvidia software pact details.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">WMT</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">55</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $126.52
+    <span style="color:#22c55e">+0.9%</span>
+    &nbsp;·&nbsp; RSI: 51.8
+    &nbsp;·&nbsp; Vol: 0.49x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:65%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 11.4/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">event_long</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. WMT demonstrates significant relative strength by gaining nearly 1% while the SPY declines, successfully holding support above its MA20. Positive sentiment and defensive positioning suggest further upside as capital rotates into stable value names.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter at current market price ($126.52) or on a minor pullback to the MA20 support at $126.13.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Exit position on a daily close below $125.80, invalidating the short-term moving average support.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">Initial target of $128.50 based on recent resistance levels; expected timeframe 2-4 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Low relative volume (0.49x) indicates a lack of aggressive buying conviction which could lead to a bull trap.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">AMZN</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">55</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $207.67
+    <span style="color:#ef4444">-0.9%</span>
+    &nbsp;·&nbsp; RSI: 53.3
+    &nbsp;·&nbsp; Vol: 0.69x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:65%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 17.4/25 ·
+    MarketConf: 8.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 15.0/15 ·
+    Freshness: 7.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">sympathy_play</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. The strategic shift of Prime Day to June serves as a near-term revenue pull-forward catalyst, while the expansion into Healthcare AI provides a high-novelty growth narrative to offset macro weakness.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Limit entry near the $207.00 support level or on a confirmed intraday reclaim of $208.50.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Daily close below $204.50, invalidating the current consolidation base.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$215.00 initial target to test overhead resistance within a 5-10 day horizon.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Broader market correlation risk as SPY weakness may suppress mega-cap tech recovery despite positive idiosyncratic news.</span></div>
+  </div>
+</div>
+
+
+
+
+<h2>📰 Key News</h2>
+<div style="background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:14px 18px">
+<div class="news-group"><div class="news-group-header"><code>MACRO</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Fourth-quarter GDP revised down to just 0.7% growth; January core inflation was 3.1%</span><span class="news-src">[CNBC Markets]</span></div>
+<div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Dow Inc. (DOW) Surges 9.3% as Citi Hikes Price Target by 43%</span><span class="news-src">[Yahoo Finance]</span></div>
+</div>
+
+</div>
+
+<h2>🛡 Research Risk Rules</h2>
+<div class="risk-box">
+  <ul style="list-style:none;padding:0">
+    <li>📌 Define risk limits before entering any position.</li>
+    <li>⚠ Prefer smaller size in bear or choppy regimes.</li>
+    <li>🚫 Avoid chasing names already extended on the day.</li>
+    <li>🎯 Focus on the best few ideas rather than too many weak ones.</li>
+    <li>🌍 Reassess long theses if broad market conditions deteriorate sharply.</li>
+  </ul>
+</div>
+
+<div style="margin-top:24px;font-size:11px;color:#334155;border-top:.5px solid #1e293b;padding-top:16px">
+  ⚠ This is a personal research tool, not financial advice.
+</div>
+</body>
+</html>
