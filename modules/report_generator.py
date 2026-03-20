@@ -300,7 +300,7 @@ def generate_report(regime: dict, verbose: bool = True) -> str:
         emoji = ACTION_EMOJI.get(action, "⚪")
         dir_arrow = "▲" if direc == "LONG" else "▼"
 
-        lines.append(f"### {emoji} #{i} {sym} — {dir_arrow} {direc} | {action} | Score: {score:.0f}/100\n")
+        lines.append(f"### {emoji} #{i} {sym} — {dir_arrow} {direc} | {action} | Score: {score:.0f}/85\n")
 
         lines.append(
             f"**Price Snapshot:** ${price:.2f} ({chg:+.1f}%) | "
@@ -460,7 +460,7 @@ def build_html(today, regime, candidates, news_items, macro_watch_ideas=None):
     </div>
     <div class="score-box">
       <div style="font-size:22px;font-weight:700;color:{tt_score_color}">{tt_score:.0f}</div>
-      <div style="font-size:10px;color:#64748b">/ 100</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
     </div>
   </div>
   <div class="thesis" style="margin-bottom:14px">{t["thesis"] or "—"}</div>
@@ -495,7 +495,7 @@ def build_html(today, regime, candidates, news_items, macro_watch_ideas=None):
         action_color = ACTION_COLOR.get(action, "#94a3b8")
         dir_color = "#22c55e" if direc == "LONG" else "#ef4444"
         score_color = _score_color(score)
-        score_bar = int(max(0, min(score, 100)))
+        score_bar = int(max(0, min(score / 85 * 100, 100)))
 
         cards_html += f"""
 <div class="card" style="border-left:3px solid {action_color}">
@@ -507,7 +507,7 @@ def build_html(today, regime, candidates, news_items, macro_watch_ideas=None):
     </div>
     <div class="score-box">
       <div style="font-size:22px;font-weight:700;color:{score_color}">{score:.0f}</div>
-      <div style="font-size:10px;color:#64748b">/ 100</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
     </div>
   </div>
 
