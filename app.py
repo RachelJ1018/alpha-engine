@@ -31,32 +31,14 @@ def _safe(v, default=0.0):
         return default
 
 def _llm_chat(context: str, messages: list) -> str:
-    """Single LLM call for follow-up chat. Gemini if available, else Anthropic."""
-    import requests as _req
-    gkey = os.environ.get("GOOGLE_API_KEY", "")
-    akey = os.environ.get("ANTHROPIC_API_KEY", api_key_input or "")
-    if gkey:
-        history = [{"role": m["role"], "parts": [{"text": m["content"]}]} for m in messages[:-1]]
-        payload = {
-            "system_instruction": {"parts": [{"text": f"You are an equity research assistant. Use this context:\n{context}"}]},
-            "contents": history + [{"role": "user", "parts": [{"text": messages[-1]["content"]}]}],
-            "generationConfig": {"maxOutputTokens": 500},
-        }
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={gkey}"
-        try:
-            data = _req.post(url, json=payload, timeout=30).json()
-            return data["candidates"][0]["content"]["parts"][0]["text"]
-        except Exception as e:
-            return f"Gemini error: {e}"
-    elif akey:
-        import anthropic as _ant
-        resp = _ant.Anthropic(api_key=akey).messages.create(
-            model="claude-haiku-4-5-20251001", max_tokens=500,
-            system=f"You are an equity research assistant. Use this context:\n{context}",
-            messages=[{"role": m["role"], "content": m["content"]} for m in messages],
-        )
-        return resp.content[0].text
-    return "No API key configured (set GOOGLE_API_KEY or ANTHROPIC_API_KEY)."
+    """Follow-up chat using existing multi_agent_thesis._llm_call routing."""
+    from modules.multi_agent_thesis import _llm_call
+    provider = os.environ.get("THESIS_PROVIDER", "auto")
+    prompt = f"You are an equity research assistant.\n\nContext:\n{context}\n\n" + \
+             "\n".join(f"{'User' if m['role']=='user' else 'Assistant'}: {m['content']}" for m in messages[:-1]) + \
+             f"\n\nUser: {messages[-1]['content']}\n\nAssistant:"
+    text, _ = _llm_call(prompt, provider)
+    return text or "No response from LLM."
 # ── Sidebar: User Configuration ─────────────────────────────────────────
 with st.sidebar:
     st.header("⚙️ Your Configuration")
