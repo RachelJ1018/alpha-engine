@@ -9,6 +9,7 @@ from contextlib import redirect_stdout
 from modules.risk_engine import (
     PortfolioConfig, RiskConfig, plan_candidates, candidate_from_row
 )
+from modules.multi_agent_thesis import _llm_call
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -32,7 +33,6 @@ def _safe(v, default=0.0):
 
 def _llm_chat(context: str, messages: list) -> str:
     """Follow-up chat using existing multi_agent_thesis._llm_call routing."""
-    from modules.multi_agent_thesis import _llm_call
     provider = os.environ.get("THESIS_PROVIDER", "auto")
     prompt = f"You are an equity research assistant.\n\nContext:\n{context}\n\n" + \
              "\n".join(f"{'User' if m['role']=='user' else 'Assistant'}: {m['content']}" for m in messages[:-1]) + \
