@@ -50,12 +50,12 @@ jobs:
 
         run: python run_daily.py --no-open
 
-      - name: Commit DB back to repo
+      - name: Commit DB and reports back to repo
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/alpha.db
-          git diff --cached --quiet || git commit -m "chore: update alpha.db [$(date -u +%Y-%m-%d)]"
+          git add data/alpha.db reports/
+          git diff --cached --quiet || git commit -m "chore: update alpha.db + report [$(date -u +%Y-%m-%d)]"
           git push
 
       - name: Upload report
