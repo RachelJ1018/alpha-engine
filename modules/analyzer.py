@@ -993,6 +993,63 @@ def call_claude_for_thesis(
 # Main entry point
 # ---------------------------------------------------------------------
 
+def _apply_directional_crowding(
+    candidates: List[Dict],
+    keep_k: int = 5,
+    soft_cap: int = 8,
+    verbose: bool = True,
+) -> List[Dict]:
+    """Soft crowding penalty for same-direction signal clusters.
+
+    Within each direction group (LONG / SHORT):
+      - If n <= soft_cap: no change.
+      - Top keep_k by final_score: untouched.
+      - Rank keep_k+1 onwards: penalty = min(5.0, 0.8 × (rank − keep_k))
+    Action labels are re-evaluated after score changes, with all existing
+    caps re-applied so the cap invariants stay consistent.
+    """
+    from collections import defaultdict
+    groups: Dict[str, List[Dict]] = defaultdict(list)
+    for c in candidates:
+        groups[c["direction"]].append(c)
+
+    for direction, group in groups.items():
+        if len(group) <= soft_cap:
+            continue
+        group.sort(key=lambda c: c["final_score"], reverse=True)
+        for i, c in enumerate(group):
+            rank = i + 1
+            if rank <= keep_k:
+                continue
+            penalty = min(5.0, 0.8 * (rank - keep_k))
+            old_score  = c["final_score"]
+            old_action = c["action"]
+            c["final_score"] = round(max(0.0, c["final_score"] - penalty), 1)
+
+            # Re-determine action and re-apply all caps
+            c["action"] = determine_action(c["final_score"], direction, c["_regime"])
+            if not c["has_symbol_news"] and not c["is_index"] and c["action"] in ("ACTIONABLE", "WATCHLIST"):
+                c["action"] = "MONITOR"
+            if c["low_value"] and c["action"] == "ACTIONABLE":
+                c["action"] = "WATCHLIST"
+            ee = c["event_edge_score"]
+            if ee < 5:
+                c["action"] = "IGNORE"
+            elif ee < 8 and c["action"] in ("ACTIONABLE", "WATCHLIST"):
+                c["action"] = "MONITOR"
+            elif ee < 12 and c["action"] == "ACTIONABLE":
+                c["action"] = "WATCHLIST"
+
+            if verbose and (c["final_score"] != old_score or c["action"] != old_action):
+                print(
+                    f"[crowding] {c['sym']:6s} {direction:5s} rank={rank}"
+                    f"  score {old_score:.1f}→{c['final_score']:.1f}"
+                    f"  action {old_action}→{c['action']}"
+                    f"  penalty={penalty:.1f}"
+                )
+    return candidates
+
+
 def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
     conn = get_conn()
     today = date.today().isoformat()
@@ -1004,7 +1061,8 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
         ).fetchall()
     ]
 
-    candidates_created = 0
+    # ── Pass 1: score every symbol, collect into list ─────────────────────────
+    scored: List[Dict] = []
 
     for sym in symbols:
         price_row = conn.execute(
@@ -1055,16 +1113,15 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
             continue
 
         symbol_specific_count = len(articles)
-        is_index       = sym in ("SPY", "QQQ")
+        is_index        = sym in ("SPY", "QQQ")
         has_symbol_news = symbol_specific_count > 0
 
-        news_scores       = score_news_bundle(all_articles, symbol=sym)
-        direction         = determine_direction(news_scores, price_row)
-        technical_score   = score_technical(price_row)
+        news_scores     = score_news_bundle(all_articles, symbol=sym)
+        direction       = determine_direction(news_scores, price_row)
+        technical_score = score_technical(price_row)
 
-        event_edge_score    = score_event_edge(news_scores, all_articles)
+        event_edge_score   = score_event_edge(news_scores, all_articles)
 
-        # Options flow boost: aligns institutional options activity with thesis direction
         if _OPTIONS_FLOW_AVAILABLE:
             _current_price = dict(price_row).get("close_price") if price_row else None
             _options_boost = score_options_flow(sym, direction, _current_price)
@@ -1073,11 +1130,11 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
                 if verbose:
                     print(f"[analyze] {sym:6s} options_boost={_options_boost:+.1f}")
 
-        market_conf_score   = score_market_confirmation(price_row, direction, news_scores)
-        regime_fit_score    = score_regime_fit(direction, regime, news_scores["best_event_type"])
-        relative_opp_score  = score_relative_opportunity(price_row)
-        freshness_score     = score_freshness(all_articles)
-        risk_penalty_score  = score_risk_penalty(price_row, direction, news_scores, regime)
+        market_conf_score  = score_market_confirmation(price_row, direction, news_scores)
+        regime_fit_score   = score_regime_fit(direction, regime, news_scores["best_event_type"])
+        relative_opp_score = score_relative_opportunity(price_row)
+        freshness_score    = score_freshness(all_articles)
+        risk_penalty_score = score_risk_penalty(price_row, direction, news_scores, regime)
 
         final_score = compute_final_score(
             event_edge_score=event_edge_score,
@@ -1147,9 +1204,6 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
             action = "MONITOR"
         if low_value and action == "ACTIONABLE":
             action = "WATCHLIST"
-
-        # EventEdge action cap: low event support → limit max rating regardless of price strength
-        # Graduated so strong price confirmation can still surface MONITOR-level signals
         if event_edge_score < 5:
             action = "IGNORE"
         elif event_edge_score < 8 and action in ("ACTIONABLE", "WATCHLIST"):
@@ -1157,9 +1211,55 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
         elif event_edge_score < 12 and action == "ACTIONABLE":
             action = "WATCHLIST"
 
+        scored.append({
+            "sym":               sym,
+            "direction":         direction,
+            "action":            action,
+            "final_score":       final_score,
+            "event_edge_score":  event_edge_score,
+            "market_conf_score": market_conf_score,
+            "regime_fit_score":  regime_fit_score,
+            "relative_opp_score": relative_opp_score,
+            "freshness_score":   freshness_score,
+            "risk_penalty_score": risk_penalty_score,
+            "technical_score":   technical_score,
+            "news_scores":       news_scores,
+            "articles":          articles,
+            "all_articles":      all_articles,
+            "price_row":         price_row,
+            "is_index":          is_index,
+            "has_symbol_news":   has_symbol_news,
+            "low_value":         low_value,
+            "strategy_bucket":   strategy_bucket,
+            "_regime":           regime,
+        })
+
+    # ── Apply directional crowding penalty ────────────────────────────────────
+    scored = _apply_directional_crowding(scored, verbose=verbose)
+
+    # ── Pass 2: thesis generation + DB insert ─────────────────────────────────
+    candidates_created = 0
+
+    for c in scored:
+        sym              = c["sym"]
+        direction        = c["direction"]
+        action           = c["action"]
+        final_score      = c["final_score"]
+        event_edge_score = c["event_edge_score"]
+        market_conf_score  = c["market_conf_score"]
+        regime_fit_score   = c["regime_fit_score"]
+        relative_opp_score = c["relative_opp_score"]
+        freshness_score    = c["freshness_score"]
+        risk_penalty_score = c["risk_penalty_score"]
+        technical_score    = c["technical_score"]
+        news_scores        = c["news_scores"]
+        articles           = c["articles"]
+        price_row          = c["price_row"]
+        strategy_bucket    = c["strategy_bucket"]
+        has_symbol_news    = c["has_symbol_news"]
+
         headlines    = [a["title"] for a in articles[:5]]
         company_name = sym
-
         component_scores = {
             "event_edge_score":   event_edge_score,
             "market_conf_score":  market_conf_score,
@@ -1170,14 +1270,22 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
             "final_score":        final_score,
         }
 
-        if THESIS_PROVIDER.lower() == "multi_agent" and _MULTI_AGENT_AVAILABLE:
+        # Skip thesis for IGNORE — saves API calls on crowding-demoted signals
+        if action == "IGNORE":
+            thesis_data = {
+                "thesis": "", "entry_note": "", "stop_loss_note": "",
+                "target_note": "", "risk_note": "", "direction": direction,
+                "thesis_conviction": None, "thesis_technical": None,
+                "thesis_news": None, "thesis_risk": None,
+            }
+        elif THESIS_PROVIDER.lower() == "multi_agent" and _MULTI_AGENT_AVAILABLE:
             _score_map = {
-                "EventEdge":    event_edge_score,
-                "MarketConf":   market_conf_score,
-                "RegimeFit":    regime_fit_score,
-                "RelOpp":       relative_opp_score,
-                "Freshness":    freshness_score,
-                "RiskPenalty":  risk_penalty_score,
+                "EventEdge":   event_edge_score,
+                "MarketConf":  market_conf_score,
+                "RegimeFit":   regime_fit_score,
+                "RelOpp":      relative_opp_score,
+                "Freshness":   freshness_score,
+                "RiskPenalty": risk_penalty_score,
             }
             _price_dict = dict(price_row) if price_row else {}
             _tr = generate_multi_agent_thesis(
@@ -1190,8 +1298,6 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
                 action_label=action,
                 provider="auto",
             )
-            # Map ThesisResult → dict shape the DB insert expects
-            # entry/stop/target notes are extracted from the risk report (first 3 sentences)
             _risk_sentences = [s.strip() for s in _tr.risk_report.replace("\n", " ").split(".") if s.strip()]
             thesis_data = {
                 "thesis":            _tr.summary,
