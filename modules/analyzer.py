@@ -993,20 +993,95 @@ def call_claude_for_thesis(
 # Main entry point
 # ---------------------------------------------------------------------
 
+_INDEX_LIKE_SYMS = {"SPY", "QQQ", "IWM", "SMH", "GLD", "TLT", "XLF"}
+_HIGH_INDEPENDENCE_CATALYSTS = {"earnings", "product", "regulation", "ma"}
+_LOW_INDEPENDENCE_CATALYSTS  = {"macro", "general"}
+
+
+def _compute_uniqueness(signal: Dict, all_signals: List[Dict]) -> float:
+    """How independent is this signal from all others in the same day?
+
+    Higher = more likely to be genuine independent alpha.
+    Used to protect high-uniqueness signals from crowding penalty.
+    """
+    score = 0.0
+    ee       = signal["event_edge_score"]
+    catalyst = signal["catalyst"]
+    sector   = signal["sector"]
+    direction = signal["direction"]
+
+    # High EventEdge → real event driver, more independent
+    if ee >= 18:   score += 2.0
+    elif ee >= 12: score += 1.0
+
+    # Specific catalysts → less likely to be market-beta copies
+    if catalyst in _HIGH_INDEPENDENCE_CATALYSTS:
+        score += 1.5
+
+    # Count same-direction same-sector signals (including self → subtract 1)
+    same_sector_dir = sum(
+        1 for s in all_signals
+        if s["direction"] == direction and s["sector"] == sector
+    ) - 1
+    if same_sector_dir == 0:   score += 1.0   # only one in its sector
+    elif same_sector_dir >= 3: score -= 1.0   # sector over-represented
+
+    # ETF / index-like → pure market beta, not independent alpha
+    if signal["is_index_like"]:
+        score -= 1.5
+
+    # Very low EE → price-only signal, minimal event story
+    if ee < 8:
+        score -= 2.0
+
+    return score
+
+
+def _signal_similarity(a: Dict, b: Dict) -> float:
+    """0–1: how similar are two signals? Used to detect 'copies'."""
+    if a["direction"] != b["direction"]:
+        return 0.0
+    sim = 0.0
+    if a["sector"] == b["sector"]:                                       sim += 0.35
+    if a["catalyst"] == b["catalyst"]:                                   sim += 0.25
+    if a["catalyst"] in _LOW_INDEPENDENCE_CATALYSTS \
+       and b["catalyst"] in _LOW_INDEPENDENCE_CATALYSTS:                 sim += 0.20
+    if a["event_edge_score"] < 8 and b["event_edge_score"] < 8:         sim += 0.20
+    if a["is_index_like"] and b["is_index_like"]:                        sim += 0.20
+    return min(sim, 1.0)
+
+
+def _reapply_action_caps(c: Dict) -> None:
+    """Re-determine action label after score change, re-applying all caps."""
+    direction = c["direction"]
+    c["action"] = determine_action(c["final_score"], direction, c["_regime"])
+    if not c["has_symbol_news"] and not c["is_index"] and c["action"] in ("ACTIONABLE", "WATCHLIST"):
+        c["action"] = "MONITOR"
+    if c["low_value"] and c["action"] == "ACTIONABLE":
+        c["action"] = "WATCHLIST"
+    ee = c["event_edge_score"]
+    if ee < 5:
+        c["action"] = "IGNORE"
+    elif ee < 8 and c["action"] in ("ACTIONABLE", "WATCHLIST"):
+        c["action"] = "MONITOR"
+    elif ee < 12 and c["action"] == "ACTIONABLE":
+        c["action"] = "WATCHLIST"
+
+
 def _apply_directional_crowding(
     candidates: List[Dict],
-    keep_k: int = 5,
-    soft_cap: int = 8,
+    free_keep: int = 4,
+    max_penalty: float = 6.0,
     verbose: bool = True,
 ) -> List[Dict]:
-    """Soft crowding penalty for same-direction signal clusters.
+    """Similarity-based crowding penalty preserving independent alpha.
 
-    Within each direction group (LONG / SHORT):
-      - If n <= soft_cap: no change.
-      - Top keep_k by final_score: untouched.
-      - Rank keep_k+1 onwards: penalty = min(5.0, 0.8 × (rank − keep_k))
-    Action labels are re-evaluated after score changes, with all existing
-    caps re-applied so the cap invariants stay consistent.
+    For each direction group:
+      1. Compute uniqueness score per signal (EventEdge, catalyst, sector, index-like)
+      2. Sort by retention_priority = final_score + 1.2×uniqueness + 0.3×EE
+      3. Greedily select: top free_keep are free; beyond that, penalize based on
+         max similarity to already-kept signals × uniqueness_discount
+      4. Highly unique signals survive even if they rank lower on raw score
     """
     from collections import defaultdict
     groups: Dict[str, List[Dict]] = defaultdict(list)
@@ -1014,39 +1089,46 @@ def _apply_directional_crowding(
         groups[c["direction"]].append(c)
 
     for direction, group in groups.items():
-        if len(group) <= soft_cap:
-            continue
-        group.sort(key=lambda c: c["final_score"], reverse=True)
+        # Compute uniqueness and retention priority for all in group
+        for c in group:
+            c["uniqueness_score"] = _compute_uniqueness(c, candidates)
+            c["retention_priority"] = (
+                c["final_score"]
+                + 1.2 * c["uniqueness_score"]
+                + 0.3 * c["event_edge_score"]
+            )
+
+        group.sort(key=lambda c: c["retention_priority"], reverse=True)
+
+        kept: List[Dict] = []
         for i, c in enumerate(group):
-            rank = i + 1
-            if rank <= keep_k:
+            if i < free_keep:
+                kept.append(c)
                 continue
-            penalty = min(5.0, 0.8 * (rank - keep_k))
-            old_score  = c["final_score"]
-            old_action = c["action"]
-            c["final_score"] = round(max(0.0, c["final_score"] - penalty), 1)
 
-            # Re-determine action and re-apply all caps
-            c["action"] = determine_action(c["final_score"], direction, c["_regime"])
-            if not c["has_symbol_news"] and not c["is_index"] and c["action"] in ("ACTIONABLE", "WATCHLIST"):
-                c["action"] = "MONITOR"
-            if c["low_value"] and c["action"] == "ACTIONABLE":
-                c["action"] = "WATCHLIST"
-            ee = c["event_edge_score"]
-            if ee < 5:
-                c["action"] = "IGNORE"
-            elif ee < 8 and c["action"] in ("ACTIONABLE", "WATCHLIST"):
-                c["action"] = "MONITOR"
-            elif ee < 12 and c["action"] == "ACTIONABLE":
-                c["action"] = "WATCHLIST"
+            # How similar is this signal to the best match already kept?
+            max_sim = max((_signal_similarity(c, k) for k in kept), default=0.0)
 
-            if verbose and (c["final_score"] != old_score or c["action"] != old_action):
-                print(
-                    f"[crowding] {c['sym']:6s} {direction:5s} rank={rank}"
-                    f"  score {old_score:.1f}→{c['final_score']:.1f}"
-                    f"  action {old_action}→{c['action']}"
-                    f"  penalty={penalty:.1f}"
-                )
+            # Low-uniqueness signals deserve more penalty when they're copy-cats
+            uniqueness_discount = max(0.0, 1.5 - max(0.0, c["uniqueness_score"]))
+            penalty = min(max_penalty, max_sim * uniqueness_discount * 3.0)
+
+            if penalty > 0.05:
+                old_score  = c["final_score"]
+                old_action = c["action"]
+                c["final_score"] = round(max(0.0, c["final_score"] - penalty), 1)
+                _reapply_action_caps(c)
+                if verbose:
+                    print(
+                        f"[crowding] {c['sym']:6s} {direction:5s}"
+                        f"  sim={max_sim:.2f} uniq={c['uniqueness_score']:+.1f}"
+                        f"  penalty={penalty:.1f}"
+                        f"  score {old_score:.1f}→{c['final_score']:.1f}"
+                        f"  {old_action}→{c['action']}"
+                    )
+
+            kept.append(c)
+
     return candidates
 
 
@@ -1054,12 +1136,11 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
     conn = get_conn()
     today = date.today().isoformat()
 
-    symbols = [
-        r["symbol"]
-        for r in conn.execute(
-            "SELECT symbol FROM watched_symbols WHERE enabled=1 ORDER BY priority, symbol"
-        ).fetchall()
-    ]
+    rows = conn.execute(
+        "SELECT symbol, sector FROM watched_symbols WHERE enabled=1 ORDER BY priority, symbol"
+    ).fetchall()
+    symbols    = [r["symbol"] for r in rows]
+    sector_map = {r["symbol"]: (r["sector"] or "Unknown") for r in rows}
 
     # ── Pass 1: score every symbol, collect into list ─────────────────────────
     scored: List[Dict] = []
@@ -1232,6 +1313,10 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
             "low_value":         low_value,
             "strategy_bucket":   strategy_bucket,
             "_regime":           regime,
+            # Fields for similarity-based crowding
+            "sector":        sector_map.get(sym, "Unknown"),
+            "catalyst":      news_scores["best_event_type"],
+            "is_index_like": sym in _INDEX_LIKE_SYMS,
         })
 
     # ── Apply directional crowding penalty ────────────────────────────────────
