@@ -624,6 +624,12 @@ def score_risk_penalty(price_row: Optional[Any], direction: str, news_scores: Di
     if reg == "bull"   and direction == "SHORT": penalty += 1.5
     if reg == "choppy":                          penalty += 1.5
 
+    # Bear regime + SHORT + already oversold → high bounce risk, avoid piling in
+    if price_row and reg == "bear" and direction == "SHORT":
+        rsi = _safe_float(price_row["rsi_14"], 50.0)
+        if rsi < 35:
+            penalty += 3.0
+
     return _clamp(penalty, 0, 15)
 
 def classify_strategy_bucket(

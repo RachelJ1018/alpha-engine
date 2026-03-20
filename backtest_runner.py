@@ -220,7 +220,7 @@ def run_backtest(conn, lookback_days: int = 90, verbose: bool = False) -> pd.Dat
             try:
                 market_conf  = score_market_confirmation(price_row, direction, STUB_NEWS)
                 regime_fit   = score_regime_fit(direction, regime, "general")
-                rel_opp      = score_relative_opportunity(sym, price_row, conn)
+                rel_opp      = score_relative_opportunity(price_row)
                 risk_penalty = score_risk_penalty(price_row, direction, STUB_NEWS, regime)
 
                 final_score = compute_final_score(
