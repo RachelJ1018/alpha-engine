@@ -50,6 +50,13 @@ def main():
     today = date.today().isoformat()
     print(f"\n🚀 Alpha Engine — {today} {start.strftime('%H:%M')}")
 
+    # Warn if running on a weekend or outside market hours (price data will be stale)
+    _weekday = date.today().weekday()  # 0=Mon, 6=Sun
+    if _weekday >= 5:
+        print(f"⚠️  WARNING: Today is {'Saturday' if _weekday==5 else 'Sunday'} — market is closed. Price data will be stale (same as last Friday).")
+    elif start.hour < 14 or (start.hour == 14 and start.minute < 30):
+        print(f"⚠️  WARNING: Running at {start.strftime('%H:%M')} UTC — before market open (14:30 UTC). Price data may be stale.")
+
     # 1. Ensure DB exists
     header("DB init")
     init_db()
