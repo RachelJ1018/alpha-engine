@@ -93,6 +93,29 @@ def fetch_prices(symbols=None, verbose=True):
                 print(f"[price] ⚠ {sym}: {e}")
 
     conn.commit()
+
+    # Data quality checks
+    if verbose:
+        # 1. Stale data check: warn if today's price == yesterday's for any symbol
+        stale = conn.execute("""
+            SELECT a.symbol FROM price_snapshots a
+            JOIN price_snapshots b ON a.symbol = b.symbol
+            WHERE a.snapshot_date = ? AND b.snapshot_date < ?
+              AND a.close_price = b.close_price AND a.close_price IS NOT NULL
+            ORDER BY b.snapshot_date DESC
+        """, (today, today)).fetchall()
+        stale_syms = list({r["symbol"] for r in stale})
+        if stale_syms:
+            print(f"[price] ⚠ STALE DATA (same price as prev day): {stale_syms}")
+
+        # 2. NULL check: warn if critical fields missing
+        nulls = conn.execute("""
+            SELECT symbol FROM price_snapshots
+            WHERE snapshot_date = ? AND (close_price IS NULL OR change_pct IS NULL)
+        """, (today,)).fetchall()
+        if nulls:
+            print(f"[price] ⚠ NULL price data: {[r['symbol'] for r in nulls]}")
+
     conn.close()
 
     if verbose:
