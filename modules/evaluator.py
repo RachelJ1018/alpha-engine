@@ -56,6 +56,13 @@ def signal_stability_report(conn, days=30) -> dict:
 
     rows = [dict(r) for r in rows]
 
+    # Exclude weekends (non-trading days)
+    from datetime import date as _date
+    rows = [r for r in rows if _date.fromisoformat(r["run_date"]).weekday() < 5]
+
+    if not rows:
+        return {"days_covered": 0, "total_signals": 0, "avg_per_day": 0}
+
     # Action counts
     action_counts = {"ACTIONABLE": 0, "WATCHLIST": 0, "MONITOR": 0, "IGNORE": 0}
     for r in rows:
