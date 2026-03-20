@@ -1148,6 +1148,15 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
         if low_value and action == "ACTIONABLE":
             action = "WATCHLIST"
 
+        # EventEdge action cap: low event support → limit max rating regardless of price strength
+        # Graduated so strong price confirmation can still surface MONITOR-level signals
+        if event_edge_score < 5:
+            action = "IGNORE"
+        elif event_edge_score < 8 and action in ("ACTIONABLE", "WATCHLIST"):
+            action = "MONITOR"
+        elif event_edge_score < 12 and action == "ACTIONABLE":
+            action = "WATCHLIST"
+
         headlines    = [a["title"] for a in articles[:5]]
         company_name = sym
 
