@@ -29,6 +29,34 @@ def _safe(v, default=0.0):
         return float(v)
     except Exception:
         return default
+
+def _llm_chat(context: str, messages: list) -> str:
+    """Single LLM call for follow-up chat. Gemini if available, else Anthropic."""
+    import requests as _req
+    gkey = os.environ.get("GOOGLE_API_KEY", "")
+    akey = os.environ.get("ANTHROPIC_API_KEY", api_key_input or "")
+    if gkey:
+        history = [{"role": m["role"], "parts": [{"text": m["content"]}]} for m in messages[:-1]]
+        payload = {
+            "system_instruction": {"parts": [{"text": f"You are an equity research assistant. Use this context:\n{context}"}]},
+            "contents": history + [{"role": "user", "parts": [{"text": messages[-1]["content"]}]}],
+            "generationConfig": {"maxOutputTokens": 500},
+        }
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={gkey}"
+        try:
+            data = _req.post(url, json=payload, timeout=30).json()
+            return data["candidates"][0]["content"]["parts"][0]["text"]
+        except Exception as e:
+            return f"Gemini error: {e}"
+    elif akey:
+        import anthropic as _ant
+        resp = _ant.Anthropic(api_key=akey).messages.create(
+            model="claude-haiku-4-5-20251001", max_tokens=500,
+            system=f"You are an equity research assistant. Use this context:\n{context}",
+            messages=[{"role": m["role"], "content": m["content"]} for m in messages],
+        )
+        return resp.content[0].text
+    return "No API key configured (set GOOGLE_API_KEY or ANTHROPIC_API_KEY)."
 # ── Sidebar: User Configuration ─────────────────────────────────────────
 with st.sidebar:
     st.header("⚙️ Your Configuration")
@@ -353,7 +381,7 @@ with tab_today:
                 with col_b:
                     if c["target_note"]:    st.markdown(f"**Target:** :green[{c['target_note']}]")
                     if c["risk_note"]:      st.markdown(f"**If wrong:** :orange[{c['risk_note']}]")
-                st.progress(int(score) / 100, text=(
+                st.progress(min(score / 85, 1.0), text=(
                     f"EventEdge: {_safe(c['event_edge_score']):.1f}/25 · "
                     f"MarketConf: {_safe(c['market_conf_score']):.1f}/20 · "
                     f"RegimeFit: {_safe(c['regime_fit_score']):.1f}/15 · "
@@ -361,6 +389,29 @@ with tab_today:
                     f"Freshness: {_safe(c['freshness_score']):.1f}/10 · "
                     f"RiskPenalty: -{_safe(c['risk_penalty_score']):.1f}"
                 ))
+
+                # ── Inline chat ──────────────────────────────────────────
+                _ctx = (
+                    f"Symbol: {sym} | Direction: {direc} | Action: {action} | Score: {score:.0f}/85\n"
+                    f"Price: ${price:.2f} ({chg:+.1f}%) | RSI: {rsi or '—'} | Vol ratio: {vr or '—'}\n"
+                    f"Thesis: {c['thesis'] or '(none)'}\n"
+                    f"Entry: {c['entry_note'] or '—'} | Stop: {c['stop_loss_note'] or '—'} | Target: {c['target_note'] or '—'}\n"
+                    f"Scores — EventEdge:{_safe(c['event_edge_score']):.1f} MarketConf:{_safe(c['market_conf_score']):.1f} "
+                    f"RegimeFit:{_safe(c['regime_fit_score']):.1f} RelOpp:{_safe(c['relative_opp_score']):.1f} "
+                    f"Freshness:{_safe(c['freshness_score']):.1f} RiskPenalty:{_safe(c['risk_penalty_score']):.1f}"
+                )
+                _chat_key = f"chat_{sym}_{today}"
+                if _chat_key not in st.session_state:
+                    st.session_state[_chat_key] = []
+                for _msg in st.session_state[_chat_key]:
+                    st.chat_message(_msg["role"]).write(_msg["content"])
+                _q = st.chat_input(f"Ask about {sym}…", key=f"input_{sym}_{today}")
+                if _q:
+                    st.session_state[_chat_key].append({"role": "user", "content": _q})
+                    with st.spinner("Thinking…"):
+                        _ans = _llm_chat(_ctx, st.session_state[_chat_key])
+                    st.session_state[_chat_key].append({"role": "assistant", "content": _ans})
+                    st.rerun()
             shown += 1
 
         # ── News ─────────────────────────────────────────────────────────
