@@ -147,6 +147,43 @@ def select_key_news(articles, max_total: int = 8) -> list:
     return filtered
 
 
+def get_high_conviction_picks(conn, today: str, regime_label: str) -> list:
+    """Eligibility-gated picks: LONG, EE≥15, non-bear, real catalyst, ≤1 per sector, max 3."""
+    if regime_label == "bear":
+        return []
+
+    rows = conn.execute("""
+        SELECT tc.symbol, tc.action, tc.direction, tc.final_score,
+               tc.event_edge_score, tc.strategy_bucket, tc.thesis,
+               ps.close_price, ps.change_pct, ps.atr_14,
+               ws.sector
+        FROM trade_candidates tc
+        LEFT JOIN price_snapshots ps
+          ON tc.symbol = ps.symbol AND ps.snapshot_date = ?
+        LEFT JOIN watched_symbols ws ON tc.symbol = ws.symbol
+        WHERE tc.run_date = ?
+          AND tc.action IN ('ACTIONABLE', 'WATCHLIST')
+          AND tc.event_edge_score >= 15
+          AND tc.direction = 'LONG'
+          AND (tc.strategy_bucket NOT IN ('macro_watch', 'opinion_watch')
+               OR tc.strategy_bucket IS NULL)
+        ORDER BY tc.final_score DESC
+        LIMIT 10
+    """, (today, today)).fetchall()
+
+    # Max 1 per sector, max 3 total
+    seen_sectors = set()
+    picks = []
+    for r in rows:
+        sector = r["sector"] or "Unknown"
+        if sector not in seen_sectors:
+            seen_sectors.add(sector)
+            picks.append(dict(r))
+        if len(picks) >= 3:
+            break
+    return picks
+
+
 def generate_report(regime: dict, verbose: bool = True) -> str:
     conn = get_conn()
     today = date.today().isoformat()
@@ -206,6 +243,30 @@ def generate_report(regime: dict, verbose: bool = True) -> str:
     elif regime_label == "choppy":
         lines.append("\n> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.")
     lines.append("")
+
+    # ── High Conviction Picks ─────────────────────────────────────────────────
+    hc_picks = get_high_conviction_picks(conn, today, regime_label)
+    lines.append("---")
+    lines.append("## ⭐ High Conviction Picks\n")
+    if hc_picks:
+        lines.append("*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*\n")
+        for p in hc_picks:
+            price  = p["close_price"]
+            chg    = p["change_pct"]
+            ee     = p["event_edge_score"]
+            bucket = (p["strategy_bucket"] or "").replace("_", " ")
+            price_str = f"${price:.2f}" if price else "—"
+            chg_str   = f"({chg:+.1f}%)" if chg is not None else ""
+            lines.append(f"### {p['symbol']}  {price_str} {chg_str}")
+            lines.append(f"**{p['action']}** · LONG · EE={ee:.0f} · {bucket} · score={p['final_score']:.0f}")
+            if p.get("thesis"):
+                lines.append(f"> {p['thesis'][:160]}")
+            lines.append("")
+    else:
+        if regime_label == "bear":
+            lines.append("*No high conviction picks — bear regime, avoiding new LONG exposure.*\n")
+        else:
+            lines.append("*No signals meet the high conviction gate today.*\n")
 
     action_groups = {}
     for c in candidates:

@@ -58,10 +58,13 @@ def _pushplus_token() -> str:
 
 def _build_summary(regime: dict, conn=None) -> dict:
     from modules.db import get_conn
+    from modules.report_generator import get_high_conviction_picks
     if conn is None:
         conn = get_conn()
 
     today = date.today().isoformat()
+    regime_label = regime.get("regime", "unknown")
+
     candidates = conn.execute("""
         SELECT tc.symbol, tc.action, tc.direction, tc.final_score,
                tc.thesis, tc.entry_note, tc.stop_loss_note, tc.target_note,
@@ -77,13 +80,14 @@ def _build_summary(regime: dict, conn=None) -> dict:
     """, (today, today)).fetchall()
 
     return {
-        "today":      today,
-        "regime":     regime.get("regime", "unknown").upper(),
-        "spy_change": regime.get("spy_change", 0.0),
-        "spy_rsi":    regime.get("spy_rsi", 50),
-        "actionable": [dict(c) for c in candidates if c["action"] == "ACTIONABLE"],
-        "watchlist":  [dict(c) for c in candidates if c["action"] == "WATCHLIST"],
-        "monitor":    [dict(c) for c in candidates if c["action"] == "MONITOR"],
+        "today":           today,
+        "regime":          regime_label.upper(),
+        "spy_change":      regime.get("spy_change", 0.0),
+        "spy_rsi":         regime.get("spy_rsi", 50),
+        "actionable":      [dict(c) for c in candidates if c["action"] == "ACTIONABLE"],
+        "watchlist":       [dict(c) for c in candidates if c["action"] == "WATCHLIST"],
+        "monitor":         [dict(c) for c in candidates if c["action"] == "MONITOR"],
+        "high_conviction": get_high_conviction_picks(conn, today, regime_label),
     }
 
 
@@ -106,6 +110,44 @@ def _format_email(summary: dict) -> tuple[str, str]:
         f"{len(summary['actionable'])} ACTIONABLE"
     )
 
+    # ── High Conviction block ─────────────────────────────────────────────────
+    hc_html = ""
+    hc_picks = summary.get("high_conviction", [])
+    if hc_picks:
+        hc_rows = ""
+        for p in hc_picks:
+            price  = f"${p['close_price']:.2f}" if p.get("close_price") else "—"
+            chg    = f"({p['change_pct']:+.1f}%)" if p.get("change_pct") is not None else ""
+            bucket = (p.get("strategy_bucket") or "").replace("_", " ")
+            thesis = (p.get("thesis") or "")[:140]
+            hc_rows += f"""
+            <tr>
+              <td style="padding:10px 12px;border-bottom:1px solid #fde68a">
+                <strong style="font-size:15px">{p['symbol']}</strong>
+                <span style="font-size:11px;color:#92400e;margin-left:6px">{bucket}</span>
+              </td>
+              <td style="padding:10px 12px;border-bottom:1px solid #fde68a;color:#374151">▲ {price} {chg}</td>
+              <td style="padding:10px 12px;border-bottom:1px solid #fde68a">
+                <span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px">{p['action']}</span>
+                <span style="font-size:11px;color:#6b7280;margin-left:4px">EE={p['event_edge_score']:.0f}</span>
+              </td>
+              <td style="padding:10px 12px;border-bottom:1px solid #fde68a;color:#374151;font-size:13px">{thesis}</td>
+            </tr>"""
+        hc_html = f"""
+  <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:16px;margin-bottom:20px">
+    <h3 style="margin:0 0 4px 0;color:#92400e">⭐ High Conviction Picks</h3>
+    <p style="margin:0 0 12px 0;font-size:12px;color:#b45309">LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector</p>
+    <table style="width:100%;border-collapse:collapse">
+      <tbody>{hc_rows}</tbody>
+    </table>
+  </div>"""
+    elif summary["regime"] != "BEAR":
+        hc_html = """
+  <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:12px;margin-bottom:20px;color:#6b7280;font-size:13px">
+    ⭐ No high conviction picks today — no signals pass the eligibility gate.
+  </div>"""
+
+    # ── Regular signals table ─────────────────────────────────────────────────
     rows = ""
     for c in summary["actionable"] + summary["watchlist"]:
         color  = "#22c55e" if c["action"] == "ACTIONABLE" else "#f59e0b"
@@ -138,7 +180,9 @@ def _format_email(summary: dict) -> tuple[str, str]:
 <body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:700px;margin:0 auto;padding:20px;color:#111">
   <h2 style="margin-bottom:4px">📊 Alpha Engine — {summary['today']}</h2>
   <p style="color:#6b7280;margin-top:0">{regime_emoji} <strong>{summary['regime']}</strong> &nbsp;·&nbsp; SPY {summary['spy_change']:+.2f}%</p>
-  <table style="width:100%;border-collapse:collapse;margin-top:16px">
+  {hc_html}
+  <h3 style="margin-bottom:8px;color:#374151">All Signals</h3>
+  <table style="width:100%;border-collapse:collapse">
     <thead>
       <tr style="background:#f9fafb">
         <th style="padding:8px 12px;text-align:left;font-size:13px;color:#6b7280;font-weight:500">Symbol</th>
@@ -168,6 +212,21 @@ def _format_wechat(summary: dict) -> tuple[str, str]:
         f"{regime_emoji} **{summary['regime']}** · SPY `{summary['spy_change']:+.2f}%`",
         "",
     ]
+
+    # High conviction picks at top
+    hc_picks = summary.get("high_conviction", [])
+    if hc_picks:
+        lines.append("## ⭐ High Conviction")
+        lines.append("*LONG · EE≥15 · Real catalyst · Non-bear · ≤1 per sector*")
+        for p in hc_picks:
+            price  = f"${p['close_price']:.2f}" if p.get("close_price") else "—"
+            bucket = (p.get("strategy_bucket") or "").replace("_", " ")
+            lines.append(f"- **{p['symbol']}** ▲ {price}  EE={p['event_edge_score']:.0f}  {p['action']}  _{bucket}_")
+            if p.get("thesis"):
+                lines.append(f"  - {p['thesis'][:120]}")
+        lines.append("")
+    elif summary["regime"] != "BEAR":
+        lines += ["## ⭐ High Conviction", "*No signals pass the gate today.*", ""]
 
     if summary["actionable"]:
         lines.append("## 🟢 ACTIONABLE")
