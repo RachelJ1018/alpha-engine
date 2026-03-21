@@ -26,27 +26,27 @@
 
 必须全部满足才进入候选池：
 
-- [ ] EventEdge ≥ 15（有真实事件驱动，非纯价格信号）
-- [ ] 方向 = LONG（SHORT 在现有数据未验证，暂禁）
-- [ ] 制度 ≠ bear（bear 中不开新 LONG）
-- [ ] catalyst ∈ {earnings, product, regulation, ma}（排除 general/macro 纯叙事）
-- [ ] 非严重拥挤（同日同方向同 sector ≤ 1 条进入候选）
+- [x] EventEdge ≥ 15（有真实事件驱动，非纯价格信号）
+- [x] 方向 = LONG（SHORT 在现有数据未验证，暂禁）
+- [x] 制度 ≠ bear（bear 中不开新 LONG）
+- [x] catalyst 非 macro_watch / opinion_watch（排除纯叙事）
+- [x] 非严重拥挤（同 sector ≤ 1 条，最多 3 条）
+
+实现：`get_high_conviction_picks()` in `report_generator.py`，同时供 `notification.py` 使用。
 
 ### 1.2 每日输出上限
 
-- [ ] 全局：每天最多 3 条 actionable（超出按 retention_priority 截断）
-- [ ] 同 sector：最多 1 条高优先级
-- [ ] 同方向：最多 2 条
+- [x] 全局：最多 3 条（High Conviction gate 自动截断）
+- [x] 同 sector：最多 1 条
+- [ ] 下一步：crowding 的 free_keep 参数可基于更多数据后调整
 
 ### 1.3 改进输出格式
 
-每条候选输出以下字段（现在 thesis 缺部分）：
-
-- [ ] 事件驱动（event thesis）
-- [ ] 为什么现在（why now）
-- [ ] 为什么不拥挤（why not crowded）
-- [ ] 失效条件（invalidation：什么情况说明 thesis 错了）
-- [ ] 对比基准（vs SPY / sector ETF）
+- [x] 报告顶部加 ⭐ High Conviction 板块（Market Context 之后）
+- [x] 邮件顶部加 amber 高亮卡片
+- [x] 微信顶部加 ⭐ 段落
+- [ ] 失效条件（invalidation）— 待加入 thesis 生成逻辑
+- [ ] 对比基准（vs SPY / sector ETF excess return）— Phase 2 加入
 
 ---
 
