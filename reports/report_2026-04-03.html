@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report — 2026-04-03</title>
+<style>
+  * {box-sizing:border-box;margin:0;padding:0}
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0b0f1a;color:#e2e8f0;padding:24px;max-width:920px;margin:0 auto;line-height:1.5
+  }
+  h1 {font-size:22px;font-weight:700;color:#f1f5f9;margin-bottom:4px}
+  h2 {font-size:14px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin:28px 0 12px}
+  .meta {font-size:12px;color:#475569;margin-bottom:24px}
+  .regime-bar {
+    background:#111827;border:.5px solid #1e293b;border-left:3px solid #94a3b8;
+    border-radius:6px;padding:12px 16px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center
+  }
+  .regime-label {font-size:13px;font-weight:600;color:#94a3b8}
+  .spy-chg {font-size:20px;font-weight:700;color:#22c55e}
+
+  .card {
+    background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:18px 20px;margin-bottom:12px
+  }
+  .card-header {
+    display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px
+  }
+  .ticker {font-size:20px;font-weight:800;color:#f1f5f9;margin-right:10px;letter-spacing:.04em}
+  .action-badge {font-size:10px;font-weight:700;padding:3px 8px;border-radius:3px;letter-spacing:.06em;margin-right:6px}
+  .dir-badge {font-size:12px;font-weight:700}
+  .score-box {text-align:center}
+  .price-row {font-size:13px;color:#94a3b8;margin-bottom:8px}
+  .score-bar-wrap {height:3px;background:#1e293b;border-radius:2px;margin-bottom:14px}
+  .score-bar {height:3px;border-radius:2px;transition:width .5s}
+
+  .section-label {
+    font-size:9px;font-weight:700;color:#475569;letter-spacing:.1em;margin-bottom:5px;margin-top:10px
+  }
+  .score-detail {
+    font-size:12px;color:#94a3b8;line-height:1.7;margin-bottom:12px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+  .meta-chip {
+    display:inline-block;background:#1e293b;color:#cbd5e1;font-size:11px;padding:3px 8px;border-radius:999px;margin-bottom:12px
+  }
+  .thesis {
+    font-size:13px;color:#cbd5e1;line-height:1.6;margin-bottom:14px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+
+  .levels {display:flex;flex-direction:column;gap:6px}
+  .level-row {display:flex;gap:12px;font-size:12px;align-items:baseline}
+  .level-label {color:#475569;min-width:74px;font-size:10px;font-weight:600;letter-spacing:.06em}
+  .level-val {color:#94a3b8}
+  .level-val.stop {color:#f87171}
+  .level-val.target {color:#22c55e}
+  .level-val.risk {color:#fb923c;font-style:italic}
+
+  .news-group {margin-bottom:14px}
+  .news-group-header {
+    font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:.06em;text-transform:uppercase;
+    padding-bottom:5px;border-bottom:.5px solid #1e293b;margin-bottom:4px
+  }
+  .news-group-header code {background:#1e293b;color:#94a3b8;padding:1px 5px;border-radius:2px;font-size:11px}
+  .news-item {display:flex;gap:8px;align-items:baseline;padding:3px 0;font-size:12px}
+  .news-title {color:#cbd5e1;flex:1;line-height:1.4}
+  .news-src {color:#475569;flex-shrink:0;white-space:nowrap;font-size:11px}
+
+  .risk-box {background:#111827;border:.5px solid #1e293b;border-left:3px solid #ef4444;border-radius:6px;padding:14px 18px}
+  .risk-box li {font-size:13px;color:#94a3b8;margin-bottom:6px;padding-left:4px}
+</style>
+</head>
+<body>
+<h1>📊 Daily Research Report</h1>
+<div class="meta">Generated: 2026-04-03 — Alpha Engine Local</div>
+
+<div class="regime-bar">
+  <div>
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">MARKET REGIME</div>
+    <div class="regime-label">CHOPPY</div>
+    <div style="font-size:12px;color:#64748b;margin-top:2px">
+      Directionless and noisy. Avoid chasing; wait for clarity.
+    </div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">SPY TODAY</div>
+    <div class="spy-chg">+0.09%</div>
+  </div>
+</div>
+
+<h2>🏆 Top Trade</h2>
+<div class="card" style="color:#64748b;font-size:13px">No actionable or watchlist trade today.</div>
+
+<h2>🎯 Research Ideas</h2>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">TSLA</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">56</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $360.59
+    <span style="color:#ef4444">-5.4%</span>
+    &nbsp;·&nbsp; RSI: 38.6
+    &nbsp;·&nbsp; Vol: 1.37x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:65%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 19.1/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 7.0/15 ·
+    RelOpp: 10.2/15 ·
+    Freshness: 9.9/10 ·
+    RiskPenalty: -4.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">SHORT. TSLA is under heavy selling pressure following a significant Q1 delivery miss and growing skepticism regarding the long-term viability of its robotaxi pivot [1][2].</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a failed intraday retest of $365.00 or a break below the $360.00 support level.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $375.50, representing a reversal above the recent breakdown zone.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$345.00 initial target within 1-2 trading sessions as bearish momentum persists.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">RSI at 38.6 indicates the stock is nearing oversold conditions, which may trigger a technical bounce.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">NVDA</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">54</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $177.39
+    <span style="color:#22c55e">+0.9%</span>
+    &nbsp;·&nbsp; RSI: 46.9
+    &nbsp;·&nbsp; Vol: 0.79x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:62%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 20.2/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 6.0/15 ·
+    RelOpp: 7.8/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -1.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">general_setup</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. Anticipation of a major upcoming catalyst [3] and strategic investments in the chip ecosystem [4] suggest upside potential despite recent consolidation.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Break and hold above the 20-day MA ($177.62) on volume.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Daily close below $174.50 or recent swing low.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$182.64 (MA50) as initial resistance target.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Negative sentiment regarding Vera Rubin design changes impacting memory partners [5].</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">LLY</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">53</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $935.58
+    <span style="color:#ef4444">-2.0%</span>
+    &nbsp;·&nbsp; RSI: 39.9
+    &nbsp;·&nbsp; Vol: 0.84x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:62%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 16.8/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 6.0/15 ·
+    RelOpp: 7.8/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -1.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">general_setup</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">SHORT. LLY is exhibiting a 'sell the news' reaction, trading down nearly 2% despite landmark FDA approval [5] and acquisition headlines [1, 3]. Technical weakness is confirmed by the price remaining below both the MA20 and MA50, suggesting fundamental catalysts are failing to attract new buyers.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a failed retest of the MA20 ($941.28) or a break below the intraday low of $930.00.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $948.00 to account for potential volatility around the MA20.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$912.00 initial target for a 1-3 day swing.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">The oral weight-loss pill approval [5] is a major fundamental tailwind that could trigger a sharp short squeeze if broader market sentiment improves.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">PLTR</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">53</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $148.46
+    <span style="color:#22c55e">+1.3%</span>
+    &nbsp;·&nbsp; RSI: 47.9
+    &nbsp;·&nbsp; Vol: 0.61x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:61%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 21.5/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 7.0/15 ·
+    RelOpp: 4.8/15 ·
+    Freshness: 9.9/10 ·
+    RiskPenalty: -1.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. Palantir's operational dominance and specific valuation metrics suggest the stock is undervalued despite recent price lag [3][4]. The current position near MA50 support offers a favorable risk-reward entry for a mean-reversion play.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Limit orders between $147.50 and $148.50 to capture support near the MA50.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Daily close below $146.50, invalidating the MA50 support level.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$151.40 (MA20) followed by $155.00 within 3-5 trading sessions.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Price remains below the MA20 in a choppy market regime, indicating potential for further consolidation.</span></div>
+  </div>
+</div>
+
+
+
+<h2>🌍 Macro Watchlist</h2>
+<div class="card" style="border-left:3px solid #64748b">
+  <div style="font-size:12px;color:#94a3b8"><code>XOM</code> IGNORE | 38 · <code>COIN</code> IGNORE | 38</div>
+</div>
+
+
+<h2>📰 Key News</h2>
+<div style="background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:14px 18px">
+<div class="news-group"><div class="news-group-header"><code>AMZN</code>&nbsp;&nbsp;·&nbsp;&nbsp;ma</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Amazon in talks to buy $9 billion satellite group Globalstar, FT reports - Reuters</span><span class="news-src">[Reuters]</span></div>
+<div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Altisource resumed with a Buy at B. Riley - TipRanks</span><span class="news-src">[Tipranks]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>MSFT</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">Microsoft executive touts Copilot sales traction as AI anxiety weighs on stock - CNBC</span><span class="news-src">[Cnbc]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>JPM</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">Iran's maximum leverage will be felt in a few weeks as pain starts to hit economies globally: JPM - CNBC</span><span class="news-src">[Cnbc]</span></div>
+<div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">JPMorgan’s David Kelly says current oil and tariff issues are 'temporary' - CNBC</span><span class="news-src">[Cnbc]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>AAPL</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">Apple at 50 is trying to prove it can win the AI era - cnbc.com</span><span class="news-src">[Cnbc]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>TSLA</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">“Struggling” Tesla Stock (TSLA) Slumps as Q1 Vehicle Deliveries Miss Forecasts</span><span class="news-src">[Yahoo Finance]</span></div>
+<div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">Tesla Slides 3% on Delivery Shortfall: Why the $20 Billion Robotaxi Bet Makes This Miss Hard to Judge</span><span class="news-src">[Yahoo Finance]</span></div>
+</div>
+
+</div>
+
+<h2>🛡 Research Risk Rules</h2>
+<div class="risk-box">
+  <ul style="list-style:none;padding:0">
+    <li>📌 Define risk limits before entering any position.</li>
+    <li>⚠ Prefer smaller size in bear or choppy regimes.</li>
+    <li>🚫 Avoid chasing names already extended on the day.</li>
+    <li>🎯 Focus on the best few ideas rather than too many weak ones.</li>
+    <li>🌍 Reassess long theses if broad market conditions deteriorate sharply.</li>
+  </ul>
+</div>
+
+<div style="margin-top:24px;font-size:11px;color:#334155;border-top:.5px solid #1e293b;padding-top:16px">
+  ⚠ This is a personal research tool, not financial advice.
+</div>
+</body>
+</html>
