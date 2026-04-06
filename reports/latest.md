@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-04-03
-*Generated: 2026-04-03 14:46*
+# 📊 Daily Research Report — 2026-04-06
+*Generated: 2026-04-06 14:46*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.09%
-**SPY RSI(14):** 47.4
+**SPY:** +0.22%
+**SPY RSI(14):** 44.1
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -19,104 +19,90 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (5):** `TSLA` · `NVDA` · `LLY` · `PLTR` · `AMD`
-**⛔ IGNORE (15):** `MSFT` · `GLD` · `AVGO` · `AMZN` · `ARM` · `JPM`
+**⚪ MONITOR (3):** `NFLX` · `AMZN` · `TSLA`
+**⛔ IGNORE (17):** `TSM` · `IWM` · `AAPL` · `LLY` · `META` · `MSFT`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 TSLA — ▼ SHORT | MONITOR | Score: 56/85
+### ⚪ #1 NFLX — ▲ LONG | MONITOR | Score: 53/85
 
-**Price Snapshot:** $360.59 (-5.4%) | **RSI:** 38.6 | **Vol ratio:** 1.37x | **ATR:** 13.97 | **vs MA20:** below ⚠️
+**Price Snapshot:** $98.68 (+0.0%) | **RSI:** 59.6 | **Vol ratio:** 0.3x | **ATR:** 2.9082 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.1/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `10.2/15` | Freshness `9.9/10` | RiskPenalty `-4.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** SHORT. TSLA is under heavy selling pressure following a significant Q1 delivery miss and growing skepticism regarding the long-term viability of its robotaxi pivot [1][2].
-
-**Entry Consideration:** Enter on a failed intraday retest of $365.00 or a break below the $360.00 support level.
-**Risk / Invalidation Level:** Hard stop at $375.50, representing a reversal above the recent breakdown zone.
-**Initial Upside / Downside Case:** $345.00 initial target within 1-2 trading sessions as bearish momentum persists.
-**Key Risk:** ❌ RSI at 38.6 indicates the stock is nearing oversold conditions, which may trigger a technical bounce.
-
-### ⚪ #2 NVDA — ▲ LONG | MONITOR | Score: 54/85
-
-**Price Snapshot:** $177.39 (+0.9%) | **RSI:** 46.9 | **Vol ratio:** 0.79x | **ATR:** 5.4479 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `20.2/25` | MarketConf `11.0/20` | RegimeFit `6.0/15` | RelOpp `7.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `general_setup`
-
-**What & Why:** LONG. Anticipation of a major upcoming catalyst [3] and strategic investments in the chip ecosystem [4] suggest upside potential despite recent consolidation.
-
-**Entry Consideration:** Break and hold above the 20-day MA ($177.62) on volume.
-**Risk / Invalidation Level:** Daily close below $174.50 or recent swing low.
-**Initial Upside / Downside Case:** $182.64 (MA50) as initial resistance target.
-**Key Risk:** ❌ Negative sentiment regarding Vera Rubin design changes impacting memory partners [5].
-
-### ⚪ #3 LLY — ▼ SHORT | MONITOR | Score: 53/85
-
-**Price Snapshot:** $935.58 (-2.0%) | **RSI:** 39.9 | **Vol ratio:** 0.84x | **ATR:** 27.91 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `16.8/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `7.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `general_setup`
-
-**What & Why:** SHORT. LLY is exhibiting a 'sell the news' reaction, trading down nearly 2% despite landmark FDA approval [5] and acquisition headlines [1, 3]. Technical weakness is confirmed by the price remaining below both the MA20 and MA50, suggesting fundamental catalysts are failing to attract new buyers.
-
-**Entry Consideration:** Enter on a failed retest of the MA20 ($941.28) or a break below the intraday low of $930.00.
-**Risk / Invalidation Level:** Hard stop at $948.00 to account for potential volatility around the MA20.
-**Initial Upside / Downside Case:** $912.00 initial target for a 1-3 day swing.
-**Key Risk:** ❌ The oral weight-loss pill approval [5] is a major fundamental tailwind that could trigger a sharp short squeeze if broader market sentiment improves.
-
-### ⚪ #4 PLTR — ▲ LONG | MONITOR | Score: 53/85
-
-**Price Snapshot:** $148.46 (+1.3%) | **RSI:** 47.9 | **Vol ratio:** 0.61x | **ATR:** 6.9764 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `21.5/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `4.8/15` | Freshness `9.9/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `20.6/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Palantir's operational dominance and specific valuation metrics suggest the stock is undervalued despite recent price lag [3][4]. The current position near MA50 support offers a favorable risk-reward entry for a mean-reversion play.
+**What & Why:** LONG. Positive momentum is supported by a pre-earnings analyst upgrade to Buy [1] and relative strength as the stock rallies despite broader market headwinds [2].
 
-**Entry Consideration:** Limit orders between $147.50 and $148.50 to capture support near the MA50.
-**Risk / Invalidation Level:** Daily close below $146.50, invalidating the MA50 support level.
-**Initial Upside / Downside Case:** $151.40 (MA20) followed by $155.00 within 3-5 trading sessions.
-**Key Risk:** ❌ Price remains below the MA20 in a choppy market regime, indicating potential for further consolidation.
+**Entry Consideration:** Entry near current levels ($98.68) or on a minor pullback to $97.50 to maintain a favorable risk/reward ratio above the MA20.
+**Risk / Invalidation Level:** Hard stop at $94.50, just below the 20-day moving average ($94.65).
+**Initial Upside / Downside Case:** $105.00 psychological resistance level ahead of the earnings announcement.
+**Key Risk:** ❌ High event risk and potential for 'sell the news' volatility surrounding the upcoming earnings report.
+
+### ⚪ #2 AMZN — ▲ LONG | MONITOR | Score: 52/85
+
+**Price Snapshot:** $211.52 (+0.8%) | **RSI:** 49.8 | **Vol ratio:** 0.12x | **ATR:** 5.6693 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.7/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `general_setup`
+
+**What & Why:** LONG. AMZN is supported by positive Wall Street growth outlooks [5] and speculative interest regarding potential M&A activity [1].
+
+**Entry Consideration:** Entry on a retest of the MA20 ($209.28) or a sustained hold above $211.00.
+**Risk / Invalidation Level:** Daily close below $208.50 to invalidate the support level.
+**Initial Upside / Downside Case:** $214.50 (MA50) within the next 2-5 sessions.
+**Key Risk:** ❌ Extremely low relative volume (0.12x) indicates a lack of institutional participation.
+
+### ⚪ #3 TSLA — ▼ SHORT | MONITOR | Score: 51/85
+
+**Price Snapshot:** $357.85 (-0.8%) | **RSI:** 35.8 | **Vol ratio:** 0.31x | **ATR:** 13.8236 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `19.0/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** SHORT. TSLA is trending below its MA20 and MA50 with negative sentiment following earnings, exacerbated by JPMorgan's forecast of a further 60% decline [1]. The bearish momentum is likely to persist as the stock fails to reclaim key technical levels in a choppy market regime.
+
+**Entry Consideration:** Enter on a break below $355.00 or a weak retest of the $360.00 resistance level.
+**Risk / Invalidation Level:** Stop loss at $372.50, above the recent intraday pivot and psychological resistance.
+**Initial Upside / Downside Case:** $335.00 initial target / 2-5 trading days.
+**Key Risk:** ❌ RSI at 35.8 is approaching oversold territory, which may trigger a short-term technical bounce.
 
 ---
 ## 🌍 Macro Watchlist
 
-- ⛔ `XOM` SHORT | IGNORE | score 38 | —
-- ⛔ `COIN` SHORT | IGNORE | score 38 | —
+- ⛔ `PLTR` SHORT | IGNORE | score 26 | —
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 39
-- `SPY` LONG | IGNORE | score 34
+- `QQQ` LONG | IGNORE | score 38
+- `SPY` LONG | IGNORE | score 38
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AMZN**  ·  ma
-  ▲ Amazon in talks to buy $9 billion satellite group Globalstar, FT reports - Reuters  [Reuters]
-  ▲ Altisource resumed with a Buy at B. Riley - TipRanks  [Tipranks]
-
-**MSFT**  ·  macro
-  ▼ Microsoft executive touts Copilot sales traction as AI anxiety weighs on stock - CNBC  [Cnbc]
-
 **JPM**  ·  macro
-  ▼ Iran's maximum leverage will be felt in a few weeks as pain starts to hit economies globally: JPM - CNBC  [Cnbc]
-  ▼ JPMorgan’s David Kelly says current oil and tariff issues are 'temporary' - CNBC  [Cnbc]
+  ▼ JPMorgan's Dimon warns Iran war may drive inflation and interest rates higher - Reuters  [Reuters]
+  ▼ Jamie Dimon Warns of Higher Inflation, Interest Rates From Iran War - WSJ  [Wsj]
 
-**AAPL**  ·  earnings
-  ▼ Apple at 50 is trying to prove it can win the AI era - cnbc.com  [Cnbc]
+**MACRO**  ·  earnings
+  ▲ Barclays PLC (BCS) Rose on Earnings Beat Driven by Investment Banking Strength  [Yahoo Finance]
 
-**TSLA**  ·  earnings
-  ▼ “Struggling” Tesla Stock (TSLA) Slumps as Q1 Vehicle Deliveries Miss Forecasts  [Yahoo Finance]
-  ▼ Tesla Slides 3% on Delivery Shortfall: Why the $20 Billion Robotaxi Bet Makes This Miss Hard to Judge  [Yahoo Finance]
+**NFLX**  ·  earnings
+  ▲ Netflix Stock Upgraded To Buy Ahead Of Earnings Report  [Yahoo Finance]
+
+**NVDA**  ·  earnings
+  ▲ Prediction: These 5 Stocks Will Be the Best Performers of 2026 - The Motley Fool  [Fool]
+  ▲ 10 Federal Taps Top-Ranked Nvidia AI Engineer to Fill Self-Storage Industry's First Chief AI Officer Role - marketscreener.com  [Marketscreener]
+
+**SPY**  ·  macro
+  ◆ S&P 500: Prepare For Change (Technical Analysis) - Seeking Alpha  [Seekingalpha]
+
+**GOOGL**  ·  macro
+  ▼ Gold slides as Trump escalates Iran threats, inflation fears rise - Seeking Alpha  [Seekingalpha]
 
 ---
 ## 🛡 Research Risk Rules
