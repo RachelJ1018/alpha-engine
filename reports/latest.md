@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-04-09
-*Generated: 2026-04-09 15:03*
+# 📊 Daily Research Report — 2026-04-10
+*Generated: 2026-04-10 14:46*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.14%
-**SPY RSI(14):** 59.3
+**SPY:** +0.19%
+**SPY RSI(14):** 68.8
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -19,55 +19,92 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (1):** `PLTR`
-**⛔ IGNORE (19):** `AVGO` · `NVDA` · `UNH` · `LLY` · `GLD` · `TSM`
+**⛔ IGNORE (20):** `TSM` · `IWM` · `AAPL` · `NVDA` · `LLY` · `ARM`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 PLTR — ▲ LONG | MONITOR | Score: 50/85
+### ⛔ #1 TSM — ▲ LONG | IGNORE | Score: 48/85
 
-**Price Snapshot:** $130.49 (-7.3%) | **RSI:** 32.5 | **Vol ratio:** 0.76x | **ATR:** 8.4692 | **vs MA20:** below ⚠️
+**Price Snapshot:** $375.27 (+2.7%) | **RSI:** 69.9 | **Vol ratio:** 0.45x | **ATR:** 13.5693 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.9/25` | MarketConf `8.0/20` | RegimeFit `7.0/15` | RelOpp `9.8/15` | Freshness `10.0/10` | RiskPenalty `-6.0`
+**Layered Scores:** EventEdge `17.8/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `general_setup`
+
+
+### ⛔ #2 IWM — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $261.86 (-0.0%) | **RSI:** 72.2 | **Vol ratio:** 0.12x | **ATR:** 5.59 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.9/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. The sharp -7.3% decline has pushed RSI to an oversold 32.5, presenting a mean-reversion opportunity bolstered by geopolitical defense tailwinds [2] and aggressive long-term analyst price targets [1].
 
-**Entry Consideration:** Enter on a reclaim of $131.00 or signs of base formation near the $130.00 psychological level.
-**Risk / Invalidation Level:** Daily close below $125.00 or if selling volume accelerates further.
-**Initial Upside / Downside Case:** $140.00 initial target for a dead-cat bounce or gap-fill attempt over 2-5 days.
-**Key Risk:** ❌ Negative short-term momentum and analyst warnings against early entry following the sharp sell-off [3].
+### ⛔ #3 AAPL — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $261.82 (+0.5%) | **RSI:** 68.7 | **Vol ratio:** 0.14x | **ATR:** 6.0864 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-4.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #4 NVDA — ▲ LONG | IGNORE | Score: 44/85
+
+**Price Snapshot:** $188.26 (+2.4%) | **RSI:** 67.9 | **Vol ratio:** 0.29x | **ATR:** 5.1114 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.2/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-4.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 LLY — ▲ LONG | IGNORE | Score: 43/85
+
+**Price Snapshot:** $943.32 (-1.2%) | **RSI:** 58.9 | **Vol ratio:** 0.15x | **ATR:** 26.5882 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.5/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-4.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+---
+## 🌍 Macro Watchlist
+
+- ⛔ `XOM` SHORT | IGNORE | score 33 | —
+- ⛔ `LMT` SHORT | IGNORE | score 33 | —
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 35
-- `SPY` LONG | IGNORE | score 34
+- `QQQ` SHORT | IGNORE | score 35
+- `SPY` SHORT | IGNORE | score 34
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AAPL**  ·  macro
-  ▼ Apple’s Foldable iPhone Remains on Track for September Debut (AAPL) - Bloomberg.com  [Bloomberg]
-  ▲ Apple’s stock could surge 20%, and the MacBook Neo could be a key catalyst - MarketWatch  [Marketwatch]
+**MACRO**  ·  macro
+  ▲ Consumer sentiment hits record low, inflation fears rise amid Iran war  [CNBC Markets]
 
-**JPM**  ·  earnings
-  ▼ Piper Sandler Remains Cautious on JPMorgan (JPM) Amid Weaker Earnings Forecasts  [Yahoo Finance]
+**TSM**  ·  macro
+  ◆ Stock Market Today: Dow Wavers On Surprise CPI Inflation Data; Nvidia Chipmaker TSMC Jumps (Live Coverage)  [Yahoo Finance]
 
-**NFLX**  ·  earnings
-  ▲ Oppenheimer Bullish on Netflix (NFLX) Amid Higher Revenue Driven By Price Hikes  [Yahoo Finance]
-
-**MACRO**  ·  earnings
-  ▲ Delta beats on Q1 earnings, maintains guidance despite fuel spike, TSA headwinds  [Yahoo Finance]
-
-**PLTR**  ·  macro
-  ▲ Will Palantir Reach $230 Per Share? This Wall Street Analyst Thinks So. - The Motley Fool  [Fool]
-  ▲ Trump Just Promised to Bomb Iran Back to the ‘Stone Age.’ These Are 2 Stocks to Buy Now - 24/7 Wall St.  [247Wallst]
+**PLTR**  ·  earnings
+  ▲ Palantir Stock Takes A Burry Beatdown: Are Dip‑Buyers Done?  [Finance]
+  ▼ Software stocks selloff: PLTR, MSFT drop on Anthropic’s ‘Mythos’ model fears - StreetInsider  [Streetinsider]
 
 **LLY**  ·  earnings
-  ▲ Labcorp Declares Quarterly Dividend – Company Announcement - Financial Times  [Markets]
+  ▲ Morgan Stanley Issues Pessimistic Forecast for Lundin Mining (TSE:LUN) Stock Price - MarketBeat  [Marketbeat]
+
+**TSLA**  ·  macro
+  ▲ Futures: Stocks Add To Gains With Big News Due - Investor's Business Daily  [Investors]
+
+**GOOGL**  ·  earnings
+  ▲ Applied Digital dips after Q3 results, but analysts remain largely positive - Seeking Alpha  [Seekingalpha]
+
+**ARM**  ·  earnings
+  ▼ Amaero Signs Supplier Agreement With A $7.8 Million Order For Titanium Powders - The Manila Times  [Manilatimes]
 
 ---
 ## 🛡 Research Risk Rules
