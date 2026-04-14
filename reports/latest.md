@@ -1,14 +1,12 @@
-# 📊 Daily Research Report — 2026-04-13
-*Generated: 2026-04-13 15:02*
+# 📊 Daily Research Report — 2026-04-14
+*Generated: 2026-04-14 15:03*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.10%
-**SPY RSI(14):** 65.5
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** +0.79%
+**SPY RSI(14):** 71.6
 
 ---
 ## ⭐ High Conviction Picks
@@ -19,84 +17,129 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (3):** `COST` · `NVDA` · `GS`
-**⛔ IGNORE (17):** `AMD` · `MSFT` · `SOFI` · `GLD` · `AMZN` · `IWM`
+**⚪ MONITOR (10):** `NVDA` · `AMD` · `AAPL` · `GLD` · `TSM` · `TSLA`
+**⛔ IGNORE (10):** `COST` · `BAC` · `ARM` · `JPM` · `GS` · `PLTR`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 COST — ▼ SHORT | MONITOR | Score: 50/85
+### ⚪ #1 NVDA — ▲ LONG | MONITOR | Score: 57/85
 
-**Price Snapshot:** $988.78 (-1.0%) | **RSI:** 59.6 | **Vol ratio:** 0.16x | **ATR:** 18.2864 | **vs MA20:** below ⚠️
+**Price Snapshot:** $193.26 (+2.1%) | **RSI:** 70.0 | **Vol ratio:** 0.3x | **ATR:** 5.2075 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `21.9/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Nvidia's strategic pact with a quantum computing firm [2] and positive sentiment regarding current entry levels [4] provide a bullish catalyst. The stock shows strong relative strength by trending premarket ahead of major earnings [3].
+
+**Entry Consideration:** Limit entry near $191.50 to manage overbought RSI levels.
+**Risk / Invalidation Level:** Close below $184.50, which aligns with recent support levels.
+**Initial Upside / Downside Case:** $205.00 initial target within 3-5 trading days.
+**Key Risk:** ❌ RSI of 70.0 indicates overbought conditions, increasing the probability of a short-term pullback.
+
+### ⚪ #2 AMD — ▲ LONG | MONITOR | Score: 56/85
+
+**Price Snapshot:** $249.22 (+1.0%) | **RSI:** 73.8 | **Vol ratio:** 0.24x | **ATR:** 10.675 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `20.2/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Strong demand signals for GPU and CPU products combined with positive supply-chain momentum from TSMC suggest an upbeat Q1 outlook [1][3].
+
+**Entry Consideration:** Enter on a minor retracement toward $245.00 or a sustained break above $250.00 to account for overbought RSI.
+**Risk / Invalidation Level:** Hard stop at $238.50, invalidating the immediate pre-earnings momentum trend.
+**Initial Upside / Downside Case:** $265.00 within 1-3 trading days as momentum carries into the earnings event.
+**Key Risk:** ❌ RSI of 73.8 suggests the stock is technically overbought, increasing the risk of a short-term cooling period.
+
+### ⚪ #3 GLD — ▲ LONG | MONITOR | Score: 53/85
+
+**Price Snapshot:** $441.04 (+1.3%) | **RSI:** 69.7 | **Vol ratio:** 0.15x | **ATR:** 10.5679 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.5/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. GLD is positioned to benefit from safe-haven demand driven by the Persian Gulf crisis [5] and increasing comparative interest in physical gold exposure over miners [4].
+
+**Entry Consideration:** Enter on a minor retracement toward $439.50 to improve risk-reward given the current RSI level.
+**Risk / Invalidation Level:** Exit if price closes below the 20-day moving average of $427.06.
+**Initial Upside / Downside Case:** Initial target at the 50-day moving average of $449.89 over the next 1-2 weeks.
+**Key Risk:** ❌ RSI at 69.7 suggests the asset is approaching overbought territory, risking a short-term technical pullback.
+
+### ⚪ #4 TSLA — ▲ LONG | MONITOR | Score: 52/85
+
+**Price Snapshot:** $362.39 (+2.8%) | **RSI:** 41.2 | **Vol ratio:** 0.36x | **ATR:** 14.7771 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `general_setup`
 
-**What & Why:** SHORT COST as price has broken below both the MA20 and MA50, signaling a loss of short-term momentum despite a neutral RSI. Negative sentiment and relative underperformance against SPY suggest further downside in a choppy market regime [0].
+**What & Why:** LONG. Regulatory approval for FSD in the Netherlands signals a major step toward European expansion [5], supported by high-profile analyst attention [4].
 
-**Entry Consideration:** Enter on a retest of the MA50 near $993.40 or a break below $985.00.
-**Risk / Invalidation Level:** Stop loss set at $995.50, just above the MA20 and recent resistance.
-**Initial Upside / Downside Case:** Target $970.00 for a 1-3 day swing trade.
-**Key Risk:** ❌ Costco's defensive characteristics may trigger a sharp reversal if broader market volatility increases.
+**Entry Consideration:** Entry between $362.00 and $363.50 on current momentum.
+**Risk / Invalidation Level:** Daily close below $354.00 or loss of intraday support.
+**Initial Upside / Downside Case:** $367.25 (MA20) initial target with extension to $375.00 over 1-3 days.
+**Key Risk:** ❌ Technical resistance at the 20-day and 50-day moving averages.
 
-### ⚪ #2 NVDA — ▲ LONG | MONITOR | Score: 49/85
+### ⚪ #5 NFLX — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $189.11 (+0.2%) | **RSI:** 66.3 | **Vol ratio:** 0.26x | **ATR:** 5.0679 | **vs MA20:** above ✅
+**Price Snapshot:** $105.07 (+1.9%) | **RSI:** 92.9 | **Vol ratio:** 0.21x | **ATR:** 2.805 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. NVDA maintains a bullish posture above its MA20 and MA50, supported by positive cloud infrastructure sentiment from major customers like Amazon [2]. The high novelty score and upcoming earnings event suggest a potential volatility-driven move higher.
-
-**Entry Consideration:** Enter on a retest of $188.50 or a break above the $190.00 psychological level.
-**Risk / Invalidation Level:** Exit if price closes below $184.00, invalidating the short-term support.
-**Initial Upside / Downside Case:** $196.00 initial target within 1-3 trading sessions.
-**Key Risk:** ❌ RSI at 66.3 suggests the stock is nearing overbought levels which may lead to mean reversion in a choppy regime.
-
-### ⚪ #3 GS — ▲ LONG | MONITOR | Score: 48/85
-
-**Price Snapshot:** $879.83 (-3.1%) | **RSI:** 62.8 | **Vol ratio:** 0.84x | **ATR:** 26.7836 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.5/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `5.9/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+**Layered Scores:** EventEdge `20.7/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. GS is testing technical support near its MA50 ($869.47) after a -3.08% pullback, offering a buy-the-dip opportunity supported by positive earnings sentiment and analyst activity [1].
+**What & Why:** LONG. Netflix is a primary focus for the earnings season kickoff, supported by significant analyst attention and inclusion in high-profile growth highlights [2, 4, 5]. This positioning suggests a pre-earnings momentum build as the market anticipates reporting results [1].
 
-**Entry Consideration:** Limit orders between $870.00 and $875.00 to align with the 50-day moving average support.
-**Risk / Invalidation Level:** Daily close below $864.00 to signal a break of the medium-term uptrend.
-**Initial Upside / Downside Case:** $900.00 for a mean reversion move over the next 3-5 trading sessions.
-**Key Risk:** ❌ Continued post-earnings selling pressure despite positive sentiment scores.
+**Entry Consideration:** Limit order near $104.20 to account for extreme overbought conditions while maintaining trend exposure.
+**Risk / Invalidation Level:** Daily close below $99.80, which aligns with psychological support and the recent breakout zone.
+**Initial Upside / Downside Case:** $115.00 initial target within the 5-day window leading into the earnings event.
+**Key Risk:** ❌ RSI of 92.9 indicates an extremely overextended state, making the stock vulnerable to profit-taking.
+
+### ⚪ #6 LLY — ▲ LONG | MONITOR | Score: 48/85
+
+**Price Snapshot:** $936.19 (+0.7%) | **RSI:** 57.7 | **Vol ratio:** 0.14x | **ATR:** 26.9443 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.0/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LLY is positioned for a LONG play as positive trial data reiterations [2] and a significant $7.8B acquisition of Centessa Pharmaceuticals [4] signal aggressive growth in its neuroscience pipeline. The price holding above the MA20 ($922.3) amid positive market sentiment supports a technical recovery toward the MA50.
+
+**Entry Consideration:** Enter on a successful retest of the MA20 support level near $925 or on a break above $940 with increased volume.
+**Risk / Invalidation Level:** Daily close below $915, invalidating the recent support established near the 20-day moving average.
+**Initial Upside / Downside Case:** Initial target of $965, representing a partial retracement toward the 50-day moving average over the next 5-10 trading sessions.
+**Key Risk:** ❌ Extremely low relative volume (0.14x) indicates a lack of current buying pressure, which may lead to price stagnation.
 
 ---
-## 🌍 Macro Watchlist
+## 📈 Market Instruments
 
-- ⛔ `XOM` SHORT | IGNORE | score 28 | —
+- `QQQ` LONG | IGNORE | score 39
 
 ---
 ## 📰 Key News (Last 24h)
 
-**JNJ**  ·  earnings
-  ▲ Earnings playbook: JPMorgan Chase and Netflix kick off the reporting season - CNBC  [Cnbc]
+**LLY**  ·  macro
+  ▲ Leerink reiterates Eli Lilly stock rating on positive trial data  [Investing.com]
 
-**MACRO**  ·  earnings
-  ▼ Hormuz blockade could deepen world’s worst energy crisis — and risk a dangerous misstep  [CNBC Markets]
-  ▲ TransDigm Group (TDG) Fell Despite Strong Earnings Report  [Yahoo Finance]
+**META**  ·  macro
+  ▲ Meta Stock Needs to Show How Much Cash It Can Squeeze Out of Its New AI Tools before Q1; Barclays Reiterates Buy Forecast  [Yahoo Finance]
+  ▲ Meta (META) Stock; Gains Marginally as Report Projects Ad Revenue Lead Over Google by 2026  [CoinCentral]
 
-**JPM**  ·  macro
-  ◆ Here are the 3 big things we're watching in the stock market this week - CNBC  [Cnbc]
-  ▼ JPMorgan’s Dimon warns of brewing market storm - thestreet.com  [Thestreet]
+**JPM**  ·  earnings
+  ▲ Will JPMorgan Chase & Co. (JPM) Beat Estimates Again in Its Next Earnings Report?  [Yahoo Finance]
 
-**PLTR**  ·  earnings
-  ▲ Michael Burry is still shorting Palantir — and says Anthropic is the bigger AI winner - Yahoo Finance  [Finance]
+**AVGO**  ·  ma
+  ▲ Google and Anthropic Deal Strengthen Broadcom Inc. (AVGO) Growth Prospects  [Yahoo Finance]
 
-**NVDA**  ·  earnings
-  ▲ G Sachs Slightly Raises SHANGHAI PHARMACEUTICALS (02607.HK) TP to HKD10.3, Lifts Net Profit Forecast - AASTOCKS.com  [Aastocks]
+**INTC**  ·  earnings
+  ◆ Palantir Is Trading at 106 Times Forward Earnings. Here's Why This Artificial Intelligence (AI) Stock Could Still Surprise You.  [The Motley Fool]
 
-**V**  ·  earnings
-  ▲ Robeco Institutional Asset Management B.V. Has $82.93 Million Holdings in Buenaventura Mining Company Inc. $BVN - MarketBeat  [Marketbeat]
+**NVDA**  ·  macro
+  ▲ Why Nvidia Stock May Frustrate Some Growth Investors  [AOL.com]
+  ▲ Newly Public Quantum Computing Firm Rated Buy On Nvidia Pact  [Investor's Business Daily]
 
 ---
 ## 🛡 Research Risk Rules
