@@ -1,12 +1,14 @@
-# 📊 Daily Research Report — 2026-04-20
-*Generated: 2026-04-20 15:02*
+# 📊 Daily Research Report — 2026-04-21
+*Generated: 2026-04-21 15:00*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.43%
-**SPY RSI(14):** 95.7
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** -0.14%
+**SPY RSI(14):** 95.4
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,56 +19,54 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (1):** `TSLA`
-**⛔ IGNORE (19):** `MSFT` · `GS` · `BAC` · `LLY` · `AVGO` · `NVDA`
+**⚪ MONITOR (1):** `UNH`
+**⛔ IGNORE (19):** `NFLX` · `TSLA` · `MSFT` · `META` · `PLTR` · `BAC`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 TSLA — ▲ LONG | MONITOR | Score: 53/85
+### ⚪ #1 UNH — ▲ LONG | MONITOR | Score: 49/85
 
-**Price Snapshot:** $390.75 (-2.5%) | **RSI:** 62.9 | **Vol ratio:** 0.45x | **ATR:** 16.9214 | **vs MA20:** above ✅
+**Price Snapshot:** $346.37 (+7.1%) | **RSI:** 93.5 | **Vol ratio:** 1.28x | **ATR:** 10.3836 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.3/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `17.9/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `10.2/15` | Freshness `10.0/10` | RiskPenalty `-7.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Recent analyst upgrades [4] and inclusion in top analyst calls [3] provide a bullish catalyst as the stock tests its MA50 support ahead of earnings [1]. The high novelty signal and positive sentiment suggest a potential bounce from current oversold intraday levels.
+**What & Why:** LONG. Positive analyst sentiment from Morgan Stanley suggests institutional accumulation ahead of the earnings catalyst [1].
 
-**Entry Consideration:** Entry near $390.20 (MA50) or on a confirmed bounce from the $390 psychological level.
-**Risk / Invalidation Level:** Daily close below $384.50 to account for MA50 slippage.
-**Initial Upside / Downside Case:** $405.00 within 1-2 trading sessions.
-**Key Risk:** ❌ Broader market weakness (SPY -0.43%) and pre-earnings volatility.
+**Entry Consideration:** Limit order near $342.00 to allow for minor consolidation given the extreme RSI levels.
+**Risk / Invalidation Level:** Hard stop at $328.00, below the recent breakout candle midpoint.
+**Initial Upside / Downside Case:** $360.00 psychological resistance within the 1-3 day earnings window.
+**Key Risk:** ❌ Extreme RSI of 93.5 indicates a severely overextended technical state prone to mean reversion.
 
 ---
-## 🌍 Macro Watchlist
+## 📈 Market Instruments
 
-- ⛔ `LMT` SHORT | IGNORE | score 33 | —
+- `QQQ` LONG | IGNORE | score 35
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AMZN**  ·  ma
-  ▲ Exclusive | Eli Lilly Nears Deal for Cancer Biotech - WSJ  [Wsj]
-  ▲ This Stock Will Be More Profitable Than Amazon and Meta by 2027  [Yahoo Finance]
+**LLY**  ·  macro
+  ▲ UBS reiterates Eli Lilly stock Buy rating after Kelonia deal  [Investing.com]
 
-**GOOGL**  ·  earnings
-  ▼ Google Stock Has Further to Run, Analyst Says. What the Market Is Missing.  [Barron's]
+**AAPL**  ·  macro
+  ▼ Aletheia Capital reiterates Apple stock Sell on memory cost concerns By Investing.com  [Investing.com India]
+  ▲ Is Apple Stock A Buy Ahead of Q1 Earnings on Jan. 29?  [Yahoo Finance]
 
-**GLD**  ·  macro
-  ▲ Why GLD’s 74% Rally Turned Into a Mousetrap and What the Fed Chair Pick Means Now  [Yahoo Finance]
-
-**PLTR**  ·  earnings
-  ▲ Palantir (PLTR) Stock at $146 Looks to May 4 Earnings as Morgan Stanley Flags "Strong Setup" Despite Michael Burry Short  [foreignpolicyjournal.com]
-
-**NVDA**  ·  earnings
-  ▲ This Is How Much Q1 Earnings Growth Rests On Nvidia. It's A Lot.  [Investor's Business Daily]
+**AMZN**  ·  macro
+  ▲ Truist reiterates buy on Amazon stock citing AWS partnership growth  [Investing.com]
+  ▲ Roth/MKM reiterates Buy on Amazon stock, keeps $285 target  [Investing.com]
 
 **MSFT**  ·  earnings
-  ▲ Microsoft (MSFT) Stock Price Trades at 2017 Valuations as Azure Growth Data Shapes Earnings Expectations  [foreignpolicyjournal.com]
+  ▲ Is Microsoft Corporation (MSFT) The Most Profitable Software Stock to Buy Now?  [Yahoo Finance]
 
-**META**  ·  earnings
-  ▲ Meta Platforms Gains 4%: Strong Ad Revenue Growth and PayPal Partnership Put the Stock Back in Focus  [24/7 Wall St.]
+**TSLA**  ·  earnings
+  ◆ How Tesla & Meta stocks are moving ahead of tech earnings  [Yahoo Finance]
+
+**GLD**  ·  macro
+  ▲ 3 Gold Stocks to Buy as Bullion Shines in a Low-Rate Environment  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
