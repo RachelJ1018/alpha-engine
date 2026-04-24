@@ -1,14 +1,12 @@
-# 📊 Daily Research Report — 2026-04-23
-*Generated: 2026-04-23 15:16*
+# 📊 Daily Research Report — 2026-04-24
+*Generated: 2026-04-24 14:58*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.06%
-**SPY RSI(14):** 90.5
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** +0.43%
+**SPY RSI(14):** 87.0
 
 ---
 ## ⭐ High Conviction Picks
@@ -19,83 +17,98 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `TSLA` · `GS` · `AAPL` · `ARM` · `MSFT` · `JPM`
+**⚪ MONITOR (5):** `GS` · `SOFI` · `TSLA` · `BAC` · `MSFT`
+**⛔ IGNORE (15):** `LLY` · `SPY` · `NFLX` · `AAPL` · `NVDA` · `AMZN`
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 TSLA — ▲ LONG | IGNORE | Score: 47/85
+### ⚪ #1 GS — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $375.99 (-3.0%) | **RSI:** 57.2 | **Vol ratio:** 0.72x | **ATR:** 15.8964 | **vs MA20:** above ✅
+**Price Snapshot:** $922.64 (-0.9%) | **RSI:** 66.3 | **Vol ratio:** 0.15x | **ATR:** 24.1896 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.6/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `7.8/15` | Freshness `10.0/10` | RiskPenalty `-4.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 GS — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $943.08 (+0.9%) | **RSI:** 73.2 | **Vol ratio:** 0.12x | **ATR:** 23.435 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `16.4/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `19.0/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. GS remains in a structural uptrend above its MA20 ($890.51), with the current pullback providing a tactical entry point ahead of earnings. Positive institutional sentiment regarding their market analysis [2] reinforces their leadership position during this period of high novelty.
 
-### ⛔ #3 AAPL — ▲ LONG | IGNORE | Score: 44/85
+**Entry Consideration:** Entry on a bounce from $920.00 support or a reclaim of $925.00 to ensure the intraday dip has bottomed.
+**Risk / Invalidation Level:** Daily close below the MA20 at $890.51.
+**Initial Upside / Downside Case:** $945.00 within 1-3 sessions as price reverts to the primary trend.
+**Key Risk:** ❌ Earnings event uncertainty could trigger high volatility and invalidate technical support levels.
 
-**Price Snapshot:** $273.42 (+0.1%) | **RSI:** 67.0 | **Vol ratio:** 0.18x | **ATR:** 6.2767 | **vs MA20:** above ✅
+### ⚪ #2 SOFI — ▲ LONG | MONITOR | Score: 50/85
 
-**Layered Scores:** EventEdge `17.8/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-4.0`
+**Price Snapshot:** $18.28 (-0.2%) | **RSI:** 67.5 | **Vol ratio:** 0.18x | **ATR:** 0.8526 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.3/25` | MarketConf `11.0/20` | RegimeFit `8.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `general_setup`
+
+**What & Why:** LONG. SOFI maintains a bullish technical posture trading above its MA20 and MA50, supported by favorable sentiment in high-growth tech comparisons [2]. The current consolidation on low volume suggests a healthy pause before a potential continuation of the primary uptrend.
+
+**Entry Consideration:** Entry on a successful hold of the $18.00 psychological level or a break above $18.35.
+**Risk / Invalidation Level:** Exit if price closes below the MA50 at $17.84 on high volume.
+**Initial Upside / Downside Case:** $19.50 initial target within a 3-5 day timeframe.
+**Key Risk:** ❌ RSI at 67.5 indicates the stock is nearing overbought levels, which may limit immediate upside momentum.
+
+### ⚪ #3 TSLA — ▲ LONG | MONITOR | Score: 49/85
+
+**Price Snapshot:** $376.96 (+0.9%) | **RSI:** 61.5 | **Vol ratio:** 0.4x | **ATR:** 15.2496 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.4/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. TSLA exhibits late-session strength as the Nasdaq reaches new highs, indicating underlying demand despite recent volatility [1]. The price holds above the 20-day moving average, positioning it for a technical rebound toward the 50-day moving average.
 
-### ⛔ #4 ARM — ▲ LONG | IGNORE | Score: 44/85
+**Entry Consideration:** Entry at $377.00 or on a break above $378.50 with increasing volume.
+**Risk / Invalidation Level:** Hard stop at $368.50, slightly below the 20-day moving average support.
+**Initial Upside / Downside Case:** Initial target of $387.00 (MA50) within a 1-3 day timeframe.
+**Key Risk:** ❌ Negative investor sentiment regarding increased capital expenditures and tempered autonomous driving expectations [3].
 
-**Price Snapshot:** $208.07 (+5.8%) | **RSI:** 89.3 | **Vol ratio:** 1.04x | **ATR:** 9.8786 | **vs MA20:** above ✅
+### ⚪ #4 MSFT — ▲ LONG | MONITOR | Score: 49/85
 
-**Layered Scores:** EventEdge `21.9/25` | MarketConf `8.0/20` | RegimeFit `7.0/15` | RelOpp `4.2/15` | Freshness `10.0/10` | RiskPenalty `-7.0`
+**Price Snapshot:** $418.47 (+0.7%) | **RSI:** 73.4 | **Vol ratio:** 0.19x | **ATR:** 10.9564 | **vs MA20:** above ✅
 
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #5 MSFT — ▲ LONG | IGNORE | Score: 44/85
-
-**Price Snapshot:** $421.09 (-2.7%) | **RSI:** 76.5 | **Vol ratio:** 0.37x | **ATR:** 10.5257 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `21.0/25` | MarketConf `8.0/20` | RegimeFit `7.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-4.0`
+**Layered Scores:** EventEdge `18.2/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. Bullish sentiment is driven by anticipation of upcoming earnings and strategic workforce restructuring aimed at optimizing margins for AI-focused growth [1,3,4]. The market views these efficiency measures as a positive catalyst for long-term scalability despite rising capital costs.
+
+**Entry Consideration:** Limit entry near $416.50 to mitigate risk from the current overbought RSI of 73.4.
+**Risk / Invalidation Level:** Exit position if price closes below $408.00, signaling a failure to hold the recent breakout level.
+**Initial Upside / Downside Case:** $430.00 target based on pre-earnings momentum over the next 2-5 trading sessions.
+**Key Risk:** ❌ Technical overextension (RSI 73.4) poses a high risk of a mean-reversion pullback before the earnings event.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 41
+- `SPY` LONG | IGNORE | score 46
+- `QQQ` LONG | IGNORE | score 42
 
 ---
 ## 📰 Key News (Last 24h)
 
-**INTC**  ·  earnings
-  ▲ Intel to report first quarter earnings as CPUs become key to AI growth  [Yahoo Finance]
-
 **META**  ·  earnings
-  ◆ META, MSFT: Top Analyst Weighs in on These Two Tech Giants Ahead of April 29 Earnings  [TipRanks]
-
-**MSFT**  ·  earnings
-  ▲ Goldman has very good news for beaten-down Microsoft investors | MSFT  [thestreet.com]
-  ▲ MSFT (Microsoft Corporation) delivers Q1 2026 EPS beat of 2.6 percent, shares rise 0.6 percent on favorable investor reception. - Rating Upgrade  [Xã Vĩnh Công]
-
-**BAC**  ·  earnings
-  ◆ Bank of America resets Microsoft stock forecast ahead of earnings  [thestreet.com]
-
-**GOOGL**  ·  earnings
-  ▲ GOOGL (Alphabet Inc.) posts 4.2 percent EPS beat in Q4 2025, shares climb 1.68 percent on upbeat investor sentiment. - Real Time Stock Idea Network  [Xã Thanh Hà]
+  ▼ Chips up, software down; Meta job cuts; and earnings key to our newest stock  [CNBC]
+  ▲ Guggenheim reiterates Meta stock rating on ad growth, AI progress By Investing.com  [Investing.com Australia]
 
 **COST**  ·  earnings
-  ▼ What affects FTAI Infrastructure (FIP) stock price | Q4 2025: Earnings Underperform - Market Risk  [Cổng thông tin điện tử tỉnh Lào Cai]
-  ▲ Smart (EM) Cost Structure | Smart Share Global ADS beats EPS ests by 429.6% - Revenue Beat  [Cổng thông tin điện tử tỉnh Lào Cai]
+  ▲ UBS raises STMicroelectronics stock price target to €49 on earnings beat  [Investing.com]
+  ▼ KeyBanc cuts SAP stock price target on guidance, keeps overweight  [Investing.com]
+
+**AMD**  ·  earnings
+  ◆ Are Intel's impressive earnings a precursor to AMD's?  [Yahoo Finance]
+
+**PLTR**  ·  earnings
+  ▲ Should Investors Buy the Pullback in Palantir Stock (PLTR) Ahead of Q1 Earnings? Wall Street Weighs in  [TipRanks]
+
+**NVDA**  ·  ma
+  ▲ Is Marvell Stock A Buy At 40x PE Following Nvidia, Google Deals?  [Forbes]
+  ◆ Palantir Earnings Could Ignite AI Stocks Before Nvidia  [Mitrade]
 
 ---
 ## 🛡 Research Risk Rules
