@@ -1,14 +1,12 @@
-# 📊 Daily Research Report — 2026-04-27
-*Generated: 2026-04-27 15:14*
+# 📊 Daily Research Report — 2026-04-28
+*Generated: 2026-04-28 15:21*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.13%
-**SPY RSI(14):** 86.3
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.65%
+**SPY RSI(14):** 77.6
 
 ---
 ## ⭐ High Conviction Picks
@@ -19,64 +17,94 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (2):** `JPM` · `AAPL`
-**⛔ IGNORE (18):** `NFLX` · `GS` · `NVDA` · `TSLA` · `PLTR` · `BAC`
+**⚪ MONITOR (4):** `AAPL` · `JPM` · `TSLA` · `GOOGL`
+**⛔ IGNORE (16):** `IWM` · `AMZN` · `ARM` · `META` · `GS` · `BAC`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 JPM — ▲ LONG | MONITOR | Score: 50/85
+### ⚪ #1 AAPL — ▲ LONG | MONITOR | Score: 55/85
 
-**Price Snapshot:** $310.49 (+0.7%) | **RSI:** 63.9 | **Vol ratio:** 0.2x | **ATR:** 6.3207 | **vs MA20:** above ✅
+**Price Snapshot:** $270.98 (+1.3%) | **RSI:** 62.9 | **Vol ratio:** 0.31x | **ATR:** 5.6493 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Record trading revenues at Jane Street [1,2,3] suggest a highly profitable environment for JPM's trading desk, potentially outweighing management's cautious volatility outlook [5].
-
-**Entry Consideration:** Limit entry between $308.50 and $310.00 to capitalize on minor pullbacks above the MA20.
-**Risk / Invalidation Level:** Hard stop at $304.50, just below the 20-day moving average support.
-**Initial Upside / Downside Case:** $320.00 initial target to be reached within the current earnings cycle.
-**Key Risk:** ❌ Heightened market-wide volatility during earnings week as explicitly warned by the firm [5].
-
-### ⚪ #2 AAPL — ▲ LONG | MONITOR | Score: 48/85
-
-**Price Snapshot:** $266.89 (-1.5%) | **RSI:** 63.5 | **Vol ratio:** 0.28x | **ATR:** 5.695 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.3/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `21.2/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG AAPL as Goldman Sachs identifies current price weakness as a strategic buying opportunity ahead of April 30 earnings, maintaining a $330 price target [5]. TD Cowen further supports the bull case by doubling down on the stock leading into next week's report [2].
+**What & Why:** LONG. AAPL exhibits relative strength against a declining SPY, bolstered by TD Cowen doubling down and positive analyst sentiment ahead of next week's earnings [1][5]. This suggests a pre-earnings momentum play as the market focuses on the Mag 7 reporting cycle [3].
 
-**Entry Consideration:** Enter near current price of $266.89 or on pullbacks toward the 20-day moving average at $262.30.
-**Risk / Invalidation Level:** Daily close below the MA20 ($262.30) or psychological support at $260.00.
-**Initial Upside / Downside Case:** Initial target of $275.00 - $280.00 leading into the April 30 earnings announcement.
-**Key Risk:** ❌ Broader market weakness in a choppy regime could suppress the anticipated pre-earnings rally.
+**Entry Consideration:** Limit orders near $269.50-$270.50 to capture intraday consolidation while maintaining proximity to the $270 psychological level.
+**Risk / Invalidation Level:** Hard stop at $263.50, just below the 20-day moving average, to invalidate the short-term trend.
+**Initial Upside / Downside Case:** Initial target of $278.00 - $280.00 by the end of the week, preceding the earnings report.
+**Key Risk:** ❌ Broad market correlation risk as SPY is currently down 0.65%, which could cap upside momentum.
+
+### ⚪ #2 JPM — ▲ LONG | MONITOR | Score: 53/85
+
+**Price Snapshot:** $312.76 (+0.4%) | **RSI:** 56.2 | **Vol ratio:** 0.16x | **ATR:** 5.6536 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.6/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. JPM exhibits relative strength (+0.36%) against a declining SPY (-0.65%), supported by strategic growth investments [1] and high sentiment (0.76) ahead of its earnings event. The stock maintains a bullish posture trading above its MA20 ($306.95) and MA50 ($298.35).
+
+**Entry Consideration:** Limit entry near $312.50 or on a break of the daily high to confirm momentum.
+**Risk / Invalidation Level:** Close below the 20-day moving average ($306.95) or a break of $305.00.
+**Initial Upside / Downside Case:** $322.00 initial target within 1-3 trading sessions.
+**Key Risk:** ❌ Broader market volatility (SPY -0.65%) dragging down the financial sector despite individual stock strength.
+
+### ⚪ #3 TSLA — ▲ LONG | MONITOR | Score: 52/85
+
+**Price Snapshot:** $375.84 (-0.8%) | **RSI:** 66.2 | **Vol ratio:** 0.39x | **ATR:** 14.2571 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `20.2/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. TSLA is demonstrating technical resilience by holding above its MA20 ($371.0) despite negative comparisons to Apple [3], supported by high EventEdge scores and recent analyst focus [1].
+
+**Entry Consideration:** Limit orders near the MA20 support level between $371.50 and $373.00.
+**Risk / Invalidation Level:** Daily close below $368.00, invalidating the current short-term support structure.
+**Initial Upside / Downside Case:** Initial target of $385.48 (MA50) within a 2-5 day timeframe.
+**Key Risk:** ❌ High beta correlation to a weakening SPY and negative sentiment regarding relative valuation.
+
+### ⚪ #4 GOOGL — ▲ LONG | MONITOR | Score: 49/85
+
+**Price Snapshot:** $351.08 (+0.2%) | **RSI:** 79.1 | **Vol ratio:** 0.36x | **ATR:** 7.3836 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `21.8/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `0.6/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Anticipation of strong cloud performance and positive analyst forecast resets ahead of earnings provide a bullish catalyst for GOOGL [1][2]. Market focus remains on AI-driven growth to justify current valuations despite broader market weakness [3].
+
+**Entry Consideration:** Enter on a minor pullback toward the $348-$350 range to mitigate overbought RSI risk.
+**Risk / Invalidation Level:** Exit position if price closes below $342.00, invalidating the immediate pre-earnings uptrend.
+**Initial Upside / Downside Case:** $365.00 initial target following earnings release within a 1-3 day timeframe.
+**Key Risk:** ❌ Extremely high RSI (79.1) suggests overbought conditions and potential for a 'sell the news' reaction.
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▲ Investors Protecting Stocks at Record Eye Bets on Higher Rates  [Bloomberg.com]
-  ▲ Jefferies raises Stellantis stock price target on wholesale volume beat  [Investing.com]
-
-**NVDA**  ·  earnings
-  ▲ 3 AI Stocks That Can Beat Nvidia Over the Next Five Years  [Yahoo Finance]
-  ▲ Nvidia (NVDA) Stock Analysis: AI Boom Drives Record Revenue and Competitive Moat - News and Statistics  [IndexBox]
-
-**PLTR**  ·  earnings
-  ▼ Time to Cash Out? 4 Stocks to Sell Before Earnings  [The Globe and Mail]
-
-**SMCI**  ·  earnings
-  ◆ PLTR vs. SMCI: Why Analysts See a 35% Upside in One AI Stock, but Caution about the Other, Ahead of Earnings  [TipRanks]
-
-**GOOGL**  ·  ma
-  ▲ Is Marvell Stock a Buy After Alphabet and Nvidia Deals?  [The Motley Fool]
+**COST**  ·  earnings
+  ▼ JetBlue Airways Losses Widen as Soaring Fuel Costs Bite. Stock Rises After Earnings.  [Barron's]
+  ▲ EOG Resources stock (US26875P1012): Is its low-cost oil strategy strong enough to unlock new upside?  [AD HOC NEWS]
 
 **MSFT**  ·  earnings
-  ▼ ‘Downside Risk Isn’t a Dealbreaker,’ Says Top Analyst John DiFucci as Microsoft Stock Heads Into Earnings  [TipRanks]
+  ◆ AMZN, GOOGL, MSFT Earnings: Cloud Results to Drive Sentiment  [Yahoo Finance]
+  ▼ Microsoft: MSFT Set to Crash Below $400 as OpenAI Ends Revenue Share Payments  [FXLeaders]
+
+**PLTR**  ·  earnings
+  ▲ If Palantir Keeps Proving the Skeptics Wrong, PTIR Could Go Vertical Again  [24/7 Wall St.]
+
+**MA**  ·  earnings
+  ◆ Microsoft earnings preview: will MSFT stock break its 100-day MA after Q3 print?  [Invezz]
+
+**INTC**  ·  earnings
+  ▼ Microsoft (MSFT) and Intel (INTC) Stocks Drop Amid Mixed Earnings Reports  [GuruFocus]
+
+**JPM**  ·  macro
+  ▲ JPM Secures Strategic Investment in Zenith IOS's Growth Initiati  [GuruFocus]
 
 ---
 ## 🛡 Research Risk Rules
