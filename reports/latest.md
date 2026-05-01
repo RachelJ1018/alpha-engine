@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-04-30
-*Generated: 2026-04-30 15:17*
+# 📊 Daily Research Report — 2026-05-01
+*Generated: 2026-05-01 14:49*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.38%
-**SPY RSI(14):** 79.2
+**SPY:** +0.62%
+**SPY RSI(14):** 79.9
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,113 +17,120 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (8):** `MSFT` · `AMZN` · `GS` · `PLTR` · `META` · `LLY`
-**⛔ IGNORE (12):** `BAC` · `AVGO` · `NVDA` · `GOOGL` · `COST` · `ARM`
+**⚪ MONITOR (6):** `MSFT` · `BAC` · `GS` · `NVDA` · `PLTR` · `COST`
+**⛔ IGNORE (14):** `GOOGL` · `AMD` · `AVGO` · `AAPL` · `TSM` · `QQQ`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 MSFT — ▲ LONG | MONITOR | Score: 58/85
+### ⚪ #1 MSFT — ▲ LONG | MONITOR | Score: 56/85
 
-**Price Snapshot:** $404.71 (-4.7%) | **RSI:** 63.4 | **Vol ratio:** 0.74x | **ATR:** 12.5193 | **vs MA20:** above ✅
+**Price Snapshot:** $412.71 (+1.2%) | **RSI:** 62.3 | **Vol ratio:** 0.29x | **ATR:** 12.3007 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.4/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `7.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Strong cloud demand and sales beats [1, 4] suggest the current post-earnings pullback is a strategic buying opportunity [2]. Technical support remains intact as the price holds above the MA20 and MA50 despite the immediate sell-off [5].
-
-**Entry Consideration:** Limit orders near $404.00-$405.00 to capitalize on support at the MA20 ($403.37).
-**Risk / Invalidation Level:** Daily close below $395.00 (MA50) or breach of $400.00 psychological level.
-**Initial Upside / Downside Case:** $418.00 initial target for a mean reversion play over the next 5-10 sessions.
-**Key Risk:** ❌ Extended post-earnings momentum selling if macro concerns overshadow cloud growth.
-
-### ⚪ #2 AMZN — ▲ LONG | MONITOR | Score: 55/85
-
-**Price Snapshot:** $259.64 (-1.3%) | **RSI:** 74.8 | **Vol ratio:** 0.81x | **ATR:** 7.0114 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `21.4/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `3.2/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `20.3/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Amazon's Q1 earnings beat and AWS growth hitting a 15-quarter high provide a strong fundamental catalyst for continued upside [2, 5]. While shares dipped slightly after-hours, analyst price targets moving toward $300 suggest institutional support for a recovery [2, 4].
+**What & Why:** LONG. MSFT presents a high-quality 'buy the dip' opportunity following an earnings beat where shares fell despite robust Azure and AI growth [1][5]. Technical support above the MA20 suggests the post-earnings sell-off is being viewed as an entry point for a premier AI play [3].
 
-**Entry Consideration:** Enter on a reclaim of $260.00 or a successful test of the $258.50 support level during the morning session.
-**Risk / Invalidation Level:** Close position if price breaks below $254.00, invalidating the post-earnings support zone.
-**Initial Upside / Downside Case:** Initial target of $272.00 representing a recovery of the dip; timeframe 1-2 sessions.
-**Key Risk:** ❌ Elevated RSI of 74.8 indicates overbought conditions which may trigger short-term profit-taking.
+**Entry Consideration:** Limit orders near $412.00 or on a successful retest of the $410 support level.
+**Risk / Invalidation Level:** Daily close below the 20-day moving average ($405.49) or $400 psychological support.
+**Initial Upside / Downside Case:** $425.00 initial target to fill the post-earnings gap within 5 sessions.
+**Key Risk:** ❌ Relative underperformance in cloud growth compared to peers like Google may limit immediate upside momentum [4].
+
+### ⚪ #2 BAC — ▲ LONG | MONITOR | Score: 55/85
+
+**Price Snapshot:** $53.85 (+0.7%) | **RSI:** 54.2 | **Vol ratio:** 0.14x | **ATR:** 1.085 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `20.3/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. BAC maintains positive technical momentum above its MA20 and MA50, bolstered by high institutional engagement through active research updates on key tech holdings [1, 2, 3, 4]. The high EventEdge score of 20.33 suggests strong positioning for the current earnings-driven environment.
+
+**Entry Consideration:** Entry at current market price of $53.85 or on a minor pullback to the MA20 ($52.82).
+**Risk / Invalidation Level:** Close below the MA20 ($52.82) or a breach of the $52.00 support level.
+**Initial Upside / Downside Case:** Initial target of $55.50, representing a short-term breakout level over the next 1-3 sessions.
+**Key Risk:** ❌ Potential for earnings-related volatility or a 'sell the news' reaction despite positive sentiment.
 
 ### ⚪ #3 GS — ▲ LONG | MONITOR | Score: 53/85
 
-**Price Snapshot:** $920.31 (+1.6%) | **RSI:** 53.5 | **Vol ratio:** 0.19x | **ATR:** 23.0557 | **vs MA20:** above ✅
+**Price Snapshot:** $931.65 (+0.8%) | **RSI:** 61.9 | **Vol ratio:** 0.16x | **ATR:** 22.1756 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.0/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. GS shows bullish technical strength trading above its MA20 and MA50, supported by high-conviction price target raises in the healthcare and tech sectors [3,4]. This active advisory positioning suggests robust capital markets activity and revenue potential ahead of earnings.
-
-**Entry Consideration:** Enter on a slight pullback toward the $915.00 level or a successful retest of the MA20 at $909.40.
-**Risk / Invalidation Level:** Hard stop at $904.50, just below the 20-day moving average support level.
-**Initial Upside / Downside Case:** $942.00 targeting a short-term breakout over the next 5-10 trading days.
-**Key Risk:** ❌ Negative sentiment from lowering targets on high-capex tech firms [5] could signal broader market cooling.
-
-### ⚪ #4 LLY — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $919.43 (+8.0%) | **RSI:** 46.0 | **Vol ratio:** 1.16x | **ATR:** 29.635 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `15.4/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `10.2/15` | Freshness `10.0/10` | RiskPenalty `-5.5`
+**Layered Scores:** EventEdge `18.1/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. LLY is driven by a massive Q1 earnings beat and raised full-year guidance, with profits surging 1.7x YoY [2, 3]. The price has reclaimed the MA20 on high volume, indicating a strong momentum shift and potential reversal of the recent sell-off [3, 4].
+**What & Why:** LONG. GS shows strong technical momentum trading above its MA20 ($913.0) and MA50, supported by aggressive bullish research activity on mega-cap equities [2,3,4,5]. This active positioning suggests high internal confidence and potential for increased advisory/trading revenue during the current earnings cycle.
 
-**Entry Consideration:** Enter near $919-$922 or on a successful retest of the MA20 ($914.44).
-**Risk / Invalidation Level:** Daily close below $905 to invalidate the post-earnings breakout structure.
-**Initial Upside / Downside Case:** Initial target of $948.55 (MA50) for a gap-fill play over 1-3 sessions.
-**Key Risk:** ❌ Short-term price exhaustion or profit-taking following the 8% intraday rally.
+**Entry Consideration:** Enter on a minor pullback toward $925.00 or a break above the daily high of $931.65.
+**Risk / Invalidation Level:** Daily close below the 20-day moving average at $913.00.
+**Initial Upside / Downside Case:** $950.00 initial target within a 3-5 day timeframe.
+**Key Risk:** ❌ Broader market volatility if the tech earnings GS is promoting [2,4] fail to meet expectations.
 
-### ⚪ #5 JPM — ▲ LONG | MONITOR | Score: 49/85
+### ⚪ #4 NVDA — ▲ LONG | MONITOR | Score: 50/85
 
-**Price Snapshot:** $312.82 (+1.1%) | **RSI:** 53.6 | **Vol ratio:** 0.19x | **ATR:** 5.925 | **vs MA20:** above ✅
+**Price Snapshot:** $199.95 (+0.2%) | **RSI:** 59.5 | **Vol ratio:** 0.27x | **ATR:** 6.4057 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.1/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. JPM demonstrates strong operational momentum following robust earnings across all segments [4] and a positive FY2026 earnings forecast [5]. The price remains technically supported above the MA20 and MA50 despite cautious macro commentary from leadership.
+**What & Why:** LONG. NVDA remains the defining stock of the AI boom [1], with high anticipation and positioning expected ahead of its upcoming earnings report [2].
 
-**Entry Consideration:** Entry on a minor pullback toward $310.00 or a break above $313.50 to confirm momentum.
-**Risk / Invalidation Level:** Daily close below the MA20 at $308.66.
-**Initial Upside / Downside Case:** $320.00 initial target within 1-3 trading days.
-**Key Risk:** ❌ CEO Jamie Dimon's warnings regarding a looming bond crisis and inflation could dampen sector sentiment [2,3].
+**Entry Consideration:** Entry at current levels ($199.95) or on a slight dip toward the MA20 support at $197.30.
+**Risk / Invalidation Level:** Stop loss set at $195.00 to account for volatility below the MA20 support level.
+**Initial Upside / Downside Case:** $212.00, targeting a pre-earnings run-up within the next 5-7 trading days.
+**Key Risk:** ❌ Short-term underperformance relative to other chipmakers [3] and recent institutional distribution [4].
+
+### ⚪ #5 COST — ▲ LONG | MONITOR | Score: 48/85
+
+**Price Snapshot:** $1026.92 (+1.2%) | **RSI:** 71.5 | **Vol ratio:** 0.19x | **ATR:** 17.1986 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.4/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Positive earnings momentum in mega-caps [1, 2] and a market focus on operational discipline [3, 5] provide a favorable backdrop for COST's defensive growth profile. The stock exhibits strong relative strength, trading well above its MA20 and MA50.
+
+**Entry Consideration:** Entry on a retest of $1020 support or consolidation near current levels.
+**Risk / Invalidation Level:** Daily close below $1004 (MA20) to invalidate the short-term trend.
+**Initial Upside / Downside Case:** $1045 initial target; 1-2 day timeframe.
+**Key Risk:** ❌ Elevated RSI at 71.5 indicates overbought conditions and potential for immediate profit-taking.
+
+---
+## 🌍 Macro Watchlist
+
+- ⛔ `TSLA` LONG | IGNORE | score 38 | —
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 40
-- `SPY` LONG | IGNORE | score 40
+- `QQQ` LONG | IGNORE | score 44
+- `SPY` LONG | IGNORE | score 42
 
 ---
 ## 📰 Key News (Last 24h)
 
-**PLTR**  ·  earnings
-  ▲ Palantir Stock Gets a Fresh Buy Rating. Earnings Will Show Whether AI Growth Is Real.  [Barron's]
-  ▲ Palantir has become a recommended buy ahead of its earnings announcement (Preview, Upgrade)  [Moomoo]
-
-**MSFT**  ·  earnings
-  ▲ Microsoft Stock Slides After Earnings. What Overshadowed Strong Cloud Growth.  [Barron's]
-  ◆ Meta Stock, Microsoft Victims of the AI Hunger Games After Earnings  [Barron's]
-
-**META**  ·  earnings
-  ▼ 'Fast Money' traders talk Meta shares sliding after miss on Q1 DAP, increased capex spending  [CNBC]
-  ▲ Meta shares plummet despite beat on earnings and revenue, raises capex guidance  [CNBC]
-
-**NVDA**  ·  earnings
-  ▼ State of Alaska Department of Revenue Sells 205,768 Shares of NVIDIA Corporation $NVDA  [MarketBeat]
+**GOOGL**  ·  earnings
+  ▲ Alphabet Stock Jumps on Strong Earnings Report. It’s All About the Google Cloud.  [Barron's]
+  ▲ GOOGL Q1 Earnings Beat on Cloud Surge and AI Momentum, Revenues Up Y/Y  [Yahoo Finance]
 
 **LLY**  ·  earnings
-  ▲ Eli Lilly and Company (LLY) Stock Analysis: Navigating a 36.95% Potential Upside with Robust Revenue Growth  [DirectorsTalk Interviews]
+  ▲ Cantor Fitzgerald raises Eli Lilly stock price target on guidance By Investing.com  [Investing.com India]
+
+**COST**  ·  earnings
+  ▲ BofA raises Caterpillar stock price target on strong earnings beat  [Investing.com]
+
+**AAPL**  ·  earnings
+  ▲ How Nvidia beat Apple to become the defining stock of the AI boom  [Yahoo Finance]
+
+**NVDA**  ·  earnings
+  ▲ NVIDIA (NVDA) Earnings Loom: Buy Now or Stay Out?  [Yahoo Finance]
+
+**PLTR**  ·  earnings
+  ▲ Top Analysts from Wedbush and Baird Are Bullish on Palantir Stock (PLTR) Ahead of Q1 Earnings. Here’s Why  [TipRanks]
+  ▲ Palantir Stock (PLTR) Gets Fresh Buy Rating Ahead of Q1 Earnings as Oppenheimer Sets $200 Target  [TipRanks]
 
 ---
 ## 🛡 Research Risk Rules
