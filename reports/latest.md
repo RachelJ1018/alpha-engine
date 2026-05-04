@@ -1,12 +1,14 @@
-# 📊 Daily Research Report — 2026-05-01
-*Generated: 2026-05-01 14:49*
+# 📊 Daily Research Report — 2026-05-04
+*Generated: 2026-05-04 15:15*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.62%
-**SPY RSI(14):** 79.9
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** -0.06%
+**SPY RSI(14):** 75.1
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,120 +19,71 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (6):** `MSFT` · `BAC` · `GS` · `NVDA` · `PLTR` · `COST`
-**⛔ IGNORE (14):** `GOOGL` · `AMD` · `AVGO` · `AAPL` · `TSM` · `QQQ`
+**⚪ MONITOR (2):** `COST` · `BAC`
+**⛔ IGNORE (18):** `AMZN` · `PLTR` · `NVDA` · `MSFT` · `JPM` · `AAPL`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 MSFT — ▲ LONG | MONITOR | Score: 56/85
+### ⚪ #1 COST — ▲ LONG | MONITOR | Score: 52/85
 
-**Price Snapshot:** $412.71 (+1.2%) | **RSI:** 62.3 | **Vol ratio:** 0.29x | **ATR:** 12.3007 | **vs MA20:** above ✅
+**Price Snapshot:** $1019.73 (+0.8%) | **RSI:** 73.6 | **Vol ratio:** 0.18x | **ATR:** 18.0887 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.3/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. MSFT presents a high-quality 'buy the dip' opportunity following an earnings beat where shares fell despite robust Azure and AI growth [1][5]. Technical support above the MA20 suggests the post-earnings sell-off is being viewed as an entry point for a premier AI play [3].
-
-**Entry Consideration:** Limit orders near $412.00 or on a successful retest of the $410 support level.
-**Risk / Invalidation Level:** Daily close below the 20-day moving average ($405.49) or $400 psychological support.
-**Initial Upside / Downside Case:** $425.00 initial target to fill the post-earnings gap within 5 sessions.
-**Key Risk:** ❌ Relative underperformance in cloud growth compared to peers like Google may limit immediate upside momentum [4].
-
-### ⚪ #2 BAC — ▲ LONG | MONITOR | Score: 55/85
-
-**Price Snapshot:** $53.85 (+0.7%) | **RSI:** 54.2 | **Vol ratio:** 0.14x | **ATR:** 1.085 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.3/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `21.0/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. BAC maintains positive technical momentum above its MA20 and MA50, bolstered by high institutional engagement through active research updates on key tech holdings [1, 2, 3, 4]. The high EventEdge score of 20.33 suggests strong positioning for the current earnings-driven environment.
+**What & Why:** LONG. COST exhibits strong relative strength and a high EventEdge score of 21.0 leading into earnings, maintaining a bullish posture above its MA20 [0]. The technical trend remains intact despite a choppy broader market regime [0].
 
-**Entry Consideration:** Entry at current market price of $53.85 or on a minor pullback to the MA20 ($52.82).
-**Risk / Invalidation Level:** Close below the MA20 ($52.82) or a breach of the $52.00 support level.
-**Initial Upside / Downside Case:** Initial target of $55.50, representing a short-term breakout level over the next 1-3 sessions.
-**Key Risk:** ❌ Potential for earnings-related volatility or a 'sell the news' reaction despite positive sentiment.
+**Entry Consideration:** Entry on a minor intraday dip toward $1015 to account for overbought RSI.
+**Risk / Invalidation Level:** Hard stop below the MA20 at $1002 or a break of the $1000 psychological support.
+**Initial Upside / Downside Case:** Initial target of $1035-$1040 within the current trading session or T+1.
+**Key Risk:** ❌ RSI of 73.6 indicates overbought conditions, increasing the risk of a sharp mean-reversion move.
 
-### ⚪ #3 GS — ▲ LONG | MONITOR | Score: 53/85
+### ⚪ #2 BAC — ▼ SHORT | MONITOR | Score: 50/85
 
-**Price Snapshot:** $931.65 (+0.8%) | **RSI:** 61.9 | **Vol ratio:** 0.16x | **ATR:** 22.1756 | **vs MA20:** above ✅
+**Price Snapshot:** $52.38 (-1.6%) | **RSI:** 42.7 | **Vol ratio:** 0.23x | **ATR:** 1.1068 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `18.1/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. GS shows strong technical momentum trading above its MA20 ($913.0) and MA50, supported by aggressive bullish research activity on mega-cap equities [2,3,4,5]. This active positioning suggests high internal confidence and potential for increased advisory/trading revenue during the current earnings cycle.
-
-**Entry Consideration:** Enter on a minor pullback toward $925.00 or a break above the daily high of $931.65.
-**Risk / Invalidation Level:** Daily close below the 20-day moving average at $913.00.
-**Initial Upside / Downside Case:** $950.00 initial target within a 3-5 day timeframe.
-**Key Risk:** ❌ Broader market volatility if the tech earnings GS is promoting [2,4] fail to meet expectations.
-
-### ⚪ #4 NVDA — ▲ LONG | MONITOR | Score: 50/85
-
-**Price Snapshot:** $199.95 (+0.2%) | **RSI:** 59.5 | **Vol ratio:** 0.27x | **ATR:** 6.4057 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.8/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `18.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. NVDA remains the defining stock of the AI boom [1], with high anticipation and positioning expected ahead of its upcoming earnings report [2].
+**What & Why:** SHORT. BAC is showing technical weakness by trading below its 20-day moving average ($52.91) with negative momentum, while recent headlines [1,2,3,4,5] lack internal catalysts to sustain current price levels. The stock appears positioned for a mean reversion toward the 50-day moving average ($50.36) amid a choppy market regime.
 
-**Entry Consideration:** Entry at current levels ($199.95) or on a slight dip toward the MA20 support at $197.30.
-**Risk / Invalidation Level:** Stop loss set at $195.00 to account for volatility below the MA20 support level.
-**Initial Upside / Downside Case:** $212.00, targeting a pre-earnings run-up within the next 5-7 trading days.
-**Key Risk:** ❌ Short-term underperformance relative to other chipmakers [3] and recent institutional distribution [4].
-
-### ⚪ #5 COST — ▲ LONG | MONITOR | Score: 48/85
-
-**Price Snapshot:** $1026.92 (+1.2%) | **RSI:** 71.5 | **Vol ratio:** 0.19x | **ATR:** 17.1986 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.4/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Positive earnings momentum in mega-caps [1, 2] and a market focus on operational discipline [3, 5] provide a favorable backdrop for COST's defensive growth profile. The stock exhibits strong relative strength, trading well above its MA20 and MA50.
-
-**Entry Consideration:** Entry on a retest of $1020 support or consolidation near current levels.
-**Risk / Invalidation Level:** Daily close below $1004 (MA20) to invalidate the short-term trend.
-**Initial Upside / Downside Case:** $1045 initial target; 1-2 day timeframe.
-**Key Risk:** ❌ Elevated RSI at 71.5 indicates overbought conditions and potential for immediate profit-taking.
-
----
-## 🌍 Macro Watchlist
-
-- ⛔ `TSLA` LONG | IGNORE | score 38 | —
+**Entry Consideration:** Enter on a failed retest of the $52.50 level or a break below $52.30.
+**Risk / Invalidation Level:** Daily close above the 20-day moving average at $53.00.
+**Initial Upside / Downside Case:** $50.40 (near the 50-day moving average) within 3-5 trading days.
+**Key Risk:** ❌ Broader financial sector outperformance or unexpected dovish macro shifts.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 44
-- `SPY` LONG | IGNORE | score 42
+- `QQQ` LONG | IGNORE | score 29
 
 ---
 ## 📰 Key News (Last 24h)
 
+**PLTR**  ·  earnings
+  ▲ Palantir Stock Heads Into Today’s Earnings With Sky-High Expectations … Again  [Barron's]
+  ▲ Palantir (PLTR) Q1 2026 Earnings Preview: Analysts Eye 74% Revenue Surge  [Blockonomi]
+
+**IWM**  ·  macro
+  ▼ Will the Fed Cut, or Won’t It? This ETF Move Works Either Way.  [Barron's]
+
+**GS**  ·  macro
+  ▲ Goldman Sachs reiterates Eli Lilly stock buy rating after FDA report  [Investing.com]
+
+**MSFT**  ·  earnings
+  ▲ Stifel Raises Microsoft (MSFT) Price Target, Keeps Hold Rating  [Yahoo Finance]
+
+**META**  ·  earnings
+  ▲ Meta stock sinks after Q1 earnings as company raises 2026 AI spending forecast to $125 billion-$145 billion  [Yahoo Finance]
+
 **GOOGL**  ·  earnings
-  ▲ Alphabet Stock Jumps on Strong Earnings Report. It’s All About the Google Cloud.  [Barron's]
-  ▲ GOOGL Q1 Earnings Beat on Cloud Surge and AI Momentum, Revenues Up Y/Y  [Yahoo Finance]
-
-**LLY**  ·  earnings
-  ▲ Cantor Fitzgerald raises Eli Lilly stock price target on guidance By Investing.com  [Investing.com India]
-
-**COST**  ·  earnings
-  ▲ BofA raises Caterpillar stock price target on strong earnings beat  [Investing.com]
-
-**AAPL**  ·  earnings
-  ▲ How Nvidia beat Apple to become the defining stock of the AI boom  [Yahoo Finance]
+  ▲ Alphabet stock rises on Q1 earnings beat, cloud growth  [Yahoo Finance]
 
 **NVDA**  ·  earnings
-  ▲ NVIDIA (NVDA) Earnings Loom: Buy Now or Stay Out?  [Yahoo Finance]
-
-**PLTR**  ·  earnings
-  ▲ Top Analysts from Wedbush and Baird Are Bullish on Palantir Stock (PLTR) Ahead of Q1 Earnings. Here’s Why  [TipRanks]
-  ▲ Palantir Stock (PLTR) Gets Fresh Buy Rating Ahead of Q1 Earnings as Oppenheimer Sets $200 Target  [TipRanks]
+  ▲ This Nvidia Rival Gains Momentum Ahead Of Earnings Report  [Investor's Business Daily]
 
 ---
 ## 🛡 Research Risk Rules
