@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report — 2026-05-11</title>
+<style>
+  * {box-sizing:border-box;margin:0;padding:0}
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0b0f1a;color:#e2e8f0;padding:24px;max-width:920px;margin:0 auto;line-height:1.5
+  }
+  h1 {font-size:22px;font-weight:700;color:#f1f5f9;margin-bottom:4px}
+  h2 {font-size:14px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin:28px 0 12px}
+  .meta {font-size:12px;color:#475569;margin-bottom:24px}
+  .regime-bar {
+    background:#111827;border:.5px solid #1e293b;border-left:3px solid #f59e0b;
+    border-radius:6px;padding:12px 16px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center
+  }
+  .regime-label {font-size:13px;font-weight:600;color:#f59e0b}
+  .spy-chg {font-size:20px;font-weight:700;color:#22c55e}
+
+  .card {
+    background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:18px 20px;margin-bottom:12px
+  }
+  .card-header {
+    display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px
+  }
+  .ticker {font-size:20px;font-weight:800;color:#f1f5f9;margin-right:10px;letter-spacing:.04em}
+  .action-badge {font-size:10px;font-weight:700;padding:3px 8px;border-radius:3px;letter-spacing:.06em;margin-right:6px}
+  .dir-badge {font-size:12px;font-weight:700}
+  .score-box {text-align:center}
+  .price-row {font-size:13px;color:#94a3b8;margin-bottom:8px}
+  .score-bar-wrap {height:3px;background:#1e293b;border-radius:2px;margin-bottom:14px}
+  .score-bar {height:3px;border-radius:2px;transition:width .5s}
+
+  .section-label {
+    font-size:9px;font-weight:700;color:#475569;letter-spacing:.1em;margin-bottom:5px;margin-top:10px
+  }
+  .score-detail {
+    font-size:12px;color:#94a3b8;line-height:1.7;margin-bottom:12px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+  .meta-chip {
+    display:inline-block;background:#1e293b;color:#cbd5e1;font-size:11px;padding:3px 8px;border-radius:999px;margin-bottom:12px
+  }
+  .thesis {
+    font-size:13px;color:#cbd5e1;line-height:1.6;margin-bottom:14px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+
+  .levels {display:flex;flex-direction:column;gap:6px}
+  .level-row {display:flex;gap:12px;font-size:12px;align-items:baseline}
+  .level-label {color:#475569;min-width:74px;font-size:10px;font-weight:600;letter-spacing:.06em}
+  .level-val {color:#94a3b8}
+  .level-val.stop {color:#f87171}
+  .level-val.target {color:#22c55e}
+  .level-val.risk {color:#fb923c;font-style:italic}
+
+  .news-group {margin-bottom:14px}
+  .news-group-header {
+    font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:.06em;text-transform:uppercase;
+    padding-bottom:5px;border-bottom:.5px solid #1e293b;margin-bottom:4px
+  }
+  .news-group-header code {background:#1e293b;color:#94a3b8;padding:1px 5px;border-radius:2px;font-size:11px}
+  .news-item {display:flex;gap:8px;align-items:baseline;padding:3px 0;font-size:12px}
+  .news-title {color:#cbd5e1;flex:1;line-height:1.4}
+  .news-src {color:#475569;flex-shrink:0;white-space:nowrap;font-size:11px}
+
+  .risk-box {background:#111827;border:.5px solid #1e293b;border-left:3px solid #ef4444;border-radius:6px;padding:14px 18px}
+  .risk-box li {font-size:13px;color:#94a3b8;margin-bottom:6px;padding-left:4px}
+</style>
+</head>
+<body>
+<h1>📊 Daily Research Report</h1>
+<div class="meta">Generated: 2026-05-11 — Alpha Engine Local</div>
+
+<div class="regime-bar">
+  <div>
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">MARKET REGIME</div>
+    <div class="regime-label">NEUTRAL</div>
+    <div style="font-size:12px;color:#64748b;margin-top:2px">
+      Mixed conditions. Prefer selective, cleaner setups only.
+    </div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">SPY TODAY</div>
+    <div class="spy-chg">+0.33%</div>
+  </div>
+</div>
+
+<h2>🏆 Top Trade</h2>
+<div class="card" style="color:#64748b;font-size:13px">No actionable or watchlist trade today.</div>
+
+<h2>🎯 Research Ideas</h2>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">NVDA</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#f59e0b">56</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $221.33
+    <span style="color:#22c55e">+2.9%</span>
+    &nbsp;·&nbsp; RSI: 65.9
+    &nbsp;·&nbsp; Vol: 0.46x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:65%;background:#f59e0b"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 21.9/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 9.0/15 ·
+    RelOpp: 1.0/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. Strong S&P 500 earnings confirm AI monetization is materializing [1], while investor sentiment favors loading positions ahead of the May 20 catalyst [2].</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Limit order near $219.00 to capture value on intraday dips.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $204.50, just below the MA20 support level.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$235.00 within the 5-day window preceding the May 20 event.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Elevated RSI of 65.9 suggests limited immediate upside before a potential consolidation phase.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">IWM</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">53</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $286.49
+    <span style="color:#22c55e">+0.8%</span>
+    &nbsp;·&nbsp; RSI: 66.7
+    &nbsp;·&nbsp; Vol: 0.25x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:62%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 19.8/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 9.0/15 ·
+    RelOpp: 0.2/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">IWM demonstrates relative strength by outperforming SPY and maintaining a bullish trend above its MA20, supported by positive small-cap earnings sentiment [2]. Despite geopolitical friction [1], the technical breakout suggests continued momentum toward overbought territory.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a retest of $285.50 or a break above intraday highs to confirm momentum.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop below $281.50 to protect against a reversal below recent support.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$292.00 target within 2-3 trading days based on current trend extension.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Geopolitical escalation [1] causing a flight to safety and sudden small-cap deleveraging.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">AVGO</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">53</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $429.96
+    <span style="color:#ef4444">-0.0%</span>
+    &nbsp;·&nbsp; RSI: 61.7
+    &nbsp;·&nbsp; Vol: 0.25x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:62%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 21.9/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 9.0/15 ·
+    RelOpp: 1.0/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. Strong sentiment (0.77) and EventEdge scores (21.95/25) indicate bullish anticipation for the earnings event, overriding general tech sector concerns [1]. Price action remains constructive above the MA20 ($412.68) with an RSI of 61.7 showing room for further upside.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter near current price of $429.96 or on a minor pullback to $425.00.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Close position if price breaks below the MA20 support level at $412.00.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$450.00 initial target within a 5-10 day timeframe.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Broader sector rotation out of large-cap technology firms as highlighted by Goldman Sachs.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">GLD</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">52</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $434.45
+    <span style="color:#22c55e">+0.2%</span>
+    &nbsp;·&nbsp; RSI: 53.9
+    &nbsp;·&nbsp; Vol: 0.27x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:61%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 18.8/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 9.0/15 ·
+    RelOpp: 1.4/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. Strong quarterly performance and record cash flows from major gold producers indicate sustained underlying demand and pricing power for the metal [1, 2]. While some profit-taking is occurring in high-flyers, the broader sector remains supported by robust valuation metrics [3].</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a minor pullback toward the MA20 support at $431.13 or a break above $435.00.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Daily close below $428.00, invalidating the recent bounce off the MA20.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$438.14 (MA50) as initial resistance over the next 2-5 trading days.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Broad-based profit-taking across the sector following recent rallies as seen in individual miner exits.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">GS</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">50</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $944.30
+    <span style="color:#22c55e">+0.8%</span>
+    &nbsp;·&nbsp; RSI: 55.5
+    &nbsp;·&nbsp; Vol: 0.29x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:59%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 16.4/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 9.0/15 ·
+    RelOpp: 1.0/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. GS maintains a bullish trend above its MA20 ($924) with a maximum sentiment score (1.00) leading into its earnings event [1]. Current price action suggests the market is rewarding GS's analytical positioning despite their cautious outlook on broader tech trends.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Limit order near $940.00 or on a breakout above $945.50.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $923.00, slightly below the 20-day moving average support.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$970.00 within 1-2 trading sessions post-earnings catalyst.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">High volatility and potential gap-down risk inherent in earnings events.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">TSLA</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">50</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $438.55
+    <span style="color:#22c55e">+2.4%</span>
+    &nbsp;·&nbsp; RSI: 76.7
+    &nbsp;·&nbsp; Vol: 0.49x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:59%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 21.0/25 ·
+    MarketConf: 11.0/20 ·
+    RegimeFit: 9.0/15 ·
+    RelOpp: 1.8/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -2.5
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">post_earnings_drift</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. Piper Sandler's valuation analysis suggests current levels offer Optimus optionality for 'free', reinforcing Tesla's global scale advantage over competitors [4][3]. Positive sentiment and earnings momentum support a continuation of the current uptrend despite overbought technicals.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Limit orders near $435.00-$438.00 to account for high RSI levels and seek better risk-reward.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $422.00 to protect against a mean-reversion move toward the MA20.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$455.00 initial target within 1-3 trading sessions.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">RSI of 76.7 indicates overbought conditions, risking a sharp technical correction or profit-taking.</span></div>
+  </div>
+</div>
+
+
+
+
+<h2>📰 Key News</h2>
+<div style="background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:14px 18px">
+<div class="news-group"><div class="news-group-header"><code>JPM</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">JPMorgan Hikes Kospi Bull Case Target to 10,000 on Memory Boom - Bloomberg.com</span><span class="news-src">[Bloomberg]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>AVGO</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Barrick Says Gold Miner to Buy Back Up to $3 Billion of Shares - Bloomberg.com</span><span class="news-src">[Bloomberg]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>TSLA</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Lucid vs. Tesla: Early Stage Growth vs. Global Scale in Revenue</span><span class="news-src">[Yahoo Finance]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>MACRO</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">monday.com Q1 beat driven by enterprise customer growth and AI adoption</span><span class="news-src">[Yahoo Finance]</span></div>
+<div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Earnings live updates: Barrick, Constellation Energy stocks rise on earnings beats</span><span class="news-src">[Yahoo Finance]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>NVDA</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Proof of Concept: S&P 500 Posts Record Earnings as AI Monetization Arrives - TipRanks</span><span class="news-src">[Tipranks]</span></div>
+<div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">‘Load Up Ahead of May 20,’ Says Investor About Nvidia Stock - TipRanks</span><span class="news-src">[Tipranks]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>GOOGL</code>&nbsp;&nbsp;·&nbsp;&nbsp;ma</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Microsoft, Murdoch talk team-up to freeze Google out of online news - AOL.com</span><span class="news-src">[Aol]</span></div>
+</div>
+
+</div>
+
+<h2>🛡 Research Risk Rules</h2>
+<div class="risk-box">
+  <ul style="list-style:none;padding:0">
+    <li>📌 Define risk limits before entering any position.</li>
+    <li>⚠ Prefer smaller size in bear or choppy regimes.</li>
+    <li>🚫 Avoid chasing names already extended on the day.</li>
+    <li>🎯 Focus on the best few ideas rather than too many weak ones.</li>
+    <li>🌍 Reassess long theses if broad market conditions deteriorate sharply.</li>
+  </ul>
+</div>
+
+<div style="margin-top:24px;font-size:11px;color:#334155;border-top:.5px solid #1e293b;padding-top:16px">
+  ⚠ This is a personal research tool, not financial advice.
+</div>
+</body>
+</html>
