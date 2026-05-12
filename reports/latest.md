@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-05-11
-*Generated: 2026-05-11 15:38*
+# 📊 Daily Research Report — 2026-05-12
+*Generated: 2026-05-12 15:28*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.33%
-**SPY RSI(14):** 80.8
+**SPY:** -0.94%
+**SPY RSI(14):** 68.4
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,130 +17,100 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (8):** `NVDA` · `IWM` · `AVGO` · `GLD` · `GS` · `TSLA`
-**⛔ IGNORE (12):** `PLTR` · `META` · `ARM` · `COST` · `GOOGL` · `LLY`
+**⚪ MONITOR (5):** `NVDA` · `META` · `COST` · `PLTR` · `JPM`
+**⛔ IGNORE (15):** `QQQ` · `SPY` · `GLD` · `MSFT` · `IWM` · `AMZN`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 NVDA — ▲ LONG | MONITOR | Score: 56/85
+### ⚪ #1 NVDA — ▲ LONG | MONITOR | Score: 52/85
 
-**Price Snapshot:** $221.33 (+2.9%) | **RSI:** 65.9 | **Vol ratio:** 0.46x | **ATR:** 7.6943 | **vs MA20:** above ✅
+**Price Snapshot:** $215.61 (-1.8%) | **RSI:** 59.8 | **Vol ratio:** 0.42x | **ATR:** 8.0693 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.9/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Strong S&P 500 earnings confirm AI monetization is materializing [1], while investor sentiment favors loading positions ahead of the May 20 catalyst [2].
-
-**Entry Consideration:** Limit order near $219.00 to capture value on intraday dips.
-**Risk / Invalidation Level:** Hard stop at $204.50, just below the MA20 support level.
-**Initial Upside / Downside Case:** $235.00 within the 5-day window preceding the May 20 event.
-**Key Risk:** ❌ Elevated RSI of 65.9 suggests limited immediate upside before a potential consolidation phase.
-
-### ⚪ #2 IWM — ▲ LONG | MONITOR | Score: 53/85
-
-**Price Snapshot:** $286.49 (+0.8%) | **RSI:** 66.7 | **Vol ratio:** 0.25x | **ATR:** 4.2286 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `19.8/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `0.2/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `21.8/25` | MarketConf `11.0/20` | RegimeFit `7.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** IWM demonstrates relative strength by outperforming SPY and maintaining a bullish trend above its MA20, supported by positive small-cap earnings sentiment [2]. Despite geopolitical friction [1], the technical breakout suggests continued momentum toward overbought territory.
+**What & Why:** LONG. NVDA's momentum is sustained by record highs and accelerating AI demand, reinforced by Alphabet's increased AI capital expenditure plans [1][4][5]. Institutional sentiment remains bullish, suggesting current price weakness is a buying opportunity within a structural uptrend [3].
 
-**Entry Consideration:** Enter on a retest of $285.50 or a break above intraday highs to confirm momentum.
-**Risk / Invalidation Level:** Hard stop below $281.50 to protect against a reversal below recent support.
-**Initial Upside / Downside Case:** $292.00 target within 2-3 trading days based on current trend extension.
-**Key Risk:** ❌ Geopolitical escalation [1] causing a flight to safety and sudden small-cap deleveraging.
+**Entry Consideration:** Enter on a pull-back toward the $212-$214 range or a confirmed bounce from the intraday low.
+**Risk / Invalidation Level:** Daily close below the 20-day moving average ($205.64) or a break of $208 support.
+**Initial Upside / Downside Case:** $225.00 initial target based on recent record high momentum; 1-3 day timeframe.
+**Key Risk:** ❌ Continued broader market selling pressure (SPY -0.94%) causing high-beta correlation selling.
 
-### ⚪ #3 AVGO — ▲ LONG | MONITOR | Score: 53/85
+### ⚪ #2 META — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $429.96 (-0.0%) | **RSI:** 61.7 | **Vol ratio:** 0.25x | **ATR:** 15.3983 | **vs MA20:** above ✅
+**Price Snapshot:** $600.54 (+0.3%) | **RSI:** 24.2 | **Vol ratio:** 0.3x | **ATR:** 18.4332 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `21.9/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Strong sentiment (0.77) and EventEdge scores (21.95/25) indicate bullish anticipation for the earnings event, overriding general tech sector concerns [1]. Price action remains constructive above the MA20 ($412.68) with an RSI of 61.7 showing room for further upside.
-
-**Entry Consideration:** Enter near current price of $429.96 or on a minor pullback to $425.00.
-**Risk / Invalidation Level:** Close position if price breaks below the MA20 support level at $412.00.
-**Initial Upside / Downside Case:** $450.00 initial target within a 5-10 day timeframe.
-**Key Risk:** ❌ Broader sector rotation out of large-cap technology firms as highlighted by Goldman Sachs.
-
-### ⚪ #4 GLD — ▲ LONG | MONITOR | Score: 52/85
-
-**Price Snapshot:** $434.45 (+0.2%) | **RSI:** 53.9 | **Vol ratio:** 0.27x | **ATR:** 7.4443 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.8/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `21.4/25` | MarketConf `11.0/20` | RegimeFit `7.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Strong quarterly performance and record cash flows from major gold producers indicate sustained underlying demand and pricing power for the metal [1, 2]. While some profit-taking is occurring in high-flyers, the broader sector remains supported by robust valuation metrics [3].
+**What & Why:** LONG. META exhibits significant relative strength by trading positive despite a broad market sell-off and negative headlines regarding ad revenue lawsuits [3] and bearish tech trends [5]. With RSI at an extremely oversold 24.2, the stock is positioned for a mean-reversion bounce toward the MA50.
 
-**Entry Consideration:** Enter on a minor pullback toward the MA20 support at $431.13 or a break above $435.00.
-**Risk / Invalidation Level:** Daily close below $428.00, invalidating the recent bounce off the MA20.
-**Initial Upside / Downside Case:** $438.14 (MA50) as initial resistance over the next 2-5 trading days.
-**Key Risk:** ❌ Broad-based profit-taking across the sector following recent rallies as seen in individual miner exits.
+**Entry Consideration:** Limit orders near $600.00 psychological support level.
+**Risk / Invalidation Level:** Hard stop below $588.50 to account for recent volatility.
+**Initial Upside / Downside Case:** $624.40 (MA50) / 2-3 trading days
+**Key Risk:** ❌ Systemic tech sector weakness or contagion from semiconductor sector declines [1, 2].
 
-### ⚪ #5 GS — ▲ LONG | MONITOR | Score: 50/85
+### ⚪ #3 COST — ▲ LONG | MONITOR | Score: 49/85
 
-**Price Snapshot:** $944.30 (+0.8%) | **RSI:** 55.5 | **Vol ratio:** 0.29x | **ATR:** 21.1514 | **vs MA20:** above ✅
+**Price Snapshot:** $1021.96 (+2.2%) | **RSI:** 57.6 | **Vol ratio:** 0.39x | **ATR:** 19.212 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `16.4/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. GS maintains a bullish trend above its MA20 ($924) with a maximum sentiment score (1.00) leading into its earnings event [1]. Current price action suggests the market is rewarding GS's analytical positioning despite their cautious outlook on broader tech trends.
-
-**Entry Consideration:** Limit order near $940.00 or on a breakout above $945.50.
-**Risk / Invalidation Level:** Hard stop at $923.00, slightly below the 20-day moving average support.
-**Initial Upside / Downside Case:** $970.00 within 1-2 trading sessions post-earnings catalyst.
-**Key Risk:** ❌ High volatility and potential gap-down risk inherent in earnings events.
-
-### ⚪ #6 TSLA — ▲ LONG | MONITOR | Score: 50/85
-
-**Price Snapshot:** $438.55 (+2.4%) | **RSI:** 76.7 | **Vol ratio:** 0.49x | **ATR:** 14.7686 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `21.0/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `16.8/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Piper Sandler's valuation analysis suggests current levels offer Optimus optionality for 'free', reinforcing Tesla's global scale advantage over competitors [4][3]. Positive sentiment and earnings momentum support a continuation of the current uptrend despite overbought technicals.
+**What & Why:** LONG COST as the stock exhibits strong relative strength (+2.25%) against a weak SPY (-0.94%) while trading above key moving averages. The earnings event signal acts as a catalyst for a potential breakout toward new highs.
 
-**Entry Consideration:** Limit orders near $435.00-$438.00 to account for high RSI levels and seek better risk-reward.
-**Risk / Invalidation Level:** Hard stop at $422.00 to protect against a mean-reversion move toward the MA20.
-**Initial Upside / Downside Case:** $455.00 initial target within 1-3 trading sessions.
-**Key Risk:** ❌ RSI of 76.7 indicates overbought conditions, risking a sharp technical correction or profit-taking.
+**Entry Consideration:** Wait for price confirmation before entry.
+**Risk / Invalidation Level:** Use ATR-based stop from risk engine.
+**Initial Upside / Downside Case:** Target per 2R calculation in report.
+**Key Risk:** ❌ Thesis incomplete due to response truncation.
+
+### ⚪ #4 JPM — ▼ SHORT | MONITOR | Score: 48/85
+
+**Price Snapshot:** $299.77 (-0.1%) | **RSI:** 34.4 | **Vol ratio:** 0.31x | **ATR:** 5.8014 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `16.7/25` | MarketConf `12.0/20` | RegimeFit `10.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** SHORT. JPM faces credit exposure risks from tightening lines to a troubled KKR fund [1] and internal governance friction regarding leadership roles [2]. Macro-inflation warnings [5] and price action below the MA20 suggest a test of the MA50 support level.
+
+**Entry Consideration:** Break below MA50 ($299.40) or rejection at $302.00.
+**Risk / Invalidation Level:** $309.40 (MA20 reclaim).
+**Initial Upside / Downside Case:** $290.00 (1-week timeframe).
+**Key Risk:** ❌ RSI at 34.4 suggests potential for a mean-reversion bounce.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 41
-- `SPY` LONG | IGNORE | score 39
+- `QQQ` LONG | IGNORE | score 48
+- `SPY` LONG | IGNORE | score 48
 
 ---
 ## 📰 Key News (Last 24h)
 
+**INTC**  ·  macro
+  ▲ Alphabet Plans Debut Yen Bond Sale as AI Race Accelerates - Bloomberg  [Bloomberg]
+  ▲ Nvidia Stock Closes at Record High. What Can Give It Another Boost. - Barron's  [Barrons]
+
 **JPM**  ·  macro
   ▲ JPMorgan Hikes Kospi Bull Case Target to 10,000 on Memory Boom - Bloomberg.com  [Bloomberg]
-
-**AVGO**  ·  macro
-  ▲ Barrick Says Gold Miner to Buy Back Up to $3 Billion of Shares - Bloomberg.com  [Bloomberg]
-
-**TSLA**  ·  earnings
-  ▲ Lucid vs. Tesla: Early Stage Growth vs. Global Scale in Revenue  [Yahoo Finance]
+  ▼ JPMorgan Chase-led bank group reins in credit line to troubled KKR private credit fund as losses mount - CNBC  [Cnbc]
 
 **MACRO**  ·  earnings
-  ▲ monday.com Q1 beat driven by enterprise customer growth and AI adoption  [Yahoo Finance]
-  ▲ Earnings live updates: Barrick, Constellation Energy stocks rise on earnings beats  [Yahoo Finance]
+  ▼ Hims & Hers stock sinks after quarterly loss, sales miss  [Yahoo Finance]
 
-**NVDA**  ·  macro
-  ▲ Proof of Concept: S&P 500 Posts Record Earnings as AI Monetization Arrives - TipRanks  [Tipranks]
-  ▲ ‘Load Up Ahead of May 20,’ Says Investor About Nvidia Stock - TipRanks  [Tipranks]
+**SPY**  ·  earnings
+  ▲ Nvidia (NVDA) CEO Jensen Huang Excluded from Trump’s China Trip - TipRanks  [Tipranks]
 
-**GOOGL**  ·  ma
-  ▲ Microsoft, Murdoch talk team-up to freeze Google out of online news - AOL.com  [Aol]
+**NVDA**  ·  earnings
+  ▲ ‘Buy Early and Often,’ Says Top Investor About Nvidia Stock - TipRanks  [Tipranks]
+
+**GOOGL**  ·  earnings
+  ▲ Micron Stock Surged 9x But History Suggests Caution. - Yahoo Finance  [Finance]
 
 ---
 ## 🛡 Research Risk Rules
