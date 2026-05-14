@@ -1,14 +1,12 @@
-# 📊 Daily Research Report — 2026-05-13
-*Generated: 2026-05-13 15:29*
+# 📊 Daily Research Report — 2026-05-14
+*Generated: 2026-05-14 15:18*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.14%
-**SPY RSI(14):** 80.8
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** +0.80%
+**SPY RSI(14):** 82.1
 
 ---
 ## ⭐ High Conviction Picks
@@ -19,70 +17,68 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (2):** `COST` · `META`
-**⛔ IGNORE (18):** `BAC` · `NVDA` · `AMZN` · `TSM` · `MSFT` · `AVGO`
+**⚪ MONITOR (4):** `META` · `ARM` · `TSM` · `AAPL`
+**⛔ IGNORE (16):** `NVDA` · `AMZN` · `PLTR` · `GS` · `AMD` · `LLY`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 COST — ▲ LONG | MONITOR | Score: 51/85
+### ⚪ #1 META — ▲ LONG | MONITOR | Score: 52/85
 
-**Price Snapshot:** $1025.85 (+0.4%) | **RSI:** 55.3 | **Vol ratio:** 0.32x | **ATR:** 20.1577 | **vs MA20:** above ✅
+**Price Snapshot:** $621.49 (+0.8%) | **RSI:** 29.9 | **Vol ratio:** 0.26x | **ATR:** 17.2157 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `20.3/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG COST as price maintains relative strength above MA20 ($1005.7) and MA50 ($998.1) support levels ahead of the upcoming earnings event. The current trend suggests accumulation despite a choppy market regime [0].
-
-**Entry Consideration:** Enter near $1025.85 or on a minor retracement toward $1015 support.
-**Risk / Invalidation Level:** Close position if price breaks below the MA20 at $1005.7 on high volume.
-**Initial Upside / Downside Case:** Initial target of $1050 within the next 2-5 trading sessions.
-**Key Risk:** ❌ Extremely low relative volume (0.32x) may lead to lack of follow-through or high volatility.
-
-### ⚪ #2 META — ▲ LONG | MONITOR | Score: 50/85
-
-**Price Snapshot:** $606.51 (+0.6%) | **RSI:** 30.3 | **Vol ratio:** 0.29x | **ATR:** 17.7975 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `21.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `21.1/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. META is technically oversold with an RSI of 30.3, suggesting a mean-reversion bounce toward the MA50 despite legal noise regarding ad revenue lawsuits [4]. High EventEdge scores indicate strong institutional positioning ahead of the earnings cycle.
+**What & Why:** LONG. Meta's planned 10% workforce reduction [1] signals a continued commitment to margin expansion through efficiency, while an RSI of 29.9 suggests the stock is technically oversold and primed for a mean-reversion bounce.
 
-**Entry Consideration:** Limit orders between $600.00 and $606.50 to capture the oversold bounce.
-**Risk / Invalidation Level:** Hard stop at $594.50, representing a break of psychological support.
-**Initial Upside / Downside Case:** $623.50 (MA50) within 1-3 trading sessions.
-**Key Risk:** ❌ Broad semiconductor weakness dragging down the Nasdaq and tech sentiment.
+**Entry Consideration:** Enter on a confirmed hold of the $620 level or the 50-day moving average ($622.78).
+**Risk / Invalidation Level:** Daily close below $610 to invalidate the technical recovery thesis.
+**Initial Upside / Downside Case:** $638.50 (MA20) within a 3-5 day timeframe.
+**Key Risk:** ❌ Legal pressure from the $7B scam ad revenue lawsuit [5] could weigh on short-term sentiment.
+
+### ⚪ #2 ARM — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $221.41 (+0.1%) | **RSI:** 45.0 | **Vol ratio:** 0.42x | **ATR:** 16.0245 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.1/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Massive AI-fueled demand that currently exceeds supply [1, 4] and an upbeat revenue forecast [2] suggest the post-earnings dip is a buying opportunity. Analysts resetting forecasts [3] and price holding above the MA20 support a recovery as supply concerns are viewed as a temporary bottleneck.
+
+**Entry Consideration:** Enter near current price of $221.41 or on a minor pullback to $215.00, ensuring the 20-day moving average holds.
+**Risk / Invalidation Level:** Close below the 20-day moving average ($206.51) or a break of $200.00 support.
+**Initial Upside / Downside Case:** Initial target of $240.00 representing a return to recent highs within 3-5 trading days.
+**Key Risk:** ❌ Supply chain constraints preventing the company from meeting high demand forecasts [2].
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 42
-- `SPY` LONG | IGNORE | score 35
+- `SPY` LONG | IGNORE | score 38
+- `QQQ` LONG | IGNORE | score 37
 
 ---
 ## 📰 Key News (Last 24h)
 
+**COST**  ·  earnings
+  ▲ ABN Amro Shares Climb After Cost Control Lifts Profit  [WSJ]
+  ▼ Morgan Stanley cuts Amcor stock price target to $42 on lower earnings  [Investing.com]
+
 **NVDA**  ·  earnings
-  ▲ SoftBank records $12 billion fourth-quarter profit - Reuters  [Reuters]
-  ▲ MU vs. NVDA vs. CRWV: Which AI Stock Has the Highest Upside Potential, According to Analysts? - TipRanks  [Tipranks]
+  ▲ UBS hikes Nvidia price target, sees strong earnings report ahead  [CNBC]
+  ▲ Cantor Fitzgerald raises Nvidia stock price target on earnings outlook  [Investing.com]
 
-**INTC**  ·  macro
-  ▲ Alphabet Plans Debut Yen Bond Sale as AI Race Accelerates - Bloomberg  [Bloomberg]
-  ▲ Nvidia Stock Closes at Record High. What Can Give It Another Boost. - Barron's  [Barrons]
+**MSFT**  ·  earnings
+  ▼ Microsoft Q3 earnings: Two reasons why the tech stock is falling  [Yahoo Finance]
 
-**AMZN**  ·  macro
-  ▲ EBay rejects GameStop's audacious $56 billion takeover bid - CNBC  [Cnbc]
+**AVGO**  ·  earnings
+  ▲ Citi Says Broadcom (AVGO) Could Beat April Quarter Estimates on AI Strength  [Yahoo Finance]
 
-**JPM**  ·  macro
-  ▼ JPMorgan Chase-led bank group reins in credit line to troubled KKR private credit fund as losses mount - CNBC  [Cnbc]
-
-**MACRO**  ·  earnings
-  ▼ Dynatrace Stock Falls On Fiscal Q4 Earnings, Mixed 2027 Guidance  [Yahoo Finance]
-
-**BAC**  ·  macro
-  ◆ Bank Stocks for Higher Rates: JPM, BAC, WFC, or Regionals?  [Heygotrade]
+**PLTR**  ·  earnings
+  ▲ Palantir stock trades up as first-quarter 2026 revenue surges 85%  [Traders Union]
+  ▲ Palantir’s Record Revenue Signals Strength — Ignore Overvaluation Fears for PLTR Stock  [Barchart.com]
 
 ---
 ## 🛡 Research Risk Rules
