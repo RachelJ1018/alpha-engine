@@ -88,6 +88,46 @@ CREATE TABLE IF NOT EXISTS daily_runs (
     summary     TEXT
 );
 
+CREATE TABLE IF NOT EXISTS decision_logs (
+    id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+    candidate_id        INTEGER,
+    symbol              TEXT,
+    decision_date       TEXT,
+    system_tier         TEXT,           -- ACTIONABLE / WATCHLIST / MONITOR / IGNORE
+    beginner_verdict    TEXT,
+    score               REAL,
+    catalyst_quality    TEXT,           -- STRONG / MEDIUM / WEAK / NONE
+    evidence_level      TEXT,           -- EARLY_POSITIVE / RELIABLE_POSITIVE / INSUFFICIENT / etc.
+    confirmation_status TEXT,           -- JSON {Catalyst, Volume, MarketConf, Regime, Risk}
+    position_size_mult  REAL,
+    decision_reason     TEXT,           -- why this tier was assigned
+    blocked_reasons     TEXT,           -- why it didn't go higher
+    created_at          TEXT
+);
+
+CREATE TABLE IF NOT EXISTS live_trades (
+    id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+    candidate_id        INTEGER,
+    symbol              TEXT,
+    direction           TEXT,           -- LONG / SHORT
+    entry_date          TEXT,
+    entry_price         REAL,
+    stop_price          REAL,
+    target_price        REAL,
+    shares              INTEGER,
+    notional            REAL,
+    max_loss_dollars    REAL,
+    effective_risk_pct  REAL,
+    exit_date           TEXT,
+    exit_price          REAL,
+    exit_reason         TEXT,           -- HIT_STOP / HIT_TARGET / TIME_EXIT / MANUAL
+    pnl_pct             REAL,
+    alpha_pct           REAL,           -- pnl_pct minus benchmark on same period
+    r_multiple          REAL,
+    followed_plan       INTEGER,        -- 0 or 1 (boolean)
+    notes               TEXT
+);
+
 CREATE TABLE IF NOT EXISTS signal_outcomes (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     symbol          TEXT,
@@ -152,6 +192,18 @@ def migrate_db():
         ("trade_candidates", "earn_strength",       "REAL"),
         ("trade_candidates", "position_size_mult",  "REAL"),
         ("trade_candidates", "catalyst_quality",    "TEXT"),
+        # Layer 2 Decision Card fields
+        ("trade_candidates", "event_type",          "TEXT"),
+        ("trade_candidates", "evidence_level",      "TEXT"),
+        ("trade_candidates", "confirmation_status", "TEXT"),
+        ("trade_candidates", "beginner_verdict",    "TEXT"),
+        ("trade_candidates", "invalidation_rules",  "TEXT"),
+        ("trade_candidates", "suggested_entry",     "REAL"),
+        ("trade_candidates", "suggested_stop",      "REAL"),
+        ("trade_candidates", "suggested_target",    "REAL"),
+        ("trade_candidates", "time_exit_days",      "INTEGER"),
+        ("trade_candidates", "effective_risk_pct",  "REAL"),
+        ("trade_candidates", "suggested_shares",    "INTEGER"),
     ]
     for table, col, coltype in migrations:
         try:
