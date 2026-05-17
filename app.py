@@ -631,6 +631,7 @@ with tab_today:
             st.caption(f"📄 Full HTML report: `{report_path}`")
 
     # ── Open Positions (always visible, outside run_complete gate) ────────────
+    from modules.db import get_conn
     st.divider()
     st.subheader("📊 Open Positions")
     _op_conn = get_conn()
