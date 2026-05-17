@@ -477,6 +477,56 @@ with tab_today:
                 if shares == 0:
                     st.warning(f"Position blocked: {sizing_note}")
 
+                # ── Log Trade ─────────────────────────────────────────────
+                if action in ("ACTIONABLE", "WATCHLIST"):
+                    _lt_conn = get_conn()
+                    _already = _lt_conn.execute(
+                        "SELECT id FROM live_trades WHERE symbol=? AND entry_date=? AND exit_date IS NULL",
+                        (sym, today),
+                    ).fetchone()
+                    _lt_conn.close()
+
+                    if _already:
+                        st.success(f"✅ Trade already logged (open position #{_already['id']})")
+                    else:
+                        with st.form(key=f"log_{sym}_{today}"):
+                            st.markdown("**📝 Log this trade**")
+                            lf1, lf2, lf3 = st.columns(3)
+                            _def_entry  = float(price)
+                            _def_stop   = float(stop_price) if stop_price else round(_def_entry * (0.97 if direc == "LONG" else 1.03), 2)
+                            _def_target = float(target_price) if target_price else round(_def_entry * (1.06 if direc == "LONG" else 0.94), 2)
+                            _def_shares = int(shares) if shares else 10
+                            actual_entry  = lf1.number_input("Actual entry price", value=_def_entry,  step=0.01, format="%.2f")
+                            actual_stop   = lf2.number_input("Actual stop price",  value=_def_stop,   step=0.01, format="%.2f")
+                            actual_target = lf3.number_input("Actual target price", value=_def_target, step=0.01, format="%.2f")
+                            actual_shares_in = st.number_input("Shares", value=_def_shares, step=1, min_value=1)
+                            log_notes = st.text_input("Notes (optional)")
+                            log_submitted = st.form_submit_button("💾 Log Trade")
+                            if log_submitted:
+                                _lc = get_conn()
+                                _cand_row = _lc.execute(
+                                    "SELECT id FROM trade_candidates WHERE run_date=? AND symbol=?",
+                                    (today, sym),
+                                ).fetchone()
+                                _cand_id   = _cand_row["id"] if _cand_row else None
+                                _notional  = actual_entry * actual_shares_in
+                                _max_loss  = abs(actual_entry - actual_stop) * actual_shares_in
+                                _eff_pct   = _max_loss / float(portfolio_value) * 100 if float(portfolio_value) > 0 else 0
+                                _lc.execute("""
+                                    INSERT INTO live_trades
+                                    (candidate_id, symbol, direction, entry_date, entry_price,
+                                     stop_price, target_price, shares, notional,
+                                     max_loss_dollars, effective_risk_pct, notes)
+                                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+                                """, (_cand_id, sym, direc, today, actual_entry,
+                                      actual_stop, actual_target, actual_shares_in,
+                                      round(_notional, 2), round(_max_loss, 2),
+                                      round(_eff_pct, 4), log_notes or None))
+                                _lc.commit()
+                                _lc.close()
+                                st.success(f"Logged: {sym} {direc} {actual_shares_in} shares @ ${actual_entry:.2f}")
+                                st.rerun()
+
                 # ── Score breakdown (transparency) ────────────────────────
                 st.progress(min(score / 85, 1.0), text=(
                     f"EventEdge: {_safe(c['event_edge_score']):.1f}/25 · "
@@ -519,6 +569,111 @@ with tab_today:
             shown += 1
 
         evidence_conn.close()
+
+        # ── Open Positions ────────────────────────────────────────────────
+        st.divider()
+        st.subheader("📊 Open Positions")
+        _op_conn = get_conn()
+        _open_trades = _op_conn.execute("""
+            SELECT lt.*, ps.close_price AS current_price
+            FROM live_trades lt
+            LEFT JOIN price_snapshots ps
+              ON lt.symbol = ps.symbol
+              AND ps.snapshot_date = (
+                  SELECT MAX(snapshot_date) FROM price_snapshots WHERE symbol = lt.symbol
+              )
+            WHERE lt.exit_date IS NULL
+            ORDER BY lt.entry_date DESC
+        """).fetchall()
+        _op_conn.close()
+
+        if not _open_trades:
+            st.caption("No open positions. Log a trade from a signal card above.")
+        else:
+            for _t in _open_trades:
+                _tsym   = _t["symbol"]
+                _tdir   = _t["direction"]
+                _tentry = float(_t["entry_price"])
+                _tstop  = float(_t["stop_price"] or 0)
+                _ttgt   = float(_t["target_price"] or 0)
+                _tsh    = int(_t["shares"] or 0)
+                _tdate  = _t["entry_date"]
+                _tcur   = float(_t["current_price"]) if _t["current_price"] else None
+
+                _tunreal = None
+                if _tcur:
+                    _tunreal = (_tcur - _tentry) / _tentry * 100
+                    if _tdir == "SHORT":
+                        _tunreal = -_tunreal
+
+                _unreal_str  = f"{_tunreal:+.2f}%" if _tunreal is not None else "—"
+                _unreal_icon = ("🟢" if (_tunreal or 0) > 0 else "🔴") if _tunreal is not None else "⚫"
+                _hdr = (f"{_unreal_icon} **{_tsym}** · {_tdir} · {_tsh} shares "
+                        f"@ ${_tentry:.2f} · entered {_tdate} · unrealized {_unreal_str}")
+
+                with st.expander(_hdr, expanded=False):
+                    _tc1, _tc2, _tc3, _tc4 = st.columns(4)
+                    _tc1.metric("Entry",   f"${_tentry:.2f}")
+                    _tc2.metric("Stop",    f"${_tstop:.2f}" if _tstop else "—")
+                    _tc3.metric("Target",  f"${_ttgt:.2f}"  if _ttgt  else "—")
+                    _tc4.metric("Current", f"${_tcur:.2f}"  if _tcur  else "—",
+                                _unreal_str)
+
+                    # R-to-stop and R-to-target
+                    if _tstop and _tcur:
+                        _risk_dist = abs(_tentry - _tstop)
+                        _cur_r = (_tcur - _tentry) / _risk_dist if _tdir == "LONG" else (_tentry - _tcur) / _risk_dist
+                        st.caption(f"Current R: {_cur_r:+.2f} · Max loss: ${_t['max_loss_dollars']:,.0f} · "
+                                   f"Eff risk: {_t['effective_risk_pct']:.3f}% of portfolio")
+
+                    if _t["notes"]:
+                        st.caption(f"Note: {_t['notes']}")
+
+                    with st.form(key=f"close_{_t['id']}"):
+                        st.markdown("**Close this trade**")
+                        _cf1, _cf2 = st.columns(2)
+                        _exit_price  = _cf1.number_input("Exit price",
+                                           value=_tcur or _tentry, step=0.01, format="%.2f")
+                        _exit_reason = _cf2.selectbox("Reason",
+                                           ["HIT_TARGET", "HIT_STOP", "TIME_EXIT", "MANUAL"])
+                        _followed    = st.checkbox("Followed the plan (no FOMO / panic)")
+                        _close_notes = st.text_input("Exit notes")
+                        _close_sub   = st.form_submit_button("✅ Close Trade")
+                        if _close_sub:
+                            _pnl = (_exit_price - _tentry) / _tentry * 100
+                            if _tdir == "SHORT":
+                                _pnl = -_pnl
+                            # Alpha vs SPY over holding period
+                            _ac = get_conn()
+                            _spy_e = _ac.execute(
+                                "SELECT close_price FROM price_snapshots WHERE symbol='SPY' AND snapshot_date=?",
+                                (_tdate,),
+                            ).fetchone()
+                            _spy_x = _ac.execute(
+                                "SELECT close_price FROM price_snapshots WHERE symbol='SPY' "
+                                "ORDER BY snapshot_date DESC LIMIT 1",
+                            ).fetchone()
+                            _alpha = None
+                            if _spy_e and _spy_x:
+                                _spy_ret = (_spy_x["close_price"] - _spy_e["close_price"]) / _spy_e["close_price"] * 100
+                                _alpha   = _pnl - _spy_ret
+                            _risk_dist = abs(_tentry - _tstop)
+                            _r_mult    = (_pnl / (_risk_dist / _tentry * 100)) if _risk_dist > 0 else 0
+                            _ac.execute("""
+                                UPDATE live_trades SET
+                                    exit_date=?, exit_price=?, exit_reason=?,
+                                    pnl_pct=?, alpha_pct=?, r_multiple=?,
+                                    followed_plan=?, notes=?
+                                WHERE id=?
+                            """, (date.today().isoformat(), _exit_price, _exit_reason,
+                                  round(_pnl, 4),
+                                  round(_alpha, 4) if _alpha is not None else None,
+                                  round(_r_mult, 3), int(_followed),
+                                  _close_notes or _t["notes"], _t["id"]))
+                            _ac.commit()
+                            _ac.close()
+                            st.success(f"Closed {_tsym} @ ${_exit_price:.2f} · PnL {_pnl:+.2f}% · R {_r_mult:+.2f}")
+                            st.rerun()
 
         # ── News ─────────────────────────────────────────────────────────
         st.divider()
