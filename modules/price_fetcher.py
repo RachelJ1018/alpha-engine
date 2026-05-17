@@ -146,52 +146,85 @@ def _get_longbridge_ctx():
 def _fetch_longbridge_supplement(sym: str, ctx) -> Dict[str, Any]:
     """
     Pull supplemental fields from Longbridge for a US-listed symbol.
-    Returns a (possibly empty) dict with keys: pe_ratio, turnover_rate, volume_ratio.
-    Longbridge uses "<SYM>.US" notation.
+    Returns a (possibly empty) dict with any of: pe_ratio, turnover_rate, volume_ratio.
+
+    Longbridge notation: "<SYM>.US"
+
+    turnover_rate unit: Longbridge returns a decimal fraction (e.g. 0.0234 = 2.34%).
+    We store it as percentage (×100), so DB value of 2.34 means 2.34% daily turnover.
+
+    volume_ratio (量比): ratio of current session volume to average — same scale as
+    yfinance-computed volume_ratio, so they are directly comparable.
     """
     out: Dict[str, Any] = {}
     try:
         lb_sym = f"{sym}.US"
-        # static info — PE, market cap
-        details = ctx.static_info([lb_sym])
-        if details:
-            d = details[0]
-            # turnover_rate not in static info — comes from real-time quote
-        # real-time quote — volume_ratio (量比), turnover_rate (换手率)
         quotes = ctx.quote([lb_sym])
-        if quotes:
-            q = quotes[0]
-            tr = getattr(q, "turnover_rate", None)
-            vr = getattr(q, "volume_ratio",  None)
-            if tr is not None:
-                out["turnover_rate"] = round(float(tr), 4)
-            if vr is not None:
-                out["volume_ratio"] = round(float(vr), 2)
-        # PE from real-time quote fields
-        pe = getattr(q if quotes else None, "pe", None)
-        if pe and float(pe) > 0:
+        if not quotes:
+            return out
+        q = quotes[0]
+
+        # volume_ratio (量比) — highest priority supplemental field
+        vr = getattr(q, "volume_ratio", None)
+        if vr is not None:
+            out["volume_ratio"] = round(float(vr), 2)
+
+        # turnover_rate (换手率) — stored as % (multiply Longbridge decimal × 100)
+        tr = getattr(q, "turnover_rate", None)
+        if tr is not None:
+            out["turnover_rate"] = round(float(tr) * 100, 4)
+
+        # PE ratio
+        pe = getattr(q, "pe", None)
+        if pe is not None and float(pe) > 0:
             out["pe_ratio"] = round(float(pe), 2)
-    except Exception as e:
-        # Non-fatal — just return what we have
+
+    except Exception:
         pass
     return out
 
 
 # ── Data quality classification ───────────────────────────────────────────────
 
-_CRITICAL = ("close", "change_pct", "volume", "volume_ratio", "rsi", "atr")
+# Tier 1 — required for any usable signal (PARTIAL if any missing)
+_CRITICAL_TIER1 = ("close", "change_pct", "volume")
+# Tier 2 — required for full scoring; GOOD requires all tier1 + tier2 present
+_CRITICAL_TIER2 = ("volume_ratio", "rsi", "atr")
 
-def _classify_quality(row: Dict[str, Any]) -> str:
-    """GOOD / PARTIAL / MISSING based on presence of critical fields."""
+def _classify_quality(row: Optional[Dict[str, Any]]) -> str:
+    """
+    GOOD    — all tier-1 + tier-2 critical fields present.
+              Tier: ACTIONABLE / WATCHLIST / MONITOR / IGNORE all eligible.
+    PARTIAL — tier-1 present (close, change_pct, volume) but ≥1 tier-2 missing.
+              volume_ratio is the most impactful tier-2 field; its absence means
+              MarketConf and ACTIONABLE edge conditions cannot fire reliably.
+              Tier cap: WATCHLIST (cannot be ACTIONABLE).
+    MISSING — close or change_pct absent; data is not usable for scoring.
+              Tier cap: IGNORE (symbol skipped entirely).
+    """
     if row is None:
         return "MISSING"
-    missing_critical = [f for f in _CRITICAL if row.get(f) is None]
-    if not missing_critical:
-        return "GOOD"
-    # If we at least have close + change_pct, it's usable but partial
-    if row.get("close") is not None and row.get("change_pct") is not None:
+    t1_missing = [f for f in _CRITICAL_TIER1 if row.get(f) is None]
+    if t1_missing:
+        return "MISSING"
+    t2_missing = [f for f in _CRITICAL_TIER2 if row.get(f) is None]
+    if t2_missing:
         return "PARTIAL"
-    return "MISSING"
+    return "GOOD"
+
+
+def _quality_fields(row: Optional[Dict[str, Any]]) -> Dict[str, List[str]]:
+    """
+    Returns {"missing": [...], "supplemented": [...]} for logging / UI.
+    'supplemented' = fields that were None after yfinance but filled by Longbridge.
+    We detect this by comparing row["source"] and whether lb_fields are present.
+    """
+    if row is None:
+        return {"missing": list(_CRITICAL_TIER1) + list(_CRITICAL_TIER2), "supplemented": []}
+    all_tracked = list(_CRITICAL_TIER1) + list(_CRITICAL_TIER2) + ["pe_ratio", "turnover_rate"]
+    missing      = [f for f in all_tracked if row.get(f) is None]
+    supplemented = row.get("_supplemented", [])
+    return {"missing": missing, "supplemented": supplemented}
 
 
 # ── Main entry point ──────────────────────────────────────────────────────────
@@ -223,37 +256,46 @@ def fetch_prices(symbols: Optional[List[str]] = None, verbose: bool = True) -> D
     failed  = []
     quality_counts  = {"GOOD": 0, "PARTIAL": 0, "MISSING": 0}
     source_counts   = {"yfinance": 0, "yfinance+longbridge": 0, "longbridge": 0, "none": 0}
+    sym_quality: Dict[str, Dict] = {}   # sym → {quality, missing_fields, supplemented_fields}
 
     for sym in symbols:
         row = _fetch_yfinance(sym)
         lb_used = False
 
         # ── Longbridge supplement ────────────────────────────────────────────
-        # Trigger if: Longbridge is available AND (yfinance failed OR missing supplementals)
+        # Priority order: volume_ratio first, then pe_ratio, turnover_rate.
+        # Trigger when Longbridge available AND yfinance failed OR missing any of these.
         if lb_available:
             yf_failed     = row is None
             missing_suppl = row is not None and (
+                row.get("volume_ratio")  is None or   # highest priority — affects tier gate
                 row.get("pe_ratio")      is None or
-                row.get("turnover_rate") is None or
-                row.get("volume_ratio")  is None
+                row.get("turnover_rate") is None
             )
             if yf_failed or missing_suppl:
                 lb_data = _fetch_longbridge_supplement(sym, lb_ctx)
                 if lb_data:
                     lb_used = True
                     if row is None:
-                        row = {}   # Longbridge as sole source (OHLCV still missing = PARTIAL)
-                    row.update({k: v for k, v in lb_data.items() if row.get(k) is None})
+                        row = {}
+                    supplemented = []
+                    for k, v in lb_data.items():
+                        if row.get(k) is None:
+                            row[k] = v
+                            supplemented.append(k)
+                    row["_supplemented"] = supplemented
 
         # ── Quality tag ─────────────────────────────────────────────────────
         quality = _classify_quality(row)
         quality_counts[quality] += 1
+        qf = _quality_fields(row)
+        sym_quality[sym] = {"quality": quality, **qf}
 
-        if row is None:
+        if quality == "MISSING":
             failed.append(sym)
             source_counts["none"] += 1
             if verbose:
-                print(f"[price] ✗ {sym}: no data from any source")
+                print(f"[price] ✗ {sym}: MISSING — {qf['missing']}")
             continue
 
         # ── Source tag ──────────────────────────────────────────────────────
@@ -290,8 +332,10 @@ def fetch_prices(symbols: Optional[List[str]] = None, verbose: bool = True) -> D
             ))
             saved += 1
             if verbose and quality == "PARTIAL":
-                missing = [f for f in _CRITICAL if row.get(f) is None]
-                print(f"[price] ⚠ {sym}: PARTIAL — missing {missing} (source={price_source})")
+                print(
+                    f"[price] ⚠ {sym}: PARTIAL — missing={qf['missing']} "
+                    f"supplemented={qf['supplemented']} source={price_source}"
+                )
         except Exception as e:
             failed.append(sym)
             if verbose:
@@ -322,10 +366,11 @@ def fetch_prices(symbols: Optional[List[str]] = None, verbose: bool = True) -> D
     conn.close()
 
     status = {
-        "saved":   saved,
-        "failed":  failed,
-        "quality": quality_counts,
-        "sources": source_counts,
+        "saved":       saved,
+        "failed":      failed,
+        "quality":     quality_counts,
+        "sources":     source_counts,
+        "sym_quality": sym_quality,   # {sym: {quality, missing_fields, supplemented_fields}}
     }
 
     if verbose:

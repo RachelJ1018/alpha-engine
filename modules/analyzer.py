@@ -1740,6 +1740,21 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
         elif event_edge_score < 8 and action in ("ACTIONABLE", "WATCHLIST"):
             action = "MONITOR"
 
+        # Data quality gate: incomplete price data caps the tier
+        #   MISSING → IGNORE  (no usable OHLCV; scoring is unreliable)
+        #   PARTIAL → max WATCHLIST  (volume_ratio or rsi/atr missing;
+        #             ACTIONABLE edge conditions cannot be confirmed)
+        try:
+            _dq = price_row["data_quality"] if price_row else "GOOD"
+        except (IndexError, KeyError):
+            _dq = "GOOD"   # older DB rows without column → no cap
+        if _dq == "MISSING":
+            action = "IGNORE"
+        elif _dq == "PARTIAL" and action == "ACTIONABLE":
+            action = "WATCHLIST"
+            if verbose:
+                print(f"[analyze] {sym:6s} PARTIAL data → capped ACTIONABLE→WATCHLIST")
+
         scored.append({
             "sym":               sym,
             "direction":         direction,
