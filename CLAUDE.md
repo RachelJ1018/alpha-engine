@@ -33,7 +33,7 @@ alpha-engine/
 │   ├── options_flow.py   # yfinance options chain → CP ratio boost for EventEdge
 │   ├── report_generator.py    # MD + HTML report output
 │   ├── signal_tracker.py      # Record signals, update t+1/t+3/t+5, paper trades
-│   ├── evaluator.py      # Evaluation reports (win rates, score buckets, calibration)
+│   ├── evaluator.py      # 14 evaluation reports (win rates, score buckets, calibration, threshold backtest)
 │   ├── weight_optimizer.py    # Pearson correlation → weights.json
 │   ├── notification.py   # Email + WeChat (PushPlus) delivery
 │   ├── risk_engine.py    # ATR-based position sizing
@@ -63,23 +63,42 @@ final_score = EventEdge(0-25) + MarketConf(0-20) + RegimeFit(0-15)
             + RelOpp(0-15) + Freshness(0-10) - RiskPenalty(0-15)
 ```
 
-### Action labels (regime-aware thresholds)
-| Score      | LONG (neutral) | SHORT (neutral) |
-|------------|---------------|-----------------|
-| ACTIONABLE | ≥ 77          | ≥ 74            |
-| WATCHLIST  | ≥ 62          | ≥ 60            |
-| MONITOR    | ≥ 48          | ≥ 48            |
-| IGNORE     | < 48          | < 48            |
+### Action labels — empirical multi-factor tiers
+Thresholds are anchored to actual historical outcomes (score range 44–66),
+not to the theoretical max of 85. Regime influence lives in the RegimeFit
+scoring layer, not in threshold shifts.
 
-Thresholds shift by regime: bear raises LONG threshold, lowers SHORT threshold.
+| Tier | Condition |
+|------|-----------|
+| **IGNORE** | score < 50, **or** bucket in {macro_watch, sympathy_play, opinion_watch} |
+| **MONITOR** | round(score,1) 50–51, or pos_mult < 0.55 |
+| **WATCHLIST** | round(score,1) ≥ 52 + quality gates pass |
+| **ACTIONABLE** | WATCHLIST gates + EventEdge ≥ 12 + **one of**: |
+| | a. post_earnings_drift + vr 1.0–1.5 + MC 10–15 |
+| | b. earn_strength ≥ 3 (strongly confirmed earnings gap) |
+| | c. score ≥ 58 + alpha-positive bucket + MC ≥ 12 |
+
+Quality gates (required for WATCHLIST+): bucket not excluded, pos_mult ≥ 0.55.
+Alpha-positive buckets: `post_earnings_drift`, `event_long`, `event_short`.
+Score is rounded to 1 dp before comparison so displayed value matches tier.
+
+Empirical validation (124 resolved signals, Mar–May 2026):
+- ACTIONABLE n=7 → win 71.4%, avg t+5 +2.56%
+- WATCHLIST  n=48 → win 60.4%, avg t+5 +1.36%
+- IGNORE     n=59 → win 62.7%, avg t+5 +1.04%
 
 ### Key scoring details
 - **EventEdge**: source quality + event strength + novelty + options flow boost (−2 to +3)
+  - Earnings signals: `score_post_earnings_risk()` adds `earn_strength` bonus (0–4.5) for large
+    confirmed gaps (direction-aligned, vr≥1.0, gap held intraday, regime not counter)
 - **MarketConf**: price/MA/volume alignment with thesis direction
 - **RegimeFit**: bull→LONG gets 11, bear→SHORT gets 10.5; never hard-blocks
-- **RelOpp**: 52-week high distance (+4 if >30% off high, -2 if <3% off high)
-- **RiskPenalty**: RSI counter-trend (SHORT+RSI>70 → +2.5), ATR%, gap risk
+- **RelOpp**: strategy-aware 52-week distance scoring; macro_watch returns flat 5.0
+- **RiskPenalty**: RSI event-type aware (no penalty for SHORT+RSI>70 or event-driven LONG+RSI>75);
+  earnings confirmation gate floors penalty at 3.5/2.0/1.0 based on n_confirmed (1–3 of 4 criteria)
 - **Direction**: news sentiment → price trend fallback
+- **earn_strength**: stored in `trade_candidates`; used as ACTIONABLE edge indicator (condition b)
+- **position_size_mult**: stored in `trade_candidates`; choppy→0.65, bear+LONG→0.85, high-ATR→×0.85
 
 ### Options Flow Boost (options_flow.py)
 Applied to EventEdge after news scoring, before no-news cap. Range: −2.0 to +3.0.
@@ -89,7 +108,17 @@ Applied to EventEdge after news scoring, before no-news cap. Range: −2.0 to +3
 - Cached per symbol per day (fetched once, direction boost computed fresh per call)
 
 ### Strategy buckets
-`event_short`, `event_long`, `sympathy_play`, `post_earnings_drift`, `macro_watch`
+| Bucket | Description | ACTIONABLE eligible |
+|--------|-------------|-------------------|
+| `post_earnings_drift` | Earnings catalyst | ✓ (alpha-positive) |
+| `event_long` | Event-driven LONG | ✓ (alpha-positive) |
+| `event_short` | Event-driven SHORT | ✓ (alpha-positive) |
+| `general_setup` | Price/technical | ✓ (via score) |
+| `relative_strength_long` | Momentum | ✓ (via score) |
+| `mean_reversion_long` | Mean reversion | ✓ (via score) |
+| `macro_watch` | No symbol news | ✗ excluded → IGNORE |
+| `sympathy_play` | Sector sympathy | ✗ excluded → IGNORE |
+| `opinion_watch` | Low-value titles | ✗ excluded → IGNORE |
 
 ## Multi-Agent Thesis (multi_agent_thesis.py)
 4-agent pipeline: TechnicalAgent → NewsAgent → RiskAgent → SynthesisAgent.
@@ -129,7 +158,7 @@ THESIS_PROVIDER      # default: "auto"
 - `watched_symbols` — 31 symbols with sector + priority flags
 - `news_articles` — deduplicated by title hash; stores event_type, sentiment, novelty
 - `price_snapshots` — one row per symbol per day; includes atr_14, week_high_52, **day_high, day_low**
-- `trade_candidates` — scored output per run; includes 5-component scores + **thesis_conviction/technical/news/risk**
+- `trade_candidates` — scored output per run; includes 5-component scores + **thesis_conviction/technical/news/risk** + **earn_strength, position_size_mult**
 - `signal_outcomes` — forward P&L tracking; t1/t3/t5 + paper_exit + paper_pnl
 - `daily_runs` — run log
 

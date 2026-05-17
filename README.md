@@ -21,22 +21,35 @@ A personal, local investment research tool for swing trading. Runs daily to prov
 - Market regime detection (SPY-based): bull / bear / neutral / choppy
 
 ### Multi-Layer Scoring System
-Six independent scoring layers (0-100 total):
+Six independent scoring layers (max raw = 85):
 
 | Layer | Points | Description |
 |-------|--------|-------------|
-| Event Edge | 0-25 | Event importance + source credibility + sentiment |
-| Market Confidence | 0-20 | Technical setup quality (RSI, MA, volume) |
+| Event Edge | 0-25 | Event importance + source credibility + sentiment + options flow boost |
+| Market Confidence | 0-20 | Technical setup quality (RSI, MA, volume alignment) |
 | Regime Fit | 0-15 | Alignment with current market environment |
-| Relative Opportunity | 0-15 | Risk/reward potential + gap dynamics |
+| Relative Opportunity | 0-15 | Strategy-aware 52-week distance scoring |
 | Freshness | 0-10 | News recency bonus |
-| Risk Penalty | 0-15 | Deducted for volatility & adverse technicals |
+| Risk Penalty | 0-15 | Deducted for volatility, adverse technicals, weak confirmation |
 
-**Action Labels:**
-- **ACTIONABLE** (score >= 70 bull / 75 neutral): Ready-to-trade setups
-- **WATCHLIST** (score 55-69): Monitor for entry clarity
-- **MONITOR** (score 40-54): Track for next opportunity
-- **IGNORE** (score < 40): Poor risk/reward
+**Action Labels — empirical multi-factor tiers:**
+
+Thresholds are anchored to actual historical performance, not the theoretical max.
+Regime influence lives inside the RegimeFit scoring layer, not in threshold shifts.
+
+| Tier | Criteria |
+|------|----------|
+| **ACTIONABLE** | score ≥ 52 + quality gates + EventEdge ≥ 12 + one edge indicator |
+| **WATCHLIST** | score ≥ 52 + quality gates (bucket not excluded, pos_mult ≥ 0.55) |
+| **MONITOR** | score 50–51 (borderline — observe only) |
+| **IGNORE** | score < 50, or macro_watch / sympathy_play / opinion_watch bucket |
+
+Edge indicators for ACTIONABLE (one of):
+- `post_earnings_drift` + volume ratio 1.0–1.5 + MarketConf 10–15
+- `earn_strength` ≥ 3 (large confirmed earnings gap with 3-of-4 criteria met)
+- score ≥ 58 + alpha-positive bucket (`post_earnings_drift`/`event_long`/`event_short`) + MarketConf ≥ 12
+
+Validated on 124 resolved signals: ACTIONABLE avg t+5 +2.56% vs IGNORE +1.04%.
 
 ### AI-Generated Trade Theses
 - Claude API generates specific entry/stop/target guidance
@@ -44,9 +57,9 @@ Six independent scoring layers (0-100 total):
 - Cost: ~$0.01-0.05 per run
 
 ### Risk Engine
-- **ATR-based stops:** Stop = entry +/- 1.2x 14-day ATR
-- **2R targets:** Target = entry +/- 2.0x stop distance
-- **Regime scaling:** Bull (1.0x) -> Neutral (0.8x) -> Bear (0.7x) -> Choppy (0.5x)
+- **ATR-based stops:** Stop = entry ± 1.2× 14-day ATR
+- **2R targets:** Target = entry ± 2.0× stop distance
+- **Position size multiplier:** choppy → 0.65×, bear+LONG → 0.85×, high-ATR (>7%) → additional 0.85×
 - **Portfolio constraints:** Max positions, single-name exposure limits, sector concentration
 
 ### Report Generation
@@ -216,7 +229,7 @@ alpha-engine/
 |-------|---------|
 | `news_articles` | Source, title, URL, symbols, event type, sentiment, novelty, importance |
 | `price_snapshots` | OHLCV, RSI, MA20/50, volume ratio, ATR, 52-week range, market cap |
-| `trade_candidates` | Scoring layers, thesis, entry/stop/target, action labels |
+| `trade_candidates` | Scoring layers, thesis, action label, earn_strength, position_size_mult |
 | `watched_symbols` | Ticker universe with priority/sector flags |
 | `daily_runs` | Aggregate metrics (news count, candidates, regime, SPY change) |
 | `signal_outcomes` | Historical signals with t+1/3/5/10 P&L tracking |
@@ -229,8 +242,8 @@ For each candidate:
 
 | Field | Example |
 |-------|---------|
-| **Action** | BUY NOW / WATCH / MONITOR |
-| **Score** | 78/100 |
+| **Action** | ACTIONABLE / WATCHLIST / MONITOR / IGNORE |
+| **Score** | 55.3 (max raw ≈ 85; ACTIONABLE threshold ≥ 52 + gates) |
 | **What & Why** | "NVDA beat earnings by 18% with strong data center guidance." |
 | **Entry** | "Above $487 on volume > 1.5x avg" |
 | **Stop Loss** | "Below $472 — breaks 20-day MA" |
