@@ -204,6 +204,11 @@ def migrate_db():
         ("trade_candidates", "time_exit_days",      "INTEGER"),
         ("trade_candidates", "effective_risk_pct",  "REAL"),
         ("trade_candidates", "suggested_shares",    "INTEGER"),
+        # Data quality tracking
+        ("price_snapshots",  "price_source",        "TEXT"),   # yfinance / longbridge / partial
+        ("price_snapshots",  "data_quality",        "TEXT"),   # GOOD / PARTIAL / MISSING
+        ("price_snapshots",  "pe_ratio",            "REAL"),
+        ("price_snapshots",  "turnover_rate",       "REAL"),   # 换手率 %
     ]
     for table, col, coltype in migrations:
         try:

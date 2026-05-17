@@ -204,7 +204,9 @@ with tab_today:
 
             progress.progress(45, "Fetching prices & technicals (yfinance)…")
             buf = io.StringIO()
-            with redirect_stdout(buf): price_count = fetch_prices()
+            with redirect_stdout(buf):
+                _price_status = fetch_prices()
+                price_count = _price_status["saved"]
             log(buf.getvalue())
 
             conn = get_conn()

@@ -82,8 +82,11 @@ def main():
         header("Fetching prices")
         _t = time.time()
         try:
-            price_count = fetch_prices()
-            plog.record("prices", True, int((time.time()-_t)*1000), f"{price_count} symbols")
+            price_status = fetch_prices()
+            price_count  = price_status["saved"]
+            _q = price_status["quality"]
+            _detail = f"{price_count} symbols | GOOD={_q['GOOD']} PARTIAL={_q['PARTIAL']} MISSING={_q['MISSING']}"
+            plog.record("prices", True, int((time.time()-_t)*1000), _detail)
         except Exception as e:
             plog.record("prices", False, int((time.time()-_t)*1000), str(e)[:80])
             print(f"[prices] ERROR: {e}")
