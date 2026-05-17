@@ -1761,9 +1761,10 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
                 event_edge_score, market_conf_score, regime_fit_score,
                 relative_opp_score, freshness_score, risk_penalty_score,
                 strategy_bucket,
-                thesis_conviction, thesis_technical, thesis_news, thesis_risk
+                thesis_conviction, thesis_technical, thesis_news, thesis_risk,
+                earn_strength, position_size_mult
             )
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             (
                 today, sym, company_name, direction_final, final_score,
@@ -1783,6 +1784,8 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
                 thesis_data.get("thesis_technical"),
                 thesis_data.get("thesis_news"),
                 thesis_data.get("thesis_risk"),
+                round(_earn_strength, 2),
+                round(position_size_mult, 2),
             ),
         )
         candidates_created += 1

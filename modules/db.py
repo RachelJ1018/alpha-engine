@@ -145,10 +145,12 @@ def migrate_db():
         ("signal_outcomes",  "paper_exit",      "TEXT"),   # HIT_STOP/HIT_TARGET/T5_EXIT/PENDING
         ("signal_outcomes",  "event_type",      "TEXT"),   # earnings/macro/ma/ai/product/regulation/layoff/general
         ("daily_runs",       "steps_json",      "TEXT"),   # JSON array of per-step {step,ok,ms,detail}
-        ("trade_candidates", "thesis_conviction", "TEXT"),
-        ("trade_candidates", "thesis_technical",  "TEXT"),
-        ("trade_candidates", "thesis_news",       "TEXT"),
-        ("trade_candidates", "thesis_risk",       "TEXT"),
+        ("trade_candidates", "thesis_conviction",   "TEXT"),
+        ("trade_candidates", "thesis_technical",    "TEXT"),
+        ("trade_candidates", "thesis_news",         "TEXT"),
+        ("trade_candidates", "thesis_risk",         "TEXT"),
+        ("trade_candidates", "earn_strength",       "REAL"),
+        ("trade_candidates", "position_size_mult",  "REAL"),
     ]
     for table, col, coltype in migrations:
         try:
