@@ -750,6 +750,107 @@ def compute_position_size_mult(
 
     return round(mult, 2)
 
+
+def compute_catalyst_quality(
+    event_type: str,
+    strategy_bucket: str,
+    earn_strength: float,
+    source_quality: float,
+    novelty: float,
+    freshness_score: float,
+    has_symbol_news: bool,
+    event_edge_score: float,
+) -> str:
+    """Is the catalyst real and material? Returns STRONG / MEDIUM / WEAK / NONE.
+
+    STRONG: hard ticker-specific catalyst (earnings/M&A/regulation) confirmed by
+            reliable source + fresh news; or earnings gap confirmed by earn_strength ≥ 2.
+    MEDIUM: real but less confirmable catalyst (product/AI/layoff with decent source).
+    WEAK:   macro narrative, sympathy move, opinion content, vague AI hype.
+    NONE:   no symbol-specific news; pure technical setup.
+    """
+    # NONE: no ticker-specific news or too generic
+    if not has_symbol_news:
+        return "NONE"
+    if event_type == "general" and event_edge_score < 8:
+        return "NONE"
+
+    # WEAK: structural noise or non-company-specific
+    if strategy_bucket in ("macro_watch", "sympathy_play", "opinion_watch"):
+        return "WEAK"
+    if event_type == "macro":
+        return "WEAK"
+    if event_type in ("ai", "general") and novelty < 0.4:
+        return "WEAK"
+    if source_quality < 0.35:   # only low-quality sources
+        return "WEAK"
+
+    # STRONG: hard catalysts with reliable, fresh, ticker-specific confirmation
+    if earn_strength >= 2.0:    # confirmed earnings gap: direction + volume + held intraday
+        return "STRONG"
+    if event_type in ("earnings", "ma") and source_quality >= 0.5 and freshness_score >= 4.0:
+        return "STRONG"
+    if event_type == "regulation" and source_quality >= 0.65:
+        return "STRONG"
+
+    return "MEDIUM"
+
+
+def compute_catalyst_why(
+    event_type: str,
+    catalyst_quality: str,
+    direction: str,
+    change_pct: float,
+    volume_ratio: float,
+    earn_strength: float,
+    strategy_bucket: str,
+) -> str:
+    """Short 'Why this matters' narrative for UI and report display."""
+    cq_label = {
+        "STRONG": "strong", "MEDIUM": "moderate",
+        "WEAK": "weak", "NONE": "no",
+    }.get(catalyst_quality, "?")
+
+    event_desc = {
+        "earnings":   "Earnings catalyst",
+        "ma":         "M&A event",
+        "regulation": "Regulatory event",
+        "product":    "Product/launch event",
+        "ai":         "AI-related development",
+        "layoff":     "Restructuring announcement",
+        "macro":      "Macro data point",
+        "general":    "General news",
+    }.get(event_type, "News catalyst")
+
+    parts = [f"{event_desc} — {cq_label} catalyst"]
+
+    # Price + volume confirmation
+    if abs(change_pct) >= 3 and volume_ratio >= 1.2:
+        move_word = "gap up" if change_pct > 0 else "gap down"
+        parts.append(
+            f"Stock {move_word} {change_pct:+.1f}% on {volume_ratio:.1f}x volume"
+            " (institutional participation confirmed)"
+        )
+    elif abs(change_pct) >= 1:
+        move_word = "up" if change_pct > 0 else "down"
+        parts.append(f"Price moved {move_word} {abs(change_pct):.1f}%"
+                     f" · vol ratio {volume_ratio:.1f}x")
+    elif volume_ratio < 0.7:
+        parts.append(f"Caution: volume only {volume_ratio:.1f}x avg — conviction unconfirmed")
+
+    # Setup context
+    if earn_strength >= 3:
+        parts.append("Gap confirmed: direction-aligned + volume present + held intraday")
+    elif earn_strength >= 1:
+        parts.append("Partial earnings confirmation (some criteria met)")
+    elif strategy_bucket == "post_earnings_drift":
+        parts.append("Post-earnings drift setup — catalyst-driven 1–5 day window")
+    elif strategy_bucket in ("event_long", "event_short"):
+        parts.append("Event-driven setup — catalyst-specific alpha window")
+
+    return " · ".join(parts)
+
+
 def score_post_earnings_risk(
     price_row: Optional[Any],
     direction: str,
@@ -1585,6 +1686,17 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
 
         relative_opp_score = score_relative_opportunity(price_row, strategy_bucket, direction)
 
+        catalyst_quality = compute_catalyst_quality(
+            event_type=best_event_type,
+            strategy_bucket=strategy_bucket,
+            earn_strength=_earn_strength,
+            source_quality=_safe_float(news_scores.get("source_quality"), 0.4),
+            novelty=_safe_float(news_scores.get("novelty"), 0.5),
+            freshness_score=freshness_score,
+            has_symbol_news=has_symbol_news,
+            event_edge_score=event_edge_score,
+        )
+
         if not has_symbol_news:
             if is_index:
                 event_edge_score = min(event_edge_score, 12.0)
@@ -1637,6 +1749,7 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
             "risk_penalty_score":  risk_penalty_score,
             "position_size_mult":  position_size_mult,
             "earn_strength":       _earn_strength,
+            "catalyst_quality":    catalyst_quality,
             "technical_score":     technical_score,
             "news_scores":       news_scores,
             "articles":          articles,
@@ -1762,9 +1875,10 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
                 relative_opp_score, freshness_score, risk_penalty_score,
                 strategy_bucket,
                 thesis_conviction, thesis_technical, thesis_news, thesis_risk,
-                earn_strength, position_size_mult
+                earn_strength, position_size_mult,
+                catalyst_quality
             )
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             (
                 today, sym, company_name, direction_final, final_score,
@@ -1786,6 +1900,7 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
                 thesis_data.get("thesis_risk"),
                 round(_earn_strength, 2),
                 round(position_size_mult, 2),
+                catalyst_quality,
             ),
         )
         candidates_created += 1

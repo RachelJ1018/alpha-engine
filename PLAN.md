@@ -1,150 +1,345 @@
-# Alpha Engine — Evolution Plan
+# Alpha Engine — Evolution Plan v2
 
-> 目标：从"每天扫描 31 只股票的打分工具"进化为"可以指导投资决策的研究助手"
->
-> 当前状态：数据管道稳定，信号质量未经验证（胜率 35%，40 个样本）
-> 核心原则：少而精 > 多而杂；先验证再扩展；人工判断是最终门
+目标：从"每天扫描股票的打分工具"进化为"可以辅助投资决策的事件驱动研究助手"。
 
----
+**当前状态：** 数据管道稳定，Evaluation 体系已完成，score / tier 已完成第一轮实证校准。score ≥52 + gates 显示正 alpha，新 ACTIONABLE 分层初步有效，但仍需要 forward validation。
 
-## Phase 0 — 已完成的基础工作
+## 核心原则
 
-- [x] 数据管道：新闻采集 → 价格 → 分析 → 报告 → 通知
-- [x] 4 层评分：EventEdge + MarketConf + RegimeFit + RelOpp - RiskPenalty
-- [x] 信号追踪：t1/t3/t5 结果记录，paper trade 止损/目标
-- [x] Evaluation tab：signal stability、score buckets、paper trade summary
-- [x] 三条保护规则：RSI 超卖过滤 + EventEdge 分层 cap + 相似度 crowding penalty
-- [x] Backtest：价格层单独无 edge，确认 EventEdge 是主要 alpha 来源
+- 少而精 > 多而杂
+- empirical threshold > 理论满分阈值
+- score 是筛选器，不是自动交易指令
+- risk penalty 和 position sizing 分离
+- 人工判断是最终门
+- 小仓实盘可以作为 controlled experiment，但不能视为策略已被证明
 
 ---
 
-## Phase 1 — 让系统变得"少而精" 【当前阶段】
+## Phase 0 — 基础系统与评估体系【已完成】
 
-**目标**：把每日输出从 ~30 条噪音缩减为 2-3 条值得认真对待的候选
+### 0.1 数据与信号管道
+- [x] 新闻采集 → 价格快照 → 分析 → 报告 → 通知
+- [x] t1 / t3 / t5 outcome tracking
+- [x] paper trade tracking：stop / target / T5 exit
+- [x] signal_outcomes 持续记录 resolved signals
+- [x] Streamlit Evaluation tab
+- [x] High Conviction / Action 字段接入报告和 UI
 
-### 1.1 加 Eligibility Gate（硬门槛过滤）
+### 0.2 Evaluation 体系补齐
+- [x] Score bucket return
+- [x] Benchmark-adjusted return
+- [x] De-duplicated event return
+- [x] R-multiple analysis
+- [x] Win rate confidence interval
+- [x] Component correlation report
+- [x] Promoted signal quality report
+- [x] False upgrade diagnosis
+- [x] Volume × MarketConf matrix
+- [x] Empirical threshold backtest
+- [x] Tier backtest
 
-必须全部满足才进入候选池：
+### 0.3 当前关键数据
 
-- [x] EventEdge ≥ 15（有真实事件驱动，非纯价格信号）
-- [x] 方向 = LONG（SHORT 在现有数据未验证，暂禁）
-- [x] 制度 ≠ bear（bear 中不开新 LONG）
-- [x] catalyst 非 macro_watch / opinion_watch（排除纯叙事）
-- [x] 非严重拥挤（同 sector ≤ 1 条，最多 3 条）
+| 指标 | 当前结果 |
+|------|---------|
+| Resolved signals | 124 |
+| Baseline win rate | 62.9% |
+| Baseline avg t5 | +1.34% |
+| Baseline avg alpha | +0.46% |
+| Baseline avg R | +0.36R |
+| score ≥52 n | 62 |
+| score ≥52 win rate | 66.1% |
+| score ≥52 avg t5 | +1.87% |
+| score ≥52 avg alpha | +1.02% |
+| score ≥52 avg R | +0.47R |
+| score ≥52 worst t5 | -4.92% |
+| New ACTIONABLE n | 7 |
+| New ACTIONABLE win rate | 71.4% |
+| New ACTIONABLE avg t5 | +2.56% |
 
-实现：`get_high_conviction_picks()` in `report_generator.py`，同时供 `notification.py` 使用。
-
-### 1.2 每日输出上限
-
-- [x] 全局：最多 3 条（High Conviction gate 自动截断）
-- [x] 同 sector：最多 1 条
-- [ ] 下一步：crowding 的 free_keep 参数可基于更多数据后调整
-
-### 1.3 改进输出格式
-
-- [x] 报告顶部加 ⭐ High Conviction 板块（Market Context 之后）
-- [x] 邮件顶部加 amber 高亮卡片
-- [x] 微信顶部加 ⭐ 段落
-- [ ] 失效条件（invalidation）— 待加入 thesis 生成逻辑
-- [ ] 对比基准（vs SPY / sector ETF excess return）— Phase 2 加入
-
----
-
-## Phase 2 — 专注一个 Setup，积累验证样本【1-2 个月】
-
-**目标**：用 post-earnings drift LONG 积累 30+ 个真实样本，验证是否有 edge
-
-### 2.1 专注 post_earnings_drift
-
-- [ ] 过滤规则：bucket = post_earnings_drift + LONG + EE ≥ 15
-- [ ] 每次财报后系统自动识别并标记
-- [ ] 纸交易记录要严格：信号生成时固定，不能事后修改
-
-### 2.2 加 Excess Return 追踪
-
-比绝对涨跌更重要的是超额收益——是否跑赢市场 beta？
-
-- [ ] DB 新增字段：`spy_return_t5`、`sector_return_t5`
-- [ ] 计算：`excess_return = t5_pnl - spy_return_t5`
-- [ ] Evaluation tab 展示：raw return vs excess return
-
-### 2.3 改主 KPI
-
-- [ ] 从"胜率"改为"expectancy = 胜率 × 平均盈 - 败率 × 平均亏"
-- [ ] 追踪 profit factor = 总盈利 / 总亏损
-- [ ] 追踪 top bucket 相对 lower bucket 的单调性（验证评分有效性）
+**当前判断：**
+- score ≥52 是目前最合理的 empirical tradeable cutoff。
+- ACTIONABLE 分层初步有效，但 n=7，仍是 promising，不是 proven。
 
 ---
 
-## Phase 3 — 重新校准评分权重【3 个月后，≥80 个已解决样本】
+## Phase 1 — Scoring 校准与降噪【已完成】
 
-**目标**：让 score 真正预测收益排序，而不只是叙事完整度
+目标：让 score 从"叙事完整度"变成"弱正向 alpha predictor"。
 
-### 3.1 手动调权（等不及 optimizer 时的临时方案）
+### 1.1 RiskPenalty 重写
+- [x] RSI 逻辑改成 event-type-aware
+- [x] LONG event-driven + high RSI 不再自动惩罚
+- [x] SHORT + RSI >70 不再误判为 counter-trend
+- [x] choppy 不再扣 score，改由 position_size_mult 处理
+- [x] high ATR 在 confirmed post-earnings setup 中不再强扣 score
+- [x] high ATR 风险转移到 position sizing
 
-基于已知 backtest 结论：
+**结论：** RiskPenalty rewrite: PASS
+修正了 AMD / UNH / TSLA 这类强 earnings signal 被错误惩罚的问题。
 
-- [ ] RegimeFit 权重下调（当前 r=-0.236，负向预测）
-- [ ] MarketConf 权重上调（唯一正向 r=+0.237）
+### 1.2 Gap bonus gate
+- [x] Low-volume earnings gap 不再自动加分
+- [x] SHORT gap-down 不再直接给 bonus
+- [x] Neutral + weak volume 降低或取消 bonus
+- [x] weak confirmation 下限制 RP reduction
 
-### 3.2 数据驱动校准
+**结论：** Gap bonus gate: PASS
+减少了 low-volume / weak-confirmation false upgrades。
 
-- [ ] 按 {EE tier × catalyst × regime × direction} 分桶，估计每桶 expected excess return
-- [ ] 运行 `weight_optimizer`（需 ≥80 个已解决样本）
-- [ ] Walk-forward 验证：train 60% / validate 20% / forward 20%
+### 1.3 RelOpp strategy-aware rewrite
+- [x] macro_watch 降分
+- [x] sympathy_play 降分
+- [x] event_short 改成 resistance / near-ATH 逻辑
+- [x] post_earnings_drift 不再被 near-ATH 直接归零
+- [x] mean_reversion_long 保留 distance discount 逻辑
 
-### 3.3 把 score 从"叙事分"改成"预期收益排序"
+**结论：** RelOpp rewrite: PASS as calibration, not as score booster.
+RelOpp 的价值主要是压低噪音 bucket，而不是制造 ACTIONABLE。
 
-- [ ] 用分桶 expected return 替换当前加权求和逻辑（或作为调整层叠加）
+### 1.4 Empirical threshold 替代旧理论阈值
+
+旧系统问题：ACTIONABLE threshold = 77，历史 max score ≈ 65，导致 ACTIONABLE 永远不可达。
+
+- [x] 废弃旧 77 / 62 阈值
+- [x] 新 empirical cutoff: score ≥52
+- [x] macro_watch / sympathy_play / opinion_watch → structural IGNORE
+- [x] EventEdge guard 保留
+- [x] position_size_mult 纳入 tier gate
 
 ---
 
-## Phase 4 — 实盘小仓位验证【6 个月后，胜率 >55% 且样本 >30】
+## Phase 2 — Forward Validation & Tier Quality【当前阶段】
 
-**前置条件（全部满足才考虑）：**
+目标：验证新 tier 是否在未来数据中继续有效，而不是只在历史样本里有效。
 
-- [ ] post_earnings_drift LONG 在 30+ 样本上胜率 > 55%
-- [ ] excess return（超额）为正
-- [ ] walk-forward 验证通过（不是 in-sample 结果）
-- [ ] 最大单日回撤可控（< 3%）
+### 2.1 上线后核心监控
 
-**仓位原则：**
+每日 / 每周追踪：
+- [ ] WATCHLIST count
+- [ ] ACTIONABLE count
+- [ ] ACTIONABLE vs WATCHLIST vs IGNORE 的 avg t5
+- [ ] ACTIONABLE vs WATCHLIST vs IGNORE 的 avg alpha
+- [ ] ACTIONABLE vs WATCHLIST vs IGNORE 的 avg R
+- [ ] ACTIONABLE worst loss
+- [ ] HIT_TARGET / HIT_STOP / T5_EXIT
+- [ ] score ≥52 rolling 30-day alpha
+- [ ] score ≥52 rolling 30-day R-multiple
 
-- 单笔风险 ≤ 0.5%（更保守，低于当前 paper 的 0.75%）
-- 每次最多 1 个持仓
-- 严格按系统止损，不主观持有
+**通过标准：**
+- ACTIONABLE avg_alpha > WATCHLIST
+- ACTIONABLE avg_R > WATCHLIST
+- ACTIONABLE worst loss 可控
+- score ≥52 rolling avg_alpha > 0
+- score ≥52 rolling avg_R > baseline
+
+**失败信号：**
+- ACTIONABLE 不如 WATCHLIST
+- score ≥52 alpha 变负
+- HIT_STOP rate 明显上升
+- worst loss 明显扩大
+- macro_watch / sympathy_play 重新进入高优先级
+
+### 2.2 ACTIONABLE 先视为 High Priority Candidate
+
+历史 ACTIONABLE 结果：n=7, win=71.4%, avg_t5=+2.56%，losses were small: -0.03%, -0.45%。但样本仍太小。
+
+- [x] 新 ACTIONABLE 规则上线
+- [ ] UI / 文案中更准确地理解为 ACTIONABLE_CANDIDATE 或 HIGH_PRIORITY
+- [ ] 累积 20–30 个 forward ACTIONABLE 后重新评估
+
+**当前判断：** ACTIONABLE rule is promising, not proven.
+
+### 2.3 50–52 区间增加 Near Watchlist
+
+MONITOR 中有一些边缘好信号，但没有证据说明应该把 WATCHLIST 阈值降到 50。
+
+- [ ] 保留 WATCHLIST threshold = 52
+- [ ] 新增 NEAR_WATCHLIST 标记：50 ≤ score < 52
+- [ ] 显示 missed-by reason：score missed by X / low volume / low MarketConf / bucket not alpha-positive / position_size_mult too low / EventEdge 不足
+
+**原则：** 不降低阈值，但允许人工复核 near-watchlist。
+
+### 2.4 Position-size-adjusted portfolio backtest
+
+因为 choppy / high ATR 已从 score penalty 转移到 position_size_mult，需要验证 portfolio-level 效果。
+
+- [ ] Equal-weight return
+- [ ] Position-size-adjusted return
+- [ ] Max drawdown
+- [ ] Volatility
+- [ ] Worst 5 trades contribution
+- [ ] Exposure by regime
+- [ ] Exposure by strategy_bucket
+- [ ] Exposure by ticker / sector
+
+**通过标准：**
+- position-sized drawdown < equal-weight drawdown
+- return 不明显下降
+- worst trade impact 下降
+
+### 2.5 earn_strength forward tracking
+
+历史 trade_candidates 没有 earn_strength，所以 condition b 无法完整回测。
+
+- [x] 新信号完整记录 earn_strength（已写入 trade_candidates）
+- [ ] 单独追踪 earn_strength ≥3 的表现
+- [ ] 看 earn_strength 是否真的提升 ACTIONABLE quality
+
+指标：earn_strength ≥3: n / win rate / avg t5 / avg alpha / avg R / worst loss
 
 ---
 
-## 长期不做的事（当前阶段明确排除）
+## Phase 3 — Setup-specific Alpha Validation【1–3 个月】
+
+目标：不再强求一个 global score 解释所有 setup，而是按 strategy_bucket 验证 edge。
+
+### 3.1 post_earnings_drift
+
+当前最有希望的 setup。
+
+已发现的强组合：volume_ratio 1.0–1.5，MarketConf 10–15
+
+历史表现：n=6, win=83.3%, avg_t5=+5.76%, avg_alpha=+5.47%, avg_R=+1.09
+
+- [ ] Forward 追踪 post_earnings_drift
+- [ ] 分开记录 gap-up continuation vs gap-down reversal
+- [ ] 记录 earnings strength / volume_ratio bucket / MarketConf bucket
+- [ ] 记录 alpha vs benchmark / sector ETF
+- [ ] 30+ forward samples 后重新验证
+
+### 3.2 event_short
+
+SHORT 不再完全禁用，但必须更严格。
+
+- [ ] 单独追踪 event_short
+- [ ] 只允许 high-confirmation event_short
+- [ ] 避免 low-volume gap-down chasing
+- [ ] 分开看 earnings short / non-earnings short
+
+**当前原则：** SHORT 不是禁用，而是必须更严格 gated。
+
+### 3.3 relative_strength_long
+
+UNH 等样本显示有潜力，但样本太小。
+
+- [ ] 暂不加入 alpha-positive bucket
+- [ ] 单独追踪 relative_strength_long
+- [ ] n ≥20 后评估是否加入 `_ALPHA_POS`
+
+### 3.4 macro_watch / sympathy_play / opinion_watch
+
+当前作为 structural IGNORE。
+
+- [x] macro_watch → IGNORE
+- [x] sympathy_play → IGNORE
+- [x] opinion_watch → IGNORE
+- [ ] 只有未来独立证明 positive alpha 后才重新开放
+
+---
+
+## Phase 4 — EventEdge 质量提升【3–6 个月】
+
+目标：提高事件识别质量，而不是机械提高分数。
+
+**当前发现：** EventEdge 常在 17–20；强 earnings signal 也不一定拿到接近 25 的分数。不要直接加权，先做 EventEdge audit。
+
+### 4.1 EventEdge bucket report
+
+分 EE <12 / 12–16 / 16–20 / 20+ 四档，每档看：n / win rate / avg_t5 / avg_alpha / avg_R / HIT_STOP / worst loss。
+
+- [ ] 只有 EE 高分单调更好，才考虑提高权重
+
+### 4.2 增强 earnings event quality
+
+未来可以纳入：EPS surprise / Revenue surprise / Guidance raise|cut / Margin expansion / Analyst revision / Management tone / Multi-source confirmation / Premarket reaction quality
+
+**目标：** EventEdge 从"新闻存在"升级为"事件质量"。
+
+---
+
+## Phase 5 — 实盘验证路径
+
+### Phase 5A — 极小仓 live experiment【现在可开始】
+
+目标：验证真实执行，而不是证明策略已经成熟。
+
+**前置条件：**
+- [ ] 只做 ACTIONABLE_CANDIDATE
+- [ ] 每笔必须人工确认
+- [ ] 不做自动交易
+- [ ] 不加仓、不摊平、不主观延长持有
+- [ ] 严格记录真实 entry / exit / slippage / reason
+- [ ] Paper result 和 live result 分开统计
+
+**仓位规则：** 每笔账户风险 ≤ 0.1%–0.25%，每次最多 1 笔，最多 1–2 个高相关仓位
+
+**允许开始的理由：** score ≥52 已显示正 alpha；ACTIONABLE historical n=7 表现良好；但样本小，因此只能极小仓验证。
+
+### Phase 5B — 小仓验证【新增 15–30 个 forward ACTIONABLE 后】
+
+**从 5A 升级到 5B 的条件：**
+- [ ] 新增 15–30 个 forward ACTIONABLE_CANDIDATE
+- [ ] Forward ACTIONABLE avg_alpha > 0
+- [ ] Forward ACTIONABLE avg_R > 0.25R
+- [ ] ACTIONABLE 表现优于 WATCHLIST
+- [ ] worst loss 可控
+- [ ] 执行纪律稳定
+- [ ] 结果不是由 1–2 个 ticker 贡献
+
+**仓位规则：** 每笔账户风险 ≤ 0.25%–0.5%，每次最多 1–2 笔，避免同 sector / same catalyst 过度集中
+
+### Phase 5C — 正式策略化【3–6 个月后评估】
+
+这不是开始小仓的时间点，而是判断是否可以更正式依赖系统 / 放大仓位的阶段。
+
+**前置条件：**
+- [ ] 50+ forward signals
+- [ ] 30+ forward ACTIONABLE_CANDIDATE
+- [ ] 不同 market regime 下仍保持 positive alpha
+- [ ] score ≥52 rolling alpha 持续 > 0
+- [ ] ACTIONABLE avg_R 明显高于 WATCHLIST
+- [ ] position-size-adjusted drawdown 可控
+- [ ] 不是少数 ticker / sector 贡献大部分收益
+
+**仍然不做：** 全自动交易 / 大仓位 / 无人工确认交易
+
+---
+
+## 当前明确不做
 
 | 方向 | 原因 |
-|---|---|
-| Broad market regime timing | 当前最弱，无验证 |
-| Neutral/choppy 下 SHORT | 数据显示 SHORT 整体胜率 12% |
-| 纯价格层信号（EE < 8）| Backtest 确认无独立 edge |
-| 提前抓反转 | 系统无此能力 |
-| 全自动交易（无人工确认） | 数据不足以支撑 |
+|------|------|
+| 全自动交易 | forward validation 未完成 |
+| 直接用 score 越高越好排序 | 高分段不单调，55+ 反而变弱 |
+| 恢复 77 ACTIONABLE 阈值 | 历史上不可达 |
+| 降 WATCHLIST 到 50 | 50–52 是边缘区，混有噪音 |
+| macro_watch / sympathy_play / opinion_watch | 历史表现接近噪音 |
+| low-volume earnings 自动加分 | false upgrade 来源之一 |
+| weak-confirmation gap-down SHORT | 容易追跌失败 |
+| 纯价格层信号 | 缺乏独立 edge |
+| 无人工确认实盘 | 当前系统定位仍是研究助手 |
+| 为单个 missed winner 调规则 | 容易 overfit |
 
 ---
 
-## 当前关键指标（更新于 2026-03-20）
+## 当前系统定位
 
-| 指标 | 数值 | 目标 |
-|---|---|---|
-| 已解决信号数 | 40 | ≥ 80 才能校准权重 |
-| 整体胜率（t5） | 35% | — |
-| LONG 胜率 | 69% | 验证 post_earnings_drift 子集 |
-| SHORT 胜率 | 12% | 当前阶段不追这个 |
-| 平均 t5 pnl | -0.03% | 需转正 |
-| Excess return vs SPY | 未追踪 | Phase 2 加入 |
-| post_earnings_drift 样本数 | ~5 | 目标 30+ |
+Alpha Engine 是**事件驱动研究助手**，不是自动交易系统。
+
+**系统职责：** 过滤噪音 / 标记 WATCHLIST / ACTIONABLE_CANDIDATE / 给出 score decomposition / 给出 risk / position size 建议 / 记录 forward outcome / 帮助人更快发现值得研究的机会
+
+**人的职责：** 判断事件质量 / 判断 catalyst 是否真实 / 判断市场环境是否适合 / 判断是否存在流动性 / gap / execution 风险 / 决定是否 paper trade / 极小仓 live experiment / 小仓验证
 
 ---
 
-## 系统当前定位
+## 当前最重要的 Next Actions
 
-> **研究助手，不是自动交易系统。**
->
-> 系统的职责：每天筛选出 1-3 条经过严格门槛的候选，并说明为什么值得看、最大风险是什么。
-> 人的职责：做最终判断，决定是否纸交易/实盘。
+1. [ ] 上线新 tier，开始 forward tracking
+2. [ ] 把 ACTIONABLE 理解为 ACTIONABLE_CANDIDATE / HIGH_PRIORITY
+3. [ ] 增加 NEAR_WATCHLIST reason 显示
+4. [ ] 做 position-size-adjusted portfolio backtest
+5. [x] 完整记录 earn_strength（已完成）
+6. [ ] 每周比较 ACTIONABLE vs WATCHLIST vs IGNORE 的 alpha / R
+7. [ ] 可以开始极小仓 live experiment，每笔风险控制在 0.1%–0.25%
+8. [ ] 累积 15–30 个 forward ACTIONABLE 后，再决定是否升级到小仓验证

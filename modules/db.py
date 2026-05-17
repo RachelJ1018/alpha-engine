@@ -151,6 +151,7 @@ def migrate_db():
         ("trade_candidates", "thesis_risk",         "TEXT"),
         ("trade_candidates", "earn_strength",       "REAL"),
         ("trade_candidates", "position_size_mult",  "REAL"),
+        ("trade_candidates", "catalyst_quality",    "TEXT"),
     ]
     for table, col, coltype in migrations:
         try:

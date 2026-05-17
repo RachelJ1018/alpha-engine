@@ -10,6 +10,11 @@ from modules.risk_engine import (
     PortfolioConfig, RiskConfig, plan_candidates, candidate_from_row
 )
 from modules.multi_agent_thesis import _llm_call
+from modules.analyzer import compute_catalyst_why
+from modules.decision_card import (
+    get_historical_evidence, confirmation_lights,
+    generate_invalidation, verdict, evidence_interpretation,
+)
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -319,6 +324,8 @@ with tab_today:
                 f"{'Short positions are disabled.' if not allow_shorts and regime_label == 'bear' else ''}"
             )
 
+        evidence_conn = get_conn()   # shared across all cards; closed after loop
+
         shown = 0
         for c in stock_candidates:
             if shown >= max_positions * 2:
@@ -353,30 +360,124 @@ with tab_today:
             action_icon = {"ACTIONABLE": "🟢", "WATCHLIST": "🟡",
                            "MONITOR": "⚪", "IGNORE": "⛔"}.get(action, "⚪")
             dir_icon = "▲" if direc == "LONG" else "▼"
+            try:
+                cq = c["catalyst_quality"] or "NONE"
+            except (IndexError, KeyError):
+                cq = "NONE"
+            cq_badge = {"STRONG": "🔥 STRONG catalyst", "MEDIUM": "✅ MEDIUM catalyst",
+                        "WEAK": "⚠️ WEAK catalyst",    "NONE":   "📊 No catalyst"}.get(cq, cq)
             header   = (f"{action_icon} **{sym}** — Score {score:.0f}/100 | "
-                        f"{action} | {dir_icon} {direc} | ${price:.2f} ({chg:+.1f}%)")
+                        f"{action} | {cq_badge} | {dir_icon} {direc} | ${price:.2f} ({chg:+.1f}%)")
 
             with st.expander(header, expanded=(action == "ACTIONABLE")):
-                p1, p2, p3, p4 = st.columns(4)
-                p1.metric("Shares",  f"{shares:,}",          f"${actual_cost:,.0f} cost")
-                p2.metric("Stop",    f"${stop_price:.2f}",   f"-${dollar_risk:,.0f} risk")
-                p3.metric("Target",  f"${target_price:.2f}", f"+${dollar_rwd:,.0f} reward")
-                p4.metric("R:R",     f"1:{rr:.1f}",          sizing_note)
 
-                st.caption(
-                    f"RSI(14): {rsi or '—'} · "
-                    f"Vol ratio: {f'{vr:.1f}x' if vr else '—'} · "
-                    f"MA20: ${ma20:.2f}" if ma20 else f"RSI(14): {rsi or '—'} · Vol ratio: {f'{vr:.1f}x' if vr else '—'}"
+                # ── Shared card data ─────────────────────────────────────
+                _bucket = c["strategy_bucket"] or ""
+                _evt_map = {
+                    "post_earnings_drift": "earnings", "pre_earnings_drift": "earnings",
+                    "event_long": "earnings", "event_short": "earnings",
+                    "macro_watch": "macro", "sympathy_play": "general",
+                    "opinion_watch": "general", "general_setup": "general",
+                    "mean_reversion_long": "general", "relative_strength_long": "general",
+                }
+                _evt = _evt_map.get(_bucket, "general")
+                _earn_str = float(c["earn_strength"] or 0)
+                _mc = _safe(c["market_conf_score"])
+                _rp = _safe(c["risk_penalty_score"])
+
+                # Historical evidence (uses shared evidence_conn)
+                _evidence = get_historical_evidence(
+                    evidence_conn, _bucket, direc,
+                    float(vr or 1.0), _mc, regime_label,
                 )
+                _ev_level = _evidence["evidence_level"]
+
+                # Verdict
+                _verdict = verdict(action, cq, _ev_level)
+                st.markdown(f"**Verdict:** {_verdict}")
+                st.divider()
+
+                # ── Section 1: What happened? ─────────────────────────────
+                st.markdown("**1. What happened?**")
+                _why = compute_catalyst_why(
+                    event_type=_evt,
+                    catalyst_quality=cq,
+                    direction=direc,
+                    change_pct=float(chg or 0),
+                    volume_ratio=float(vr or 1.0),
+                    earn_strength=_earn_str,
+                    strategy_bucket=_bucket,
+                )
+                st.markdown(_why)
+
+                # ── Section 2: Why it may work? ───────────────────────────
+                st.markdown("**2. Why it may work?**")
                 if c["thesis"]:
-                    st.markdown(f"**What & Why:** {c['thesis']}")
-                col_a, col_b = st.columns(2)
-                with col_a:
-                    if c["entry_note"]:     st.markdown(f"**Entry:** {c['entry_note']}")
-                    if c["stop_loss_note"]: st.markdown(f"**Stop:** :red[{c['stop_loss_note']}]")
-                with col_b:
-                    if c["target_note"]:    st.markdown(f"**Target:** :green[{c['target_note']}]")
-                    if c["risk_note"]:      st.markdown(f"**If wrong:** :orange[{c['risk_note']}]")
+                    st.markdown(c["thesis"])
+                else:
+                    st.caption("No LLM thesis available for this signal.")
+
+                # ── Section 3: Historical evidence ────────────────────────
+                st.markdown("**3. Historical Evidence**")
+                st.caption(f"Similar setup: _{_evidence['match_desc']}_")
+                _ev_color = {
+                    "RELIABLE_POSITIVE":   "green",
+                    "DEVELOPING_POSITIVE": "green",
+                    "EARLY_POSITIVE":      "orange",
+                    "EARLY_WEAK":          "orange",
+                    "DEVELOPING_WEAK":     "red",
+                    "RELIABLE_WEAK":       "red",
+                    "INSUFFICIENT":        "grey",
+                }.get(_ev_level, "grey")
+                if _evidence["n"] >= 3:
+                    e1, e2, e3, e4 = st.columns(4)
+                    e1.metric("n",         _evidence["n"])
+                    e2.metric("Win rate",  f"{_evidence['win_rate']}%")
+                    e3.metric("Avg T+5",   f"{_evidence['avg_t5']:+.2f}%")
+                    e4.metric("Worst T+5", f"{_evidence['worst_t5']:+.2f}%")
+                    e5, e6, _ = st.columns(3)
+                    e5.metric("Hit stop",   f"{_evidence['hit_stop_rate']}%")
+                    e6.metric("Hit target", f"{_evidence['hit_target_rate']}%")
+                    st.markdown(f"**Evidence level:** :{_ev_color}[{_ev_level}]")
+                    st.caption(_evidence["interpretation"])
+                else:
+                    st.caption(f":{_ev_color}[{_ev_level}] — {_evidence['interpretation']}")
+
+                # ── Section 4: Confirmation ───────────────────────────────
+                st.markdown("**4. Confirmation**")
+                _lights = confirmation_lights(cq, float(vr or 0), _mc, regime_label, direc, _rp)
+                for _label, (_color, _icon, _desc) in _lights.items():
+                    st.markdown(f"{_icon} **{_label}:** {_desc}")
+
+                # ── Section 5: Trade plan ─────────────────────────────────
+                st.markdown("**5. Trade plan**")
+                t1, t2, t3, t4 = st.columns(4)
+                t1.metric("Entry",  f"${price:.2f}",       "next open / current price")
+                t2.metric("Stop",   f"${stop_price:.2f}",  f"-${dollar_risk:,.0f} risk")
+                t3.metric("Target", f"${target_price:.2f}",f"+${dollar_rwd:,.0f} reward")
+                t4.metric("R:R",    f"1:{rr:.1f}",          "T+5 time exit")
+                if c["entry_note"]:     st.markdown(f"Entry note: {c['entry_note']}")
+                if c["stop_loss_note"]: st.markdown(f":red[Stop: {c['stop_loss_note']}]")
+                if c["target_note"]:    st.markdown(f":green[Target: {c['target_note']}]")
+
+                st.markdown("**Do not trade if:**")
+                _inv_rules = generate_invalidation(direc, _bucket, sym, stop_price or None)
+                for _rule in _inv_rules:
+                    st.markdown(f"- {_rule}")
+
+                # ── Section 6: Position sizing ────────────────────────────
+                st.markdown("**6. Position sizing**")
+                _pos_mult = float(c["position_size_mult"] or 1.0)
+                _eff_risk = float(per_trade_risk_pct) * _pos_mult
+                p1, p2, p3, p4 = st.columns(4)
+                p1.metric("Shares",        f"{shares:,}",          f"${actual_cost:,.0f} notional")
+                p2.metric("Max loss",      f"${dollar_risk:,.0f}", f"{_eff_risk:.3f}% of portfolio")
+                p3.metric("Size mult",     f"{_pos_mult:.2f}×",    sizing_note)
+                p4.metric("Base risk",     f"{per_trade_risk_pct}%", f"→ eff. {_eff_risk:.3f}%")
+                if shares == 0:
+                    st.warning(f"Position blocked: {sizing_note}")
+
+                # ── Score breakdown (transparency) ────────────────────────
                 st.progress(min(score / 85, 1.0), text=(
                     f"EventEdge: {_safe(c['event_edge_score']):.1f}/25 · "
                     f"MarketConf: {_safe(c['market_conf_score']):.1f}/20 · "
@@ -385,16 +486,23 @@ with tab_today:
                     f"Freshness: {_safe(c['freshness_score']):.1f}/10 · "
                     f"RiskPenalty: -{_safe(c['risk_penalty_score']):.1f}"
                 ))
+                st.caption(
+                    f"RSI(14): {rsi or '—'} · "
+                    f"Vol: {f'{vr:.2f}x' if vr else '—'} · "
+                    f"MA20: ${ma20:.2f}" if ma20 else
+                    f"RSI(14): {rsi or '—'} · Vol: {f'{vr:.2f}x' if vr else '—'}"
+                )
 
-                # ── Inline chat ──────────────────────────────────────────
+                # ── Inline chat ───────────────────────────────────────────
                 _ctx = (
-                    f"Symbol: {sym} | Direction: {direc} | Action: {action} | Score: {score:.0f}/85\n"
-                    f"Price: ${price:.2f} ({chg:+.1f}%) | RSI: {rsi or '—'} | Vol ratio: {vr or '—'}\n"
+                    f"Symbol: {sym} | Tier: {action} | Score: {score:.1f}/85 | "
+                    f"Catalyst: {cq} | Evidence: {_ev_level}\n"
+                    f"Direction: {direc} | Bucket: {_bucket} | Regime: {regime_label}\n"
+                    f"Price: ${price:.2f} ({chg:+.1f}%) | RSI: {rsi or '—'} | Vol: {vr or '—'}x\n"
+                    f"Entry: ${price:.2f} | Stop: ${stop_price:.2f} | Target: ${target_price:.2f}\n"
                     f"Thesis: {c['thesis'] or '(none)'}\n"
-                    f"Entry: {c['entry_note'] or '—'} | Stop: {c['stop_loss_note'] or '—'} | Target: {c['target_note'] or '—'}\n"
-                    f"Scores — EventEdge:{_safe(c['event_edge_score']):.1f} MarketConf:{_safe(c['market_conf_score']):.1f} "
-                    f"RegimeFit:{_safe(c['regime_fit_score']):.1f} RelOpp:{_safe(c['relative_opp_score']):.1f} "
-                    f"Freshness:{_safe(c['freshness_score']):.1f} RiskPenalty:{_safe(c['risk_penalty_score']):.1f}"
+                    f"Risk note: {c['risk_note'] or '—'}\n"
+                    f"Historical n={_evidence['n']} win={_evidence['win_rate']}% avg_t5={_evidence['avg_t5']:+.2f}%"
                 )
                 _chat_key = f"chat_{sym}_{today}"
                 if _chat_key not in st.session_state:
@@ -409,6 +517,8 @@ with tab_today:
                     st.session_state[_chat_key].append({"role": "assistant", "content": _ans})
                     st.rerun()
             shown += 1
+
+        evidence_conn.close()
 
         # ── News ─────────────────────────────────────────────────────────
         st.divider()
