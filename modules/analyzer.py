@@ -13,7 +13,7 @@ Design goals:
 import json
 import os
 from datetime import date, datetime, timezone
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 from modules.db import get_conn
 
@@ -481,12 +481,24 @@ def score_regime_fit(direction: str, regime: Dict[str, Any], best_event_type: st
 
     return _clamp(base, 0, 15)
 
-def score_relative_opportunity(price_row: Optional[Any]) -> float:
-    """0-15: distance from 52-week high + ATR space, scaled by volume confidence.
+def score_relative_opportunity(
+    price_row: Optional[Any],
+    strategy_bucket: str = "general_setup",
+    direction: str = "LONG",
+) -> float:
+    """0-15: strategy-aware distance from 52-week high + ATR space.
 
-    distance_score (0-10): room to run before prior resistance
-    atr_score      (0-5):  minimum volatility needed for short-term edge
-    vol_multiplier (0.2-1.0): low-volume setups get a hard haircut
+    distance_score interpretation varies by strategy:
+      SHORT (any)            near ATH = resistance = prime entry; far = chasing
+      post_earnings_drift    near ATH = strength confirmation; no zero penalty
+      event_long/sympathy    near ATH = breakout zone; reward proximity
+      relative_strength_long near ATH = trend intact; don't penalise
+      mean_reversion_long    far from ATH = more value; amplify discount scoring
+      macro_watch            position vs high not predictive; return low fixed score
+      general_setup/default  original logic (room-to-run framing)
+
+    atr_score  (0-5):    minimum volatility needed for short-term edge
+    vol_mult (0.2-1.0):  low-volume setups get a hard haircut
     """
     if not price_row:
         return 7.0
@@ -497,29 +509,72 @@ def score_relative_opportunity(price_row: Optional[Any]) -> float:
     atr     = _safe_float(price_row["atr_14"],       0.0)
     atr_pct = atr / px if atr > 0 and px > 0 else 0.0
 
-    # Distance from 52-week high
     dist = (high_52 - px) / high_52 if high_52 > 0 else 0.0
-    if dist > 0.30:        distance_score = 10
-    elif dist > 0.15:      distance_score = 7
-    elif dist > 0.05:      distance_score = 4
-    elif dist < 0.03:      distance_score = 0   # near high — chasing risk
-    else:                  distance_score = 2
 
-    # ATR space: too tight = no short-term edge
+    # ATR space: too tight = no short-term edge (unchanged across strategies)
     if atr_pct > 0.025:    atr_score = 5
     elif atr_pct > 0.015:  atr_score = 3
     elif atr_pct > 0.008:  atr_score = 1
     else:                  atr_score = 0
 
-    raw = distance_score + atr_score  # max 15
-
-    # Volume as confidence multiplier — low volume = don't trust the setup
+    # Volume as confidence multiplier
     if vr >= 1.5:          vol_mult = 1.00
     elif vr >= 1.0:        vol_mult = 0.85
     elif vr >= 0.7:        vol_mult = 0.65
     elif vr >= 0.5:        vol_mult = 0.40
     else:                  vol_mult = 0.20
 
+    # ── macro_watch: RelOpp is not predictive; return low fixed score ──────────
+    if strategy_bucket == "macro_watch":
+        return _clamp(round(5.0 * vol_mult, 1), 0, 15)
+
+    # ── SHORT (any strategy): near ATH = resistance = ideal short entry ────────
+    if direction == "SHORT":
+        if dist < 0.05:    distance_score = 10   # at/near ATH → prime resistance
+        elif dist < 0.15:  distance_score = 8    # close to high → good short zone
+        elif dist < 0.30:  distance_score = 5    # moderate pullback → ok
+        elif dist < 0.50:  distance_score = 2    # already fallen a lot → risky
+        else:              distance_score = 0    # deeply distressed → avoid
+
+    # ── post_earnings_drift: near ATH = confirmed strength, no zero penalty ────
+    elif strategy_bucket == "post_earnings_drift":
+        if dist < 0.05:    distance_score = 6    # at ATH post-earnings = strong
+        elif dist < 0.12:  distance_score = 6    # near ATH = trend intact
+        elif dist < 0.25:  distance_score = 7    # moderate upside room
+        elif dist < 0.40:  distance_score = 9    # good room to run
+        else:              distance_score = 10   # deep discount
+
+    # ── event_long / sympathy_play: near ATH = breakout zone, reward it ────────
+    elif strategy_bucket in ("event_long", "sympathy_play"):
+        if dist < 0.05:    distance_score = 9    # near ATH = prime breakout
+        elif dist < 0.15:  distance_score = 7
+        elif dist < 0.30:  distance_score = 5
+        else:              distance_score = 2    # far from high = not a breakout setup
+
+    # ── relative_strength_long: near ATH = trend strength, not chasing ─────────
+    elif strategy_bucket == "relative_strength_long":
+        if dist < 0.05:    distance_score = 8    # strong uptrend, ATH = continuation
+        elif dist < 0.15:  distance_score = 7
+        elif dist < 0.30:  distance_score = 5
+        else:              distance_score = 2
+
+    # ── mean_reversion_long: far from high = more discount = more value ─────────
+    elif strategy_bucket == "mean_reversion_long":
+        if dist > 0.35:    distance_score = 12   # deep discount, high reversion edge
+        elif dist > 0.20:  distance_score = 9
+        elif dist > 0.10:  distance_score = 6
+        elif dist > 0.05:  distance_score = 3
+        else:              distance_score = 0    # at ATH = no reversion play
+
+    # ── general_setup / default: original room-to-run logic ─────────────────────
+    else:
+        if dist > 0.30:        distance_score = 10
+        elif dist > 0.15:      distance_score = 7
+        elif dist > 0.05:      distance_score = 4
+        elif dist < 0.03:      distance_score = 0   # near high — chasing risk
+        else:                  distance_score = 2
+
+    raw = distance_score + atr_score  # max 15 (17 for mean_reversion, clamped)
     return _clamp(round(raw * vol_mult, 1), 0, 15)
 
 def _compute_freshness(published_at: str, now: Optional[datetime] = None) -> float:
@@ -591,8 +646,20 @@ def score_freshness(articles: List[Any]) -> float:
     return _clamp(top_freshness + density_bonus, 0, 10)
 
 def score_risk_penalty(price_row: Optional[Any], direction: str, news_scores: Dict[str, Any], regime: Dict[str, Any]) -> float:
-    """0-15 (subtracted): penalize overextension, volatility, mixed signals, weak macro fit."""
+    """0-15 (subtracted): penalize overextension, volatility, mixed signals, weak macro fit.
+
+    RSI interpretation is event-type aware:
+      - Event-driven catalysts (regulation/product/ai/layoff): RSI can run; no penalty
+        for LONG+high-RSI (breakout momentum, not overextension).
+      - SHORT + RSI > 70: overbought = valid short entry level; penalty removed.
+        "Shorting overbought" is the setup, not a counter-trend risk.
+      - general / macro: keep overextension penalties (no strong catalyst to sustain move).
+
+    Choppy regime does NOT reduce score here. It reduces position size instead —
+    see compute_position_size_mult().
+    """
     penalty = 0.0
+    event_type = news_scores.get("best_event_type", "general")
 
     if price_row:
         chg = _safe_float(price_row["change_pct"], 0.0)
@@ -603,13 +670,28 @@ def score_risk_penalty(price_row: Optional[Any], direction: str, news_scores: Di
         if abs(chg) > 5.0:   penalty += 3.0
         elif abs(chg) > 3.0: penalty += 1.5
 
-        # Extreme RSI in thesis direction
-        if direction == "LONG"  and rsi > 75: penalty += 2.5
-        if direction == "SHORT" and rsi < 25: penalty += 2.5
+        # ── RSI: overextension penalty depends on setup type ─────────────────
+        # LONG + RSI > 75: chasing risk for general/macro; fine for event breakouts
+        if direction == "LONG" and rsi > 75:
+            if event_type in ("general", "macro"):
+                penalty += 2.5   # no strong catalyst to sustain the move
+            # regulation / product / ai / layoff / etc: breakout can run; no penalty
 
-        # Counter-trend RSI: shorting overbought / longing oversold
-        if direction == "SHORT" and rsi > 70: penalty += 2.5
-        if direction == "LONG"  and rsi < 30: penalty += 1.5
+        # SHORT + RSI < 25: shorting already-crushed stock = bounce risk
+        if direction == "SHORT" and rsi < 25:
+            penalty += 2.5
+
+        # SHORT + RSI > 70: overbought = valid short entry level for most setups.
+        # Previous code penalised this as "counter-trend" but that framing was wrong —
+        # event_short and mean-reversion-short deliberately target overbought stocks.
+        # Only add a small caution for macro shorts at extreme RSI (>= 80).
+        if direction == "SHORT" and rsi >= 80 and event_type == "macro":
+            penalty += 1.0
+
+        # LONG + RSI < 30: mean-reversion entry signal — penalise only in macro/general
+        # contexts where there's no catalyst to reverse the downtrend.
+        if direction == "LONG" and rsi < 30 and event_type in ("macro", "general"):
+            penalty += 1.5
 
         if atr > 0 and px > 0:
             atr_pct = atr / px * 100
@@ -622,7 +704,7 @@ def score_risk_penalty(price_row: Optional[Any], direction: str, news_scores: Di
     reg = (regime or {}).get("regime", "unknown")
     if reg == "bear"   and direction == "LONG":  penalty += 2.0
     if reg == "bull"   and direction == "SHORT": penalty += 1.5
-    if reg == "choppy":                          penalty += 1.5
+    # choppy: removed from score — captured in compute_position_size_mult() instead
 
     # Bear regime + SHORT + already oversold → high bounce risk, avoid piling in
     if price_row and reg == "bear" and direction == "SHORT":
@@ -631,6 +713,185 @@ def score_risk_penalty(price_row: Optional[Any], direction: str, news_scores: Di
             penalty += 3.0
 
     return _clamp(penalty, 0, 15)
+
+
+def compute_position_size_mult(
+    regime: Dict[str, Any],
+    direction: str,
+    price_row: Optional[Any] = None,
+) -> float:
+    """Position-size multiplier (0.0–1.0). Does not affect final_score.
+
+    Choppy markets reduce position size rather than signal quality — the
+    opportunity may still be valid, but intraday noise makes execution harder
+    and stop-outs more likely.
+
+      choppy                → 0.65  (reduce size ~35%)
+      bear + LONG           → 0.85  (tail-wind is against you)
+      high ATR (> 7%)       → additional 0.85× on top of regime factor
+      everything else       → 1.00
+
+    Callers should multiply the ATR-derived dollar risk by this factor before
+    computing share count (risk_engine.py).
+    """
+    reg  = (regime or {}).get("regime", "unknown")
+    mult = 1.0
+
+    if reg == "choppy":
+        mult *= 0.65
+    elif reg == "bear" and direction == "LONG":
+        mult *= 0.85
+
+    if price_row:
+        atr = _safe_float(price_row["atr_14"],      0.0)
+        px  = _safe_float(price_row["close_price"], 0.0)
+        if atr > 0 and px > 0 and (atr / px * 100) > 7.0:
+            mult *= 0.85   # very high volatility: tighter sizing regardless of regime
+
+    return round(mult, 2)
+
+def score_post_earnings_risk(
+    price_row: Optional[Any],
+    direction: str,
+    news_scores: Dict[str, Any],
+    regime: Dict[str, Any],
+) -> Tuple[float, float]:
+    """Earnings-specific scoring. Returns (strength_bonus, penalty).
+
+    strength_bonus  — caller adds this to event_edge_score.  Rewards a large gap
+                      in the thesis direction with volume, confirming the earnings
+                      catalyst.  RSI extreme after a gap is momentum, not overextension.
+
+    penalty         — used as risk_penalty_score.  Only fires on genuine execution
+                      risks: gap that fails to hold intraday, mixed news, extreme ATR.
+
+    Key differences from score_risk_penalty():
+      gap + volume in direction  → +bonus  (not a penalty)
+      RSI extreme after gap      → +bonus  (momentum confirmation)
+      gap that fades intraday    → +penalty (sellers absorbing the move)
+      choppy regime              → no penalty (catalyst dominates regime)
+      ATR 5-8%                   → no penalty (normal for earnings stocks)
+      bear/bull regime mismatch  → halved penalty vs generic
+    """
+    strength_bonus = 0.0
+    penalty        = 0.0
+
+    if not price_row:
+        return 0.0, 1.5   # slightly less punitive than generic with no data
+
+    chg     = _safe_float(price_row["change_pct"],  0.0)
+    rsi     = _safe_float(price_row["rsi_14"],      50.0)
+    vr      = _safe_float(price_row["volume_ratio"], 1.0)
+    close   = _safe_float(price_row["close_price"],  0.0)
+    day_hi  = _safe_float(price_row.get("day_high"), 0.0)
+    day_lo  = _safe_float(price_row.get("day_low"),  0.0)
+    atr     = _safe_float(price_row["atr_14"],       0.0)
+    atr_pct = atr / close * 100 if close > 0 and atr > 0 else 0.0
+
+    aligned = (direction == "LONG" and chg > 0) or (direction == "SHORT" and chg < 0)
+
+    # Did the price close near its extreme in the thesis direction?
+    # close_pos: 1.0 = at day_high, 0.0 = at day_low
+    gap_held: Optional[bool] = None
+    if day_hi > day_lo > 0 and close > 0:
+        close_pos = (close - day_lo) / (day_hi - day_lo)
+        gap_held = (close_pos > 0.60) if direction == "LONG" else (close_pos < 0.40)
+
+    # ── Opportunity strength: gap + volume = catalyst confirmation ────────────
+    reg = (regime or {}).get("regime", "unknown")
+
+    if aligned:
+        gap_abs = abs(chg)
+        if gap_abs >= 5.0:
+            if direction == "LONG":
+                # Large gap up confirms catalyst. Volume required.
+                if vr >= 1.5:    strength_bonus += 3.0   # strong confirmation
+                elif vr >= 1.0:  strength_bonus += 1.5   # adequate volume
+                # vr < 1.0: no bonus — large gap without volume = suspect, could fade
+                # RSI high after gap-up = momentum, not overextension
+                if rsi > 75 and vr >= 1.0: strength_bonus += 1.5
+            else:
+                # SHORT ≥5% gap down: bad news already fully priced in at open.
+                # Entering short after the stock crashed = chasing, reversion risk high.
+                # No bonus regardless of volume.
+                pass
+
+        elif gap_abs >= 3.0:
+            if direction == "LONG":
+                # Moderate gap up: volume required for bonus
+                if vr >= 1.5:    strength_bonus += 1.0
+                elif vr >= 1.0:  strength_bonus += 0.5
+                # vr < 1.0: no bonus
+            else:
+                # SHORT 3-5% gap down: still a meaningful drop, but watch for bounces.
+                # Only reward if volume confirms sellers, not a thin-tape drift.
+                if vr >= 1.5:    strength_bonus += 0.5
+                # vr < 1.5: no bonus — low-volume gap-down is noise, not conviction
+
+    # ── Neutral regime + low volume: further discount ─────────────────────────
+    # Neutral regime means no macro tailwind; low volume means weak institutional
+    # participation. Either halves the bonus; both together zeroes it.
+    if strength_bonus > 0:
+        if reg == "neutral" and vr < 1.0:
+            strength_bonus = 0.0   # no tailwind + weak volume = no edge
+        elif reg == "neutral" or vr < 1.0:
+            strength_bonus = round(strength_bonus * 0.5, 1)
+
+    # ── Execution risk: gap that fades is the real danger ────────────────────
+    if gap_held is False:
+        if abs(chg) >= 5.0:  penalty += 3.0   # big move, closed at opposite end
+        elif abs(chg) >= 3.0: penalty += 1.5
+
+    # ── Mixed news: ambiguous catalyst direction ──────────────────────────────
+    if _safe_float(news_scores.get("mixedness"), 0.0) > 0:
+        penalty += 1.5   # softer than generic 2.5; earnings still has a direction
+
+    # ── Regime: catalyst dominates regime on earnings day ────────────────────
+    if reg == "bear"   and direction == "LONG":  penalty += 1.0  # was 2.0
+    if reg == "bull"   and direction == "SHORT": penalty += 1.0  # was 1.5
+    # choppy: no penalty (was 1.5) — earnings move overrides macro noise
+
+    # ── Confirmation gate: floor on penalty to cap RP reduction ───────────────
+    # Earnings scoring is lenient vs generic, but leniency must be earned.
+    # Without sufficient confirmation, penalty cannot be near zero.
+    # This prevents large RP reductions for setups that lack active confirmation.
+    #
+    # Criteria (each scores 1):
+    #   1. aligned      — gap direction matches signal direction
+    #   2. vr >= 1.0    — volume at or above average (institutional participation)
+    #   3. gap not failed — gap_held is True, or no significant gap (gap_held=None ok)
+    #   4. regime ok    — regime not directly counter to signal direction
+    conf_intraday = (gap_held is not False)   # True or None = benefit of doubt
+    conf_regime   = not ((reg == "bear" and direction == "LONG")
+                         or (reg == "bull" and direction == "SHORT"))
+    n_confirmed   = sum([aligned, vr >= 1.0, conf_intraday, conf_regime])
+
+    if n_confirmed <= 1:
+        penalty = max(penalty, 3.5)   # barely confirmed: close to generic-level scrutiny
+    elif n_confirmed == 2:
+        penalty = max(penalty, 2.0)   # partial confirmation: meaningful floor
+    elif n_confirmed == 3:
+        penalty = max(penalty, 1.0)   # mostly confirmed: small floor to cap reduction
+    # n_confirmed == 4: no floor — fully confirmed, trust the earnings setup
+
+    # ── Volatility: ATR only penalises unconfirmed setups ────────────────────
+    # For confirmed earnings signals (n_confirmed >= 3), high ATR is expected
+    # volatility around a catalyst — not a signal quality problem.
+    # Position size already shrinks for high-ATR via compute_position_size_mult.
+    # For unconfirmed setups, keep ATR as a risk signal.
+    if n_confirmed < 3:
+        if atr_pct > 10.0:   penalty += 2.0
+        elif atr_pct > 8.0:  penalty += 1.0
+
+    # ── Narrow gate: earnings SHORT with very low volume ──────────────────────
+    # A stock gapping down on earnings with vr < 0.5 signals weak selling conviction:
+    # thin-tape drift, not institutional distribution. High reversion risk.
+    # Add a modest penalty to prevent over-promoting these setups.
+    if direction == "SHORT" and vr < 0.5:
+        penalty += 1.0
+
+    return round(strength_bonus, 1), _clamp(round(penalty, 1), 0, 15)
+
 
 def classify_strategy_bucket(
     symbol: str,
@@ -689,21 +950,90 @@ def compute_final_score(
     )
     return _clamp(raw, 0, 100)
 
-def determine_action(final_score: float, direction: str, regime: Dict[str, Any]) -> str:
-    """ACTIONABLE / WATCHLIST / MONITOR / IGNORE — regime-aware thresholds."""
-    reg = (regime or {}).get("regime", "unknown")
+# Buckets that are structurally too noisy to trade (macro drift, sentiment chasing).
+# These resolve to IGNORE regardless of score.
+_EXCLUDED_BUCKETS: frozenset = frozenset({"macro_watch", "sympathy_play", "opinion_watch"})
 
-    if direction == "LONG":
-        actionable = 80 if reg == "bear" else 74 if reg == "bull" else 77
-        watch, monitor = 62, 48
-    else:
-        actionable = 70 if reg == "bear" else 78 if reg == "bull" else 74
-        watch, monitor = 60, 48
+# Buckets with empirically positive direction-adjusted alpha — eligible for ACTIONABLE.
+_ALPHA_POSITIVE_BUCKETS: frozenset = frozenset({"post_earnings_drift", "event_long", "event_short"})
 
-    if final_score >= actionable: return "ACTIONABLE"
-    if final_score >= watch:      return "WATCHLIST"
-    if final_score >= monitor:    return "MONITOR"
-    return "IGNORE"
+
+def determine_action(
+    final_score: float,
+    direction: str,
+    regime: Dict[str, Any],
+    *,
+    strategy_bucket: str = "",
+    position_size_mult: float = 1.0,
+    market_conf_score: float = 0.0,
+    volume_ratio: float = 1.0,
+    earn_strength: float = 0.0,
+    event_edge_score: float = 0.0,
+) -> str:
+    """Empirically calibrated tier assignment.
+
+    IGNORE               score < 50, or excluded bucket
+                         (macro_watch / sympathy_play / opinion_watch)
+    MONITOR              50 – 51  (marginally better than baseline; observe only)
+    WATCHLIST            score ≥ 52 + quality gates pass
+    ACTIONABLE           score ≥ 52 + quality gates + EventEdge ≥ 12 + one edge indicator
+
+    Quality gates (required for WATCHLIST and above):
+      - strategy_bucket not in excluded set
+      - position_size_mult ≥ 0.55 (not too choppy / volatile to execute)
+
+    Edge indicators — one of (required for ACTIONABLE):
+      a. post_earnings_drift + vr 1.0–1.5 + MC 10–15  (best empirical cell)
+      b. earn_strength ≥ 3  (strongly confirmed earnings gap, all 4 criteria met)
+      c. score ≥ 58 + alpha-positive bucket + MC ≥ 12
+         (score floor prevents overfiring on marginal setups)
+
+    EventEdge ≥ 12 is a hard gate for ACTIONABLE: weak catalyst → WATCHLIST regardless.
+
+    Regime influence lives in the RegimeFit scoring layer, not in thresholds.
+    Thresholds no longer shift by regime — the score already encodes that signal.
+
+    Callers that omit optional kwargs (evaluator / backtest) get score-only
+    classification: IGNORE < 50, MONITOR 50–51, WATCHLIST ≥ 52 (never ACTIONABLE
+    since one_of cannot be satisfied without strategy/market context).
+    """
+    # Snap score to 1 dp so tier boundaries match what's displayed in the UI.
+    # Prevents 51.99 being shown as "52.0" but classified as MONITOR.
+    score = round(final_score, 1)
+
+    # Excluded buckets → structurally uninvestable
+    if strategy_bucket in _EXCLUDED_BUCKETS:
+        return "IGNORE"
+
+    if score < 50:
+        return "IGNORE"
+    if score < 52:
+        return "MONITOR"
+
+    # score >= 52 -----------------------------------------------------------
+    # Position-size gate: if sizing is squeezed below 0.55, execution risk is too high
+    if position_size_mult < 0.55:
+        return "MONITOR"
+
+    # Edge indicator: at least one must fire for ACTIONABLE
+    #   a. post_earnings_drift + vr 1.0–1.5 + MC 10–15  (best empirical cell)
+    #   b. earn_strength >= 3  (strongly confirmed earnings gap)
+    #   c. score >= 58 + alpha-positive bucket + MC >= 12  (score floor prevents overfiring)
+    one_of = (
+        (strategy_bucket == "post_earnings_drift"
+         and 1.0 <= volume_ratio <= 1.5
+         and 10.0 <= market_conf_score <= 15.0)
+        or (earn_strength >= 3.0)
+        or (score >= 58.0
+            and strategy_bucket in _ALPHA_POSITIVE_BUCKETS
+            and market_conf_score >= 12.0)
+    )
+
+    # EventEdge hard gate: weak catalyst should not be ACTIONABLE even if score is high
+    if one_of and event_edge_score < 12.0:
+        one_of = False
+
+    return "ACTIONABLE" if one_of else "WATCHLIST"
 
 # ---------------------------------------------------------------------
 # Thesis generation — multi-provider
@@ -1053,19 +1383,22 @@ def _signal_similarity(a: Dict, b: Dict) -> float:
 
 def _reapply_action_caps(c: Dict) -> None:
     """Re-determine action label after score change, re-applying all caps."""
-    direction = c["direction"]
-    c["action"] = determine_action(c["final_score"], direction, c["_regime"])
-    if not c["has_symbol_news"] and not c["is_index"] and c["action"] in ("ACTIONABLE", "WATCHLIST"):
-        c["action"] = "MONITOR"
-    if c["low_value"] and c["action"] == "ACTIONABLE":
-        c["action"] = "WATCHLIST"
+    pr  = c.get("price_row")
+    vr  = _safe_float(pr["volume_ratio"] if pr is not None else None, 1.0)
     ee = c["event_edge_score"]
+    c["action"] = determine_action(
+        c["final_score"], c["direction"], c["_regime"],
+        strategy_bucket=c.get("strategy_bucket", ""),
+        position_size_mult=c.get("position_size_mult", 1.0),
+        market_conf_score=c.get("market_conf_score", 0.0),
+        volume_ratio=vr,
+        earn_strength=c.get("earn_strength", 0.0),
+        event_edge_score=ee,
+    )
     if ee < 5:
         c["action"] = "IGNORE"
     elif ee < 8 and c["action"] in ("ACTIONABLE", "WATCHLIST"):
         c["action"] = "MONITOR"
-    elif ee < 12 and c["action"] == "ACTIONABLE":
-        c["action"] = "WATCHLIST"
 
 
 def _apply_directional_crowding(
@@ -1213,37 +1546,20 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
 
         market_conf_score  = score_market_confirmation(price_row, direction, news_scores)
         regime_fit_score   = score_regime_fit(direction, regime, news_scores["best_event_type"])
-        relative_opp_score = score_relative_opportunity(price_row)
         freshness_score    = score_freshness(all_articles)
-        risk_penalty_score = score_risk_penalty(price_row, direction, news_scores, regime)
-
-        final_score = compute_final_score(
-            event_edge_score=event_edge_score,
-            market_conf_score=market_conf_score,
-            regime_fit_score=regime_fit_score,
-            relative_opp_score=relative_opp_score,
-            freshness_score=freshness_score,
-            risk_penalty_score=risk_penalty_score,
-        )
-
-        if not has_symbol_news:
-            if is_index:
-                event_edge_score = min(event_edge_score, 12.0)
-                freshness_score  = min(freshness_score,   6.0)
-            else:
-                event_edge_score = min(event_edge_score,  8.0)
-                freshness_score  = min(freshness_score,   5.0)
-            final_score = compute_final_score(
-                event_edge_score=event_edge_score,
-                market_conf_score=market_conf_score,
-                regime_fit_score=regime_fit_score,
-                relative_opp_score=relative_opp_score,
-                freshness_score=freshness_score,
-                risk_penalty_score=risk_penalty_score,
+        best_event_type = news_scores.get("best_event_type", "general")
+        _earn_strength = 0.0
+        if best_event_type == "earnings":
+            _earn_strength, risk_penalty_score = score_post_earnings_risk(
+                price_row, direction, news_scores, regime
             )
-            if not is_index:
-                final_score = min(final_score, 59.0)
+            event_edge_score = _clamp(event_edge_score + _earn_strength, 0, 25)
+        else:
+            risk_penalty_score = score_risk_penalty(price_row, direction, news_scores, regime)
 
+        position_size_mult = compute_position_size_mult(regime, direction, price_row)
+
+        # ── Strategy bucket: computed before RelOpp so it can inform scoring ────
         low_value = any(is_low_value_title(a["title"]) for a in articles)
 
         if not has_symbol_news and not is_index:
@@ -1267,6 +1583,16 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
                 regime=regime.get("regime", "neutral"),
             )
 
+        relative_opp_score = score_relative_opportunity(price_row, strategy_bucket, direction)
+
+        if not has_symbol_news:
+            if is_index:
+                event_edge_score = min(event_edge_score, 12.0)
+                freshness_score  = min(freshness_score,   6.0)
+            else:
+                event_edge_score = min(event_edge_score,  8.0)
+                freshness_score  = min(freshness_score,   5.0)
+
         if low_value:
             event_edge_score = min(event_edge_score, 9.0)
             freshness_score  = min(freshness_score,  5.0)
@@ -1279,18 +1605,24 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
             freshness_score=freshness_score,
             risk_penalty_score=risk_penalty_score,
         )
+        if not has_symbol_news and not is_index:
+            final_score = min(final_score, 59.0)
 
-        action = determine_action(final_score, direction, regime)
-        if not has_symbol_news and not is_index and action in ("ACTIONABLE", "WATCHLIST"):
-            action = "MONITOR"
-        if low_value and action == "ACTIONABLE":
-            action = "WATCHLIST"
+        _vr = _safe_float(price_row["volume_ratio"] if price_row else None, 1.0)
+        action = determine_action(
+            final_score, direction, regime,
+            strategy_bucket=strategy_bucket,
+            position_size_mult=position_size_mult,
+            market_conf_score=market_conf_score,
+            volume_ratio=_vr,
+            earn_strength=_earn_strength,
+            event_edge_score=event_edge_score,
+        )
+        # EventEdge guards: weak catalyst kills actionability regardless of score
         if event_edge_score < 5:
             action = "IGNORE"
         elif event_edge_score < 8 and action in ("ACTIONABLE", "WATCHLIST"):
             action = "MONITOR"
-        elif event_edge_score < 12 and action == "ACTIONABLE":
-            action = "WATCHLIST"
 
         scored.append({
             "sym":               sym,
@@ -1302,8 +1634,10 @@ def run_analysis(regime: Dict[str, Any], verbose: bool = True) -> int:
             "regime_fit_score":  regime_fit_score,
             "relative_opp_score": relative_opp_score,
             "freshness_score":   freshness_score,
-            "risk_penalty_score": risk_penalty_score,
-            "technical_score":   technical_score,
+            "risk_penalty_score":  risk_penalty_score,
+            "position_size_mult":  position_size_mult,
+            "earn_strength":       _earn_strength,
+            "technical_score":     technical_score,
             "news_scores":       news_scores,
             "articles":          articles,
             "all_articles":      all_articles,

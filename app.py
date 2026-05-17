@@ -478,6 +478,11 @@ with tab_eval:
         signal_stability_report, score_return_buckets,
         paper_trade_summary, event_type_breakdown,
         weight_calibration_suggestions,
+        benchmark_adjusted_return, deduplicated_event_return,
+        r_multiple_analysis, win_rate_confidence_intervals,
+        component_correlation_report, rescore_comparison_report,
+        promoted_signal_quality_report, false_upgrade_diagnosis_report,
+        empirical_threshold_backtest,
     )
     from modules.signal_tracker import get_outcome_stats
 
@@ -684,6 +689,424 @@ with tab_eval:
                            else f"{max(row['current_weight'] - 0.10, 0.05):.2f}"),
                         language="python",
                     )
+
+    # ── 6. Benchmark-Adjusted Return ─────────────────────────────────────
+    st.divider()
+    st.subheader("📉 6 — Direction-Adjusted Alpha (vs SPY / sector ETF, same direction)")
+    st.caption(
+        "**dir_adj_alpha** = signal return − same-direction benchmark return. "
+        "LONG: signal − benchmark_long. SHORT: signal − benchmark_short (benchmark inverted). "
+        "This is NOT 'signal vs holding SPY long' — it measures whether the signal beat "
+        "a same-direction bet on the benchmark."
+    )
+    bm = benchmark_adjusted_return(eval_conn)
+
+    if not bm or not bm.get("overall"):
+        st.info("Not enough resolved outcomes with price data for benchmark comparison.")
+    else:
+        ov = bm["overall"]
+        bm1, bm2, bm3, bm4 = st.columns(4)
+        bm1.metric("Signals with benchmark", ov["n"])
+        bm2.metric("Dir-adj alpha t+1", f"{ov['avg_dir_adj_alpha_t1']:+.2f}%" if ov["avg_dir_adj_alpha_t1"] is not None else "—")
+        bm3.metric("Dir-adj alpha t+3", f"{ov['avg_dir_adj_alpha_t3']:+.2f}%" if ov["avg_dir_adj_alpha_t3"] is not None else "—")
+        bm4.metric("Dir-adj alpha t+5", f"{ov['avg_dir_adj_alpha_t5']:+.2f}%" if ov["avg_dir_adj_alpha_t5"] is not None else "—")
+
+        col_sec, col_reg = st.columns(2)
+        with col_sec:
+            with st.expander("Dir-adj alpha by sector"):
+                sec_rows = [
+                    {"Sector":          sec,
+                     "n":               v["n"],
+                     "Signal t+5":      f"{v['avg_signal_t5']:+.2f}%"        if v["avg_signal_t5"]        is not None else "—",
+                     "Bench t+5":       f"{v['avg_bench_t5']:+.2f}%"         if v["avg_bench_t5"]         is not None else "—",
+                     "Dir-adj alpha":   f"{v['avg_dir_adj_alpha_t5']:+.2f}%" if v["avg_dir_adj_alpha_t5"] is not None else "—"}
+                    for sec, v in sorted(bm["by_sector"].items(), key=lambda x: -(x[1]["avg_dir_adj_alpha_t5"] or -99))
+                ]
+                st.dataframe(pd.DataFrame(sec_rows), use_container_width=True, hide_index=True)
+        with col_reg:
+            with st.expander("Dir-adj alpha by regime"):
+                reg_rows = [
+                    {"Regime":        reg,
+                     "n":             v["n"],
+                     "Dir-adj alpha": f"{v['avg_dir_adj_alpha_t5']:+.2f}%" if v["avg_dir_adj_alpha_t5"] is not None else "—"}
+                    for reg, v in bm["by_regime"].items()
+                ]
+                st.dataframe(pd.DataFrame(reg_rows), use_container_width=True, hide_index=True)
+
+        col_best, col_worst = st.columns(2)
+        with col_best:
+            with st.expander("Top 5 best dir-adj alpha"):
+                st.dataframe(pd.DataFrame(bm["best"]), use_container_width=True, hide_index=True)
+        with col_worst:
+            with st.expander("Top 5 worst dir-adj alpha"):
+                st.dataframe(pd.DataFrame(bm["worst"]), use_container_width=True, hide_index=True)
+
+    st.divider()
+
+    # ── 7. De-duplicated Event Return ─────────────────────────────────────
+    st.subheader("🧹 7 — De-duplicated Event Return")
+    st.caption("Same ticker + event type + ISO week counts as one signal. Shows whether returns are inflated by counting the same catalyst multiple times.")
+    dd = deduplicated_event_return(eval_conn)
+
+    if not dd:
+        st.info("Not enough resolved outcomes for deduplication analysis.")
+    else:
+        dd1, dd2, dd3 = st.columns(3)
+        dd1.metric("Raw signals",    dd["raw_count"])
+        dd2.metric("After dedup",    dd["dedup_count"], f"−{dd['removed_pct']}% removed")
+        dd3.metric("Dedup win rate", f"{dd['dedup_stats']['paper_win_rate']:.0f}%" if dd["dedup_stats"]["paper_win_rate"] is not None else "—",
+                   delta=f"{(dd['dedup_stats']['paper_win_rate'] or 0) - (dd['raw_stats']['paper_win_rate'] or 0):+.1f}% vs raw")
+
+        rs, ds = dd["raw_stats"], dd["dedup_stats"]
+        comp_rows = [
+            {"Metric": "Avg t+5 P&L",    "Raw": f"{rs['avg_t5_pnl']:+.2f}%"    if rs["avg_t5_pnl"]    is not None else "—",
+                                          "De-duped": f"{ds['avg_t5_pnl']:+.2f}%"    if ds["avg_t5_pnl"]    is not None else "—"},
+            {"Metric": "Avg paper P&L",  "Raw": f"{rs['avg_paper_pnl']:+.2f}%" if rs["avg_paper_pnl"] is not None else "—",
+                                          "De-duped": f"{ds['avg_paper_pnl']:+.2f}%" if ds["avg_paper_pnl"] is not None else "—"},
+            {"Metric": "Paper win rate", "Raw": f"{rs['paper_win_rate']:.0f}%"  if rs["paper_win_rate"] is not None else "—",
+                                          "De-duped": f"{ds['paper_win_rate']:.0f}%"  if ds["paper_win_rate"] is not None else "—"},
+        ]
+        st.dataframe(pd.DataFrame(comp_rows), use_container_width=True, hide_index=True)
+
+        with st.expander("By event type — raw vs de-duped"):
+            et_dd_rows = [{
+                "Event":          r["event_type"],
+                "Raw n":          r["raw_n"],
+                "Dedup n":        r["dedup_n"],
+                "Raw avg P&L":    f"{r['raw_avg_pnl']:+.2f}%"   if r["raw_avg_pnl"]   is not None else "—",
+                "Dedup avg P&L":  f"{r['dedup_avg_pnl']:+.2f}%" if r["dedup_avg_pnl"] is not None else "—",
+                "Δ":              f"{((r['dedup_avg_pnl'] or 0) - (r['raw_avg_pnl'] or 0)):+.2f}%",
+                "Dedup rule":     r["dedup_rule"],
+            } for r in dd["by_event_type"]]
+            st.dataframe(pd.DataFrame(et_dd_rows), use_container_width=True, hide_index=True)
+
+    st.divider()
+
+    # ── 8. R-Multiple Analysis ────────────────────────────────────────────
+    st.subheader("📐 8 — R-Multiple Analysis (P&L in units of ATR risk)")
+    st.caption("R = |entry − stop|. An R-multiple > 0 means the trade made money relative to the risk taken. HIT_TARGET should be ~+2R; HIT_STOP should be ~−1R.")
+    rm = r_multiple_analysis(eval_conn)
+
+    if not rm or rm.get("n_with_stop", 0) == 0:
+        st.info("No resolved signals with stop_price data yet.")
+    else:
+        rm1, rm2, rm3, rm4 = st.columns(4)
+        rm1.metric("Signals with stop", rm["n_with_stop"])
+        rm2.metric("Avg R-multiple",    f"{rm['avg_r_multiple']:+.3f}R" if rm["avg_r_multiple"] is not None else "—")
+        rm3.metric("Median R-multiple", f"{rm['median_r_multiple']:+.3f}R" if rm["median_r_multiple"] is not None else "—")
+        rm4.metric("Expectancy",        f"{rm['expectancy']:+.3f}R" if rm["expectancy"] is not None else "—",
+                   help="Expected R per trade = win_rate × avg_win_R + loss_rate × avg_loss_R")
+
+        col_dist, col_exit = st.columns(2)
+        with col_dist:
+            st.markdown("**R-multiple distribution**")
+            dist_rows = [{"Bucket": d["bucket"], "Count": d["count"]} for d in rm["distribution"]]
+            st.dataframe(pd.DataFrame(dist_rows), use_container_width=True, hide_index=True)
+        with col_exit:
+            st.markdown("**By exit type**")
+            exit_rows = [
+                {"Exit": exit_type,
+                 "n": v["n"],
+                 "Avg R": f"{v['avg_r']:+.3f}R",
+                 "Median R": f"{v['median_r']:+.3f}R"}
+                for exit_type, v in rm["by_exit"].items()
+            ]
+            st.dataframe(pd.DataFrame(exit_rows), use_container_width=True, hide_index=True)
+
+    st.divider()
+
+    # ── 9. Win-Rate Confidence Intervals ──────────────────────────────────
+    st.subheader("🎲 9 — Win-Rate Confidence Intervals (Wilson 95% CI)")
+    st.caption("A 70% win rate on 5 signals is noise. CI width ≤ 20pp = reliable enough to act on.")
+    ci_rows_data = win_rate_confidence_intervals(eval_conn)
+
+    if not ci_rows_data:
+        st.info("No resolved outcomes for confidence interval analysis.")
+    else:
+        ci_table_rows = []
+        for r in ci_rows_data:
+            reliable_tag = "✅" if r["reliable"] else "⚠️"
+            ci_table_rows.append({
+                "Event":      r["event_type"],
+                "n":          r["n"],
+                "Wins":       r["wins"],
+                "Win rate":   f"{r['win_rate_pct']:.1f}%" if r["win_rate_pct"] is not None else "—",
+                "95% CI":     f"[{r['ci_low']:.1f}%, {r['ci_high']:.1f}%]" if r["ci_low"] is not None else "—",
+                "CI width":   f"{r['ci_width']:.1f}pp" if r["ci_width"] is not None else "—",
+                "Reliable":   reliable_tag,
+            })
+        st.dataframe(pd.DataFrame(ci_table_rows), use_container_width=True, hide_index=True)
+        st.caption("Reliable = CI width ≤ 20 percentage points. Events marked ⚠️ need more data before drawing conclusions.")
+
+    # ── 10. Component Correlation Report ─────────────────────────────────
+    st.divider()
+    st.subheader("🔬 10 — Component Correlation (which score layer predicts returns?)")
+    st.caption(
+        "Pearson r between each score component and three outcome metrics. "
+        "**|r| > 0.3** is a meaningful signal at this sample size. "
+        "RiskPenalty is subtracted in the final score — a negative corr_t5 means "
+        "the penalty correctly flagged losing trades."
+    )
+    cc = component_correlation_report(eval_conn)
+
+    if not cc or not cc.get("overall"):
+        st.info("Not enough resolved outcomes with score components for correlation analysis.")
+    else:
+        def _fmt_corr(v):
+            if v is None:
+                return "—"
+            bar = "▓▓▓" if abs(v) > 0.3 else ("▒▒" if abs(v) > 0.15 else "░")
+            sign = "+" if v > 0 else ""
+            return f"{sign}{v:.3f} {bar}"
+
+        def _corr_df(rows):
+            return pd.DataFrame([{
+                "Component":  r["component"],
+                "n":          r["n"],
+                "corr t+5":   _fmt_corr(r["corr_t5"]),
+                "corr alpha": _fmt_corr(r["corr_alpha"]),
+                "corr R-mult":_fmt_corr(r["corr_r"]),
+            } for r in rows])
+
+        st.markdown("**Overall**")
+        st.dataframe(_corr_df(cc["overall"]), use_container_width=True, hide_index=True)
+
+        if cc.get("by_bucket"):
+            st.markdown("**By strategy bucket** (buckets with ≥ 10 signals shown)")
+            tabs = st.tabs(list(cc["by_bucket"].keys()))
+            for tab, (bucket, rows) in zip(tabs, cc["by_bucket"].items()):
+                with tab:
+                    st.caption(f"n = {len([r for r in rows if r['n'] > 0])} components, sample size varies per metric")
+                    st.dataframe(_corr_df(rows), use_container_width=True, hide_index=True)
+
+    # ── 11. Rescore Comparison Report ────────────────────────────────────
+    st.divider()
+    st.subheader("🔄 11 — Before / After Rescore Comparison")
+    st.caption(
+        "Re-applies updated risk scoring logic (event-type-aware RSI, earnings strength bonus, "        "choppy→position-size-only) to historical signals. "        "New scores are hypothetical — outcomes are unchanged. "        "Key question: do new high-score signals win more often?"
+    )
+    rc = rescore_comparison_report(eval_conn)
+
+    if not rc or not rc.get("summary"):
+        st.info("Not enough resolved signals with score components for rescore comparison.")
+    else:
+        s = rc["summary"]
+
+        # ── Summary metrics ───────────────────────────────────────────────────
+        cols = st.columns(5)
+        cols[0].metric("Signals", s["n"])
+        cols[1].metric("Avg Score", f"{s['old_avg_score']:.1f} → {s['new_avg_score']:.1f}",
+                       delta=f"{s['avg_score_delta']:+.2f}")
+        cols[2].metric("Avg Risk Penalty", f"{s['old_avg_rp']:.1f} → {s['new_avg_rp']:.1f}",
+                       delta=f"{s['old_avg_rp'] - s['new_avg_rp']:+.2f} less")
+        cols[3].metric("Upgraded", f"{s['pct_upgraded']:.0f}%")
+        cols[4].metric("Downgraded", f"{s['pct_downgraded']:.0f}%")
+
+        with st.expander("Score-bucket win rates & avg P&L (old vs new)", expanded=True):
+            bucket_data = [{
+                "Bucket":        b["bucket"],
+                "Old n":         b["old_n"],
+                "New n":         b["new_n"],
+                "Old win%":      f"{b['old_win_rate']:.1f}%" if b["old_win_rate"] is not None else "—",
+                "New win%":      f"{b['new_win_rate']:.1f}%" if b["new_win_rate"] is not None else "—",
+                "Old avg P&L%":  f"{b['old_avg_pnl']:+.2f}%" if b["old_avg_pnl"] is not None else "—",
+                "New avg P&L%":  f"{b['new_avg_pnl']:+.2f}%" if b["new_avg_pnl"] is not None else "—",
+            } for b in rc["score_buckets"]]
+            st.dataframe(pd.DataFrame(bucket_data), use_container_width=True, hide_index=True)
+
+        with st.expander("Score→return correlation (old vs new)"):
+            corr = rc["correlation"]
+            def _fc(v):
+                if v is None: return "—"
+                bar = "▓▓▓" if abs(v) > 0.3 else ("▒▒" if abs(v) > 0.15 else "░")
+                return f"{v:+.3f} {bar}"
+            corr_rows = [
+                {"Metric": "corr(score, t5_pnl)",   "Old": _fc(corr["old_corr_t5"]),    "New": _fc(corr["new_corr_t5"])},
+                {"Metric": "corr(score, alpha_t5)",  "Old": _fc(corr["old_corr_alpha"]), "New": _fc(corr["new_corr_alpha"])},
+                {"Metric": "corr(score, R-multiple)","Old": _fc(corr["old_corr_r"]),    "New": _fc(corr["new_corr_r"])},
+            ]
+            st.dataframe(pd.DataFrame(corr_rows), use_container_width=True, hide_index=True)
+
+        with st.expander("Tier changes (old → new)"):
+            if rc.get("tier_changes"):
+                tc_rows = [{"Old tier": t["old_tier"], "New tier": t["new_tier"], "Count": t["count"]}
+                           for t in rc["tier_changes"]]
+                st.dataframe(pd.DataFrame(tc_rows), use_container_width=True, hide_index=True)
+
+        with st.expander("Biggest upgrades (score increased most)"):
+            if rc.get("biggest_upgrades"):
+                up_rows = [{
+                    "Symbol":    u["symbol"],
+                    "Date":      u["signal_date"],
+                    "Event":     u["event_type"],
+                    "Dir":       u["direction"],
+                    "Old→New":   f"{u['old_score']:.1f}→{u['new_score']:.1f}",
+                    "Δ":         f"{u['delta']:+.1f}",
+                    "Earn str":  f"{u['earn_str']:+.1f}",
+                    "RP old→new":f"{u['old_rp']:.1f}→{u['new_rp']:.1f}",
+                    "t5 P&L%":   f"{u['t5_pnl']:+.2f}%" if u["t5_pnl"] is not None else "—",
+                } for u in rc["biggest_upgrades"]]
+                st.dataframe(pd.DataFrame(up_rows), use_container_width=True, hide_index=True)
+
+        with st.expander("Biggest downgrades (score decreased most)"):
+            if rc.get("biggest_downgrades"):
+                dn_rows = [{
+                    "Symbol":    d["symbol"],
+                    "Date":      d["signal_date"],
+                    "Event":     d["event_type"],
+                    "Dir":       d["direction"],
+                    "Old→New":   f"{d['old_score']:.1f}→{d['new_score']:.1f}",
+                    "Δ":         f"{d['delta']:+.1f}",
+                    "Earn str":  f"{d['earn_str']:+.1f}",
+                    "RP old→new":f"{d['old_rp']:.1f}→{d['new_rp']:.1f}",
+                    "t5 P&L%":   f"{d['t5_pnl']:+.2f}%" if d["t5_pnl"] is not None else "—",
+                } for d in rc["biggest_downgrades"]]
+                st.dataframe(pd.DataFrame(dn_rows), use_container_width=True, hide_index=True)
+
+    # ── 12. Promoted Signal Quality ──────────────────────────────────────
+    st.divider()
+    st.subheader("📈 12 — Promoted Signal Quality")
+    st.caption(
+        "How do signals that gained score in the rescore actually perform? "        "Compare each promotion group against the baseline (all resolved signals). "        "Key question: does a larger score increase predict better outcomes?"
+    )
+    pq = promoted_signal_quality_report(eval_conn)
+
+    if not pq or not pq.get("groups"):
+        st.info("Not enough resolved signals for promoted signal quality analysis.")
+    else:
+        def _pct(v):
+            return f"{v:.1f}%" if v is not None else "—"
+        def _f2(v):
+            return f"{v:+.2f}%" if v is not None else "—"
+        def _r(v):
+            return f"{v:+.3f}" if v is not None else "—"
+
+        pq_rows = []
+        for g in pq["groups"]:
+            pq_rows.append({
+                "Group":            g["group"],
+                "n":                g["n"],
+                "Win rate":         _pct(g["win_rate"]),
+                "Avg t5 P&L%":      _f2(g["avg_t5_pnl"]),
+                "Avg alpha_t5%":    _f2(g["avg_alpha_t5"]),
+                "Avg R-mult":       _r(g["avg_r_multiple"]),
+                "Hit target%":      _pct(g["hit_target_rate"]),
+                "Hit stop%":        _pct(g["hit_stop_rate"]),
+                "T5 exit%":         _pct(g["t5_exit_rate"]),
+            })
+
+        st.dataframe(pd.DataFrame(pq_rows), use_container_width=True, hide_index=True)
+        st.caption(
+            "First row (baseline) = all resolved signals. "            "Subsequent rows are subsets. n < 5 = treat as noise."
+        )
+
+    # ── 13. False Upgrade Diagnosis ──────────────────────────────────────
+    st.divider()
+    st.subheader("🔍 13 — False Upgrade Diagnosis (Δscore ≥ 3, t5 < 0)")
+    st.caption(
+        "Signals that gained ≥3 points in the rescore but still lost money at t+5. "
+        "Goal: find shared characteristics that reveal remaining false-positive patterns."
+    )
+    fd = false_upgrade_diagnosis_report(eval_conn)
+
+    if not fd or not fd.get("signals"):
+        st.info("No false upgrades found (Δscore ≥ 3, t5_pnl < 0). Scoring looks clean!")
+    else:
+        pat = fd["pattern"]
+
+        # ── Pattern summary ───────────────────────────────────────────────────
+        cols = st.columns(5)
+        cols[0].metric("False upgrades", pat["n"])
+        cols[1].metric("All Δ≥3 signals", pat["all_promoted_n"])
+        cols[2].metric("False upgrade rate", f"{pat['false_upgrade_rate']:.0f}%")
+        cols[3].metric("% Earnings", f"{pat['pct_earnings']:.0f}%")
+        cols[4].metric("% SHORT", f"{pat['pct_short']:.0f}%")
+
+        col2 = st.columns(5)
+        col2[0].metric("Avg gap%", f"{pat['avg_gap_pct']:+.1f}%")
+        col2[1].metric("Avg RSI", f"{pat['avg_rsi']:.0f}")
+        col2[2].metric("Avg ATR%", f"{pat['avg_atr_pct']:.1f}%")
+        col2[3].metric("Avg vol ratio", f"{pat['avg_volume_ratio']:.2f}x")
+        col2[4].metric("% large gap (≥3%)", f"{pat['pct_large_gap']:.0f}%")
+
+        with st.expander("Pattern breakdown"):
+            pc1, pc2, pc3, pc4 = st.columns(4)
+            pc1.markdown("**Event types**")
+            for k, v in pat["top_event_types"]:
+                pc1.write(f"{k}: {v}")
+            pc2.markdown("**Directions**")
+            for k, v in pat["top_directions"]:
+                pc2.write(f"{k}: {v}")
+            pc3.markdown("**Regimes**")
+            for k, v in pat["top_regimes"]:
+                pc3.write(f"{k}: {v}")
+            pc4.markdown("**Strategy buckets**")
+            for k, v in pat["top_buckets"]:
+                pc4.write(f"{k}: {v}")
+
+        # ── Per-signal table ──────────────────────────────────────────────────
+        with st.expander("Per-signal details", expanded=True):
+            sig_rows = [{
+                "Symbol":       s["symbol"],
+                "Date":         s["signal_date"],
+                "Dir":          s["direction"],
+                "Event":        s["event_type"],
+                "Bucket":       s["strategy_bucket"],
+                "Regime":       s["regime"],
+                "Gap%":         s["gap_pct"],
+                "RSI":          s["rsi"],
+                "ATR%":         s["atr_pct"],
+                "Vol ratio":    s["volume_ratio"],
+                "MktConf":      s["market_conf"],
+                "RelOpp":       s["relative_opp"],
+                "Fresh":        s["freshness"],
+                "Old score":    s["old_score"],
+                "New score":    s["new_score"],
+                "Δ":            s["score_delta"],
+                "Old RP":       s["old_risk_penalty"],
+                "New RP":       s["new_risk_penalty"],
+                "Earn str":     s["earn_strength"],
+                "t5 P&L%":      s["t5_pnl"],
+                "Exit":         s["paper_exit"],
+                "Paper P&L%":   s["paper_pnl"],
+                "Upgrade reason": s["reason_for_upgrade"],
+            } for s in fd["signals"]]
+            st.dataframe(pd.DataFrame(sig_rows), use_container_width=True, hide_index=True)
+
+    # ── Section 14: Empirical Threshold Backtest ──────────────────────────
+    st.divider()
+    st.subheader("14. Empirical Threshold Backtest")
+    st.caption(
+        "Win rate, alpha, and R-multiple at each score threshold. "
+        "Uses rescored (new) scores to reflect current scoring logic. "
+        "Percentile cuts are relative to all resolved signals. "
+        "Key question: where does real edge kick in?"
+    )
+    tb = empirical_threshold_backtest(eval_conn)
+
+    if not tb:
+        st.info("Not enough resolved signals for threshold backtest.")
+    else:
+        tb_rows = []
+        for row in tb:
+            n = row.get("n", 0)
+            if n == 0:
+                tb_rows.append({"Cut": row["label"], "N": 0})
+                continue
+            tb_rows.append({
+                "Cut":            row["label"],
+                "N":              n,
+                "Win%":           f"{row['win_rate']:.1f}%" if row.get("win_rate") is not None else "—",
+                "Avg t5%":        f"{row['avg_t5']:+.2f}%" if row.get("avg_t5") is not None else "—",
+                "Avg α":          f"{row['avg_alpha']:+.2f}%" if row.get("avg_alpha") is not None else "—",
+                "Avg R":          f"{row['avg_R']:+.2f}" if row.get("avg_R") is not None else "—",
+                "HIT_TARGET%":    f"{row['hit_target_rate']:.1f}%" if row.get("hit_target_rate") is not None else "—",
+                "HIT_STOP%":      f"{row['hit_stop_rate']:.1f}%" if row.get("hit_stop_rate") is not None else "—",
+                "T5_EXIT%":       f"{row['t5_exit_rate']:.1f}%" if row.get("t5_exit_rate") is not None else "—",
+                "Worst t5%":      f"{row['worst_t5']:+.2f}%" if row.get("worst_t5") is not None else "—",
+                "Avg size mult":  f"{row['avg_pos_mult']:.2f}" if row.get("avg_pos_mult") is not None else "—",
+            })
+        st.dataframe(pd.DataFrame(tb_rows), use_container_width=True, hide_index=True)
 
     # ── Signal Outcomes Table ─────────────────────────────────────────────
     st.divider()
