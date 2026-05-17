@@ -884,8 +884,12 @@ def score_post_earnings_risk(
     rsi     = _safe_float(price_row["rsi_14"],      50.0)
     vr      = _safe_float(price_row["volume_ratio"], 1.0)
     close   = _safe_float(price_row["close_price"],  0.0)
-    day_hi  = _safe_float(price_row.get("day_high"), 0.0)
-    day_lo  = _safe_float(price_row.get("day_low"),  0.0)
+    try:
+        day_hi = _safe_float(price_row["day_high"], 0.0)
+        day_lo = _safe_float(price_row["day_low"],  0.0)
+    except (IndexError, KeyError):
+        day_hi = 0.0
+        day_lo = 0.0
     atr     = _safe_float(price_row["atr_14"],       0.0)
     atr_pct = atr / close * 100 if close > 0 and atr > 0 else 0.0
 
