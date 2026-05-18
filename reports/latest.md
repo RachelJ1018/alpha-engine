@@ -1,111 +1,100 @@
-# 📊 Daily Research Report — 2026-05-15
-*Generated: 2026-05-15 15:17*
+# 📊 Daily Research Report — 2026-05-18
+*Generated: 2026-05-18 15:46*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.94%
-**SPY RSI(14):** 71.9
+**SPY:** -0.40%
+**SPY RSI(14):** 70.3
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### AMZN  $265.50 (+0.5%)
+**WATCHLIST** · LONG · EE=20 · post earnings drift · score=52
+> LONG. AMZN is demonstrating relative strength by trading up +0.51% against a declining SPY and holding above its MA20, supported by positive momentum ahead of i
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (4):** `GS` · `LLY` · `NFLX` · `AAPL`
-**⛔ IGNORE (16):** `IWM` · `TSM` · `MSFT` · `JPM` · `PLTR` · `TSLA`
+**🟡 WATCHLIST (1):** `AMZN`
+**⚪ MONITOR (1):** `WMT`
+**⛔ IGNORE (18):** `GOOGL` · `BAC` · `SPY` · `IWM` · `SOFI` · `AMD`
+
+---
+## 🏆 Top Trade
+
+**AMZN — LONG | WATCHLIST | Score: 52**
+
+> LONG. AMZN is demonstrating relative strength by trading up +0.51% against a declining SPY and holding above its MA20, supported by positive momentum ahead of its earnings preview [5].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$265.50 | $256.72 (-3.3%) | $283.07 (+6.6%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 GS — ▲ LONG | MONITOR | Score: 52/85
+### 🟡 #1 AMZN — ▲ LONG | WATCHLIST | Score: 52/85
 
-**Price Snapshot:** $953.57 (-1.6%) | **RSI:** 54.5 | **Vol ratio:** 0.28x | **ATR:** 23.5943 | **vs MA20:** above ✅
+**Price Snapshot:** $265.50 (+0.5%) | **RSI:** 57.4 | **Vol ratio:** 0.37x | **ATR:** 7.3193 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `22.2/25` | MarketConf `11.0/20` | RegimeFit `7.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Goldman Sachs is positioned to benefit from an ongoing earnings supercycle [3] and recent price target resets [5], indicating strong institutional interest despite the current pullback. The stock remains technically sound above its MA20, offering a tactical entry point during this market-wide dip.
-
-**Entry Consideration:** Limit orders between $948.00 and $953.00 to capture a bounce off intraday support.
-**Risk / Invalidation Level:** Daily close below the 20-day moving average of $933.47.
-**Initial Upside / Downside Case:** $975.00 initial target within a 3-5 day timeframe.
-**Key Risk:** ❌ Persistent macro weakness and SPY downside momentum dragging the financial sector lower.
-
-### ⚪ #2 LLY — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $1008.89 (+0.2%) | **RSI:** 74.7 | **Vol ratio:** 0.25x | **ATR:** 32.2439 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.5/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `19.7/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. LLY demonstrates significant relative strength following a Q1 earnings beat and raised FY2026 guidance [2][3]. The stock is outperforming a weak broader market, suggesting strong institutional demand post-results [1][5].
+**What & Why:** LONG. AMZN is demonstrating relative strength by trading up +0.51% against a declining SPY and holding above its MA20, supported by positive momentum ahead of its earnings preview [5].
 
-**Entry Consideration:** Limit order near $1000 psychological support or on a break above $1015.
-**Risk / Invalidation Level:** Daily close below $975, invalidating the post-earnings gap support.
-**Initial Upside / Downside Case:** $1050 (approx. 4% upside) within the next 2-5 trading days.
-**Key Risk:** ❌ RSI at 74.7 indicates overbought conditions which may lead to a temporary cooling period.
+**Entry Consideration:** Enter near $265.50 or on a confirmed bounce from the MA20 support level of $265.39.
+**Risk / Invalidation Level:** Exit on a daily close below $262.00 to account for volatility below the moving average.
+**Initial Upside / Downside Case:** Initial target of $272.00 to $275.00 within a 1-3 day timeframe.
+**Key Risk:** ❌ Broader market weakness in the SPY could eventually drag down high-beta tech names despite individual strength.
 
-### ⚪ #3 NFLX — ▲ LONG | MONITOR | Score: 50/85
+### ⚪ #2 WMT — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $87.02 (+0.1%) | **RSI:** 35.0 | **Vol ratio:** 0.28x | **ATR:** 2.3364 | **vs MA20:** below ⚠️
+**Price Snapshot:** $131.93 (+0.4%) | **RSI:** 63.6 | **Vol ratio:** 0.31x | **ATR:** 2.5687 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.3/25` | MarketConf `11.0/20` | RegimeFit `6.5/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `macro_beta_rebound`
-
-**What & Why:** LONG. NFLX demonstrates relative strength by trading positive despite a -0.94% SPY decline, while an RSI of 35 suggests the stock is nearing oversold territory. Significant analyst attention [3] and fundamental coverage [4] provide a catalyst for a technical bounce from current levels.
-
-**Entry Consideration:** Entry near $87.00, looking for continued price stability relative to the broader market index.
-**Risk / Invalidation Level:** Exit if price closes below $85.50, invalidating the relative strength thesis.
-**Initial Upside / Downside Case:** Initial target of $90.24 (MA20) for a short-term mean reversion.
-**Key Risk:** ❌ Low relative volume (0.28x) may lead to erratic price action if the broader market sell-off accelerates.
-
-### ⚪ #4 AAPL — ▲ LONG | MONITOR | Score: 48/85
-
-**Price Snapshot:** $302.30 (+1.4%) | **RSI:** 89.0 | **Vol ratio:** 0.4x | **ATR:** 6.602 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `21.7/25` | MarketConf `11.0/20` | RegimeFit `7.5/15` | RelOpp `0.6/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. AAPL exhibits significant relative strength against a declining SPY, supported by record highs in the broader tech sector [2]. Anticipation surrounding the iPhone 18 pricing and product cycle provides a fundamental catalyst for continued momentum [5].
+**What & Why:** LONG. Positive momentum is driven by top analysts raising price targets ahead of Q1 earnings, signaling confidence in fundamental performance [1]. The stock shows relative strength against a declining SPY, supported by upcoming earnings volatility and high sentiment [1, 2].
 
-**Entry Consideration:** Enter on a minor retracement toward the $300 psychological level to mitigate overextended RSI.
-**Risk / Invalidation Level:** Exit if price closes below $294.00, signaling a failure of the current breakout momentum.
-**Initial Upside / Downside Case:** $315.00 target based on short-term trend extension / 1-3 day timeframe.
-**Key Risk:** ❌ Extreme RSI of 89.0 indicates severe overbought conditions and high risk of a sharp mean-reversion.
+**Entry Consideration:** Enter on a retest of the $131.50 level or a breakout above the daily high of $132.00.
+**Risk / Invalidation Level:** Exit on a daily close below the MA20 at $130.11 to invalidate the short-term trend.
+**Initial Upside / Downside Case:** $135.00 initial target to capture pre-earnings run-up over the next 1-2 sessions.
+**Key Risk:** ❌ Potential 'sell the news' reaction if earnings results fail to exceed the recently elevated analyst expectations.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 38
+- `SPY` SHORT | IGNORE | score 48
+- `QQQ` SHORT | IGNORE | score 42
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▼ Global shares drop, bond yields climb on inflation worries  [Reuters]
-  ▼ Mastech Digital stock rises 4% amid revenue miss, cost cuts By Investing.com  [Investing.com South Africa]
+**NVDA**  ·  earnings
+  ◆ How Nvidia Stock Can Hit $300 After Earnings  [Barron's]
+  ▲ Is NVIDIA Corporation (NVDA) Among the Most Profitable Tech Stocks to Buy?  [Yahoo Finance]
 
 **MSFT**  ·  earnings
-  ▲ Is Microsoft undervalued? Why Bill Ackman is buying MSFT at 21x earnings  [Investing.com]
   ▲ Microsoft Stock Is a Buy as Its AI Business’ Annual Revenue Run Rate Swells  [Yahoo Finance]
+  ▼ MSFT Risks Drop Below $400 as OpenAI Caps Microsoft Revenue Share at $38 Billion  [FXLeaders]
+
+**LLY**  ·  earnings
+  ▲ Eli Lilly (LLY) Valuation Check After Strong Q1 Guidance Upgrade And New Obesity Trial Results  [Yahoo Finance]
 
 **PLTR**  ·  earnings
-  ▲ Argus Research Highlights Accelerating Revenue Growth at Palantir Technologies (PLTR)  [Yahoo Finance]
-  ▲ Even Dividend Stocks Are Beating Palantir Now. Still Worth Buying?  [24/7 Wall St.]
+  ▲ Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points — So Why Is PLTR Down 26% YTD?  [TradingKey]
+  ▲ Palantir [NASDAQ: PLTR] Stock Edges Higher as 85% Revenue Growth and Expanding Margins Keep Investors Engaged  [foreignpolicyjournal.com]
 
-**NVDA**  ·  macro
-  ▲ NVDA Stock Holds Firm As Inflation Data Tests Tech Rally  [timothysykes.com]
-  ▲ NVIDIA Likely to Beat Q1 Earnings Estimates: Time to Buy the Stock?  [TradingView]
+**META**  ·  earnings
+  ▲ Meta's stock shows bullish call option activity and undervalued volatility after Q1 earnings.  [Pluang]
 
 ---
 ## 🛡 Research Risk Rules
