@@ -1,100 +1,83 @@
-# 📊 Daily Research Report — 2026-05-18
-*Generated: 2026-05-18 15:46*
+# 📊 Daily Research Report — 2026-05-19
+*Generated: 2026-05-19 15:45*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.40%
-**SPY RSI(14):** 70.3
+**SPY:** -0.68%
+**SPY RSI(14):** 67.5
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### AMZN  $265.50 (+0.5%)
-**WATCHLIST** · LONG · EE=20 · post earnings drift · score=52
-> LONG. AMZN is demonstrating relative strength by trading up +0.51% against a declining SPY and holding above its MA20, supported by positive momentum ahead of i
+### ARM  $218.16 (+1.4%)
+**WATCHLIST** · LONG · EE=21 · post earnings drift · score=57
+> LONG. ARM is demonstrating relative strength against a weak SPY following record Q4 earnings and reports of demand potentially outstripping supply [4, 5]. Broke
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `AMZN`
-**⚪ MONITOR (1):** `WMT`
-**⛔ IGNORE (18):** `GOOGL` · `BAC` · `SPY` · `IWM` · `SOFI` · `AMD`
+**🟡 WATCHLIST (1):** `ARM`
+**⛔ IGNORE (19):** `BAC` · `SPY` · `TSLA` · `NVDA` · `META` · `AMZN`
 
 ---
 ## 🏆 Top Trade
 
-**AMZN — LONG | WATCHLIST | Score: 52**
+**ARM — LONG | WATCHLIST | Score: 57**
 
-> LONG. AMZN is demonstrating relative strength by trading up +0.51% against a declining SPY and holding above its MA20, supported by positive momentum ahead of its earnings preview [5].
+> LONG. ARM is demonstrating relative strength against a weak SPY following record Q4 earnings and reports of demand potentially outstripping supply [4, 5]. Brokerage consensus remains positive with a 'Moderate Buy' rating, supporting a trend-following move above the MA20 [1].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$265.50 | $256.72 (-3.3%) | $283.07 (+6.6%) | 1R | 2R |
+| ~$218.16 | $199.00 (-8.8%) | $256.49 (+17.6%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 AMZN — ▲ LONG | WATCHLIST | Score: 52/85
+### 🟡 #1 ARM — ▲ LONG | WATCHLIST | Score: 57/85
 
-**Price Snapshot:** $265.50 (+0.5%) | **RSI:** 57.4 | **Vol ratio:** 0.37x | **ATR:** 7.3193 | **vs MA20:** above ✅
+**Price Snapshot:** $218.16 (+1.4%) | **RSI:** 56.3 | **Vol ratio:** 0.63x | **ATR:** 15.9691 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.7/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. AMZN is demonstrating relative strength by trading up +0.51% against a declining SPY and holding above its MA20, supported by positive momentum ahead of its earnings preview [5].
-
-**Entry Consideration:** Enter near $265.50 or on a confirmed bounce from the MA20 support level of $265.39.
-**Risk / Invalidation Level:** Exit on a daily close below $262.00 to account for volatility below the moving average.
-**Initial Upside / Downside Case:** Initial target of $272.00 to $275.00 within a 1-3 day timeframe.
-**Key Risk:** ❌ Broader market weakness in the SPY could eventually drag down high-beta tech names despite individual strength.
-
-### ⚪ #2 WMT — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $131.93 (+0.4%) | **RSI:** 63.6 | **Vol ratio:** 0.31x | **ATR:** 2.5687 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.8/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `21.3/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Positive momentum is driven by top analysts raising price targets ahead of Q1 earnings, signaling confidence in fundamental performance [1]. The stock shows relative strength against a declining SPY, supported by upcoming earnings volatility and high sentiment [1, 2].
+**What & Why:** LONG. ARM is demonstrating relative strength against a weak SPY following record Q4 earnings and reports of demand potentially outstripping supply [4, 5]. Brokerage consensus remains positive with a 'Moderate Buy' rating, supporting a trend-following move above the MA20 [1].
 
-**Entry Consideration:** Enter on a retest of the $131.50 level or a breakout above the daily high of $132.00.
-**Risk / Invalidation Level:** Exit on a daily close below the MA20 at $130.11 to invalidate the short-term trend.
-**Initial Upside / Downside Case:** $135.00 initial target to capture pre-earnings run-up over the next 1-2 sessions.
-**Key Risk:** ❌ Potential 'sell the news' reaction if earnings results fail to exceed the recently elevated analyst expectations.
+**Entry Consideration:** Limit orders near $218.00 or on a successful retest of the $215.00 support level.
+**Risk / Invalidation Level:** Hard stop on a daily close below the 20-day moving average ($213.12).
+**Initial Upside / Downside Case:** Initial price target of $230.00 - $235.00 within a 1-3 day timeframe.
+**Key Risk:** ❌ High volatility and the risk that demand exceeds the company's immediate fulfillment capacity [5].
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` SHORT | IGNORE | score 48
-- `QQQ` SHORT | IGNORE | score 42
+- `SPY` SHORT | IGNORE | score 49
 
 ---
 ## 📰 Key News (Last 24h)
 
-**NVDA**  ·  earnings
-  ◆ How Nvidia Stock Can Hit $300 After Earnings  [Barron's]
-  ▲ Is NVIDIA Corporation (NVDA) Among the Most Profitable Tech Stocks to Buy?  [Yahoo Finance]
+**META**  ·  earnings
+  ▼ Exclusive: Meta lays out plans for May 20 restructuring in internal document - Reuters  [Reuters]
+  ▲ This Beaten-Down Tech Stock Presents a Generational Buying Opportunity  [The Motley Fool]
 
-**MSFT**  ·  earnings
-  ▲ Microsoft Stock Is a Buy as Its AI Business’ Annual Revenue Run Rate Swells  [Yahoo Finance]
-  ▼ MSFT Risks Drop Below $400 as OpenAI Caps Microsoft Revenue Share at $38 Billion  [FXLeaders]
+**IWM**  ·  earnings
+  ▲ IG Group Shares Hit All-Time High on Guidance Raise - WSJ  [Wsj]
+  ▲ The new Federal Reserve chair can cause this small-cap stock ETF to surge  [MSN]
+
+**NVDA**  ·  earnings
+  ▼ Nvidia Stock Heads for 3-Day Losing Streak. That Could Be a Good Thing. - Barron's  [Barrons]
+  ▲ HSBC raises Nvidia stock price target to $325 on earnings outlook  [Investing.com Australia]
 
 **LLY**  ·  earnings
-  ▲ Eli Lilly (LLY) Valuation Check After Strong Q1 Guidance Upgrade And New Obesity Trial Results  [Yahoo Finance]
+  ▼ Eli Lilly (LLY) Supreme Court Challenge Dismissed, $183 Million Judgment Stands  [GuruFocus]
 
-**PLTR**  ·  earnings
-  ▲ Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points — So Why Is PLTR Down 26% YTD?  [TradingKey]
-  ▲ Palantir [NASDAQ: PLTR] Stock Edges Higher as 85% Revenue Growth and Expanding Margins Keep Investors Engaged  [foreignpolicyjournal.com]
-
-**META**  ·  earnings
-  ▲ Meta's stock shows bullish call option activity and undervalued volatility after Q1 earnings.  [Pluang]
+**HD**  ·  macro
+  ◆ Nasdaq, S&P 500 Futures Slip As Nvidia Earnings Loom, Inflation Fears Weigh: Why NVDA, GOOGL, META, HD, HIMS Are In Focus  [Stocktwits]
 
 ---
 ## 🛡 Research Risk Rules
