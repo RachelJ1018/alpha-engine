@@ -1,184 +1,128 @@
-# 📊 Daily Research Report — 2026-05-25
-*Generated: 2026-05-25 15:34*
+# 📊 Daily Research Report — 2026-05-26
+*Generated: 2026-05-26 15:47*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.39%
-**SPY RSI(14):** 71.8
+**SPY:** +0.47%
+**SPY RSI(14):** 70.8
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### ARM  $306.51 (+2.8%)
-**ACTIONABLE** · LONG · EE=21 · post earnings drift · score=65
-> LONG. ARM is experiencing massive momentum driven by projections of 5x profit growth and increased CPU market confidence following Nvidia's positive commentary 
+### TSLA  $431.83 (+1.4%)
+**WATCHLIST** · LONG · EE=19 · general setup · score=54
+> TSLA exhibits strong upward momentum trading well above its MA20 and MA50, supported by positive premarket movement and high sentiment [2]. The technical trend 
 
-### LLY  $1065.00 (+2.2%)
-**ACTIONABLE** · LONG · EE=16 · post earnings drift · score=58
-> LONG. Momentum remains strong post-earnings as analysts reiterate 'Buy' ratings and the stock gains weight in major indices [1][4]. Current price action above k
-
-### TSLA  $426.01 (+1.9%)
-**WATCHLIST** · LONG · EE=18 · general setup · score=57
-> LONG. TSLA maintains strong bullish momentum above its MA20 ($409.26) with a perfect sentiment score of 1.00, suggesting the market is currently discounting spe
+### LLY  $1075.27 (+1.0%)
+**WATCHLIST** · LONG · EE=19 · post earnings drift · score=53
+> LONG. LLY is positioned for further upside following a $4 billion vaccine deal announcement and sustained post-earnings 'buy' signals [3][4]. The stock maintain
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE (4):** `ARM` · `NVDA` · `LLY` · `COST`
-**🟡 WATCHLIST (2):** `TSLA` · `AMD`
-**⚪ MONITOR (2):** `WMT` · `BAC`
-**⛔ IGNORE (12):** `GOOGL` · `AVGO` · `MSFT` · `AAPL` · `GLD` · `QQQ`
+**🟢 ACTIONABLE:** None today
+**🟡 WATCHLIST (2):** `TSLA` · `LLY`
+**⚪ MONITOR (2):** `GOOGL` · `PLTR`
+**⛔ IGNORE (16):** `TSM` · `BAC` · `AVGO` · `META` · `ARM` · `JPM`
 
 ---
 ## 🏆 Top Trade
 
-**ARM — LONG | ACTIONABLE | Score: 65**
+**TSLA — LONG | WATCHLIST | Score: 54**
 
-> LONG. ARM is experiencing massive momentum driven by projections of 5x profit growth and increased CPU market confidence following Nvidia's positive commentary [1, 2, 5]. The stock is hitting new highs on significant volume, indicating strong institutional accumulation post-earnings.
+> TSLA exhibits strong upward momentum trading well above its MA20 and MA50, supported by positive premarket movement and high sentiment [2]. The technical trend remains intact despite speculative headlines regarding potential SpaceX IPO impacts [1].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$306.51 | $281.39 (-8.2%) | $356.75 (+16.4%) | 1R | 2R |
+| ~$431.83 | $410.38 (-5.0%) | $474.73 (+9.9%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟢 #1 ARM — ▲ LONG | ACTIONABLE | Score: 65/85
+### 🟡 #1 TSLA — ▲ LONG | WATCHLIST | Score: 54/85
 
-**Price Snapshot:** $306.51 (+2.8%) | **RSI:** 75.7 | **Vol ratio:** 1.56x | **ATR:** 20.9325 | **vs MA20:** above ✅
+**Price Snapshot:** $431.83 (+1.4%) | **RSI:** 64.4 | **Vol ratio:** 0.34x | **ATR:** 17.8757 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.9/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `11.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. ARM is experiencing massive momentum driven by projections of 5x profit growth and increased CPU market confidence following Nvidia's positive commentary [1, 2, 5]. The stock is hitting new highs on significant volume, indicating strong institutional accumulation post-earnings.
-
-**Entry Consideration:** Enter on a minor intraday pullback toward $300.00 or a break above the current session high.
-**Risk / Invalidation Level:** Stop at $284.50, just below the recent breakout support level.
-**Initial Upside / Downside Case:** $335.00 - $340.00 range within 1-3 trading sessions.
-**Key Risk:** ❌ Extremely high RSI (75.7) suggests the stock is overextended and vulnerable to profit-taking.
-
-### 🟢 #2 NVDA — ▲ LONG | ACTIONABLE | Score: 59/85
-
-**Price Snapshot:** $215.33 (-1.9%) | **RSI:** 62.5 | **Vol ratio:** 1.01x | **ATR:** 8.2857 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `21.4/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `9.3/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Record $81.6B revenue and robust AI growth provide a strong fundamental backdrop despite the immediate post-earnings price dip [1,4]. The current pullback to the MA20 support level offers a high-probability entry point as the market digests the positive results [2,3].
-
-**Entry Consideration:** Enter near the MA20 support at $214.75 or on a reclaim of $216.00.
-**Risk / Invalidation Level:** Daily close below $212.50 to account for volatility around the MA20.
-**Initial Upside / Downside Case:** $225.00 initial target for a 1-3 day mean reversion play.
-**Key Risk:** ❌ Extended 'sell-the-news' profit taking overriding the strong fundamental data.
-
-### 🟢 #3 LLY — ▲ LONG | ACTIONABLE | Score: 58/85
-
-**Price Snapshot:** $1065.00 (+2.2%) | **RSI:** 70.9 | **Vol ratio:** 1.13x | **ATR:** 28.8771 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `16.0/25` | MarketConf `15.0/20` | RegimeFit `9.0/15` | RelOpp `9.3/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Momentum remains strong post-earnings as analysts reiterate 'Buy' ratings and the stock gains weight in major indices [1][4]. Current price action above key moving averages suggests continued upside despite high valuation concerns [5].
-
-**Entry Consideration:** Enter on a break above $1065.00 or minor pullbacks toward $1055.00.
-**Risk / Invalidation Level:** Close below $1025.00 to protect against mean reversion from overbought levels.
-**Initial Upside / Downside Case:** $1100.00 psychological resistance within 1-3 trading days.
-**Key Risk:** ❌ RSI at 70.9 indicates overbought conditions which may lead to immediate profit-taking.
-
-### 🟡 #4 TSLA — ▲ LONG | WATCHLIST | Score: 57/85
-
-**Price Snapshot:** $426.01 (+1.9%) | **RSI:** 61.5 | **Vol ratio:** 0.74x | **ATR:** 18.2021 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.4/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `5.9/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `19.3/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `general_setup`
 
-**What & Why:** LONG. TSLA maintains strong bullish momentum above its MA20 ($409.26) with a perfect sentiment score of 1.00, suggesting the market is currently discounting speculative risks regarding a SpaceX IPO [1]. The price action remains constructive within a neutral regime, favoring a continuation toward psychological resistance.
+**What & Why:** TSLA exhibits strong upward momentum trading well above its MA20 and MA50, supported by positive premarket movement and high sentiment [2]. The technical trend remains intact despite speculative headlines regarding potential SpaceX IPO impacts [1].
 
-**Entry Consideration:** Wait for price confirmation before entry.
-**Risk / Invalidation Level:** Use ATR-based stop from risk engine.
-**Initial Upside / Downside Case:** Target per 2R calculation in report.
-**Key Risk:** ❌ Thesis incomplete due to response truncation.
+**Entry Consideration:** Limit order near $429.50 or on a confirmed break of $433.00 with volume.
+**Risk / Invalidation Level:** Exit if price closes below $411.92 (MA20) or breaks $415.00 support.
+**Initial Upside / Downside Case:** $448.00 - $450.00 psychological resistance within 1-2 trading sessions.
+**Key Risk:** ❌ Negative sentiment spillover or capital reallocation concerns linked to SpaceX IPO speculation.
 
-### 🟢 #5 COST — ▲ LONG | ACTIONABLE | Score: 57/85
+### 🟡 #2 LLY — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $1028.24 (-2.1%) | **RSI:** 53.6 | **Vol ratio:** 1.1x | **ATR:** 22.795 | **vs MA20:** above ✅
+**Price Snapshot:** $1075.27 (+1.0%) | **RSI:** 69.5 | **Vol ratio:** 0.36x | **ATR:** 28.3977 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.4/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `7.6/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `18.9/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. COST is testing critical support at the MA20 ($1026.25) following a -2.11% intraday pullback, offering a mean-reversion entry ahead of the upcoming earnings event. Technical indicators remain neutral with an RSI of 53.6, suggesting the primary uptrend remains intact despite short-term volatility.
+**What & Why:** LONG. LLY is positioned for further upside following a $4 billion vaccine deal announcement and sustained post-earnings 'buy' signals [3][4]. The stock maintains strong momentum above key moving averages as the broader pharma industry recovery accelerates [1].
 
-**Entry Consideration:** Limit orders between $1026.25 (MA20) and $1028.00 to capture the bounce off support.
-**Risk / Invalidation Level:** Hard stop at $1014.00, representing a break below the recent consolidation floor.
-**Initial Upside / Downside Case:** $1055.00 for a short-term recovery to recent highs within 1-3 trading sessions.
-**Key Risk:** ❌ Earnings-related volatility could lead to a gap down if the broader market sentiment shifts.
+**Entry Consideration:** Enter on a minor intraday pullback toward $1065 to mitigate overbought risk.
+**Risk / Invalidation Level:** Daily close below $1040 support level.
+**Initial Upside / Downside Case:** $1125 (approx. 5% upside) / 1-2 week timeframe.
+**Key Risk:** ❌ RSI at 69.5 indicates the stock is near overbought territory, increasing mean-reversion risk.
 
-### ⚪ #6 WMT — ▼ SHORT | MONITOR | Score: 56/85
+### ⚪ #3 GOOGL — ▲ LONG | MONITOR | Score: 52/85
 
-**Price Snapshot:** $120.27 (-0.9%) | **RSI:** 31.9 | **Vol ratio:** 1.59x | **ATR:** 3.2735 | **vs MA20:** below ⚠️
+**Price Snapshot:** $386.25 (+0.9%) | **RSI:** 48.4 | **Vol ratio:** 0.35x | **ATR:** 9.6821 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `7.9/25` | MarketConf `17.0/20` | RegimeFit `8.0/15` | RelOpp `13.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `21.4/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
-**Strategy Bucket:** `mean_reversion_long`
+**Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** SHORT. WMT exhibits significant relative weakness and a technical breakdown below its MA20 and MA50, compounded by negative sentiment regarding index rebalancing [1]. High volume selling suggests momentum remains bearish despite the broader market's positive performance.
+**What & Why:** LONG. Positive sentiment ahead of earnings and general TMT sector strength [3] support a move higher as the market prices in Google's quantum computing dominance [4].
 
-**Entry Consideration:** Short entry on a confirmed break below the $120.00 psychological support level.
-**Risk / Invalidation Level:** Stop loss at $123.50, above the immediate intraday resistance and recent breakdown point.
-**Initial Upside / Downside Case:** Initial target of $116.00 within a 1-3 day timeframe.
-**Key Risk:** ❌ Oversold RSI of 31.9 poses a high risk of a technical mean-reversion bounce.
+**Entry Consideration:** Entry on a confirmed break above the MA20 ($387.28) with volume support.
+**Risk / Invalidation Level:** Hard stop at $380.50 to protect against a breakdown from the current consolidation.
+**Initial Upside / Downside Case:** Initial target of $396.00 within 48 hours.
+**Key Risk:** ❌ Earnings-related volatility and potential negative sentiment from peer layoffs [5].
 
-### ⚪ #7 BAC — ▲ LONG | MONITOR | Score: 51/85
+### ⚪ #4 PLTR — ▲ LONG | MONITOR | Score: 50/85
 
-**Price Snapshot:** $51.80 (+0.6%) | **RSI:** 47.5 | **Vol ratio:** 0.7x | **ATR:** 1.09 | **vs MA20:** above ✅
+**Price Snapshot:** $138.06 (+0.9%) | **RSI:** 54.7 | **Vol ratio:** 0.39x | **ATR:** 4.9231 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `14.5/25` | MarketConf `14.0/20` | RegimeFit `8.0/15` | RelOpp `4.5/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `18.2/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
-**Strategy Bucket:** `macro_beta_rebound`
+**Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. BAC is showing technical strength by maintaining support above its MA20 and MA50 while successfully navigating interest rate pressures through growth initiatives [1]. Positive sentiment and active analyst updates on major market drivers [2, 3] suggest a stable environment for financial sector appreciation.
+**What & Why:** LONG. Palantir's record Q1 AI growth and upwardly revised FCF margin and revenue forecasts suggest fundamental strength and potential undervaluation relative to growth [2, 5].
 
-**Entry Consideration:** Enter near the MA20 support level of $51.73 or on a break above the intraday high of $51.90.
-**Risk / Invalidation Level:** Exit on a daily close below the MA50 at $50.84 or a break of $50.50.
-**Initial Upside / Downside Case:** Initial target of $53.50 based on recent resistance levels within a 3-5 day timeframe.
-**Key Risk:** ❌ Sudden interest rate volatility or hawkish Fed commentary impacting net interest income outlook.
-
----
-## 📈 Market Instruments
-
-- `QQQ` SHORT | IGNORE | score 47
+**Entry Consideration:** Enter near MA20 support at $137.17 or on a break above $138.50 with volume confirmation.
+**Risk / Invalidation Level:** Daily close below $135.00, which invalidates the current consolidation floor.
+**Initial Upside / Downside Case:** $142.40 (MA50 resistance) within a 3-5 day timeframe.
+**Key Risk:** ❌ Relative underperformance compared to other software names like PANW may limit immediate capital inflow [3].
 
 ---
 ## 📰 Key News (Last 24h)
 
-**META**  ·  macro
-  ▼ Meet Mark Zuckerberg’s Right-Hand Man Who’s Unleashing AI at Meta - WSJ  [Wsj]
-  ▲ Meta Platforms, Inc. $META Stake Raised by AM Investment Strategies LLC  [MarketBeat]
+**JPM**  ·  macro
+  ▼ JGBs Rise Amid Falling Crude Oil Prices - WSJ  [Wsj]
+  ▲ JPM: BILIBILI-W (09626.HK) Outlook Positive, Expects Operating Profit to Rise 23% This Year  [AASTOCKS.com]
 
 **NVDA**  ·  earnings
-  ▲ Nvidia earnings takeaways: Data center revenue nearly doubles, report is strong but stock slides  [CNBC]
-  ▲ Nvidia Hits Record $81.6B Revenue — So Why Is the Stock Down?  [Moomoo]
+  ▼ Nvidia Earnings: Stock Drops After Better-Than Expected Results; More News and Analysis From the Call  [Barron's]
+  ▲ 80 Billion Reasons to Buy Nvidia After Its Monster Earnings Report  [Yahoo Finance]
 
-**BAC**  ·  macro
-  ▲ Bank of America’s SWOT analysis: stock navigates rate pressures with growth  [Investing.com]
+**GOOGL**  ·  earnings
+  ◆ Eli Lilly stock edges higher as company plans nearly $4 billion in vaccine deals - CNBC  [Cnbc]
 
-**PLTR**  ·  earnings
-  ▲ Palo Alto Networks Is Beating Palantir by 60% This Year. Is a Rebalancing Imminent?  [Yahoo Finance]
+**MSFT**  ·  macro
+  ▼ Near-term Concerns Open Door for Diamond Hill Large Cap Strategy’s Microsoft (MSFT) Purchase  [Yahoo Finance]
 
-**MSFT**  ·  earnings
-  ◆ Apple vs. Microsoft: What Their Revenue Trends Reveal for Investors  [The Globe and Mail]
-
-**GLD**  ·  earnings
-  ▲ Barrick Earnings: Very Strong, Driven by the Gold Bull Market  [Morningstar Canada]
+**LLY**  ·  macro
+  ▲ 4 Large-Cap Pharma Stocks to Buy as Industry Recovery Accelerates  [The Globe and Mail]
+  ▲ AMGN Stock Down 13% in 3 Months: Buy the Dip or Book Profits?  [The Globe and Mail]
 
 ---
 ## 🛡 Research Risk Rules
