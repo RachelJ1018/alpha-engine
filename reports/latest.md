@@ -1,128 +1,130 @@
-# 📊 Daily Research Report — 2026-05-26
-*Generated: 2026-05-26 15:47*
+# 📊 Daily Research Report — 2026-05-27
+*Generated: 2026-05-27 15:47*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.47%
-**SPY RSI(14):** 70.8
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** -0.25%
+**SPY RSI(14):** 63.7
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### TSLA  $431.83 (+1.4%)
-**WATCHLIST** · LONG · EE=19 · general setup · score=54
-> TSLA exhibits strong upward momentum trading well above its MA20 and MA50, supported by positive premarket movement and high sentiment [2]. The technical trend 
-
-### LLY  $1075.27 (+1.0%)
-**WATCHLIST** · LONG · EE=19 · post earnings drift · score=53
-> LONG. LLY is positioned for further upside following a $4 billion vaccine deal announcement and sustained post-earnings 'buy' signals [3][4]. The stock maintain
+### TSLA  $440.36 (+1.6%)
+**WATCHLIST** · LONG · EE=20 · general setup · score=53
+> TSLA shows relative strength against a declining SPY, supported by positive premarket momentum [3] and its competitive positioning in the autonomous AI race [4]
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (2):** `TSLA` · `LLY`
-**⚪ MONITOR (2):** `GOOGL` · `PLTR`
-**⛔ IGNORE (16):** `TSM` · `BAC` · `AVGO` · `META` · `ARM` · `JPM`
+**🟡 WATCHLIST (1):** `TSLA`
+**⚪ MONITOR (3):** `LLY` · `TSM` · `SOFI`
+**⛔ IGNORE (16):** `GOOGL` · `JPM` · `AMZN` · `AAPL` · `NVDA` · `AMD`
 
 ---
 ## 🏆 Top Trade
 
-**TSLA — LONG | WATCHLIST | Score: 54**
+**TSLA — LONG | WATCHLIST | Score: 53**
 
-> TSLA exhibits strong upward momentum trading well above its MA20 and MA50, supported by positive premarket movement and high sentiment [2]. The technical trend remains intact despite speculative headlines regarding potential SpaceX IPO impacts [1].
+> TSLA shows relative strength against a declining SPY, supported by positive premarket momentum [3] and its competitive positioning in the autonomous AI race [4]. The price remains well above the MA20 and MA50, indicating a sustained bullish trend despite broader market chop.
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$431.83 | $410.38 (-5.0%) | $474.73 (+9.9%) | 1R | 2R |
+| ~$440.36 | $419.34 (-4.8%) | $482.40 (+9.5%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 TSLA — ▲ LONG | WATCHLIST | Score: 54/85
+### 🟡 #1 TSLA — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $431.83 (+1.4%) | **RSI:** 64.4 | **Vol ratio:** 0.34x | **ATR:** 17.8757 | **vs MA20:** above ✅
+**Price Snapshot:** $440.36 (+1.6%) | **RSI:** 64.2 | **Vol ratio:** 0.4x | **ATR:** 17.5179 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.3/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `19.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `general_setup`
 
-**What & Why:** TSLA exhibits strong upward momentum trading well above its MA20 and MA50, supported by positive premarket movement and high sentiment [2]. The technical trend remains intact despite speculative headlines regarding potential SpaceX IPO impacts [1].
+**What & Why:** TSLA shows relative strength against a declining SPY, supported by positive premarket momentum [3] and its competitive positioning in the autonomous AI race [4]. The price remains well above the MA20 and MA50, indicating a sustained bullish trend despite broader market chop.
 
-**Entry Consideration:** Limit order near $429.50 or on a confirmed break of $433.00 with volume.
-**Risk / Invalidation Level:** Exit if price closes below $411.92 (MA20) or breaks $415.00 support.
-**Initial Upside / Downside Case:** $448.00 - $450.00 psychological resistance within 1-2 trading sessions.
-**Key Risk:** ❌ Negative sentiment spillover or capital reallocation concerns linked to SpaceX IPO speculation.
+**Entry Consideration:** Limit order near $438.50 or on a break of the $441.50 intraday resistance.
+**Risk / Invalidation Level:** Hard stop at $427.50, just below recent consolidation levels.
+**Initial Upside / Downside Case:** $458.00 initial target based on current momentum; 1-3 day timeframe.
+**Key Risk:** ❌ Elevated RSI (64.2) and potential negative sentiment spillover from SpaceX IPO speculation [1].
 
-### 🟡 #2 LLY — ▲ LONG | WATCHLIST | Score: 53/85
+### ⚪ #2 LLY — ▲ LONG | MONITOR | Score: 52/85
 
-**Price Snapshot:** $1075.27 (+1.0%) | **RSI:** 69.5 | **Vol ratio:** 0.36x | **ATR:** 28.3977 | **vs MA20:** above ✅
+**Price Snapshot:** $1085.00 (+1.9%) | **RSI:** 71.3 | **Vol ratio:** 0.34x | **ATR:** 29.4908 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.9/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. LLY is positioned for further upside following a $4 billion vaccine deal announcement and sustained post-earnings 'buy' signals [3][4]. The stock maintains strong momentum above key moving averages as the broader pharma industry recovery accelerates [1].
-
-**Entry Consideration:** Enter on a minor intraday pullback toward $1065 to mitigate overbought risk.
-**Risk / Invalidation Level:** Daily close below $1040 support level.
-**Initial Upside / Downside Case:** $1125 (approx. 5% upside) / 1-2 week timeframe.
-**Key Risk:** ❌ RSI at 69.5 indicates the stock is near overbought territory, increasing mean-reversion risk.
-
-### ⚪ #3 GOOGL — ▲ LONG | MONITOR | Score: 52/85
-
-**Price Snapshot:** $386.25 (+0.9%) | **RSI:** 48.4 | **Vol ratio:** 0.35x | **ATR:** 9.6821 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `21.4/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `19.4/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Positive sentiment ahead of earnings and general TMT sector strength [3] support a move higher as the market prices in Google's quantum computing dominance [4].
+**What & Why:** LONG. Strategic expansion into the vaccine market via a $4 billion acquisition of three developers signals a new growth vertical [2][5]. This move aligns with an accelerating recovery across the large-cap pharma sector [3].
 
-**Entry Consideration:** Entry on a confirmed break above the MA20 ($387.28) with volume support.
-**Risk / Invalidation Level:** Hard stop at $380.50 to protect against a breakdown from the current consolidation.
-**Initial Upside / Downside Case:** Initial target of $396.00 within 48 hours.
-**Key Risk:** ❌ Earnings-related volatility and potential negative sentiment from peer layoffs [5].
+**Entry Consideration:** Limit orders near $1075-$1080 to account for the high RSI and potential intraday mean reversion.
+**Risk / Invalidation Level:** Daily close below $1045 to protect against a breakdown toward the 20-day moving average.
+**Initial Upside / Downside Case:** $1125 initial target within 1-3 trading sessions as momentum tests new highs.
+**Key Risk:** ❌ Technical exhaustion and potential profit-taking given the overbought RSI of 71.3 and low relative volume.
 
-### ⚪ #4 PLTR — ▲ LONG | MONITOR | Score: 50/85
+### ⚪ #3 TSM — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $138.06 (+0.9%) | **RSI:** 54.7 | **Vol ratio:** 0.39x | **ATR:** 4.9231 | **vs MA20:** above ✅
+**Price Snapshot:** $416.92 (+1.1%) | **RSI:** 48.7 | **Vol ratio:** 0.66x | **ATR:** 14.6479 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.2/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `18.1/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Palantir's record Q1 AI growth and upwardly revised FCF margin and revenue forecasts suggest fundamental strength and potential undervaluation relative to growth [2, 5].
+**What & Why:** LONG. TSM exhibits relative strength above its MA20 despite a choppy market, bolstered by downstream demand from AMD's Zen 6 mass production [5] and institutional buying [2, 3].
 
-**Entry Consideration:** Enter near MA20 support at $137.17 or on a break above $138.50 with volume confirmation.
-**Risk / Invalidation Level:** Daily close below $135.00, which invalidates the current consolidation floor.
-**Initial Upside / Downside Case:** $142.40 (MA50 resistance) within a 3-5 day timeframe.
-**Key Risk:** ❌ Relative underperformance compared to other software names like PANW may limit immediate capital inflow [3].
+**Entry Consideration:** Limit orders near $412.00-$414.00 to capture mean reversion toward the MA20 support level.
+**Risk / Invalidation Level:** Daily close below $404.18 (MA20) or a break of the $400.00 psychological support.
+**Initial Upside / Downside Case:** $430.00 - $435.00 range within 3-5 trading sessions.
+**Key Risk:** ❌ Macro volatility and SPY weakness may trigger broad semiconductor selling despite positive production catalysts.
+
+### ⚪ #4 SOFI — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $16.40 (+2.6%) | **RSI:** 51.0 | **Vol ratio:** 0.51x | **ATR:** 0.7268 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `15.6/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `6.0/15` | Freshness `9.3/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `general_setup`
+
+**What & Why:** LONG. The launch of SoFiUSD stablecoin [1] represents a high-novelty product expansion that could catalyze fee revenue and user growth within the banking app. Price holding above the MA20 ($15.89) suggests a bullish trend shift despite broader market choppiness.
+
+**Entry Consideration:** Entry at current market price ($16.40) or on a slight pullback to $16.15.
+**Risk / Invalidation Level:** Daily close below the MA20 support level of $15.89.
+**Initial Upside / Downside Case:** Initial target of $17.50, testing recent highs over the next 3-5 sessions.
+**Key Risk:** ❌ Immediate overhead resistance at the MA50 ($16.70) and potential for broader market weakness to drag on fintech beta.
 
 ---
 ## 📰 Key News (Last 24h)
 
+**LLY**  ·  earnings
+  ▲ Lilly to buy three vaccine developers for nearly $4 billion in infectious disease push - Reuters  [Reuters]
+
 **JPM**  ·  macro
-  ▼ JGBs Rise Amid Falling Crude Oil Prices - WSJ  [Wsj]
-  ▲ JPM: BILIBILI-W (09626.HK) Outlook Positive, Expects Operating Profit to Rise 23% This Year  [AASTOCKS.com]
+  ▲ 2 Reasons to Buy FedEx Stock Now, According to J.P. Morgan  [Barron's]
 
-**NVDA**  ·  earnings
-  ▼ Nvidia Earnings: Stock Drops After Better-Than Expected Results; More News and Analysis From the Call  [Barron's]
-  ▲ 80 Billion Reasons to Buy Nvidia After Its Monster Earnings Report  [Yahoo Finance]
+**PLTR**  ·  macro
+  ▲ Powerlaw Capital Group CEO: We’re bringing access to private companies to everyone - CNBC  [Cnbc]
 
-**GOOGL**  ·  earnings
-  ◆ Eli Lilly stock edges higher as company plans nearly $4 billion in vaccine deals - CNBC  [Cnbc]
+**IWM**  ·  earnings
+  ▲ We're booking profits in a stock that has rallied almost 10% since our last buy - CNBC  [Cnbc]
 
-**MSFT**  ·  macro
-  ▼ Near-term Concerns Open Door for Diamond Hill Large Cap Strategy’s Microsoft (MSFT) Purchase  [Yahoo Finance]
+**ARM**  ·  macro
+  ▲ Market Open: May 27, 2026 - CNBC  [Cnbc]
+  ▲ Memory stocks continue to rally - CNBC  [Cnbc]
 
-**LLY**  ·  macro
-  ▲ 4 Large-Cap Pharma Stocks to Buy as Industry Recovery Accelerates  [The Globe and Mail]
-  ▲ AMGN Stock Down 13% in 3 Months: Buy the Dip or Book Profits?  [The Globe and Mail]
+**MU**  ·  macro
+  ▲ Barclays raises Micron stock price target on strategic agreements  [Investing.com]
+
+**AMZN**  ·  macro
+  ▲ UBS reiterates Amazon stock Buy rating on AWS growth outlook  [Investing.com]
 
 ---
 ## 🛡 Research Risk Rules
