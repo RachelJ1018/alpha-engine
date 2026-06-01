@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-05-29
-*Generated: 2026-05-29 15:47*
+# 📊 Daily Research Report — 2026-06-01
+*Generated: 2026-06-01 16:27*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.24%
-**SPY RSI(14):** 68.7
+**SPY:** +0.03%
+**SPY RSI(14):** 67.8
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -15,89 +15,107 @@
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### PLTR  $156.58 (+9.2%)
-**WATCHLIST** · LONG · EE=20 · post earnings drift · score=55
-> LONG. Palantir is benefiting from positive AI sector read-throughs following Snowflake's strong revenue report [1] and its own triple-digit growth fundamentals 
+### AVGO  $460.62 (+3.1%)
+**WATCHLIST** · LONG · EE=22 · post earnings drift · score=56
+> LONG. Momentum is supported by positive analyst sentiment and price target hikes ahead of the June 3 earnings report [1][2][5]. The stock's position well above 
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (2):** `PLTR` · `AVGO`
-**⚪ MONITOR (1):** `MSFT`
-**⛔ IGNORE (17):** `COST` · `NVDA` · `AMZN` · `SPY` · `BAC` · `TSM`
+**🟢 ACTIONABLE (1):** `ARM`
+**🟡 WATCHLIST (2):** `AVGO` · `PLTR`
+**⚪ MONITOR (1):** `COST`
+**⛔ IGNORE (16):** `MSFT` · `AAPL` · `NVDA` · `AMZN` · `BAC` · `SPY`
 
 ---
 ## 🏆 Top Trade
 
-**PLTR — LONG | WATCHLIST | Score: 55**
+**ARM — LONG | ACTIONABLE | Score: 55**
 
-> LONG. Palantir is benefiting from positive AI sector read-throughs following Snowflake's strong revenue report [1] and its own triple-digit growth fundamentals [3][5]. This momentum suggests continued strength as it is ranked among the best revenue growth stocks to buy [3].
+> LONG. ARM is poised for continued momentum following the announcement of new AI superchips for Windows PCs by Nvidia and Microsoft [5]. The company's consistent growth profile relative to peers provides a stable fundamental backdrop for this AI-driven rally [1].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$156.58 | $149.38 (-4.6%) | $170.99 (+9.2%) | 1R | 2R |
+| ~$415.08 | $381.83 (-8.0%) | $481.59 (+16.0%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 PLTR — ▲ LONG | WATCHLIST | Score: 55/85
+### 🟡 #1 AVGO — ▲ LONG | WATCHLIST | Score: 56/85
 
-**Price Snapshot:** $156.58 (+9.2%) | **RSI:** 71.3 | **Vol ratio:** 1.02x | **ATR:** 6.0031 | **vs MA20:** above ✅
+**Price Snapshot:** $460.62 (+3.1%) | **RSI:** 63.4 | **Vol ratio:** 0.63x | **ATR:** 17.0657 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.3/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `10.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Palantir is benefiting from positive AI sector read-throughs following Snowflake's strong revenue report [1] and its own triple-digit growth fundamentals [3][5]. This momentum suggests continued strength as it is ranked among the best revenue growth stocks to buy [3].
-
-**Entry Consideration:** Limit order near $153.50-$155.00 to mitigate risk from the current 71.3 RSI overbought level.
-**Risk / Invalidation Level:** Hard stop at $144.50, just below the recent breakout support and MA20/MA50 levels.
-**Initial Upside / Downside Case:** $170.00 initial target, representing a momentum extension over the next 2-5 trading days.
-**Key Risk:** ❌ Extreme overbought RSI (71.3) and a choppy market regime increase the probability of a mean-reversion pullback.
-
-### 🟡 #2 AVGO — ▲ LONG | WATCHLIST | Score: 55/85
-
-**Price Snapshot:** $439.07 (+2.9%) | **RSI:** 54.5 | **Vol ratio:** 0.51x | **ATR:** 16.16 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `21.3/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `21.6/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. AVGO is demonstrating relative strength by outperforming the current market upswing [3] and gaining momentum from high earnings expectations similar to other AI-driven leaders [1].
+**What & Why:** LONG. Momentum is supported by positive analyst sentiment and price target hikes ahead of the June 3 earnings report [1][2][5]. The stock's position well above the MA20 suggests strong institutional accumulation leading into the event.
 
-**Entry Consideration:** Enter on a minor pullback toward the $432-$435 range to align with recent support levels.
-**Risk / Invalidation Level:** Strict stop on a daily close below $422.50, coinciding with the 20-day moving average.
-**Initial Upside / Downside Case:** $460.00 initial target based on psychological resistance and recent momentum; 1-2 week horizon.
-**Key Risk:** ❌ Heightened volatility and potential 'sell the news' dynamics typical of pre-earnings runs in a choppy regime.
+**Entry Consideration:** Limit orders near $458.50 to capture a minor intraday pullback or a break above $462.00 on volume.
+**Risk / Invalidation Level:** Hard stop at $444.00, representing a break below recent support and the 20-day moving average.
+**Initial Upside / Downside Case:** $480.00 target price to be reached prior to the June 3 earnings announcement.
+**Key Risk:** ❌ Elevated RSI of 63.4 suggests limited immediate upside before hitting overbought conditions in a choppy market regime.
+
+### 🟡 #2 PLTR — ▲ LONG | WATCHLIST | Score: 56/85
+
+**Price Snapshot:** $161.01 (+2.9%) | **RSI:** 75.3 | **Vol ratio:** 0.76x | **ATR:** 6.0881 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `20.9/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `7.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Strong earnings beats from Snowflake and Dell validate Palantir's AI partnership and signal a broader recovery in enterprise software demand [1, 3, 5]. Continued AI momentum and positive Wall Street sentiment provide a tailwind for further price discovery [2, 4].
+
+**Entry Consideration:** Enter on intraday consolidation near $159.50-$161.00 to mitigate overbought RSI risk.
+**Risk / Invalidation Level:** Hard stop below $154.00, representing the recent breakout support level.
+**Initial Upside / Downside Case:** $170.00 - $172.00 range within the next 2-3 trading sessions.
+**Key Risk:** ❌ Extreme overbought RSI (75.3) in a choppy market regime may lead to a sharp mean-reversion.
+
+### ⚪ #3 COST — ▼ SHORT | MONITOR | Score: 52/85
+
+**Price Snapshot:** $941.20 (-1.6%) | **RSI:** 38.3 | **Vol ratio:** 0.71x | **ATR:** 25.9921 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `15.9/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `8.5/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** SHORT COST as the stock breaks below key moving averages following earnings, with record fuel sales sparking renewed inflation concerns [1]. Technical weakness is confirmed by the price trading significantly below the 20-day and 50-day moving averages.
+
+**Entry Consideration:** Enter on a minor relief rally toward $945 or a break of the $940 psychological level.
+**Risk / Invalidation Level:** Close position if price reclaims $965, invalidating the post-earnings breakdown.
+**Initial Upside / Downside Case:** $915-$920 range within 1-3 trading days.
+**Key Risk:** ❌ RSI at 38.3 suggests the stock is approaching oversold territory, risking a sharp short-covering bounce.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 46
+- `SPY` LONG | IGNORE | score 47
+- `QQQ` LONG | IGNORE | score 37
 
 ---
 ## 📰 Key News (Last 24h)
 
-**JPM**  ·  earnings
-  ▼ BofA Trading Revenue Seen Up 15% in Second Quarter, CEO Says - Bloomberg.com  [Bloomberg]
-
-**NVDA**  ·  earnings
-  ▲ Nvidia's earnings beat isn't enough for Wall Street. What analysts are saying.  [MarketWatch]
-  ▲ Nvidia Stock Trades Flat Despite $1 Trillion Sales Target as ‘Market Expects Nvidia to Keep Beating Expectations’  [Yahoo Finance]
+**META**  ·  macro
+  ▲ Citi reiterates Buy rating on Meta stock, maintains $915 price target  [Investing.com]
+  ▲ Bernstein reiterates Outperform rating on Meta stock amid AI race  [Investing.com]
 
 **COST**  ·  macro
-  ▲ Costco Q3 earnings in-line with expectations, revenue beats - CNBC  [Cnbc]
+  ▼ Mizuho cuts Strategy stock price target on lower Bitcoin forecast  [Investing.com]
 
-**META**  ·  macro
-  ▲ BofA reiterates Buy on Meta stock as enterprise AI push expands  [Investing.com]
-  ▲ Here’s Why Meta (META) is Among the 12 Most Profitable Stocks to Invest In  [Yahoo Finance]
+**MSFT**  ·  macro
+  ▲ Stock Market Today, May 29: Microsoft Rises as $37 Billion AI Run Rate Highlights Cloud Growth  [Yahoo Finance]
+
+**LLY**  ·  earnings
+  ▲ A Look At Eli Lilly’s Valuation After Strong Momentum In Share Price And Earnings  [Yahoo Finance]
+
+**JPM**  ·  earnings
+  ◆ JPMorgan resets Dell stock price target after earnings  [Yahoo Finance]
+
+**QCOM**  ·  earnings
+  ▲ Arm vs. Qualcomm: Consistent Growth vs. Revenue Volatility  [Yahoo Finance]
 
 **AMZN**  ·  macro
-  ▲ Wolfe Research reiterates Amazon stock Outperform on supply chain growth  [Investing.com]
-
-**PLTR**  ·  earnings
-  ▲ Palantir (PLTR) Ranks Among Best Revenue Growth Stocks to Buy  [Yahoo Finance]
+  ▲ Bank of America Reiterates Buy Rating on Amazon.com (AMZN) Stock  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
