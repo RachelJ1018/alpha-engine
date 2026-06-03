@@ -1,120 +1,85 @@
-# 📊 Daily Research Report — 2026-06-02
-*Generated: 2026-06-02 15:50*
+# 📊 Daily Research Report — 2026-06-03
+*Generated: 2026-06-03 16:01*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.18%
-**SPY RSI(14):** 71.4
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.58%
+**SPY RSI(14):** 62.6
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### AAPL  $312.84 (+2.1%)
-**WATCHLIST** · LONG · EE=22 · post earnings drift · score=54
-> LONG. AAPL's growth narrative is strengthening as AI-driven momentum and sector-wide pops provide a supportive backdrop for continued appreciation [4][5]. The s
-
-### BAC  $52.42 (+1.8%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=53
-> LONG. BAC is exhibiting positive price action above its MA20 and MA50 as its research division capitalizes on high-profile earnings volatility [1,2,3]. Strong a
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (3):** `AAPL` · `BAC` · `AMD`
-**⚪ MONITOR (2):** `PLTR` · `NVDA`
-**⛔ IGNORE (15):** `TSM` · `SPY` · `GOOGL` · `ARM` · `JPM` · `TSLA`
-
----
-## 🏆 Top Trade
-
-**AAPL — LONG | WATCHLIST | Score: 54**
-
-> LONG. AAPL's growth narrative is strengthening as AI-driven momentum and sector-wide pops provide a supportive backdrop for continued appreciation [4][5]. The stock remains in a strong uptrend above key moving averages despite overbought technicals.
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$312.84 | $306.25 (-2.1%) | $326.03 (+4.2%) | 1R | 2R |
+**⚪ MONITOR (2):** `META` · `AVGO`
+**⛔ IGNORE (18):** `TSM` · `GS` · `BAC` · `PLTR` · `AMD` · `TSLA`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 AAPL — ▲ LONG | WATCHLIST | Score: 54/85
+### ⚪ #1 META — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $312.84 (+2.1%) | **RSI:** 74.0 | **Vol ratio:** 0.31x | **ATR:** 5.4943 | **vs MA20:** above ✅
+**Price Snapshot:** $613.02 (+2.6%) | **RSI:** 48.3 | **Vol ratio:** 0.59x | **ATR:** 15.2593 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. AAPL's growth narrative is strengthening as AI-driven momentum and sector-wide pops provide a supportive backdrop for continued appreciation [4][5]. The stock remains in a strong uptrend above key moving averages despite overbought technicals.
-
-**Entry Consideration:** Limit order near $310.00 to capture a potential intraday dip and improve risk/reward given the high RSI.
-**Risk / Invalidation Level:** Hard stop at $300.00, just below the MA20 support level.
-**Initial Upside / Downside Case:** $325.00 psychological resistance within 5-10 trading days.
-**Key Risk:** ❌ RSI of 74.0 indicates overbought conditions which may lead to short-term price exhaustion in a choppy market regime.
-
-### 🟡 #2 BAC — ▲ LONG | WATCHLIST | Score: 53/85
-
-**Price Snapshot:** $52.42 (+1.8%) | **RSI:** 62.2 | **Vol ratio:** 0.26x | **ATR:** 0.9993 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `21.1/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `17.7/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `4.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. BAC is exhibiting positive price action above its MA20 and MA50 as its research division capitalizes on high-profile earnings volatility [1,2,3]. Strong analyst sentiment regarding growth potential in the current market supports continued upside for major financials [4].
+**What & Why:** LONG. Bullish sentiment is supported by multiple analyst reiterations highlighting commerce expansion and AI leadership ahead of earnings [1,4,5]. Price action reclaiming the MA20 suggests a short-term momentum shift despite broader market weakness.
 
-**Entry Consideration:** Entry on a minor retracement toward $52.15 or a break of the $52.50 level.
-**Risk / Invalidation Level:** Hard stop on a daily close below the 20-day moving average of $51.35.
-**Initial Upside / Downside Case:** $54.00 psychological resistance within 3-5 trading days.
-**Key Risk:** ❌ Extremely low relative volume (0.26x) suggests a lack of institutional conviction in the current move.
+**Entry Consideration:** Limit orders near $613.00 or on a confirmed hold of the MA20 support level ($612.68).
+**Risk / Invalidation Level:** Daily close below $605.00, invalidating the recent support reclaim.
+**Initial Upside / Downside Case:** $625.00 initial target, aiming for a test of the MA50 ($618.67) within 1-3 sessions.
+**Key Risk:** ❌ Broad market weakness (SPY -0.58%) and potential legal headwinds from state antitrust claims.
 
-### 🟡 #3 AMD — ▲ LONG | WATCHLIST | Score: 52/85
+### ⚪ #2 AVGO — ▲ LONG | MONITOR | Score: 50/85
 
-**Price Snapshot:** $514.20 (+0.8%) | **RSI:** 68.8 | **Vol ratio:** 0.3x | **ATR:** 27.5522 | **vs MA20:** above ✅
+**Price Snapshot:** $484.51 (+0.6%) | **RSI:** 75.5 | **Vol ratio:** 0.72x | **ATR:** 18.3979 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.3/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `17.5/25` | MarketConf `9.0/20` | RegimeFit `8.5/15` | RelOpp `7.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. AMD's robust Q1 revenue growth in the Data Center segment [4] and sustained momentum from AI-driven demand [1] support a continued bullish trajectory. These fundamental drivers outweigh short-term sector volatility and position the stock for further expansion.
+**What & Why:** LONG. Anticipated strong Q2 earnings driven by robust AI demand and significant institutional accumulation suggest continued upward momentum [2][5]. Broadcom's relative strength against a negative SPY indicates strong underlying buyer support heading into the event.
 
-**Entry Consideration:** Limit orders near $505-$510 to mitigate risk from the elevated RSI of 68.8.
-**Risk / Invalidation Level:** Daily close below $485, invalidating the recent breakout momentum.
-**Initial Upside / Downside Case:** $550 initial target over the next 5-10 trading sessions.
-**Key Risk:** ❌ Technical overextension following a 46% monthly surge and competitive pressure from Nvidia-Microsoft partnerships [1, 5].
+**Entry Consideration:** Enter on a minor intraday dip toward $480 or a confirmed break above $486 to mitigate overbought risks.
+**Risk / Invalidation Level:** Daily close below $468, invalidating the immediate pre-earnings run-up.
+**Initial Upside / Downside Case:** $515 initial target, aiming for a pre-earnings momentum peak within 48 hours.
+**Key Risk:** ❌ RSI at 75.5 indicates the stock is technically overextended, increasing the risk of a sharp mean-reversion pullback.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 48
+- `SPY` SHORT | IGNORE | score 42
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  earnings
-  ▲ Victoria Secret shares spike 40% after big earnings beat, raised sales outlook  [CNBC]
+**COST**  ·  macro
   ▼ Stifel reiterates Manhattan Associates stock rating on cost cuts  [Investing.com]
 
-**GOOGL**  ·  earnings
-  ▼ Alphabet's stock sale, Iran negotiations, Anthropic's IPO plans and more in Morning Squawk - CNBC  [Cnbc]
+**META**  ·  macro
+  ▲ Citizens Reiterates Market Outperform on Meta (META) Following Commerce Expansion  [Yahoo Finance]
 
-**NVDA**  ·  earnings
+**GOOGL**  ·  earnings
+  ◆ Jim Cramer Says “Amazon and Alphabet Have Ensured Years and Years of Colossal Profits”  [Yahoo Finance]
+
+**NVDA**  ·  macro
+  ◆ Not Nvidia. Not Micron. This Underrated Artificial Intelligence (AI) Infrastructure Stock Will Be the Biggest Winner of 2026  [Yahoo Finance]
   ▼ Nvidia Shares Dropped After Stellar Earnings. Is This a Sign of What's Coming for Artificial Intelligence (AI) Stocks?  [Yahoo Finance]
-  ▲ Tigress Financial Lifts NVIDIA (NVDA) Price Target, Keeps Strong Buy Rating  [Yahoo Finance]
+
+**MACRO**  ·  macro
+  ▲ Is UiPath Stock a Buy as Revenue Accelerates?  [Yahoo Finance]
+  ▼ Macy's earnings defy consumer concerns as CEO says 'not all customers are equal'  [Yahoo Finance]
 
 **MSFT**  ·  earnings
   ▼ Gates' foundation sold all of its Microsoft shares. Bill Ackman is loading up on the stock. What is Wall Street missing?  [Yahoo Finance]
-  ▲ Profitable Trading Surge for Microsoft (MSFT) Options  [GuruFocus]
-
-**PLTR**  ·  earnings
-  ▲ Palantir Stock Forecast | Raised 2026 Revenue Guidance  [Capital.com]
 
 ---
 ## 🛡 Research Risk Rules
