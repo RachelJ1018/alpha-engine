@@ -1,118 +1,82 @@
-# 📊 Daily Research Report — 2026-06-04
-*Generated: 2026-06-04 15:41*
+# 📊 Daily Research Report — 2026-06-05
+*Generated: 2026-06-05 15:33*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.19%
-**SPY RSI(14):** 57.9
+**Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
+**SPY:** -1.21%
+**SPY RSI(14):** 59.0
 
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+> ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### META  $636.84 (+2.2%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=56
-> LONG. Multiple tier-1 analysts reiterate buy ratings citing GenAI monetization and AI agent rollouts as key growth drivers [2, 3, 4]. While model delays exist [
+*No high conviction picks — bear regime, avoiding new LONG exposure.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (2):** `META` · `PLTR`
-**⚪ MONITOR (2):** `LLY` · `TSM`
-**⛔ IGNORE (16):** `AMZN` · `AVGO` · `GOOGL` · `MSFT` · `GLD` · `ARM`
+**🟡 WATCHLIST (1):** `AVGO`
+**⛔ IGNORE (19):** `QQQ` · `LLY` · `GOOGL` · `NVDA` · `AMD` · `BAC`
 
 ---
 ## 🏆 Top Trade
 
-**META — LONG | WATCHLIST | Score: 56**
+**AVGO — SHORT | WATCHLIST | Score: 53**
 
-> LONG. Multiple tier-1 analysts reiterate buy ratings citing GenAI monetization and AI agent rollouts as key growth drivers [2, 3, 4]. While model delays exist [5], the overall consensus remains strongly positive on Meta's AI execution [1].
+> SHORT. Flat AI guidance has triggered a significant selloff and a breakdown below the 50-day moving average despite an earnings beat [3][4]. The bearish market regime and negative sentiment suggest further downside as the AI rally loses momentum [3].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$636.84 | $617.37 (-3.1%) | $675.78 (+6.1%) | 1R | 2R |
+| ~$396.74 | $423.24 (-6.7%) | $343.72 (+13.4%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 META — ▲ LONG | WATCHLIST | Score: 56/85
+### 🟡 #1 AVGO — ▼ SHORT | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $636.84 (+2.2%) | **RSI:** 57.3 | **Vol ratio:** 0.51x | **ATR:** 16.225 | **vs MA20:** above ✅
+**Price Snapshot:** $396.74 (-5.3%) | **RSI:** 42.0 | **Vol ratio:** 0.8x | **ATR:** 22.09 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `21.5/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `4.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Multiple tier-1 analysts reiterate buy ratings citing GenAI monetization and AI agent rollouts as key growth drivers [2, 3, 4]. While model delays exist [5], the overall consensus remains strongly positive on Meta's AI execution [1].
-
-**Entry Consideration:** Enter on a minor retracement toward $632 or a sustained break above $638 with volume.
-**Risk / Invalidation Level:** Daily close below the 20-day MA ($614.37) or a break of $620 support.
-**Initial Upside / Downside Case:** $655.00 / 1-3 trading days.
-**Key Risk:** ❌ Execution risk regarding AI model delays and potential rotation in a choppy market regime.
-
-### 🟡 #2 PLTR — ▲ LONG | WATCHLIST | Score: 52/85
-
-**Price Snapshot:** $142.64 (+0.3%) | **RSI:** 58.0 | **Vol ratio:** 0.48x | **ATR:** 6.9453 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.4/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `15.6/25` | MarketConf `9.0/20` | RegimeFit `13.0/15` | RelOpp `6.5/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG on PLTR driven by strong AI momentum and its strategic positioning in the emerging agentic AI sector [1][3]. The upward revision of 2026 revenue guidance provides a fundamental catalyst for continued price appreciation [4].
+**What & Why:** SHORT. Flat AI guidance has triggered a significant selloff and a breakdown below the 50-day moving average despite an earnings beat [3][4]. The bearish market regime and negative sentiment suggest further downside as the AI rally loses momentum [3].
 
-**Entry Consideration:** Limit order near the 50-day moving average ($141.30) or on a confirmed break above $143.50.
-**Risk / Invalidation Level:** Daily close below the 20-day moving average ($139.70).
-**Initial Upside / Downside Case:** Initial target of $150.00 within a 5-10 day swing timeframe.
-**Key Risk:** ❌ Low relative volume (0.48x) in a choppy market regime may result in a lack of momentum follow-through.
-
-### ⚪ #3 LLY — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $1136.27 (+5.3%) | **RSI:** 72.2 | **Vol ratio:** 0.53x | **ATR:** 35.5236 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `19.7/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. LLY shows strong bullish momentum post-earnings, driven by long-term diversification strategies and upcoming vaccine deals [4]. Despite regulatory scrutiny regarding discount policies [5], the price remains well above the MA20, indicating a robust uptrend.
-
-**Entry Consideration:** Limit orders near $1125-$1130 to capture a minor pullback from overbought levels.
-**Risk / Invalidation Level:** Hard stop below $1095 to protect against a failed breakout reversal.
-**Initial Upside / Downside Case:** $1175 psychological resistance within 1-3 trading days.
-**Key Risk:** ❌ RSI of 72.2 indicates overbought conditions which may lead to short-term profit taking.
+**Entry Consideration:** Enter on a failed retest of the $398.63 (MA50) level or a break below the current session low.
+**Risk / Invalidation Level:** Hard stop at $405.50, representing a reclaim of the MA50 and a shift in intraday momentum.
+**Initial Upside / Downside Case:** $382.00 initial target, representing the next major support zone; timeframe 1-2 sessions.
+**Key Risk:** ❌ Potential for a technical bounce given the RSI is approaching oversold territory and the stock is already down over 5%.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 37
+- `QQQ` SHORT | IGNORE | score 50
+- `SPY` SHORT | IGNORE | score 39
 
 ---
 ## 📰 Key News (Last 24h)
 
-**META**  ·  macro
-  ▲ Canaccord reiterates Meta stock Buy rating on AI agent rollout  [Investing.com]
-  ▲ UBS reiterates Meta stock Buy rating on GenAI monetization progress  [Investing.com]
-
-**GOOGL**  ·  earnings
-  ▼ Google keeps finding new ways to crash the stock market's AI party  [Yahoo Finance]
-
-**COST**  ·  earnings
-  ▲ What Costco Wholesale (COST)'s Gasoline-Fueled Q3 Earnings Beat Means For Shareholders  [Yahoo Finance]
+**GS**  ·  earnings
+  ▲ 'Memory stocks are the star of the show'; Goldman's Kospi 12,000 call goes beyond the memory trade - CNBC  [Cnbc]
 
 **AVGO**  ·  earnings
-  ▲ Broadcom earnings: How sustainable is the rally behind AI build-out?  [Yahoo Finance]
-  ▼ Broadcom Shares Slide as Revenue Miss and AI Outlook Disappoint Investors (AVGO)  [Yahoo Finance]
+  ▲ Broadcom Q2 Earnings Surpasses Estimates, Revenues Surge Y/Y  [Yahoo Finance UK]
+  ▼ Will Broadcom Stock Recover After Its Guidance Disappointment, Or Should You Cut Your Losses?  [Yahoo Finance]
 
-**PYPL**  ·  earnings
-  ◆ Is PayPal the Ultimate Asymmetric Fintech Bet at 8x Earnings?  [Trefis]
+**COST**  ·  macro
+  ▼ New Fed Chairman Kevin Warsh Is Now in a Position Where Rate Cuts Are Virtually Impossible, and the Stock Market Could Pay the Price  [The Motley Fool]
+  ▲ Costco Beats Revenue Estimates as Record Gas Volumes Drive Member Traffic. AI Could Power the Next Leg Higher for COST Stock.  [Barchart.com]
 
-**GLD**  ·  macro
-  ▲ The Fed’s Next Move Will Determine Whether GLD Can Extend Its 36% Rally  [24/7 Wall St.]
+**NVDA**  ·  earnings
+  ▼ Wall Street Analyst: Broadcom's Flat AI Guidance Justified the Selloff, but Nvidia Remains Best-in-Class Chip Play  [24/7 Wall St.]
+  ▼ Chip Stocks Tumble: AMD, Nvidia, Micron Decline Following Broadcom’s Revenue Warning  [Blockonomi]
+
+**AMD**  ·  earnings
+  ▼ NVDA, INTC, AMD, MU: Major Chip Stocks Fall For Second Day After AVGO's Soft AI Guidance  [Stocktwits]
 
 ---
 ## 🛡 Research Risk Rules
