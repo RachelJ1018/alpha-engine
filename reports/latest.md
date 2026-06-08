@@ -1,82 +1,109 @@
-# 📊 Daily Research Report — 2026-06-05
-*Generated: 2026-06-05 15:33*
+# 📊 Daily Research Report — 2026-06-08
+*Generated: 2026-06-08 15:46*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
-**SPY:** -1.21%
-**SPY RSI(14):** 59.0
-
-> ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** +0.87%
+**SPY RSI(14):** 54.1
 
 ---
 ## ⭐ High Conviction Picks
 
-*No high conviction picks — bear regime, avoiding new LONG exposure.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### IWM  $286.19 (+1.6%)
+**WATCHLIST** · LONG · EE=18 · post earnings drift · score=52
+> LONG. IWM is demonstrating relative strength by outperforming the SPY and maintaining a position above its MA20, indicating a short-term momentum breakout. Inst
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `AVGO`
-**⛔ IGNORE (19):** `QQQ` · `LLY` · `GOOGL` · `NVDA` · `AMD` · `BAC`
+**🟡 WATCHLIST (1):** `IWM`
+**⚪ MONITOR (1):** `TSLA`
+**⛔ IGNORE (18):** `META` · `BAC` · `GLD` · `MSFT` · `TSM` · `LLY`
 
 ---
 ## 🏆 Top Trade
 
-**AVGO — SHORT | WATCHLIST | Score: 53**
+**IWM — LONG | WATCHLIST | Score: 52**
 
-> SHORT. Flat AI guidance has triggered a significant selloff and a breakdown below the 50-day moving average despite an earnings beat [3][4]. The bearish market regime and negative sentiment suggest further downside as the AI rally loses momentum [3].
+> LONG. IWM is demonstrating relative strength by outperforming the SPY and maintaining a position above its MA20, indicating a short-term momentum breakout. Institutional confidence in high-growth tech leaders [1] provides a supportive risk-on environment for small-cap expansion.
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$396.74 | $423.24 (-6.7%) | $343.72 (+13.4%) | 1R | 2R |
+| ~$286.19 | $279.73 (-2.3%) | $299.11 (+4.5%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 AVGO — ▼ SHORT | WATCHLIST | Score: 53/85
+### 🟡 #1 IWM — ▲ LONG | WATCHLIST | Score: 52/85
 
-**Price Snapshot:** $396.74 (-5.3%) | **RSI:** 42.0 | **Vol ratio:** 0.8x | **ATR:** 22.09 | **vs MA20:** below ⚠️
+**Price Snapshot:** $286.19 (+1.6%) | **RSI:** 60.0 | **Vol ratio:** 0.37x | **ATR:** 5.3814 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `15.6/25` | MarketConf `9.0/20` | RegimeFit `13.0/15` | RelOpp `6.5/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `17.8/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** SHORT. Flat AI guidance has triggered a significant selloff and a breakdown below the 50-day moving average despite an earnings beat [3][4]. The bearish market regime and negative sentiment suggest further downside as the AI rally loses momentum [3].
+**What & Why:** LONG. IWM is demonstrating relative strength by outperforming the SPY and maintaining a position above its MA20, indicating a short-term momentum breakout. Institutional confidence in high-growth tech leaders [1] provides a supportive risk-on environment for small-cap expansion.
 
-**Entry Consideration:** Enter on a failed retest of the $398.63 (MA50) level or a break below the current session low.
-**Risk / Invalidation Level:** Hard stop at $405.50, representing a reclaim of the MA50 and a shift in intraday momentum.
-**Initial Upside / Downside Case:** $382.00 initial target, representing the next major support zone; timeframe 1-2 sessions.
-**Key Risk:** ❌ Potential for a technical bounce given the RSI is approaching oversold territory and the stock is already down over 5%.
+**Entry Consideration:** Enter at $286.25 or on a successful retest of the $285.03 MA20 level.
+**Risk / Invalidation Level:** Stop loss set at $284.50 to account for a break below the 20-day moving average.
+**Initial Upside / Downside Case:** $290.00 initial target based on psychological resistance and recent momentum.
+**Key Risk:** ❌ Extremely low relative volume (0.37x) increases the risk of a false breakout or lack of follow-through.
+
+### ⚪ #2 TSLA — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $402.20 (+2.9%) | **RSI:** 46.8 | **Vol ratio:** 0.32x | **ATR:** 14.8325 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `19.4/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. TSLA is showing relative strength by holding support above the 50-day moving average ($395.89) while maintaining a neutral RSI. The upcoming earnings event serves as a primary catalyst for a mean-reversion move toward the 20-day moving average.
+
+**Entry Consideration:** Limit orders near $402.20 or on a minor pullback to the $400.00 psychological level.
+**Risk / Invalidation Level:** Daily close below the 50-day moving average at $395.89.
+**Initial Upside / Downside Case:** $424.56 (MA20) within 1-3 trading sessions.
+**Key Risk:** ❌ High binary risk and potential for extreme volatility surrounding the earnings announcement.
+
+---
+## 🌍 Macro Watchlist
+
+- ⛔ `LMT` SHORT | IGNORE | score 35 | —
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 50
-- `SPY` SHORT | IGNORE | score 39
+- `QQQ` SHORT | IGNORE | score 38
+- `SPY` SHORT | IGNORE | score 35
 
 ---
 ## 📰 Key News (Last 24h)
 
-**GS**  ·  earnings
-  ▲ 'Memory stocks are the star of the show'; Goldman's Kospi 12,000 call goes beyond the memory trade - CNBC  [Cnbc]
-
-**AVGO**  ·  earnings
-  ▲ Broadcom Q2 Earnings Surpasses Estimates, Revenues Surge Y/Y  [Yahoo Finance UK]
-  ▼ Will Broadcom Stock Recover After Its Guidance Disappointment, Or Should You Cut Your Losses?  [Yahoo Finance]
-
-**COST**  ·  macro
-  ▼ New Fed Chairman Kevin Warsh Is Now in a Position Where Rate Cuts Are Virtually Impossible, and the Stock Market Could Pay the Price  [The Motley Fool]
-  ▲ Costco Beats Revenue Estimates as Record Gas Volumes Drive Member Traffic. AI Could Power the Next Leg Higher for COST Stock.  [Barchart.com]
+**LLY**  ·  macro
+  ▼ Eli Lilly says next-gen obesity drug curbs sleep apnea, among other benefits - Reuters  [Reuters]
 
 **NVDA**  ·  earnings
-  ▼ Wall Street Analyst: Broadcom's Flat AI Guidance Justified the Selloff, but Nvidia Remains Best-in-Class Chip Play  [24/7 Wall St.]
-  ▼ Chip Stocks Tumble: AMD, Nvidia, Micron Decline Following Broadcom’s Revenue Warning  [Blockonomi]
+  ◆ Marvell shares jump after chipmaker wins spot in S&P 500 - Reuters  [Reuters]
 
-**AMD**  ·  earnings
-  ▼ NVDA, INTC, AMD, MU: Major Chip Stocks Fall For Second Day After AVGO's Soft AI Guidance  [Stocktwits]
+**INTC**  ·  macro
+  ▲ Chips stocks look to bounce back - CNBC  [Cnbc]
+
+**MU**  ·  earnings
+  ▼ Cybersecurity is really a place where you want to be, says Hightower's Stephanie Link - CNBC  [Cnbc]
+  ▼ OpenAI planning biggest overhaul of ChatGPT since product launched: Report - CNBC  [Cnbc]
+
+**AAPL**  ·  macro
+  ▲ Here are the 6 big things we're watching in the stock market this week - CNBC  [Cnbc]
+
+**GOOGL**  ·  earnings
+  ▼ Opening Bell: June 8, 2026 - CNBC  [Cnbc]
+
+**AMZN**  ·  earnings
+  ▼ Market Open: June 8, 2026 - CNBC  [Cnbc]
 
 ---
 ## 🛡 Research Risk Rules
