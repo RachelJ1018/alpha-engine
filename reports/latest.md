@@ -1,104 +1,98 @@
-# 📊 Daily Research Report — 2026-06-09
-*Generated: 2026-06-09 15:33*
+# 📊 Daily Research Report — 2026-06-10
+*Generated: 2026-06-10 15:45*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
-**SPY:** -1.08%
-**SPY RSI(14):** 48.1
-
-> ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.62%
+**SPY RSI(14):** 42.0
 
 ---
 ## ⭐ High Conviction Picks
 
-*No high conviction picks — bear regime, avoiding new LONG exposure.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### IWM  $285.22 (+0.1%)
+**WATCHLIST** · LONG · EE=19 · post earnings drift · score=53
+> LONG. IWM exhibits relative strength by remaining positive while SPY declines, driven by a major biotech acquisition [1] and rebounding sentiment in key sectors
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (2):** `MSFT` · `COST`
-**⛔ IGNORE (18):** `JPM` · `LLY` · `META` · `AMD` · `TSLA` · `NFLX`
+**🟡 WATCHLIST (1):** `IWM`
+**⚪ MONITOR (1):** `MSFT`
+**⛔ IGNORE (18):** `BAC` · `JPM` · `GS` · `AMZN` · `AVGO` · `COST`
 
 ---
 ## 🏆 Top Trade
 
-**MSFT — SHORT | WATCHLIST | Score: 55**
+**IWM — LONG | WATCHLIST | Score: 53**
 
-> SHORT. MSFT is breaking below key moving averages as escalating geopolitical tensions drive a broader market sell-off [1]. Despite long-term AI prospects, the current bearish regime and negative sentiment suggest further downside momentum [1,2].
+> LONG. IWM exhibits relative strength by remaining positive while SPY declines, driven by a major biotech acquisition [1] and rebounding sentiment in key sectors [2]. The price holding above the MA20 confirms a short-term bullish bias.
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$403.54 | $418.81 (-3.8%) | $372.99 (+7.6%) | 1R | 2R |
+| ~$285.22 | $278.24 (-2.4%) | $299.19 (+4.9%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 MSFT — ▼ SHORT | WATCHLIST | Score: 55/85
+### 🟡 #1 IWM — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $403.54 (-2.0%) | **RSI:** 44.5 | **Vol ratio:** 0.31x | **ATR:** 12.7298 | **vs MA20:** below ⚠️
+**Price Snapshot:** $285.22 (+0.1%) | **RSI:** 56.6 | **Vol ratio:** 0.51x | **ATR:** 5.8189 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.2/25` | MarketConf `14.0/20` | RegimeFit `12.0/15` | RelOpp `2.0/15` | Freshness `9.8/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
-**What & Why:** SHORT. MSFT is breaking below key moving averages as escalating geopolitical tensions drive a broader market sell-off [1]. Despite long-term AI prospects, the current bearish regime and negative sentiment suggest further downside momentum [1,2].
-
-**Entry Consideration:** Enter on a break below the $400 psychological level or a failed retest of $408.
-**Risk / Invalidation Level:** Daily close above the MA50 at $409.55.
-**Initial Upside / Downside Case:** $392.00 initial target within 1-3 trading sessions.
-**Key Risk:** ❌ Sudden de-escalation in Middle East tensions triggering a sharp market-wide relief rally.
-
-### 🟡 #2 COST — ▼ SHORT | WATCHLIST | Score: 53/85
-
-**Price Snapshot:** $973.45 (-0.1%) | **RSI:** 16.5 | **Vol ratio:** 0.24x | **ATR:** 24.1357 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `20.1/25` | MarketConf `11.0/20` | RegimeFit `13.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `3.6/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** SHORT. COST is exhibiting bearish momentum below its MA20 and MA50 amid a broader market decline and negative sentiment (-0.04) heading into its earnings event. The failure to maintain key moving averages suggests further downside despite the oversold RSI.
+**What & Why:** LONG. IWM exhibits relative strength by remaining positive while SPY declines, driven by a major biotech acquisition [1] and rebounding sentiment in key sectors [2]. The price holding above the MA20 confirms a short-term bullish bias.
 
-**Entry Consideration:** Short entry on a break below $970 or a failed retest of $985.
-**Risk / Invalidation Level:** Stop loss set at $1010, above the MA20 and MA50 resistance cluster.
-**Initial Upside / Downside Case:** $945.00 with a timeframe of 1-2 trading days.
-**Key Risk:** ❌ RSI of 16.5 indicates extreme oversold conditions which may trigger a sharp mean-reversion bounce.
+**Entry Consideration:** Enter near the MA20 support at $285.04 or on a break of the daily high.
+**Risk / Invalidation Level:** Use ATR-based stop from risk engine.
+**Initial Upside / Downside Case:** Target per 2R calculation in report.
+**Key Risk:** ❌ Thesis incomplete due to response truncation.
 
----
-## 🌍 Macro Watchlist
+### ⚪ #2 MSFT — ▼ SHORT | MONITOR | Score: 50/85
 
-- ⛔ `GS` SHORT | IGNORE | score 34 | —
-- ⛔ `SOFI` SHORT | IGNORE | score 34 | —
+**Price Snapshot:** $403.30 (-0.0%) | **RSI:** 42.6 | **Vol ratio:** 0.32x | **ATR:** 12.8407 | **vs MA20:** below ⚠️
 
----
-## 📈 Market Instruments
+**Layered Scores:** EventEdge `15.5/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
-- `SPY` SHORT | IGNORE | score 42
+**Strategy Bucket:** `general_setup`
+
+**What & Why:** SHORT. MSFT is pressured by a broader tech reversal [3] and geopolitical instability threatening market sentiment [1]. The stock remains technically weak, trading significantly below its 20-day and 50-day moving averages.
+
+**Entry Consideration:** Enter on a break below $402.50 or a failed rally toward $405.00.
+**Risk / Invalidation Level:** Daily close above the 50-day MA ($410.45).
+**Initial Upside / Downside Case:** $395.00 initial target; 2-5 day timeframe.
+**Key Risk:** ❌ Sudden de-escalation of Middle East tensions or positive AI sentiment shift [4].
 
 ---
 ## 📰 Key News (Last 24h)
 
 **LLY**  ·  earnings
   ▼ Lilly shares rise on hopes that next-gen drug will extend lead in weight-loss market - Reuters  [Reuters]
-  ▼ Eli Lilly says next-gen obesity drug curbs sleep apnea, among other benefits - Reuters  [Reuters]
 
-**NVDA**  ·  earnings
-  ◆ Marvell shares jump after chipmaker wins spot in S&P 500 - Reuters  [Reuters]
-
-**AAPL**  ·  macro
-  ▲ Apple Investors Look for AI Overhaul to Power Next Leg of Gains - Bloomberg.com  [Bloomberg]
+**COST**  ·  macro
+  ▼ U.S. Futures Slip as Investors Await CPI Report - WSJ  [Wsj]
+  ▲ Active ETFs have 'arrived in full force,' researcher says—but consider the costs before buying - CNBC  [Cnbc]
 
 **INTC**  ·  macro
-  ▲ Chips stocks look to bounce back - CNBC  [Cnbc]
+  ▼ Sea’s E-commerce Arm Shopee Cuts Jobs as Reorganization Continues - WSJ  [Wsj]
 
-**MU**  ·  earnings
-  ▼ Cybersecurity is really a place where you want to be, says Hightower's Stephanie Link - CNBC  [Cnbc]
-  ▼ OpenAI planning biggest overhaul of ChatGPT since product launched: Report - CNBC  [Cnbc]
+**META**  ·  macro
+  ▲ Meta President Dina Powell McCormick and TV Host Mike Rowe talk launch of 'Workforce Academy' - CNBC  [Cnbc]
 
-**MACRO**  ·  earnings
-  ▲ Carvana (CVNA) Slid as Profitability Fell Short of Expectations  [Yahoo Finance]
+**GOOGL**  ·  earnings
+  ▲ Truist says Meta has found its next $20 billion business, stock set to gain more than 40% - CNBC  [Cnbc]
+
+**GS**  ·  earnings
+  ▲ Jim Cramer says he can't sell Eli Lilly despite its massive run up. Here's why - CNBC  [Cnbc]
+
+**AAPL**  ·  earnings
+  ◆ Micron, Marvell, Super Micro, Coherent, Smucker, and More Stocks That Explain Today’s Market - Barron's  [Barrons]
 
 ---
 ## 🛡 Research Risk Rules
