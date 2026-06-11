@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alpha Report — 2026-06-11</title>
+<style>
+  * {box-sizing:border-box;margin:0;padding:0}
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#0b0f1a;color:#e2e8f0;padding:24px;max-width:920px;margin:0 auto;line-height:1.5
+  }
+  h1 {font-size:22px;font-weight:700;color:#f1f5f9;margin-bottom:4px}
+  h2 {font-size:14px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin:28px 0 12px}
+  .meta {font-size:12px;color:#475569;margin-bottom:24px}
+  .regime-bar {
+    background:#111827;border:.5px solid #1e293b;border-left:3px solid #f59e0b;
+    border-radius:6px;padding:12px 16px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center
+  }
+  .regime-label {font-size:13px;font-weight:600;color:#f59e0b}
+  .spy-chg {font-size:20px;font-weight:700;color:#22c55e}
+
+  .card {
+    background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:18px 20px;margin-bottom:12px
+  }
+  .card-header {
+    display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px
+  }
+  .ticker {font-size:20px;font-weight:800;color:#f1f5f9;margin-right:10px;letter-spacing:.04em}
+  .action-badge {font-size:10px;font-weight:700;padding:3px 8px;border-radius:3px;letter-spacing:.06em;margin-right:6px}
+  .dir-badge {font-size:12px;font-weight:700}
+  .score-box {text-align:center}
+  .price-row {font-size:13px;color:#94a3b8;margin-bottom:8px}
+  .score-bar-wrap {height:3px;background:#1e293b;border-radius:2px;margin-bottom:14px}
+  .score-bar {height:3px;border-radius:2px;transition:width .5s}
+
+  .section-label {
+    font-size:9px;font-weight:700;color:#475569;letter-spacing:.1em;margin-bottom:5px;margin-top:10px
+  }
+  .score-detail {
+    font-size:12px;color:#94a3b8;line-height:1.7;margin-bottom:12px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+  .meta-chip {
+    display:inline-block;background:#1e293b;color:#cbd5e1;font-size:11px;padding:3px 8px;border-radius:999px;margin-bottom:12px
+  }
+  .thesis {
+    font-size:13px;color:#cbd5e1;line-height:1.6;margin-bottom:14px;padding-left:10px;border-left:.5px solid #1e293b
+  }
+
+  .levels {display:flex;flex-direction:column;gap:6px}
+  .level-row {display:flex;gap:12px;font-size:12px;align-items:baseline}
+  .level-label {color:#475569;min-width:74px;font-size:10px;font-weight:600;letter-spacing:.06em}
+  .level-val {color:#94a3b8}
+  .level-val.stop {color:#f87171}
+  .level-val.target {color:#22c55e}
+  .level-val.risk {color:#fb923c;font-style:italic}
+
+  .news-group {margin-bottom:14px}
+  .news-group-header {
+    font-size:11px;font-weight:700;color:#94a3b8;letter-spacing:.06em;text-transform:uppercase;
+    padding-bottom:5px;border-bottom:.5px solid #1e293b;margin-bottom:4px
+  }
+  .news-group-header code {background:#1e293b;color:#94a3b8;padding:1px 5px;border-radius:2px;font-size:11px}
+  .news-item {display:flex;gap:8px;align-items:baseline;padding:3px 0;font-size:12px}
+  .news-title {color:#cbd5e1;flex:1;line-height:1.4}
+  .news-src {color:#475569;flex-shrink:0;white-space:nowrap;font-size:11px}
+
+  .risk-box {background:#111827;border:.5px solid #1e293b;border-left:3px solid #ef4444;border-radius:6px;padding:14px 18px}
+  .risk-box li {font-size:13px;color:#94a3b8;margin-bottom:6px;padding-left:4px}
+</style>
+</head>
+<body>
+<h1>📊 Daily Research Report</h1>
+<div class="meta">Generated: 2026-06-11 — Alpha Engine Local</div>
+
+<div class="regime-bar">
+  <div>
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">MARKET REGIME</div>
+    <div class="regime-label">NEUTRAL</div>
+    <div style="font-size:12px;color:#64748b;margin-top:2px">
+      Mixed conditions. Prefer selective, cleaner setups only.
+    </div>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:10px;color:#475569;margin-bottom:3px">SPY TODAY</div>
+    <div class="spy-chg">+0.39%</div>
+  </div>
+</div>
+
+<h2>🏆 Top Trade</h2>
+
+<div class="card" style="background:#1e3a5f;border-left:3px solid #f59e0b">
+  <div class="card-header">
+    <div>
+      <span class="ticker">BAC</span>
+      <span class="action-badge" style="background:#f59e0b22;color:#f59e0b">WATCHLIST</span>
+      <span class="dir-badge" style="color:#22c55e">&#9650; LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">54</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+  <div class="thesis" style="margin-bottom:14px">LONG. BAC exhibits strong price momentum above its MA20/MA50, likely benefiting from a high-demand corporate lending environment as evidenced by massive new credit facilities [2]. While the bank issues cautious macro warnings [1], its internal role in financing large-scale capex remains a primary growth driver.</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:12px">
+    <div style="text-align:center;background:#0b0f1a;border-radius:4px;padding:8px">
+      <div style="color:#475569;font-size:9px;letter-spacing:.1em">ENTRY</div>
+      <div style="color:#f1f5f9;font-weight:600">~$54.76</div>
+    </div>
+    <div style="text-align:center;background:#0b0f1a;border-radius:4px;padding:8px">
+      <div style="color:#475569;font-size:9px;letter-spacing:.1em">STOP</div>
+      <div style="color:#f87171;font-weight:600">$53.44 (-2.4%)</div>
+    </div>
+    <div style="text-align:center;background:#0b0f1a;border-radius:4px;padding:8px">
+      <div style="color:#475569;font-size:9px;letter-spacing:.1em">TARGET</div>
+      <div style="color:#22c55e;font-weight:600">$57.39 (+4.8%)</div>
+    </div>
+  </div>
+</div>
+
+
+<h2>🎯 Research Ideas</h2>
+
+<div class="card" style="border-left:3px solid #f59e0b">
+  <div class="card-header">
+    <div>
+      <span class="ticker">BAC</span>
+      <span class="action-badge" style="background:#f59e0b22;color:#f59e0b">WATCHLIST</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">54</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $54.76
+    <span style="color:#22c55e">+0.4%</span>
+    &nbsp;·&nbsp; RSI: 74.4
+    &nbsp;·&nbsp; Vol: 0.29x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:63%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 20.8/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 1.0/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">macro_beta_rebound</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">LONG. BAC exhibits strong price momentum above its MA20/MA50, likely benefiting from a high-demand corporate lending environment as evidenced by massive new credit facilities [2]. While the bank issues cautious macro warnings [1], its internal role in financing large-scale capex remains a primary growth driver.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Entry on a minor pullback toward $54.25 to mitigate risk from the elevated RSI.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Exit if price closes below $52.90, invalidating the current short-term breakout.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$56.75 initial target representing a continuation of the current trend; 3-5 day horizon.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">The RSI of 74.4 signals overbought conditions, increasing the probability of a technical retracement.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">JPM</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#22c55e">▲ LONG</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">52</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $310.25
+    <span style="color:#22c55e">+0.4%</span>
+    &nbsp;·&nbsp; RSI: 58.5
+    &nbsp;·&nbsp; Vol: 0.21x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:60%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 18.4/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 1.4/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">macro_beta_rebound</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">JPM maintains a bullish posture above its MA20 and MA50, demonstrating relative strength despite cautious macro outlooks for the broader market [1]. The stock's current price action suggests it is a preferred vehicle for stability and capital rotation in a neutral market regime.</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a retest of $308.50 or a sustained break above the $310.50 intraday resistance.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Daily close below the MA50 at $305.96 or a break of the $303.00 support level.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$318.00 - $320.00 over a 5-10 day timeframe.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">Broader market volatility or hawkish shifts in interest rate expectations impacting financial sector margins.</span></div>
+  </div>
+</div>
+
+<div class="card" style="border-left:3px solid #94a3b8">
+  <div class="card-header">
+    <div>
+      <span class="ticker">MSFT</span>
+      <span class="action-badge" style="background:#94a3b822;color:#94a3b8">MONITOR</span>
+      <span class="dir-badge" style="color:#ef4444">▼ SHORT</span>
+    </div>
+    <div class="score-box">
+      <div style="font-size:22px;font-weight:700;color:#ef4444">51</div>
+      <div style="font-size:10px;color:#64748b">/ 85</div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    $387.27
+    <span style="color:#ef4444">-2.5%</span>
+    &nbsp;·&nbsp; RSI: 37.7
+    &nbsp;·&nbsp; Vol: 0.4x
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" style="width:59%;background:#ef4444"></div>
+  </div>
+
+  <div class="section-label">LAYERED SCORES</div>
+  <div class="score-detail">
+    EventEdge: 17.2/25 ·
+    MarketConf: 14.0/20 ·
+    RegimeFit: 8.0/15 ·
+    RelOpp: 1.4/15 ·
+    Freshness: 10.0/10 ·
+    RiskPenalty: -0.0
+  </div>
+
+  <div class="section-label">STRATEGY</div>
+  <div class="meta-chip">macro_beta_rebound</div>
+
+  <div class="section-label">WHAT & WHY</div>
+  <div class="thesis">SHORT. MSFT faces downward pressure from significant Xbox layoffs signaling internal friction [3] and broader sector weakness as chip names reverse lower [5]. The stock remains in a steep downtrend below key moving averages while cloud competitors like Oracle gain focus [1].</div>
+
+  <div class="levels">
+    <div class="level-row"><span class="level-label">Entry</span><span class="level-val">Enter on a break below $387.00 or a failed retest of $392.00 resistance.</span></div>
+    <div class="level-row"><span class="level-label">Invalidation</span><span class="level-val stop">Hard stop at $398.50, invalidating the immediate bearish momentum.</span></div>
+    <div class="level-row"><span class="level-label">Initial Case</span><span class="level-val target">$378.00 initial target based on historical support levels; 2-5 day timeframe.</span></div>
+    <div class="level-row"><span class="level-label">Key Risk</span><span class="level-val risk">RSI at 37.7 suggests the stock is approaching oversold territory, risking a sharp mean-reversion bounce.</span></div>
+  </div>
+</div>
+
+
+
+
+<h2>📰 Key News</h2>
+<div style="background:#111827;border:.5px solid #1e293b;border-radius:8px;padding:14px 18px">
+<div class="news-group"><div class="news-group-header"><code>NVDA</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Navan lifts annual forecasts as corporate demand holds firm, shares rise - Reuters</span><span class="news-src">[Reuters]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>AMZN</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#94a3b8;flex-shrink:0">&#9670;</span><span class="news-title">Amazon secures $17.5 billion loan facility amid AI-driven capex ramp - Reuters</span><span class="news-src">[Reuters]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>ORCL</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">Stock Market Today: Dow Futures Gain, What to Watch — Live Updates - WSJ</span><span class="news-src">[Wsj]</span></div>
+<div class="news-item"><span style="color:#ef4444;flex-shrink:0">&#9660;</span><span class="news-title">Oracle Reports Earnings Amid a Rapid Cloud Transformation - Barron's</span><span class="news-src">[Barrons]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>UBER</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">The Market’s AI Frenzy Faces a Big Test. SpaceX, Trump, and Iran Will Be Key. - Barron's</span><span class="news-src">[Barrons]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>META</code>&nbsp;&nbsp;·&nbsp;&nbsp;macro</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Meta President Dina Powell McCormick and TV Host Mike Rowe talk launch of 'Workforce Academy' - CNBC</span><span class="news-src">[Cnbc]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>GOOGL</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Truist says Meta has found its next $20 billion business, stock set to gain more than 40% - CNBC</span><span class="news-src">[Cnbc]</span></div>
+</div>
+<div class="news-group"><div class="news-group-header"><code>GS</code>&nbsp;&nbsp;·&nbsp;&nbsp;earnings</div><div class="news-item"><span style="color:#22c55e;flex-shrink:0">&#9650;</span><span class="news-title">Jim Cramer says he can't sell Eli Lilly despite its massive run up. Here's why - CNBC</span><span class="news-src">[Cnbc]</span></div>
+</div>
+
+</div>
+
+<h2>🛡 Research Risk Rules</h2>
+<div class="risk-box">
+  <ul style="list-style:none;padding:0">
+    <li>📌 Define risk limits before entering any position.</li>
+    <li>⚠ Prefer smaller size in bear or choppy regimes.</li>
+    <li>🚫 Avoid chasing names already extended on the day.</li>
+    <li>🎯 Focus on the best few ideas rather than too many weak ones.</li>
+    <li>🌍 Reassess long theses if broad market conditions deteriorate sharply.</li>
+  </ul>
+</div>
+
+<div style="margin-top:24px;font-size:11px;color:#334155;border-top:.5px solid #1e293b;padding-top:16px">
+  ⚠ This is a personal research tool, not financial advice.
+</div>
+</body>
+</html>
