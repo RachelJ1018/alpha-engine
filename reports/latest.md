@@ -1,86 +1,142 @@
-# 📊 Daily Research Report — 2026-06-12
-*Generated: 2026-06-12 15:38*
+# 📊 Daily Research Report — 2026-06-15
+*Generated: 2026-06-15 16:18*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.63%
-**SPY RSI(14):** 47.8
+**Regime:** 📈 BULL — Broad market rising. Long setups have better follow-through.
+**SPY:** +1.92%
+**SPY RSI(14):** 53.3
+
+> ✅ **Research posture:** Market is supportive. Long ideas have a better chance of follow-through.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### PLTR  $134.58 (+5.2%)
+**WATCHLIST** · LONG · EE=20 · post earnings drift · score=54
+> LONG. Palantir's expansion into multiyear commercial enterprise deals [5] and significant operating leverage [2] provide a strong fundamental catalyst for a rec
+
+### LLY  $1127.65 (-0.5%)
+**WATCHLIST** · LONG · EE=18 · post earnings drift · score=53
+> LONG. LLY is entering a technical buy zone following a 156% earnings surge and positive clinical data for its oral GLP-1 pill, which outperformed competitors [2
+
+### JPM  $321.77 (+0.3%)
+**WATCHLIST** · LONG · EE=17 · post earnings drift · score=53
+> LONG JPM as strategic expense investments are projected to drive EPS toward $30, indicating strong operational leverage [1]. Anticipated Fed easing next year fu
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (2):** `IWM` · `AMZN`
-**⛔ IGNORE (18):** `COST` · `BAC` · `PLTR` · `META` · `AMD` · `TSM`
+**🟡 WATCHLIST (4):** `PLTR` · `LLY` · `JPM` · `ARM`
+**⚪ MONITOR (3):** `AAPL` · `TSM` · `AVGO`
+**⛔ IGNORE (13):** `META` · `AMZN` · `GLD` · `COST` · `NVDA` · `AMD`
+
+---
+## 🏆 Top Trade
+
+**PLTR — LONG | WATCHLIST | Score: 54**
+
+> LONG. Palantir's expansion into multiyear commercial enterprise deals [5] and significant operating leverage [2] provide a strong fundamental catalyst for a recovery toward key moving averages. Positive sentiment from recent earnings and AI momentum [3] supports a continuation of the current bounce within a bullish market regime.
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$134.58 | $125.34 (-6.9%) | $153.06 (+13.7%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 IWM — ▲ LONG | MONITOR | Score: 52/85
+### 🟡 #1 PLTR — ▲ LONG | WATCHLIST | Score: 54/85
 
-**Price Snapshot:** $294.38 (+1.4%) | **RSI:** 59.2 | **Vol ratio:** 0.48x | **ATR:** 6.2261 | **vs MA20:** above ✅
+**Price Snapshot:** $134.58 (+5.2%) | **RSI:** 48.7 | **Vol ratio:** 0.47x | **ATR:** 7.7012 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `17.3/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. IWM is exhibiting relative strength against the SPY, catalyzed by a significant $10.6B M&A deal in the small-cap biotech sector which improves risk appetite [1]. Positive sentiment in financial services further supports the index as price maintains a bullish posture above the MA20 [2].
-
-**Entry Consideration:** Enter on a minor intraday retracement toward $293.50 or on a confirmed break of the daily high.
-**Risk / Invalidation Level:** Invalidation below $289.50, representing a break of the recent support level.
-**Initial Upside / Downside Case:** Initial target of $298.50 to $300.00 within 1-3 trading sessions.
-**Key Risk:** ❌ Low relative volume (0.48x) suggests the current move may lack the liquidity to sustain a breakout without broader market participation.
-
-### ⚪ #2 AMZN — ▼ SHORT | MONITOR | Score: 50/85
-
-**Price Snapshot:** $237.15 (-1.8%) | **RSI:** 26.1 | **Vol ratio:** 0.52x | **ATR:** 7.7621 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `16.1/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `5.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `20.2/25` | MarketConf `8.0/20` | RegimeFit `13.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** SHORT. Massive $17.5B debt accumulation for AI capex raises margin concerns [2,3], while Oracle's earnings disappointment creates a negative halo effect across large-cap tech [1].
+**What & Why:** LONG. Palantir's expansion into multiyear commercial enterprise deals [5] and significant operating leverage [2] provide a strong fundamental catalyst for a recovery toward key moving averages. Positive sentiment from recent earnings and AI momentum [3] supports a continuation of the current bounce within a bullish market regime.
 
-**Entry Consideration:** Enter on a failed retest of the $240.00 level or a break below the daily low.
-**Risk / Invalidation Level:** Stop loss set at $246.50 to account for potential volatility and recent breakdown levels.
-**Initial Upside / Downside Case:** Initial target of $228.50 within 1-3 trading days.
-**Key Risk:** ❌ Extremely low RSI of 26.1 suggests the stock is technically oversold and prone to a sharp relief rally.
+**Entry Consideration:** Entry on a minor pullback to $134.00 or a confirmed break of the $135.00 psychological level.
+**Risk / Invalidation Level:** Daily close below $131.00, invalidating the intraday reversal.
+**Initial Upside / Downside Case:** $138.75 (MA20) to $139.50 (MA50) resistance zone within 1-3 trading sessions.
+**Key Risk:** ❌ Low relative volume (0.47x) suggests the move may lack the institutional conviction required to clear overhead MA resistance.
+
+### 🟡 #2 LLY — ▲ LONG | WATCHLIST | Score: 53/85
+
+**Price Snapshot:** $1127.65 (-0.5%) | **RSI:** 61.2 | **Vol ratio:** 0.37x | **ATR:** 40.9551 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.4/25` | MarketConf `11.0/20` | RegimeFit `13.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. LLY is entering a technical buy zone following a 156% earnings surge and positive clinical data for its oral GLP-1 pill, which outperformed competitors [2][3]. Hedge fund accumulation and a strong bull market regime provide additional tailwinds for a breakout above recent consolidation [1][2].
+
+**Entry Consideration:** Entry at current levels ($1127.65) or on a minor pullback to $1115 to align with the identified buy zone.
+**Risk / Invalidation Level:** Daily close below the 20-day moving average ($1092.41) to invalidate the short-term trend.
+**Initial Upside / Downside Case:** Initial target of $1200.00 representing a psychological resistance level and prior momentum extension.
+**Key Risk:** ❌ Extremely low relative volume (0.37x) suggests a lack of immediate institutional conviction to drive the price higher.
+
+### 🟡 #3 JPM — ▲ LONG | WATCHLIST | Score: 53/85
+
+**Price Snapshot:** $321.77 (+0.3%) | **RSI:** 64.9 | **Vol ratio:** 0.3x | **ATR:** 6.6136 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.3/25` | MarketConf `12.0/20` | RegimeFit `13.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG JPM as strategic expense investments are projected to drive EPS toward $30, indicating strong operational leverage [1]. Anticipated Fed easing next year further supports a bullish re-rating of the banking sector [3].
+
+**Entry Consideration:** Enter on a minor pullback toward $318.00 or consolidation above the $320 level to manage RSI risk.
+**Risk / Invalidation Level:** Close position if price breaks below $305.00, invalidating the current uptrend relative to the MA20.
+**Initial Upside / Downside Case:** Initial target of $340.00 within a 2-4 week timeframe.
+**Key Risk:** ❌ Regulatory scrutiny and DOJ subpoenas regarding debanking policies could create headline volatility [4].
+
+### 🟡 #4 ARM — ▲ LONG | WATCHLIST | Score: 52/85
+
+**Price Snapshot:** $397.53 (+4.4%) | **RSI:** 61.2 | **Vol ratio:** 0.66x | **ATR:** 40.7743 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.1/25` | MarketConf `9.0/20` | RegimeFit `13.5/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. ARM is positioned to benefit from the accelerating $1 trillion AI infrastructure boom which drives strong secular demand despite recent sector volatility [3]. Current price action remains bullish above the MA20 as the market stabilizes following recent profit-taking and valuation checks [4].
+
+**Entry Consideration:** Entry on a minor pullback to the $390 level or a confirmed breakout above $398.
+**Risk / Invalidation Level:** Daily close below $365 or a break of the 20-day moving average support.
+**Initial Upside / Downside Case:** $425 initial target within a 1-3 day timeframe.
+**Key Risk:** ❌ High valuation sensitivity to hawkish Fed signals and potential sector-wide profit-taking.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 36
-- `QQQ` LONG | IGNORE | score 32
+- `SPY` LONG | IGNORE | score 42
+- `QQQ` LONG | IGNORE | score 36
 
 ---
 ## 📰 Key News (Last 24h)
 
-**NVDA**  ·  earnings
-  ▲ Navan lifts annual forecasts as corporate demand holds firm, shares rise - Reuters  [Reuters]
+**GLD**  ·  earnings
+  ▼ Newmont Tops Earnings Expectations for Sixth Consecutive Quarter. What Gold Prices Mean for the Stock.  [Barron's]
 
-**ORCL**  ·  macro
-  ▼ Stock Market Today: Dow Futures Gain, What to Watch — Live Updates - WSJ  [Wsj]
-  ▼ Oracle Reports Earnings Amid a Rapid Cloud Transformation - Barron's  [Barrons]
-
-**INTC**  ·  earnings
-  ▲ Buy AMD shares as graphics chip sales boost earnings, says Citi - CNBC  [Cnbc]
-
-**PLTR**  ·  earnings
-  ▲ TABLE-Landnet - 9-MTH group results - TradingView  [Tradingview]
-
-**TSM**  ·  earnings
-  ▲ TCTC Holdings LLC Boosts Position in Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat  [Marketbeat]
-  ▲ Qtron Investments LLC Has $14.56 Million Stock Holdings in Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat  [Marketbeat]
+**COST**  ·  earnings
+  ▼ Costco falls after earnings. But shareholders could get a special boost soon  [CNBC]
+  ▲ Morgan Stanley Reiterates Buy Rating on Costco Wholesale (COST) Stock  [Yahoo Finance]
 
 **META**  ·  macro
-  ▼ Meta shrugs off Trump’s idea for government ownership of AI - Politico  [Politico]
+  ▲ Truist reiterates Buy on Meta stock, sees subscription growth  [Investing.com]
+  ▲ Meta Stock Turns $1,000 Into $5,300 in 10 Years But Did It Beat The S&P 500?  [Yahoo Finance]
+
+**NVDA**  ·  earnings
+  ▲ Forget Buying Nvidia. This Overlooked ETF Beat the Nasdaq by Owning the AI Stocks You Can’t  [Yahoo Finance]
+
+**LLY**  ·  earnings
+  ▲ Is Eli Lilly (LLY) One Of The Most Profitable Blue Chip Stocks To Buy According To Hedge Funds?  [Yahoo Finance]
+
+**GOOGL**  ·  ma
+  ◆ S&P 500, Nasdaq, Dow End Higher After Trump Signals Iran Deal Coming Soon — ADBE, INTC, AMC, GOOGL, ORCL In Focus  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
