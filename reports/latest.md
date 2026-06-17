@@ -1,135 +1,89 @@
-# 📊 Daily Research Report — 2026-06-16
-*Generated: 2026-06-16 16:06*
+# 📊 Daily Research Report — 2026-06-17
+*Generated: 2026-06-17 15:46*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 📈 BULL — Broad market rising. Long setups have better follow-through.
-**SPY:** +1.57%
-**SPY RSI(14):** 51.8
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** +0.00%
+**SPY RSI(14):** 47.4
 
-> ✅ **Research posture:** Market is supportive. Long ideas have a better chance of follow-through.
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### JPM  $330.62 (+3.1%)
-**WATCHLIST** · LONG · EE=19 · post earnings drift · score=54
-> LONG. Strategic expense management is projected to drive EPS toward $30, while a unified Fed outlook provides a stable macroeconomic environment for continued b
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `JPM`
-**⚪ MONITOR (6):** `META` · `PLTR` · `AAPL` · `ARM` · `MSFT` · `LLY`
-**⛔ IGNORE (13):** `AMZN` · `TSLA` · `COST` · `NVDA` · `GS` · `AMD`
-
----
-## 🏆 Top Trade
-
-**JPM — LONG | WATCHLIST | Score: 54**
-
-> LONG. Strategic expense management is projected to drive EPS toward $30, while a unified Fed outlook provides a stable macroeconomic environment for continued banking sector strength [1][2].
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$330.62 | $322.25 (-2.5%) | $347.36 (+5.1%) | 1R | 2R |
+**⚪ MONITOR (2):** `PLTR` · `JPM`
+**⛔ IGNORE (18):** `AMD` · `GOOGL` · `AVGO` · `ARM` · `IWM` · `TSLA`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 JPM — ▲ LONG | WATCHLIST | Score: 54/85
+### ⚪ #1 PLTR — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $330.62 (+3.1%) | **RSI:** 70.2 | **Vol ratio:** 0.44x | **ATR:** 6.9739 | **vs MA20:** above ✅
+**Price Snapshot:** $134.54 (+1.0%) | **RSI:** 43.0 | **Vol ratio:** 0.31x | **ATR:** 7.2026 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `18.5/25` | MarketConf `12.0/20` | RegimeFit `13.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Strategic expense management is projected to drive EPS toward $30, while a unified Fed outlook provides a stable macroeconomic environment for continued banking sector strength [1][2].
-
-**Entry Consideration:** Enter on a minor pullback toward $327.50 to mitigate risk from the current overbought RSI of 70.2.
-**Risk / Invalidation Level:** Hard stop on a daily close below $318.00, invalidating the recent breakout momentum.
-**Initial Upside / Downside Case:** $345.00 initial target within a 5-10 day swing timeframe.
-**Key Risk:** ❌ The RSI of 70.2 indicates overbought conditions, which may lead to short-term mean reversion despite the bullish trend.
-
-### ⚪ #2 META — ▲ LONG | MONITOR | Score: 52/85
-
-**Price Snapshot:** $595.25 (+0.3%) | **RSI:** 37.4 | **Vol ratio:** 0.31x | **ATR:** 21.1854 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `18.5/25` | MarketConf `9.0/20` | RegimeFit `13.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `21.1/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Meta is positioned for a mean-reversion bounce from oversold RSI levels (37.4) following a post-earnings sell-off that analysts view as a buying opportunity [4]. The launch of a new AI search tool with $10 billion annual revenue potential provides a strong fundamental catalyst for recovery [3].
+**What & Why:** LONG. Palantir's increasing operating leverage [2] and its strategic integration of Gemini AI tools via Google Cloud [3] provide a fundamental floor for a rebound. With RSI at 43.0, the stock is positioned for a technical bounce toward its key moving averages.
 
-**Entry Consideration:** Entry at current price of $595.25 or on a reclaim of the $600 psychological level.
-**Risk / Invalidation Level:** Close below $585.00, representing a break of recent support levels.
-**Initial Upside / Downside Case:** Initial target of $615.00, aiming for a gap fill toward the MA20 over the next 3-5 sessions.
-**Key Risk:** ❌ Technical resistance at the MA20 ($601.87) could stall the recovery despite the bullish market regime.
+**Entry Consideration:** Limit order near $134.00 or on a confirmed 5-minute trend reversal above $135.00.
+**Risk / Invalidation Level:** Hard stop at $131.50, representing a break of recent consolidation lows.
+**Initial Upside / Downside Case:** $138.50 (MA20/MA50 convergence) within 1-2 trading sessions.
+**Key Risk:** ❌ Continued weakness in the broader market could prevent the stock from reclaiming key moving averages in a choppy regime.
 
-### ⚪ #3 PLTR — ▲ LONG | MONITOR | Score: 52/85
+### ⚪ #2 JPM — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $130.45 (-3.2%) | **RSI:** 48.6 | **Vol ratio:** 0.34x | **ATR:** 7.7098 | **vs MA20:** below ⚠️
+**Price Snapshot:** $336.35 (+1.6%) | **RSI:** 84.4 | **Vol ratio:** 0.46x | **ATR:** 6.9271 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.9/25` | MarketConf `8.0/20` | RegimeFit `13.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. PLTR's expanding operating leverage and government-sector dominance provide a strong fundamental floor despite recent price volatility [1][2]. The current dip offers an entry point as the market overlooks the 'bigger picture' of AI-driven profitability in a bullish regime [4][5].
-
-**Entry Consideration:** Limit order near $130.50 or on a reclaim of the $131.00 level to confirm intraday support.
-**Risk / Invalidation Level:** Daily close below $125.00, representing a breakdown of the current consolidation zone.
-**Initial Upside / Downside Case:** $138.50 - $139.00 (MA20/MA50 convergence) within 5-10 trading days.
-**Key Risk:** ❌ High valuation multiples may lead to further downside if broader tech sentiment weakens despite the bull regime.
-
-### ⚪ #4 LLY — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $1129.03 (-0.3%) | **RSI:** 61.5 | **Vol ratio:** 0.24x | **ATR:** 41.3621 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.5/25` | MarketConf `11.0/20` | RegimeFit `13.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `22.1/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. LLY is entering a technical buy zone following a 156% earnings surge and strong hedge fund accumulation [1][2]. Recent clinical success of its oral GLP-1 pill against competitors provides a fundamental catalyst for continued outperformance [3].
+**What & Why:** LONG. JPM is positioned for an earnings-driven momentum play as the July 14 call approaches [2], bolstered by long-term strategic value in Quantum AI partnerships [1]. High EventEdge scores indicate strong institutional focus despite the overbought technical profile.
 
-**Entry Consideration:** Enter on a pull-back toward the $1120-$1125 support level or on a breakout above $1135.
-**Risk / Invalidation Level:** Hard stop below the 20-day moving average ($1092.47) to protect against a trend reversal.
-**Initial Upside / Downside Case:** $1180.00 - $1200.00 range over the next 5-10 trading sessions.
-**Key Risk:** ❌ High valuation and potential profit-taking following the massive earnings-driven rally.
-
----
-## 🌍 Macro Watchlist
-
-- ⛔ `WMT` LONG | IGNORE | score 38 | —
+**Entry Consideration:** Limit orders near $332.00 to account for the RSI extension while maintaining exposure for the earnings run.
+**Risk / Invalidation Level:** Daily close below $318.00, invalidating the current momentum trend.
+**Initial Upside / Downside Case:** $350.00 target price leading into the July 14 earnings announcement.
+**Key Risk:** ❌ Extreme RSI of 84.4 indicates the stock is severely overbought and prone to a sharp short-term correction.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 43
-- `QQQ` LONG | IGNORE | score 39
+- `QQQ` LONG | IGNORE | score 37
 
 ---
 ## 📰 Key News (Last 24h)
 
+**AMZN**  ·  macro
+  ▼ Amazon may face penalties from potential FTC ad suit, Bloomberg News reports - Reuters  [Reuters]
+
+**GLD**  ·  earnings
+  ▲ The gold chart looks precarious. Here's how to profit  [CNBC]
+
+**ARM**  ·  earnings
+  ▲ Arm Holdings' Licensing Momentum Continues to Power Revenue Growth  [Yahoo Finance]
+
+**AMD**  ·  earnings
+  ▲ Intel Tumbles 7% Despite BoA Double Upgrade, AMD Slides 6% as AI Infrastructure Deal Can’t Stop Profit-Taking  [Yahoo Finance]
+
 **AVGO**  ·  earnings
-  ▲ Bernstein's Stacy Rasgon: AI guidance dragging down Broadcom stock despite beat  [CNBC]
-  ▼ Why we're raising our price target on Broadcom despite its post-earnings sell-off  [CNBC]
+  ▼ Jim Cramer Shares Unmissable Insights About Broadcom (AVGO)  [Yahoo Finance]
 
-**MU**  ·  earnings
-  ▲ This little-known AI stock has beaten Micron and Arm this year, and now it’s extending its lead  [MarketWatch]
-  ▲ Dow Jones Futures: Trump, Iran Deal Spark Stock Market Surge; Nvidia, Micron, Sandisk SpaceX Are Big Winners  [Investor's Business Daily]
+**MACRO**  ·  earnings
+  ▲ CarMax Earnings Beat. Why CarMax Stock, Carvana Shares Are Sinking.  [Yahoo Finance]
+  ▲ Jabil Pushes 2026 Gain To 83% As AI Demand Powers Beat-And-Raise Report  [Yahoo Finance]
 
-**AMZN**  ·  earnings
-  ▼ AMZN Stock Jumps — Amazon Announces Multibillion-Dollar Data Center Expansion In Missouri  [Yahoo Finance]
-  ▲ Dow Hits Record High, Nasdaq And S&P 500 Jump On US-Iran Deal And SpaceX Optimism — SPCX, NVDA, ROKU, CRM, AMZN In Focus  [Yahoo Finance]
-
-**IWM**  ·  earnings
-  ▼ iShares Russell 2000 ETF (IWM) - Price Performance Amid Return of Risk-On Sentiment and Lingering Macro Headwinds - Energy Earnings Report  [newsline.com]
-  ▲ Broad Rebound Keeps Breadth Positive as Small Caps Rejoin the Move  [ChartMill]
+**ORCL**  ·  ma
+  ▼ MSFT Falls 2% On Tuesday — Microsoft Reportedly Walks Away From $3B Oracle Cloud Deal  [Stocktwits]
 
 ---
 ## 🛡 Research Risk Rules
