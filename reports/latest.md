@@ -1,89 +1,133 @@
-# 📊 Daily Research Report — 2026-06-17
-*Generated: 2026-06-17 15:46*
+# 📊 Daily Research Report — 2026-06-18
+*Generated: 2026-06-18 15:46*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.00%
-**SPY RSI(14):** 47.4
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** +0.48%
+**SPY RSI(14):** 43.6
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### AAPL  $296.01 (+0.0%)
+**WATCHLIST** · LONG · EE=19 · macro beta rebound · score=54
+> AAPL is positioned for a technical rebound from oversold RSI levels (37.1) as investors anticipate a potential rally to $317 triggered by upcoming FOMC decision
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (2):** `PLTR` · `JPM`
-**⛔ IGNORE (18):** `AMD` · `GOOGL` · `AVGO` · `ARM` · `IWM` · `TSLA`
+**🟡 WATCHLIST (2):** `JPM` · `AAPL`
+**⚪ MONITOR (2):** `COST` · `GS`
+**⛔ IGNORE (16):** `AMZN` · `LLY` · `IWM` · `GOOGL` · `AVGO` · `PLTR`
+
+---
+## 🏆 Top Trade
+
+**JPM — SHORT | WATCHLIST | Score: 55**
+
+> SHORT. JPM is technically overextended with an RSI of 78.3, while the court order regarding Epstein records introduces significant reputational and legal risk [3].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$330.50 | $339.07 (-2.6%) | $313.37 (+5.2%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 PLTR — ▲ LONG | MONITOR | Score: 51/85
+### 🟡 #1 JPM — ▼ SHORT | WATCHLIST | Score: 55/85
 
-**Price Snapshot:** $134.54 (+1.0%) | **RSI:** 43.0 | **Vol ratio:** 0.31x | **ATR:** 7.2026 | **vs MA20:** below ⚠️
+**Price Snapshot:** $330.50 (-0.9%) | **RSI:** 78.3 | **Vol ratio:** 0.55x | **ATR:** 7.1393 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.1/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Palantir's increasing operating leverage [2] and its strategic integration of Gemini AI tools via Google Cloud [3] provide a fundamental floor for a rebound. With RSI at 43.0, the stock is positioned for a technical bounce toward its key moving averages.
-
-**Entry Consideration:** Limit order near $134.00 or on a confirmed 5-minute trend reversal above $135.00.
-**Risk / Invalidation Level:** Hard stop at $131.50, representing a break of recent consolidation lows.
-**Initial Upside / Downside Case:** $138.50 (MA20/MA50 convergence) within 1-2 trading sessions.
-**Key Risk:** ❌ Continued weakness in the broader market could prevent the stock from reclaiming key moving averages in a choppy regime.
-
-### ⚪ #2 JPM — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $336.35 (+1.6%) | **RSI:** 84.4 | **Vol ratio:** 0.46x | **ATR:** 6.9271 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `22.1/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `20.9/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `5.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. JPM is positioned for an earnings-driven momentum play as the July 14 call approaches [2], bolstered by long-term strategic value in Quantum AI partnerships [1]. High EventEdge scores indicate strong institutional focus despite the overbought technical profile.
+**What & Why:** SHORT. JPM is technically overextended with an RSI of 78.3, while the court order regarding Epstein records introduces significant reputational and legal risk [3].
 
-**Entry Consideration:** Limit orders near $332.00 to account for the RSI extension while maintaining exposure for the earnings run.
-**Risk / Invalidation Level:** Daily close below $318.00, invalidating the current momentum trend.
-**Initial Upside / Downside Case:** $350.00 target price leading into the July 14 earnings announcement.
-**Key Risk:** ❌ Extreme RSI of 84.4 indicates the stock is severely overbought and prone to a sharp short-term correction.
+**Entry Consideration:** Entry on a break below $330.00 or a failed retest of the $332.00 level.
+**Risk / Invalidation Level:** Stop loss set at $336.50, representing a move above recent highs.
+**Initial Upside / Downside Case:** $311.00, targeting mean reversion toward the 20-day moving average.
+**Key Risk:** ❌ Strong sector-wide performance or positive pre-earnings sentiment could squeeze the short position.
+
+### 🟡 #2 AAPL — ▲ LONG | WATCHLIST | Score: 54/85
+
+**Price Snapshot:** $296.01 (+0.0%) | **RSI:** 37.1 | **Vol ratio:** 0.75x | **ATR:** 8.1636 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `19.1/25` | MarketConf `11.0/20` | RegimeFit `8.0/15` | RelOpp `5.9/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `macro_beta_rebound`
+
+**What & Why:** AAPL is positioned for a technical rebound from oversold RSI levels (37.1) as investors anticipate a potential rally to $317 triggered by upcoming FOMC decisions [1, 5]. Broader market strength and positive tech sentiment provide a supportive backdrop for a recovery toward the 20-day moving average [2, 3].
+
+**Entry Consideration:** Enter on a break above $299.00 or on intraday consolidation near $296.00 with volume confirmation.
+**Risk / Invalidation Level:** Daily close below the 50-day moving average at $288.59.
+**Initial Upside / Downside Case:** $303.30 (MA20) initial; $317.00 secondary target over 1-2 weeks.
+**Key Risk:** ❌ Macro volatility surrounding the FOMC decision or a hawkish surprise in rate forecasts.
+
+### ⚪ #3 COST — ▼ SHORT | MONITOR | Score: 52/85
+
+**Price Snapshot:** $953.26 (-1.3%) | **RSI:** 48.7 | **Vol ratio:** 0.57x | **ATR:** 19.9792 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `17.9/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** SHORT COST as the stock trades below its MA20 and MA50, facing downward pressure from hawkish Fed projections regarding future rate hikes [1]. Concerns over price stability and rising bond yields create a headwind for high-valuation retail staples [2].
+
+**Entry Consideration:** Enter on a break below the $950 support level or a failed retest of $960.
+**Risk / Invalidation Level:** Close position if price recovers above the MA20 at $981.
+**Initial Upside / Downside Case:** $925.00 initial target within a 1-3 day timeframe.
+**Key Risk:** ❌ Earnings-related volatility or a broader market pivot back into defensive large-cap equities.
+
+### ⚪ #4 GS — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $1110.27 (+1.0%) | **RSI:** 63.5 | **Vol ratio:** 0.59x | **ATR:** 37.1371 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.2/25` | MarketConf `14.0/20` | RegimeFit `8.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `macro_beta_rebound`
+
+**What & Why:** LONG. Goldman Sachs is positioning itself as a primary beneficiary of the AI-capex supercycle through strategic advisory and high-profile tech sector coverage [1][4]. The launch of new structured notes linked to major semiconductor firms indicates active product expansion and revenue generation in the current high-volatility tech environment [3].
+
+**Entry Consideration:** Enter on a minor pullback toward the $1100 psychological level or a break above $1112.
+**Risk / Invalidation Level:** Exit if price closes below $1085, invalidating the current short-term bullish momentum.
+**Initial Upside / Downside Case:** $1140 initial target within 1-3 trading sessions, following the trend above the MA20.
+**Key Risk:** ❌ RSI at 63.5 suggests the stock is approaching overbought territory, increasing the risk of mean reversion.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 37
+- `SPY` SHORT | IGNORE | score 41
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AMZN**  ·  macro
-  ▼ Amazon may face penalties from potential FTC ad suit, Bloomberg News reports - Reuters  [Reuters]
-
-**GLD**  ·  earnings
-  ▲ The gold chart looks precarious. Here's how to profit  [CNBC]
-
-**ARM**  ·  earnings
-  ▲ Arm Holdings' Licensing Momentum Continues to Power Revenue Growth  [Yahoo Finance]
-
-**AMD**  ·  earnings
-  ▲ Intel Tumbles 7% Despite BoA Double Upgrade, AMD Slides 6% as AI Infrastructure Deal Can’t Stop Profit-Taking  [Yahoo Finance]
+**COST**  ·  macro
+  ▼ Stocks drop, bond yields rise; Fed keeps rates steady but projects hike for later this year  [Reuters]
 
 **AVGO**  ·  earnings
-  ▼ Jim Cramer Shares Unmissable Insights About Broadcom (AVGO)  [Yahoo Finance]
+  ▲ Why Accenture Stock Is Sinking 14% After Earnings and a Big Acquisition - Barron's  [Barrons]
 
-**MACRO**  ·  earnings
-  ▲ CarMax Earnings Beat. Why CarMax Stock, Carvana Shares Are Sinking.  [Yahoo Finance]
-  ▲ Jabil Pushes 2026 Gain To 83% As AI Demand Powers Beat-And-Raise Report  [Yahoo Finance]
+**MU**  ·  earnings
+  ◆ Wall Street scrambles to lift Micron price targets ahead of earnings  [Investing.com]
 
-**ORCL**  ·  ma
-  ▼ MSFT Falls 2% On Tuesday — Microsoft Reportedly Walks Away From $3B Oracle Cloud Deal  [Stocktwits]
+**NVDA**  ·  earnings
+  ▲ NVIDIA (NVDA) – Among the 12 Most Profitable American Stocks to Buy in 2026  [Insider Monkey]
+
+**LLY**  ·  earnings
+  ▼ Eli Lilly: Sell LLY Stock Ahead of Its Earnings?  [Forbes]
+  ▲ 5 Stocks with Best Earnings Growth for the Next 3 Years  [Insider Monkey]
+
+**JPM**  ·  macro
+  ▼ JPMorgan Strategies for 2026: Hold High-Risk Assets Amid Economi  [GuruFocus]
+
+**QQQ**  ·  macro
+  ▼ Recession 2025: Buffett Indicator: Stock Market Crash: SPX SPY QQQ SMH IWM DIA VIX Palombara Sabina (qtS5QWqsQ3)  [Fathom Journal]
 
 ---
 ## 🛡 Research Risk Rules
