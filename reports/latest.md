@@ -1,83 +1,104 @@
-# 📊 Daily Research Report — 2026-06-23
-*Generated: 2026-06-23 15:32*
+# 📊 Daily Research Report — 2026-06-24
+*Generated: 2026-06-24 15:24*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
-**SPY:** -1.23%
-**SPY RSI(14):** 39.4
-
-> ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** +0.76%
+**SPY RSI(14):** 43.9
 
 ---
 ## ⭐ High Conviction Picks
 
-*No high conviction picks — bear regime, avoiding new LONG exposure.*
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (2):** `QQQ` · `SPY`
-**⚪ MONITOR (1):** `NVDA`
-**⛔ IGNORE (17):** `GOOGL` · `COST` · `ARM` · `AMZN` · `PLTR` · `BAC`
-
----
-## 🏆 Top Trade
-
-**QQQ — SHORT | WATCHLIST | Score: 56**
-
-> SHORT QQQ as the market confirms a bear regime after hitting a 'dead-cat-bounce' target [3] amid negative CPI-related macro sentiment [2]. Price remains below the MA20, indicating a shift in momentum toward the MA50 support level.
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$716.69 | $740.36 (-3.3%) | $669.35 (+6.6%) | 1R | 2R |
+**⛔ IGNORE (20):** `AAPL` · `AMZN` · `GOOGL` · `ARM` · `LLY` · `TSLA`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 NVDA — ▼ SHORT | MONITOR | Score: 50/85
+### ⛔ #1 AAPL — ▲ LONG | IGNORE | Score: 48/85
 
-**Price Snapshot:** $201.27 (-3.5%) | **RSI:** 35.4 | **Vol ratio:** 0.33x | **ATR:** 7.7957 | **vs MA20:** below ⚠️
+**Price Snapshot:** $298.15 (+1.3%) | **RSI:** 38.4 | **Vol ratio:** 0.2x | **ATR:** 7.735 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `15.0/25` | MarketConf `12.0/20` | RegimeFit `13.0/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `18.7/25` | MarketConf `9.0/20` | RegimeFit `9.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** SHORT. Rising AI infrastructure costs and a hawkish Fed outlook are weighing heavily on Nasdaq futures and semiconductor sentiment [5]. NVDA is showing relative weakness in a bear regime, trading below its MA20 and MA50 while facing competition for capital from higher-performing peers [1].
 
-**Entry Consideration:** Enter on a minor relief bounce toward $203.50 or a confirmed break below the $200.00 psychological support.
-**Risk / Invalidation Level:** Exit if price closes above the MA20 at $210.46 or if broader market sentiment shifts to bullish.
-**Initial Upside / Downside Case:** $192.00 initial target within 1-2 trading sessions.
-**Key Risk:** ❌ An RSI of 35.4 indicates the stock is approaching oversold territory, which could trigger a sharp technical bounce.
+### ⛔ #2 AMZN — ▲ LONG | IGNORE | Score: 48/85
+
+**Price Snapshot:** $241.92 (+3.3%) | **RSI:** 44.2 | **Vol ratio:** 0.38x | **ATR:** 8.2493 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `18.3/25` | MarketConf `9.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #3 GOOGL — ▲ LONG | IGNORE | Score: 48/85
+
+**Price Snapshot:** $351.13 (+1.4%) | **RSI:** 45.7 | **Vol ratio:** 0.34x | **ATR:** 12.1794 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `18.2/25` | MarketConf `9.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #4 ARM — ▼ SHORT | IGNORE | Score: 47/85
+
+**Price Snapshot:** $354.45 (-3.3%) | **RSI:** 42.0 | **Vol ratio:** 0.32x | **ATR:** 41.1823 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `17.4/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 LLY — ▲ LONG | IGNORE | Score: 47/85
+
+**Price Snapshot:** $1108.95 (+0.2%) | **RSI:** 58.4 | **Vol ratio:** 0.26x | **ATR:** 36.5814 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `16.6/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | WATCHLIST | score 56
-- `SPY` SHORT | WATCHLIST | score 55
+- `QQQ` SHORT | IGNORE | score 46
+- `SPY` SHORT | IGNORE | score 39
 
 ---
 ## 📰 Key News (Last 24h)
 
 **COST**  ·  macro
-  ▼ Stocks flat, oil falls as rate worries offset Iran talks optimism  [Reuters]
-  ▼ London shares at over one-week low on rate hike concerns; leadership in focus  [Reuters]
-
-**NVDA**  ·  macro
-  ▼ Nasdaq futures drop over 2% as AI buildout costs, Fed rate outlook weigh - Reuters  [Reuters]
-  ▼ This Bill Gates-Backed Energy Stock Is Rising After Big Earnings Miss  [Barron's]
+  ▼ Dollar hits 13-month high as rate-hike bets and stock selloff boost demand  [Reuters]
 
 **META**  ·  earnings
-  ▼ EU to ramp up Meta probe into addictive design, Bloomberg News reports - Reuters  [Reuters]
-  ▲ Meta Stock: New Subscriptions Could Boost Revenue Growth  [Investing.com]
+  ▲ META: Meta Platforms Inc - Stock Price, Quote and News - CNBC  [Cnbc]
 
-**MU**  ·  macro
-  ▲ Market is pricing in a divided Fed, says JPMorgan's Priya Misra - CNBC  [Cnbc]
+**PLTR**  ·  macro
+  ▲ Wedbush reiterates Palantir stock Outperform rating at $230 target  [Investing.com]
 
-**ARM**  ·  earnings
-  ▲ Arm Holdings (ARM) Hits All-Time High on Bernstein Upbeat Rating  [Yahoo Finance]
+**MU**  ·  earnings
+  ▼ Tech stocks live: Semiconductor stocks steady after sell-off, with Micron earnings on deck  [Yahoo Finance]
+
+**ARM**  ·  macro
+  ▼ The Bull Case For Arm Holdings (ARM) Could Change Following AI Chip Selloff And Rate Jitters – Learn Why  [Yahoo Finance]
+
+**AMZN**  ·  earnings
+  ▲ Amazon (AMZN) BofA Sees Q2 Revenue Beat Despite Prime Day Timing Shift  [Yahoo Finance]
+
+**AMD**  ·  earnings
+  ◆ Nvidia vs. Advanced Micro Devices: What Do Their Revenue Trends Tell Investors?  [Yahoo Finance]
+
+**NVDA**  ·  macro
+  ▼ NVIDIA (NVDA) Sees Moderate Bearish Sentiment as Shares Decline  [GuruFocus]
 
 ---
 ## 🛡 Research Risk Rules
