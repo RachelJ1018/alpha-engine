@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-06-25
-*Generated: 2026-06-25 15:29*
+# 📊 Daily Research Report — 2026-06-26
+*Generated: 2026-06-26 15:19*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.12%
-**SPY RSI(14):** 39.5
+**SPY:** -0.17%
+**SPY RSI(14):** 48.4
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -19,52 +19,52 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `LLY` · `BAC` · `MSFT` · `COST` · `GLD` · `GOOGL`
+**⛔ IGNORE (20):** `AAPL` · `META` · `AMZN` · `MSFT` · `TSLA` · `NVDA`
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 LLY — ▲ LONG | IGNORE | Score: 49/85
+### ⛔ #1 AAPL — ▲ LONG | IGNORE | Score: 47/85
 
-**Price Snapshot:** $1139.87 (+2.0%) | **RSI:** 54.4 | **Vol ratio:** 0.25x | **ATR:** 34.74 | **vs MA20:** above ✅
+**Price Snapshot:** $279.67 (+1.6%) | **RSI:** 29.4 | **Vol ratio:** 0.52x | **ATR:** 8.8271 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `16.5/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 BAC — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $58.80 (+1.9%) | **RSI:** 83.3 | **Vol ratio:** 0.41x | **ATR:** 1.1618 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.7/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `0.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
-
-### ⛔ #3 MSFT — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $355.56 (-2.7%) | **RSI:** 15.6 | **Vol ratio:** 0.52x | **ATR:** 11.6314 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `19.5/25` | MarketConf `8.0/20` | RegimeFit `7.0/15` | RelOpp `5.6/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `18.4/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #4 COST — ▼ SHORT | IGNORE | Score: 46/85
+### ⛔ #2 META — ▲ LONG | IGNORE | Score: 46/85
 
-**Price Snapshot:** $949.07 (-1.2%) | **RSI:** 39.0 | **Vol ratio:** 0.37x | **ATR:** 18.2279 | **vs MA20:** below ⚠️
+**Price Snapshot:** $553.40 (+1.9%) | **RSI:** 36.7 | **Vol ratio:** 0.25x | **ATR:** 18.2193 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `18.1/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+**Layered Scores:** EventEdge `18.5/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #5 GLD — ▲ LONG | IGNORE | Score: 44/85
+### ⛔ #3 AMZN — ▲ LONG | IGNORE | Score: 45/85
 
-**Price Snapshot:** $369.77 (+1.1%) | **RSI:** 28.7 | **Vol ratio:** 0.68x | **ATR:** 9.7921 | **vs MA20:** below ⚠️
+**Price Snapshot:** $231.50 (+2.0%) | **RSI:** 38.3 | **Vol ratio:** 0.49x | **ATR:** 8.0989 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `15.3/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `5.6/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `18.6/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #4 MSFT — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $367.85 (+4.3%) | **RSI:** 28.2 | **Vol ratio:** 0.69x | **ATR:** 12.1436 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `18.1/25` | MarketConf `6.0/20` | RegimeFit `7.0/15` | RelOpp `5.6/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 TSLA — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $382.14 (+1.9%) | **RSI:** 46.7 | **Vol ratio:** 0.25x | **ATR:** 17.3421 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `18.7/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `9.5/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
@@ -72,29 +72,31 @@
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 39
-- `SPY` LONG | IGNORE | score 37
+- `QQQ` SHORT | IGNORE | score 43
+- `SPY` SHORT | IGNORE | score 43
 
 ---
 ## 📰 Key News (Last 24h)
 
-**MU**  ·  earnings
-  ◆ Micron stock jumps 15% as soaring prices from memory crunch lead to quadrupling of revenue  [CNBC]
-  ▼ Micron, Alphabet, Builders FirstSource, Sunrun, Wendy’s, and More Stocks That Explain Today’s Market - Barron's  [Barrons]
-
-**AMZN**  ·  earnings
-  ▲ This ‘Amazon For Travel’ Platform Beat Earnings Expectations. The Stock Is Soaring.  [Barron's]
-  ▲ Google, Meta, Amazon, and 6 other tech stocks powering the stock market's profit excitement  [Yahoo Finance]
+**JPM**  ·  earnings
+  ▼ Palantir Stock Nears Fresh Low Amid Freefall - Barron's  [Barrons]
+  ▼ Magnitude of AI capex boost is hard to overstate, says JPMorgan's Santos - CNBC  [Cnbc]
 
 **QCOM**  ·  earnings
-  ◆ Qualcomm announces AI data center CPU, signs Meta as first major customer - CNBC  [Cnbc]
+  ▲ Qualcomm Just Revealed Its Mystery Big Tech Customer—and Its Stock Is Soaring - Barron's  [Barrons]
+  ▲ QCOM Stock Jumps 15% After-Hours — Massive AI Revenue Targets And Meta Deal Power Qualcomm Rally  [Stocktwits]
 
 **GS**  ·  macro
-  ▲ JPMorgan Chase unveils $50 billion buyback, Goldman Sachs raises dividend after Fed stress test - CNBC  [Cnbc]
-  ▲ JPM, GS, MS Stocks Edge Higher After-Hours — Banks Lift Dividends And Announce Buybacks After Fed Stress Test  [Yahoo Finance]
+  ▼ Ed Yardeni: The market looks 'very solid' from an earnings standpoint - CNBC  [Cnbc]
 
-**NVDA**  ·  earnings
-  ▲ Nvidia’s Upbeat Forecast Lifts SMH’s Earnings Outlook  [Trefis]
+**AVGO**  ·  earnings
+  ▲ Results: Broadcom Inc. Beat Earnings Expectations And Analysts Now Have New Forecasts  [Yahoo Finance]
+
+**MSFT**  ·  earnings
+  ▲ Profitable Move in Microsoft (MSFT) Options Trading  [GuruFocus]
+
+**QQQ**  ·  macro
+  ▼ Bear Trap Election, Bull Trap FOMC: Stock Market Crash: SPY QQQ SMH IWM DIA VIX Canelo (pOzCYAmAeT)  [Fathom Journal]
 
 ---
 ## 🛡 Research Risk Rules
