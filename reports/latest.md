@@ -1,87 +1,121 @@
-# 📊 Daily Research Report — 2026-06-30
-*Generated: 2026-06-30 15:21*
+# 📊 Daily Research Report — 2026-07-01
+*Generated: 2026-07-01 15:25*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.54%
-**SPY RSI(14):** 55.0
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** +0.29%
+**SPY RSI(14):** 64.0
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### TSLA  $415.33 (+0.8%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=56
-> LONG. Positive momentum is driven by the latest FSD update and anticipation of Q2 delivery data due later this week [4]. Tesla is also benefiting from broader m
+### META  $625.34 (+11.0%)
+**ACTIONABLE** · LONG · EE=21 · post earnings drift · score=58
+> LONG. Meta's strategic shift to monetize excess AI compute capacity through cloud services creates a high-margin revenue catalyst that justifies the current bre
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `TSLA`
-**⛔ IGNORE (19):** `PLTR` · `AAPL` · `NVDA` · `ARM` · `GOOGL` · `GS`
+**🟢 ACTIONABLE (1):** `META`
+**⚪ MONITOR (2):** `TSLA` · `BAC`
+**⛔ IGNORE (17):** `PLTR` · `AAPL` · `AMZN` · `JPM` · `GOOGL` · `NVDA`
 
 ---
 ## 🏆 Top Trade
 
-**TSLA — LONG | WATCHLIST | Score: 56**
+**META — LONG | ACTIONABLE | Score: 58**
 
-> LONG. Positive momentum is driven by the latest FSD update and anticipation of Q2 delivery data due later this week [4]. Tesla is also benefiting from broader market strength and positive sentiment surrounding related entities like SpaceX [1].
+> LONG. Meta's strategic shift to monetize excess AI compute capacity through cloud services creates a high-margin revenue catalyst that justifies the current breakout [2][3]. Strong institutional sentiment and inclusion in top 'Magnificent Seven' picks provide additional tailwinds for price discovery [5].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$415.33 | $395.06 (-4.9%) | $455.87 (+9.8%) | 1R | 2R |
+| ~$625.34 | $599.13 (-4.2%) | $677.77 (+8.4%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 TSLA — ▲ LONG | WATCHLIST | Score: 56/85
+### 🟢 #1 META — ▲ LONG | ACTIONABLE | Score: 58/85
 
-**Price Snapshot:** $415.33 (+0.8%) | **RSI:** 56.7 | **Vol ratio:** 0.28x | **ATR:** 16.8936 | **vs MA20:** above ✅
+**Price Snapshot:** $625.34 (+11.0%) | **RSI:** 63.9 | **Vol ratio:** 1.46x | **ATR:** 21.8455 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.0/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `20.8/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `10.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Positive momentum is driven by the latest FSD update and anticipation of Q2 delivery data due later this week [4]. Tesla is also benefiting from broader market strength and positive sentiment surrounding related entities like SpaceX [1].
+**What & Why:** LONG. Meta's strategic shift to monetize excess AI compute capacity through cloud services creates a high-margin revenue catalyst that justifies the current breakout [2][3]. Strong institutional sentiment and inclusion in top 'Magnificent Seven' picks provide additional tailwinds for price discovery [5].
 
-**Entry Consideration:** Enter on a pull-back to $412.00 or a confirmed break above $416.50.
-**Risk / Invalidation Level:** Hard stop below the MA20 at $400.33.
-**Initial Upside / Downside Case:** $430.00 targeting the pre-delivery report run-up (1-3 days).
-**Key Risk:** ❌ Downside risk if Q2 delivery numbers miss consensus expectations.
+**Entry Consideration:** Limit orders between $622.00 and $625.00 to capture consolidation following the initial 11% surge.
+**Risk / Invalidation Level:** Close position if price breaks below $605.00, invalidating the post-earnings gap support and MA50.
+**Initial Upside / Downside Case:** $650.00 initial target within 1-3 trading sessions as momentum continues.
+**Key Risk:** ❌ Potential for rapid mean reversion or profit-taking given the high RSI and overextended single-day move.
+
+### ⚪ #2 TSLA — ▲ LONG | MONITOR | Score: 52/85
+
+**Price Snapshot:** $432.06 (+2.7%) | **RSI:** 68.0 | **Vol ratio:** 0.32x | **ATR:** 17.29 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.3/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Tesla is identified as a primary beneficiary of the current market rally following geopolitical news [1], supported by positive sentiment spillover from SpaceX's upcoming Nasdaq-100 inclusion [2].
+
+**Entry Consideration:** Limit orders near $428.50-$430.00 to mitigate entry risk given the elevated RSI of 68.0.
+**Risk / Invalidation Level:** Stop loss at $414.00, protecting against a reversal below the recent breakout level.
+**Initial Upside / Downside Case:** $450.00 initial price target within a 1-3 day timeframe.
+**Key Risk:** ❌ Technical overextension near overbought levels and high-profile short interest from Michael Burry [4][5].
+
+### ⚪ #3 BAC — ▲ LONG | MONITOR | Score: 52/85
+
+**Price Snapshot:** $58.02 (+1.8%) | **RSI:** 72.2 | **Vol ratio:** 0.26x | **ATR:** 1.1914 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. BAC is positioned for further upside as analysts reset price targets [1] and the market evaluates its status as a potentially undervalued asset [3].
+
+**Entry Consideration:** Entry on a minor pullback toward $57.80 or a confirmed break of the $58.10 intraday high.
+**Risk / Invalidation Level:** Exit on a close below $56.80 to protect against RSI mean reversion.
+**Initial Upside / Downside Case:** $60.00 psychological resistance within 1-3 trading sessions.
+**Key Risk:** ❌ RSI at 72.2 indicates overbought conditions which may trigger immediate profit-taking.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 38
+- `SPY` LONG | IGNORE | score 36
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▼ Which Stock Sectors Do Best When Interest Rates Are Rising, Falling or Flat?  [WSJ]
-  ▲ Bitcoin hoarder Strategy unveils $2bn buyback as share price tumbles  [Financial Times]
+**MU**  ·  regulation
+  ▲ Record chip rally adds $2 trillion in combined value to Micron, Intel and AMD in second quarter  [CNBC]
 
-**GOOGL**  ·  earnings
-  ◆ Stock Market News June 29, 2026: Dow finishes above 52,000 for first time; S&P 500 and Nasdaq snap five-day losing streak as 'Magnificent Seven' recover - MarketWatch  [Marketwatch]
+**INTC**  ·  earnings
+  ▼ Meta pops 8% as company makes cloud push to sell excess AI compute power capacity - CNBC  [Cnbc]
 
-**AVGO**  ·  earnings
-  ▲ AeroVironment soars 17% on earnings beat, backlog grows to $1.2 billion - CNBC  [Cnbc]
+**JPM**  ·  earnings
+  ◆ JPMorgan's Gabriela Santos on her outlook for the second half of the year - CNBC  [Cnbc]
 
-**AAPL**  ·  macro
-  ▲ TD Cowen, Maxim Reiterate Bullish Outlook on Apple Inc. (AAPL) Following WWDC26  [Yahoo Finance]
+**GOOGL**  ·  macro
+  ▲ Alphabet surges in Dow debut, helping lift index toward record - CNBC  [Cnbc]
 
-**PLTR**  ·  earnings
-  ▲ 5-star analyst gives beaten-down Palantir a surprise verdict  [thestreet.com]
+**COST**  ·  earnings
+  ▼ Grindr is launching two products that make the stock attractive, says Morgan Stanley - CNBC  [Cnbc]
 
-**NVDA**  ·  macro
-  ▲ NVIDIA (NVDA) Stock Gains as Robotics and AI Expansion Accelerates  [Blockonomi]
+**AMD**  ·  macro
+  ▼ SMCI Stock: Dell Could Get a Boost From Latest Super Micro Raid - Barron's  [Barrons]
 
-**LLY**  ·  earnings
-  ▲ Eli Lilly (LLY) Stock Analysis: A Trillion-Dollar Giant with Robust Revenue Growth and Strong Buy Ratings  [DirectorsTalk Interviews]
+**AAPL**  ·  earnings
+  ◆ Micron Stock Set for Best Ever Quarter. Why 1 Analyst Sees Even More Gains. - Barron's  [Barrons]
+
+**NVDA**  ·  earnings
+  ▲ NVIDIA stock gains as SemiAnalysis sees H2 data center revenue 20% above consensus  [Investing.com]
 
 ---
 ## 🛡 Research Risk Rules
