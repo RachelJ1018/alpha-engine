@@ -1,121 +1,75 @@
-# 📊 Daily Research Report — 2026-07-01
-*Generated: 2026-07-01 15:25*
+# 📊 Daily Research Report — 2026-07-02
+*Generated: 2026-07-02 15:16*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.29%
-**SPY RSI(14):** 64.0
+**SPY:** -0.08%
+**SPY RSI(14):** 56.0
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### META  $625.34 (+11.0%)
-**ACTIONABLE** · LONG · EE=21 · post earnings drift · score=58
-> LONG. Meta's strategic shift to monetize excess AI compute capacity through cloud services creates a high-margin revenue catalyst that justifies the current bre
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE (1):** `META`
-**⚪ MONITOR (2):** `TSLA` · `BAC`
-**⛔ IGNORE (17):** `PLTR` · `AAPL` · `AMZN` · `JPM` · `GOOGL` · `NVDA`
-
----
-## 🏆 Top Trade
-
-**META — LONG | ACTIONABLE | Score: 58**
-
-> LONG. Meta's strategic shift to monetize excess AI compute capacity through cloud services creates a high-margin revenue catalyst that justifies the current breakout [2][3]. Strong institutional sentiment and inclusion in top 'Magnificent Seven' picks provide additional tailwinds for price discovery [5].
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$625.34 | $599.13 (-4.2%) | $677.77 (+8.4%) | 1R | 2R |
+**🟢 ACTIONABLE:** None today
+**⚪ MONITOR (1):** `PLTR`
+**⛔ IGNORE (19):** `BAC` · `MSFT` · `AMZN` · `META` · `AAPL` · `JPM`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟢 #1 META — ▲ LONG | ACTIONABLE | Score: 58/85
+### ⚪ #1 PLTR — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $625.34 (+11.0%) | **RSI:** 63.9 | **Vol ratio:** 1.46x | **ATR:** 21.8455 | **vs MA20:** above ✅
+**Price Snapshot:** $129.07 (+2.7%) | **RSI:** 48.3 | **Vol ratio:** 0.57x | **ATR:** 6.5893 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.8/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `10.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Meta's strategic shift to monetize excess AI compute capacity through cloud services creates a high-margin revenue catalyst that justifies the current breakout [2][3]. Strong institutional sentiment and inclusion in top 'Magnificent Seven' picks provide additional tailwinds for price discovery [5].
-
-**Entry Consideration:** Limit orders between $622.00 and $625.00 to capture consolidation following the initial 11% surge.
-**Risk / Invalidation Level:** Close position if price breaks below $605.00, invalidating the post-earnings gap support and MA50.
-**Initial Upside / Downside Case:** $650.00 initial target within 1-3 trading sessions as momentum continues.
-**Key Risk:** ❌ Potential for rapid mean reversion or profit-taking given the high RSI and overextended single-day move.
-
-### ⚪ #2 TSLA — ▲ LONG | MONITOR | Score: 52/85
-
-**Price Snapshot:** $432.06 (+2.7%) | **RSI:** 68.0 | **Vol ratio:** 0.32x | **ATR:** 17.29 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `19.3/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `18.7/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `5.6/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Tesla is identified as a primary beneficiary of the current market rally following geopolitical news [1], supported by positive sentiment spillover from SpaceX's upcoming Nasdaq-100 inclusion [2].
+**What & Why:** LONG. The strategic partnership with Nvidia [1][2] and recent analyst upgrades [4][5] provide a strong fundamental catalyst for a reversal from recent lows. Technical support at the MA20 ($125.96) suggests a viable 'buy the dip' opportunity as sentiment improves [4].
 
-**Entry Consideration:** Limit orders near $428.50-$430.00 to mitigate entry risk given the elevated RSI of 68.0.
-**Risk / Invalidation Level:** Stop loss at $414.00, protecting against a reversal below the recent breakout level.
-**Initial Upside / Downside Case:** $450.00 initial price target within a 1-3 day timeframe.
-**Key Risk:** ❌ Technical overextension near overbought levels and high-profile short interest from Michael Burry [4][5].
-
-### ⚪ #3 BAC — ▲ LONG | MONITOR | Score: 52/85
-
-**Price Snapshot:** $58.02 (+1.8%) | **RSI:** 72.2 | **Vol ratio:** 0.26x | **ATR:** 1.1914 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `19.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. BAC is positioned for further upside as analysts reset price targets [1] and the market evaluates its status as a potentially undervalued asset [3].
-
-**Entry Consideration:** Entry on a minor pullback toward $57.80 or a confirmed break of the $58.10 intraday high.
-**Risk / Invalidation Level:** Exit on a close below $56.80 to protect against RSI mean reversion.
-**Initial Upside / Downside Case:** $60.00 psychological resistance within 1-3 trading sessions.
-**Key Risk:** ❌ RSI at 72.2 indicates overbought conditions which may trigger immediate profit-taking.
+**Entry Consideration:** Entry on a successful retest of the MA20 ($125.96) or a sustained hold above $129.00 on volume.
+**Risk / Invalidation Level:** Daily close below $124.00, invalidating the recent bounce and support levels.
+**Initial Upside / Downside Case:** $134.50 (MA50 resistance) within a 3-5 day timeframe.
+**Key Risk:** ❌ Broad market volatility and the 'CHOPPY' regime may lead to a failure to maintain momentum above the MA20.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 36
+- `QQQ` SHORT | IGNORE | score 42
+- `SPY` SHORT | IGNORE | score 38
 
 ---
 ## 📰 Key News (Last 24h)
 
-**MU**  ·  regulation
-  ▲ Record chip rally adds $2 trillion in combined value to Micron, Intel and AMD in second quarter  [CNBC]
+**PLTR**  ·  macro
+  ▲ Palantir shares have struggled this year. D.A. Davidson says buy the dip - CNBC  [Cnbc]
 
 **INTC**  ·  earnings
-  ▼ Meta pops 8% as company makes cloud push to sell excess AI compute power capacity - CNBC  [Cnbc]
+  ▲ Michael Burry Is Shorting the Dow’s Hottest AI Stock - Barron's  [Barrons]
 
-**JPM**  ·  earnings
-  ◆ JPMorgan's Gabriela Santos on her outlook for the second half of the year - CNBC  [Cnbc]
+**CRM**  ·  earnings
+  ▲ Inside the General Mills Earnings Beat That Has the Stock Rising - Barron's  [Barrons]
 
-**GOOGL**  ·  macro
-  ▲ Alphabet surges in Dow debut, helping lift index toward record - CNBC  [Cnbc]
+**META**  ·  macro
+  ▲ Jefferies reiterates Meta stock Buy rating on cloud business entry By Investing.com  [Investing.com Nigeria]
+  ▲ BofA reiterates Buy on Meta stock, cites AI model improvements  [Investing.com]
 
 **COST**  ·  earnings
-  ▼ Grindr is launching two products that make the stock attractive, says Morgan Stanley - CNBC  [Cnbc]
+  ▲ Costco (COST) Stock Looks Strong On Returns But Expensive On Earnings  [Yahoo Finance]
 
-**AMD**  ·  macro
-  ▼ SMCI Stock: Dell Could Get a Boost From Latest Super Micro Raid - Barron's  [Barrons]
+**AVGO**  ·  earnings
+  ▲ Broadcom (AVGO) Stock Could Be A Bargain On Cash Flow Yet Rich On Earnings  [Yahoo Finance]
 
-**AAPL**  ·  earnings
-  ◆ Micron Stock Set for Best Ever Quarter. Why 1 Analyst Sees Even More Gains. - Barron's  [Barrons]
-
-**NVDA**  ·  earnings
-  ▲ NVIDIA stock gains as SemiAnalysis sees H2 data center revenue 20% above consensus  [Investing.com]
+**NVDA**  ·  ma
+  ▼ Palantir (PLTR) Stock Jumps on Nvidia AI Deal: Is the Selloff Over?  [EBC Financial Group]
 
 ---
 ## 🛡 Research Risk Rules
