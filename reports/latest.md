@@ -1,183 +1,120 @@
-# 📊 Daily Research Report — 2026-07-03
-*Generated: 2026-07-03 15:16*
+# 📊 Daily Research Report — 2026-07-06
+*Generated: 2026-07-06 15:46*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.13%
-**SPY RSI(14):** 55.7
+**SPY:** +0.82%
+**SPY RSI(14):** 56.9
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### NFLX  $77.65 (+4.7%)
-**WATCHLIST** · LONG · EE=20 · event breakout · score=64
-> LONG. Netflix is gaining momentum as it refocuses on core business fundamentals, driving the price back above the 20-day moving average [5]. Improving sentiment
+### NVDA  $196.19 (+0.7%)
+**WATCHLIST** · LONG · EE=21 · post earnings drift · score=53
+> LONG. Strong free cash flows support an aggressive share buyback strategy [2], while Foxconn's Q2 revenue beat suggests sustained high demand for AI infrastruct
 
-### PLTR  $129.30 (+2.8%)
-**ACTIONABLE** · LONG · EE=19 · post earnings drift · score=64
-> LONG. The strategic partnership with Nvidia serves as a major bullish catalyst, reversing recent selloff pressure and driving significant valuation growth [3][4
-
-### LLY  $1213.91 (+1.9%)
-**ACTIONABLE** · LONG · EE=17 · post earnings drift · score=60
-> LONG. Expansion of Medicare coverage for GLP-1 drugs [4] and strong analyst conviction ahead of earnings [3] provide a powerful fundamental catalyst. Recent bre
+### TSLA  $412.61 (+4.9%)
+**WATCHLIST** · LONG · EE=21 · post earnings drift · score=53
+> LONG. TSLA continues to dominate retail interest as a top AI-adjacent play on popular trading platforms [3][4]. Sustained price action above key moving averages
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE (7):** `PLTR` · `MSFT` · `LLY` · `JPM` · `META` · `AAPL` · `COST`
-**🟡 WATCHLIST (5):** `NFLX` · `QQQ` · `TSM` · `SPY` · `GOOGL`
-**⚪ MONITOR (3):** `AVGO` · `NVDA` · `BAC`
-**⛔ IGNORE (5):** `TSLA` · `AMD` · `AMZN` · `IWM` · `GLD`
+**🟢 ACTIONABLE:** None today
+**🟡 WATCHLIST (2):** `NVDA` · `TSLA`
+**⚪ MONITOR (3):** `AAPL` · `PLTR` · `GOOGL`
+**⛔ IGNORE (15):** `JPM` · `AMZN` · `META` · `IWM` · `AMD` · `LLY`
 
 ---
 ## 🏆 Top Trade
 
-**PLTR — LONG | ACTIONABLE | Score: 64**
+**NVDA — LONG | WATCHLIST | Score: 53**
 
-> LONG. The strategic partnership with Nvidia serves as a major bullish catalyst, reversing recent selloff pressure and driving significant valuation growth [3][4]. Price action shows a strong recovery above the MA20 on elevated relative volume.
+> LONG. Strong free cash flows support an aggressive share buyback strategy [2], while Foxconn's Q2 revenue beat suggests sustained high demand for AI infrastructure [3].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$129.30 | $121.39 (-6.1%) | $145.11 (+12.2%) | 1R | 2R |
+| ~$196.19 | $188.60 (-3.9%) | $211.37 (+7.7%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 NFLX — ▲ LONG | WATCHLIST | Score: 64/85
+### 🟡 #1 NVDA — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $77.65 (+4.7%) | **RSI:** 42.9 | **Vol ratio:** 1.33x | **ATR:** 2.8443 | **vs MA20:** above ✅
+**Price Snapshot:** $196.19 (+0.7%) | **RSI:** 41.6 | **Vol ratio:** 0.24x | **ATR:** 6.3257 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `19.8/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `12.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `event_breakout`
-
-**What & Why:** LONG. Netflix is gaining momentum as it refocuses on core business fundamentals, driving the price back above the 20-day moving average [5]. Improving sentiment and a recovering RSI suggest a tactical bounce toward the 50-day moving average resistance.
-
-**Entry Consideration:** Enter on a hold above $77.65, utilizing the MA20 ($77.27) as immediate support.
-**Risk / Invalidation Level:** Close position if price breaks below $75.40, invalidating the recent upward move.
-**Initial Upside / Downside Case:** Initial target of $84.12 (MA50) within 3-5 trading days.
-**Key Risk:** ❌ Failure to sustain volume could lead to a bull trap at the MA20 level.
-
-### 🟢 #2 PLTR — ▲ LONG | ACTIONABLE | Score: 64/85
-
-**Price Snapshot:** $129.30 (+2.8%) | **RSI:** 48.5 | **Vol ratio:** 1.31x | **ATR:** 6.5893 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `19.2/25` | MarketConf `15.0/20` | RegimeFit `9.0/15` | RelOpp `11.9/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `20.8/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. The strategic partnership with Nvidia serves as a major bullish catalyst, reversing recent selloff pressure and driving significant valuation growth [3][4]. Price action shows a strong recovery above the MA20 on elevated relative volume.
+**What & Why:** LONG. Strong free cash flows support an aggressive share buyback strategy [2], while Foxconn's Q2 revenue beat suggests sustained high demand for AI infrastructure [3].
 
-**Entry Consideration:** Enter near current levels of $129.30 or on a minor pullback to the MA20 support at $126.00.
-**Risk / Invalidation Level:** Daily close below $124.50, which invalidates the recent bounce and support level.
-**Initial Upside / Downside Case:** Initial target of $134.50 (MA50) within the next 1-3 trading sessions.
-**Key Risk:** ❌ Broader market volatility following the NFP miss could dampen high-beta tech momentum [5].
+**Entry Consideration:** Limit order at $196.50 on confirmation of volume expansion above current levels.
+**Risk / Invalidation Level:** Daily close below $191.50 to protect against further downside momentum.
+**Initial Upside / Downside Case:** $202.36 (MA20) as initial resistance within 3 trading sessions.
+**Key Risk:** ❌ Geopolitical uncertainty affecting Foxconn's outlook and supply chain stability [3].
 
-### 🟢 #3 MSFT — ▲ LONG | ACTIONABLE | Score: 61/85
+### 🟡 #2 TSLA — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $390.49 (+1.6%) | **RSI:** 50.1 | **Vol ratio:** 1.04x | **ATR:** 13.1671 | **vs MA20:** above ✅
+**Price Snapshot:** $412.61 (+4.9%) | **RSI:** 51.9 | **Vol ratio:** 0.39x | **ATR:** 19.2429 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.4/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `11.9/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Microsoft's $2.5B investment in AI adoption and its substantial contracted revenue backlog suggest strong future growth despite workforce adjustments [1][2][5]. High profitability and bullish price targets support a recovery as the stock holds above its 20-day moving average [3][4].
-
-**Entry Consideration:** Enter near $390.50 or on a retest of the MA20 at $386.96.
-**Risk / Invalidation Level:** Daily close below $385.00 to invalidate the short-term trend support.
-**Initial Upside / Downside Case:** $407.00 (MA50) as initial resistance within 5-10 trading days.
-**Key Risk:** ❌ Execution risk regarding AI monetization and negative sentiment from workforce reductions.
-
-### 🟢 #4 LLY — ▲ LONG | ACTIONABLE | Score: 60/85
-
-**Price Snapshot:** $1213.91 (+1.9%) | **RSI:** 60.4 | **Vol ratio:** 1.0x | **ATR:** 38.4193 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.4/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `9.3/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `20.7/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Expansion of Medicare coverage for GLP-1 drugs [4] and strong analyst conviction ahead of earnings [3] provide a powerful fundamental catalyst. Recent breakout to all-time highs [5] suggests continued momentum despite broader market neutrality.
+**What & Why:** LONG. TSLA continues to dominate retail interest as a top AI-adjacent play on popular trading platforms [3][4]. Sustained price action above key moving averages suggests momentum can overcome high-profile short interest [5].
 
-**Entry Consideration:** Enter on a retest of the $1210 level or a break above $1215 with volume.
-**Risk / Invalidation Level:** Daily close below $1185 to invalidate the breakout trend.
-**Initial Upside / Downside Case:** $1260 initial target within 1-3 trading sessions.
-**Key Risk:** ❌ Potential 'sell the news' volatility or profit-taking at all-time highs.
+**Entry Consideration:** Limit order near $410.00 or on a break of $415.00 intraday high.
+**Risk / Invalidation Level:** Hard stop at $398.00, just below the MA20 support.
+**Initial Upside / Downside Case:** $435.00 target representing a test of recent psychological resistance.
+**Key Risk:** ❌ Potential for a sharp reversal if Michael Burry's short thesis gains institutional traction [1].
 
-### 🟢 #5 JPM — ▲ LONG | ACTIONABLE | Score: 59/85
+### ⚪ #3 AAPL — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $334.47 (+0.1%) | **RSI:** 68.2 | **Vol ratio:** 0.93x | **ATR:** 8.2129 | **vs MA20:** above ✅
+**Price Snapshot:** $314.16 (+1.8%) | **RSI:** 64.5 | **Vol ratio:** 0.33x | **ATR:** 8.9179 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `22.2/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `5.9/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. JPM is positioned for upside as analysts raise fair value estimates and revenue outlooks ahead of earnings [5]. The stock maintains sector leadership with expectations for another earnings beat [1][4].
-
-**Entry Consideration:** Entry at current levels ($334.47) or on a dip toward $330.00.
-**Risk / Invalidation Level:** Daily close below the 20-day moving average ($324.41).
-**Initial Upside / Downside Case:** $345.00 within the next 5-10 trading days.
-**Key Risk:** ❌ RSI at 68.2 indicates the stock is approaching overbought territory, which may limit immediate momentum.
-
-### 🟢 #6 COST — ▲ LONG | ACTIONABLE | Score: 54/85
-
-**Price Snapshot:** $951.67 (+2.9%) | **RSI:** 41.8 | **Vol ratio:** 1.22x | **ATR:** 19.2829 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `16.4/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `8.5/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `19.1/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** COST demonstrates strong post-earnings momentum and robust return metrics despite its premium valuation [5]. With an RSI of 41.8, the stock is positioned for a mean-reversion rally toward the 20-day moving average.
+**What & Why:** LONG. Apple benefits from reduced long-term supply chain uncertainty following the Broadcom deal [1] and strong production momentum evidenced by Foxconn's Q2 revenue beat [2].
 
-**Entry Consideration:** Enter on a break above $952 or a minor pullback to $945 to capture the current upward momentum.
-**Risk / Invalidation Level:** Stop loss placed at $925, just below the recent support level, to mitigate downside risk.
-**Initial Upside / Downside Case:** Initial target of $961 (MA20) within a 1-3 day timeframe.
-**Key Risk:** ❌ High valuation multiples make the stock sensitive to broader market volatility or hawkish Fed signals [4].
-
-### ⚪ #7 BAC — ▼ SHORT | MONITOR | Score: 50/85
-
-**Price Snapshot:** $58.73 (+0.6%) | **RSI:** 72.5 | **Vol ratio:** 0.81x | **ATR:** 1.205 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `15.9/25` | MarketConf `8.0/20` | RegimeFit `8.0/15` | RelOpp `8.5/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `macro_beta_rebound`
-
-**What & Why:** SHORT. BAC is technically overextended with an RSI of 72.5, while Wall Street sentiment shifts toward competitors like JPMorgan [5]. Macro uncertainty regarding mortgage rates may catalyze a mean-reversion toward the MA20 as the stock faces relative valuation pressure [2].
-
-**Entry Consideration:** Enter on a break below $58.50 or a failed retest of the $59.00 psychological level.
-**Risk / Invalidation Level:** Daily close above $59.60 to invalidate the bearish mean-reversion setup.
-**Initial Upside / Downside Case:** $56.50 (near MA20) within a 3-5 day timeframe.
-**Key Risk:** ❌ Unexpected bullish sector rotation into large-cap banks despite overbought technicals.
+**Entry Consideration:** Entry on a minor pullback toward $312.00 or a break above the intraday high of $314.50.
+**Risk / Invalidation Level:** Stop loss set at $308.00, below the recent breakout level and psychological support.
+**Initial Upside / Downside Case:** Initial target of $325.00 within a 1-3 day timeframe.
+**Key Risk:** ❌ Geopolitical tensions impacting Foxconn's manufacturing outlook could disrupt supply chain stability.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | WATCHLIST | score 62
-- `SPY` SHORT | WATCHLIST | score 54
+- `QQQ` LONG | IGNORE | score 39
 
 ---
 ## 📰 Key News (Last 24h)
 
-**MSFT**  ·  macro
-  ◆ Microsoft launches firm to help companies adopt AI with $2.5 billion - Reuters  [Reuters]
-  ▼ The Contracted Revenue Backlog Microsoft Stock Bears Keep Missing  [Trefis]
-
-**META**  ·  earnings
-  ▲ 2026 laggards shine in Wednesday's mixed stock market that kicked off the third quarter - CNBC  [Cnbc]
-  ▲ Jefferies reiterates Meta stock Buy rating on cloud business entry By Investing.com  [Investing.com Nigeria]
+**INTC**  ·  regulation
+  ▲ Nvidia’s Bargain Price Already Reflects Lost Market Share, Says Goldman - Barron's  [Barrons]
 
 **NVDA**  ·  earnings
-  ▼ Nvidia stock catalyst the market is missing  [thestreet.com]
-  ▲ 3 Market-Beating Stocks Worth Investigating  [StockStory]
+  ▲ NVDA, AAPL Stocks In Focus: Foxconn Beats Q2 Revenue Estimates But Sounds Caution On Geopolitics  [Yahoo Finance]
+  ▲ This AI Chip Stock Just Signed Massive Deals With 3 Hyperscalers, and It Still Looks Like a Great Buy Right Now (Hint: Not Nvidia or Intel)  [The Motley Fool]
 
-**COST**  ·  earnings
-  ▲ Rivian (RIVN) Stock Price Forecast 2026: Q2 Beat Raises Guidance to 70,000 — Short Setup Intact?  [TradingKey]
+**PLTR**  ·  earnings
+  ▲ Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129?  [TradingKey]
 
-**MU**  ·  macro
-  ▲ Meta Jumps 9.3% on Plans for AI Cloud Infrastructure Business - Yahoo Finance  [Finance]
+**META**  ·  macro
+  ▲ Meta Platforms (META) Stock Gains Momentum on Cloud Infrastructure Strategy  [Blockonomi]
+  ▼ Meta CEO sends warning on its AI goal before earnings  [thestreet.com]
+
+**LLY**  ·  earnings
+  ▲ Eli Lilly (LLY) Stock Surges Past $1,200 on Blockbuster Earnings and Oral GLP-1 Launch  [Blockonomi]
+
+**JPM**  ·  earnings
+  ▲ JPMorgan stock: $50 billion buyback gives JPM a July earnings yardstick  [TechStock²]
 
 ---
 ## 🛡 Research Risk Rules
