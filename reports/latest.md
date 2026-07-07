@@ -1,120 +1,118 @@
-# 📊 Daily Research Report — 2026-07-06
-*Generated: 2026-07-06 15:46*
+# 📊 Daily Research Report — 2026-07-07
+*Generated: 2026-07-07 15:30*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.82%
-**SPY RSI(14):** 56.9
+**SPY:** -0.70%
+**SPY RSI(14):** 45.3
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### NVDA  $196.19 (+0.7%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=53
-> LONG. Strong free cash flows support an aggressive share buyback strategy [2], while Foxconn's Q2 revenue beat suggests sustained high demand for AI infrastruct
-
-### TSLA  $412.61 (+4.9%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=53
-> LONG. TSLA continues to dominate retail interest as a top AI-adjacent play on popular trading platforms [3][4]. Sustained price action above key moving averages
+### JPM  $338.54 (+0.2%)
+**WATCHLIST** · LONG · EE=22 · post earnings drift · score=54
+> LONG. JPM shows relative strength against a weak SPY, driven by expectations of a trading revenue surge from IPO activity and a massive $50 billion buyback prog
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (2):** `NVDA` · `TSLA`
-**⚪ MONITOR (3):** `AAPL` · `PLTR` · `GOOGL`
-**⛔ IGNORE (15):** `JPM` · `AMZN` · `META` · `IWM` · `AMD` · `LLY`
+**🟡 WATCHLIST (1):** `JPM`
+**⚪ MONITOR (2):** `BAC` · `PLTR`
+**⛔ IGNORE (17):** `NFLX` · `MSFT` · `GOOGL` · `AAPL` · `LLY` · `META`
 
 ---
 ## 🏆 Top Trade
 
-**NVDA — LONG | WATCHLIST | Score: 53**
+**JPM — LONG | WATCHLIST | Score: 54**
 
-> LONG. Strong free cash flows support an aggressive share buyback strategy [2], while Foxconn's Q2 revenue beat suggests sustained high demand for AI infrastructure [3].
+> LONG. JPM shows relative strength against a weak SPY, driven by expectations of a trading revenue surge from IPO activity and a massive $50 billion buyback program [2][3]. These catalysts provide a fundamental floor and positive momentum heading into the Q2 earnings cycle.
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$196.19 | $188.60 (-3.9%) | $211.37 (+7.7%) | 1R | 2R |
+| ~$338.54 | $329.10 (-2.8%) | $357.40 (+5.6%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 NVDA — ▲ LONG | WATCHLIST | Score: 53/85
+### 🟡 #1 JPM — ▲ LONG | WATCHLIST | Score: 54/85
 
-**Price Snapshot:** $196.19 (+0.7%) | **RSI:** 41.6 | **Vol ratio:** 0.24x | **ATR:** 6.3257 | **vs MA20:** below ⚠️
+**Price Snapshot:** $338.54 (+0.2%) | **RSI:** 68.9 | **Vol ratio:** 0.23x | **ATR:** 7.8622 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.8/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Strong free cash flows support an aggressive share buyback strategy [2], while Foxconn's Q2 revenue beat suggests sustained high demand for AI infrastructure [3].
-
-**Entry Consideration:** Limit order at $196.50 on confirmation of volume expansion above current levels.
-**Risk / Invalidation Level:** Daily close below $191.50 to protect against further downside momentum.
-**Initial Upside / Downside Case:** $202.36 (MA20) as initial resistance within 3 trading sessions.
-**Key Risk:** ❌ Geopolitical uncertainty affecting Foxconn's outlook and supply chain stability [3].
-
-### 🟡 #2 TSLA — ▲ LONG | WATCHLIST | Score: 53/85
-
-**Price Snapshot:** $412.61 (+4.9%) | **RSI:** 51.9 | **Vol ratio:** 0.39x | **ATR:** 19.2429 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.7/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `22.0/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. TSLA continues to dominate retail interest as a top AI-adjacent play on popular trading platforms [3][4]. Sustained price action above key moving averages suggests momentum can overcome high-profile short interest [5].
+**What & Why:** LONG. JPM shows relative strength against a weak SPY, driven by expectations of a trading revenue surge from IPO activity and a massive $50 billion buyback program [2][3]. These catalysts provide a fundamental floor and positive momentum heading into the Q2 earnings cycle.
 
-**Entry Consideration:** Limit order near $410.00 or on a break of $415.00 intraday high.
-**Risk / Invalidation Level:** Hard stop at $398.00, just below the MA20 support.
-**Initial Upside / Downside Case:** $435.00 target representing a test of recent psychological resistance.
-**Key Risk:** ❌ Potential for a sharp reversal if Michael Burry's short thesis gains institutional traction [1].
+**Entry Consideration:** Enter on a minor pullback toward $335.00 or a confirmed breakout above $340.00.
+**Risk / Invalidation Level:** Daily close below the 20-day moving average of $325.74.
+**Initial Upside / Downside Case:** $350.00 initial target within a 10-day window leading into earnings.
+**Key Risk:** ❌ RSI of 68.9 indicates the stock is near overbought levels, which may limit immediate upside without consolidation.
 
-### ⚪ #3 AAPL — ▲ LONG | MONITOR | Score: 51/85
+### ⚪ #2 BAC — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $314.16 (+1.8%) | **RSI:** 64.5 | **Vol ratio:** 0.33x | **ATR:** 8.9179 | **vs MA20:** above ✅
+**Price Snapshot:** $60.19 (+0.5%) | **RSI:** 75.8 | **Vol ratio:** 0.3x | **ATR:** 1.1939 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.1/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `19.7/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `relative_strength_long`
+
+**What & Why:** LONG. Anticipated Q2 earnings growth from trading surges and IPO activity provides a strong fundamental catalyst [1]. Internal analyst optimism regarding key product launches further supports a constructive outlook for the bank's advisory and trading arms [2].
+
+**Entry Consideration:** Limit entry near $60.00 or on a confirmed break above $60.50.
+**Risk / Invalidation Level:** Close below $58.75 to mitigate downside risk from overbought conditions.
+**Initial Upside / Downside Case:** $62.50 within 3-5 trading sessions.
+**Key Risk:** ❌ RSI at 75.8 indicates overbought territory, which may trigger a mean-reversion pullback.
+
+### ⚪ #3 PLTR — ▲ LONG | MONITOR | Score: 50/85
+
+**Price Snapshot:** $135.40 (+2.2%) | **RSI:** 50.6 | **Vol ratio:** 0.48x | **ATR:** 6.6199 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.3/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Apple benefits from reduced long-term supply chain uncertainty following the Broadcom deal [1] and strong production momentum evidenced by Foxconn's Q2 revenue beat [2].
+**What & Why:** LONG. Palantir demonstrates exceptional fundamental strength with an 85% revenue growth forecast and a Rule of 40 score of 145% [3]. Momentum is further supported by strategic NVIDIA Sovereign AI and defense-sector deals [5].
 
-**Entry Consideration:** Entry on a minor pullback toward $312.00 or a break above the intraday high of $314.50.
-**Risk / Invalidation Level:** Stop loss set at $308.00, below the recent breakout level and psychological support.
-**Initial Upside / Downside Case:** Initial target of $325.00 within a 1-3 day timeframe.
-**Key Risk:** ❌ Geopolitical tensions impacting Foxconn's manufacturing outlook could disrupt supply chain stability.
+**Entry Consideration:** Enter on a successful retest of the MA50 ($134.06) or on a break above $136.00 to confirm relative strength.
+**Risk / Invalidation Level:** Daily close below the MA20 at $125.51.
+**Initial Upside / Downside Case:** $145.00 within a 5-10 day tactical window.
+**Key Risk:** ❌ Extreme valuation multiples may lead to sharp pullbacks if broader market sentiment continues to deteriorate [1].
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 39
+- `QQQ` LONG | IGNORE | score 43
 
 ---
 ## 📰 Key News (Last 24h)
 
-**INTC**  ·  regulation
-  ▲ Nvidia’s Bargain Price Already Reflects Lost Market Share, Says Goldman - Barron's  [Barrons]
+**GS**  ·  earnings
+  ▲ Trading surge, helped by SpaceX IPO, seen lifting Wall St banks' second-quarter earnings - Reuters  [Reuters]
 
-**NVDA**  ·  earnings
-  ▲ NVDA, AAPL Stocks In Focus: Foxconn Beats Q2 Revenue Estimates But Sounds Caution On Geopolitics  [Yahoo Finance]
-  ▲ This AI Chip Stock Just Signed Massive Deals With 3 Hyperscalers, and It Still Looks Like a Great Buy Right Now (Hint: Not Nvidia or Intel)  [The Motley Fool]
+**META**  ·  earnings
+  ▲ Dell Stock: Trump Wants You to Buy a Computer. Investors Are Buying Its Shares. - Barron's  [Barrons]
 
-**PLTR**  ·  earnings
-  ▲ Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129?  [TradingKey]
+**MSFT**  ·  earnings
+  ▲ We see Microsoft accelerating growth in next few years, says Wolfe's Zukin - CNBC  [Cnbc]
 
-**META**  ·  macro
-  ▲ Meta Platforms (META) Stock Gains Momentum on Cloud Infrastructure Strategy  [Blockonomi]
-  ▼ Meta CEO sends warning on its AI goal before earnings  [thestreet.com]
+**AMZN**  ·  macro
+  ▲ Market Open: July 7, 2026 - CNBC  [Cnbc]
 
-**LLY**  ·  earnings
-  ▲ Eli Lilly (LLY) Stock Surges Past $1,200 on Blockbuster Earnings and Oral GLP-1 Launch  [Blockonomi]
+**AVGO**  ·  ma
+  ▲ Blockbuster AI Deal Shows Why Honeywell Had to Break Up - Barron's  [Barrons]
 
-**JPM**  ·  earnings
-  ▲ JPMorgan stock: $50 billion buyback gives JPM a July earnings yardstick  [TechStock²]
+**COST**  ·  macro
+  ▼ Mizuho reiterates Walmart stock rating on planned price cuts  [Investing.com]
+  ▼ Truist cuts Carlisle stock price target on input cost inflation  [Investing.com]
+
+**INTC**  ·  earnings
+  ▼ Intel and Applied Materials Dive 10%, AMD Craters 8% as Samsung Earnings Trigger Chip Selloff  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
