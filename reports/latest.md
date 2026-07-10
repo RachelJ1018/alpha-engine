@@ -1,100 +1,104 @@
-# 📊 Daily Research Report — 2026-07-09
-*Generated: 2026-07-09 15:36*
+# 📊 Daily Research Report — 2026-07-10
+*Generated: 2026-07-10 15:21*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.57%
-**SPY RSI(14):** 58.3
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** +0.14%
+**SPY RSI(14):** 55.1
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### AMZN  $241.24 (-1.0%)
-**WATCHLIST** · LONG · EE=22 · post earnings drift · score=52
-> LONG. Amazon's $25 billion bond issuance [3] signals aggressive capital allocation toward AI infrastructure as deployment becomes a critical corporate priority 
+### SOFI  $18.80 (+1.0%)
+**WATCHLIST** · LONG · EE=20 · general setup · score=54
+> LONG. SOFI shows constructive price action above its MA20 and MA50, potentially benefiting from a higher-for-longer rate environment as global inflationary pres
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `AMZN`
-**⚪ MONITOR (1):** `ARM`
-**⛔ IGNORE (18):** `JPM` · `COIN` · `AVGO` · `TSLA` · `COST` · `IWM`
+**🟡 WATCHLIST (1):** `SOFI`
+**⚪ MONITOR (1):** `JPM`
+**⛔ IGNORE (18):** `NVDA` · `AMD` · `TSM` · `META` · `PLTR` · `TSLA`
 
 ---
 ## 🏆 Top Trade
 
-**AMZN — LONG | WATCHLIST | Score: 52**
+**SOFI — LONG | WATCHLIST | Score: 54**
 
-> LONG. Amazon's $25 billion bond issuance [3] signals aggressive capital allocation toward AI infrastructure as deployment becomes a critical corporate priority [1]. Technical support near the MA20 ($239.53) provides a high-probability entry point for a long position despite the current intraday lag.
+> LONG. SOFI shows constructive price action above its MA20 and MA50, potentially benefiting from a higher-for-longer rate environment as global inflationary pressures persist [1]. The current trend suggests a continuation of the bullish momentum despite the choppy broader market regime.
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$241.24 | $231.65 (-4.0%) | $260.43 (+8.0%) | 1R | 2R |
+| ~$18.80 | $17.67 (-6.0%) | $21.07 (+12.1%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 AMZN — ▲ LONG | WATCHLIST | Score: 52/85
+### 🟡 #1 SOFI — ▲ LONG | WATCHLIST | Score: 54/85
 
-**Price Snapshot:** $241.24 (-1.0%) | **RSI:** 53.4 | **Vol ratio:** 0.23x | **ATR:** 7.9957 | **vs MA20:** above ✅
+**Price Snapshot:** $18.80 (+1.0%) | **RSI:** 58.5 | **Vol ratio:** 0.57x | **ATR:** 0.9446 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.6/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `20.0/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `6.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
-**Strategy Bucket:** `post_earnings_drift`
+**Strategy Bucket:** `general_setup`
 
-**What & Why:** LONG. Amazon's $25 billion bond issuance [3] signals aggressive capital allocation toward AI infrastructure as deployment becomes a critical corporate priority [1]. Technical support near the MA20 ($239.53) provides a high-probability entry point for a long position despite the current intraday lag.
+**What & Why:** LONG. SOFI shows constructive price action above its MA20 and MA50, potentially benefiting from a higher-for-longer rate environment as global inflationary pressures persist [1]. The current trend suggests a continuation of the bullish momentum despite the choppy broader market regime.
 
-**Entry Consideration:** Limit orders near MA20 support ($239.50 - $240.50) to capitalize on intraday weakness.
-**Risk / Invalidation Level:** Daily close below $238.00 to invalidate the short-term moving average support.
-**Initial Upside / Downside Case:** $248.00 initial target representing a mean reversion toward the MA50 over 2-5 days.
-**Key Risk:** ❌ Market perception of increased debt load from the $25B bond offering in a neutral regime.
+**Entry Consideration:** Limit entry between $18.50 and $18.75 to align with the MA20 support level.
+**Risk / Invalidation Level:** Hard stop on a daily close below $17.70 (MA20) to invalidate the short-term trend.
+**Initial Upside / Downside Case:** $20.00 psychological resistance level within a 5-10 day horizon.
+**Key Risk:** ❌ Low relative volume (0.57x) indicates a lack of institutional participation, increasing the risk of a false breakout.
 
-### ⚪ #2 ARM — ▲ LONG | MONITOR | Score: 50/85
+### ⚪ #2 JPM — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $333.22 (+11.0%) | **RSI:** 32.7 | **Vol ratio:** 0.34x | **ATR:** 32.7462 | **vs MA20:** below ⚠️
+**Price Snapshot:** $337.31 (+0.6%) | **RSI:** 64.0 | **Vol ratio:** 0.12x | **ATR:** 6.8946 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.9/25` | MarketConf `8.0/20` | RegimeFit `9.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `20.1/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `0.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
-**Strategy Bucket:** `post_earnings_drift`
+**Strategy Bucket:** `general_setup`
 
-**What & Why:** LONG. ARM's sustained licensing momentum continues to drive revenue growth, providing a strong fundamental catalyst for a recovery [5]. The current RSI of 32.7 indicates an oversold condition, suggesting a high probability of a technical bounce toward the MA20.
+**What & Why:** LONG. JPM's strategic positioning as a leader in AI-driven banking insights [3] and global macro research [4] reinforces its market dominance and premium valuation. The stock maintains a strong bullish posture above its 20-day and 50-day moving averages despite a choppy broader market.
 
-**Entry Consideration:** Enter on a break above $335.00 or a successful retest of the $330.00 support level.
-**Risk / Invalidation Level:** Close position if price breaks below $315.00, invalidating the immediate recovery thesis.
-**Initial Upside / Downside Case:** Initial target of $356.00 (MA20) within 1-3 trading sessions.
-**Key Risk:** ❌ Broader institutional profit-taking in AI-related chipmakers could limit upside momentum [3].
+**Entry Consideration:** Limit order near $335.50 to capture a minor retracement toward the 20-day moving average.
+**Risk / Invalidation Level:** Daily close below $329.50, invalidating the short-term support level.
+**Initial Upside / Downside Case:** $345.00 within 5-10 trading days, targeting psychological resistance.
+**Key Risk:** ❌ Extremely low relative volume (0.12x) suggests a lack of institutional conviction in the current move.
+
+---
+## 📈 Market Instruments
+
+- `QQQ` LONG | IGNORE | score 36
+- `SPY` LONG | IGNORE | score 34
 
 ---
 ## 📰 Key News (Last 24h)
 
+**INTC**  ·  earnings
+  ▲ Meta debuts Muse Spark 1.1 with preview open to developers - Reuters  [Reuters]
+  ▲ Nvidia Stock Is Cheaper Than It's Been Since the AI Boom Began - Yahoo Finance  [Finance]
+
+**JPM**  ·  macro
+  ▲ Europe's banks and industrials to benefit most from AI trade: JPM Private Bank - CNBC  [Cnbc]
+  ▲ El Nino could lift inflation by 30 basis points across Asia: JPM - CNBC  [Cnbc]
+
+**AAPL**  ·  macro
+  ▲ Apple shares approach record high - CNBC  [Cnbc]
+
 **MSFT**  ·  earnings
   ▲ How SpaceX Stock Can Hit $900 - Barron's  [Barrons]
 
-**INTC**  ·  earnings
-  ▲ We're exiting our position in an AI chipmaker to lock in big gains - CNBC  [Cnbc]
+**META**  ·  macro
+  ▲ Meta Takes Aim at Google and OpenAI - Yahoo Finance  [Finance]
 
-**AVGO**  ·  ma
-  ▲ Apple’s $30 Billion Chip Deal Boosts Broadcom Stock - Barron's  [Barrons]
-
-**AMZN**  ·  macro
-  ▲ AI deployment is now as much of a CFO decision as a CTO one: JP Morgan - CNBC  [Cnbc]
-
-**AAPL**  ·  macro
-  ▲ Market Open: July 8, 2026 - CNBC  [Cnbc]
-
-**PLTR**  ·  earnings
-  ◆ The Pre-Market Rundown 2: July 9, 2026 - CNBC  [Cnbc]
-
-**NVDA**  ·  macro
-  ▲ Bitcoin pullback keeps July rally alive as altcoin breadth weakens - KITCO  [Kitco]
-
-**GOOGL**  ·  macro
-  ▼ FDI Insider Unveils Q2 Edition and Celebrates 2026 Award Winners - Scott Coop  [Scottcoop]
+**TSM**  ·  earnings
+  ▲ Ibex Wealth Advisors Acquires 3,593 Shares of Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat  [Marketbeat]
 
 ---
 ## 🛡 Research Risk Rules
