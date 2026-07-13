@@ -1,104 +1,117 @@
-# 📊 Daily Research Report — 2026-07-10
-*Generated: 2026-07-10 15:21*
+# 📊 Daily Research Report — 2026-07-13
+*Generated: 2026-07-13 15:28*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.14%
-**SPY RSI(14):** 55.1
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.38%
+**SPY RSI(14):** 56.2
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### SOFI  $18.80 (+1.0%)
-**WATCHLIST** · LONG · EE=20 · general setup · score=54
-> LONG. SOFI shows constructive price action above its MA20 and MA50, potentially benefiting from a higher-for-longer rate environment as global inflationary pres
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `SOFI`
-**⚪ MONITOR (1):** `JPM`
-**⛔ IGNORE (18):** `NVDA` · `AMD` · `TSM` · `META` · `PLTR` · `TSLA`
-
----
-## 🏆 Top Trade
-
-**SOFI — LONG | WATCHLIST | Score: 54**
-
-> LONG. SOFI shows constructive price action above its MA20 and MA50, potentially benefiting from a higher-for-longer rate environment as global inflationary pressures persist [1]. The current trend suggests a continuation of the bullish momentum despite the choppy broader market regime.
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$18.80 | $17.67 (-6.0%) | $21.07 (+12.1%) | 1R | 2R |
+**⚪ MONITOR (4):** `NFLX` · `BAC` · `GLD` · `JPM`
+**⛔ IGNORE (16):** `AMD` · `AAPL` · `GOOGL` · `UNH` · `AMZN` · `LLY`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 SOFI — ▲ LONG | WATCHLIST | Score: 54/85
+### ⚪ #1 NFLX — ▲ LONG | MONITOR | Score: 52/85
 
-**Price Snapshot:** $18.80 (+1.0%) | **RSI:** 58.5 | **Vol ratio:** 0.57x | **ATR:** 0.9446 | **vs MA20:** above ✅
+**Price Snapshot:** $74.69 (+1.8%) | **RSI:** 54.7 | **Vol ratio:** 0.33x | **ATR:** 2.4821 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `20.0/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `6.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `21.0/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
-**Strategy Bucket:** `general_setup`
+**Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. SOFI shows constructive price action above its MA20 and MA50, potentially benefiting from a higher-for-longer rate environment as global inflationary pressures persist [1]. The current trend suggests a continuation of the bullish momentum despite the choppy broader market regime.
+**What & Why:** LONG. NFLX exhibits relative strength (+1.81%) against a declining market as it enters a high-sentiment earnings reporting window [1]. The strong EventEdge score suggests a tactical opportunity for a pre-earnings run-up toward key moving averages.
 
-**Entry Consideration:** Limit entry between $18.50 and $18.75 to align with the MA20 support level.
-**Risk / Invalidation Level:** Hard stop on a daily close below $17.70 (MA20) to invalidate the short-term trend.
-**Initial Upside / Downside Case:** $20.00 psychological resistance level within a 5-10 day horizon.
-**Key Risk:** ❌ Low relative volume (0.57x) indicates a lack of institutional participation, increasing the risk of a false breakout.
+**Entry Consideration:** Limit order at $75.30 to capture momentum following a break of the MA20.
+**Risk / Invalidation Level:** Stop loss set at $73.40 to protect against a reversal below the current pivot.
+**Initial Upside / Downside Case:** $82.00 (MA50) within the 1-3 day pre-earnings window.
+**Key Risk:** ❌ Systemic market weakness (SPY -0.38%) dragging down high-beta tech names.
 
-### ⚪ #2 JPM — ▲ LONG | MONITOR | Score: 51/85
+### ⚪ #2 BAC — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $337.31 (+0.6%) | **RSI:** 64.0 | **Vol ratio:** 0.12x | **ATR:** 6.8946 | **vs MA20:** above ✅
+**Price Snapshot:** $59.01 (-1.1%) | **RSI:** 59.1 | **Vol ratio:** 0.22x | **ATR:** 1.1168 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.1/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `0.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `20.0/25` | MarketConf `11.0/20` | RegimeFit `7.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
-**Strategy Bucket:** `general_setup`
+**Strategy Bucket:** `relative_strength_long`
 
-**What & Why:** LONG. JPM's strategic positioning as a leader in AI-driven banking insights [3] and global macro research [4] reinforces its market dominance and premium valuation. The stock maintains a strong bullish posture above its 20-day and 50-day moving averages despite a choppy broader market.
+**What & Why:** LONG. BAC is positioned for revenue growth driven by investment banking activity and market volatility [1], with high anticipation ahead of its earnings report this week [3].
 
-**Entry Consideration:** Limit order near $335.50 to capture a minor retracement toward the 20-day moving average.
-**Risk / Invalidation Level:** Daily close below $329.50, invalidating the short-term support level.
-**Initial Upside / Downside Case:** $345.00 within 5-10 trading days, targeting psychological resistance.
-**Key Risk:** ❌ Extremely low relative volume (0.12x) suggests a lack of institutional conviction in the current move.
+**Entry Consideration:** Entry near $58.50-$59.00, seeking support above the MA20 ($57.92).
+**Risk / Invalidation Level:** Daily close below $57.50, invalidating the short-term moving average support.
+**Initial Upside / Downside Case:** $61.50 initial target within 1-3 trading days ahead of earnings.
+**Key Risk:** ❌ Broader market weakness or negative sentiment spillover from peer bank reports.
+
+### ⚪ #3 GLD — ▼ SHORT | MONITOR | Score: 51/85
+
+**Price Snapshot:** $368.35 (-2.3%) | **RSI:** 37.8 | **Vol ratio:** 0.42x | **ATR:** 7.4171 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `16.6/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `macro_beta_rebound`
+
+**What & Why:** SHORT. GLD is exhibiting strong bearish momentum, trading significantly below its MA20 and MA50 following a -2.30% decline and a negative sentiment score of -0.66. Despite mentions of sector stability in [1] and [2], the technical breakdown suggests further downside is likely.
+
+**Entry Consideration:** Enter on a minor retracement toward $370.00 or a break below the daily low.
+**Risk / Invalidation Level:** Close position if price recovers above the 20-day moving average of $378.53.
+**Initial Upside / Downside Case:** Initial target of $360.00 within a 3-5 day timeframe.
+**Key Risk:** ❌ An RSI of 37.8 suggests the asset is nearing oversold conditions, which could trigger a short-covering bounce.
+
+### ⚪ #4 JPM — ▲ LONG | MONITOR | Score: 50/85
+
+**Price Snapshot:** $332.95 (-1.1%) | **RSI:** 53.3 | **Vol ratio:** 0.2x | **ATR:** 6.7759 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `22.2/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. JPM is positioned for a revenue surge driven by investment banking fees from high-profile IPOs and increased trading volatility [1]. The upcoming Q2 earnings report serves as a primary catalyst for a pre-event run-up as the stock maintains support above its 20-day moving average [3, 4].
+
+**Entry Consideration:** Entry near $330.50 (MA20) on the current pullback to maximize risk/reward.
+**Risk / Invalidation Level:** Daily close below $325.00, invalidating the short-term uptrend and MA20 support.
+**Initial Upside / Downside Case:** $345.00 initial target, aiming for a 1-2 week timeframe leading into earnings.
+**Key Risk:** ❌ Continued broader market weakness (SPY -0.38%) dragging down the financial sector despite strong fundamentals.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 36
-- `SPY` LONG | IGNORE | score 34
+- `QQQ` SHORT | IGNORE | score 34
 
 ---
 ## 📰 Key News (Last 24h)
 
-**INTC**  ·  earnings
-  ▲ Meta debuts Muse Spark 1.1 with preview open to developers - Reuters  [Reuters]
-  ▲ Nvidia Stock Is Cheaper Than It's Been Since the AI Boom Began - Yahoo Finance  [Finance]
+**COST**  ·  macro
+  ▼ Volkswagen CEO threatens 50,000 more job cuts in memo to staff - Reuters  [Reuters]
 
-**JPM**  ·  macro
-  ▲ Europe's banks and industrials to benefit most from AI trade: JPM Private Bank - CNBC  [Cnbc]
-  ▲ El Nino could lift inflation by 30 basis points across Asia: JPM - CNBC  [Cnbc]
+**NVDA**  ·  earnings
+  ▲ Chip stocks hit rocky patch. What's next? - Reuters  [Reuters]
 
-**AAPL**  ·  macro
-  ▲ Apple shares approach record high - CNBC  [Cnbc]
+**GS**  ·  earnings
+  ▲ Big banks poised to report booming revenue propelled by SpaceX IPO, Iran war volatility - CNBC  [Cnbc]
+  ▲ Earnings playbook: Reporting season gets underway with JPMorgan Chase, Netflix on deck - CNBC  [Cnbc]
 
-**MSFT**  ·  earnings
-  ▲ How SpaceX Stock Can Hit $900 - Barron's  [Barrons]
-
-**META**  ·  macro
-  ▲ Meta Takes Aim at Google and OpenAI - Yahoo Finance  [Finance]
+**MACRO**  ·  earnings
+  ▲ As SpaceX stock dips near IPO price, bulls like BofA's Epstein say buy on 'launch leadership'  [Yahoo Finance]
 
 **TSM**  ·  earnings
-  ▲ Ibex Wealth Advisors Acquires 3,593 Shares of Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat  [Marketbeat]
+  ▲ Procyon Advisors LLC Decreases Holdings in Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat  [Marketbeat]
+
+**AAPL**  ·  macro
+  ▼ Meta scraps AI image feature days after launch - iTnews  [Itnews]
+
+**AMZN**  ·  earnings
+  ▼ Amazon.com, Inc. $AMZN Stake Boosted by Twin City Private Wealth LLC - InsuranceNewsNet  [Insurancenewsnet]
 
 ---
 ## 🛡 Research Risk Rules
