@@ -1,117 +1,134 @@
-# 📊 Daily Research Report — 2026-07-13
-*Generated: 2026-07-13 15:28*
+# 📊 Daily Research Report — 2026-07-14
+*Generated: 2026-07-14 15:06*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.38%
-**SPY RSI(14):** 56.2
+**SPY:** +0.43%
+**SPY RSI(14):** 66.4
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### PLTR  $133.22 (+2.5%)
+**ACTIONABLE** · LONG · EE=21 · post earnings drift · score=58
+> LONG. Palantir's 104% U.S. revenue growth [1] and potential undervaluation on a cash-flow basis [4] provide a strong fundamental floor ahead of the August 3 ear
+
+### JPM  $344.31 (+2.9%)
+**ACTIONABLE** · LONG · EE=22 · post earnings drift · score=58
+> LONG. JPM's 27% revenue jump and surge in investment banking revenue provide the fundamental catalyst to sustain the breakout above $343 resistance [3, 5]. Stro
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE:** None today
-**⚪ MONITOR (4):** `NFLX` · `BAC` · `GLD` · `JPM`
-**⛔ IGNORE (16):** `AMD` · `AAPL` · `GOOGL` · `UNH` · `AMZN` · `LLY`
+**🟢 ACTIONABLE (2):** `PLTR` · `JPM`
+**⚪ MONITOR (3):** `NVDA` · `GS` · `BAC`
+**⛔ IGNORE (15):** `NFLX` · `TSM` · `AMD` · `GOOGL` · `AVGO` · `ARM`
+
+---
+## 🏆 Top Trade
+
+**PLTR — LONG | ACTIONABLE | Score: 58**
+
+> LONG. Palantir's 104% U.S. revenue growth [1] and potential undervaluation on a cash-flow basis [4] provide a strong fundamental floor ahead of the August 3 earnings catalyst [5]. The price holding above the MA50 ($132.98) suggests a bullish trend continuation despite high earnings multiples.
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$133.22 | $124.56 (-6.5%) | $150.56 (+13.0%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 NFLX — ▲ LONG | MONITOR | Score: 52/85
+### 🟢 #1 PLTR — ▲ LONG | ACTIONABLE | Score: 58/85
 
-**Price Snapshot:** $74.69 (+1.8%) | **RSI:** 54.7 | **Vol ratio:** 0.33x | **ATR:** 2.4821 | **vs MA20:** below ⚠️
+**Price Snapshot:** $133.22 (+2.5%) | **RSI:** 66.3 | **Vol ratio:** 0.53x | **ATR:** 7.221 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.0/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. NFLX exhibits relative strength (+1.81%) against a declining market as it enters a high-sentiment earnings reporting window [1]. The strong EventEdge score suggests a tactical opportunity for a pre-earnings run-up toward key moving averages.
-
-**Entry Consideration:** Limit order at $75.30 to capture momentum following a break of the MA20.
-**Risk / Invalidation Level:** Stop loss set at $73.40 to protect against a reversal below the current pivot.
-**Initial Upside / Downside Case:** $82.00 (MA50) within the 1-3 day pre-earnings window.
-**Key Risk:** ❌ Systemic market weakness (SPY -0.38%) dragging down high-beta tech names.
-
-### ⚪ #2 BAC — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $59.01 (-1.1%) | **RSI:** 59.1 | **Vol ratio:** 0.22x | **ATR:** 1.1168 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.0/25` | MarketConf `11.0/20` | RegimeFit `7.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `relative_strength_long`
-
-**What & Why:** LONG. BAC is positioned for revenue growth driven by investment banking activity and market volatility [1], with high anticipation ahead of its earnings report this week [3].
-
-**Entry Consideration:** Entry near $58.50-$59.00, seeking support above the MA20 ($57.92).
-**Risk / Invalidation Level:** Daily close below $57.50, invalidating the short-term moving average support.
-**Initial Upside / Downside Case:** $61.50 initial target within 1-3 trading days ahead of earnings.
-**Key Risk:** ❌ Broader market weakness or negative sentiment spillover from peer bank reports.
-
-### ⚪ #3 GLD — ▼ SHORT | MONITOR | Score: 51/85
-
-**Price Snapshot:** $368.35 (-2.3%) | **RSI:** 37.8 | **Vol ratio:** 0.42x | **ATR:** 7.4171 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `16.6/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `macro_beta_rebound`
-
-**What & Why:** SHORT. GLD is exhibiting strong bearish momentum, trading significantly below its MA20 and MA50 following a -2.30% decline and a negative sentiment score of -0.66. Despite mentions of sector stability in [1] and [2], the technical breakdown suggests further downside is likely.
-
-**Entry Consideration:** Enter on a minor retracement toward $370.00 or a break below the daily low.
-**Risk / Invalidation Level:** Close position if price recovers above the 20-day moving average of $378.53.
-**Initial Upside / Downside Case:** Initial target of $360.00 within a 3-5 day timeframe.
-**Key Risk:** ❌ An RSI of 37.8 suggests the asset is nearing oversold conditions, which could trigger a short-covering bounce.
-
-### ⚪ #4 JPM — ▲ LONG | MONITOR | Score: 50/85
-
-**Price Snapshot:** $332.95 (-1.1%) | **RSI:** 53.3 | **Vol ratio:** 0.2x | **ATR:** 6.7759 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `22.2/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `20.9/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `5.6/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. JPM is positioned for a revenue surge driven by investment banking fees from high-profile IPOs and increased trading volatility [1]. The upcoming Q2 earnings report serves as a primary catalyst for a pre-event run-up as the stock maintains support above its 20-day moving average [3, 4].
+**What & Why:** LONG. Palantir's 104% U.S. revenue growth [1] and potential undervaluation on a cash-flow basis [4] provide a strong fundamental floor ahead of the August 3 earnings catalyst [5]. The price holding above the MA50 ($132.98) suggests a bullish trend continuation despite high earnings multiples.
 
-**Entry Consideration:** Entry near $330.50 (MA20) on the current pullback to maximize risk/reward.
-**Risk / Invalidation Level:** Daily close below $325.00, invalidating the short-term uptrend and MA20 support.
-**Initial Upside / Downside Case:** $345.00 initial target, aiming for a 1-2 week timeframe leading into earnings.
-**Key Risk:** ❌ Continued broader market weakness (SPY -0.38%) dragging down the financial sector despite strong fundamentals.
+**Entry Consideration:** Limit order near $133.00 (MA50 support) or on a confirmed break above $134.50.
+**Risk / Invalidation Level:** Hard stop below the MA20 at $125.13 to protect against a trend reversal.
+**Initial Upside / Downside Case:** $142.00 initial target / 1-2 week timeframe leading into earnings.
+**Key Risk:** ❌ RSI of 66.3 suggests the stock is nearing overbought levels, increasing the risk of a short-term pullback.
+
+### 🟢 #2 JPM — ▲ LONG | ACTIONABLE | Score: 58/85
+
+**Price Snapshot:** $344.31 (+2.9%) | **RSI:** 61.6 | **Vol ratio:** 0.57x | **ATR:** 7.5514 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `22.5/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `3.6/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. JPM's 27% revenue jump and surge in investment banking revenue provide the fundamental catalyst to sustain the breakout above $343 resistance [3, 5]. Strong profitability rankings and AI innovation further support a bullish continuation following the earnings surprise [2, 4].
+
+**Entry Consideration:** Enter on a retest of the $343.50-$344.00 level to confirm the prior resistance as new support.
+**Risk / Invalidation Level:** Close below $338.00 or a failure to hold the $343 breakout level on high volume.
+**Initial Upside / Downside Case:** $355.00 - $360.00 within 3-5 trading days.
+**Key Risk:** ❌ Macroeconomic volatility from upcoming CPI data could reverse post-earnings gains.
+
+### ⚪ #3 NVDA — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $207.71 (+2.0%) | **RSI:** 57.6 | **Vol ratio:** 0.21x | **ATR:** 6.6486 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Nvidia's momentum is supported by the dismissal of Kyber delay reports [1] and anticipated positive read-throughs from ASML's upgraded guidance [2].
+
+**Entry Consideration:** Enter on a confirmed break above the MA50 ($209.13) or a retest of the MA20 ($202.01).
+**Risk / Invalidation Level:** Daily close below the $200.00 psychological level and MA20 support.
+**Initial Upside / Downside Case:** $218.50 initial target based on recent resistance levels; 1-3 day timeframe.
+**Key Risk:** ❌ Geopolitical volatility from US-Iran strikes impacting global semiconductor sentiment [4,5].
+
+### ⚪ #4 GS — ▲ LONG | MONITOR | Score: 50/85
+
+**Price Snapshot:** $1127.00 (+7.8%) | **RSI:** 56.0 | **Vol ratio:** 0.75x | **ATR:** 33.6629 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `16.8/25` | MarketConf `9.0/20` | RegimeFit `9.0/15` | RelOpp `7.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. GS is positioned for a record close following blowout earnings [4], supported by a sector-wide trend of record profits in dealmaking and trading [2]. Future revenue growth is expected to be propelled by high-profile IPO activity and increased market volatility [5].
+
+**Entry Consideration:** Enter on a minor pullback toward $1120 or a break above the intraday high with volume expansion.
+**Risk / Invalidation Level:** Close below $1085, which aligns with the recent breakout support level.
+**Initial Upside / Downside Case:** $1190.00 targeting a 5-6% continuation move over the next 5-10 trading days.
+**Key Risk:** ❌ Macroeconomic pressure from upcoming CPI data [3] could trigger sector-wide profit-taking.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 34
+- `SPY` LONG | IGNORE | score 39
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▼ Volkswagen CEO threatens 50,000 more job cuts in memo to staff - Reuters  [Reuters]
+**JPM**  ·  earnings
+  ▲ Watch Earnings: JPMorgan (JPM) Sees Record Profit as Stock-Trading Climbs 86%  [Bloomberg.com]
+  ▲ JPMorgan (JPM) Ranks Among the Most Profitable Stocks  [Yahoo Finance]
+
+**LLY**  ·  earnings
+  ▲ Bernstein raises Eli Lilly stock price target on beat potential By Investing.com  [Investing.com Canada]
+
+**COST**  ·  earnings
+  ▲ Oppenheimer raises IBM stock price target to $350 ahead of earnings  [Investing.com]
 
 **NVDA**  ·  earnings
-  ▲ Chip stocks hit rocky patch. What's next? - Reuters  [Reuters]
+  ▼ The Market Cap for Jensen Huang's Nvidia Climbs Past $5 Trillion as Reports of a Kyber Delay Are Dismissed  [Yahoo Finance]
 
-**GS**  ·  earnings
-  ▲ Big banks poised to report booming revenue propelled by SpaceX IPO, Iran war volatility - CNBC  [Cnbc]
-  ▲ Earnings playbook: Reporting season gets underway with JPMorgan Chase, Netflix on deck - CNBC  [Cnbc]
+**MSFT**  ·  macro
+  ▼ MSFT Stock Climbs Overnight: Microsoft Swings Axe On Over 3,000 Xbox Jobs As Game Pass Reportedly Falls Well Short Of Internal Goals  [Yahoo Finance]
+  ▼ MSFT Stock Layoffs: What to Know as Microsoft Cuts Jobs in Xbox Unit  [Yahoo Finance]
 
-**MACRO**  ·  earnings
-  ▲ As SpaceX stock dips near IPO price, bulls like BofA's Epstein say buy on 'launch leadership'  [Yahoo Finance]
-
-**TSM**  ·  earnings
-  ▲ Procyon Advisors LLC Decreases Holdings in Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat  [Marketbeat]
-
-**AAPL**  ·  macro
-  ▼ Meta scraps AI image feature days after launch - iTnews  [Itnews]
-
-**AMZN**  ·  earnings
-  ▼ Amazon.com, Inc. $AMZN Stake Boosted by Twin City Private Wealth LLC - InsuranceNewsNet  [Insurancenewsnet]
+**GOOGL**  ·  earnings
+  ▼ Wells Fargo Cuts Alphabet (GOOGL) Target to $416 and Keeps Overweight Rating  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
