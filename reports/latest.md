@@ -1,134 +1,152 @@
-# 📊 Daily Research Report — 2026-07-14
-*Generated: 2026-07-14 15:06*
+# 📊 Daily Research Report — 2026-07-15
+*Generated: 2026-07-15 15:05*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.43%
-**SPY RSI(14):** 66.4
+**SPY:** +0.54%
+**SPY RSI(14):** 66.8
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### PLTR  $133.22 (+2.5%)
-**ACTIONABLE** · LONG · EE=21 · post earnings drift · score=58
-> LONG. Palantir's 104% U.S. revenue growth [1] and potential undervaluation on a cash-flow basis [4] provide a strong fundamental floor ahead of the August 3 ear
+### BAC  $61.84 (+3.9%)
+**WATCHLIST** · LONG · EE=21 · post earnings drift · score=55
+> LONG. Strong peer performance from JPM [4] and anticipated revenue growth from dealmaking and volatility [5] provide a bullish tailwind for BAC. The stock maint
 
-### JPM  $344.31 (+2.9%)
-**ACTIONABLE** · LONG · EE=22 · post earnings drift · score=58
-> LONG. JPM's 27% revenue jump and surge in investment banking revenue provide the fundamental catalyst to sustain the breakout above $343 resistance [3, 5]. Stro
+### NFLX  $74.28 (+0.6%)
+**WATCHLIST** · LONG · EE=22 · post earnings drift · score=54
+> LONG. Netflix is positioned for a pre-earnings momentum play as it enters the reporting cycle [2] with significant analyst attention [3]. The high EventEdge sco
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE (2):** `PLTR` · `JPM`
-**⚪ MONITOR (3):** `NVDA` · `GS` · `BAC`
-**⛔ IGNORE (15):** `NFLX` · `TSM` · `AMD` · `GOOGL` · `AVGO` · `ARM`
+**🟢 ACTIONABLE:** None today
+**🟡 WATCHLIST (2):** `BAC` · `NFLX`
+**⚪ MONITOR (4):** `JPM` · `AAPL` · `PLTR` · `AMZN`
+**⛔ IGNORE (14):** `GS` · `AVGO` · `NVDA` · `IWM` · `AMD` · `TSM`
 
 ---
 ## 🏆 Top Trade
 
-**PLTR — LONG | ACTIONABLE | Score: 58**
+**BAC — LONG | WATCHLIST | Score: 55**
 
-> LONG. Palantir's 104% U.S. revenue growth [1] and potential undervaluation on a cash-flow basis [4] provide a strong fundamental floor ahead of the August 3 earnings catalyst [5]. The price holding above the MA50 ($132.98) suggests a bullish trend continuation despite high earnings multiples.
+> LONG. Strong peer performance from JPM [4] and anticipated revenue growth from dealmaking and volatility [5] provide a bullish tailwind for BAC. The stock maintains positive momentum above key moving averages despite near-overbought conditions.
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$133.22 | $124.56 (-6.5%) | $150.56 (+13.0%) | 1R | 2R |
+| ~$61.84 | $60.36 (-2.4%) | $64.82 (+4.8%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟢 #1 PLTR — ▲ LONG | ACTIONABLE | Score: 58/85
+### 🟡 #1 BAC — ▲ LONG | WATCHLIST | Score: 55/85
 
-**Price Snapshot:** $133.22 (+2.5%) | **RSI:** 66.3 | **Vol ratio:** 0.53x | **ATR:** 7.221 | **vs MA20:** above ✅
+**Price Snapshot:** $61.84 (+3.9%) | **RSI:** 69.2 | **Vol ratio:** 0.42x | **ATR:** 1.2393 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.9/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `5.6/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Palantir's 104% U.S. revenue growth [1] and potential undervaluation on a cash-flow basis [4] provide a strong fundamental floor ahead of the August 3 earnings catalyst [5]. The price holding above the MA50 ($132.98) suggests a bullish trend continuation despite high earnings multiples.
-
-**Entry Consideration:** Limit order near $133.00 (MA50 support) or on a confirmed break above $134.50.
-**Risk / Invalidation Level:** Hard stop below the MA20 at $125.13 to protect against a trend reversal.
-**Initial Upside / Downside Case:** $142.00 initial target / 1-2 week timeframe leading into earnings.
-**Key Risk:** ❌ RSI of 66.3 suggests the stock is nearing overbought levels, increasing the risk of a short-term pullback.
-
-### 🟢 #2 JPM — ▲ LONG | ACTIONABLE | Score: 58/85
-
-**Price Snapshot:** $344.31 (+2.9%) | **RSI:** 61.6 | **Vol ratio:** 0.57x | **ATR:** 7.5514 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `22.5/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `3.6/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `21.1/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. JPM's 27% revenue jump and surge in investment banking revenue provide the fundamental catalyst to sustain the breakout above $343 resistance [3, 5]. Strong profitability rankings and AI innovation further support a bullish continuation following the earnings surprise [2, 4].
+**What & Why:** LONG. Strong peer performance from JPM [4] and anticipated revenue growth from dealmaking and volatility [5] provide a bullish tailwind for BAC. The stock maintains positive momentum above key moving averages despite near-overbought conditions.
 
-**Entry Consideration:** Enter on a retest of the $343.50-$344.00 level to confirm the prior resistance as new support.
-**Risk / Invalidation Level:** Close below $338.00 or a failure to hold the $343 breakout level on high volume.
-**Initial Upside / Downside Case:** $355.00 - $360.00 within 3-5 trading days.
-**Key Risk:** ❌ Macroeconomic volatility from upcoming CPI data could reverse post-earnings gains.
+**Entry Consideration:** Entry on a minor pullback to $61.50 or a break above the intraday high.
+**Risk / Invalidation Level:** Daily close below $59.80 to invalidate the immediate breakout trend.
+**Initial Upside / Downside Case:** $64.50 target within the next 1-2 trading sessions.
+**Key Risk:** ❌ RSI of 69.2 suggests limited immediate upside without a consolidation phase.
 
-### ⚪ #3 NVDA — ▲ LONG | MONITOR | Score: 51/85
+### 🟡 #2 NFLX — ▲ LONG | WATCHLIST | Score: 54/85
 
-**Price Snapshot:** $207.71 (+2.0%) | **RSI:** 57.6 | **Vol ratio:** 0.21x | **ATR:** 6.6486 | **vs MA20:** above ✅
+**Price Snapshot:** $74.28 (+0.6%) | **RSI:** 53.8 | **Vol ratio:** 0.24x | **ATR:** 2.5129 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `18.8/25` | MarketConf `12.0/20` | RegimeFit `9.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Nvidia's momentum is supported by the dismissal of Kyber delay reports [1] and anticipated positive read-throughs from ASML's upgraded guidance [2].
-
-**Entry Consideration:** Enter on a confirmed break above the MA50 ($209.13) or a retest of the MA20 ($202.01).
-**Risk / Invalidation Level:** Daily close below the $200.00 psychological level and MA20 support.
-**Initial Upside / Downside Case:** $218.50 initial target based on recent resistance levels; 1-3 day timeframe.
-**Key Risk:** ❌ Geopolitical volatility from US-Iran strikes impacting global semiconductor sentiment [4,5].
-
-### ⚪ #4 GS — ▲ LONG | MONITOR | Score: 50/85
-
-**Price Snapshot:** $1127.00 (+7.8%) | **RSI:** 56.0 | **Vol ratio:** 0.75x | **ATR:** 33.6629 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `16.8/25` | MarketConf `9.0/20` | RegimeFit `9.0/15` | RelOpp `7.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `22.2/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `3.0/15` | Freshness `9.8/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. GS is positioned for a record close following blowout earnings [4], supported by a sector-wide trend of record profits in dealmaking and trading [2]. Future revenue growth is expected to be propelled by high-profile IPO activity and increased market volatility [5].
+**What & Why:** LONG. Netflix is positioned for a pre-earnings momentum play as it enters the reporting cycle [2] with significant analyst attention [3]. The high EventEdge score suggests a volatility expansion that may drive price toward the MA20 despite broader skepticism.
 
-**Entry Consideration:** Enter on a minor pullback toward $1120 or a break above the intraday high with volume expansion.
-**Risk / Invalidation Level:** Close below $1085, which aligns with the recent breakout support level.
-**Initial Upside / Downside Case:** $1190.00 targeting a 5-6% continuation move over the next 5-10 trading days.
-**Key Risk:** ❌ Macroeconomic pressure from upcoming CPI data [3] could trigger sector-wide profit-taking.
+**Entry Consideration:** Limit order at $74.50 or on a break of the daily high with volume confirmation.
+**Risk / Invalidation Level:** Hard stop at $72.40, invalidating the immediate bullish recovery attempt.
+**Initial Upside / Downside Case:** $79.50 (near MA50) within the 1-week earnings run-up period.
+**Key Risk:** ❌ Negative analyst sentiment regarding its status as a top blue-chip pick [4].
+
+### ⚪ #3 JPM — ▲ LONG | MONITOR | Score: 52/85
+
+**Price Snapshot:** $347.96 (+4.0%) | **RSI:** 64.2 | **Vol ratio:** 0.38x | **ATR:** 7.3892 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `21.5/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. JPM reported record Q2 profits driven by a $6 billion stock-trading haul and strong investment banking performance [1, 4]. CEO Jamie Dimon's assessment of the banking environment as 'close to as good as it gets' provides a strong fundamental tailwind for continued upside [3, 5].
+
+**Entry Consideration:** Enter on a slight retracement toward $346.50 or consolidation above $347.50 to manage the 4% gap-up risk.
+**Risk / Invalidation Level:** Daily close below $339.00, which would invalidate the post-earnings gap momentum.
+**Initial Upside / Downside Case:** $358.00 - $360.00 within 2-5 trading days.
+**Key Risk:** ❌ Higher cost outlook and expense guidance could limit further upside if market focus shifts from revenue growth [2].
+
+### ⚪ #4 AAPL — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $323.89 (+2.1%) | **RSI:** 69.0 | **Vol ratio:** 0.32x | **ATR:** 9.1879 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.0/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. The confirmation of a $30B strategic chip deal with Broadcom provides a significant supply chain tailwind and positive analyst sentiment [1][4]. This fundamental catalyst supports continued momentum as the stock trades well above its key moving averages.
+
+**Entry Consideration:** Enter on a minor retracement toward $322.00 to account for the high RSI of 69.0.
+**Risk / Invalidation Level:** Daily close below $315.00 or a break of the 8-day EMA.
+**Initial Upside / Downside Case:** $335.00 within 2-5 trading days.
+**Key Risk:** ❌ RSI at 69.0 indicates near-overbought conditions, risking a short-term mean reversion despite the positive news.
+
+### ⚪ #5 PLTR — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $133.58 (-0.1%) | **RSI:** 70.9 | **Vol ratio:** 0.22x | **ATR:** 7.2196 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `21.0/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Palantir's exceptional 104% U.S. revenue growth and sustained profitability effectively counter market slowdown fears [1][2]. While valuation concerns exist, the domestic growth trajectory remains the dominant catalyst for further upside [5].
+
+**Entry Consideration:** Enter on a minor retracement toward the MA50 ($132.78) or a confirmed break above $134.00.
+**Risk / Invalidation Level:** Daily close below the MA20 ($125.10) or breach of $130.00 support.
+**Initial Upside / Downside Case:** $142.00 initial target; 5-10 trading day timeframe.
+**Key Risk:** ❌ RSI at 70.9 indicates overbought conditions, making the stock vulnerable to a technical pullback.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 39
+- `QQQ` LONG | IGNORE | score 38
 
 ---
 ## 📰 Key News (Last 24h)
 
-**JPM**  ·  earnings
-  ▲ Watch Earnings: JPMorgan (JPM) Sees Record Profit as Stock-Trading Climbs 86%  [Bloomberg.com]
-  ▲ JPMorgan (JPM) Ranks Among the Most Profitable Stocks  [Yahoo Finance]
+**META**  ·  macro
+  ▼ Meta used AI to target workers with medical conditions for layoffs, lawsuit claims - Reuters  [Reuters]
 
-**LLY**  ·  earnings
-  ▲ Bernstein raises Eli Lilly stock price target on beat potential By Investing.com  [Investing.com Canada]
+**JPM**  ·  earnings
+  ▲ JPMorgan Bags Record Profit on $6 Billion Stock-Trading Haul - Bloomberg.com  [Bloomberg]
+  ▲ JPM Stock Alert: What to Know About JPMorgan's Historic Q2 Profit  [Yahoo Finance]
 
 **COST**  ·  earnings
-  ▲ Oppenheimer raises IBM stock price target to $350 ahead of earnings  [Investing.com]
-
-**NVDA**  ·  earnings
-  ▼ The Market Cap for Jensen Huang's Nvidia Climbs Past $5 Trillion as Reports of a Kyber Delay Are Dismissed  [Yahoo Finance]
+  ▼ BofA cuts Ericsson stock price target on revenue miss, cost pressures  [Investing.com]
 
 **MSFT**  ·  macro
-  ▼ MSFT Stock Climbs Overnight: Microsoft Swings Axe On Over 3,000 Xbox Jobs As Game Pass Reportedly Falls Well Short Of Internal Goals  [Yahoo Finance]
-  ▼ MSFT Stock Layoffs: What to Know as Microsoft Cuts Jobs in Xbox Unit  [Yahoo Finance]
+  ▼ Microsoft Corporation (MSFT) to Cut 4,800 Jobs  [Yahoo Finance]
 
-**GOOGL**  ·  earnings
-  ▼ Wells Fargo Cuts Alphabet (GOOGL) Target to $416 and Keeps Overweight Rating  [Yahoo Finance]
+**GOOGL**  ·  macro
+  ▲ Alphabet Inc. (GOOGL): 8 Best Stocks to Buy Following Federal Reserve Pivot Expectations  [Yahoo Finance]
+
+**AVGO**  ·  macro
+  ▲ Broadcom Inc. (AVGO) Agreement a Strategic Positive for Apple, says Evercore ISI  [Yahoo Finance]
+
+**AMD**  ·  earnings
+  ▲ AMD Looks Set for a Beat-and-Raise Quarter on Surging AI Server Demand, According to BofA  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
