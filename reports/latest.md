@@ -1,14 +1,12 @@
-# 📊 Daily Research Report — 2026-07-16
-*Generated: 2026-07-16 15:12*
+# 📊 Daily Research Report — 2026-07-17
+*Generated: 2026-07-17 15:00*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.20%
-**SPY RSI(14):** 65.9
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.75%
+**SPY RSI(14):** 62.8
 
 ---
 ## ⭐ High Conviction Picks
@@ -19,49 +17,70 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (1):** `TSM`
-**⛔ IGNORE (19):** `PLTR` · `AAPL` · `GS` · `BAC` · `LLY` · `GOOGL`
+**⚪ MONITOR (2):** `BAC` · `COST`
+**⛔ IGNORE (18):** `AMZN` · `NFLX` · `UNH` · `ARM` · `LLY` · `GS`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 TSM — ▲ LONG | MONITOR | Score: 50/85
+### ⚪ #1 BAC — ▲ LONG | MONITOR | Score: 52/85
 
-**Price Snapshot:** $410.39 (-2.2%) | **RSI:** 42.3 | **Vol ratio:** 0.75x | **ATR:** 20.0271 | **vs MA20:** below ⚠️
+**Price Snapshot:** $61.88 (+0.6%) | **RSI:** 71.0 | **Vol ratio:** 0.31x | **ATR:** 1.2596 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.8/25` | MarketConf `8.0/20` | RegimeFit `7.0/15` | RelOpp `7.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `19.3/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. TSM delivered a significant $0.46 EPS beat and raised its full-year revenue and capex forecasts, signaling sustained AI-driven growth [2][4][5]. The current price dip offers a tactical entry as fundamental strength outpaces the short-term technical sell-off.
+**What & Why:** LONG. BAC demonstrates significant relative strength by hitting 52-week highs while the broader market declines, fueled by positive sector-wide momentum [4, 5]. Anticipation surrounding upcoming earnings and its status as a key market mover suggests further upside potential [3].
 
-**Entry Consideration:** Limit order near $410.00 or on a 5-minute candle close above $411.50 to confirm a local bottom.
-**Risk / Invalidation Level:** Hard stop at $398.50 to protect against further post-earnings liquidation and psychological support breach.
-**Initial Upside / Downside Case:** Initial target of $425.10 (MA50) with a secondary target of $430.00 over the next 48 hours.
-**Key Risk:** ❌ Macro-driven semiconductor sector weakness overriding the positive earnings surprise in a choppy market regime.
+**Entry Consideration:** Limit order near $61.50 or on a confirmed break of $62.00.
+**Risk / Invalidation Level:** Exit if price closes below $59.75, invalidating the recent breakout.
+**Initial Upside / Downside Case:** $64.00 initial target; 1-3 trading days.
+**Key Risk:** ❌ Overbought RSI of 71.0 combined with a -0.75% SPY decline may trigger a sector-wide pullback.
+
+### ⚪ #2 COST — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $945.93 (+0.0%) | **RSI:** 47.9 | **Vol ratio:** 0.27x | **ATR:** 20.9943 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.2/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. COST demonstrates significant relative strength by trading positive while the SPY drops 0.75%, maintaining support above its MA20. Positive sentiment and inclusion in high-conviction buy lists [5] suggest a defensive rotation into the name.
+
+**Entry Consideration:** Enter on pullbacks toward $945.00, ensuring price remains above the MA20 ($940.56).
+**Risk / Invalidation Level:** Exit if price closes below $939.00 on a 15-minute timeframe.
+**Initial Upside / Downside Case:** $960.00 initial target for a 2-3 day swing toward the MA50.
+**Key Risk:** ❌ A deepening broad market sell-off could eventually force liquidation in defensive leaders.
+
+---
+## 📈 Market Instruments
+
+- `SPY` SHORT | IGNORE | score 44
+- `QQQ` SHORT | IGNORE | score 40
 
 ---
 ## 📰 Key News (Last 24h)
 
-**LLY**  ·  earnings
-  ▲ Lilly Said to Near Deal for Psychedelic Drugmaker AtaiBeckley - Bloomberg.com  [Bloomberg]
-
 **COST**  ·  earnings
-  ▲ UnitedHealth Stock: The 1 Number in the Earnings Beat That Has Shares Jumping  [Barron's]
-  ▲ SpaceX Stock Tests $135 IPO Price—and Cathie Wood Keeps Buying the Dip  [Barron's]
+  ▲ UnitedHealth regains earnings momentum, shares surge  [Reuters]
 
-**JPM**  ·  earnings
-  ▲ Bullish charts and fundamentals are lining up for JPMorgan Chase, says Frank Cappelleri - CNBC  [Cnbc]
-  ▲ JPMorgan Chase has more upside ahead after its blockbuster earnings report, says Bank of America - CNBC  [Cnbc]
+**INTC**  ·  earnings
+  ▲ Wall St Week Ahead Alphabet, Intel results in focus for AI trade as US earnings rev up - Reuters  [Reuters]
+  ▲ Here's a rapid-fire update on our stock portfolio, including the 5 names to buy - CNBC  [Cnbc]
 
-**TSM**  ·  macro
-  ▲ TSMC to invest additional $100 billion in Arizona after second-quarter profit soars 77% - CNBC  [Cnbc]
+**LLY**  ·  earnings
+  ▼ Watch United Airlines Falls on Earnings; Eli Lilly Moves on Acquisition | Stock Movers  [Bloomberg.com]
+
+**PLTR**  ·  macro
+  ▼ The Pre-Market Rundown 2: July 17, 2026 - CNBC  [Cnbc]
+  ▼ Market Open: July 17, 2026 - CNBC  [Cnbc]
 
 **META**  ·  macro
-  ▲ Baird reiterates Meta stock Outperform rating on AI infrastructure By Investing.com  [Investing.com South Africa]
+  ▼ BMO Capital reiterates Meta stock rating on AI spending concerns  [Investing.com]
 
-**NVDA**  ·  earnings
-  ▲ NVIDIA & 2 Best Earnings Growth Stocks to Buy for 2H 2026  [Yahoo Finance UK]
+**NFLX**  ·  earnings
+  ▼ Netflix shares fall after weaker-than-expected third-quarter guidance disappoints investors (NVDA)  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
