@@ -1,86 +1,100 @@
-# 📊 Daily Research Report — 2026-07-17
-*Generated: 2026-07-17 15:00*
+# 📊 Daily Research Report — 2026-07-20
+*Generated: 2026-07-20 15:15*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.75%
-**SPY RSI(14):** 62.8
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** +0.22%
+**SPY RSI(14):** 53.6
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### GOOGL  $356.68 (+2.9%)
+**WATCHLIST** · LONG · EE=22 · post earnings drift · score=54
+> LONG. Institutional accumulation by Bank of America [1][4] and a 15% retracement from record highs [5] provide a tactical entry point ahead of the July 22 earni
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (2):** `BAC` · `COST`
-**⛔ IGNORE (18):** `AMZN` · `NFLX` · `UNH` · `ARM` · `LLY` · `GS`
+**🟡 WATCHLIST (1):** `GOOGL`
+**⚪ MONITOR (1):** `PLTR`
+**⛔ IGNORE (18):** `NVDA` · `JPM` · `AMZN` · `COIN` · `NFLX` · `GS`
+
+---
+## 🏆 Top Trade
+
+**GOOGL — LONG | WATCHLIST | Score: 54**
+
+> LONG. Institutional accumulation by Bank of America [1][4] and a 15% retracement from record highs [5] provide a tactical entry point ahead of the July 22 earnings catalyst [2][3].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$356.68 | $343.75 (-3.6%) | $382.54 (+7.3%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 BAC — ▲ LONG | MONITOR | Score: 52/85
+### 🟡 #1 GOOGL — ▲ LONG | WATCHLIST | Score: 54/85
 
-**Price Snapshot:** $61.88 (+0.6%) | **RSI:** 71.0 | **Vol ratio:** 0.31x | **ATR:** 1.2596 | **vs MA20:** above ✅
+**Price Snapshot:** $356.68 (+2.9%) | **RSI:** 51.8 | **Vol ratio:** 0.25x | **ATR:** 10.7764 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.3/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. BAC demonstrates significant relative strength by hitting 52-week highs while the broader market declines, fueled by positive sector-wide momentum [4, 5]. Anticipation surrounding upcoming earnings and its status as a key market mover suggests further upside potential [3].
-
-**Entry Consideration:** Limit order near $61.50 or on a confirmed break of $62.00.
-**Risk / Invalidation Level:** Exit if price closes below $59.75, invalidating the recent breakout.
-**Initial Upside / Downside Case:** $64.00 initial target; 1-3 trading days.
-**Key Risk:** ❌ Overbought RSI of 71.0 combined with a -0.75% SPY decline may trigger a sector-wide pullback.
-
-### ⚪ #2 COST — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $945.93 (+0.0%) | **RSI:** 47.9 | **Vol ratio:** 0.27x | **ATR:** 20.9943 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `19.2/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `21.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. COST demonstrates significant relative strength by trading positive while the SPY drops 0.75%, maintaining support above its MA20. Positive sentiment and inclusion in high-conviction buy lists [5] suggest a defensive rotation into the name.
+**What & Why:** LONG. Institutional accumulation by Bank of America [1][4] and a 15% retracement from record highs [5] provide a tactical entry point ahead of the July 22 earnings catalyst [2][3].
 
-**Entry Consideration:** Enter on pullbacks toward $945.00, ensuring price remains above the MA20 ($940.56).
-**Risk / Invalidation Level:** Exit if price closes below $939.00 on a 15-minute timeframe.
-**Initial Upside / Downside Case:** $960.00 initial target for a 2-3 day swing toward the MA50.
-**Key Risk:** ❌ A deepening broad market sell-off could eventually force liquidation in defensive leaders.
+**Entry Consideration:** Enter on a confirmed hold above the MA20 ($355.33) or a minor pullback toward $356.00.
+**Risk / Invalidation Level:** Daily close below $352.00, which invalidates the recent support level and MA20 crossover.
+**Initial Upside / Downside Case:** $365.00 to $369.00 (MA50 area) within the 1-3 day pre-earnings window.
+**Key Risk:** ❌ Increased volatility and potential downside if earnings guidance fails to meet high AI-related expectations.
 
----
-## 📈 Market Instruments
+### ⚪ #2 PLTR — ▲ LONG | MONITOR | Score: 52/85
 
-- `SPY` SHORT | IGNORE | score 44
-- `QQQ` SHORT | IGNORE | score 40
+**Price Snapshot:** $132.82 (+0.3%) | **RSI:** 73.5 | **Vol ratio:** 0.21x | **ATR:** 6.9853 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `20.0/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Momentum is driven by a record guidance hike and continued expansion into AI deals and government contracts [1, 5]. The stock remains technically strong, trading above key moving averages despite overbought signals.
+
+**Entry Consideration:** Limit order near the MA50 ($132.46) to account for the high RSI and choppy market regime.
+**Risk / Invalidation Level:** Close below the MA20 at $125.47 to signal a break in the short-term uptrend.
+**Initial Upside / Downside Case:** $140.00 psychological resistance within a 1-week timeframe.
+**Key Risk:** ❌ RSI of 73.5 indicates overbought conditions which may lead to a sharp mean-reversion pullback.
 
 ---
 ## 📰 Key News (Last 24h)
 
 **COST**  ·  earnings
-  ▲ UnitedHealth regains earnings momentum, shares surge  [Reuters]
-
-**INTC**  ·  earnings
-  ▲ Wall St Week Ahead Alphabet, Intel results in focus for AI trade as US earnings rev up - Reuters  [Reuters]
-  ▲ Here's a rapid-fire update on our stock portfolio, including the 5 names to buy - CNBC  [Cnbc]
-
-**LLY**  ·  earnings
-  ▼ Watch United Airlines Falls on Earnings; Eli Lilly Moves on Acquisition | Stock Movers  [Bloomberg.com]
-
-**PLTR**  ·  macro
-  ▼ The Pre-Market Rundown 2: July 17, 2026 - CNBC  [Cnbc]
-  ▼ Market Open: July 17, 2026 - CNBC  [Cnbc]
+  ▲ Ryanair stock slides 6% as higher fuel costs amid Iran war dent profit  [CNBC]
+  ▲ BofA Securities raises Meta stock price target on AI revenue potential  [Investing.com]
 
 **META**  ·  macro
-  ▼ BMO Capital reiterates Meta stock rating on AI spending concerns  [Investing.com]
+  ▲ BofA Securities reiterates Buy on Meta stock on chip development  [Investing.com]
 
-**NFLX**  ·  earnings
-  ▼ Netflix shares fall after weaker-than-expected third-quarter guidance disappoints investors (NVDA)  [Yahoo Finance]
+**AMZN**  ·  macro
+  ▲ Truist reiterates Buy on Amazon stock, keeps $320 target on AWS growth  [Investing.com]
+
+**MSFT**  ·  ma
+  ▲ AMD stock surges 5% as Microsoft locks in massive AI infrastructure deal  [Investing.com]
+
+**JPM**  ·  earnings
+  ▲ The Bull Case For JPMorgan Chase (JPM) Could Change Following Record-Breaking Q2 2026 Profit And Guidance  [Yahoo Finance Singapore]
+
+**GOOGL**  ·  earnings
+  ▲ The Biggest Reason I’m Buying Alphabet Before the July 22 Earnings Report  [Yahoo Finance]
+
+**AAPL**  ·  earnings
+  ◆ Top analyst resets Apple stock price target ahead of earnings  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
