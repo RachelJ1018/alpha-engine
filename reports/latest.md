@@ -1,96 +1,94 @@
-# 📊 Daily Research Report — 2026-07-22
-*Generated: 2026-07-22 15:12*
+# 📊 Daily Research Report — 2026-07-23
+*Generated: 2026-07-23 15:15*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.06%
-**SPY RSI(14):** 52.7
+**Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
+**SPY:** -1.44%
+**SPY RSI(14):** 43.6
 
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+> ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*No high conviction picks — bear regime, avoiding new LONG exposure.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `GLD` · `AMD` · `PLTR` · `NVDA` · `AVGO` · `BAC`
+**🟡 WATCHLIST (1):** `BAC`
+**⚪ MONITOR (1):** `TSLA`
+**⛔ IGNORE (18):** `AAPL` · `AMZN` · `META` · `GOOGL` · `WMT` · `JPM`
+
+---
+## 🏆 Top Trade
+
+**BAC — SHORT | WATCHLIST | Score: 55**
+
+> SHORT. The CEO's warning that persistent inflation will constrain the Fed [1] signals a tightening macro environment that pressures bank valuations during a bearish market regime. Negative sentiment and the stock's position above its MA20 suggest a mean-reversion opportunity.
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$60.84 | $62.33 (-2.4%) | $57.87 (+4.9%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 GLD — ▲ LONG | IGNORE | Score: 49/85
+### 🟡 #1 BAC — ▼ SHORT | WATCHLIST | Score: 55/85
 
-**Price Snapshot:** $381.38 (+1.8%) | **RSI:** 58.3 | **Vol ratio:** 0.36x | **ATR:** 6.8646 | **vs MA20:** above ✅
+**Price Snapshot:** $60.84 (-1.3%) | **RSI:** 61.1 | **Vol ratio:** 0.22x | **ATR:** 1.2407 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.1/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `19.7/25` | MarketConf `11.0/20` | RegimeFit `12.0/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
-**Strategy Bucket:** `general_setup`
+**Strategy Bucket:** `relative_strength_long`
 
+**What & Why:** SHORT. The CEO's warning that persistent inflation will constrain the Fed [1] signals a tightening macro environment that pressures bank valuations during a bearish market regime. Negative sentiment and the stock's position above its MA20 suggest a mean-reversion opportunity.
 
-### ⛔ #2 AMD — ▲ LONG | IGNORE | Score: 48/85
+**Entry Consideration:** Enter on a break below $60.50 to confirm downside momentum.
+**Risk / Invalidation Level:** Stop loss set at $61.75, invalidating the short if price clears recent intraday highs.
+**Initial Upside / Downside Case:** $59.68 (MA20 level) within 1-3 trading sessions.
+**Key Risk:** ❌ Unexpected sector-wide rotation into financials or a sudden cooling of inflation data.
 
-**Price Snapshot:** $557.76 (+2.5%) | **RSI:** 52.9 | **Vol ratio:** 0.31x | **ATR:** 38.4497 | **vs MA20:** above ✅
+### ⚪ #2 TSLA — ▼ SHORT | MONITOR | Score: 52/85
 
-**Layered Scores:** EventEdge `18.6/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Price Snapshot:** $321.93 (-13.9%) | **RSI:** 29.3 | **Vol ratio:** 1.06x | **ATR:** 17.3086 | **vs MA20:** below ⚠️
 
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #3 PLTR — ▲ LONG | IGNORE | Score: 48/85
-
-**Price Snapshot:** $126.90 (-4.3%) | **RSI:** 51.6 | **Vol ratio:** 0.25x | **ATR:** 6.6556 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.4/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `15.2/25` | MarketConf `9.0/20` | RegimeFit `13.0/15` | RelOpp `6.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** SHORT. Post-earnings sentiment is heavily weighed down by concerns over aggressive capital spending and AI-related investment risks [3, 4]. Technical breakdown below major moving averages in a bear regime suggests continued downside momentum despite oversold conditions.
 
-### ⛔ #4 NVDA — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $211.88 (+2.2%) | **RSI:** 62.6 | **Vol ratio:** 0.23x | **ATR:** 7.3179 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.8/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #5 AVGO — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $391.48 (+1.3%) | **RSI:** 58.7 | **Vol ratio:** 0.14x | **ATR:** 16.0139 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.5/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
+**Entry Consideration:** Enter on a weak relief bounce toward $325.00 or on a break of the intraday low.
+**Risk / Invalidation Level:** Stop loss set at $338.50 to invalidate the post-earnings breakdown trend.
+**Initial Upside / Downside Case:** Initial target of $300.00 psychological support within 1-3 trading sessions.
+**Key Risk:** ❌ Extreme oversold RSI (29.3) may trigger a sharp, technical short-covering rally.
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  earnings
-  ▲ Earnings call transcript: SSAB Q2 2026 shows stronger pricing, softer stock  [Investing.com]
+**COST**  ·  macro
+  ▲ UK's FTSE 100 up over 1% as commodity stocks rally; BoE rate path, Mideast tensions in focus  [Reuters]
 
-**NVDA**  ·  earnings
-  ▲ Nvidia's valuation just hit a multiyear low — even as revenue sets records  [Yahoo Finance]
-  ▲ This Is My Favorite Artificial Intelligence Stock to Buy Right Now (Hint: Not Nvidia, Broadcom, or Alphabet)  [Yahoo Finance]
+**GOOGL**  ·  earnings
+  ▲ Micron Stock Is Gaining After Google Earnings. Why SK Hynix Is Rising Even More.  [Barron's]
+  ▲ Alphabet (GOOGL) Beats Q2 Earnings and Revenue Estimates  [Yahoo Finance]
 
-**INTC**  ·  earnings
-  ◆ Intel Stock Just Got a Stunning Price Target Hike Ahead of Earnings. How to Play INTC From Here.  [Yahoo Finance]
+**MSFT**  ·  earnings
+  ▲ Microsoft (MSFT) Reports Next Week: Wall Street Expects Earnings Growth  [Yahoo Finance]
+  ▲ CapEx Is in Focus for Microsoft Stock Ahead of Q4 Earnings, But the Bull Case Remains Strong  [Yahoo Finance]
+
+**META**  ·  earnings
+  ▼ Analysts Estimate Meta Platforms (META) to Report a Decline in Earnings: What to Look Out for  [Yahoo Finance]
+
+**JPM**  ·  earnings
+  ▲ JPMorgan Chase & Co. (JPM) Stock lags the market Despite Earnings Growth  [Yahoo Finance Singapore]
 
 **PLTR**  ·  earnings
-  ▲ Palantir stock gains on revenue growth and recurring deals  [Ad-hoc-news.de]
-
-**TSLA**  ·  earnings
-  ▲ US Pre-Market: Brent, WTI Rise Over 4%, Google, Tesla Earnings Approach, Super Micro Computer Surges Over 14%  [TradingKey]
-  ◆ Nasdaq, S&P 500 Futures Slip Ahead Of TSLA, GOOGL Earnings: Why SMCI, INTC, SLS, BATL, OKLO, RKLB Are In Focus  [Stocktwits]
-
-**AMD**  ·  earnings
-  ▼ S&P 500, Dow Snap Three-Day Losses, Nasdaq Ends Best Day In Three Weeks As Earnings Take Centerstage — GOOGL, AAPL, AMD, TSLA, DIS In Focus  [Stocktwits]
+  ▼ PLTR Stock Drops 6% as Valuation Fears, NHS Scrutiny Build Before Palantir Earnings  [FXLeaders]
 
 ---
 ## 🛡 Research Risk Rules
