@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-07-27
-*Generated: 2026-07-27 15:27*
+# 📊 Daily Research Report — 2026-07-28
+*Generated: 2026-07-28 15:17*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.06%
-**SPY RSI(14):** 41.4
+**SPY:** +0.06%
+**SPY RSI(14):** 44.3
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -19,52 +19,52 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `MSFT` · `GOOGL` · `AAPL` · `XOM` · `AMZN` · `COST`
+**⛔ IGNORE (20):** `MSFT` · `GS` · `AAPL` · `COST` · `GOOGL` · `NVDA`
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 MSFT — ▲ LONG | IGNORE | Score: 47/85
+### ⛔ #1 MSFT — ▲ LONG | IGNORE | Score: 49/85
 
-**Price Snapshot:** $393.79 (+3.2%) | **RSI:** 52.9 | **Vol ratio:** 0.26x | **ATR:** 11.3707 | **vs MA20:** above ✅
+**Price Snapshot:** $398.18 (+2.3%) | **RSI:** 58.9 | **Vol ratio:** 0.31x | **ATR:** 11.6536 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `16.8/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 GOOGL — ▲ LONG | IGNORE | Score: 46/85
-
-**Price Snapshot:** $328.59 (+2.8%) | **RSI:** 32.1 | **Vol ratio:** 0.4x | **ATR:** 11.7893 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `19.5/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #2 GS — ▼ SHORT | IGNORE | Score: 48/85
+
+**Price Snapshot:** $1030.38 (-1.7%) | **RSI:** 50.1 | **Vol ratio:** 0.3x | **ATR:** 41.02 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `15.9/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `2.6/15` | Freshness `9.9/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `general_setup`
 
 
 ### ⛔ #3 AAPL — ▲ LONG | IGNORE | Score: 46/85
 
-**Price Snapshot:** $338.83 (+1.7%) | **RSI:** 73.0 | **Vol ratio:** 0.34x | **ATR:** 7.9307 | **vs MA20:** above ✅
+**Price Snapshot:** $339.24 (+0.7%) | **RSI:** 71.9 | **Vol ratio:** 0.33x | **ATR:** 7.9014 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `16.7/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #4 XOM — ▲ LONG | IGNORE | Score: 45/85
-
-**Price Snapshot:** $154.20 (-1.8%) | **RSI:** 72.7 | **Vol ratio:** 0.21x | **ATR:** 3.4921 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.9/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `17.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #5 AMZN — ▲ LONG | IGNORE | Score: 45/85
+### ⛔ #4 COST — ▲ LONG | IGNORE | Score: 46/85
 
-**Price Snapshot:** $233.41 (+0.6%) | **RSI:** 36.6 | **Vol ratio:** 0.23x | **ATR:** 6.6214 | **vs MA20:** below ⚠️
+**Price Snapshot:** $981.03 (+3.1%) | **RSI:** 58.7 | **Vol ratio:** 0.46x | **ATR:** 19.9674 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.7/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `16.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 GOOGL — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $331.23 (+1.4%) | **RSI:** 35.4 | **Vol ratio:** 0.3x | **ATR:** 11.5779 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `18.3/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
@@ -72,31 +72,30 @@
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 40
-- `SPY` SHORT | IGNORE | score 36
+- `QQQ` LONG | IGNORE | score 42
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▲ Big Tech Earnings and Fed Rate Decision Put Stock Rally to the Test | The 10-Point for July 27  [WSJ]
-  ▲ 2 Quantum Stocks Set for Strong Q2 Earnings, Triple-Digit Price Target  [Yahoo Finance]
-
-**GOOGL**  ·  earnings
-  ▲ Alphabet earnings takeaways: Q2 revenue beats, GOOGL stock sinks on 2026 capex hike  [CNBC]
-  ▼ Alphabet falls below 200-day average for first time in over a year after earnings  [Yahoo Finance]
-
-**AMZN**  ·  earnings
-  ◆ Why Microsoft, Meta, and Amazon earnings could crush the S&P 500  [Yahoo Finance]
-
-**ORCL**  ·  macro
-  ◆ Nasdaq, S&P 500, Dow Futures Rise As Iran Pause Eases Oil Fears Ahead Of Big Tech Earnings, Fed Meeting: ORCL, NVDA, VG, DEL In Focus  [Stocktwits]
-
-**XOM**  ·  earnings
-  ▲ Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus  [Stocktwits]
+**AMZN**  ·  macro
+  ▲ Evercore ISI reiterates Amazon stock Outperform on Q2 outlook By Investing.com  [Investing.com Canada]
+  ▲ Mizuho lowers Amazon stock price target on valuation, keeps Outperform  [Investing.com]
 
 **MSFT**  ·  earnings
-  ▲ 3 Major Reasons to Buy Microsoft Before July 29 Q4 Earnings  [24/7 Wall St.]
+  ◆ Microsoft and Amazon earnings outlook: capex story above all else  [Investing.com]
+
+**PLTR**  ·  earnings
+  ▲ Palantir Earnings Set Up for a Major Beat  [Yahoo Finance]
+
+**NVDA**  ·  earnings
+  ▼ Missed NVIDIA? This AI Infrastructure Stock Has More Room to Run  [Yahoo Finance]
+  ◆ Corning (GLW) Stock Falls After Amazon And Nvidia Fiber Deals And Q2 Beat  [Yahoo Finance]
+
+**META**  ·  earnings
+  ▼ Meta to report Q2 earnings amid AI investing concerns  [Yahoo Finance]
+
+**JPM**  ·  earnings
+  ▲ Earnings Estimates Rising for JPMorgan Chase & Co. (JPM): Will It Gain?  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
