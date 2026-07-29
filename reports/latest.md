@@ -1,14 +1,12 @@
-# 📊 Daily Research Report — 2026-07-28
-*Generated: 2026-07-28 15:17*
+# 📊 Daily Research Report — 2026-07-29
+*Generated: 2026-07-29 15:34*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.06%
-**SPY RSI(14):** 44.3
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.59%
+**SPY RSI(14):** 40.4
 
 ---
 ## ⭐ High Conviction Picks
@@ -19,83 +17,47 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `MSFT` · `GS` · `AAPL` · `COST` · `GOOGL` · `NVDA`
+**⚪ MONITOR (1):** `SOFI`
+**⛔ IGNORE (19):** `AAPL` · `META` · `IWM` · `MSFT` · `TSM` · `GOOGL`
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 MSFT — ▲ LONG | IGNORE | Score: 49/85
+### ⚪ #1 SOFI — ▼ SHORT | MONITOR | Score: 52/85
 
-**Price Snapshot:** $398.18 (+2.3%) | **RSI:** 58.9 | **Vol ratio:** 0.31x | **ATR:** 11.6536 | **vs MA20:** above ✅
+**Price Snapshot:** $15.29 (-9.4%) | **RSI:** 33.7 | **Vol ratio:** 1.39x | **ATR:** 0.9846 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `18.8/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 GS — ▼ SHORT | IGNORE | Score: 48/85
-
-**Price Snapshot:** $1030.38 (-1.7%) | **RSI:** 50.1 | **Vol ratio:** 0.3x | **ATR:** 41.02 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `15.9/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `2.6/15` | Freshness `9.9/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
-
-### ⛔ #3 AAPL — ▲ LONG | IGNORE | Score: 46/85
-
-**Price Snapshot:** $339.24 (+0.7%) | **RSI:** 71.9 | **Vol ratio:** 0.33x | **ATR:** 7.9014 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `17.0/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `4.2/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** SHORT. Despite beating estimates, the stock is facing a significant sell-off as investors express skepticism regarding the acceleration of consumer lending [1, 2]. The break below both MA20 and MA50 on high volume indicates a shift in trend and potential for further mean reversion [1].
 
-### ⛔ #4 COST — ▲ LONG | IGNORE | Score: 46/85
-
-**Price Snapshot:** $981.03 (+3.1%) | **RSI:** 58.7 | **Vol ratio:** 0.46x | **ATR:** 19.9674 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `16.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #5 GOOGL — ▲ LONG | IGNORE | Score: 45/85
-
-**Price Snapshot:** $331.23 (+1.4%) | **RSI:** 35.4 | **Vol ratio:** 0.3x | **ATR:** 11.5779 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `18.3/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
----
-## 📈 Market Instruments
-
-- `QQQ` LONG | IGNORE | score 42
+**Entry Consideration:** Enter on a minor intraday retracement toward the $15.50 level to capture continued downward momentum.
+**Risk / Invalidation Level:** Exit if the price recaptures $16.25, which would invalidate the immediate bearish breakdown.
+**Initial Upside / Downside Case:** Initial target of $14.00 - $14.20, aligning with previous consolidation support, over the next 1-3 sessions.
+**Key Risk:** ❌ The RSI of 33.7 suggests the stock is nearing oversold conditions, which could trigger a short-covering bounce.
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AMZN**  ·  macro
-  ▲ Evercore ISI reiterates Amazon stock Outperform on Q2 outlook By Investing.com  [Investing.com Canada]
-  ▲ Mizuho lowers Amazon stock price target on valuation, keeps Outperform  [Investing.com]
+**META**  ·  macro
+  ▼ BMO reiterates Meta stock rating on AI visibility concerns By Investing.com  [Investing.com Canada]
+  ▼ Investors are selling Meta as it heads to its earnings report  [Yahoo Finance]
 
-**MSFT**  ·  earnings
-  ◆ Microsoft and Amazon earnings outlook: capex story above all else  [Investing.com]
+**AMZN**  ·  earnings
+  ▲ Jeff Bezos' Amazon Could See a Sizable Mark-to-Market Gain From Its Anthropic Stake When It Reports Earnings July 30, BofA Says  [Yahoo Finance]
 
 **PLTR**  ·  earnings
-  ▲ Palantir Earnings Set Up for a Major Beat  [Yahoo Finance]
+  ▲ Palantir stock surges on AI defense contracts ahead of August earnings  [eciks.org]
 
 **NVDA**  ·  earnings
-  ▼ Missed NVIDIA? This AI Infrastructure Stock Has More Room to Run  [Yahoo Finance]
-  ◆ Corning (GLW) Stock Falls After Amazon And Nvidia Fiber Deals And Q2 Beat  [Yahoo Finance]
+  ▼ Nvidia Supplier SK Hynix Stock Falls 9.6% on Earnings Miss  [TradingView]
+  ▲ 2 AI Stocks That Beat NVIDIA - and Could Soar Even Higher  [TradingView]
 
-**META**  ·  earnings
-  ▼ Meta to report Q2 earnings amid AI investing concerns  [Yahoo Finance]
-
-**JPM**  ·  earnings
-  ▲ Earnings Estimates Rising for JPMorgan Chase & Co. (JPM): Will It Gain?  [Yahoo Finance]
+**MSFT**  ·  earnings
+  ▼ Munster Warns Microsoft Is Falling Into AI ‘Value Trap’ Ahead of Earnings  [TradingKey]
+  ▼ Microsoft Earnings Preview: Why MSFT Could Still Fall Even If Azure Grows 40%  [EBC Financial Group]
 
 ---
 ## 🛡 Research Risk Rules
