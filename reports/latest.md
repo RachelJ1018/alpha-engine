@@ -1,123 +1,117 @@
-# 📊 Daily Research Report — 2026-08-07
-*Generated: 2026-08-07 14:47*
+# 📊 Daily Research Report — 2026-08-10
+*Generated: 2026-08-10 14:49*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.52%
-**SPY RSI(14):** 69.3
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** +0.21%
+**SPY RSI(14):** 67.7
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### GLD  $398.62 (+2.3%)
-**WATCHLIST** · LONG · EE=17 · macro beta rebound · score=56
-> LONG. Gold is confirming a technical breakout as prices move higher following a significant market shift [1, 5]. Momentum is strong with price action well above
-
-### NVDA  $223.24 (+1.9%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=55
-> LONG. NVDA is gaining momentum from Musk's commitment to exclusive SpaceX chip usage [5] and high-profile endorsements [3], while valuation is increasingly view
+### AMZN  $277.49 (+1.1%)
+**WATCHLIST** · LONG · EE=22 · post earnings drift · score=54
+> LONG. AMZN exhibits strong post-earnings momentum as analysts emphasize its growth potential and suggest the recent rally is only the start of a larger move [2]
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (3):** `GLD` · `NVDA` · `PLTR`
-**⛔ IGNORE (17):** `LLY` · `AMZN` · `ARM` · `JPM` · `MSFT` · `GS`
+**🟡 WATCHLIST (1):** `AMZN`
+**⚪ MONITOR (3):** `JPM` · `PLTR` · `TSM`
+**⛔ IGNORE (16):** `BAC` · `LLY` · `MSFT` · `AVGO` · `META` · `AAPL`
 
 ---
 ## 🏆 Top Trade
 
-**GLD — LONG | WATCHLIST | Score: 56**
+**AMZN — LONG | WATCHLIST | Score: 54**
 
-> LONG. Gold is confirming a technical breakout as prices move higher following a significant market shift [1, 5]. Momentum is strong with price action well above the 20-day and 50-day moving averages [5].
+> LONG. AMZN exhibits strong post-earnings momentum as analysts emphasize its growth potential and suggest the recent rally is only the start of a larger move [2][4]. Broader market optimism regarding AI and earnings strength provides a tailwind for continued appreciation [3].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$398.62 | $389.63 (-2.3%) | $416.60 (+4.5%) | 1R | 2R |
+| ~$277.49 | $265.40 (-4.4%) | $301.66 (+8.7%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 GLD — ▲ LONG | WATCHLIST | Score: 56/85
+### 🟡 #1 AMZN — ▲ LONG | WATCHLIST | Score: 54/85
 
-**Price Snapshot:** $398.62 (+2.3%) | **RSI:** 72.8 | **Vol ratio:** 0.98x | **ATR:** 7.4936 | **vs MA20:** above ✅
+**Price Snapshot:** $277.49 (+1.1%) | **RSI:** 65.7 | **Vol ratio:** 0.15x | **ATR:** 10.0736 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.4/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `6.5/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `macro_beta_rebound`
-
-**What & Why:** LONG. Gold is confirming a technical breakout as prices move higher following a significant market shift [1, 5]. Momentum is strong with price action well above the 20-day and 50-day moving averages [5].
-
-**Entry Consideration:** Limit order near $395.00 to account for potential mean reversion given the high RSI.
-**Risk / Invalidation Level:** Stop loss set below $388.00 to protect against a failed breakout.
-**Initial Upside / Downside Case:** $412.00 initial target within a 5-10 day timeframe.
-**Key Risk:** ❌ RSI at 72.8 indicates overbought conditions which may lead to short-term profit taking.
-
-### 🟡 #2 NVDA — ▲ LONG | WATCHLIST | Score: 55/85
-
-**Price Snapshot:** $223.24 (+1.9%) | **RSI:** 65.2 | **Vol ratio:** 0.19x | **ATR:** 7.7493 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.5/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `21.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. NVDA is gaining momentum from Musk's commitment to exclusive SpaceX chip usage [5] and high-profile endorsements [3], while valuation is increasingly viewed as a bargain [1]. The stock is currently breaking out above its MA20 and MA50 levels with strong novelty signals.
+**What & Why:** LONG. AMZN exhibits strong post-earnings momentum as analysts emphasize its growth potential and suggest the recent rally is only the start of a larger move [2][4]. Broader market optimism regarding AI and earnings strength provides a tailwind for continued appreciation [3].
 
-**Entry Consideration:** Enter on a minor pullback to the $220.00-$221.50 range or a break above the intraday high of $224.00.
-**Risk / Invalidation Level:** Stop loss at $214.50, just below the recent support level and moving average cluster.
-**Initial Upside / Downside Case:** $238.00 - $240.00 targeting the next major resistance level within 1-3 trading sessions.
-**Key Risk:** ❌ RSI at 65.2 suggests the stock is approaching overbought territory, increasing the risk of short-term mean reversion.
+**Entry Consideration:** Limit order near $275.50 to capture a potential intraday dip given the high RSI.
+**Risk / Invalidation Level:** Exit if price closes below $269.00, invalidating the immediate post-earnings trend.
+**Initial Upside / Downside Case:** $288.00 within 1-3 trading sessions.
+**Key Risk:** ❌ Current RSI of 65.7 suggests the stock is approaching overbought territory, increasing the risk of a mean-reversion pullback.
 
-### 🟡 #3 PLTR — ▲ LONG | WATCHLIST | Score: 52/85
+### ⚪ #2 JPM — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $169.26 (+8.6%) | **RSI:** 69.1 | **Vol ratio:** 0.7x | **ATR:** 9.1979 | **vs MA20:** above ✅
+**Price Snapshot:** $359.11 (+0.4%) | **RSI:** 65.4 | **Vol ratio:** 0.12x | **ATR:** 6.3403 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.9/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `7.8/15` | Freshness `3.1/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `19.3/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Palantir's blowout earnings and raised guidance are driven by a 134% surge in U.S. commercial growth as profitability catches up with AI demand [1, 3, 5]. The strong sentiment and fundamental repricing suggest continued momentum despite high valuation [4, 5].
+**What & Why:** LONG. JPM's aggressive upward revision of S&P 500 targets to 8,000 reflects internal confidence in AI-driven earnings growth and broader market strength [2, 4, 5]. Analysts continue to highlight JPM for its solid growth potential as the stock maintains a bullish trend above its 20-day moving average [1].
 
-**Entry Consideration:** Limit order near $168.50 to $169.00 on intraday consolidation to manage the 69.1 RSI.
-**Risk / Invalidation Level:** Hard stop at $159.50, just below the post-earnings gap support level.
-**Initial Upside / Downside Case:** $185.00 initial target representing a continuation of the post-earnings breakout over 1-3 days.
-**Key Risk:** ❌ Extreme valuation at 42x revenue and near-overbought RSI levels may invite sharp profit-taking.
+**Entry Consideration:** Enter on a retest of $355-$357 support or a confirmed break above $360.
+**Risk / Invalidation Level:** Daily close below the 20-day moving average at $350.63.
+**Initial Upside / Downside Case:** $372.00 representing a ~3.5% move within the next 5-10 trading days.
+**Key Risk:** ❌ Elevated RSI of 65.4 and low relative volume (0.12x) may lead to a bull trap in a choppy market regime.
 
----
-## 🌍 Macro Watchlist
+### ⚪ #3 PLTR — ▲ LONG | MONITOR | Score: 50/85
 
-- ⛔ `WMT` LONG | IGNORE | score 36 | —
+**Price Snapshot:** $179.04 (+4.1%) | **RSI:** 73.7 | **Vol ratio:** 0.58x | **ATR:** 9.6325 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `4.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Palantir's record Q2 earnings beat and strong growth trajectory have validated its competitive position against AI rivals [3, 5]. Sustained upward momentum and positive analyst sentiment suggest further upside as the market prices in long-term AI dominance [1, 2].
+
+**Entry Consideration:** Enter on a retest of $177.50 support or a high-volume break above $180.00.
+**Risk / Invalidation Level:** Stop loss at $171.00 to protect against a sharp mean-reversion move.
+**Initial Upside / Downside Case:** $195.00 initial target within the current week.
+**Key Risk:** ❌ Extreme technical extension from the 20-day moving average and an overbought RSI of 73.7.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 44
-- `QQQ` LONG | IGNORE | score 42
+- `QQQ` LONG | IGNORE | score 36
+- `SPY` LONG | IGNORE | score 35
 
 ---
 ## 📰 Key News (Last 24h)
 
-**GOOGL**  ·  macro
-  ▲ Gold prices are breaking higher after a tough stretch. Could ...  [Marketwatch]
-  ▲ History Says This Is What Will Happen to Nvidia Stock After Aug. 26  [Finance]
+**GOOGL**  ·  earnings
+  ▲ J.P. Morgan lifts 2026-end target for S&P 500 to 8,000 on AI, earnings strength - Reuters  [Reuters]
 
-**NVDA**  ·  earnings
-  ◆ Nvidia’s stock is basking in the glow of a high-profile endorsement  [Marketwatch]
-
-**AMD**  ·  earnings
-  ▲ AMD's revenue climbs 50% and data center sales doubled, but the stock is down  [Cnbc]
-  ◆ Meta Platforms, Inc. (META) Stock Price, News, Quote & ...  [Ca]
-
-**MACRO**  ·  earnings
-  ▲ This Congresswoman Keeps Buying AI and Nuclear Stocks. Hedge Funds Are Split  [Yahoo Finance]
-  ▲ IBD 50 Stock Natera Zips Into Profit-Taking Zone On Its Blowout Quarter  [Yahoo Finance]
+**PLTR**  ·  earnings
+  ▲ Micron Stock Rises Despite Apple China Chip Threat - Barron's  [Barrons]
+  ▲ Palantir (PLTR) Turning AI Demand into Profitable Growth  [Yahoo Finance]
 
 **INTC**  ·  earnings
-  ▲ Nvidia Stock Now Looks Like a Bargain  [Global]
+  ▲ Why Palantir Technologies Stock Skyrocketed (Again) Today | The Motley Fool  [Fool]
+  ▲ Palantir Stock Surges Nearly 30%. Did Q2 Beat Slay Worries Over OpenAI, Anthropic?  [Investors]
+
+**NVDA**  ·  earnings
+  ▲ Nvidia's Stock Is Completely Mispriced (NASDAQ:NVDA)  [Seekingalpha]
+
+**MSFT**  ·  earnings
+  ▲ Microsoft (MSFT) Stock Looks Fairly Valued While Earnings Suggest Undervalued  [Simplywall]
+  ▲ Microsoft Stock Breaks Out Into Buy Zone. Here’s Why.  [Investors]
 
 ---
 ## 🛡 Research Risk Rules
