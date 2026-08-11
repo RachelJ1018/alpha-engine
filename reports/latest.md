@@ -1,117 +1,94 @@
-# 📊 Daily Research Report — 2026-08-10
-*Generated: 2026-08-10 14:49*
+# 📊 Daily Research Report — 2026-08-11
+*Generated: 2026-08-11 14:49*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.21%
-**SPY RSI(14):** 67.7
+**SPY:** +0.11%
+**SPY RSI(14):** 68.0
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### AMZN  $277.49 (+1.1%)
-**WATCHLIST** · LONG · EE=22 · post earnings drift · score=54
-> LONG. AMZN exhibits strong post-earnings momentum as analysts emphasize its growth potential and suggest the recent rally is only the start of a larger move [2]
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `AMZN`
-**⚪ MONITOR (3):** `JPM` · `PLTR` · `TSM`
-**⛔ IGNORE (16):** `BAC` · `LLY` · `MSFT` · `AVGO` · `META` · `AAPL`
-
----
-## 🏆 Top Trade
-
-**AMZN — LONG | WATCHLIST | Score: 54**
-
-> LONG. AMZN exhibits strong post-earnings momentum as analysts emphasize its growth potential and suggest the recent rally is only the start of a larger move [2][4]. Broader market optimism regarding AI and earnings strength provides a tailwind for continued appreciation [3].
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$277.49 | $265.40 (-4.4%) | $301.66 (+8.7%) | 1R | 2R |
+**⚪ MONITOR (2):** `NVDA` · `IWM`
+**⛔ IGNORE (18):** `JPM` · `META` · `PLTR` · `ARM` · `TSLA` · `MSFT`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 AMZN — ▲ LONG | WATCHLIST | Score: 54/85
+### ⚪ #1 NVDA — ▲ LONG | MONITOR | Score: 52/85
 
-**Price Snapshot:** $277.49 (+1.1%) | **RSI:** 65.7 | **Vol ratio:** 0.15x | **ATR:** 10.0736 | **vs MA20:** above ✅
+**Price Snapshot:** $219.08 (+0.7%) | **RSI:** 55.4 | **Vol ratio:** 0.2x | **ATR:** 7.6307 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. AMZN exhibits strong post-earnings momentum as analysts emphasize its growth potential and suggest the recent rally is only the start of a larger move [2][4]. Broader market optimism regarding AI and earnings strength provides a tailwind for continued appreciation [3].
-
-**Entry Consideration:** Limit order near $275.50 to capture a potential intraday dip given the high RSI.
-**Risk / Invalidation Level:** Exit if price closes below $269.00, invalidating the immediate post-earnings trend.
-**Initial Upside / Downside Case:** $288.00 within 1-3 trading sessions.
-**Key Risk:** ❌ Current RSI of 65.7 suggests the stock is approaching overbought territory, increasing the risk of a mean-reversion pullback.
-
-### ⚪ #2 JPM — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $359.11 (+0.4%) | **RSI:** 65.4 | **Vol ratio:** 0.12x | **ATR:** 6.3403 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `19.3/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `20.6/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. JPM's aggressive upward revision of S&P 500 targets to 8,000 reflects internal confidence in AI-driven earnings growth and broader market strength [2, 4, 5]. Analysts continue to highlight JPM for its solid growth potential as the stock maintains a bullish trend above its 20-day moving average [1].
+**What & Why:** LONG. NVDA is positioned for an upside move ahead of its earnings event, supported by analyst sentiment that the stock is currently mispriced [1]. Positive momentum in the broader AI sector [5] suggests a favorable risk-reward profile despite the choppy market regime.
 
-**Entry Consideration:** Enter on a retest of $355-$357 support or a confirmed break above $360.
-**Risk / Invalidation Level:** Daily close below the 20-day moving average at $350.63.
-**Initial Upside / Downside Case:** $372.00 representing a ~3.5% move within the next 5-10 trading days.
-**Key Risk:** ❌ Elevated RSI of 65.4 and low relative volume (0.12x) may lead to a bull trap in a choppy market regime.
+**Entry Consideration:** Enter on a minor pullback toward $218.50 or at market if price holds above $219.00.
+**Risk / Invalidation Level:** Stop loss set at $207.00, slightly below the 20-day moving average.
+**Initial Upside / Downside Case:** Initial target of $230.00 to be reached within 3-5 trading days.
+**Key Risk:** ❌ Low relative volume of 0.2x suggests a lack of institutional participation which may stall the breakout.
 
-### ⚪ #3 PLTR — ▲ LONG | MONITOR | Score: 50/85
+### ⚪ #2 IWM — ▲ LONG | MONITOR | Score: 50/85
 
-**Price Snapshot:** $179.04 (+4.1%) | **RSI:** 73.7 | **Vol ratio:** 0.58x | **ATR:** 9.6325 | **vs MA20:** above ✅
+**Price Snapshot:** $301.60 (+0.5%) | **RSI:** 61.0 | **Vol ratio:** 0.14x | **ATR:** 4.0964 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `4.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Palantir's record Q2 earnings beat and strong growth trajectory have validated its competitive position against AI rivals [3, 5]. Sustained upward momentum and positive analyst sentiment suggest further upside as the market prices in long-term AI dominance [1, 2].
+**What & Why:** LONG. IWM maintains bullish momentum above its MA20 and MA50 with high sentiment (0.93), supported by institutional positioning in long-dated call options [2, 3, 4]. The technical setup suggests a continuation of the trend as price holds above psychological support levels.
 
-**Entry Consideration:** Enter on a retest of $177.50 support or a high-volume break above $180.00.
-**Risk / Invalidation Level:** Stop loss at $171.00 to protect against a sharp mean-reversion move.
-**Initial Upside / Downside Case:** $195.00 initial target within the current week.
-**Key Risk:** ❌ Extreme technical extension from the 20-day moving average and an overbought RSI of 73.7.
+**Entry Consideration:** Limit orders near $300.00 support or on a break above $302.50 with volume confirmation.
+**Risk / Invalidation Level:** Tight stop at $297.50 or a daily close below the MA20 ($295.45).
+**Initial Upside / Downside Case:** $306.00 - $308.00 within 2-5 trading sessions.
+**Key Risk:** ❌ The 'CHOPPY' market regime and an RSI of 61.0 may lead to short-term exhaustion or sideways volatility.
+
+---
+## 🌍 Macro Watchlist
+
+- ⛔ `GS` SHORT | IGNORE | score 34 | —
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 36
-- `SPY` LONG | IGNORE | score 35
+- `QQQ` SHORT | IGNORE | score 35
 
 ---
 ## 📰 Key News (Last 24h)
 
-**GOOGL**  ·  earnings
-  ▲ J.P. Morgan lifts 2026-end target for S&P 500 to 8,000 on AI, earnings strength - Reuters  [Reuters]
+**AAPL**  ·  earnings
+  ◆ Apple Stock Downgraded to Sell as Analyst Claims All ...  [Barrons]
+
+**MACRO**  ·  earnings
+  ▲ Cardinal Health Bolts Out Of A Buy Zone Despite Mixed Earnings. Here's Why.  [Yahoo Finance]
 
 **PLTR**  ·  earnings
-  ▲ Micron Stock Rises Despite Apple China Chip Threat - Barron's  [Barrons]
-  ▲ Palantir (PLTR) Turning AI Demand into Profitable Growth  [Yahoo Finance]
-
-**INTC**  ·  earnings
-  ▲ Why Palantir Technologies Stock Skyrocketed (Again) Today | The Motley Fool  [Fool]
-  ▲ Palantir Stock Surges Nearly 30%. Did Q2 Beat Slay Worries Over OpenAI, Anthropic?  [Investors]
-
-**NVDA**  ·  earnings
-  ▲ Nvidia's Stock Is Completely Mispriced (NASDAQ:NVDA)  [Seekingalpha]
+  ▲ Machine learning algorithm predicts Palantir stock price on ...  [Finbold]
 
 **MSFT**  ·  earnings
-  ▲ Microsoft (MSFT) Stock Looks Fairly Valued While Earnings Suggest Undervalued  [Simplywall]
-  ▲ Microsoft Stock Breaks Out Into Buy Zone. Here’s Why.  [Investors]
+  ▲ Microsoft (MSFT) Stock Looks Fully Valued Despite Strong AI Optimism  [Finance]
+
+**INTC**  ·  macro
+  ▼ Meta Is Facing a Perfect Storm as Child Safety and AI Strategy Concerns Pull Down META Stock  [Barchart]
+
+**LLY**  ·  earnings
+  ▲ Eli Lilly (NYSE:LLY) Pairs High Growth Momentum with a Defined Breakout Setup  [Google]
+
+**JPM**  ·  earnings
+  ▲ JPM 260807 370.00P (JPM260807P370000) Stock Options Chain | Quotes & News  [Moomoo]
+  ▲ JPMorgan (JPM) Stock May Be 27% Undervalued After $750b Housing Push  [Simplywall]
 
 ---
 ## 🛡 Research Risk Rules
