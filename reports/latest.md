@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-08-11
-*Generated: 2026-08-11 14:49*
+# 📊 Daily Research Report — 2026-08-12
+*Generated: 2026-08-12 14:49*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.11%
-**SPY RSI(14):** 68.0
+**SPY:** +0.26%
+**SPY RSI(14):** 75.2
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -19,76 +19,69 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (2):** `NVDA` · `IWM`
-**⛔ IGNORE (18):** `JPM` · `META` · `PLTR` · `ARM` · `TSLA` · `MSFT`
+**⚪ MONITOR (2):** `ARM` · `TSM`
+**⛔ IGNORE (18):** `IWM` · `AVGO` · `NVDA` · `PLTR` · `JPM` · `COIN`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 NVDA — ▲ LONG | MONITOR | Score: 52/85
+### ⚪ #1 ARM — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $219.08 (+0.7%) | **RSI:** 55.4 | **Vol ratio:** 0.2x | **ATR:** 7.6307 | **vs MA20:** above ✅
+**Price Snapshot:** $270.35 (+0.9%) | **RSI:** 46.2 | **Vol ratio:** 0.13x | **ATR:** 23.7178 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.6/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. NVDA is positioned for an upside move ahead of its earnings event, supported by analyst sentiment that the stock is currently mispriced [1]. Positive momentum in the broader AI sector [5] suggests a favorable risk-reward profile despite the choppy market regime.
-
-**Entry Consideration:** Enter on a minor pullback toward $218.50 or at market if price holds above $219.00.
-**Risk / Invalidation Level:** Stop loss set at $207.00, slightly below the 20-day moving average.
-**Initial Upside / Downside Case:** Initial target of $230.00 to be reached within 3-5 trading days.
-**Key Risk:** ❌ Low relative volume of 0.2x suggests a lack of institutional participation which may stall the breakout.
-
-### ⚪ #2 IWM — ▲ LONG | MONITOR | Score: 50/85
-
-**Price Snapshot:** $301.60 (+0.5%) | **RSI:** 61.0 | **Vol ratio:** 0.14x | **ATR:** 4.0964 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `19.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. IWM maintains bullish momentum above its MA20 and MA50 with high sentiment (0.93), supported by institutional positioning in long-dated call options [2, 3, 4]. The technical setup suggests a continuation of the trend as price holds above psychological support levels.
+**What & Why:** ARM is stabilizing near the $267 support level following a significant pullback, presenting a value entry for a recovery play [3, 5]. Retail interest in AI infrastructure and the DreamBig deal provide catalysts for a bounce from neutral RSI levels [4, 5].
 
-**Entry Consideration:** Limit orders near $300.00 support or on a break above $302.50 with volume confirmation.
-**Risk / Invalidation Level:** Tight stop at $297.50 or a daily close below the MA20 ($295.45).
-**Initial Upside / Downside Case:** $306.00 - $308.00 within 2-5 trading sessions.
-**Key Risk:** ❌ The 'CHOPPY' market regime and an RSI of 61.0 may lead to short-term exhaustion or sideways volatility.
+**Entry Consideration:** Entry near $270.00, ideally on a successful retest of the $267 support level.
+**Risk / Invalidation Level:** Daily close below $263.00 to protect against a breakdown of the current support base.
+**Initial Upside / Downside Case:** $288.00 target representing a partial retracement of the recent sell-off over 2-5 days.
+**Key Risk:** ❌ Bearish sentiment regarding the 'overdone' CPU trade could lead to further multiple compression [2].
 
----
-## 🌍 Macro Watchlist
+### ⚪ #2 TSM — ▲ LONG | MONITOR | Score: 50/85
 
-- ⛔ `GS` SHORT | IGNORE | score 34 | —
+**Price Snapshot:** $430.49 (+2.0%) | **RSI:** 57.0 | **Vol ratio:** 0.24x | **ATR:** 15.4421 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. TSM's 45% revenue surge driven by robust AI demand validates its central role in the semiconductor cycle and suggests further upside as the market digests the growth [2, 4]. Positive read-throughs from industry peers further support a sustained momentum play despite initial investor hesitation [3].
+
+**Entry Consideration:** Enter on a retest of the $428 level or a break above $432 for momentum confirmation.
+**Risk / Invalidation Level:** Stop loss set below the MA50 at $425.00 to protect against a trend reversal.
+**Initial Upside / Downside Case:** $445.00 - $450.00 range over the next 2-5 trading days.
+**Key Risk:** ❌ Market choppiness and potential profit-taking in the broader chip sector.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 35
+- `QQQ` LONG | IGNORE | score 36
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AAPL**  ·  earnings
-  ◆ Apple Stock Downgraded to Sell as Analyst Claims All ...  [Barrons]
+**SMCI**  ·  earnings
+  ▲ AI infrastructure stocks surge after strong earnings from CoreWeave, Supermicro  [Yahoo Finance]
 
 **MACRO**  ·  earnings
-  ▲ Cardinal Health Bolts Out Of A Buy Zone Despite Mixed Earnings. Here's Why.  [Yahoo Finance]
+  ▲ Airbnb vs. PepsiCo: Which Stock Is a Better Buy in 2026?  [Yahoo Finance]
 
-**PLTR**  ·  earnings
-  ▲ Machine learning algorithm predicts Palantir stock price on ...  [Finbold]
+**GOOGL**  ·  general
+  ▲ Elon Musk's Newest Data Center 'Moonshot' Could Send NVIDIA Shares to $500. It Could Also Crash the Stock.  [247Wallst]
+  ▼ Anat Hakim Sells 5,000 Shares of Eli Lilly and Company (NYSE:LLY) Stock  [Marketbeat]
 
-**MSFT**  ·  earnings
-  ▲ Microsoft (MSFT) Stock Looks Fully Valued Despite Strong AI Optimism  [Finance]
+**NVDA**  ·  earnings
+  ▼ Rep. Julia Letlow bought Meta stock after signing an NDA with the company, records show  [Wwno]
 
-**INTC**  ·  macro
-  ▼ Meta Is Facing a Perfect Storm as Child Safety and AI Strategy Concerns Pull Down META Stock  [Barchart]
+**META**  ·  macro
+  ▼ Another Bad News For Meta Stock Fans  [Finance]
 
-**LLY**  ·  earnings
-  ▲ Eli Lilly (NYSE:LLY) Pairs High Growth Momentum with a Defined Breakout Setup  [Google]
-
-**JPM**  ·  earnings
-  ▲ JPM 260807 370.00P (JPM260807P370000) Stock Options Chain | Quotes & News  [Moomoo]
-  ▲ JPMorgan (JPM) Stock May Be 27% Undervalued After $750b Housing Push  [Simplywall]
+**IWM**  ·  earnings
+  ▲ IWM Aug 2026 289.000 call (IWM260811C00289000) Stock Price, News, Quote & History - Yahoo Finance  [Ca]
+  ▲ IWM Aug 2026 297.000 call (IWM260806C00297000) Stock Price, News, Quote & History - Yahoo Finance  [Ca]
 
 ---
 ## 🛡 Research Risk Rules
