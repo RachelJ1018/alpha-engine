@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-08-14
-*Generated: 2026-08-14 14:47*
+# 📊 Daily Research Report — 2026-08-17
+*Generated: 2026-08-17 14:42*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.07%
-**SPY RSI(14):** 76.2
+**SPY:** -0.15%
+**SPY RSI(14):** 73.4
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -19,47 +19,88 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (1):** `ARM`
-**⛔ IGNORE (19):** `GOOGL` · `BAC` · `META` · `AMZN` · `JPM` · `AAPL`
+**⛔ IGNORE (20):** `TSLA` · `TSM` · `BAC` · `PLTR` · `AVGO` · `NVDA`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 ARM — ▲ LONG | MONITOR | Score: 51/85
+### ⛔ #1 TSLA — ▲ LONG | IGNORE | Score: 47/85
 
-**Price Snapshot:** $280.00 (+0.5%) | **RSI:** 54.5 | **Vol ratio:** 0.08x | **ATR:** 22.5208 | **vs MA20:** above ✅
+**Price Snapshot:** $340.26 (-0.6%) | **RSI:** 70.2 | **Vol ratio:** 0.17x | **ATR:** 10.8486 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `19.8/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `9.7/10` | RiskPenalty `-3.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. ARM is capitalizing on post-earnings momentum and retail bullishness as investors price in its AI-chip growth engine [1][3]. Continued follow-through from the recent Q1 beat suggests a recovery trend toward the 50-day moving average [4].
 
-**Entry Consideration:** Enter on a minor pullback toward $275.00 or a break above $282.00 to confirm momentum.
-**Risk / Invalidation Level:** Daily close below the 20-day moving average at $266.69.
-**Initial Upside / Downside Case:** $300.00 psychological level or $311.31 (MA50) within 3-5 trading sessions.
-**Key Risk:** ❌ Extremely low relative volume (0.08x) indicates a lack of broad institutional participation in the current choppy regime.
+### ⛔ #2 TSM — ▲ LONG | IGNORE | Score: 47/85
+
+**Price Snapshot:** $430.56 (+1.0%) | **RSI:** 70.9 | **Vol ratio:** 0.14x | **ATR:** 13.1914 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `13.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `general_setup`
+
+
+### ⛔ #3 BAC — ▲ LONG | IGNORE | Score: 46/85
+
+**Price Snapshot:** $64.93 (+0.7%) | **RSI:** 65.7 | **Vol ratio:** 0.16x | **ATR:** 0.9799 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `14.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `0.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `general_setup`
+
+
+### ⛔ #4 PLTR — ▲ LONG | IGNORE | Score: 46/85
+
+**Price Snapshot:** $174.28 (+0.1%) | **RSI:** 79.8 | **Vol ratio:** 0.19x | **ATR:** 8.9103 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 AVGO — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $396.21 (+0.8%) | **RSI:** 57.0 | **Vol ratio:** 0.19x | **ATR:** 16.2421 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `17.9/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+---
+## 🌍 Macro Watchlist
+
+- ⛔ `TLT` SHORT | IGNORE | score 34 | —
+- ⛔ `UNH` SHORT | IGNORE | score 34 | —
+
+---
+## 📈 Market Instruments
+
+- `SPY` LONG | IGNORE | score 41
+- `QQQ` LONG | IGNORE | score 38
 
 ---
 ## 📰 Key News (Last 24h)
 
 **COST**  ·  macro
-  ▼ Stocks rise as traders reduce rate hike bets, oil prices drop  [Reuters]
-  ▲ S&P 500 notches record-high close as rate-hike worries ease  [Reuters]
+  ▼ Benchmark reiterates Hold on VolitionRX stock amid cost cuts By Investing.com  [Investing.com Canada]
+  ▲ Ford Stock Faces Trade-Rule Cost Equal to 19% of Profit Forecast  [TechStock²]
 
 **PLTR**  ·  earnings
-  ▼ Revenue at Palantir-Backed Ondas Rises 1,236%. Stock Falls as Losses Widen.  [Barron's]
-  ▼ Insight Wealth Strategies LLC Sells 22,461 Shares of Palantir Technologies Inc. $PLTR  [MarketBeat]
+  ▲ Palantir Technologies (PLTR) Is Up 8.0% After Raising 2026 Revenue Guidance On Stronger Q2 Results  [Yahoo Finance]
+  ▲ Palantir (PLTR) Stock Soars 30% After Record Earnings, AI Demand and Guidance Boost  [tradingkey.com]
 
 **NVDA**  ·  earnings
-  ▼ Nvidia rival Cerebras stock plunges as company swings to quarterly loss  [Yahoo Finance UK]
-  ▲ Marvell (MRVL) vs. AVGO and NVDA: Can AI Interconnect Growth Deliver the Earnings Its Premium Valuation Demands?  [Yahoo Finance]
+  ▲ AI Chips Today - Fort Technology Expands Amid Record Revenue and Strategic Acquisitions  [simplywall.st]
 
 **MSFT**  ·  earnings
-  ▼ Microsoft Slashes Carbon Removal Purchases By 80% As AI Boom Drives Emissions Higher, Says Report — MSFT Stock Edges Lower  [Yahoo Finance]
+  ▲ Satya Nadella's Microsoft Stock Jumped 18% in a Week After Azure's Annual Revenue Topped $100 Billion for the First Time. Is It Still a Buy?  [The Motley Fool]
 
-**GS**  ·  earnings
-  ▲ Nvidia (NASDAQ: NVDA) Stock Price Surges Nearly 7% Ahead Of August Earnings, Goldman Sachs Flags Elevated Expectations  [foreignpolicyjournal.com]
+**LLY**  ·  earnings
+  ▲ Eli Lilly Stock Nears Buy Point After Earnings-Fueled Gains  [Investor's Business Daily]
+  ▲ Eli Lilly (LLY) Raises 2026 Revenue Guidance, Is The Stock Still A Bargain?  [simplywall.st]
 
 ---
 ## 🛡 Research Risk Rules
