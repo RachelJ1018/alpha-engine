@@ -1,14 +1,12 @@
-# 📊 Daily Research Report — 2026-08-17
-*Generated: 2026-08-17 14:42*
+# 📊 Daily Research Report — 2026-08-18
+*Generated: 2026-08-18 14:44*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.15%
-**SPY RSI(14):** 73.4
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -1.00%
+**SPY RSI(14):** 67.3
 
 ---
 ## ⭐ High Conviction Picks
@@ -19,88 +17,72 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `TSLA` · `TSM` · `BAC` · `PLTR` · `AVGO` · `NVDA`
+**⚪ MONITOR (2):** `TSLA` · `LLY`
+**⛔ IGNORE (18):** `AMZN` · `GOOGL` · `COST` · `AAPL` · `QQQ` · `NVDA`
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 TSLA — ▲ LONG | IGNORE | Score: 47/85
+### ⚪ #1 TSLA — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $340.26 (-0.6%) | **RSI:** 70.2 | **Vol ratio:** 0.17x | **ATR:** 10.8486 | **vs MA20:** above ✅
+**Price Snapshot:** $336.92 (-1.6%) | **RSI:** 67.4 | **Vol ratio:** 0.24x | **ATR:** 11.2443 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.8/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `9.7/10` | RiskPenalty `-3.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 TSM — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $430.56 (+1.0%) | **RSI:** 70.9 | **Vol ratio:** 0.14x | **ATR:** 13.1914 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `13.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
-
-### ⛔ #3 BAC — ▲ LONG | IGNORE | Score: 46/85
-
-**Price Snapshot:** $64.93 (+0.7%) | **RSI:** 65.7 | **Vol ratio:** 0.16x | **ATR:** 0.9799 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `14.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `0.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
-
-### ⛔ #4 PLTR — ▲ LONG | IGNORE | Score: 46/85
-
-**Price Snapshot:** $174.28 (+0.1%) | **RSI:** 79.8 | **Vol ratio:** 0.19x | **ATR:** 8.9103 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `21.5/25` | MarketConf `11.0/20` | RegimeFit `7.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. TSLA is supported by a massive 500-truck order for the Tesla Semi and positive Q1 metric beats [1][4]. The stock is currently rebounding from oversold levels while maintaining its position above the 20-day moving average [3].
 
-### ⛔ #5 AVGO — ▲ LONG | IGNORE | Score: 45/85
+**Entry Consideration:** Entry near $336.00 or on a successful retest of the MA20 ($327.51).
+**Risk / Invalidation Level:** Daily close below $325.00 to invalidate the short-term moving average support.
+**Initial Upside / Downside Case:** $355.00 initial target as it moves toward the MA50 / 3-5 days.
+**Key Risk:** ❌ Broader market correlation with SPY/QQQ weakness dragging down high-beta equities.
 
-**Price Snapshot:** $396.21 (+0.8%) | **RSI:** 57.0 | **Vol ratio:** 0.19x | **ATR:** 16.2421 | **vs MA20:** below ⚠️
+### ⚪ #2 LLY — ▲ LONG | MONITOR | Score: 51/85
 
-**Layered Scores:** EventEdge `17.9/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Price Snapshot:** $1211.92 (+2.7%) | **RSI:** 48.9 | **Vol ratio:** 0.16x | **ATR:** 43.7248 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.1/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. LLY exhibits strong relative strength against a weak market after raising 2026 revenue guidance and expanding its weight-loss portfolio globally [3, 4]. The stock is currently nearing a technical buy point following earnings-fueled gains and new strategic deals [2, 5].
 
----
-## 🌍 Macro Watchlist
-
-- ⛔ `TLT` SHORT | IGNORE | score 34 | —
-- ⛔ `UNH` SHORT | IGNORE | score 34 | —
+**Entry Consideration:** Limit orders near $1205 or momentum entry on a confirmed break above $1215.
+**Risk / Invalidation Level:** Daily close below the 20-day moving average ($1183.74) or $1175 support.
+**Initial Upside / Downside Case:** Initial price target of $1255 within 3-5 trading sessions.
+**Key Risk:** ❌ Sustained broader market selling pressure (SPY -1.00%) dragging down high-valuation leaders.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 41
-- `QQQ` LONG | IGNORE | score 38
+- `QQQ` SHORT | IGNORE | score 43
+- `SPY` LONG | IGNORE | score 42
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▼ Benchmark reiterates Hold on VolitionRX stock amid cost cuts By Investing.com  [Investing.com Canada]
-  ▲ Ford Stock Faces Trade-Rule Cost Equal to 19% of Profit Forecast  [TechStock²]
+**UBER**  ·  earnings
+  ▲ Cramer's lightning round: Buy Uber - CNBC  [Cnbc]
+
+**NVDA**  ·  macro
+  ▲ BofA reiterates Nvidia stock Buy rating on AI commitment strength  [Investing.com]
+  ▲ Nvidia reports strong Q2 revenue and projects m...  [Pluang]
+
+**COST**  ·  earnings
+  ▼ Canaccord cuts Intuitive Machines stock price target on Q2 miss  [Investing.com]
 
 **PLTR**  ·  earnings
-  ▲ Palantir Technologies (PLTR) Is Up 8.0% After Raising 2026 Revenue Guidance On Stronger Q2 Results  [Yahoo Finance]
-  ▲ Palantir (PLTR) Stock Soars 30% After Record Earnings, AI Demand and Guidance Boost  [tradingkey.com]
-
-**NVDA**  ·  earnings
-  ▲ AI Chips Today - Fort Technology Expands Amid Record Revenue and Strategic Acquisitions  [simplywall.st]
-
-**MSFT**  ·  earnings
-  ▲ Satya Nadella's Microsoft Stock Jumped 18% in a Week After Azure's Annual Revenue Topped $100 Billion for the First Time. Is It Still a Buy?  [The Motley Fool]
+  ◆ Q2 Earnings Season Standout Performers: PLTR, MSFT  [Yahoo Finance]
 
 **LLY**  ·  earnings
-  ▲ Eli Lilly Stock Nears Buy Point After Earnings-Fueled Gains  [Investor's Business Daily]
-  ▲ Eli Lilly (LLY) Raises 2026 Revenue Guidance, Is The Stock Still A Bargain?  [simplywall.st]
+  ▲ Can Eli Lilly (LLY) Stay Undervalued If Growth Keeps Delivering?  [Yahoo Finance]
+
+**AMZN**  ·  earnings
+  ▲ Amazon stock soars after Q2 earnings beat expectations as AI, chip businesses see $25 billion run rate  [Yahoo Finance]
+
+**MSFT**  ·  earnings
+  ▲ Microsoft Stock (MSFT) Opinions on Strong Earnings and Azure Growth  [Quiver Quantitative]
 
 ---
 ## 🛡 Research Risk Rules
