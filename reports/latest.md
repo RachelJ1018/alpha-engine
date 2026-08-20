@@ -1,142 +1,102 @@
-# 📊 Daily Research Report — 2026-08-19
-*Generated: 2026-08-19 14:45*
+# 📊 Daily Research Report — 2026-08-20
+*Generated: 2026-08-20 14:45*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.46%
-**SPY RSI(14):** 74.0
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** -0.24%
+**SPY RSI(14):** 68.1
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### AMZN  $262.68 (+1.2%)
-**WATCHLIST** · LONG · EE=22 · post earnings drift · score=56
-> LONG. Amazon's cloud revenue surge and $25 billion AI run rate [1, 4] provide strong fundamental momentum, while Morgan Stanley's long-term $500 price target [5
-
-### LLY  $1272.19 (+3.8%)
-**WATCHLIST** · LONG · EE=17 · post earnings drift · score=53
-> LONG. Eli Lilly's significant earnings beat and raised outlook for Zepbound and Mounjaro provide strong fundamental momentum [1]. The stock is currently approac
-
-### TSLA  $346.19 (+2.8%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=52
-> LONG TSLA as the stock gains momentum after beating key Q1 metrics [3] and continues its recovery from previously oversold levels [5]. Positive sentiment and ea
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (3):** `AMZN` · `LLY` · `TSLA`
-**⚪ MONITOR (1):** `PLTR`
-**⛔ IGNORE (16):** `AAPL` · `COST` · `JPM` · `META` · `GOOGL` · `MSFT`
-
----
-## 🏆 Top Trade
-
-**AMZN — LONG | WATCHLIST | Score: 56**
-
-> LONG. Amazon's cloud revenue surge and $25 billion AI run rate [1, 4] provide strong fundamental momentum, while Morgan Stanley's long-term $500 price target [5] reinforces institutional confidence.
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$262.68 | $251.62 (-4.2%) | $284.79 (+8.4%) | 1R | 2R |
+**⛔ IGNORE (20):** `NVDA` · `NFLX` · `COST` · `QQQ` · `ARM` · `SPY`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 AMZN — ▲ LONG | WATCHLIST | Score: 56/85
+### ⛔ #1 NVDA — ▲ LONG | IGNORE | Score: 48/85
 
-**Price Snapshot:** $262.68 (+1.2%) | **RSI:** 65.4 | **Vol ratio:** 0.17x | **ATR:** 9.2134 | **vs MA20:** above ✅
+**Price Snapshot:** $218.85 (+0.6%) | **RSI:** 69.3 | **Vol ratio:** 0.16x | **ATR:** 6.2221 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `21.7/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Amazon's cloud revenue surge and $25 billion AI run rate [1, 4] provide strong fundamental momentum, while Morgan Stanley's long-term $500 price target [5] reinforces institutional confidence.
-
-**Entry Consideration:** Enter on a minor pullback toward the $260.00 psychological level or a break above $263.50.
-**Risk / Invalidation Level:** Close position if price falls below the MA20 support at $258.57.
-**Initial Upside / Downside Case:** $272.00 initial target within 1-3 trading sessions.
-**Key Risk:** ❌ RSI at 65.4 suggests the stock is approaching overbought territory, increasing the risk of a short-term mean reversion.
-
-### 🟡 #2 LLY — ▲ LONG | WATCHLIST | Score: 53/85
-
-**Price Snapshot:** $1272.19 (+3.8%) | **RSI:** 68.6 | **Vol ratio:** 0.57x | **ATR:** 45.8209 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.0/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `17.9/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Eli Lilly's significant earnings beat and raised outlook for Zepbound and Mounjaro provide strong fundamental momentum [1]. The stock is currently approaching a technical buy point following these gains [5].
 
-**Entry Consideration:** Enter on a break above $1275 or a retest of $1260 support to manage risk-reward.
-**Risk / Invalidation Level:** Stop loss set at $1235, below the immediate post-earnings support level.
-**Initial Upside / Downside Case:** $1315 initial target, representing a ~3.5% move within 1-2 trading days.
-**Key Risk:** ❌ RSI at 68.6 indicates the stock is nearing overbought territory, increasing the risk of a short-term pullback.
+### ⛔ #2 NFLX — ▲ LONG | IGNORE | Score: 48/85
 
-### 🟡 #3 TSLA — ▲ LONG | WATCHLIST | Score: 52/85
+**Price Snapshot:** $79.75 (-0.6%) | **RSI:** 71.6 | **Vol ratio:** 0.15x | **ATR:** 2.2707 | **vs MA20:** above ✅
 
-**Price Snapshot:** $346.19 (+2.8%) | **RSI:** 75.1 | **Vol ratio:** 0.27x | **ATR:** 10.76 | **vs MA20:** above ✅
+**Layered Scores:** EventEdge `16.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
-**Layered Scores:** EventEdge `20.7/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Strategy Bucket:** `general_setup`
 
-**Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG TSLA as the stock gains momentum after beating key Q1 metrics [3] and continues its recovery from previously oversold levels [5]. Positive sentiment and earnings-driven strength suggest further upside despite high valuation concerns [1].
+### ⛔ #3 COST — ▼ SHORT | IGNORE | Score: 46/85
 
-**Entry Consideration:** Limit orders between $342.50 and $345.00 to account for potential morning volatility and high RSI.
-**Risk / Invalidation Level:** Hard stop at $334.00, invalidating the immediate post-earnings breakout trend.
-**Initial Upside / Downside Case:** Initial target of $367.00 (MA50) within a 1-3 day timeframe.
-**Key Risk:** ❌ RSI of 75.1 indicates overbought conditions which could lead to immediate mean reversion or profit-taking.
+**Price Snapshot:** $936.81 (-2.1%) | **RSI:** 42.0 | **Vol ratio:** 0.27x | **ATR:** 17.4929 | **vs MA20:** below ⚠️
 
-### ⚪ #4 PLTR — ▲ LONG | MONITOR | Score: 50/85
-
-**Price Snapshot:** $172.61 (+0.6%) | **RSI:** 78.9 | **Vol ratio:** 0.27x | **ATR:** 9.1178 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.0/25` | MarketConf `11.0/20` | RegimeFit `9.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `17.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Palantir's Q2 earnings beat and robust U.S. commercial growth position it as a top-tier performer in the current market regime [3][4]. Momentum is likely to persist as investors prioritize strong cash flow and AI-driven revenue acceleration [4][5].
 
-**Entry Consideration:** Enter on a minor retracement toward $170.00 to account for the overbought RSI of 78.9.
-**Risk / Invalidation Level:** Daily close below $162.00, invalidating the post-earnings breakout momentum.
-**Initial Upside / Downside Case:** $185.00 initial target within 1-2 trading days based on current trend strength.
-**Key Risk:** ❌ Extreme overbought RSI (78.9) and high valuation multiples may lead to sharp profit-taking [1][5].
+### ⛔ #4 QQQ — ▼ SHORT | IGNORE | Score: 46/85
+
+**Price Snapshot:** $713.81 (-0.3%) | **RSI:** 64.4 | **Vol ratio:** 0.23x | **ATR:** 10.2343 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `16.3/25` | MarketConf `11.0/20` | RegimeFit `6.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `general_setup`
+
+
+### ⛔ #5 ARM — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $247.34 (-0.8%) | **RSI:** 53.1 | **Vol ratio:** 0.08x | **ATR:** 19.6019 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `19.5/25` | MarketConf `8.0/20` | RegimeFit `7.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 42
-- `QQQ` SHORT | IGNORE | score 35
+- `QQQ` SHORT | IGNORE | score 46
+- `SPY` SHORT | IGNORE | score 45
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AMZN**  ·  earnings
-  ▲ Amazon soars as cloud revenue surge allays fears over ballooning AI bets  [Reuters]
-
-**META**  ·  earnings
-  ▲ Opinion: Meta is facing its ‘Big Tobacco’ moment — and investors can profit  [marketwatch.com]
-
-**LLY**  ·  earnings
-  ▲ Eli Lilly easily tops quarterly estimates, raises outlook as Zepbound and Mounjaro sales surge  [CNBC]
-
-**NVDA**  ·  macro
-  ▲ BofA reiterates Nvidia stock Buy rating on AI commitment strength  [Investing.com]
-
-**JPM**  ·  macro
-  ▲ Here is why JPMorgan Chase & Co. (JPM) is among the 8 Best Stocks to Buy Following Federal Reserve Pivot Expectations  [Yahoo Finance]
+**LLY**  ·  macro
+  ▲ Lyntris CEO Brian Morrison on IPO debut: We're here to drive long-term value for investors - CNBC  [Cnbc]
 
 **PLTR**  ·  earnings
-  ◆ Q2 Earnings Season Standout Performers: PLTR, MSFT  [Yahoo Finance]
-  ▲ Palantir stock up 23% as Q2 revenue and margins beat expectations, driven by strong U.S. commercial growth.  [Pluang]
+  ▲ Is Palantir Technologies (PLTR) Overvalued As Revenue Growth And 2026 Outlook Jump?  [Yahoo Finance]
 
-**TSLA**  ·  earnings
-  ▲ Better Buy: Palantir at 108 Times Forward Earnings or Tesla at 190 Times?  [The Motley Fool]
+**META**  ·  earnings
+  ▲ Meta Stock Rebounds as Investors Revisit 28% Revenue Growth  [Yahoo Finance]
+
+**AMZN**  ·  earnings
+  ▼ Jeff Bezos Plans to Sell $4.07 Billion Worth of Amazon Stock as Shares Shoot Up Over 20% After Earnings: Jim Cramer Calls it 'Buzzkill'  [Yahoo Finance]
+  ◆ Amazon's Stake in Anthropic Is Now Big Enough to Move Its Earnings. Here's How That Compares to Alphabet's Stake in SpaceX.  [Yahoo Finance]
+
+**NVDA**  ·  earnings
+  ▲ Nvidia's strong earnings outlook fuels analyst optimism and potential stock valuation upside.  [Pluang]
+  ▲ Want to Play Nvidia Earnings Without Buying the Stock? This $71.6 Billion ETF Has NVDA as Its Top Holding  [TipRanks]
+
+**MSFT**  ·  earnings
+  ▲ NVDA Stock Eyes ‘Beat-And-Raise’ Quarter Next Week As Microsoft, Amazon, SpaceX Fuel ‘Rock-Solid’ AI Demand  [Stocktwits]
 
 ---
 ## 🛡 Research Risk Rules
