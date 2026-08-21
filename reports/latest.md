@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-08-20
-*Generated: 2026-08-20 14:45*
+# 📊 Daily Research Report — 2026-08-21
+*Generated: 2026-08-21 14:44*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.24%
-**SPY RSI(14):** 68.1
+**SPY:** +0.27%
+**SPY RSI(14):** 56.7
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -19,52 +19,52 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `NVDA` · `NFLX` · `COST` · `QQQ` · `ARM` · `SPY`
+**⛔ IGNORE (20):** `PLTR` · `NVDA` · `META` · `AVGO` · `GOOGL` · `COST`
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 NVDA — ▲ LONG | IGNORE | Score: 48/85
+### ⛔ #1 PLTR — ▲ LONG | IGNORE | Score: 50/85
 
-**Price Snapshot:** $218.85 (+0.6%) | **RSI:** 69.3 | **Vol ratio:** 0.16x | **ATR:** 6.2221 | **vs MA20:** above ✅
+**Price Snapshot:** $175.49 (+0.9%) | **RSI:** 78.0 | **Vol ratio:** 0.16x | **ATR:** 9.1174 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.9/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 NFLX — ▲ LONG | IGNORE | Score: 48/85
-
-**Price Snapshot:** $79.75 (-0.6%) | **RSI:** 71.6 | **Vol ratio:** 0.15x | **ATR:** 2.2707 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `16.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
-
-### ⛔ #3 COST — ▼ SHORT | IGNORE | Score: 46/85
-
-**Price Snapshot:** $936.81 (-2.1%) | **RSI:** 42.0 | **Vol ratio:** 0.27x | **ATR:** 17.4929 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `17.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+**Layered Scores:** EventEdge `20.3/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #4 QQQ — ▼ SHORT | IGNORE | Score: 46/85
+### ⛔ #2 NVDA — ▲ LONG | IGNORE | Score: 45/85
 
-**Price Snapshot:** $713.81 (-0.3%) | **RSI:** 64.4 | **Vol ratio:** 0.23x | **ATR:** 10.2343 | **vs MA20:** above ✅
+**Price Snapshot:** $214.91 (-0.9%) | **RSI:** 59.8 | **Vol ratio:** 0.26x | **ATR:** 5.7507 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `16.3/25` | MarketConf `11.0/20` | RegimeFit `6.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
 
-**Strategy Bucket:** `general_setup`
+**Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #5 ARM — ▲ LONG | IGNORE | Score: 45/85
+### ⛔ #3 META — ▲ LONG | IGNORE | Score: 45/85
 
-**Price Snapshot:** $247.34 (-0.8%) | **RSI:** 53.1 | **Vol ratio:** 0.08x | **ATR:** 19.6019 | **vs MA20:** below ⚠️
+**Price Snapshot:** $550.20 (+0.8%) | **RSI:** 31.5 | **Vol ratio:** 0.23x | **ATR:** 16.9364 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `19.5/25` | MarketConf `8.0/20` | RegimeFit `7.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `18.1/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #4 AVGO — ▲ LONG | IGNORE | Score: 44/85
+
+**Price Snapshot:** $368.14 (+1.1%) | **RSI:** 39.0 | **Vol ratio:** 0.25x | **ATR:** 15.0093 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `17.4/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 GOOGL — ▲ LONG | IGNORE | Score: 44/85
+
+**Price Snapshot:** $343.12 (+0.7%) | **RSI:** 23.4 | **Vol ratio:** 0.18x | **ATR:** 8.1157 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `17.6/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
@@ -72,31 +72,33 @@
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 46
-- `SPY` SHORT | IGNORE | score 45
+- `QQQ` SHORT | IGNORE | score 41
+- `SPY` LONG | IGNORE | score 37
 
 ---
 ## 📰 Key News (Last 24h)
 
-**LLY**  ·  macro
-  ▲ Lyntris CEO Brian Morrison on IPO debut: We're here to drive long-term value for investors - CNBC  [Cnbc]
+**AAPL**  ·  earnings
+  ◆ Amazon Surges and Apple Falls on Latest Earnings  [WSJ]
+
+**NVDA**  ·  earnings
+  ▲ Nvidia’s Ruthless Way to Beat the Competition Has 2 Problems  [Barron's]
+  ▲ Nvidia earnings, Jackson Hole to test pillars of stock rally  [Yahoo Finance]
+
+**MACRO**  ·  earnings
+  ▲ Bitcoin’s Surge Leaves Strategy With $1.4 Billion Profit  [Yahoo Finance]
 
 **PLTR**  ·  earnings
   ▲ Is Palantir Technologies (PLTR) Overvalued As Revenue Growth And 2026 Outlook Jump?  [Yahoo Finance]
 
-**META**  ·  earnings
-  ▲ Meta Stock Rebounds as Investors Revisit 28% Revenue Growth  [Yahoo Finance]
+**MU**  ·  earnings
+  ◆ NVIDIA Earnings Release Imminent, Key Supplier Micron Technology May Usher in Stock Price Breakout Opportunity  [NAI500]
 
-**AMZN**  ·  earnings
-  ▼ Jeff Bezos Plans to Sell $4.07 Billion Worth of Amazon Stock as Shares Shoot Up Over 20% After Earnings: Jim Cramer Calls it 'Buzzkill'  [Yahoo Finance]
-  ◆ Amazon's Stake in Anthropic Is Now Big Enough to Move Its Earnings. Here's How That Compares to Alphabet's Stake in SpaceX.  [Yahoo Finance]
+**COST**  ·  earnings
+  ▲ Resolute Mining (ASX:RSG) Shares Rally On Profit Surge Despite Cost Pressure  [simplywall.st]
 
-**NVDA**  ·  earnings
-  ▲ Nvidia's strong earnings outlook fuels analyst optimism and potential stock valuation upside.  [Pluang]
-  ▲ Want to Play Nvidia Earnings Without Buying the Stock? This $71.6 Billion ETF Has NVDA as Its Top Holding  [TipRanks]
-
-**MSFT**  ·  earnings
-  ▲ NVDA Stock Eyes ‘Beat-And-Raise’ Quarter Next Week As Microsoft, Amazon, SpaceX Fuel ‘Rock-Solid’ AI Demand  [Stocktwits]
+**SBUX**  ·  macro
+  ▼ Starbucks Is Reportedly Cutting 224 Jobs As Its $2B Cost Push Takes Shape — SBUX Stock Slips 1.5%  [Stocktwits]
 
 ---
 ## 🛡 Research Risk Rules
