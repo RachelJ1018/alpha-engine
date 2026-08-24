@@ -1,104 +1,89 @@
-# 📊 Daily Research Report — 2026-08-21
-*Generated: 2026-08-21 14:44*
+# 📊 Daily Research Report — 2026-08-24
+*Generated: 2026-08-24 14:46*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.27%
-**SPY RSI(14):** 56.7
+**SPY:** -0.26%
+**SPY RSI(14):** 40.7
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### GLD  $428.55 (+1.2%)
+**ACTIONABLE** · LONG · EE=18 · post earnings drift · score=57
+> LONG. Strong sector-wide earnings growth and production performance [1, 2] coupled with bullish drilling momentum [3] indicate sustained institutional demand fo
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `PLTR` · `NVDA` · `META` · `AVGO` · `GOOGL` · `COST`
+**🟢 ACTIONABLE (1):** `GLD`
+**⛔ IGNORE (19):** `GOOGL` · `TSM` · `BAC` · `PLTR` · `MSFT` · `COST`
+
+---
+## 🏆 Top Trade
+
+**GLD — LONG | ACTIONABLE | Score: 57**
+
+> LONG. Strong sector-wide earnings growth and production performance [1, 2] coupled with bullish drilling momentum [3] indicate sustained institutional demand for gold. Positive sentiment in mining stocks suggests further upside for the underlying metal despite overbought technical indicators.
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$428.55 | $418.93 (-2.2%) | $447.78 (+4.5%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 PLTR — ▲ LONG | IGNORE | Score: 50/85
+### 🟢 #1 GLD — ▲ LONG | ACTIONABLE | Score: 57/85
 
-**Price Snapshot:** $175.49 (+0.9%) | **RSI:** 78.0 | **Vol ratio:** 0.16x | **ATR:** 9.1174 | **vs MA20:** above ✅
+**Price Snapshot:** $428.55 (+1.2%) | **RSI:** 82.6 | **Vol ratio:** 1.12x | **ATR:** 8.0136 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.3/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 NVDA — ▲ LONG | IGNORE | Score: 45/85
-
-**Price Snapshot:** $214.91 (-0.9%) | **RSI:** 59.8 | **Vol ratio:** 0.26x | **ATR:** 5.7507 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.8/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `17.6/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `8.5/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. Strong sector-wide earnings growth and production performance [1, 2] coupled with bullish drilling momentum [3] indicate sustained institutional demand for gold. Positive sentiment in mining stocks suggests further upside for the underlying metal despite overbought technical indicators.
 
-### ⛔ #3 META — ▲ LONG | IGNORE | Score: 45/85
+**Entry Consideration:** Enter on a minor intraday dip toward $426.50 to mitigate RSI extension risk.
+**Risk / Invalidation Level:** Hard stop below $418.00 or a daily close below the 5-day EMA.
+**Initial Upside / Downside Case:** $438.00 initial target within 2-5 trading days.
+**Key Risk:** ❌ RSI of 82.6 signals extreme overbought conditions, increasing the risk of a sharp technical correction.
 
-**Price Snapshot:** $550.20 (+0.8%) | **RSI:** 31.5 | **Vol ratio:** 0.23x | **ATR:** 16.9364 | **vs MA20:** below ⚠️
+---
+## 🌍 Macro Watchlist
 
-**Layered Scores:** EventEdge `18.1/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #4 AVGO — ▲ LONG | IGNORE | Score: 44/85
-
-**Price Snapshot:** $368.14 (+1.1%) | **RSI:** 39.0 | **Vol ratio:** 0.25x | **ATR:** 15.0093 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `17.4/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #5 GOOGL — ▲ LONG | IGNORE | Score: 44/85
-
-**Price Snapshot:** $343.12 (+0.7%) | **RSI:** 23.4 | **Vol ratio:** 0.18x | **ATR:** 8.1157 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `17.6/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
+- ⛔ `COIN` LONG | IGNORE | score 33 | —
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 41
-- `SPY` LONG | IGNORE | score 37
+- `SPY` LONG | IGNORE | score 32
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AAPL**  ·  earnings
-  ◆ Amazon Surges and Apple Falls on Latest Earnings  [WSJ]
-
 **NVDA**  ·  earnings
-  ▲ Nvidia’s Ruthless Way to Beat the Competition Has 2 Problems  [Barron's]
-  ▲ Nvidia earnings, Jackson Hole to test pillars of stock rally  [Yahoo Finance]
-
-**MACRO**  ·  earnings
-  ▲ Bitcoin’s Surge Leaves Strategy With $1.4 Billion Profit  [Yahoo Finance]
+  ▲ Nvidia is the beating heart of the AI boom and the stock market — which sets up a big test  [MarketWatch]
+  ▲ Nvidia Q2 Preview: Strong Earnings and Low Valuation Set the Stage for Upside  [Yahoo Finance]
 
 **PLTR**  ·  earnings
-  ▲ Is Palantir Technologies (PLTR) Overvalued As Revenue Growth And 2026 Outlook Jump?  [Yahoo Finance]
+  ▲ Palantir Soars 30% After Blockbuster Earnings—Is the Rally Just Getting Started?  [MarketBeat]
+  ▲ Palantir Q2 2026: Revenue $1.935B (+93%), U.S. Commercial Surge 149%, Rule of 40 Reaches 155%, Stock Extends Breakout  [TradingKey]
 
-**MU**  ·  earnings
-  ◆ NVIDIA Earnings Release Imminent, Key Supplier Micron Technology May Usher in Stock Price Breakout Opportunity  [NAI500]
+**MSFT**  ·  earnings
+  ▲ Microsoft Extends Winning Streak Amid Earnings Surge; Is The Stock A Buy Now?  [Investor's Business Daily]
+  ▲ What Microsoft Stock’s Thin Earnings Premium Is Actually Buying  [Trefis]
 
-**COST**  ·  earnings
-  ▲ Resolute Mining (ASX:RSG) Shares Rally On Profit Surge Despite Cost Pressure  [simplywall.st]
+**JPM**  ·  earnings
+  ▲ JPMorgan's Q2 Trading Revenues Surge 35%: Can the Momentum Continue?  [TradingView]
 
-**SBUX**  ·  macro
-  ▼ Starbucks Is Reportedly Cutting 224 Jobs As Its $2B Cost Push Takes Shape — SBUX Stock Slips 1.5%  [Stocktwits]
+**GOOGL**  ·  earnings
+  ▲ Alphabet Post-Earnings Rebound is On: Buy at $363?  [24/7 Wall St.]
 
 ---
 ## 🛡 Research Risk Rules
