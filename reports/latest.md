@@ -1,89 +1,89 @@
-# 📊 Daily Research Report — 2026-08-24
-*Generated: 2026-08-24 14:46*
+# 📊 Daily Research Report — 2026-08-25
+*Generated: 2026-08-25 14:47*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.26%
-**SPY RSI(14):** 40.7
+**SPY:** +0.10%
+**SPY RSI(14):** 43.2
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### GLD  $428.55 (+1.2%)
-**ACTIONABLE** · LONG · EE=18 · post earnings drift · score=57
-> LONG. Strong sector-wide earnings growth and production performance [1, 2] coupled with bullish drilling momentum [3] indicate sustained institutional demand fo
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE (1):** `GLD`
-**⛔ IGNORE (19):** `GOOGL` · `TSM` · `BAC` · `PLTR` · `MSFT` · `COST`
-
----
-## 🏆 Top Trade
-
-**GLD — LONG | ACTIONABLE | Score: 57**
-
-> LONG. Strong sector-wide earnings growth and production performance [1, 2] coupled with bullish drilling momentum [3] indicate sustained institutional demand for gold. Positive sentiment in mining stocks suggests further upside for the underlying metal despite overbought technical indicators.
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$428.55 | $418.93 (-2.2%) | $447.78 (+4.5%) | 1R | 2R |
+**🟢 ACTIONABLE:** None today
+**⚪ MONITOR (2):** `MSFT` · `COIN`
+**⛔ IGNORE (18):** `LLY` · `PLTR` · `META` · `NVDA` · `AMZN` · `ARM`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟢 #1 GLD — ▲ LONG | ACTIONABLE | Score: 57/85
+### ⚪ #1 MSFT — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $428.55 (+1.2%) | **RSI:** 82.6 | **Vol ratio:** 1.12x | **ATR:** 8.0136 | **vs MA20:** above ✅
+**Price Snapshot:** $487.44 (+0.0%) | **RSI:** 50.7 | **Vol ratio:** 0.12x | **ATR:** 9.217 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.6/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `8.5/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `20.5/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Strong sector-wide earnings growth and production performance [1, 2] coupled with bullish drilling momentum [3] indicate sustained institutional demand for gold. Positive sentiment in mining stocks suggests further upside for the underlying metal despite overbought technical indicators.
+**What & Why:** LONG. MSFT is supported by a significant price target hike to $600 following an Azure earnings beat and a promising technical setup [1][4]. The stock maintains a winning streak as growth prospects in gaming and cloud remain robust [2][5].
 
-**Entry Consideration:** Enter on a minor intraday dip toward $426.50 to mitigate RSI extension risk.
-**Risk / Invalidation Level:** Hard stop below $418.00 or a daily close below the 5-day EMA.
-**Initial Upside / Downside Case:** $438.00 initial target within 2-5 trading days.
-**Key Risk:** ❌ RSI of 82.6 signals extreme overbought conditions, increasing the risk of a sharp technical correction.
+**Entry Consideration:** Enter near current price of $487.44 or on a retest of the MA20 at $481.98.
+**Risk / Invalidation Level:** Daily close below the MA20 ($481.98) or a break below $478.00.
+**Initial Upside / Downside Case:** Initial target of $500.00 within a 5-10 day timeframe.
+**Key Risk:** ❌ Low relative volume (0.12x) combined with a choppy market regime may stall upward momentum.
 
----
-## 🌍 Macro Watchlist
+### ⚪ #2 COIN — ▲ LONG | MONITOR | Score: 51/85
 
-- ⛔ `COIN` LONG | IGNORE | score 33 | —
+**Price Snapshot:** $185.99 (+3.6%) | **RSI:** 70.4 | **Vol ratio:** 0.46x | **ATR:** 9.5336 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. COIN is poised to benefit from Bitcoin reclaiming the $68,000 level and improving regulatory sentiment [1], alongside new revenue potential from tokenized trading of major tech equities [2].
+
+**Entry Consideration:** Limit entry near $183.50 to account for overbought RSI while maintaining exposure to the momentum.
+**Risk / Invalidation Level:** Hard stop at $177.50 to protect against a reversal below the daily open.
+**Initial Upside / Downside Case:** $195.00 target for a short-term momentum play over 1-2 days.
+**Key Risk:** ❌ RSI at 70.4 indicates overbought conditions which could trigger a sharp pullback if Bitcoin volatility spikes.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 32
+- `SPY` LONG | IGNORE | score 38
 
 ---
 ## 📰 Key News (Last 24h)
 
 **NVDA**  ·  earnings
-  ▲ Nvidia is the beating heart of the AI boom and the stock market — which sets up a big test  [MarketWatch]
-  ▲ Nvidia Q2 Preview: Strong Earnings and Low Valuation Set the Stage for Upside  [Yahoo Finance]
+  ▼ Nvidia shares set for $280 billion price swing after earnings ...  [Reuters]
+  ▼ Nvidia Stock Falls to $208.48, Breaks Below Key Averages Before Earnings  [Cryptonews.net]
 
-**PLTR**  ·  earnings
-  ▲ Palantir Soars 30% After Blockbuster Earnings—Is the Rally Just Getting Started?  [MarketBeat]
-  ▲ Palantir Q2 2026: Revenue $1.935B (+93%), U.S. Commercial Surge 149%, Rule of 40 Reaches 155%, Stock Extends Breakout  [TradingKey]
+**PLTR**  ·  macro
+  ▲ Truist reiterates Palantir stock Buy rating on FDE talent advantage  [Investing.com India]
+
+**AMD**  ·  earnings
+  ▼ AMD Is Winning Nvidia (NVDA) Customers But Investors May Be Missing The Catch  [Yahoo Finance]
+
+**TSM**  ·  earnings
+  ▼ Semiconductor Stocks Slide Ahead of NVIDIA Earnings: Intel Falls 5%, AMD Slides 4%, Taiwan Semiconductor Slips 3%  [Yahoo Finance]
 
 **MSFT**  ·  earnings
-  ▲ Microsoft Extends Winning Streak Amid Earnings Surge; Is The Stock A Buy Now?  [Investor's Business Daily]
-  ▲ What Microsoft Stock’s Thin Earnings Premium Is Actually Buying  [Trefis]
+  ▲ Microsoft Stock Forecast: Citi Raises MSFT Target to $600 After Azure Earnings Beat  [BeInCrypto]
 
-**JPM**  ·  earnings
-  ▲ JPMorgan's Q2 Trading Revenues Surge 35%: Can the Momentum Continue?  [TradingView]
+**GLD**  ·  macro
+  ▲ Gold ETFs like GLD face a 28% tax rate on gains, higher than stock ETFs, impacting investor returns.  [Pluang]
 
-**GOOGL**  ·  earnings
-  ▲ Alphabet Post-Earnings Rebound is On: Buy at $363?  [24/7 Wall St.]
+**AVGO**  ·  earnings
+  ◆ Today’s Market Recap: Nvidia Earnings Take Center Stage as Micron and Broadcom Drag Down Memory Chip Sector  [TradingKey]
 
 ---
 ## 🛡 Research Risk Rules
