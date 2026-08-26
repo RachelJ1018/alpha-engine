@@ -1,89 +1,100 @@
-# 📊 Daily Research Report — 2026-08-25
-*Generated: 2026-08-25 14:47*
+# 📊 Daily Research Report — 2026-08-26
+*Generated: 2026-08-26 14:46*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.10%
-**SPY RSI(14):** 43.2
+**SPY:** -0.10%
+**SPY RSI(14):** 45.9
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### META  $576.83 (+1.2%)
+**WATCHLIST** · LONG · EE=18 · post earnings drift · score=55
+> LONG. META exhibits relative strength in a choppy market, supported by its critical role as a major AI infrastructure customer [1] and significant upside potent
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (2):** `MSFT` · `COIN`
-**⛔ IGNORE (18):** `LLY` · `PLTR` · `META` · `NVDA` · `AMZN` · `ARM`
+**🟡 WATCHLIST (3):** `META` · `MSFT` · `PLTR`
+**⛔ IGNORE (17):** `TSLA` · `TSM` · `AAPL` · `AMD` · `WMT` · `LLY`
+
+---
+## 🏆 Top Trade
+
+**META — LONG | WATCHLIST | Score: 55**
+
+> LONG. META exhibits relative strength in a choppy market, supported by its critical role as a major AI infrastructure customer [1] and significant upside potential from AI-driven growth [4].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$576.83 | $555.24 (-3.7%) | $619.99 (+7.5%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 MSFT — ▲ LONG | MONITOR | Score: 51/85
+### 🟡 #1 META — ▲ LONG | WATCHLIST | Score: 55/85
 
-**Price Snapshot:** $487.44 (+0.0%) | **RSI:** 50.7 | **Vol ratio:** 0.12x | **ATR:** 9.217 | **vs MA20:** above ✅
+**Price Snapshot:** $576.83 (+1.2%) | **RSI:** 45.0 | **Vol ratio:** 0.85x | **ATR:** 17.9846 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.5/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. MSFT is supported by a significant price target hike to $600 following an Azure earnings beat and a promising technical setup [1][4]. The stock maintains a winning streak as growth prospects in gaming and cloud remain robust [2][5].
-
-**Entry Consideration:** Enter near current price of $487.44 or on a retest of the MA20 at $481.98.
-**Risk / Invalidation Level:** Daily close below the MA20 ($481.98) or a break below $478.00.
-**Initial Upside / Downside Case:** Initial target of $500.00 within a 5-10 day timeframe.
-**Key Risk:** ❌ Low relative volume (0.12x) combined with a choppy market regime may stall upward momentum.
-
-### ⚪ #2 COIN — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $185.99 (+3.6%) | **RSI:** 70.4 | **Vol ratio:** 0.46x | **ATR:** 9.5336 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.9/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `18.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `9.1/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. COIN is poised to benefit from Bitcoin reclaiming the $68,000 level and improving regulatory sentiment [1], alongside new revenue potential from tokenized trading of major tech equities [2].
+**What & Why:** LONG. META exhibits relative strength in a choppy market, supported by its critical role as a major AI infrastructure customer [1] and significant upside potential from AI-driven growth [4].
 
-**Entry Consideration:** Limit entry near $183.50 to account for overbought RSI while maintaining exposure to the momentum.
-**Risk / Invalidation Level:** Hard stop at $177.50 to protect against a reversal below the daily open.
-**Initial Upside / Downside Case:** $195.00 target for a short-term momentum play over 1-2 days.
-**Key Risk:** ❌ RSI at 70.4 indicates overbought conditions which could trigger a sharp pullback if Bitcoin volatility spikes.
+**Entry Consideration:** Limit orders near $573.13 (MA20) to capitalize on intraday mean reversion and confirm support.
+**Risk / Invalidation Level:** Daily close below $565.00, which invalidates the current technical bounce and relative strength.
+**Initial Upside / Downside Case:** $592.50 (MA50 level) as the primary resistance target within 3-5 trading sessions.
+**Key Risk:** ❌ Legal overhang and potential liquidity concerns stemming from the $18 billion federal settlement [3].
+
+### 🟡 #2 MSFT — ▲ LONG | WATCHLIST | Score: 54/85
+
+**Price Snapshot:** $494.06 (+0.5%) | **RSI:** 45.9 | **Vol ratio:** 0.18x | **ATR:** 9.0775 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `21.7/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Strong Azure earnings momentum and cloud growth are driving analyst price target upgrades to $600 [1][5]. Strategic customer relationships with Meta and potential AI revenue-sharing deals provide additional tailwinds for continued upside [4][2].
+
+**Entry Consideration:** Enter on a pullback to the MA20 support near $487.41 or a confirmed break above $495.00.
+**Risk / Invalidation Level:** Daily close below the MA20 ($487.41) or psychological support at $480.00.
+**Initial Upside / Downside Case:** Initial target of $515.00 with a 1-2 week timeframe as price trends toward analyst targets.
+**Key Risk:** ❌ Broad market volatility within the current CHOPPY regime could suppress tech valuations despite strong fundamentals.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 38
+- `SPY` SHORT | IGNORE | score 39
 
 ---
 ## 📰 Key News (Last 24h)
 
+**COST**  ·  macro
+  ▼ Bernstein SocGen cuts Strategy stock price target on Bitcoin outlook  [Investing.com]
+  ▲ MSTR Stock Price Target Raised to $175 by Canaccord as Strategy Swings to Profit  [Yahoo Finance]
+
 **NVDA**  ·  earnings
-  ▼ Nvidia shares set for $280 billion price swing after earnings ...  [Reuters]
-  ▼ Nvidia Stock Falls to $208.48, Breaks Below Key Averages Before Earnings  [Cryptonews.net]
+  ▲ Is NVIDIA Set for Another Earnings Beat? ETFs in Focus  [Yahoo Finance]
+  ▲ Is Nvidia (NVDA) Stock a Buy Ahead of Q2 Earnings?  [Yahoo Finance]
 
-**PLTR**  ·  macro
-  ▲ Truist reiterates Palantir stock Buy rating on FDE talent advantage  [Investing.com India]
-
-**AMD**  ·  earnings
-  ▼ AMD Is Winning Nvidia (NVDA) Customers But Investors May Be Missing The Catch  [Yahoo Finance]
-
-**TSM**  ·  earnings
-  ▼ Semiconductor Stocks Slide Ahead of NVIDIA Earnings: Intel Falls 5%, AMD Slides 4%, Taiwan Semiconductor Slips 3%  [Yahoo Finance]
+**ARM**  ·  earnings
+  ▲ ARM's 93X Earnings Multiple Overshadows Its Growth Potential  [Yahoo Finance UK]
 
 **MSFT**  ·  earnings
-  ▲ Microsoft Stock Forecast: Citi Raises MSFT Target to $600 After Azure Earnings Beat  [BeInCrypto]
+  ◆ MSFT, AMZN, GOOGL Reportedly In Revenue-Sharing Talks With China's Moonshot AI Over Kimi K3 Model  [Yahoo Finance]
+  ▲ Microsoft stock jumps 28% in a month on strong earnings and cloud growth, eyeing $600 target.  [Pluang]
 
-**GLD**  ·  macro
-  ▲ Gold ETFs like GLD face a 28% tax rate on gains, higher than stock ETFs, impacting investor returns.  [Pluang]
-
-**AVGO**  ·  earnings
-  ◆ Today’s Market Recap: Nvidia Earnings Take Center Stage as Micron and Broadcom Drag Down Memory Chip Sector  [TradingKey]
+**AMD**  ·  earnings
+  ▲ AMD Stock Gains After Upgrade: Analyst Sees ‘Strongest Combination’ Of Earnings Leverage, Data Center Gains  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
