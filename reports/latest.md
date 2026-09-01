@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-08-31
-*Generated: 2026-08-31 14:36*
+# 📊 Daily Research Report — 2026-09-01
+*Generated: 2026-09-01 14:37*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.51%
-**SPY RSI(14):** 44.2
+**SPY:** -0.36%
+**SPY RSI(14):** 40.6
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,60 +17,76 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (1):** `LLY`
-**⛔ IGNORE (19):** `NVDA` · `TSLA` · `AVGO` · `AMD` · `GS` · `MSFT`
+**⛔ IGNORE (20):** `MSFT` · `AVGO` · `NVDA` · `META` · `PLTR` · `COST`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 LLY — ▼ SHORT | MONITOR | Score: 52/85
+### ⛔ #1 MSFT — ▲ LONG | IGNORE | Score: 49/85
 
-**Price Snapshot:** $1151.00 (-2.0%) | **RSI:** 39.4 | **Vol ratio:** 0.19x | **ATR:** 36.8608 | **vs MA20:** below ⚠️
+**Price Snapshot:** $503.75 (-0.7%) | **RSI:** 58.8 | **Vol ratio:** 0.15x | **ATR:** 9.6706 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `16.7/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `19.5/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
-**Strategy Bucket:** `macro_beta_rebound`
+**Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** SHORT. LLY exhibits technical deterioration by trading below its MA20 and MA50 despite positive FDA news [2] and research expansion [4]. Negative sentiment and failure to hold key moving averages suggest further downside momentum in the current neutral-to-bearish regime.
 
-**Entry Consideration:** Enter on a break below $1150.00 or a failed retest of $1165.00.
-**Risk / Invalidation Level:** Daily close above $1187.00 (MA50 level).
-**Initial Upside / Downside Case:** $1110.00 initial target within 3-5 trading sessions.
-**Key Risk:** ❌ Positive fundamental catalysts from Mounjaro [2] could trigger a sharp mean-reversion rally.
+### ⛔ #2 AVGO — ▲ LONG | IGNORE | Score: 48/85
 
----
-## 🌍 Macro Watchlist
+**Price Snapshot:** $365.29 (-1.4%) | **RSI:** 24.9 | **Vol ratio:** 0.19x | **ATR:** 12.4036 | **vs MA20:** below ⚠️
 
-- ⛔ `XOM` LONG | IGNORE | score 35 | —
+**Layered Scores:** EventEdge `21.0/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
----
-## 📈 Market Instruments
+**Strategy Bucket:** `post_earnings_drift`
 
-- `QQQ` SHORT | IGNORE | score 39
-- `SPY` SHORT | IGNORE | score 38
+
+### ⛔ #3 NVDA — ▲ LONG | IGNORE | Score: 46/85
+
+**Price Snapshot:** $217.86 (-1.3%) | **RSI:** 44.9 | **Vol ratio:** 0.22x | **ATR:** 6.6736 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `19.6/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #4 META — ▲ LONG | IGNORE | Score: 46/85
+
+**Price Snapshot:** $574.09 (+0.3%) | **RSI:** 48.0 | **Vol ratio:** 0.19x | **ATR:** 17.4078 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `17.4/25` | MarketConf `9.0/20` | RegimeFit `8.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 PLTR — ▲ LONG | IGNORE | Score: 46/85
+
+**Price Snapshot:** $186.19 (-0.1%) | **RSI:** 66.0 | **Vol ratio:** 0.18x | **ATR:** 6.6795 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `16.4/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▲ Why the Tech Stocks Rally is Under Threat From Surging Rate-Hike Odds  [Barron's]
-
 **META**  ·  macro
-  ▲ BofA reiterates Buy on Meta stock on AI agent launch plans By Investing.com  [Investing.com UK]
-  ▼ Meta Stock Looks Undervalued. Is the Market Missing Something?  [The Motley Fool]
-
-**AMZN**  ·  ma
-  ▼ Amazon Jumps 4% on Expanded AWS Chip Deal: Why Is NVIDIA Falling 4%?  [Yahoo Finance]
+  ▲ Bernstein reiterates Meta stock Outperform on AI ad strength By Investing.com  [Investing.com UK]
 
 **NVDA**  ·  earnings
-  ▲ Nvidia Q2 2026 Earnings Analysis: Record Revenue & AI Chip Dominance  [Intellectia AI]
-  ▲ NVIDIA Stock (NVDA) Opinions on Post-Earnings AI Growth Prospects  [Quiver Quantitative]
+  ▲ How Nvidia Tried to Profit Twice From Every Chip Sale—and Why It Backfired  [Yahoo Finance]
+  ▲ Nvidia Just Slid 5% Post-Earnings. Again. CEO Jensen Huang Insists "This Time Is Different." Is the Stock Still a Buy?  [Yahoo Finance]
 
-**MSFT**  ·  macro
-  ▲ Can Microsoft Stock Surge to a New All-Time High by the End of 2026 as Azure Cloud Demand Accelerates?  [The Motley Fool]
+**AMD**  ·  earnings
+  ▼ AMD Enters a Sovereign AI Showcase, Not a Revenue Windfall  [Yahoo Finance]
 
-**GOOGL**  ·  earnings
-  ◆ Meta's Ad Revenue Approaches Google's  [Intellectia AI]
+**AVGO**  ·  earnings
+  ◆ Hock Tan Guided Broadcom Past $100 Billion of AI Revenue in 2027. The Stock Is 25% off Its High.  [The Globe and Mail]
+  ▲ Broadcom Earnings Preview: Can AI Chip Growth Send AVGO Stock to Another Record?  [Markets.com]
+
+**COST**  ·  earnings
+  ▲ T. Rowe Price stock holds steady as TD Cowen lifts price target after Q2 beat  [AD HOC NEWS]
+  ▼ Stock Market Today: S&P 500 and Dow Jones Slip as Oil, Rates and September Risk Pressure Wall Street  [CryptoRank]
 
 ---
 ## 🛡 Research Risk Rules
