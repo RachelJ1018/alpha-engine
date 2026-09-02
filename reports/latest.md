@@ -1,92 +1,102 @@
-# 📊 Daily Research Report — 2026-09-01
-*Generated: 2026-09-01 14:37*
+# 📊 Daily Research Report — 2026-09-02
+*Generated: 2026-09-02 14:36*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.36%
-**SPY RSI(14):** 40.6
+**SPY:** +0.50%
+**SPY RSI(14):** 36.2
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### NVDA  $223.50 (+2.8%)
+**WATCHLIST** · LONG · EE=21 · post earnings drift · score=56
+> LONG. NVDA's attractive 28x P/E ratio relative to peers and projected 70% revenue growth signal significant valuation upside [3][4]. Sustained 75% gross margins
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `MSFT` · `AVGO` · `NVDA` · `META` · `PLTR` · `COST`
+**🟡 WATCHLIST (1):** `NVDA`
+**⚪ MONITOR (2):** `AVGO` · `META`
+**⛔ IGNORE (17):** `JPM` · `BAC` · `MSFT` · `AMD` · `AMZN` · `GOOGL`
+
+---
+## 🏆 Top Trade
+
+**NVDA — LONG | WATCHLIST | Score: 56**
+
+> LONG. NVDA's attractive 28x P/E ratio relative to peers and projected 70% revenue growth signal significant valuation upside [3][4]. Sustained 75% gross margins and AI-driven demand provide a strong fundamental catalyst for price expansion [5].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$223.50 | $215.25 (-3.7%) | $240.00 (+7.4%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 MSFT — ▲ LONG | IGNORE | Score: 49/85
+### 🟡 #1 NVDA — ▲ LONG | WATCHLIST | Score: 56/85
 
-**Price Snapshot:** $503.75 (-0.7%) | **RSI:** 58.8 | **Vol ratio:** 0.15x | **ATR:** 9.6706 | **vs MA20:** above ✅
+**Price Snapshot:** $223.50 (+2.8%) | **RSI:** 48.6 | **Vol ratio:** 0.27x | **ATR:** 6.8764 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `19.5/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 AVGO — ▲ LONG | IGNORE | Score: 48/85
-
-**Price Snapshot:** $365.29 (-1.4%) | **RSI:** 24.9 | **Vol ratio:** 0.19x | **ATR:** 12.4036 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `21.0/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `20.9/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. NVDA's attractive 28x P/E ratio relative to peers and projected 70% revenue growth signal significant valuation upside [3][4]. Sustained 75% gross margins and AI-driven demand provide a strong fundamental catalyst for price expansion [5].
 
-### ⛔ #3 NVDA — ▲ LONG | IGNORE | Score: 46/85
+**Entry Consideration:** Limit order near $221.50-$223.00 to capture support above the MA20.
+**Risk / Invalidation Level:** Daily close below $218.50, invalidating the support of the 20-day moving average.
+**Initial Upside / Downside Case:** $235.00 within 2-5 trading days based on current momentum.
+**Key Risk:** ❌ Post-earnings profit taking or broader sector rotation despite strong fundamentals.
 
-**Price Snapshot:** $217.86 (-1.3%) | **RSI:** 44.9 | **Vol ratio:** 0.22x | **ATR:** 6.6736 | **vs MA20:** below ⚠️
+### ⚪ #2 AVGO — ▲ LONG | MONITOR | Score: 50/85
 
-**Layered Scores:** EventEdge `19.6/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Price Snapshot:** $370.17 (+0.1%) | **RSI:** 25.1 | **Vol ratio:** 0.2x | **ATR:** 11.9243 | **vs MA20:** below ⚠️
 
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #4 META — ▲ LONG | IGNORE | Score: 46/85
-
-**Price Snapshot:** $574.09 (+0.3%) | **RSI:** 48.0 | **Vol ratio:** 0.19x | **ATR:** 17.4078 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `17.4/25` | MarketConf `9.0/20` | RegimeFit `8.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `17.9/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. AVGO is deeply oversold with an RSI of 25.1, presenting a mean-reversion opportunity as institutional buyers like ARK Invest accumulate shares [1] ahead of the upcoming earnings catalyst [2, 5].
 
-### ⛔ #5 PLTR — ▲ LONG | IGNORE | Score: 46/85
+**Entry Consideration:** Enter near $370.00 or on a 5-minute candle close above $372.00 to confirm a bounce from oversold territory.
+**Risk / Invalidation Level:** Close position if price breaks below $362.00, representing a fresh leg down.
+**Initial Upside / Downside Case:** $385.00 (MA20/MA50 convergence) within 3-5 trading sessions.
+**Key Risk:** ❌ Pre-earnings volatility or a broader semiconductor sector sell-off overriding technical recovery.
 
-**Price Snapshot:** $186.19 (-0.1%) | **RSI:** 66.0 | **Vol ratio:** 0.18x | **ATR:** 6.6795 | **vs MA20:** above ✅
+---
+## 📈 Market Instruments
 
-**Layered Scores:** EventEdge `16.4/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
+- `QQQ` LONG | IGNORE | score 37
+- `SPY` LONG | IGNORE | score 34
 
 ---
 ## 📰 Key News (Last 24h)
 
+**AVGO**  ·  earnings
+  ▲ Broadcom earnings need to answer these questions for the stock to rally again  [MarketWatch]
+
 **META**  ·  macro
   ▲ Bernstein reiterates Meta stock Outperform on AI ad strength By Investing.com  [Investing.com UK]
+
+**COST**  ·  earnings
+  ▲ Why Costco (COST) Could Beat Earnings Estimates Again  [Yahoo Finance]
+
+**MSFT**  ·  earnings
+  ▲ Meet the Most Profitable Company in America Right Now (It’s Not Apple or Microsoft)  [Yahoo Finance]
+
+**MACRO**  ·  earnings
+  ▲ Dell's Monster Quarterly Beat Shows Continued AI Momentum  [Yahoo Finance]
+  ▲ MongoDB Stock Tumbles Despite An Earnings Beat. Here's Why.  [Yahoo Finance]
 
 **NVDA**  ·  earnings
   ▲ How Nvidia Tried to Profit Twice From Every Chip Sale—and Why It Backfired  [Yahoo Finance]
   ▲ Nvidia Just Slid 5% Post-Earnings. Again. CEO Jensen Huang Insists "This Time Is Different." Is the Stock Still a Buy?  [Yahoo Finance]
-
-**AMD**  ·  earnings
-  ▼ AMD Enters a Sovereign AI Showcase, Not a Revenue Windfall  [Yahoo Finance]
-
-**AVGO**  ·  earnings
-  ◆ Hock Tan Guided Broadcom Past $100 Billion of AI Revenue in 2027. The Stock Is 25% off Its High.  [The Globe and Mail]
-  ▲ Broadcom Earnings Preview: Can AI Chip Growth Send AVGO Stock to Another Record?  [Markets.com]
-
-**COST**  ·  earnings
-  ▲ T. Rowe Price stock holds steady as TD Cowen lifts price target after Q2 beat  [AD HOC NEWS]
-  ▼ Stock Market Today: S&P 500 and Dow Jones Slip as Oil, Rates and September Risk Pressure Wall Street  [CryptoRank]
 
 ---
 ## 🛡 Research Risk Rules
