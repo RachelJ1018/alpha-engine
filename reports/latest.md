@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-09-03
-*Generated: 2026-09-03 14:38*
+# 📊 Daily Research Report — 2026-09-04
+*Generated: 2026-09-04 14:35*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.41%
-**SPY RSI(14):** 41.3
+**SPY:** -0.30%
+**SPY RSI(14):** 48.2
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,75 +17,86 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (2):** `NVDA` · `META`
-**⛔ IGNORE (18):** `PLTR` · `MSFT` · `AVGO` · `GS` · `GOOGL` · `AMZN`
+**⛔ IGNORE (20):** `NVDA` · `QQQ` · `ARM` · `AMD` · `BAC` · `AAPL`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 NVDA — ▲ LONG | MONITOR | Score: 52/85
+### ⛔ #1 NVDA — ▲ LONG | IGNORE | Score: 49/85
 
-**Price Snapshot:** $226.37 (+0.9%) | **RSI:** 50.9 | **Vol ratio:** 0.29x | **ATR:** 7.2921 | **vs MA20:** above ✅
+**Price Snapshot:** $233.62 (+2.3%) | **RSI:** 55.7 | **Vol ratio:** 0.37x | **ATR:** 7.6193 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.5/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `18.1/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. NVDA is supported by renewed confidence in AI spending and a bullish price forecast from JPMorgan [2][3]. The stock shows relative strength by trending higher despite soft guidance from sector peers [4].
 
-**Entry Consideration:** Enter near current price of $226.37 or on a minor pullback toward the MA20 ($219.66).
-**Risk / Invalidation Level:** Daily close below $215.00, invalidating the support of the 20-day moving average.
-**Initial Upside / Downside Case:** $240.00 initial target level within the next 3-5 trading sessions.
-**Key Risk:** ❌ Sector-wide volatility or negative sentiment spillover from peer earnings misses like Broadcom.
+### ⛔ #2 QQQ — ▲ LONG | IGNORE | Score: 47/85
 
-### ⚪ #2 META — ▲ LONG | MONITOR | Score: 51/85
+**Price Snapshot:** $718.81 (+0.2%) | **RSI:** 41.9 | **Vol ratio:** 0.22x | **ATR:** 8.1779 | **vs MA20:** above ✅
 
-**Price Snapshot:** $610.73 (+3.0%) | **RSI:** 57.7 | **Vol ratio:** 0.35x | **ATR:** 19.645 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.8/25` | MarketConf `14.0/20` | RegimeFit `8.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `16.8/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `0.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `macro_beta_rebound`
 
-**What & Why:** LONG. Bullish sentiment is driven by BofA and Bernstein reiterating positive outlooks on AI agent launches and AI-enhanced advertising strength [3, 4]. Price action remains technically strong as it holds above the 50-day moving average following a significant daily gain.
 
-**Entry Consideration:** Limit orders near $608.50 or on a break above the $612.00 intraday high.
-**Risk / Invalidation Level:** Daily close below $594.00, aligning with the 50-day moving average support.
-**Initial Upside / Downside Case:** $625.00 - $630.00 within 1-3 trading sessions.
-**Key Risk:** ❌ Potential mean reversion or profit-taking following the +3.02% daily move in a neutral regime.
+### ⛔ #3 ARM — ▲ LONG | IGNORE | Score: 46/85
 
----
-## 🌍 Macro Watchlist
+**Price Snapshot:** $253.47 (+4.5%) | **RSI:** 40.7 | **Vol ratio:** 0.23x | **ATR:** 14.1571 | **vs MA20:** above ✅
 
-- ⛔ `XOM` LONG | IGNORE | score 35 | —
+**Layered Scores:** EventEdge `17.4/25` | MarketConf `9.0/20` | RegimeFit `8.5/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #4 AMD — ▲ LONG | IGNORE | Score: 46/85
+
+**Price Snapshot:** $468.33 (+2.7%) | **RSI:** 36.0 | **Vol ratio:** 0.25x | **ATR:** 18.1271 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `17.8/25` | MarketConf `9.0/20` | RegimeFit `8.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 BAC — ▲ LONG | IGNORE | Score: 46/85
+
+**Price Snapshot:** $62.30 (-1.2%) | **RSI:** 40.3 | **Vol ratio:** 0.18x | **ATR:** 1.0796 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `19.1/25` | MarketConf `8.0/20` | RegimeFit `7.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `macro_beta_rebound`
+
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 44
+- `QQQ` LONG | IGNORE | score 47
 - `SPY` LONG | IGNORE | score 41
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AAPL**  ·  earnings
-  ▲ Apple’s New CEO Has Millions Riding on the Stock Beating the Market  [Barron's]
-  ▲ Apple stock is at a record — how to cushion gains ahead of earnings: AlphaSpace Options Playbook  [Yahoo Finance]
-
-**AVGO**  ·  earnings
-  ▲ Broadcom Inc. (AVGO) Q3 Earnings and Revenues Beat Estimates  [Yahoo Finance]
-  ▼ Broadcom options price a 7% earnings swing: will AVGO hit $400 or fall below $343?  [TradingView]
-
-**AMD**  ·  earnings
-  ▲ AMD stock eases after strong Q2 2026 earnings and robust AI outlook  [AD HOC NEWS]
-
 **NVDA**  ·  earnings
-  ▲ Nvidia Leads Chip Stocks Higher Amid Renewed Confidence In AI Spending  [Investors]
+  ◆ Why Nvidia Is the Big Winner From Broadcom Earnings  [Barron's]
+  ▲ Nvidia Beat Earnings Estimates Again (15 Times Straight). History Says the Stock Will Do This Next.  [Yahoo Finance]
 
-**META**  ·  earnings
-  ◆ Great News for Meta Stock Investors | The Motley Fool  [Fool]
+**COST**  ·  earnings
+  ▼ Morgan Stanley cuts Lululemon stock price target on guidance concerns  [Investing.com]
+
+**PLTR**  ·  earnings
+  ▲ Prediction: Palantir's Commercial Revenue Passes Its Government Revenue Before 2027, and the Stock's Growth Math Changes With It.  [Yahoo Finance]
 
 **LLY**  ·  earnings
-  ▲ LLY Oct 2026 1305.000 call (LLY261002C01305000) Stock Price, News, Quote & History - Yahoo Finance  [Finance]
+  ▼ The Most Overlooked Reason Eli Lilly Stock Keeps Surging -- and It Has Nothing to Do With Weight Loss  [Yahoo Finance]
+
+**ORCL**  ·  macro
+  ◆ Nasdaq Futures Edge Higher As Jobs Report Takes Center Stage: TSLA, LULU, ORCL, PL, NVDA, PLTR, RKLB In Focus  [Stocktwits]
+
+**MSFT**  ·  earnings
+  ▲ Microsoft (MSFT) Following Its Q4 Beat And AI Spend Plan Faces A Valuation Test  [simplywall.st]
+
+**META**  ·  earnings
+  ▲ Meta's stock could hit $1,000 by 2027 driven by AI growth and strong ad revenue.  [Pluang]
 
 ---
 ## 🛡 Research Risk Rules
