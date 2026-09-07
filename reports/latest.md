@@ -1,102 +1,142 @@
-# 📊 Daily Research Report — 2026-09-04
-*Generated: 2026-09-04 14:35*
+# 📊 Daily Research Report — 2026-09-07
+*Generated: 2026-09-07 14:36*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.30%
-**SPY RSI(14):** 48.2
+**SPY:** -0.39%
+**SPY RSI(14):** 47.5
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### AVGO  $357.90 (+0.2%)
+**ACTIONABLE** · LONG · EE=18 · post earnings drift · score=59
+> LONG. AVGO is technically oversold with an RSI of 29.2 following a post-earnings 'hedge fund blowup' despite tripling AI chip sales [2, 4]. Projected 400% AI re
+
+### TSLA  $354.08 (-5.9%)
+**WATCHLIST** · LONG · EE=19 · relative strength long · score=57
+> LONG. TSLA is positioned for a mean-reversion bounce as premarket futures rise and the stock remains a primary focus for investors [2]. The rollout of Cybercabs
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `NVDA` · `QQQ` · `ARM` · `AMD` · `BAC` · `AAPL`
+**🟢 ACTIONABLE (2):** `AVGO` · `NVDA`
+**🟡 WATCHLIST (2):** `TSLA` · `AMD`
+**⚪ MONITOR (1):** `COST`
+**⛔ IGNORE (15):** `LLY` · `GLD` · `AMZN` · `AAPL` · `GOOGL` · `META`
+
+---
+## 🏆 Top Trade
+
+**AVGO — LONG | ACTIONABLE | Score: 59**
+
+> LONG. AVGO is technically oversold with an RSI of 29.2 following a post-earnings 'hedge fund blowup' despite tripling AI chip sales [2, 4]. Projected 400% AI revenue growth over two years suggests the current dip is a high-value entry for a mean-reversion play [1].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$357.90 | $344.05 (-3.9%) | $385.61 (+7.7%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 NVDA — ▲ LONG | IGNORE | Score: 49/85
+### 🟢 #1 AVGO — ▲ LONG | ACTIONABLE | Score: 59/85
 
-**Price Snapshot:** $233.62 (+2.3%) | **RSI:** 55.7 | **Vol ratio:** 0.37x | **ATR:** 7.6193 | **vs MA20:** above ✅
+**Price Snapshot:** $357.90 (+0.2%) | **RSI:** 29.2 | **Vol ratio:** 1.38x | **ATR:** 11.5457 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `18.1/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 QQQ — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $718.81 (+0.2%) | **RSI:** 41.9 | **Vol ratio:** 0.22x | **ATR:** 8.1779 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `16.8/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `0.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `macro_beta_rebound`
-
-
-### ⛔ #3 ARM — ▲ LONG | IGNORE | Score: 46/85
-
-**Price Snapshot:** $253.47 (+4.5%) | **RSI:** 40.7 | **Vol ratio:** 0.23x | **ATR:** 14.1571 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.4/25` | MarketConf `9.0/20` | RegimeFit `8.5/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `18.1/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `11.9/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. AVGO is technically oversold with an RSI of 29.2 following a post-earnings 'hedge fund blowup' despite tripling AI chip sales [2, 4]. Projected 400% AI revenue growth over two years suggests the current dip is a high-value entry for a mean-reversion play [1].
 
-### ⛔ #4 AMD — ▲ LONG | IGNORE | Score: 46/85
+**Entry Consideration:** Limit entry between $355.00 and $358.00 to capture stabilization near current levels.
+**Risk / Invalidation Level:** Daily close below $345.00 to protect against further institutional liquidation.
+**Initial Upside / Downside Case:** $378.00 (MA20 gap fill) within a 1-2 week timeframe.
+**Key Risk:** ❌ Persistent institutional selling pressure post-earnings despite strong AI fundamentals.
 
-**Price Snapshot:** $468.33 (+2.7%) | **RSI:** 36.0 | **Vol ratio:** 0.25x | **ATR:** 18.1271 | **vs MA20:** below ⚠️
+### 🟡 #2 TSLA — ▲ LONG | WATCHLIST | Score: 57/85
 
-**Layered Scores:** EventEdge `17.8/25` | MarketConf `9.0/20` | RegimeFit `8.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Price Snapshot:** $354.08 (-5.9%) | **RSI:** 55.0 | **Vol ratio:** 1.59x | **ATR:** 15.3371 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.7/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `10.0/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+
+**Strategy Bucket:** `relative_strength_long`
+
+**What & Why:** LONG. TSLA is positioned for a mean-reversion bounce as premarket futures rise and the stock remains a primary focus for investors [2]. The rollout of Cybercabs provides a tangible catalyst for autonomous growth momentum [1].
+
+**Entry Consideration:** Entry on a successful retest of the MA20 ($348.44) or a break above $355.00.
+**Risk / Invalidation Level:** Daily close below the MA20 ($348.44) or $345.00 level.
+**Initial Upside / Downside Case:** Initial target at the MA50 ($357.95) with a secondary target of $365.00.
+**Key Risk:** ❌ High volatility and potential for further downside if the $348 support fails to hold.
+
+### 🟢 #3 NVDA — ▲ LONG | ACTIONABLE | Score: 57/85
+
+**Price Snapshot:** $230.36 (+0.8%) | **RSI:** 53.7 | **Vol ratio:** 1.0x | **ATR:** 7.6193 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.2/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `9.3/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. NVDA exhibits relative strength by flashing buy signals and rising alongside peers despite macro headwinds and rate hike concerns [2][3]. Competitive dominance and potential buyback narratives provide additional fundamental support for continued upward momentum [4][5].
 
-### ⛔ #5 BAC — ▲ LONG | IGNORE | Score: 46/85
+**Entry Consideration:** Entry near $228.50 or on a confirmed break above $231.00.
+**Risk / Invalidation Level:** Daily close below the 20-day moving average ($220.08).
+**Initial Upside / Downside Case:** $245.00 within a 5-10 day timeframe.
+**Key Risk:** ❌ Broader market sell-off triggered by inflation data or geopolitical escalation [3].
 
-**Price Snapshot:** $62.30 (-1.2%) | **RSI:** 40.3 | **Vol ratio:** 0.18x | **ATR:** 1.0796 | **vs MA20:** below ⚠️
+### ⚪ #4 COST — ▼ SHORT | MONITOR | Score: 52/85
 
-**Layered Scores:** EventEdge `19.1/25` | MarketConf `8.0/20` | RegimeFit `7.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Price Snapshot:** $915.74 (-1.0%) | **RSI:** 37.5 | **Vol ratio:** 0.95x | **ATR:** 18.0171 | **vs MA20:** below ⚠️
 
-**Strategy Bucket:** `macro_beta_rebound`
+**Layered Scores:** EventEdge `16.3/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `5.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** SHORT. COST is pressured by rising interest rate expectations following strong jobs data [2][3], which typically devalues high-multiple defensive stocks. Technical weakness is confirmed by the price trading significantly below the MA20 and MA50, despite minor institutional buying [5].
+
+**Entry Consideration:** Enter on a break below $915.00 or a failed retest of the $920.00 level.
+**Risk / Invalidation Level:** Stop at $932.00, invalidating the immediate bearish momentum.
+**Initial Upside / Downside Case:** $895.00 psychological support within 2-4 trading sessions.
+**Key Risk:** ❌ The RSI of 37.5 is approaching oversold territory, which could trigger a technical mean-reversion bounce.
+
+---
+## 🌍 Macro Watchlist
+
+- ⛔ `XOM` SHORT | IGNORE | score 35 | —
+- ⛔ `GS` LONG | IGNORE | score 32 | —
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 47
-- `SPY` LONG | IGNORE | score 41
+- `QQQ` LONG | IGNORE | score 41
+- `SPY` LONG | IGNORE | score 35
 
 ---
 ## 📰 Key News (Last 24h)
 
-**NVDA**  ·  earnings
-  ◆ Why Nvidia Is the Big Winner From Broadcom Earnings  [Barron's]
-  ▲ Nvidia Beat Earnings Estimates Again (15 Times Straight). History Says the Stock Will Do This Next.  [Yahoo Finance]
+**COST**  ·  macro
+  ▲ London stocks muted as rising oil, rate-hike bets weigh; energy stocks gain  [Reuters]
+  ▲ Rates Climb, Stocks Dip After Strong U.S. Jobs Data  [WSJ]
 
-**COST**  ·  earnings
-  ▼ Morgan Stanley cuts Lululemon stock price target on guidance concerns  [Investing.com]
+**GOOGL**  ·  macro
+  ▲ Final Trades: Alphabet, Oracle, iShares Gold Trust and Valero Energy  [Cnbc]
+  ▼ Cramer Says the Magnificent Seven Are Finally Cheap and Most Investors Will Miss It  [24/7 Wall St.]
 
-**PLTR**  ·  earnings
-  ▲ Prediction: Palantir's Commercial Revenue Passes Its Government Revenue Before 2027, and the Stock's Growth Math Changes With It.  [Yahoo Finance]
+**JPM**  ·  earnings
+  ▼ JPMorgan Chase stock holds steady as investors eye next earnings and rate risks  [AD HOC NEWS]
 
-**LLY**  ·  earnings
-  ▼ The Most Overlooked Reason Eli Lilly Stock Keeps Surging -- and It Has Nothing to Do With Weight Loss  [Yahoo Finance]
+**AVGO**  ·  earnings
+  ▲ With AI Revenue Set to Surge 400% Over the Next 2 Years, Broadcom Stock Looks Like a Buy on Recent Dip  [The Motley Fool]
 
-**ORCL**  ·  macro
-  ◆ Nasdaq Futures Edge Higher As Jobs Report Takes Center Stage: TSLA, LULU, ORCL, PL, NVDA, PLTR, RKLB In Focus  [Stocktwits]
+**AMD**  ·  earnings
+  ▲ AMD posts record Q2 revenue up 50%, sees CPU ma...  [Pluang]
 
-**MSFT**  ·  earnings
-  ▲ Microsoft (MSFT) Following Its Q4 Beat And AI Spend Plan Faces A Valuation Test  [simplywall.st]
-
-**META**  ·  earnings
-  ▲ Meta's stock could hit $1,000 by 2027 driven by AI growth and strong ad revenue.  [Pluang]
+**INTC**  ·  macro
+  ◆ Intel Climbs 4%, AMD Rises 3%, NVIDIA Ticks Up as Chip Stocks Shrug Off Rising Rate Hike Odds  [247wallst.com]
 
 ---
 ## 🛡 Research Risk Rules
