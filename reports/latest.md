@@ -1,100 +1,106 @@
-# 📊 Daily Research Report — 2026-09-08
-*Generated: 2026-09-08 14:35*
+# 📊 Daily Research Report — 2026-09-09
+*Generated: 2026-09-09 14:36*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.43%
-**SPY RSI(14):** 49.4
+**SPY:** -0.30%
+**SPY RSI(14):** 44.5
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### ARM  $269.21 (+2.9%)
+**WATCHLIST** · LONG · EE=18 · macro beta rebound · score=53
+> LONG. ARM is gaining momentum from a strategic Samsung AI chip deal and expansion into edge devices, signaling strong fundamental growth [1][2]. Mizuho's prefer
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `AVGO` · `AMZN` · `TSLA` · `JPM` · `MSFT` · `COST`
+**🟡 WATCHLIST (1):** `ARM`
+**⚪ MONITOR (1):** `AMZN`
+**⛔ IGNORE (18):** `PLTR` · `AMD` · `COST` · `IWM` · `GOOGL` · `NVDA`
+
+---
+## 🏆 Top Trade
+
+**ARM — LONG | WATCHLIST | Score: 53**
+
+> LONG. ARM is gaining momentum from a strategic Samsung AI chip deal and expansion into edge devices, signaling strong fundamental growth [1][2]. Mizuho's preference for ARM over Intel further bolsters sentiment as the stock tests its 50-day moving average [3][5].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$269.21 | $254.04 (-5.6%) | $299.56 (+11.3%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 AVGO — ▲ LONG | IGNORE | Score: 47/85
+### 🟡 #1 ARM — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $369.04 (+3.1%) | **RSI:** 43.3 | **Vol ratio:** 0.36x | **ATR:** 11.3686 | **vs MA20:** below ⚠️
+**Price Snapshot:** $269.21 (+2.9%) | **RSI:** 61.0 | **Vol ratio:** 0.22x | **ATR:** 12.6445 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.1/25` | MarketConf `9.0/20` | RegimeFit `8.5/15` | RelOpp `2.8/15` | Freshness `9.9/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `18.2/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
-**Strategy Bucket:** `post_earnings_drift`
+**Strategy Bucket:** `macro_beta_rebound`
 
+**What & Why:** LONG. ARM is gaining momentum from a strategic Samsung AI chip deal and expansion into edge devices, signaling strong fundamental growth [1][2]. Mizuho's preference for ARM over Intel further bolsters sentiment as the stock tests its 50-day moving average [3][5].
 
-### ⛔ #2 AMZN — ▲ LONG | IGNORE | Score: 46/85
+**Entry Consideration:** Enter on a confirmed break above $270.64 (MA50) or a retest of $265.00 support.
+**Risk / Invalidation Level:** Daily close below $253.04 (MA20) to protect against a trend reversal.
+**Initial Upside / Downside Case:** $285.00 initial target within 1-3 trading days.
+**Key Risk:** ❌ Failure to reclaim the MA50 level amid broader market weakness (SPY -0.30%).
 
-**Price Snapshot:** $255.35 (-1.2%) | **RSI:** 46.1 | **Vol ratio:** 0.14x | **ATR:** 5.8114 | **vs MA20:** below ⚠️
+### ⚪ #2 AMZN — ▲ LONG | MONITOR | Score: 50/85
 
-**Layered Scores:** EventEdge `21.0/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `9.9/10` | RiskPenalty `-3.5`
+**Price Snapshot:** $0.00 (+0.0%) | **RSI:** — | **Vol ratio:** —x | **ATR:** — | **vs MA20:** below ⚠️
 
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #3 TSLA — ▲ LONG | IGNORE | Score: 45/85
-
-**Price Snapshot:** $364.25 (+2.9%) | **RSI:** 58.7 | **Vol ratio:** 0.41x | **ATR:** 15.4271 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.7/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `2.0/15` | Freshness `3.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `relative_strength_long`
-
-
-### ⛔ #4 JPM — ▼ SHORT | IGNORE | Score: 42/85
-
-**Price Snapshot:** $354.76 (-1.1%) | **RSI:** 39.3 | **Vol ratio:** 0.13x | **ATR:** 5.7471 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `16.9/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `2.6/15` | Freshness `3.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `18.3/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `7.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** AMZN presents a LONG opportunity as the stock is currently viewed as a bargain based on robust cash flow and earnings potential [2]. The new multi-generation AI silicon partnership with Qualcomm serves as a significant catalyst for AWS infrastructure efficiency and growth [5].
 
-### ⛔ #5 MSFT — ▼ SHORT | IGNORE | Score: 40/85
-
-**Price Snapshot:** $491.10 (-1.7%) | **RSI:** 56.0 | **Vol ratio:** 0.11x | **ATR:** 10.253 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `16.3/25` | MarketConf `12.0/20` | RegimeFit `9.5/15` | RelOpp `2.2/15` | Freshness `3.0/10` | RiskPenalty `-2.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
+**Entry Consideration:** Enter on a breakout above the current intraday consolidation range or a successful retest of recent support levels.
+**Risk / Invalidation Level:** Invalidation on a close below the previous session's low or a 2% move against the position.
+**Initial Upside / Downside Case:** Initial target of a 3-5% upside move toward recent swing highs within 1-3 trading days.
+**Key Risk:** ❌ Broader market weakness and SPY downward pressure could suppress the stock's reaction to positive AI news.
 
 ---
 ## 🌍 Macro Watchlist
 
-- ⛔ `UNH` SHORT | IGNORE | score 30 | —
-- ⛔ `NFLX` SHORT | IGNORE | score 29 | —
-- ⛔ `BAC` SHORT | IGNORE | score 28 | —
-- ⛔ `WMT` SHORT | IGNORE | score 28 | —
+- ⛔ `XOM` LONG | IGNORE | score 35 | —
+- ⛔ `BAC` LONG | IGNORE | score 34 | —
+- ⛔ `SMH` LONG | IGNORE | score 31 | —
+- ⛔ `COIN` LONG | IGNORE | score 30 | —
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▲ London stocks muted as rising oil, rate-hike bets weigh; energy stocks gain  [Reuters]
-  ▲ Rates Climb, Stocks Dip After Strong U.S. Jobs Data  [WSJ]
+**AMZN**  ·  earnings
+  ▼ Qualcomm stock pops 10% on data center infrastructure ...  [Cnbc]
 
 **MACRO**  ·  earnings
   ▼ China's imports in August miss estimates as calls for rebalancing trade grow  [CNBC Markets]
   ▲ Boston Scientific Slammed After Cyberattack Hamstrings Sales, Profit  [Yahoo Finance]
 
-**GOOGL**  ·  macro
-  ▲ Final Trades: Alphabet, Oracle, iShares Gold Trust and Valero Energy  [Cnbc]
-  ▼ Cramer Says the Magnificent Seven Are Finally Cheap and Most Investors Will Miss It  [24/7 Wall St.]
+**SNOW**  ·  macro
+  ◆ 'Fast Money' traders talk Meta shares climbing on AI model news  [Cnbc]
 
 **ORCL**  ·  earnings
   ▼ EU regulators send early warning to Oracle ahead of earnings  [Yahoo Finance]
 
-**JPM**  ·  earnings
-  ▼ JPMorgan Chase stock holds steady as investors eye next earnings and rate risks  [AD HOC NEWS]
+**QCOM**  ·  ma
+  ◆ Qualcomm Rises 5% on Multi-Generation Amazon AI Silicon Deal; Broadcom Ticks Up, Amazon Holds Flat  [Yahoo Finance]
+
+**PLTR**  ·  macro
+  ▲ Palantir Technologies (NASDAQ:PLTR) Displays High-Growth Leadership and Momentum on CAN SLIM Screen  [Chartmill]
+
+**MU**  ·  macro
+  ▲ Cantor Fitzgerald reiterates Nvidia stock rating on AI demand outlook  [Investing]
 
 ---
 ## 🛡 Research Risk Rules
