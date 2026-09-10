@@ -1,106 +1,88 @@
-# 📊 Daily Research Report — 2026-09-09
-*Generated: 2026-09-09 14:36*
+# 📊 Daily Research Report — 2026-09-10
+*Generated: 2026-09-10 14:35*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.30%
-**SPY RSI(14):** 44.5
+**SPY:** -0.45%
+**SPY RSI(14):** 46.2
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### ARM  $269.21 (+2.9%)
-**WATCHLIST** · LONG · EE=18 · macro beta rebound · score=53
-> LONG. ARM is gaining momentum from a strategic Samsung AI chip deal and expansion into edge devices, signaling strong fundamental growth [1][2]. Mizuho's prefer
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `ARM`
-**⚪ MONITOR (1):** `AMZN`
-**⛔ IGNORE (18):** `PLTR` · `AMD` · `COST` · `IWM` · `GOOGL` · `NVDA`
-
----
-## 🏆 Top Trade
-
-**ARM — LONG | WATCHLIST | Score: 53**
-
-> LONG. ARM is gaining momentum from a strategic Samsung AI chip deal and expansion into edge devices, signaling strong fundamental growth [1][2]. Mizuho's preference for ARM over Intel further bolsters sentiment as the stock tests its 50-day moving average [3][5].
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$269.21 | $254.04 (-5.6%) | $299.56 (+11.3%) | 1R | 2R |
+**⚪ MONITOR (2):** `JPM` · `AMD`
+**⛔ IGNORE (18):** `AAPL` · `SPY` · `AMZN` · `TSLA` · `LLY` · `COST`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 ARM — ▲ LONG | WATCHLIST | Score: 53/85
+### ⚪ #1 JPM — ▼ SHORT | MONITOR | Score: 51/85
 
-**Price Snapshot:** $269.21 (+2.9%) | **RSI:** 61.0 | **Vol ratio:** 0.22x | **ATR:** 12.6445 | **vs MA20:** above ✅
+**Price Snapshot:** $352.77 (-0.6%) | **RSI:** 51.9 | **Vol ratio:** 0.11x | **ATR:** 5.6079 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `18.2/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `macro_beta_rebound`
-
-**What & Why:** LONG. ARM is gaining momentum from a strategic Samsung AI chip deal and expansion into edge devices, signaling strong fundamental growth [1][2]. Mizuho's preference for ARM over Intel further bolsters sentiment as the stock tests its 50-day moving average [3][5].
-
-**Entry Consideration:** Enter on a confirmed break above $270.64 (MA50) or a retest of $265.00 support.
-**Risk / Invalidation Level:** Daily close below $253.04 (MA20) to protect against a trend reversal.
-**Initial Upside / Downside Case:** $285.00 initial target within 1-3 trading days.
-**Key Risk:** ❌ Failure to reclaim the MA50 level amid broader market weakness (SPY -0.30%).
-
-### ⚪ #2 AMZN — ▲ LONG | MONITOR | Score: 50/85
-
-**Price Snapshot:** $0.00 (+0.0%) | **RSI:** — | **Vol ratio:** —x | **ATR:** — | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `18.3/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `7.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `17.6/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** AMZN presents a LONG opportunity as the stock is currently viewed as a bargain based on robust cash flow and earnings potential [2]. The new multi-generation AI silicon partnership with Qualcomm serves as a significant catalyst for AWS infrastructure efficiency and growth [5].
+**What & Why:** SHORT. JPM is experiencing institutional distribution as major funds reduce positions [3][4] while the price trends below the 20-day moving average. The stock is currently testing critical support at the 50-day moving average amid broader market weakness.
 
-**Entry Consideration:** Enter on a breakout above the current intraday consolidation range or a successful retest of recent support levels.
-**Risk / Invalidation Level:** Invalidation on a close below the previous session's low or a 2% move against the position.
-**Initial Upside / Downside Case:** Initial target of a 3-5% upside move toward recent swing highs within 1-3 trading days.
-**Key Risk:** ❌ Broader market weakness and SPY downward pressure could suppress the stock's reaction to positive AI news.
+**Entry Consideration:** Enter on a decisive break below the 50-day moving average ($351.22) or a failed retest of $353.50.
+**Risk / Invalidation Level:** Daily close above the 20-day moving average at $357.04.
+**Initial Upside / Downside Case:** $345.00 initial target area within 1-3 trading sessions.
+**Key Risk:** ❌ Earnings event volatility or a sharp reversal in broader market sentiment (SPY).
+
+### ⚪ #2 AMD — ▼ SHORT | MONITOR | Score: 51/85
+
+**Price Snapshot:** $508.48 (-2.4%) | **RSI:** 62.4 | **Vol ratio:** 0.2x | **ATR:** 18.6336 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.4/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** SHORT AMD as negative sentiment [1] and a -2.42% intraday drop suggest a mean-reversion move toward the MA50 ($497.14) following an overextended 5.9% rally [3]. Low volume and a neutral market regime indicate a lack of support for current valuations.
+
+**Entry Consideration:** Limit order near $510.00 or on a break below $505.00.
+**Risk / Invalidation Level:** Hard stop at $522.00, above recent intraday highs.
+**Initial Upside / Downside Case:** Initial target $497.00 (MA50) with a secondary target of $480.00 (MA20) over 2-5 days.
+**Key Risk:** ❌ Potential for a short squeeze if the 'massive update' [1] contains unexpected bullish fundamental shifts.
 
 ---
 ## 🌍 Macro Watchlist
 
-- ⛔ `XOM` LONG | IGNORE | score 35 | —
-- ⛔ `BAC` LONG | IGNORE | score 34 | —
-- ⛔ `SMH` LONG | IGNORE | score 31 | —
-- ⛔ `COIN` LONG | IGNORE | score 30 | —
+- ⛔ `NFLX` LONG | IGNORE | score 32 | —
+
+---
+## 📈 Market Instruments
+
+- `SPY` SHORT | IGNORE | score 46
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AMZN**  ·  earnings
-  ▼ Qualcomm stock pops 10% on data center infrastructure ...  [Cnbc]
-
 **MACRO**  ·  earnings
-  ▼ China's imports in August miss estimates as calls for rebalancing trade grow  [CNBC Markets]
-  ▲ Boston Scientific Slammed After Cyberattack Hamstrings Sales, Profit  [Yahoo Finance]
-
-**SNOW**  ·  macro
-  ◆ 'Fast Money' traders talk Meta shares climbing on AI model news  [Cnbc]
-
-**ORCL**  ·  earnings
-  ▼ EU regulators send early warning to Oracle ahead of earnings  [Yahoo Finance]
-
-**QCOM**  ·  ma
-  ◆ Qualcomm Rises 5% on Multi-Generation Amazon AI Silicon Deal; Broadcom Ticks Up, Amazon Holds Flat  [Yahoo Finance]
+  ▲ Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail  [Yahoo Finance]
+  ▼ Is LightPath (LPTH) a Hidden Winner in Missile Defense and Space?  [Yahoo Finance]
 
 **PLTR**  ·  macro
-  ▲ Palantir Technologies (NASDAQ:PLTR) Displays High-Growth Leadership and Momentum on CAN SLIM Screen  [Chartmill]
+  ▲ Q2 Data Analytics Earnings Review: First Prize Goes to Palantir Technologies (NASDAQ:PLTR)  [Stockstory]
+  ▲ Palantir’s Stock Has Soared More Than 1,700% Since Its IPO. How High Can PLTR Go From Here?  [247Wallst]
 
-**MU**  ·  macro
-  ▲ Cantor Fitzgerald reiterates Nvidia stock rating on AI demand outlook  [Investing]
+**TSLA**  ·  earnings
+  ▲ PLTR News | PALANTIR TECHNOLOGIES INC-A (NASDAQ:PLTR)  [Chartmill]
+
+**NVDA**  ·  earnings
+  ▲ NVDA Stock Is Running. Is There Fuel Left? - Trefis  [Trefis]
+  ▲ Nvidia Is Worth $5 Trillion. But This Could Be the Next Big Catalyst for the Stock  [247Wallst]
+
+**MSFT**  ·  earnings
+  ▲ What It Means for MSFT Stock Investors as Microsoft Switches to 2 Business Segments  [Finance]
 
 ---
 ## 🛡 Research Risk Rules
