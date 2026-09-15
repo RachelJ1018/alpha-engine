@@ -1,104 +1,71 @@
-# 📊 Daily Research Report — 2026-09-14
-*Generated: 2026-09-14 14:39*
+# 📊 Daily Research Report — 2026-09-15
+*Generated: 2026-09-15 14:37*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.76%
-**SPY RSI(14):** 45.5
+**SPY:** -0.45%
+**SPY RSI(14):** 42.3
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### AAPL  $333.02 (+0.2%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=52
-> LONG. Positive analyst sentiment citing a doubled iPhone revenue forecast and 'New Buy' status suggests momentum ahead of next week's expected outperformance [1
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `AAPL`
 **⚪ MONITOR (1):** `IWM`
-**⛔ IGNORE (18):** `TSM` · `META` · `GS` · `GOOGL` · `COST` · `SPY`
-
----
-## 🏆 Top Trade
-
-**AAPL — LONG | WATCHLIST | Score: 52**
-
-> LONG. Positive analyst sentiment citing a doubled iPhone revenue forecast and 'New Buy' status suggests momentum ahead of next week's expected outperformance [1][2].
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$333.02 | $323.63 (-2.8%) | $351.80 (+5.6%) | 1R | 2R |
+**⛔ IGNORE (19):** `SPY` · `TSLA` · `COST` · `AAPL` · `GS` · `GOOGL`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 AAPL — ▲ LONG | WATCHLIST | Score: 52/85
+### ⚪ #1 IWM — ▼ SHORT | MONITOR | Score: 51/85
 
-**Price Snapshot:** $333.02 (+0.2%) | **RSI:** 70.5 | **Vol ratio:** 0.2x | **ATR:** 7.8257 | **vs MA20:** above ✅
+**Price Snapshot:** $285.02 (-1.0%) | **RSI:** 25.7 | **Vol ratio:** 0.24x | **ATR:** 3.1386 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `20.8/25` | MarketConf `14.0/20` | RegimeFit `7.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Positive analyst sentiment citing a doubled iPhone revenue forecast and 'New Buy' status suggests momentum ahead of next week's expected outperformance [1][2].
-
-**Entry Consideration:** Entry on a minor retracement to $331.50 or a break of $334.00 on increasing volume.
-**Risk / Invalidation Level:** Close below $324.50, invalidating the recent breakout structure.
-**Initial Upside / Downside Case:** $345.00 within the next 5-10 trading days.
-**Key Risk:** ❌ Overbought RSI of 70.5 indicates limited immediate upside without a cooling-off period.
-
-### ⚪ #2 IWM — ▼ SHORT | MONITOR | Score: 51/85
-
-**Price Snapshot:** $287.60 (-0.5%) | **RSI:** 31.4 | **Vol ratio:** 0.34x | **ATR:** 2.9764 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `16.1/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `16.4/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `macro_beta_rebound`
 
-**What & Why:** SHORT IWM as negative market breadth dominates and small caps continue to slide [4]. Fundamental analysis indicates the ETF remains significantly overvalued by nearly 48%, providing a bearish backdrop despite the recent price drop [3].
+**What & Why:** SHORT. IWM is currently 47.7% overvalued based on GF Value™ [4], while weakening market breadth and a negative bias suggest further technical deterioration [5].
 
-**Entry Consideration:** Entry on a minor retracement toward $290.00 or a break below the daily low of $287.00.
-**Risk / Invalidation Level:** Stop loss set at $293.50, just above the recent consolidation zone.
-**Initial Upside / Downside Case:** Target $280.00 for a short-term continuation of the downward trend.
-**Key Risk:** ❌ RSI at 31.4 suggests the asset is approaching oversold conditions, increasing the risk of a mean-reversion bounce.
+**Entry Consideration:** Enter on a relief bounce toward $288.00 or a sustained break below the $284.50 level.
+**Risk / Invalidation Level:** Daily close above $292.50, which would signal a reclaim of the recent breakdown zone.
+**Initial Upside / Downside Case:** $278.00 - $280.00 initial target area within the next 5-10 trading sessions.
+**Key Risk:** ❌ Extremely oversold RSI of 25.7 poses a high risk of a sharp technical short-squeeze or mean-reversion bounce.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` SHORT | IGNORE | score 45
-- `QQQ` SHORT | IGNORE | score 44
+- `SPY` SHORT | IGNORE | score 50
+- `QQQ` SHORT | IGNORE | score 45
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▲ Wall Street Strategists See Stock Rally Surviving Fed Rate Hike  [Bloomberg.com]
+**GS**  ·  macro
+  ▲ Goldman Sachs reiterates Meta stock Buy rating on AI agent launch  [Investing.com]
 
-**AMD**  ·  macro
-  ▲ Stifel reiterates AMD stock Buy rating on server CPU strength  [Investing.com]
+**ORCL**  ·  earnings
+  ▲ NVIDIA vs. Oracle: Which AI Stock Is the Better Buy After Earnings?  [Yahoo Finance]
 
-**PLTR**  ·  earnings
-  ▲ Palantir Stock Surge: Why Explosive 93% Growth Still Signals Time to Take Profits  [Yahoo Finance]
-  ▲ PLTR Stock Soars As Hypergrowth AI Earnings Smash Expectations  [timothysykes.com]
+**META**  ·  earnings
+  ▲ META Stock Jumps To Two-Month High — Muse Seen As A 'Notable' Revenue Stream By TD Cowen, While Meta Reportedly Buys A Swedish AI Startup  [Yahoo Finance]
 
-**LLY**  ·  earnings
-  ▲ Eli Lilly’s (LLY) Growth Story Keeps Adding Chapters  [Yahoo Finance]
+**NVDA**  ·  macro
+  ▲ Nvidia Rises To Key Level As Fed Rate-Decision Looms; Is Nvidia A Buy Now?  [Yahoo Finance]
+  ▼ Stock Market Today: Dow Falls As Yields, Oil Prices Rise With Fed Meeting Starting; Nvidia Rebounds (Live Coverage)  [Yahoo Finance]
 
-**JPM**  ·  macro
-  ▲ 3 Stocks to Buy and Hold for Higher Interest Rates  [Yahoo Finance]
+**GLD**  ·  macro
+  ▲ Royal Gold Stock And 2 Dividend Growth Stocks For Inflation Resilience  [simplywall.st]
 
-**NVDA**  ·  earnings
-  ◆ Nvidia vs. AMD: Elon Musk Picked a Side on the SpaceX Earnings Call  [Yahoo Finance]
-
-**MSFT**  ·  earnings
-  ▲ Microsoft Stock in 2027: My Prediction Is That It Still Beats the Market  [The Motley Fool]
+**COST**  ·  earnings
+  ▲ Costco Keeps Beating and the Stock Keeps Stalling. Q4 Earnings Are the Next Test  [TIKR.com]
+  ▼ PLAY Stock Sinks Premarket: Dave & Buster’s Q2 Miss Sparks A Wave Of Price Target Cuts  [Stocktwits]
 
 ---
 ## 🛡 Research Risk Rules
