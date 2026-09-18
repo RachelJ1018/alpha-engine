@@ -1,102 +1,116 @@
-# 📊 Daily Research Report — 2026-09-17
-*Generated: 2026-09-17 14:38*
+# 📊 Daily Research Report — 2026-09-18
+*Generated: 2026-09-18 14:38*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 📈 BULL — Broad market rising. Long setups have better follow-through.
-**SPY:** +1.04%
-**SPY RSI(14):** 42.4
-
-> ✅ **Research posture:** Market is supportive. Long ideas have a better chance of follow-through.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.46%
+**SPY RSI(14):** 41.9
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### NVDA  $219.74 (+2.7%)
-**ACTIONABLE** · LONG · EE=20 · post earnings drift · score=59
-> LONG. NVDA is reclaiming key moving averages with high sentiment (0.85) and data-backed conviction of continued dominance over competitors [4]. Positive earning
+### AVGO  $358.69 (+3.3%)
+**WATCHLIST** · LONG · EE=21 · post earnings drift · score=53
+> LONG. Broadcom's bullish 2028 outlook and robust cash flow generation provide a strong fundamental floor following its earnings beat [1, 5]. Significant valuati
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE (2):** `NVDA` · `PLTR`
-**🟡 WATCHLIST (4):** `AVGO` · `META` · `GOOGL` · `AAPL`
-**⚪ MONITOR (3):** `AMZN` · `MSFT` · `AMD`
-**⛔ IGNORE (11):** `ARM` · `TSM` · `TSLA` · `GLD` · `QQQ` · `LLY`
+**🟢 ACTIONABLE:** None today
+**🟡 WATCHLIST (1):** `AVGO`
+**⚪ MONITOR (2):** `WMT` · `GOOGL`
+**⛔ IGNORE (17):** `ARM` · `AAPL` · `TSLA` · `NVDA` · `META` · `GS`
 
 ---
 ## 🏆 Top Trade
 
-**NVDA — LONG | ACTIONABLE | Score: 59**
+**AVGO — LONG | WATCHLIST | Score: 53**
 
-> LONG. NVDA is reclaiming key moving averages with high sentiment (0.85) and data-backed conviction of continued dominance over competitors [4]. Positive earnings trends [3] and a bullish market regime provide the necessary tailwinds for a momentum continuation.
+> LONG. Broadcom's bullish 2028 outlook and robust cash flow generation provide a strong fundamental floor following its earnings beat [1, 5]. Significant valuation upside remains as the stock is potentially 47% below fair value supported by buybacks and AI revenue guidance [3].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$219.74 | $211.98 (-3.5%) | $235.26 (+7.1%) | 1R | 2R |
+| ~$358.69 | $345.45 (-3.7%) | $385.16 (+7.4%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟢 #1 NVDA — ▲ LONG | ACTIONABLE | Score: 59/85
+### 🟡 #1 AVGO — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $219.74 (+2.7%) | **RSI:** 43.1 | **Vol ratio:** 0.23x | **ATR:** 6.4654 | **vs MA20:** above ✅
+**Price Snapshot:** $358.69 (+3.3%) | **RSI:** 43.5 | **Vol ratio:** 0.48x | **ATR:** 11.0308 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `20.3/25` | MarketConf `14.0/20` | RegimeFit `13.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. NVDA is reclaiming key moving averages with high sentiment (0.85) and data-backed conviction of continued dominance over competitors [4]. Positive earnings trends [3] and a bullish market regime provide the necessary tailwinds for a momentum continuation.
-
-**Entry Consideration:** Enter at $219.75 or on a pullback to the MA20 support level of $218.50.
-**Risk / Invalidation Level:** Hard stop below the MA50 at $213.00 to protect against a trend reversal.
-**Initial Upside / Downside Case:** Initial target of $230.00 representing a ~4.5% upside over the next 2-5 sessions.
-**Key Risk:** ❌ Extremely low relative volume (0.23x) indicates potential exhaustion or lack of institutional follow-through.
-
-### 🟢 #2 PLTR — ▲ LONG | ACTIONABLE | Score: 59/85
-
-**Price Snapshot:** $177.50 (+1.8%) | **RSI:** 43.0 | **Vol ratio:** 0.18x | **ATR:** 6.9699 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.0/25` | MarketConf `14.0/20` | RegimeFit `13.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `21.4/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Palantir exhibits relative strength and a promising technical setup above the MA20, supported by BofA's 50% upside projection [1][2][5]. Its resilience as a top-tier AI play provides a buffer against broader market volatility [3].
+**What & Why:** LONG. Broadcom's bullish 2028 outlook and robust cash flow generation provide a strong fundamental floor following its earnings beat [1, 5]. Significant valuation upside remains as the stock is potentially 47% below fair value supported by buybacks and AI revenue guidance [3].
 
-**Entry Consideration:** Entry at current levels ($177.50) or on a slight pullback to the MA20 ($175.77).
-**Risk / Invalidation Level:** Daily close below $172.00, invalidating the recent support and moving average crossover.
-**Initial Upside / Downside Case:** $190.00 representing a retest of recent highs over the next 5-10 trading sessions.
-**Key Risk:** ❌ Broader market selling pressure ahead of Fed rate decisions could impact high-multiple AI stocks [4].
+**Entry Consideration:** Enter near $358.69 or on a retest of $355.00 support to ensure price stability.
+**Risk / Invalidation Level:** Daily close below $348.00 to mitigate downside risk from sector-wide volatility.
+**Initial Upside / Downside Case:** $375.00 initial target, aiming for the MA50 level over the next 5-10 trading sessions.
+**Key Risk:** ❌ Broad semiconductor sector weakness and negative SPY correlation could drag price lower despite strong fundamentals.
+
+### ⚪ #2 WMT — ▲ LONG | MONITOR | Score: 50/85
+
+**Price Snapshot:** $107.52 (+0.7%) | **RSI:** 65.4 | **Vol ratio:** 0.38x | **ATR:** 1.76 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `16.0/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `defensive_rotation`
+
+**What & Why:** WMT demonstrates relative strength by gaining +0.68% against a declining SPY, maintaining a position above the MA20 despite potential regulatory headwinds regarding 'Made in USA' labeling [1]. Technical resilience suggests market absorption of the news, favoring a continuation toward the MA50 resistance.
+
+**Entry Consideration:** Entry on pullbacks toward the MA20 support level near $106.50.
+**Risk / Invalidation Level:** Daily close below $105.50, invalidating the MA20 support level.
+**Initial Upside / Downside Case:** Initial target of $109.75 (MA50) over the next 2-5 trading sessions.
+**Key Risk:** ❌ Escalation of the FTC probe into formal legal action or significant fines.
+
+### ⚪ #3 GOOGL — ▲ LONG | MONITOR | Score: 50/85
+
+**Price Snapshot:** $351.31 (+1.1%) | **RSI:** 53.8 | **Vol ratio:** 0.57x | **ATR:** 8.1629 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.9/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `4.0/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Bullish momentum is supported by fresh AI-related price target hikes and strong Google Cloud revenue growth justifying recent capex bets [3][4][5]. The stock shows relative strength by trading up 1.15% while the broader market (SPY) is down.
+
+**Entry Consideration:** Enter at current levels near $351.31 or on a minor pullback to $348.00.
+**Risk / Invalidation Level:** Strict stop below the MA20 at $341.77 to invalidate the short-term trend.
+**Initial Upside / Downside Case:** Initial target of $365.00 based on recent price target hikes; timeframe 1-2 weeks.
+**Key Risk:** ❌ Broader market weakness (SPY -0.46%) may cap upside potential despite positive AI sentiment.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 44
-- `SPY` SHORT | IGNORE | score 42
+- `SPY` SHORT | IGNORE | score 44
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▼ Stocks fall as Fed delivers hawkish rate hike  [Reuters]
-  ▲ VIEW Stocks pull back after Fed raises rates, points to another hike this year  [Reuters]
+**MCD**  ·  macro
+  ▼ S&P 500, Nasdaq, Dow End Higher As Drop In Oil Prices Allays Inflationary Concerns — NVDA, MCD, CRWV, LMT, AMZN In Focus  [Yahoo Finance]
 
-**META**  ·  macro
-  ▲ Rosenblatt reiterates Buy on Meta stock, cites subscription growth  [Investing.com India]
-  ▲ BofA reiterates Buy on Meta stock on custom AI chip plans  [Investing.com]
+**AVGO**  ·  earnings
+  ▲ Broadcom (AVGO) Could Be 47% Below Fair Value On Buybacks And Revenue Guidance  [Yahoo Finance]
 
 **NVDA**  ·  earnings
-  ◆ Zacks Earnings Trends Highlights: Micron and Nvidia  [Yahoo Finance]
-  ▲ SoundHound vs. NVIDIA After Earnings: Which AI Stock to Buy Now?  [TradingView]
+  ▲ Jensen Huang Calls Nvidia the "World's First and Only Growth Value Stock," Pointing to Its 70% Revenue Growth Forecast Next Year. Here's Why That Framing Matters for How Investors Price NVDA.  [fool.com]
 
-**AAPL**  ·  macro
-  ◆ S&P 500, Nasdaq, Dow Futures Inch Higher As Investors Digest First Rate Hike Since 2023 — INTC, GOOGL, AAPL, SKHY, UAL In Focus  [Yahoo Finance]
+**GLD**  ·  macro
+  ▼ Zhongjin Gold stock falls as Hong Kong gold peers retreat on rate hike  [ad-hoc-news.de]
+  ▲ Gold.com (GOLD) Stock Faces Margin Squeeze Despite Revenue Surge  [simplywall.st]
 
-**PLTR**  ·  earnings
-  ▲ BofA Analyst Sees 50% Upside For Palantir (NASDAQ: PLTR) As Stock Slips Despite Explosive Revenue Growth  [foreignpolicyjournal.com]
+**COST**  ·  earnings
+  ▲ Dollarama Inc. Stock Slips 1.04%: Post-Earnings Profit Taking, Input Cost Pressures, and Multiple Scrutiny Weigh on Sentiment  [kalkine.ca]
+  ▼ LEN Stock Heads For Monthly Loss: CEO Warns Higher ‘Interest Rates Test Affordability' After Weak Outlook  [Stocktwits]
+
+**ORCL**  ·  earnings
+  ◆ Forget Oracle's Stock Price Swings. Its Backlog-to-Revenue Ratio Tells the Real Story.  [Currently.com]
 
 ---
 ## 🛡 Research Risk Rules
