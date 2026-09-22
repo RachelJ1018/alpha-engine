@@ -1,117 +1,134 @@
-# 📊 Daily Research Report — 2026-09-21
-*Generated: 2026-09-21 14:39*
+# 📊 Daily Research Report — 2026-09-22
+*Generated: 2026-09-22 14:38*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +1.00%
-**SPY RSI(14):** 53.1
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** +0.05%
+**SPY RSI(14):** 60.7
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### ARM  $310.31 (+12.6%)
-**WATCHLIST** · LONG · EE=20 · post earnings drift · score=60
-> LONG. Strong FY2026 revenue guidance exceeding 22% growth provides a fundamental catalyst for a sustained breakout following recent underperformance [1][2]. The
-
-### TSLA  $375.58 (+3.1%)
-**WATCHLIST** · LONG · EE=18 · post earnings drift · score=54
-> LONG. TSLA shows relative strength against the SPY and remains positioned above its MA20 ($360.24), likely benefiting from Triple Witching liquidity dynamics [1
+### AVGO  $362.97 (+0.1%)
+**WATCHLIST** · LONG · EE=20 · post earnings drift · score=53
+> LONG. Broadcom's significant AI growth potential and earnings momentum suggest the stock is currently undervalued relative to its market opportunity [1, 3]. Pee
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (4):** `ARM` · `NVDA` · `PLTR` · `TSLA`
-**⚪ MONITOR (2):** `QQQ` · `AMZN`
-**⛔ IGNORE (14):** `AAPL` · `META` · `BAC` · `GS` · `SPY` · `TSM`
+**🟡 WATCHLIST (2):** `AVGO` · `NVDA`
+**⚪ MONITOR (2):** `TSLA` · `GS`
+**⛔ IGNORE (16):** `ARM` · `AAPL` · `META` · `GOOGL` · `COST` · `AMD`
 
 ---
 ## 🏆 Top Trade
 
-**ARM — LONG | WATCHLIST | Score: 60**
+**AVGO — LONG | WATCHLIST | Score: 53**
 
-> LONG. Strong FY2026 revenue guidance exceeding 22% growth provides a fundamental catalyst for a sustained breakout following recent underperformance [1][2]. The earnings-driven momentum suggests a shift in sentiment as AI chip revenue confidence offsets previous valuation concerns [3][4].
+> LONG. Broadcom's significant AI growth potential and earnings momentum suggest the stock is currently undervalued relative to its market opportunity [1, 3]. Peer strength in the semiconductor sector further supports a bullish outlook heading into earnings [5].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$310.31 | $290.09 (-6.5%) | $350.74 (+13.0%) | 1R | 2R |
+| ~$362.97 | $349.76 (-3.6%) | $389.39 (+7.3%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 ARM — ▲ LONG | WATCHLIST | Score: 60/85
+### 🟡 #1 AVGO — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $310.31 (+12.6%) | **RSI:** 72.2 | **Vol ratio:** 0.96x | **ATR:** 16.8474 | **vs MA20:** above ✅
+**Price Snapshot:** $362.97 (+0.1%) | **RSI:** 46.2 | **Vol ratio:** 0.25x | **ATR:** 11.0104 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.0/25` | MarketConf `11.0/20` | RegimeFit `10.5/15` | RelOpp `9.1/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Strong FY2026 revenue guidance exceeding 22% growth provides a fundamental catalyst for a sustained breakout following recent underperformance [1][2]. The earnings-driven momentum suggests a shift in sentiment as AI chip revenue confidence offsets previous valuation concerns [3][4].
-
-**Entry Consideration:** Limit order near $305.00-$308.00 to capture a potential intraday dip following the initial +12% gap.
-**Risk / Invalidation Level:** Close position if price breaks below $294.00, invalidating the post-earnings gap support.
-**Initial Upside / Downside Case:** $335.00 target for a short-term momentum continuation over the next 1-3 sessions.
-**Key Risk:** ❌ Overbought RSI of 72.2 increases the probability of immediate profit-taking or a 'sell the news' retracement.
-
-### 🟡 #2 NVDA — ▲ LONG | WATCHLIST | Score: 56/85
-
-**Price Snapshot:** $224.16 (+0.8%) | **RSI:** 53.7 | **Vol ratio:** 0.2x | **ATR:** 5.7932 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.8/25` | MarketConf `14.0/20` | RegimeFit `10.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `20.3/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. NVDA is leading a chip sector rally following the Fed rate hike and gaining political favor for AI initiatives [1][2]. Revenue growth projections suggest significant upside potential toward long-term targets [3].
+**What & Why:** LONG. Broadcom's significant AI growth potential and earnings momentum suggest the stock is currently undervalued relative to its market opportunity [1, 3]. Peer strength in the semiconductor sector further supports a bullish outlook heading into earnings [5].
 
-**Entry Consideration:** Entry on a breakout above $224.50 with volume confirmation.
-**Risk / Invalidation Level:** Exit if price closes below the MA20 at $219.20.
-**Initial Upside / Downside Case:** Initial target of $235.00 within 1-3 trading days.
-**Key Risk:** ❌ Current volume is only 0.2x, indicating a lack of liquidity and potential for a bull trap.
+**Entry Consideration:** Enter on a successful retest of the MA20 support near $359.00-$362.00.
+**Risk / Invalidation Level:** Daily close below $355.00, invalidating the MA20 support level.
+**Initial Upside / Downside Case:** $378.00 (MA50) within the next 2-5 trading sessions.
+**Key Risk:** ❌ Extremely low relative volume (0.25x) may lead to false breakouts in a choppy market regime.
 
-### 🟡 #3 TSLA — ▲ LONG | WATCHLIST | Score: 54/85
+### 🟡 #2 NVDA — ▲ LONG | WATCHLIST | Score: 52/85
 
-**Price Snapshot:** $375.58 (+3.1%) | **RSI:** 53.6 | **Vol ratio:** 0.35x | **ATR:** 13.66 | **vs MA20:** above ✅
+**Price Snapshot:** $228.31 (+0.4%) | **RSI:** 61.2 | **Vol ratio:** 0.2x | **ATR:** 5.8644 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.4/25` | MarketConf `14.0/20` | RegimeFit `10.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `21.1/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. TSLA shows relative strength against the SPY and remains positioned above its MA20 ($360.24), likely benefiting from Triple Witching liquidity dynamics [1]. Positive sentiment and earnings-related signals suggest potential for momentum continuation despite low relative volume.
+**What & Why:** LONG. Nvidia's strategic positioning for political AI favor [1] and recent positive investor updates [3] provide a catalyst for the stock to catch up to the broader AI sector rally [2].
 
-**Entry Consideration:** Limit entry near $375.00 or on a successful retest of the $370.00 psychological level.
-**Risk / Invalidation Level:** Daily close below $360.24 (MA20) to invalidate the short-term bullish trend.
-**Initial Upside / Downside Case:** $395.00 - $400.00 range within 1-2 trading sessions.
-**Key Risk:** ❌ Current volume is significantly below average (0.35x), increasing the risk of a false breakout.
+**Entry Consideration:** Enter on a retest of $225 support or a high-volume break above $230.
+**Risk / Invalidation Level:** Daily close below the 20-day moving average at $220.37.
+**Initial Upside / Downside Case:** $238.00 initial target; 1-3 day timeframe.
+**Key Risk:** ❌ Extremely low relative volume (0.2x) indicates potential exhaustion or lack of institutional follow-through in a choppy regime.
+
+### ⚪ #3 TSLA — ▲ LONG | MONITOR | Score: 52/85
+
+**Price Snapshot:** $378.48 (+0.8%) | **RSI:** 61.5 | **Vol ratio:** 0.25x | **ATR:** 13.0443 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.5/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. TSLA is positioned for a potential 'rip' following Meta's rally as it pivots toward 'Physical AI' supported by recent Nvidia wins [2][3]. Despite Optimus delays, the stock is hitting multi-week highs with strong sentiment [3].
+
+**Entry Consideration:** Enter on a break above $379.50 or a pullback to the $375 support level.
+**Risk / Invalidation Level:** Stop loss set at $367.50, just below the recent consolidation zone.
+**Initial Upside / Downside Case:** $395.00 - $400.00 target within the next 2-3 trading sessions.
+**Key Risk:** ❌ Increased volatility and potential price pinning due to Triple Witching Day [1].
+
+### ⚪ #4 GS — ▼ SHORT | MONITOR | Score: 51/85
+
+**Price Snapshot:** $939.46 (-2.1%) | **RSI:** 35.4 | **Vol ratio:** 0.23x | **ATR:** 28.2382 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `19.4/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `2.0/15` | Freshness `9.7/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `general_setup`
+
+**What & Why:** SHORT GS as the stock maintains a bearish trend below its MA20 and MA50, exacerbated by the firm's own downbeat assessment of consumer confidence [3]. Negative sentiment and weak price action suggest further downside momentum despite the choppy market regime.
+
+**Entry Consideration:** Enter on a break below $939.00 or a brief retest of $945.00.
+**Risk / Invalidation Level:** Stop loss set at $965.00, above recent intraday consolidation.
+**Initial Upside / Downside Case:** $915.00 within 48-72 hours.
+**Key Risk:** ❌ Oversold RSI (35.4) may trigger a mean-reversion bounce in a choppy market.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | MONITOR | score 51
-- `SPY` LONG | IGNORE | score 48
+- `QQQ` LONG | IGNORE | score 43
+- `SPY` LONG | IGNORE | score 36
 
 ---
 ## 📰 Key News (Last 24h)
 
+**NVDA**  ·  earnings
+  ◆ Nvidia Stock Missed the AI Agent Rally. Here’s What Could Turn It Around.  [Barron's]
+
+**AMD**  ·  macro
+  ▲ AMD hits $1 trillion market cap for the first time - CNBC  [Cnbc]
+  ▲ AMD joins the $1 trillion club as chip rally surges - our AI Strategy saw it early  [Investing.com]
+
 **PLTR**  ·  earnings
   ▲ PLTR's 110% Commercial Revenue Surge Defines Its Q2 Growth  [Yahoo Finance]
-  ▲ Palantir Nearly Doubled Its Revenue. Its Stock Stood Still. Is It Time to Buy the Stock?  [The Motley Fool]
+  ▼ Palantir (NASDAQ: PLTR) Nearly Doubles Revenue As Valuation Compresses Without A Price Drop  [foreignpolicyjournal.com]
 
-**NVDA**  ·  earnings
-  ▲ Prediction: Nvidia's Revenue Growth Will Drive Shares to $400 Next Year  [Yahoo Finance]
-  ▲ Nvidia's Jensen Huang Beats Zuckerberg, Bezos for Trump's AI Favor as Stock Climbs  [BeInCrypto]
+**JPM**  ·  macro
+  ▲ Will JPMorgan's Selective M&A Strategy Expand Growth Runway?  [theglobeandmail.com]
 
-**AMD**  ·  earnings
-  ▲ AMD Up 155% YTD on Record Revenue, AI Demand  [Yahoo Finance]
-  ▲ Why Did AI Stocks Rally After Fed Rate Hike? NVDA, MU, and AMD Lead Chip Sector  [TradingKey]
+**AMZN**  ·  earnings
+  ▲ OpenAI Just Beat Google, Meta, and Amazon To This Key Milestone. Is It Bullish for AI Stocks.  [The Globe and Mail]
 
-**MSFT**  ·  earnings
-  ▲ Can NOK's Network Automation Progress With MSFT Boost Profits?  [Zacks Investment Research]
-  ▲ Tech Earnings, July 29, 2026: Microsoft Beats Expectations, While Meta’s Profits Disappoint  [Investopedia]
+**COST**  ·  macro
+  ▲ Federal Reserve Raises Interest Rates for First Time in Three Years  [Intellectia AI]
 
 ---
 ## 🛡 Research Risk Rules
