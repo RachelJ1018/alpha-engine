@@ -1,12 +1,14 @@
-# 📊 Daily Research Report — 2026-09-23
-*Generated: 2026-09-23 14:38*
+# 📊 Daily Research Report — 2026-09-24
+*Generated: 2026-09-24 14:38*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.51%
-**SPY RSI(14):** 57.0
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** -0.24%
+**SPY RSI(14):** 45.6
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,83 +19,86 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `GS`
-**⚪ MONITOR (1):** `ARM`
-**⛔ IGNORE (18):** `PLTR` · `META` · `NVDA` · `TSLA` · `AVGO` · `LLY`
-
----
-## 🏆 Top Trade
-
-**GS — SHORT | WATCHLIST | Score: 53**
-
-> SHORT. GS is trending lower alongside peers JPM and BAC as sector-wide selling persists despite strategic news [1, 4]. Price remains significantly below the MA20 and MA50, supported by GS's own cautious outlook on consumer sentiment [5].
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$950.07 | $983.58 (-3.5%) | $883.05 (+7.1%) | 1R | 2R |
+**⛔ IGNORE (20):** `ARM` · `LLY` · `META` · `AVGO` · `GOOGL` · `GS`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 GS — ▼ SHORT | WATCHLIST | Score: 53/85
+### ⛔ #1 ARM — ▲ LONG | IGNORE | Score: 47/85
 
-**Price Snapshot:** $950.07 (-1.0%) | **RSI:** 37.2 | **Vol ratio:** 0.27x | **ATR:** 27.9243 | **vs MA20:** below ⚠️
+**Price Snapshot:** $319.95 (-3.8%) | **RSI:** 72.0 | **Vol ratio:** 0.42x | **ATR:** 18.1724 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.9/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `macro_beta_rebound`
-
-**What & Why:** SHORT. GS is trending lower alongside peers JPM and BAC as sector-wide selling persists despite strategic news [1, 4]. Price remains significantly below the MA20 and MA50, supported by GS's own cautious outlook on consumer sentiment [5].
-
-**Entry Consideration:** Enter on a minor retracement to $955 or a confirmed break below $948.
-**Risk / Invalidation Level:** Hard stop at $975 or a daily close above the 5-day EMA.
-**Initial Upside / Downside Case:** $925.00 within 1-3 trading sessions.
-**Key Risk:** ❌ RSI of 37.2 indicates near-term oversold conditions which may trigger a technical bounce.
-
-### ⚪ #2 ARM — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $327.93 (+1.6%) | **RSI:** 78.3 | **Vol ratio:** 0.51x | **ATR:** 17.7588 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.2/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `5.6/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `19.4/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** ARM is positioned for continued upside as Meta's selection of Arm for AGI CPU development serves as a major fundamental catalyst [1]. This momentum is reinforced by Wall Street analysts raising price targets following recent earnings strength [4].
 
-**Entry Consideration:** Limit entry near $325.00 or on a confirmed break above the $328.50 intraday high.
-**Risk / Invalidation Level:** Exit position on a daily close below $312.00 to mitigate mean-reversion risk.
-**Initial Upside / Downside Case:** Psychological target of $350.00 within a 1-3 day timeframe.
-**Key Risk:** ❌ Extreme overbought conditions (RSI 78.3) may trigger sharp profit-taking despite positive news.
+### ⛔ #2 LLY — ▲ LONG | IGNORE | Score: 46/85
+
+**Price Snapshot:** $1189.38 (+3.3%) | **RSI:** 59.7 | **Vol ratio:** 0.26x | **ATR:** 28.075 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `16.8/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #3 META — ▲ LONG | IGNORE | Score: 46/85
+
+**Price Snapshot:** $764.74 (+2.8%) | **RSI:** 84.8 | **Vol ratio:** 0.67x | **ATR:** 27.4627 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `16.6/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `4.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #4 AVGO — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $348.21 (-1.9%) | **RSI:** 45.1 | **Vol ratio:** 0.22x | **ATR:** 10.2068 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `21.0/25` | MarketConf `8.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 GOOGL — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $339.03 (+0.4%) | **RSI:** 47.6 | **Vol ratio:** 0.23x | **ATR:** 8.8414 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `17.8/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
 
 ---
 ## 🌍 Macro Watchlist
 
-- ⛔ `LMT` SHORT | IGNORE | score 36 | —
+- ⛔ `XOM` LONG | IGNORE | score 34 | —
+
+---
+## 📈 Market Instruments
+
+- `QQQ` SHORT | IGNORE | score 43
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▲ U.S. Stocks Gain as Inflation Figure Boosts Odds of Rate Hike  [WSJ]
-  ▼ Riskiest Stocks Lose Performance Edge as Interest Rates Climb  [Bloomberg.com]
+**COST**  ·  earnings
+  ▼ Darden’s Earnings Hit by High Food and Labor Costs. Stock of Olive Garden’s Parent Declines.  [Barron's]
 
-**AAPL**  ·  earnings
-  ▼ Apple Just Misses $5 Trillion Market Cap. The Milestone Is Likely Coming Soon.  [barrons.com]
+**META**  ·  macro
+  ▲ William Blair reiterates Outperform on Meta stock after Connect event  [Investing.com]
+  ▲ Meta Price Targets Hiked to $900 as Analyst Cite AI Momentum, Revenue Growth Paths  [Yahoo Finance]
 
 **NVDA**  ·  earnings
-  ◆ Nvidia Stock Missed the AI Agent Rally. Here’s What Could Turn It Around.  [Barron's]
+  ▲ Record Revenue, Huge Guidance Push NVIDIA to Near All-Time Highs  [Yahoo Finance]
 
-**MSFT**  ·  macro
-  ▼ MSFT Layoffs: Microsoft Cuts 268 Xbox Jobs As Gaming Reset Deepens  [Yahoo Finance]
+**AMD**  ·  earnings
+  ▲ AMD Stock Beat Nvidia By 160 Points In 2026: A Historic AI Boom First  [Yahoo Finance]
+  ▲ AMD Is Up 187% This Year: Take Profits, or Buy More?  [Yahoo Finance]
 
-**META**  ·  earnings
-  ▲ Meta Added $200 Billion in One Day on an App That Beat ChatGPT’s Launch  [Yahoo Finance]
-
-**SHOP**  ·  ma
-  ▲ Shopify Stock Jumps on Meta Muse Deal: Time to Buy?  [Yahoo Finance]
-
-**LLY**  ·  earnings
-  ▲ VKTX Stock On Track To Beat LLY, NVO This Month After Obesity Drug Data — Can Viking Win Over Wegovy And Zepbound Users?  [Yahoo Finance]
+**AMZN**  ·  macro
+  ▼ S&P 500, Dow, Nasdaq Drop As Yields Spike Amid Calls For More Rate Hikes — AMZN, GOOGL, NFLX, SPCX, RKLB In Focus  [Yahoo Finance]
+  ▼ What Are Amazon Stock Bears Missing?  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
