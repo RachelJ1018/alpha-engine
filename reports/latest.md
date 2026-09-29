@@ -1,103 +1,87 @@
-# 📊 Daily Research Report — 2026-09-28
-*Generated: 2026-09-28 14:41*
+# 📊 Daily Research Report — 2026-09-29
+*Generated: 2026-09-29 14:39*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.64%
-**SPY RSI(14):** 51.9
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** -0.04%
+**SPY RSI(14):** 54.1
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### NVDA  $231.17 (+2.7%)
-**WATCHLIST** · LONG · EE=22 · post earnings drift · score=55
-> LONG. The massive $150 billion share repurchase authorization and potential reopening of the Chinese AI market provide significant fundamental tailwinds and a p
+### AVGO  $361.04 (+3.3%)
+**WATCHLIST** · LONG · EE=21 · post earnings drift · score=54
+> LONG. Broadcom's 221% AI revenue growth and consistent dividend hikes provide a strong fundamental floor [1]. Institutional accumulation ahead of June earnings 
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `NVDA`
-**⚪ MONITOR (1):** `ARM`
-**⛔ IGNORE (18):** `MSFT` · `GOOGL` · `WMT` · `BAC` · `COST` · `PLTR`
+**🟡 WATCHLIST (1):** `AVGO`
+**⛔ IGNORE (19):** `MSFT` · `META` · `ARM` · `NVDA` · `AMD` · `PLTR`
 
 ---
 ## 🏆 Top Trade
 
-**NVDA — LONG | WATCHLIST | Score: 55**
+**AVGO — LONG | WATCHLIST | Score: 54**
 
-> LONG. The massive $150 billion share repurchase authorization and potential reopening of the Chinese AI market provide significant fundamental tailwinds and a price floor [2][3][4]. Institutional accumulation and valuation arguments suggest the stock remains attractive despite recent gains [1][5].
+> LONG. Broadcom's 221% AI revenue growth and consistent dividend hikes provide a strong fundamental floor [1]. Institutional accumulation ahead of June earnings and rising analyst price targets suggest a recovery toward the MA50 [2, 4].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$231.17 | $224.99 (-2.7%) | $243.54 (+5.4%) | 1R | 2R |
+| ~$361.04 | $349.15 (-3.3%) | $384.82 (+6.6%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 NVDA — ▲ LONG | WATCHLIST | Score: 55/85
+### 🟡 #1 AVGO — ▲ LONG | WATCHLIST | Score: 54/85
 
-**Price Snapshot:** $231.17 (+2.7%) | **RSI:** 56.6 | **Vol ratio:** 0.44x | **ATR:** 5.1534 | **vs MA20:** above ✅
+**Price Snapshot:** $361.04 (+3.3%) | **RSI:** 48.4 | **Vol ratio:** 0.3x | **ATR:** 9.9072 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `22.4/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. The massive $150 billion share repurchase authorization and potential reopening of the Chinese AI market provide significant fundamental tailwinds and a price floor [2][3][4]. Institutional accumulation and valuation arguments suggest the stock remains attractive despite recent gains [1][5].
-
-**Entry Consideration:** Enter on a minor pullback toward $228.00 or on a break above the intraday high, maintaining a position above the MA20 ($222.35).
-**Risk / Invalidation Level:** Hard stop below $221.50, representing a break of the 20-day moving average support.
-**Initial Upside / Downside Case:** Initial target of $245.00 - $250.00 within a 1-2 week timeframe.
-**Key Risk:** ❌ Geopolitical or regulatory hurdles preventing the anticipated China market reopening.
-
-### ⚪ #2 ARM — ▲ LONG | MONITOR | Score: 50/85
-
-**Price Snapshot:** $281.12 (-9.4%) | **RSI:** 54.8 | **Vol ratio:** 0.68x | **ATR:** 20.4263 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.8/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `5.6/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `20.8/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. ARM's revenue and profit forecast beat [1] and its exposure to the AI data center boom [4] provide strong fundamental support despite the current price pullback. Broad AI sector gains [5] suggest this dip is a buying opportunity while price remains above key moving averages.
+**What & Why:** LONG. Broadcom's 221% AI revenue growth and consistent dividend hikes provide a strong fundamental floor [1]. Institutional accumulation ahead of June earnings and rising analyst price targets suggest a recovery toward the MA50 [2, 4].
 
-**Entry Consideration:** Enter at current levels ($281.12) or on a slight retracement toward $275.00.
-**Risk / Invalidation Level:** Daily close below $264.59 (MA50) invalidates the bull case.
-**Initial Upside / Downside Case:** $305.00 for a partial gap fill within 1-2 sessions.
-**Key Risk:** ❌ Broad market weakness (SPY -0.64%) may lead to further profit-taking regardless of earnings quality.
+**Entry Consideration:** Enter on a successful retest of the MA20 ($356.18) or a break above $365 to confirm momentum.
+**Risk / Invalidation Level:** Daily close below $348.00 to invalidate the short-term recovery thesis.
+**Initial Upside / Downside Case:** $375.27 (MA50) within the next 5-10 trading days.
+**Key Risk:** ❌ Choppy market regime and SPY weakness may limit upside momentum despite strong AI sentiment.
 
 ---
-## 🌍 Macro Watchlist
+## 📈 Market Instruments
 
-- ⛔ `NFLX` SHORT | IGNORE | score 31 | —
+- `QQQ` SHORT | IGNORE | score 41
 
 ---
 ## 📰 Key News (Last 24h)
 
+**COST**  ·  macro
+  ▲ A relief rally could be coming soon for these stocks getting hurt by higher rates, says Katie Stockton  [CNBC]
+  ▼ Citizens downgrades Arbor Realty Trust stock rating on rate outlook  [Investing.com]
+
+**AMD**  ·  earnings
+  ▲ AMD stock outlook: Is it still a buy at 39x 2027 earnings?  [Investing.com]
+
 **NVDA**  ·  earnings
-  ▲ Nvidia adds $150 billion to existing share repurchase plan | Reuters  [Reuters]
+  ▲ Nvidia Just Delivered 106% Revenue Growth. What Could NVDA Stock Do Next?  [Yahoo Finance]
 
-**LLY**  ·  earnings
-  ▲ Foundayo’s Early Growth Is Raising Lilly (LLY)’s Revenue Expectations. But Can It Outrun Pricing Pressure?  [Yahoo Finance]
-
-**ARM**  ·  earnings
-  ▲ ARM vs. Intel: What Revenue Growth Trends Reveal About These Artificial Intelligence Companies  [Yahoo Finance]
-
-**PLTR**  ·  earnings
-  ▲ Palantir, IBD Stock Of The Day, Flashes Buy Signal Amid Earnings, AI Momentum  [Investor's Business Daily]
-  ▲ Palantir Q2 2026: Record 93% Revenue Growth, 155% Rule of 40, Stock Up 30% — Then Consolidates  [TradingKey]
+**MU**  ·  earnings
+  ▲ MU Stock Slips Ahead Of Earnings, Baird Hikes Price Target On 'Surge In Agentic AI Demand'  [Yahoo Finance]
+  ◆ Micron Stock Gets Stunning Price Target Hike Just Before Earnings  [Yahoo Finance]
 
 **META**  ·  earnings
-  ▼ Mark Zuckerberg's 'Wartime CEO Mode' Could Drive Meta Stock 'Re-Rating': Gene Munster Says He Missed Muse Becoming Company 'Centerpiece'  [finance.yahoo.com]
+  ▲ Meta Muse Downloads Hit 2.8M, Beat ChatGPT’s Pace [2026]  [shattered.io]
 
 **JPM**  ·  earnings
-  ▲ JPMorgan Stock Sits 6% Below Its High After a Record Year. Here’s What Q3 Earnings Must Prove  [TIKR.com]
-
-**COST**  ·  earnings
-  ▲ Carnival Stock Forecast: Can Record Cruise Demand Deliver Another Earnings Beat?  [TradingKey]
+  ▼ Old Mission Investment Co LLC Makes New $4.82 Million Investment in JPMorgan Chase & Co. $JPM  [MarketBeat]
 
 ---
 ## 🛡 Research Risk Rules
