@@ -1,103 +1,161 @@
-# 📊 Daily Research Report — 2026-10-01
-*Generated: 2026-10-01 14:40*
+# 📊 Daily Research Report — 2026-10-02
+*Generated: 2026-10-02 14:41*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.07%
-**SPY RSI(14):** 49.7
+**Regime:** 📈 BULL — Broad market rising. Long setups have better follow-through.
+**SPY:** +1.07%
+**SPY RSI(14):** 61.6
 
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+> ✅ **Research posture:** Market is supportive. Long ideas have a better chance of follow-through.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### PLTR  $193.66 (+1.9%)
+**WATCHLIST** · LONG · EE=20 · post earnings drift · score=56
+> LONG. Palantir's record revenue growth and ninth consecutive earnings beat provide a strong fundamental catalyst for continued momentum [1, 2]. The rally remain
+
+### TSLA  $373.09 (+5.4%)
+**WATCHLIST** · LONG · EE=19 · general setup · score=55
+> LONG. TSLA is supported by significant institutional accumulation from ARK Invest [4][5] and positive pre-market momentum in a bullish regime [1][2].
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `ARM` · `MSFT` · `NVDA` · `PLTR` · `AAPL` · `GOOGL`
+**🟡 WATCHLIST (7):** `PLTR` · `ARM` · `AVGO` · `TSLA` · `GOOGL` · `AMZN` · `MSFT`
+**⚪ MONITOR (3):** `NVDA` · `COIN` · `LLY`
+**⛔ IGNORE (10):** `SPY` · `AMD` · `IWM` · `GS` · `JPM` · `COST`
+
+---
+## 🏆 Top Trade
+
+**PLTR — LONG | WATCHLIST | Score: 56**
+
+> LONG. Palantir's record revenue growth and ninth consecutive earnings beat provide a strong fundamental catalyst for continued momentum [1, 2]. The rally remains intact following a new data center partnership and a reiterated Buy rating with a $287 price target [3, 5].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$193.66 | $186.92 (-3.5%) | $207.15 (+7.0%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 ARM — ▲ LONG | IGNORE | Score: 47/85
+### 🟡 #1 PLTR — ▲ LONG | WATCHLIST | Score: 56/85
 
-**Price Snapshot:** $291.30 (+0.6%) | **RSI:** 56.8 | **Vol ratio:** 0.2x | **ATR:** 20.2827 | **vs MA20:** above ✅
+**Price Snapshot:** $193.66 (+1.9%) | **RSI:** 80.8 | **Vol ratio:** 0.16x | **ATR:** 5.6187 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `16.7/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 MSFT — ▲ LONG | IGNORE | Score: 46/85
-
-**Price Snapshot:** $516.28 (+0.7%) | **RSI:** 62.0 | **Vol ratio:** 0.21x | **ATR:** 12.1471 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.7/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `20.4/25` | MarketConf `11.0/20` | RegimeFit `13.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. Palantir's record revenue growth and ninth consecutive earnings beat provide a strong fundamental catalyst for continued momentum [1, 2]. The rally remains intact following a new data center partnership and a reiterated Buy rating with a $287 price target [3, 5].
 
-### ⛔ #3 NVDA — ▲ LONG | IGNORE | Score: 44/85
+**Entry Consideration:** Entry on a minor intraday pullback toward $190.00 or a break above the current session high.
+**Risk / Invalidation Level:** Close position if price breaks below the MA20 at $180.43 or $185.00 support.
+**Initial Upside / Downside Case:** $215.00 / 1-3 trading sessions
+**Key Risk:** ❌ Extreme overbought conditions (RSI 80.8) and high valuation relative to revenue [4].
 
-**Price Snapshot:** $230.41 (+0.9%) | **RSI:** 65.7 | **Vol ratio:** 0.21x | **ATR:** 5.2743 | **vs MA20:** above ✅
+### 🟡 #2 ARM — ▲ LONG | WATCHLIST | Score: 56/85
 
-**Layered Scores:** EventEdge `14.9/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Price Snapshot:** $314.92 (+7.7%) | **RSI:** 69.8 | **Vol ratio:** 0.44x | **ATR:** 20.2457 | **vs MA20:** above ✅
 
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #4 PLTR — ▲ LONG | IGNORE | Score: 43/85
-
-**Price Snapshot:** $189.60 (+1.4%) | **RSI:** 81.9 | **Vol ratio:** 0.17x | **ATR:** 5.8473 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `16.9/25` | MarketConf `9.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `19.7/25` | MarketConf `11.0/20` | RegimeFit `13.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. ARM is poised for growth driven by Nvidia Safety Platform adoption and increased silicon demand for Agent Safety applications [1, 3]. Strong price momentum above the MA20 and a bullish market regime support a continuation of the current trend.
 
-### ⛔ #5 AAPL — ▼ SHORT | IGNORE | Score: 43/85
+**Entry Consideration:** Limit entry near $310.00 on a minor intraday pullback to mitigate the high 69.8 RSI.
+**Risk / Invalidation Level:** Close position if price breaks below $295.00, invalidating the recent breakout support.
+**Initial Upside / Downside Case:** Initial target of $335.00 - $340.00 within 1-3 trading sessions.
+**Key Risk:** ❌ Extreme valuation and RSI near overbought levels may trigger sudden profit-taking [5].
 
-**Price Snapshot:** $330.91 (-0.6%) | **RSI:** 48.3 | **Vol ratio:** 0.17x | **ATR:** 6.3157 | **vs MA20:** below ⚠️
+### 🟡 #3 TSLA — ▲ LONG | WATCHLIST | Score: 55/85
 
-**Layered Scores:** EventEdge `13.9/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+**Price Snapshot:** $373.09 (+5.4%) | **RSI:** 59.0 | **Vol ratio:** 0.59x | **ATR:** 11.4457 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `19.3/25` | MarketConf `11.0/20` | RegimeFit `12.5/15` | RelOpp `4.8/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+
+**Strategy Bucket:** `general_setup`
+
+**What & Why:** LONG. TSLA is supported by significant institutional accumulation from ARK Invest [4][5] and positive pre-market momentum in a bullish regime [1][2].
+
+**Entry Consideration:** Limit entry between $370.00 and $373.00 to align with the current trend while staying above the MA20.
+**Risk / Invalidation Level:** Close below $364.00, which marks the 20-day moving average support level.
+**Initial Upside / Downside Case:** Psychological resistance at $395.00 - $400.00 within 1-3 trading sessions.
+**Key Risk:** ❌ Macro volatility or a negative surprise from the upcoming jobs report.
+
+### ⚪ #4 COIN — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $188.37 (-0.5%) | **RSI:** 48.2 | **Vol ratio:** 0.47x | **ATR:** 11.7115 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `15.9/25` | MarketConf `11.0/20` | RegimeFit `12.5/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `general_setup`
+
+**What & Why:** LONG. COIN is positioned to benefit from Bitcoin's rebound to $86K and remains supported above its 20-day moving average despite a minor intraday dip [1]. The broader bullish market regime and high sentiment score suggest a recovery as crypto-correlated assets gain momentum.
+
+**Entry Consideration:** Enter near current price of $188.37 or on a break above $190.00 for momentum confirmation.
+**Risk / Invalidation Level:** Tight stop below the MA20 at $186.13 or a break of $185.00.
+**Initial Upside / Downside Case:** Initial target of $200.00 within 1-3 trading sessions.
+**Key Risk:** ❌ Macro volatility stemming from upcoming jobs data or a sudden reversal in Bitcoin price.
+
+### ⚪ #5 LLY — ▲ LONG | MONITOR | Score: 51/85
+
+**Price Snapshot:** $1155.34 (+0.5%) | **RSI:** 56.6 | **Vol ratio:** 0.17x | **ATR:** 30.8468 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `15.1/25` | MarketConf `12.0/20` | RegimeFit `13.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. Strong incretin demand and superior clinical data for Foundayo against competitors drive a bullish revenue outlook [4,5]. Potential for an earnings beat and strategic M&A expansion further support price appreciation from current support levels [1,3].
+
+**Entry Consideration:** Enter on a successful retest of the MA20 ($1151.84) or a break above $1160.
+**Risk / Invalidation Level:** Hard stop below $1140 to limit downside if the MA20 support fails.
+**Initial Upside / Downside Case:** $1176 (MA50 resistance) within a 2-5 session timeframe.
+**Key Risk:** ❌ Clinical trial data from competitors impacting market share sentiment [2].
 
 ---
 ## 🌍 Macro Watchlist
 
-- ⛔ `LMT` SHORT | IGNORE | score 33 | —
+- ⛔ `WMT` LONG | IGNORE | score 37 | —
+- ⛔ `XOM` LONG | IGNORE | score 37 | —
+
+---
+## 📈 Market Instruments
+
+- `SPY` LONG | IGNORE | score 49
+- `QQQ` SHORT | IGNORE | score 39
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  earnings
-  ▼ Cal-Maine Stock Falls as Earnings Miss Estimates and Sales Drop 42%  [Barron's]
-  ▼ DIRTT Environmental Solutions Stock Slides 3.61% as Guidance Reset, Construction Uncertainty and Cost Risks Pressure TSX:DRT  [kalkine.ca]
-
 **MSFT**  ·  earnings
-  ▲ Meta, Microsoft led tech higher last week despite soaring bond yields  [Cnbc]
+  ▲ OpenAI’s Future IPO Keeps Me Buying Microsoft  [Yahoo Finance]
 
-**INTC**  ·  macro
-  ▼ Meta stock enjoys best month since 2022 on AI momentum  [Cnbc]
+**LLY**  ·  earnings
+  ▲ Will Lilly (LLY) Beat Estimates Again in Its Next Earnings Report?  [Yahoo Finance]
 
-**AAPL**  ·  macro
-  ▼ Needham reiterates Hold on Apple stock citing Meta competition risks  [Investing.com]
+**PLTR**  ·  earnings
+  ▲ Palantir posts record revenue growth, raising f...  [Pluang]
+  ▲ Palantir posts ninth earnings beat with 82% rev...  [Pluang]
 
-**NVDA**  ·  earnings
-  ▲ Barclays Projects Nvidia's Hyperscaler Revenue Surge, NVDA Shares Eye $275 Target  [GuruFocus]
+**JPM**  ·  earnings
+  ▲ RBC Capital Keeps Their Buy Rating on JPMorgan Chase (JPM)  [The Globe and Mail]
 
-**AVGO**  ·  earnings
-  ▼ SCHD's Rules Sold Broadcom in March 2024. The Stock Is Up About 183% Since, and SCHD Holders Missed the Run  [24/7 Wall St.]
+**AAPL**  ·  earnings
+  ▲ Alphabet Rides on Google Services Growth: Can It Beat META & AAPL?  [Zacks Investment Research]
 
-**GOOGL**  ·  earnings
-  ▲ Anthropic's IPO Could Put Amazon's and Alphabet's Paper Profits to the Test  [MarketBeat]
+**GLD**  ·  earnings
+  ▼ Bravada Gold Stock Falls 5.71% as Wind Mountain Development Uncertainty Keeps the Outlook Cautious  [kalkine.ca]
+
+**COIN**  ·  macro
+  ▲ Bitcoin Price Rebounds To $86K With Jobs Data Looming — MSTR, COIN, BMNR Stocks Gain  [Stocktwits]
 
 ---
 ## 🛡 Research Risk Rules
