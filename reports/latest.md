@@ -1,12 +1,14 @@
-# 📊 Daily Research Report — 2026-10-07
-*Generated: 2026-10-07 14:38*
+# 📊 Daily Research Report — 2026-10-08
+*Generated: 2026-10-08 14:40*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.60%
-**SPY RSI(14):** 62.9
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** -0.13%
+**SPY RSI(14):** 64.4
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,52 +19,52 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `GOOGL` · `AAPL` · `MSFT` · `JPM` · `GLD` · `NVDA`
+**⛔ IGNORE (20):** `GLD` · `NVDA` · `GOOGL` · `META` · `AAPL` · `COST`
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 GOOGL — ▲ LONG | IGNORE | Score: 49/85
+### ⛔ #1 GLD — ▲ LONG | IGNORE | Score: 47/85
 
-**Price Snapshot:** $344.55 (-0.9%) | **RSI:** 47.5 | **Vol ratio:** 0.19x | **ATR:** 8.7203 | **vs MA20:** above ✅
+**Price Snapshot:** $378.42 (+0.7%) | **RSI:** 28.9 | **Vol ratio:** 0.26x | **ATR:** 5.8014 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `20.9/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 AAPL — ▲ LONG | IGNORE | Score: 48/85
-
-**Price Snapshot:** $335.36 (+0.5%) | **RSI:** 47.8 | **Vol ratio:** 0.17x | **ATR:** 6.255 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.7/25` | MarketConf `12.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `18.7/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #3 MSFT — ▲ LONG | IGNORE | Score: 46/85
+### ⛔ #2 NVDA — ▲ LONG | IGNORE | Score: 47/85
 
-**Price Snapshot:** $525.92 (-0.6%) | **RSI:** 70.1 | **Vol ratio:** 0.12x | **ATR:** 11.8355 | **vs MA20:** above ✅
+**Price Snapshot:** $236.91 (-0.2%) | **RSI:** 73.5 | **Vol ratio:** 0.21x | **ATR:** 5.0757 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.2/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #4 JPM — ▲ LONG | IGNORE | Score: 45/85
-
-**Price Snapshot:** $327.01 (-1.3%) | **RSI:** 26.0 | **Vol ratio:** 0.2x | **ATR:** 5.7077 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `20.1/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #5 GLD — ▲ LONG | IGNORE | Score: 45/85
+### ⛔ #3 GOOGL — ▲ LONG | IGNORE | Score: 46/85
 
-**Price Snapshot:** $376.09 (-1.6%) | **RSI:** 29.4 | **Vol ratio:** 0.28x | **ATR:** 5.9122 | **vs MA20:** below ⚠️
+**Price Snapshot:** $352.14 (+0.5%) | **RSI:** 52.4 | **Vol ratio:** 0.26x | **ATR:** 8.5436 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.2/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `17.1/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #4 META — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $722.30 (+0.1%) | **RSI:** 61.0 | **Vol ratio:** 0.24x | **ATR:** 26.9732 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `15.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 AAPL — ▲ LONG | IGNORE | Score: 45/85
+
+**Price Snapshot:** $337.65 (+0.3%) | **RSI:** 51.9 | **Vol ratio:** 0.11x | **ATR:** 5.9971 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `15.3/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
@@ -70,35 +72,36 @@
 ---
 ## 🌍 Macro Watchlist
 
-- ⛔ `UNH` LONG | IGNORE | score 34 | —
-- ⛔ `WMT` LONG | IGNORE | score 34 | —
+- ⛔ `XOM` LONG | IGNORE | score 34 | —
+- ⛔ `WMT` LONG | IGNORE | score 32 | —
+
+---
+## 📈 Market Instruments
+
+- `QQQ` LONG | IGNORE | score 33
 
 ---
 ## 📰 Key News (Last 24h)
 
-**GS**  ·  macro
-  ▲ The S&P 500 is facing rate chaos and narrow breadth. Why one Goldman Sachs insider is still bullish on stocks.  [MarketWatch]
+**PLTR**  ·  macro
+  ▲ PLTR Stock Is Just $8 Away From Making Another Record High, Goldman Sees A ‘Step Function Change’ In Palantir’s AI Opportunity  [Finance]
 
-**NVDA**  ·  earnings
-  ▲ The case for Nvidia’s stock to march even higher after clinching its first record high in months - MarketWatch  [Marketwatch]
+**MSFT**  ·  macro
+  ▲ Melius upgrades Microsoft stock rating on AI security demand By Investing.com  [Investing]
 
-**AAPL**  ·  macro
-  ▲ UBS reiterates Apple stock neutral on slowing App Store growth  [Investing.com]
+**GOOGL**  ·  earnings
+  ▼ Microsoft to post Q1 FY2027 earnings Oct. 28 | MSFT Stock News  [Stocktitan]
 
-**AVGO**  ·  earnings
-  ▲ Broadcom (AVGO) Eyes Huge AI Revenue Growth, Is The Stock Getting Too Pricey?  [Yahoo Finance]
+**JPM**  ·  earnings
+  ▲ LLY Stock Extends Run As Obesity Franchise Dominates  [Timothysykes]
+  ▲ Dear JPMorgan Stock Fans, Mark Your Calendars for Oct. 13  [Barchart]
 
-**AMZN**  ·  macro
-  ▼ FDX Stock Reverses 4 Weeks Of Losses: Ross Gerber Lauds FedEx's Fleet Electrification, Wants Amazon To Follow Suit  [Yahoo Finance]
-
-**AMD**  ·  earnings
-  ▲ Why Advanced Micro (AMD) Could Beat Earnings Estimates Again  [Yahoo Finance]
-
-**MSFT**  ·  earnings
-  ▲ Analyst Drops Massive Take on Microsoft Stock Over AI's Biggest Fear — TradingView News  [Tradingview]
+**LLY**  ·  earnings
+  ▲ LLY Stock Down 2% in 3 Months: Is the Dip a Buying Opportunity? — TradingView News  [Tradingview]
 
 **IWM**  ·  earnings
-  ▲ IWM Oct 2026 290.000 call (IWM261023C00290000) stock price, news, quote and history - Yahoo Finance  [Uk]
+  ▲ IWM Oct 2026 283.000 call (IWM261007C00283000) Stock Price, News, Quote & History - Yahoo Finance  [Ca]
+  ▲ IWM Oct 2026 260.000 call (IWM261005C00260000) Stock Price, News, Quote & History - Yahoo Finance  [Ca]
 
 ---
 ## 🛡 Research Risk Rules
