@@ -1,51 +1,72 @@
-# 📊 Daily Research Report — 2026-10-13
-*Generated: 2026-10-13 14:42*
+# 📊 Daily Research Report — 2026-10-14
+*Generated: 2026-10-14 14:38*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.04%
-**SPY RSI(14):** 62.3
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.69%
+**SPY RSI(14):** 56.1
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### UNH  $388.31 (+2.8%)
+**WATCHLIST** · LONG · EE=17 · post earnings drift · score=53
+> LONG. UNH demonstrates significant relative strength by reclaiming its 50-day moving average during a broader market decline, benefiting from a rotation into de
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (1):** `JPM`
-**⛔ IGNORE (19):** `META` · `GS` · `LLY` · `AAPL` · `GOOGL` · `AVGO`
+**🟡 WATCHLIST (2):** `UNH` · `LLY`
+**⛔ IGNORE (18):** `GOOGL` · `AAPL` · `TSM` · `TSLA` · `COST` · `META`
+
+---
+## 🏆 Top Trade
+
+**UNH — LONG | WATCHLIST | Score: 53**
+
+> LONG. UNH demonstrates significant relative strength by reclaiming its 50-day moving average during a broader market decline, benefiting from a rotation into defensive Dow components [1].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$388.31 | $374.98 (-3.4%) | $414.97 (+6.9%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 JPM — ▼ SHORT | MONITOR | Score: 51/85
+### 🟡 #1 UNH — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $335.43 (+0.3%) | **RSI:** 49.3 | **Vol ratio:** 0.75x | **ATR:** 5.5332 | **vs MA20:** below ⚠️
+**Price Snapshot:** $388.31 (+2.8%) | **RSI:** 61.7 | **Vol ratio:** 0.5x | **ATR:** 11.1093 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.7/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `7.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `17.3/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `4.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** SHORT. Disappointing Q3 earnings and slowing dealmaking momentum [1, 2] create fundamental headwinds. Technical weakness persists as the price remains below the MA20 and MA50 in a choppy regime.
+**What & Why:** LONG. UNH demonstrates significant relative strength by reclaiming its 50-day moving average during a broader market decline, benefiting from a rotation into defensive Dow components [1].
 
-**Entry Consideration:** Enter on a failed retest of the MA20 ($336.54) or a breakdown below $334.50.
-**Risk / Invalidation Level:** Stop loss set at $338.50, just above the MA20 resistance level.
-**Initial Upside / Downside Case:** Initial target $328.00; timeframe 1-2 days.
-**Key Risk:** ❌ Institutional accumulation [4, 5] and upcoming conference commentary [3] may provide unexpected support.
+**Entry Consideration:** Limit order near the $386.01 (MA50) retest level or on a break above $390.00.
+**Risk / Invalidation Level:** Hard stop on a daily close below the MA20 at $375.41.
+**Initial Upside / Downside Case:** Psychological resistance at $400.00 within a 1-3 day timeframe.
+**Key Risk:** ❌ Broader market volatility accelerating and forcing a correlation-based sell-off across all sectors.
 
----
-## 🌍 Macro Watchlist
+### 🟡 #2 LLY — ▲ LONG | WATCHLIST | Score: 52/85
 
-- ⛔ `UNH` LONG | IGNORE | score 37 | —
-- ⛔ `NFLX` LONG | IGNORE | score 34 | —
-- ⛔ `WMT` LONG | IGNORE | score 34 | —
+**Price Snapshot:** $1207.30 (+3.5%) | **RSI:** 57.1 | **Vol ratio:** 0.31x | **ATR:** 34.2357 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `18.3/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Strong 48% revenue growth and a $87B 2026 revenue forecast suggest the stock remains undervalued despite recent gains [1, 5]. Upcoming Q3 earnings and oncology portfolio strength serve as near-term catalysts for price appreciation [3, 4].
+
+**Entry Consideration:** Enter on a retest of the $1195-$1200 support zone or a break above $1210.
+**Risk / Invalidation Level:** Hard stop below the 20-day moving average at $1168.
+**Initial Upside / Downside Case:** Initial target of $1260 with a 5-10 day timeframe leading into earnings.
+**Key Risk:** ❌ High valuation sensitivity to any earnings or guidance disappointment.
 
 ---
 ## 📈 Market Instruments
@@ -55,23 +76,25 @@
 ---
 ## 📰 Key News (Last 24h)
 
-**AMD**  ·  earnings
-  ▲ NVIDIA teeters at $225 support with fading momentum: Live levels  [Investing]
+**COST**  ·  earnings
+  ▲ Indian benchmark shares jump as encouraging HCLTech earnings propel IT buying  [Reuters]
+  ▲ UnitedHealth Group tops estimates, hikes profit outlook as insurer manages high medical costs  [CNBC]
 
-**MSFT**  ·  earnings
-  ◆ Microsoft reclaims $4 trillion market cap  [Finance]
+**META**  ·  macro
+  ▲ Rosenblatt reiterates Meta stock Buy rating on AI model strength  [Investing.com]
+
+**UNH**  ·  earnings
+  ◆ Nasdaq Futures Sink, Dow Rises Premarket As AI Chip Stocks Wobble Ahead Of Big Bank Earnings: MU, SNDK, NVTS, NVDA, SPCX, ASTS, UNH, V Stocks In Focus  [Yahoo Finance]
 
 **GOOGL**  ·  earnings
-  ▲ Meta Stock Rose 3% on Its Muse Wonder Launch. Here’s What October 21 Needs to Show | TIKR.com  [Tikr]
-  ▲ Wall Street analysts update Google (GOOGL) stock price target for 12 months  [Finbold]
+  ▲ Is Alphabet’s (GOOGL) Cloud Growth Masking a Paper EPS Gain?  [Yahoo Finance]
 
-**JPM**  ·  earnings
-  ▼ JPMorgan stock recovers after Q3 earnings disappoint as markets soften (JPM:NYSE) | Seeking Alpha  [Seekingalpha]
-  ▼ JPM Stock: JPMorgan shares fluctuate after rare Q3 earnings miss and slowing dealmaking momentum  [Clarin]
+**ARM**  ·  earnings
+  ▲ Arm Holdings (ARM) Soars 17% on Ambitious $2B Revenue Goal; Hedge Funds Bullish  [Yahoo Finance]
+  ▼ Johnson & Johnson Stocks Fall 4.7% Despite Higher Full-Year Guidance  [Yahoo Finance]
 
-**IWM**  ·  earnings
-  ▲ IWM Oct 2026 272.000 call (IWM261015C00272000) Stock Price, News, Quote & History - Yahoo Finance  [Ca]
-  ▲ IWM Oct 2026 289.000 call (IWM261015C00289000) Stock Price, News, Quote & History - Yahoo Finance  [Ca]
+**PLTR**  ·  earnings
+  ▲ Palantir’s Earnings Gamble: Nine Straight Beats Set High Bar for Q3 Results  [24/7 Wall St.]
 
 ---
 ## 🛡 Research Risk Rules
