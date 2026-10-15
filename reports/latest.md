@@ -1,100 +1,74 @@
-# 📊 Daily Research Report — 2026-10-14
-*Generated: 2026-10-14 14:38*
+# 📊 Daily Research Report — 2026-10-15
+*Generated: 2026-10-15 14:39*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.69%
-**SPY RSI(14):** 56.1
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** -0.18%
+**SPY RSI(14):** 46.5
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### UNH  $388.31 (+2.8%)
-**WATCHLIST** · LONG · EE=17 · post earnings drift · score=53
-> LONG. UNH demonstrates significant relative strength by reclaiming its 50-day moving average during a broader market decline, benefiting from a rotation into de
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (2):** `UNH` · `LLY`
-**⛔ IGNORE (18):** `GOOGL` · `AAPL` · `TSM` · `TSLA` · `COST` · `META`
-
----
-## 🏆 Top Trade
-
-**UNH — LONG | WATCHLIST | Score: 53**
-
-> LONG. UNH demonstrates significant relative strength by reclaiming its 50-day moving average during a broader market decline, benefiting from a rotation into defensive Dow components [1].
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$388.31 | $374.98 (-3.4%) | $414.97 (+6.9%) | 1R | 2R |
+**⚪ MONITOR (1):** `NFLX`
+**⛔ IGNORE (19):** `LLY` · `GOOGL` · `UNH` · `AMZN` · `MSFT` · `AAPL`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 UNH — ▲ LONG | WATCHLIST | Score: 53/85
+### ⚪ #1 NFLX — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $388.31 (+2.8%) | **RSI:** 61.7 | **Vol ratio:** 0.5x | **ATR:** 11.1093 | **vs MA20:** above ✅
+**Price Snapshot:** $72.59 (+2.9%) | **RSI:** 54.9 | **Vol ratio:** 0.42x | **ATR:** 1.625 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.3/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `4.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `18.8/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
-**Strategy Bucket:** `post_earnings_drift`
+**Strategy Bucket:** `general_setup`
 
-**What & Why:** LONG. UNH demonstrates significant relative strength by reclaiming its 50-day moving average during a broader market decline, benefiting from a rotation into defensive Dow components [1].
+**What & Why:** LONG. The 6% workforce reduction [1] is interpreted as a margin-accretive efficiency move, contributing to the positive premarket momentum [2].
 
-**Entry Consideration:** Limit order near the $386.01 (MA50) retest level or on a break above $390.00.
-**Risk / Invalidation Level:** Hard stop on a daily close below the MA20 at $375.41.
-**Initial Upside / Downside Case:** Psychological resistance at $400.00 within a 1-3 day timeframe.
-**Key Risk:** ❌ Broader market volatility accelerating and forcing a correlation-based sell-off across all sectors.
-
-### 🟡 #2 LLY — ▲ LONG | WATCHLIST | Score: 52/85
-
-**Price Snapshot:** $1207.30 (+3.5%) | **RSI:** 57.1 | **Vol ratio:** 0.31x | **ATR:** 34.2357 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.3/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Strong 48% revenue growth and a $87B 2026 revenue forecast suggest the stock remains undervalued despite recent gains [1, 5]. Upcoming Q3 earnings and oncology portfolio strength serve as near-term catalysts for price appreciation [3, 4].
-
-**Entry Consideration:** Enter on a retest of the $1195-$1200 support zone or a break above $1210.
-**Risk / Invalidation Level:** Hard stop below the 20-day moving average at $1168.
-**Initial Upside / Downside Case:** Initial target of $1260 with a 5-10 day timeframe leading into earnings.
-**Key Risk:** ❌ High valuation sensitivity to any earnings or guidance disappointment.
+**Entry Consideration:** Enter near $72.50 or on a minor pullback to $72.00, provided price remains above the MA20.
+**Risk / Invalidation Level:** Daily close below $70.38 (MA20) to invalidate the short-term breakout.
+**Initial Upside / Downside Case:** $75.15 (MA50) for a mean-reversion target within 1-3 trading sessions.
+**Key Risk:** ❌ Extremely low relative volume (0.42x) indicates a lack of conviction that may fail in a choppy market regime.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` SHORT | IGNORE | score 37
+- `QQQ` SHORT | IGNORE | score 42
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  earnings
-  ▲ Indian benchmark shares jump as encouraging HCLTech earnings propel IT buying  [Reuters]
-  ▲ UnitedHealth Group tops estimates, hikes profit outlook as insurer manages high medical costs  [CNBC]
+**BAC**  ·  macro
+  ▲ Final Trade: MSFT, C, SPY, MAR - CNBC  [Cnbc]
 
-**META**  ·  macro
-  ▲ Rosenblatt reiterates Meta stock Buy rating on AI model strength  [Investing.com]
-
-**UNH**  ·  earnings
-  ◆ Nasdaq Futures Sink, Dow Rises Premarket As AI Chip Stocks Wobble Ahead Of Big Bank Earnings: MU, SNDK, NVTS, NVDA, SPCX, ASTS, UNH, V Stocks In Focus  [Yahoo Finance]
-
-**GOOGL**  ·  earnings
-  ▲ Is Alphabet’s (GOOGL) Cloud Growth Masking a Paper EPS Gain?  [Yahoo Finance]
-
-**ARM**  ·  earnings
-  ▲ Arm Holdings (ARM) Soars 17% on Ambitious $2B Revenue Goal; Hedge Funds Bullish  [Yahoo Finance]
-  ▼ Johnson & Johnson Stocks Fall 4.7% Despite Higher Full-Year Guidance  [Yahoo Finance]
+**JPM**  ·  earnings
+  ▼ Phillip Securities lowers JPMorgan stock price target on earnings cut  [Investing.com]
 
 **PLTR**  ·  earnings
-  ▲ Palantir’s Earnings Gamble: Nine Straight Beats Set High Bar for Q3 Results  [24/7 Wall St.]
+  ▼ Ondas, Palantir Partner To Launch New AI Company For Defense Missions – Everything To Know About Regna AI  [Yahoo Finance]
+
+**NVDA**  ·  macro
+  ▼ Dow, S&P 500, Nasdaq Decline Amid Hot Inflation Data, AI Selloff: CRWV, NBIS, NVDA, IBRX Stocks In Focus  [Yahoo Finance]
+  ▼ Nvidia stock sinks as chip sell-off deepens on hot inflation data  [Yahoo Finance]
+
+**TSM**  ·  earnings
+  ▲ TSMC stock sinks despite record profit amid 'extremely robust demand' for AI chips  [Yahoo Finance]
+
+**MSFT**  ·  earnings
+  ▲ Microsoft (MSFT): Can Security Bundles Generate More Profit per Customer?  [Yahoo Finance]
+
+**AAPL**  ·  earnings
+  ▲ Apple (AAPL): Can Longer iPhone Ownership Still Produce More Profit per Customer?  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
