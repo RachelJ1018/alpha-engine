@@ -1,103 +1,85 @@
-# 📊 Daily Research Report — 2026-10-16
-*Generated: 2026-10-16 14:39*
+# 📊 Daily Research Report — 2026-10-19
+*Generated: 2026-10-19 14:39*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.04%
-**SPY RSI(14):** 58.0
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** +0.55%
+**SPY RSI(14):** 53.1
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### TSLA  $365.39 (+3.0%)
+**WATCHLIST** · LONG · EE=21 · post earnings drift · score=53
+> LONG. Tesla is positioned for a momentum build-up ahead of its earnings preview [1], supported by positive sentiment surrounding Musk's SpaceX developments and 
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `SOFI` · `BAC` · `WMT` · `AMZN` · `NFLX` · `AAPL`
+**🟡 WATCHLIST (1):** `TSLA`
+**⛔ IGNORE (19):** `AMZN` · `AAPL` · `MSFT` · `GOOGL` · `NFLX` · `META`
+
+---
+## 🏆 Top Trade
+
+**TSLA — LONG | WATCHLIST | Score: 53**
+
+> LONG. Tesla is positioned for a momentum build-up ahead of its earnings preview [1], supported by positive sentiment surrounding Musk's SpaceX developments and bullish analyst outlooks [3][4].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$365.39 | $351.92 (-3.7%) | $392.34 (+7.4%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 SOFI — ▲ LONG | IGNORE | Score: 49/85
+### 🟡 #1 TSLA — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $15.19 (+0.7%) | **RSI:** 39.8 | **Vol ratio:** 0.27x | **ATR:** 0.5524 | **vs MA20:** below ⚠️
+**Price Snapshot:** $365.39 (+3.0%) | **RSI:** 57.7 | **Vol ratio:** 0.37x | **ATR:** 11.2286 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `19.0/25` | MarketConf `11.0/20` | RegimeFit `6.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
-
-### ⛔ #2 BAC — ▲ LONG | IGNORE | Score: 49/85
-
-**Price Snapshot:** $52.50 (+1.5%) | **RSI:** 31.5 | **Vol ratio:** 0.36x | **ATR:** 1.2175 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `19.8/25` | MarketConf `11.0/20` | RegimeFit `6.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
-
-### ⛔ #3 WMT — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $118.50 (+0.5%) | **RSI:** 73.3 | **Vol ratio:** 0.2x | **ATR:** 2.5343 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `15.8/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
-
-### ⛔ #4 AMZN — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $254.09 (-0.3%) | **RSI:** 60.0 | **Vol ratio:** 0.21x | **ATR:** 5.595 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `20.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+**Layered Scores:** EventEdge `20.9/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG. Tesla is positioned for a momentum build-up ahead of its earnings preview [1], supported by positive sentiment surrounding Musk's SpaceX developments and bullish analyst outlooks [3][4].
 
-### ⛔ #5 NFLX — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $70.94 (-2.3%) | **RSI:** 55.9 | **Vol ratio:** 0.39x | **ATR:** 1.6493 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.1/25` | MarketConf `11.0/20` | RegimeFit `6.0/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `general_setup`
-
+**Entry Consideration:** Limit order near $362.50 to $365.00, seeking a bounce off the MA50 support.
+**Risk / Invalidation Level:** Hard stop at $354.50, below the recent psychological support and MA50.
+**Initial Upside / Downside Case:** $382.00 initial target, testing the MA20 resistance within 3-5 trading days.
+**Key Risk:** ❌ Potential for earnings-related volatility and historical Q3 underperformance [1][5].
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 40
+- `SPY` SHORT | IGNORE | score 37
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▼ Citizens cuts Walker & Dunlop stock price target on rate volatility  [Investing.com]
-  ▲ T. Rowe Price (TROW) Beats Stock Market Upswing: What Investors Need to Know  [Yahoo Finance]
+**COST**  ·  earnings
+  ▲ Stocks are heading for a high-stakes showdown, as strong earnings collide with rising borrowing costs  [MarketWatch]
+  ▼ Stifel cuts Watts Water stock price target on rate outlook concerns  [Investing.com]
+
+**MSFT**  ·  earnings
+  ▲ Microsoft Stock Had a Monstrous Rally After Its Last Earnings. Don’t Expect It to Repeat This Time.  [Yahoo Finance]
+
+**ADBE**  ·  earnings
+  ◆ Meta Earnings Puts Adobe Stock And AI Ad Software Names In Focus  [Yahoo Finance]
 
 **META**  ·  earnings
-  ▲ Meta Just Climbed 12% in a Month: Take Profits, or Hold On for the Ride?  [Yahoo Finance]
-
-**JPM**  ·  earnings
-  ▼ JPMorgan Chase (JPM) Misses Third Quarter Earnings, Is The Upside Already Priced In?  [Yahoo Finance]
-
-**PLTR**  ·  earnings
-  ▼ Ondas, Palantir Partner To Launch New AI Company For Defense Missions – Everything To Know About Regna AI  [Yahoo Finance]
-
-**NVDA**  ·  earnings
-  ▲ Micron vs. NVIDIA: Which AI Stock Is the Better Buy After Earnings?  [Zacks Investment Research]
-
-**GS**  ·  earnings
-  ▲ Meta Platforms Stock Forecast – Goldman Sachs Raises Price Target to $860 Ahead of Q3 Earnings  [TipRanks]
+  ▼ Meta (META) Reports Earnings Amid Market Concerns  [GuruFocus]
+  ▼ Meta (NASDAQ:META) Stock Faces $63 Billion Earnings Test as AI Selloff Deepens  [Stocks Down Under]
 
 **LLY**  ·  earnings
-  ▼ Eli Lilly (LLY) Shares In Focus After Omvoh Shows Deep Remission In Crohn’s  [Simply Wall Street]
+  ▲ Is Eli Lilly (LLY) Priced For Perfection After Raised Guidance?  [Simply Wall Street]
+
+**JPM**  ·  macro
+  ▼ Curated Wealth Partners LLC Sells 279,304 Shares of JPMorgan Chase & Co. $JPM  [MarketBeat]
 
 ---
 ## 🛡 Research Risk Rules
