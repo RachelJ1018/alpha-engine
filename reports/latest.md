@@ -1,85 +1,80 @@
-# 📊 Daily Research Report — 2026-10-19
-*Generated: 2026-10-19 14:39*
+# 📊 Daily Research Report — 2026-10-20
+*Generated: 2026-10-20 14:39*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.55%
-**SPY RSI(14):** 53.1
+**SPY:** +0.60%
+**SPY RSI(14):** 57.9
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### TSLA  $365.39 (+3.0%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=53
-> LONG. Tesla is positioned for a momentum build-up ahead of its earnings preview [1], supported by positive sentiment surrounding Musk's SpaceX developments and 
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `TSLA`
-**⛔ IGNORE (19):** `AMZN` · `AAPL` · `MSFT` · `GOOGL` · `NFLX` · `META`
-
----
-## 🏆 Top Trade
-
-**TSLA — LONG | WATCHLIST | Score: 53**
-
-> LONG. Tesla is positioned for a momentum build-up ahead of its earnings preview [1], supported by positive sentiment surrounding Musk's SpaceX developments and bullish analyst outlooks [3][4].
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$365.39 | $351.92 (-3.7%) | $392.34 (+7.4%) | 1R | 2R |
+**⚪ MONITOR (2):** `NFLX` · `AMZN`
+**⛔ IGNORE (18):** `TSLA` · `JPM` · `AAPL` · `BAC` · `COST` · `NVDA`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 TSLA — ▲ LONG | WATCHLIST | Score: 53/85
+### ⚪ #1 NFLX — ▲ LONG | MONITOR | Score: 52/85
 
-**Price Snapshot:** $365.39 (+3.0%) | **RSI:** 57.7 | **Vol ratio:** 0.37x | **ATR:** 11.2286 | **vs MA20:** below ⚠️
+**Price Snapshot:** $70.11 (+0.4%) | **RSI:** 51.9 | **Vol ratio:** 0.23x | **ATR:** 1.6354 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `20.9/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `17.6/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Tesla is positioned for a momentum build-up ahead of its earnings preview [1], supported by positive sentiment surrounding Musk's SpaceX developments and bullish analyst outlooks [3][4].
+**What & Why:** LONG. Netflix is positioned for an earnings-driven run-up as it remains a top focus for retail traders and investors ahead of Q3 results [1, 4, 5]. Technical support at the MA20 ($70.04) provides a base for upside momentum amidst a broader tech rebound [2].
 
-**Entry Consideration:** Limit order near $362.50 to $365.00, seeking a bounce off the MA50 support.
-**Risk / Invalidation Level:** Hard stop at $354.50, below the recent psychological support and MA50.
-**Initial Upside / Downside Case:** $382.00 initial target, testing the MA20 resistance within 3-5 trading days.
-**Key Risk:** ❌ Potential for earnings-related volatility and historical Q3 underperformance [1][5].
+**Entry Consideration:** Enter near $70.10, utilizing the MA20 ($70.04) as immediate support.
+**Risk / Invalidation Level:** Daily close below $69.40 to invalidate the technical support thesis.
+**Initial Upside / Downside Case:** $74.88 (MA50) as the primary resistance target ahead of earnings.
+**Key Risk:** ❌ Binary event risk and high volatility typical of the pre-earnings period.
 
----
-## 📈 Market Instruments
+### ⚪ #2 AMZN — ▲ LONG | MONITOR | Score: 51/85
 
-- `SPY` SHORT | IGNORE | score 37
+**Price Snapshot:** $263.62 (+0.5%) | **RSI:** 63.3 | **Vol ratio:** 0.3x | **ATR:** 6.515 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.0/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** LONG. Amazon is positioned for continued upside driven by AWS growth durability and its designation as a top AI beneficiary [1, 4]. Strategic partnerships and a broader tech rebound provide additional tailwinds ahead of upcoming earnings [2, 5].
+
+**Entry Consideration:** Enter on a retest of the $262.00 level or a confirmed break above $264.50 with volume.
+**Risk / Invalidation Level:** Stop loss set below the 20-day moving average at $253.50.
+**Initial Upside / Downside Case:** $275.00 target price over the next 2-5 trading days.
+**Key Risk:** ❌ Elevated RSI (63.3) and low relative volume (0.3x) may lead to short-term consolidation before the next leg up.
 
 ---
 ## 📰 Key News (Last 24h)
 
 **COST**  ·  earnings
-  ▲ Stocks are heading for a high-stakes showdown, as strong earnings collide with rising borrowing costs  [MarketWatch]
-  ▼ Stifel cuts Watts Water stock price target on rate outlook concerns  [Investing.com]
+  ▲ Shares down again as oil stays high; AI earnings in focus  [Reuters]
+  ▼ VinFast Auto (VFS) Stock Price Sinks As Q2 Earnings Deepen Losses  [Yahoo Finance]
 
-**MSFT**  ·  earnings
-  ▲ Microsoft Stock Had a Monstrous Rally After Its Last Earnings. Don’t Expect It to Repeat This Time.  [Yahoo Finance]
+**MU**  ·  earnings
+  ▲ Nvidia, Intel, Micron, Monolithic Power Are Buys Ahead of Tech Earnings.  [Barron's]
 
-**ADBE**  ·  earnings
-  ◆ Meta Earnings Puts Adobe Stock And AI Ad Software Names In Focus  [Yahoo Finance]
+**AMZN**  ·  earnings
+  ▲ 3M’s Q3 Earnings Beat Was Solid, But Its Amazon Fiber Optic Pact is the Real Story  [Barron's]
+  ▲ BMO reiterates Amazon stock rating on AWS growth durability By Investing.com  [Investing.com India]
 
-**META**  ·  earnings
-  ▼ Meta (META) Reports Earnings Amid Market Concerns  [GuruFocus]
-  ▼ Meta (NASDAQ:META) Stock Faces $63 Billion Earnings Test as AI Selloff Deepens  [Stocks Down Under]
+**META**  ·  macro
+  ▲ Raymond James reiterates Strong Buy on Meta stock, $860 target By Investing.com  [Investing.com UK]
 
-**LLY**  ·  earnings
-  ▲ Is Eli Lilly (LLY) Priced For Perfection After Raised Guidance?  [Simply Wall Street]
+**AMD**  ·  macro
+  ▲ TD Cowen reiterates AMD stock buy rating on AI workload strength  [Investing.com]
 
-**JPM**  ·  macro
-  ▼ Curated Wealth Partners LLC Sells 279,304 Shares of JPMorgan Chase & Co. $JPM  [MarketBeat]
+**TSLA**  ·  earnings
+  ◆ Magnificent 7 Earnings Preview: Meta & Tesla Take Center Stage This Week  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
