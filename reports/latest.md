@@ -1,12 +1,14 @@
-# 📊 Daily Research Report — 2026-10-20
-*Generated: 2026-10-20 14:39*
+# 📊 Daily Research Report — 2026-10-21
+*Generated: 2026-10-21 14:39*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.60%
-**SPY RSI(14):** 57.9
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** +0.06%
+**SPY RSI(14):** 55.4
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,64 +19,54 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (2):** `NFLX` · `AMZN`
-**⛔ IGNORE (18):** `TSLA` · `JPM` · `AAPL` · `BAC` · `COST` · `NVDA`
+**⚪ MONITOR (1):** `AAPL`
+**⛔ IGNORE (19):** `AMZN` · `NFLX` · `TSLA` · `GS` · `COST` · `PLTR`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 NFLX — ▲ LONG | MONITOR | Score: 52/85
+### ⚪ #1 AAPL — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $70.11 (+0.4%) | **RSI:** 51.9 | **Vol ratio:** 0.23x | **ATR:** 1.6354 | **vs MA20:** above ✅
+**Price Snapshot:** $340.01 (+0.1%) | **RSI:** 66.9 | **Vol ratio:** 0.16x | **ATR:** 5.6736 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.6/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** LONG. Netflix is positioned for an earnings-driven run-up as it remains a top focus for retail traders and investors ahead of Q3 results [1, 4, 5]. Technical support at the MA20 ($70.04) provides a base for upside momentum amidst a broader tech rebound [2].
-
-**Entry Consideration:** Enter near $70.10, utilizing the MA20 ($70.04) as immediate support.
-**Risk / Invalidation Level:** Daily close below $69.40 to invalidate the technical support thesis.
-**Initial Upside / Downside Case:** $74.88 (MA50) as the primary resistance target ahead of earnings.
-**Key Risk:** ❌ Binary event risk and high volatility typical of the pre-earnings period.
-
-### ⚪ #2 AMZN — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $263.62 (+0.5%) | **RSI:** 63.3 | **Vol ratio:** 0.3x | **ATR:** 6.515 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.0/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `20.2/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. Amazon is positioned for continued upside driven by AWS growth durability and its designation as a top AI beneficiary [1, 4]. Strategic partnerships and a broader tech rebound provide additional tailwinds ahead of upcoming earnings [2, 5].
+**What & Why:** LONG. AAPL is eyeing key buy points as tech stocks rebound ahead of earnings [4], demonstrating resilience with a 1% gain despite ongoing regulatory scrutiny [5].
 
-**Entry Consideration:** Enter on a retest of the $262.00 level or a confirmed break above $264.50 with volume.
-**Risk / Invalidation Level:** Stop loss set below the 20-day moving average at $253.50.
-**Initial Upside / Downside Case:** $275.00 target price over the next 2-5 trading days.
-**Key Risk:** ❌ Elevated RSI (63.3) and low relative volume (0.3x) may lead to short-term consolidation before the next leg up.
+**Entry Consideration:** Limit entry near $338.50 to $340.00, utilizing the MA20 ($337.76) as a structural floor.
+**Risk / Invalidation Level:** Hard stop below $336.50 to protect against a breakdown of the 20-day moving average.
+**Initial Upside / Downside Case:** $348.00 initial target, anticipating a pre-earnings run-up over the next 3-5 sessions.
+**Key Risk:** ❌ Negative sentiment from recent analyst downgrades regarding slowing iPhone shipment growth [3].
+
+---
+## 📈 Market Instruments
+
+- `QQQ` LONG | IGNORE | score 42
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  earnings
-  ▲ Shares down again as oil stays high; AI earnings in focus  [Reuters]
-  ▼ VinFast Auto (VFS) Stock Price Sinks As Q2 Earnings Deepen Losses  [Yahoo Finance]
+**COST**  ·  macro
+  ▼ DA Davidson cuts BOK Financial stock price target on rate pressures  [Investing.com]
+  ▲ Philip Morris beats estimates but shares slip on cost pressures  [Yahoo Finance]
+
+**NVDA**  ·  earnings
+  ▼ CRWV, NBIS, NVDA Jump Overnight: Musk Says SpaceX Could Rent Compute ‘Several Times Over,’ Analyst Dismisses Glut Fears  [Yahoo Finance]
+
+**MSFT**  ·  earnings
+  ▲ Will Microsoft (MSFT) Beat Estimates Again in Its Next Earnings Report?  [Yahoo Finance]
+
+**JPM**  ·  earnings
+  ▲ JPMorgan (JPM): Can New Branches Keep Winning Profitable Customers?  [Yahoo Finance]
+
+**NFLX**  ·  earnings
+  ◆ Stock Market Today, Oct. 20: Netflix Q3 Revenue Rises 12% on Pricing Power  [Yahoo Finance]
+  ▼ Netflix stock sinks as Wall Street lowers price targets following Q4 revenue forecast miss  [Yahoo Finance]
 
 **MU**  ·  earnings
-  ▲ Nvidia, Intel, Micron, Monolithic Power Are Buys Ahead of Tech Earnings.  [Barron's]
-
-**AMZN**  ·  earnings
-  ▲ 3M’s Q3 Earnings Beat Was Solid, But Its Amazon Fiber Optic Pact is the Real Story  [Barron's]
-  ▲ BMO reiterates Amazon stock rating on AWS growth durability By Investing.com  [Investing.com India]
-
-**META**  ·  macro
-  ▲ Raymond James reiterates Strong Buy on Meta stock, $860 target By Investing.com  [Investing.com UK]
-
-**AMD**  ·  macro
-  ▲ TD Cowen reiterates AMD stock buy rating on AI workload strength  [Investing.com]
-
-**TSLA**  ·  earnings
-  ◆ Magnificent 7 Earnings Preview: Meta & Tesla Take Center Stage This Week  [Yahoo Finance]
+  ▲ Micron and Nvidia Are the 2 Biggest Drivers of S&P 500 Earnings Growth. Are Their Stocks Buys?  [The Motley Fool]
 
 ---
 ## 🛡 Research Risk Rules
