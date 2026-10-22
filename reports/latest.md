@@ -1,72 +1,70 @@
-# 📊 Daily Research Report — 2026-10-21
-*Generated: 2026-10-21 14:39*
+# 📊 Daily Research Report — 2026-10-22
+*Generated: 2026-10-22 14:39*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.06%
-**SPY RSI(14):** 55.4
+**Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
+**SPY:** -1.35%
+**SPY RSI(14):** 44.1
 
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+> ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*No high conviction picks — bear regime, avoiding new LONG exposure.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (1):** `AAPL`
-**⛔ IGNORE (19):** `AMZN` · `NFLX` · `TSLA` · `GS` · `COST` · `PLTR`
+**⚪ MONITOR (1):** `MSFT`
+**⛔ IGNORE (19):** `GLD` · `IWM` · `JPM` · `TSLA` · `NFLX` · `LLY`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 AAPL — ▲ LONG | MONITOR | Score: 51/85
+### ⚪ #1 MSFT — ▼ SHORT | MONITOR | Score: 50/85
 
-**Price Snapshot:** $340.01 (+0.1%) | **RSI:** 66.9 | **Vol ratio:** 0.16x | **ATR:** 5.6736 | **vs MA20:** above ✅
+**Price Snapshot:** $523.37 (-1.8%) | **RSI:** 53.5 | **Vol ratio:** 0.15x | **ATR:** 11.2311 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `20.2/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `15.4/25` | MarketConf `12.0/20` | RegimeFit `13.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. AAPL is eyeing key buy points as tech stocks rebound ahead of earnings [4], demonstrating resilience with a 1% gain despite ongoing regulatory scrutiny [5].
+**What & Why:** SHORT. MSFT is vulnerable as sector peers Meta and Alphabet sell off due to concerns that aggressive AI spending is weighing on margins [1, 5]. Trading below the MA20 in a bearish regime confirms a shift in short-term momentum.
 
-**Entry Consideration:** Limit entry near $338.50 to $340.00, utilizing the MA20 ($337.76) as a structural floor.
-**Risk / Invalidation Level:** Hard stop below $336.50 to protect against a breakdown of the 20-day moving average.
-**Initial Upside / Downside Case:** $348.00 initial target, anticipating a pre-earnings run-up over the next 3-5 sessions.
-**Key Risk:** ❌ Negative sentiment from recent analyst downgrades regarding slowing iPhone shipment growth [3].
+**Entry Consideration:** Short on a retest of the MA20 level near $526.00 or a break of $523.00.
+**Risk / Invalidation Level:** Stop loss set at $531.00, representing a reclaim of the MA20 and recent pivot high.
+**Initial Upside / Downside Case:** Initial target of $508.00 near the MA50 support level within 1 week.
+**Key Risk:** ❌ Positive sentiment shift regarding Maia 300 efficiency or broader tech recovery [4].
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 42
+- `SPY` SHORT | IGNORE | score 36
 
 ---
 ## 📰 Key News (Last 24h)
 
-**COST**  ·  macro
-  ▼ DA Davidson cuts BOK Financial stock price target on rate pressures  [Investing.com]
-  ▲ Philip Morris beats estimates but shares slip on cost pressures  [Yahoo Finance]
+**TSLA**  ·  earnings
+  ▼ U.S. stock futures drop as Tesla, Meta fall after earnings; oil jumps, bonds rally  [Investing.com]
+  ▲ Meta’s revenue beat; Tesla’s lower annual sales goal - what’s moving markets  [Yahoo Finance]
 
-**NVDA**  ·  earnings
-  ▼ CRWV, NBIS, NVDA Jump Overnight: Musk Says SpaceX Could Rent Compute ‘Several Times Over,’ Analyst Dismisses Glut Fears  [Yahoo Finance]
+**COST**  ·  earnings
+  ▲ BofA raises Elevance stock price target to $500 on earnings beat  [Investing.com]
 
-**MSFT**  ·  earnings
-  ▲ Will Microsoft (MSFT) Beat Estimates Again in Its Next Earnings Report?  [Yahoo Finance]
+**GOOGL**  ·  earnings
+  ◆ Meta Falls 3% as Higher AI Spending Outlook Overshadows Earnings Beat; Alphabet Dips, Microsoft Holds Steady  [Yahoo Finance]
+  ▲ GOOG Stock Price Today: Why is Google Stock Down Today? Alphabet Shares Slips $339 Ahead of Q4 Earnings & Cloud Growth – Check Financial Indicators, Revenue Performance, Market Analysis & More  [The Sunday Guardian]
 
-**JPM**  ·  earnings
-  ▲ JPMorgan (JPM): Can New Branches Keep Winning Profitable Customers?  [Yahoo Finance]
+**META**  ·  earnings
+  ▲ META Stock Jumps 3% After-Hours After Q3 Revenue Beats Expectations, With A Narrowed AI Capex Outlook And New Non-Voting Class C Stock  [Yahoo Finance]
+  ▲ Meta Stock Rebounds and Retreats as Meta Platforms Beats Q3 Earnings and Revenue Expectations  [FXLeaders]
 
-**NFLX**  ·  earnings
-  ◆ Stock Market Today, Oct. 20: Netflix Q3 Revenue Rises 12% on Pricing Power  [Yahoo Finance]
-  ▼ Netflix stock sinks as Wall Street lowers price targets following Q4 revenue forecast miss  [Yahoo Finance]
-
-**MU**  ·  earnings
-  ▲ Micron and Nvidia Are the 2 Biggest Drivers of S&P 500 Earnings Growth. Are Their Stocks Buys?  [The Motley Fool]
+**AVGO**  ·  earnings
+  ▲ Broadcom’s AI Revenue Surges 221%, But is Growth Becoming Too Dependent on AI Spending?  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
