@@ -1,70 +1,87 @@
-# 📊 Daily Research Report — 2026-10-22
-*Generated: 2026-10-22 14:39*
+# 📊 Daily Research Report — 2026-10-23
+*Generated: 2026-10-23 14:41*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
-**SPY:** -1.35%
-**SPY RSI(14):** 44.1
-
-> ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.42%
+**SPY RSI(14):** 37.4
 
 ---
 ## ⭐ High Conviction Picks
 
-*No high conviction picks — bear regime, avoiding new LONG exposure.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### AVGO  $325.93 (+0.8%)
+**WATCHLIST** · LONG · EE=21 · post earnings drift · score=52
+> LONG. AVGO is technically oversold with an RSI of 31.0, presenting a valuation 'bargain' as AI-driven revenue surged 221% [1, 2]. Positive broader tech sentimen
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (1):** `MSFT`
-**⛔ IGNORE (19):** `GLD` · `IWM` · `JPM` · `TSLA` · `NFLX` · `LLY`
+**🟡 WATCHLIST (1):** `AVGO`
+**⛔ IGNORE (19):** `ARM` · `AMD` · `NFLX` · `NVDA` · `TSLA` · `MSFT`
+
+---
+## 🏆 Top Trade
+
+**AVGO — LONG | WATCHLIST | Score: 52**
+
+> LONG. AVGO is technically oversold with an RSI of 31.0, presenting a valuation 'bargain' as AI-driven revenue surged 221% [1, 2]. Positive broader tech sentiment and strong earnings signals suggest a mean-reversion bounce toward the 20-day moving average [3, 5].
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$325.93 | $311.93 (-4.3%) | $353.93 (+8.6%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 MSFT — ▼ SHORT | MONITOR | Score: 50/85
+### 🟡 #1 AVGO — ▲ LONG | WATCHLIST | Score: 52/85
 
-**Price Snapshot:** $523.37 (-1.8%) | **RSI:** 53.5 | **Vol ratio:** 0.15x | **ATR:** 11.2311 | **vs MA20:** below ⚠️
+**Price Snapshot:** $325.93 (+0.8%) | **RSI:** 31.0 | **Vol ratio:** 0.16x | **ATR:** 11.6671 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `15.4/25` | MarketConf `12.0/20` | RegimeFit `13.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `20.7/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** SHORT. MSFT is vulnerable as sector peers Meta and Alphabet sell off due to concerns that aggressive AI spending is weighing on margins [1, 5]. Trading below the MA20 in a bearish regime confirms a shift in short-term momentum.
+**What & Why:** LONG. AVGO is technically oversold with an RSI of 31.0, presenting a valuation 'bargain' as AI-driven revenue surged 221% [1, 2]. Positive broader tech sentiment and strong earnings signals suggest a mean-reversion bounce toward the 20-day moving average [3, 5].
 
-**Entry Consideration:** Short on a retest of the MA20 level near $526.00 or a break of $523.00.
-**Risk / Invalidation Level:** Stop loss set at $531.00, representing a reclaim of the MA20 and recent pivot high.
-**Initial Upside / Downside Case:** Initial target of $508.00 near the MA50 support level within 1 week.
-**Key Risk:** ❌ Positive sentiment shift regarding Maia 300 efficiency or broader tech recovery [4].
+**Entry Consideration:** Limit order near $326.00 or on confirmation of intraday strength above $328.00.
+**Risk / Invalidation Level:** Hard stop at $317.50, representing a break of recent local support.
+**Initial Upside / Downside Case:** $345.00 (near MA20) over the next 3-5 trading sessions.
+**Key Risk:** ❌ Heavy reliance on AI spending sustainability and potential drag from a negative SPY regime.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` SHORT | IGNORE | score 36
+- `QQQ` LONG | IGNORE | score 34
 
 ---
 ## 📰 Key News (Last 24h)
 
-**TSLA**  ·  earnings
-  ▼ U.S. stock futures drop as Tesla, Meta fall after earnings; oil jumps, bonds rally  [Investing.com]
-  ▲ Meta’s revenue beat; Tesla’s lower annual sales goal - what’s moving markets  [Yahoo Finance]
-
-**COST**  ·  earnings
-  ▲ BofA raises Elevance stock price target to $500 on earnings beat  [Investing.com]
-
-**GOOGL**  ·  earnings
-  ◆ Meta Falls 3% as Higher AI Spending Outlook Overshadows Earnings Beat; Alphabet Dips, Microsoft Holds Steady  [Yahoo Finance]
-  ▲ GOOG Stock Price Today: Why is Google Stock Down Today? Alphabet Shares Slips $339 Ahead of Q4 Earnings & Cloud Growth – Check Financial Indicators, Revenue Performance, Market Analysis & More  [The Sunday Guardian]
-
 **META**  ·  earnings
-  ▲ META Stock Jumps 3% After-Hours After Q3 Revenue Beats Expectations, With A Narrowed AI Capex Outlook And New Non-Voting Class C Stock  [Yahoo Finance]
-  ▲ Meta Stock Rebounds and Retreats as Meta Platforms Beats Q3 Earnings and Revenue Expectations  [FXLeaders]
+  ▼ A lesson from poker tells us not to fold on Meta after its earnings sell-off. Here’s why  [CNBC]
+  ▲ Meta Platforms Third-Quarter Results Rise; Issues Strong Revenue Outlook  [Yahoo Finance]
 
-**AVGO**  ·  earnings
-  ▲ Broadcom’s AI Revenue Surges 221%, But is Growth Becoming Too Dependent on AI Spending?  [Yahoo Finance]
+**INTC**  ·  earnings
+  ▲ Meta stock sinks 6% as AI spend pushes free cash flow negative  [Cnbc]
+
+**LLY**  ·  earnings
+  ▼ Earnings Preview: Eli Lilly (LLY) Q3 Earnings Expected to Decline  [Yahoo Finance]
+
+**NFLX**  ·  earnings
+  ▼ Netflix (NFLX) Stock Price Falls As Q3 Earnings Stir Valuation Doubts  [Yahoo Finance]
+
+**AMZN**  ·  earnings
+  ▲ Amazon (AMZN) Reports Next Week: Wall Street Expects Earnings Growth  [Yahoo Finance]
+
+**PLTR**  ·  earnings
+  ▲ Palantir Poised to Beat Revenue Expectations Again on Dual-Business Growth  [NAI500]
+
+**TSLA**  ·  earnings
+  ▼ GOOG Stock Breaks Support, Following Meta and Tesla as AI Spending Concerns Weigh Ahead of Earnings  [FXLeaders]
 
 ---
 ## 🛡 Research Risk Rules
