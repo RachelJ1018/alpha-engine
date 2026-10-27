@@ -1,139 +1,85 @@
-# 📊 Daily Research Report — 2026-10-26
-*Generated: 2026-10-26 15:18*
+# 📊 Daily Research Report — 2026-10-27
+*Generated: 2026-10-27 14:43*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.93%
-**SPY RSI(14):** 39.9
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** +0.26%
+**SPY RSI(14):** 41.5
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### TSLA  $396.44 (+6.5%)
-**WATCHLIST** · LONG · EE=18 · post earnings drift · score=55
-> Alphabet, Microsoft, Amazon, Meta, Tesla, Nvidia and Micron are part of Zacks Earnings Preview. Headline tone is positive, current regime keeps this in watchlis
-
-### AMZN  $249.84 (+0.7%)
-**WATCHLIST** · LONG · EE=21 · post earnings drift · score=53
-> Alphabet, Microsoft, Amazon, Meta, Tesla, Nvidia and Micron are part of Zacks Earnings Preview. Headline tone is positive, current regime keeps this in watchlis
+### SOFI  $16.45 (+13.7%)
+**WATCHLIST** · LONG · EE=15 · general setup · score=57
+> Nasdaq, S&P 500 Futures Gain Premarket While Oil Rebounds: CLS, NVDA, SKHY, CRWV, SOFI In Focus. Headline tone is positive, current regime keeps this in watchli
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (3):** `TSLA` · `AMZN` · `MSFT`
-**⚪ MONITOR (1):** `GS`
-**⛔ IGNORE (16):** `IWM` · `GOOGL` · `META` · `PLTR` · `AVGO` · `XOM`
+**🟡 WATCHLIST (1):** `SOFI`
+**⛔ IGNORE (19):** `LLY` · `GS` · `JPM` · `IWM` · `AAPL` · `AVGO`
 
 ---
 ## 🏆 Top Trade
 
-**TSLA — LONG | WATCHLIST | Score: 55**
+**SOFI — LONG | WATCHLIST | Score: 57**
 
-> Alphabet, Microsoft, Amazon, Meta, Tesla, Nvidia and Micron are part of Zacks Earnings Preview. Headline tone is positive, current regime keeps this in watchlist status.
+> Nasdaq, S&P 500 Futures Gain Premarket While Oil Rebounds: CLS, NVDA, SKHY, CRWV, SOFI In Focus. Headline tone is positive, current regime keeps this in watchlist status.
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$396.44 | $380.72 (-4.0%) | $427.89 (+7.9%) | 1R | 2R |
+| ~$16.45 | $15.54 (-5.5%) | $18.25 (+11.0%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 TSLA — ▲ LONG | WATCHLIST | Score: 55/85
+### 🟡 #1 SOFI — ▲ LONG | WATCHLIST | Score: 57/85
 
-**Price Snapshot:** $396.44 (+6.5%) | **RSI:** 57.1 | **Vol ratio:** 0.72x | **ATR:** 13.1029 | **vs MA20:** above ✅
+**Price Snapshot:** $16.45 (+13.7%) | **RSI:** 56.0 | **Vol ratio:** 1.64x | **ATR:** 0.7536 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.9/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `7.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `15.2/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `15.0/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
 
-**Strategy Bucket:** `post_earnings_drift`
+**Strategy Bucket:** `general_setup`
 
-**What & Why:** Alphabet, Microsoft, Amazon, Meta, Tesla, Nvidia and Micron are part of Zacks Earnings Preview. Headline tone is positive, current regime keeps this in watchlist status.
+**What & Why:** Nasdaq, S&P 500 Futures Gain Premarket While Oil Rebounds: CLS, NVDA, SKHY, CRWV, SOFI In Focus. Headline tone is positive, current regime keeps this in watchlist status.
 
-**Entry Consideration:** Prefer confirmation near $396.44; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $380.72; MA20 reference $371.82.
-**Initial Upside / Downside Case:** Initial target near $422.65 over 3-5 trading days.
-**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
-
-### 🟡 #2 AMZN — ▲ LONG | WATCHLIST | Score: 53/85
-
-**Price Snapshot:** $249.84 (+0.7%) | **RSI:** 44.7 | **Vol ratio:** 0.3x | **ATR:** 6.9386 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `21.3/25` | MarketConf `11.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** Alphabet, Microsoft, Amazon, Meta, Tesla, Nvidia and Micron are part of Zacks Earnings Preview. Headline tone is positive, current regime keeps this in watchlist status.
-
-**Entry Consideration:** Prefer confirmation near $249.84; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $241.52; MA20 reference $254.61.
-**Initial Upside / Downside Case:** Initial target near $263.72 over 3-5 trading days.
-**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
-
-### 🟡 #3 MSFT — ▲ LONG | WATCHLIST | Score: 53/85
-
-**Price Snapshot:** $528.45 (+0.8%) | **RSI:** 49.5 | **Vol ratio:** 0.19x | **ATR:** 10.9386 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.5/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** Alphabet, Microsoft, Amazon, Meta, Tesla, Nvidia and Micron are part of Zacks Earnings Preview. Headline tone is positive, current regime keeps this in watchlist status.
-
-**Entry Consideration:** Prefer confirmation near $528.45; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $515.32; MA20 reference $527.66.
-**Initial Upside / Downside Case:** Initial target near $550.33 over 3-5 trading days.
-**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
-
-### ⚪ #4 GS — ▲ LONG | MONITOR | Score: 52/85
-
-**Price Snapshot:** $897.36 (+2.5%) | **RSI:** 50.1 | **Vol ratio:** 0.25x | **ATR:** 25.2107 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.0/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** Goldman Sachs resets Eli Lilly 12-month stock price target before earnings. Headline tone is positive, current regime keeps this in monitor status.
-
-**Entry Consideration:** Prefer confirmation near $897.36; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $867.11; MA20 reference $891.92.
-**Initial Upside / Downside Case:** Initial target near $947.78 over 3-5 trading days.
+**Entry Consideration:** Prefer confirmation near $16.45; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $15.54; MA20 reference $15.23.
+**Initial Upside / Downside Case:** Initial target near $17.95 over 3-5 trading days.
 **Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 35
+- `QQQ` LONG | IGNORE | score 34
 
 ---
 ## 📰 Key News (Last 24h)
 
-**META**  ·  macro
-  ▲ Wedbush’s Ives reiterates Meta stock Outperform on AI funding plan  [Investing.com]
+**GLD**  ·  earnings
+  ▲ Sky Gold Q2 results: Stock jumps 5% after profit nearly doubles; Board approves ₹1,800 crore fund raise  [CNBC TV18]
 
-**ARM**  ·  macro
-  ▼ StoneX reiterates Hold on Arm Holdings stock amid supply concerns By Investing.com  [Investing.com Canada]
+**MSFT**  ·  macro
+  ▲ Microsoft offers a quarter of its global workforce voluntary buyouts as AI spending accelerates  [Yahoo Finance]
+  ▲ Microsoft Corp.’s (MSFT) AI Strategy Gains Revenue Momentum  [Yahoo Finance]
 
-**NVDA**  ·  earnings
-  ▲ Jensen Huang Says Nvidia's Next-Gen Vera Rubin Chips Will Generate $40 Billion in Revenue per Gigawatt, Up From $25 Billion for Grace Blackwell. What That Means for NVDA's Growth Runway.  [Yahoo Finance]
+**GOOGL**  ·  earnings
+  ◆ Why Google might avoid an earnings 'reckoning' this week  [Yahoo Finance]
+  ▼ GOOGL trades flat as seller pressure keeps upside in check  [Traders Union]
 
-**JPM**  ·  earnings
-  ▲ JPMorgan's Shares Before Q3 Earnings: Buy Now or Wait for Results?  [Yahoo Finance]
+**NVDA**  ·  macro
+  ◆ Retiree Alleges Morgan Stanley Covered Call Strategy Cost Him His Apple and NVIDIA Shares; Reif Law Group Files Financial Elder Abuse Claims  [Yahoo Finance]
+  ▲ NVIDIA & 2 Profitable Stocks to Buy Now for Explosive Upside  [Zacks Investment Research]
 
-**COST**  ·  earnings
-  ▲ Costco Beat on Earnings. About $0.15 a Share of It Was a One-Time Tariff Refund.  [Yahoo Finance]
-
-**GOOGL**  ·  macro
-  ◆ What To Expect In Markets This Week: GOOGL, MSFT, AMZN, INTC, HOOD, LLY Earnings, Fed Meeting And More  [Yahoo Finance]
-
-**AMD**  ·  earnings
-  ▲ 1 Red Flag That Keeps Me From Buying AMD Stock  [Yahoo Finance]
-
-**AAPL**  ·  earnings
-  ▲ Apple Is One of the Most Profitable Businesses in the World. Here's Why the Stock Is Worth $295 a Share Right Now.  [Yahoo Finance]
+**LLY**  ·  earnings
+  ▲ Eli Lilly (LLY) Earnings: Is the Profit Turning Into Cash?  [finchannel]
 
 ---
 ## 🛡 Research Risk Rules
