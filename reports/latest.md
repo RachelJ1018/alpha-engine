@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-10-27
-*Generated: 2026-10-27 14:43*
+# 📊 Daily Research Report — 2026-10-28
+*Generated: 2026-10-28 14:33*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.26%
-**SPY RSI(14):** 41.5
+**SPY:** +0.16%
+**SPY RSI(14):** 47.4
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -15,71 +15,72 @@
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### SOFI  $16.45 (+13.7%)
-**WATCHLIST** · LONG · EE=15 · general setup · score=57
-> Nasdaq, S&P 500 Futures Gain Premarket While Oil Rebounds: CLS, NVDA, SKHY, CRWV, SOFI In Focus. Headline tone is positive, current regime keeps this in watchli
+### SOFI  $16.84 (+2.7%)
+**WATCHLIST** · LONG · EE=19 · general setup · score=55
+> S&P 500, Nasdaq Futures Mixed Ahead Of Fed Decision, Big Tech Earnings: GOOGL, MSFT, HOOD, SOFI In Focus. Headline tone is positive, current regime keeps this i
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
 **🟡 WATCHLIST (1):** `SOFI`
-**⛔ IGNORE (19):** `LLY` · `GS` · `JPM` · `IWM` · `AAPL` · `AVGO`
+**⛔ IGNORE (19):** `TSLA` · `JPM` · `AMZN` · `ARM` · `LLY` · `NVDA`
 
 ---
 ## 🏆 Top Trade
 
-**SOFI — LONG | WATCHLIST | Score: 57**
+**SOFI — LONG | WATCHLIST | Score: 55**
 
-> Nasdaq, S&P 500 Futures Gain Premarket While Oil Rebounds: CLS, NVDA, SKHY, CRWV, SOFI In Focus. Headline tone is positive, current regime keeps this in watchlist status.
+> S&P 500, Nasdaq Futures Mixed Ahead Of Fed Decision, Big Tech Earnings: GOOGL, MSFT, HOOD, SOFI In Focus. Headline tone is positive, current regime keeps this in watchlist status.
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$16.45 | $15.54 (-5.5%) | $18.25 (+11.0%) | 1R | 2R |
+| ~$16.84 | $15.88 (-5.7%) | $18.77 (+11.5%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 SOFI — ▲ LONG | WATCHLIST | Score: 57/85
+### 🟡 #1 SOFI — ▲ LONG | WATCHLIST | Score: 55/85
 
-**Price Snapshot:** $16.45 (+13.7%) | **RSI:** 56.0 | **Vol ratio:** 1.64x | **ATR:** 0.7536 | **vs MA20:** above ✅
+**Price Snapshot:** $16.84 (+2.7%) | **RSI:** 59.0 | **Vol ratio:** 0.56x | **ATR:** 0.8039 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `15.2/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `15.0/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+**Layered Scores:** EventEdge `18.6/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `6.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
 
 **Strategy Bucket:** `general_setup`
 
-**What & Why:** Nasdaq, S&P 500 Futures Gain Premarket While Oil Rebounds: CLS, NVDA, SKHY, CRWV, SOFI In Focus. Headline tone is positive, current regime keeps this in watchlist status.
+**What & Why:** S&P 500, Nasdaq Futures Mixed Ahead Of Fed Decision, Big Tech Earnings: GOOGL, MSFT, HOOD, SOFI In Focus. Headline tone is positive, current regime keeps this in watchlist status.
 
-**Entry Consideration:** Prefer confirmation near $16.45; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $15.54; MA20 reference $15.23.
-**Initial Upside / Downside Case:** Initial target near $17.95 over 3-5 trading days.
+**Entry Consideration:** Prefer confirmation near $16.84; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $15.88; MA20 reference $15.28.
+**Initial Upside / Downside Case:** Initial target near $18.45 over 3-5 trading days.
 **Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 34
+- `QQQ` LONG | IGNORE | score 43
+- `SPY` LONG | IGNORE | score 41
 
 ---
 ## 📰 Key News (Last 24h)
 
-**GLD**  ·  earnings
-  ▲ Sky Gold Q2 results: Stock jumps 5% after profit nearly doubles; Board approves ₹1,800 crore fund raise  [CNBC TV18]
+**PLTR**  ·  earnings
+  ▲ Buy Palantir ahead of earnings, says Rosenblatt  [CNBC]
+  ▲ Palantir eyes strong growth with $2.18B revenue forecast and rising EPS estimates for November 2 report  [Pluang]
 
-**MSFT**  ·  macro
-  ▲ Microsoft offers a quarter of its global workforce voluntary buyouts as AI spending accelerates  [Yahoo Finance]
-  ▲ Microsoft Corp.’s (MSFT) AI Strategy Gains Revenue Momentum  [Yahoo Finance]
+**MSFT**  ·  earnings
+  ▲ Microsoft to report Q1 earnings with Wall Street looking for further Azure growth  [Yahoo Finance]
+  ▲ Does Azure AI Growth Make Microsoft Stock a Hold Ahead of Q1 Earnings?  [TradingView]
 
 **GOOGL**  ·  earnings
-  ◆ Why Google might avoid an earnings 'reckoning' this week  [Yahoo Finance]
-  ▼ GOOGL trades flat as seller pressure keeps upside in check  [Traders Union]
+  ◆ Apple (AAPL) vs. MSFT and GOOGL: Is the Post-Earnings Selloff Creating a Long-Term Buying Opportunity?  [Yahoo Finance]
+  ◆ S&P 500, Nasdaq Futures Mixed Ahead Of Fed Decision, Big Tech Earnings: GOOGL, MSFT, HOOD, SOFI In Focus  [Yahoo Finance]
 
-**NVDA**  ·  macro
-  ◆ Retiree Alleges Morgan Stanley Covered Call Strategy Cost Him His Apple and NVIDIA Shares; Reif Law Group Files Financial Elder Abuse Claims  [Yahoo Finance]
-  ▲ NVIDIA & 2 Profitable Stocks to Buy Now for Explosive Upside  [Zacks Investment Research]
+**COST**  ·  earnings
+  ▼ Park National (PRK) Stock Price Stalls After Q3 Earnings Efficiency Warning  [Yahoo Finance]
 
 **LLY**  ·  earnings
-  ▲ Eli Lilly (LLY) Earnings: Is the Profit Turning Into Cash?  [finchannel]
+  ▲ Strong Results, Guidance Boost Eli Lilly Shares Ahead of Earnings  [FXEmpire]
 
 ---
 ## 🛡 Research Risk Rules
