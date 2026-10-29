@@ -1,86 +1,98 @@
-# 📊 Daily Research Report — 2026-10-28
-*Generated: 2026-10-28 14:33*
+# 📊 Daily Research Report — 2026-10-29
+*Generated: 2026-10-29 14:34*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.16%
-**SPY RSI(14):** 47.4
-
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.37%
+**SPY RSI(14):** 42.1
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### SOFI  $16.84 (+2.7%)
-**WATCHLIST** · LONG · EE=19 · general setup · score=55
-> S&P 500, Nasdaq Futures Mixed Ahead Of Fed Decision, Big Tech Earnings: GOOGL, MSFT, HOOD, SOFI In Focus. Headline tone is positive, current regime keeps this i
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `SOFI`
-**⛔ IGNORE (19):** `TSLA` · `JPM` · `AMZN` · `ARM` · `LLY` · `NVDA`
-
----
-## 🏆 Top Trade
-
-**SOFI — LONG | WATCHLIST | Score: 55**
-
-> S&P 500, Nasdaq Futures Mixed Ahead Of Fed Decision, Big Tech Earnings: GOOGL, MSFT, HOOD, SOFI In Focus. Headline tone is positive, current regime keeps this in watchlist status.
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$16.84 | $15.88 (-5.7%) | $18.77 (+11.5%) | 1R | 2R |
+**⚪ MONITOR (3):** `META` · `AMZN` · `LLY`
+**⛔ IGNORE (17):** `AAPL` · `COST` · `GOOGL` · `JPM` · `IWM` · `SOFI`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 SOFI — ▲ LONG | WATCHLIST | Score: 55/85
+### ⚪ #1 META — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $16.84 (+2.7%) | **RSI:** 59.0 | **Vol ratio:** 0.56x | **ATR:** 0.8039 | **vs MA20:** above ✅
+**Price Snapshot:** $624.03 (+1.9%) | **RSI:** 27.7 | **Vol ratio:** 0.34x | **ATR:** 25.6543 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `18.6/25` | MarketConf `14.0/20` | RegimeFit `6.0/15` | RelOpp `6.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+**Layered Scores:** EventEdge `19.8/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
-**Strategy Bucket:** `general_setup`
+**Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** S&P 500, Nasdaq Futures Mixed Ahead Of Fed Decision, Big Tech Earnings: GOOGL, MSFT, HOOD, SOFI In Focus. Headline tone is positive, current regime keeps this in watchlist status.
+**What & Why:** Meta shares are down 12% since earnings. Is the stock a buy?. Headline tone is positive, current regime keeps this in monitor status.
 
-**Entry Consideration:** Prefer confirmation near $16.84; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $15.88; MA20 reference $15.28.
-**Initial Upside / Downside Case:** Initial target near $18.45 over 3-5 trading days.
+**Entry Consideration:** Prefer confirmation near $624.03; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $593.24; MA20 reference $696.74.
+**Initial Upside / Downside Case:** Initial target near $675.34 over 3-5 trading days.
+**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
+
+### ⚪ #2 AMZN — ▲ LONG | MONITOR | Score: 50/85
+
+**Price Snapshot:** $247.15 (-2.9%) | **RSI:** 36.1 | **Vol ratio:** 0.54x | **ATR:** 7.0007 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `20.7/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `4.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** Amazon Before Q3 Earnings: Buy the Stock Now or Wait for Results?. Headline tone is positive, current regime keeps this in monitor status.
+
+**Entry Consideration:** Prefer confirmation near $247.15; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $238.74; MA20 reference $255.12.
+**Initial Upside / Downside Case:** Initial target near $261.15 over 3-5 trading days.
+**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
+
+### ⚪ #3 LLY — ▲ LONG | MONITOR | Score: 50/85
+
+**Price Snapshot:** $1380.44 (+7.2%) | **RSI:** 78.0 | **Vol ratio:** 0.75x | **ATR:** 43.9493 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.3/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `7.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** Eli Lilly earnings beat by $1.88, revenue topped estimates. Headline tone is positive, current regime keeps this in monitor status.
+
+**Entry Consideration:** Prefer confirmation near $1380.44; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $1327.70; MA20 reference $1232.61.
+**Initial Upside / Downside Case:** Initial target near $1468.33 over 3-5 trading days.
 **Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 43
-- `SPY` LONG | IGNORE | score 41
+- `SPY` SHORT | IGNORE | score 43
 
 ---
 ## 📰 Key News (Last 24h)
 
-**PLTR**  ·  earnings
-  ▲ Buy Palantir ahead of earnings, says Rosenblatt  [CNBC]
-  ▲ Palantir eyes strong growth with $2.18B revenue forecast and rising EPS estimates for November 2 report  [Pluang]
+**LLY**  ·  earnings
+  ▲ Crushed tech stocks bounce — plus, new doctor survey keeps us positive on Lilly  [CNBC]
+  ▲ Eli Lilly earnings beat by $1.88, revenue topped estimates  [Investing.com Nigeria]
+
+**TSM**  ·  earnings
+  ◆ Beyond NVIDIA: Why TSMC Stock Looks Attractive After Q3 Earnings  [Yahoo Finance]
 
 **MSFT**  ·  earnings
-  ▲ Microsoft to report Q1 earnings with Wall Street looking for further Azure growth  [Yahoo Finance]
-  ▲ Does Azure AI Growth Make Microsoft Stock a Hold Ahead of Q1 Earnings?  [TradingView]
+  ▲ Microsoft stock up over 2% after hours as Azure strength drives FQ1 results beat  [Yahoo Finance Singapore]
+  ▲ Microsoft (MSFT) Beats Q1 Earnings and Revenue Estimates  [Yahoo Finance]
 
-**GOOGL**  ·  earnings
-  ◆ Apple (AAPL) vs. MSFT and GOOGL: Is the Post-Earnings Selloff Creating a Long-Term Buying Opportunity?  [Yahoo Finance]
-  ◆ S&P 500, Nasdaq Futures Mixed Ahead Of Fed Decision, Big Tech Earnings: GOOGL, MSFT, HOOD, SOFI In Focus  [Yahoo Finance]
+**PLTR**  ·  earnings
+  ▼ Palantir Stock Falls After RBC Delivers Fresh Warning Ahead of Earnings  [TradingView]
+  ▲ Palantir’s Revenue Growth Could Set the Stage for Its Next Big Stock Move  [24/7 Wall St.]
 
-**COST**  ·  earnings
-  ▼ Park National (PRK) Stock Price Stalls After Q3 Earnings Efficiency Warning  [Yahoo Finance]
-
-**LLY**  ·  earnings
-  ▲ Strong Results, Guidance Boost Eli Lilly Shares Ahead of Earnings  [FXEmpire]
+**NVDA**  ·  macro
+  ▼ Seaport Reiterates Its ‘Sell’ Rating on Nvidia Stock as Competition Is ‘Mounting’  [Barchart.com]
 
 ---
 ## 🛡 Research Risk Rules
