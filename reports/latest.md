@@ -1,98 +1,112 @@
-# 📊 Daily Research Report — 2026-10-29
-*Generated: 2026-10-29 14:34*
+# 📊 Daily Research Report — 2026-10-30
+*Generated: 2026-10-30 14:33*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.37%
-**SPY RSI(14):** 42.1
+**Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
+**SPY:** -1.44%
+**SPY RSI(14):** 35.6
+
+> ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*No high conviction picks — bear regime, avoiding new LONG exposure.*
 
 ---
 ## 📋 Action Summary
 
-**🟢 ACTIONABLE:** None today
-**⚪ MONITOR (3):** `META` · `AMZN` · `LLY`
-**⛔ IGNORE (17):** `AAPL` · `COST` · `GOOGL` · `JPM` · `IWM` · `SOFI`
+**🟢 ACTIONABLE (1):** `AMZN`
+**🟡 WATCHLIST (2):** `GOOGL` · `GLD`
+**⚪ MONITOR (1):** `TSM`
+**⛔ IGNORE (16):** `GS` · `NVDA` · `IWM` · `JPM` · `AVGO` · `LLY`
+
+---
+## 🏆 Top Trade
+
+**AMZN — SHORT | ACTIONABLE | Score: 62**
+
+> US Stock Futures Fall As AMZN, INTC Earnings Trigger Tech Sell-Off: NVDA, RDDT, RIVN, SFM In Focus. Headline tone is negative, current regime keeps this in actionable status.
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$238.86 | $248.12 (-3.9%) | $220.34 (+7.8%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 META — ▲ LONG | MONITOR | Score: 51/85
+### 🟢 #1 AMZN — ▼ SHORT | ACTIONABLE | Score: 62/85
 
-**Price Snapshot:** $624.03 (+1.9%) | **RSI:** 27.7 | **Vol ratio:** 0.34x | **ATR:** 25.6543 | **vs MA20:** below ⚠️
+**Price Snapshot:** $238.86 (-2.0%) | **RSI:** 32.9 | **Vol ratio:** 1.07x | **ATR:** 7.7148 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `19.8/25` | MarketConf `11.0/20` | RegimeFit `8.5/15` | RelOpp `2.4/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `17.1/25` | MarketConf `14.0/20` | RegimeFit `13.0/15` | RelOpp `8.5/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** Meta shares are down 12% since earnings. Is the stock a buy?. Headline tone is positive, current regime keeps this in monitor status.
+**What & Why:** US Stock Futures Fall As AMZN, INTC Earnings Trigger Tech Sell-Off: NVDA, RDDT, RIVN, SFM In Focus. Headline tone is negative, current regime keeps this in actionable status.
 
-**Entry Consideration:** Prefer confirmation near $624.03; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $593.24; MA20 reference $696.74.
-**Initial Upside / Downside Case:** Initial target near $675.34 over 3-5 trading days.
+**Entry Consideration:** Prefer confirmation near $238.86; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $248.12; MA20 reference $254.32.
+**Initial Upside / Downside Case:** Initial target near $223.43 over 3-5 trading days.
 **Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
 
-### ⚪ #2 AMZN — ▲ LONG | MONITOR | Score: 50/85
+### 🟡 #2 GOOGL — ▼ SHORT | WATCHLIST | Score: 55/85
 
-**Price Snapshot:** $247.15 (-2.9%) | **RSI:** 36.1 | **Vol ratio:** 0.54x | **ATR:** 7.0007 | **vs MA20:** below ⚠️
+**Price Snapshot:** $280.18 (-1.3%) | **RSI:** 14.2 | **Vol ratio:** 0.72x | **ATR:** 10.6936 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `20.7/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `4.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `17.3/25` | MarketConf `11.0/20` | RegimeFit `13.0/15` | RelOpp `4.5/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** Amazon Before Q3 Earnings: Buy the Stock Now or Wait for Results?. Headline tone is positive, current regime keeps this in monitor status.
+**What & Why:** Amazon Slides 7% as Earnings Miss and AI Spending Turn Free Cash Flow Negative; Meta Falls 2%, Alphabet Dips, Walmart Gains 2%. Headline tone is negative, current regime keeps this in watchlist status.
 
-**Entry Consideration:** Prefer confirmation near $247.15; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $238.74; MA20 reference $255.12.
-**Initial Upside / Downside Case:** Initial target near $261.15 over 3-5 trading days.
+**Entry Consideration:** Prefer confirmation near $280.18; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $293.01; MA20 reference $333.92.
+**Initial Upside / Downside Case:** Initial target near $258.79 over 3-5 trading days.
 **Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
 
-### ⚪ #3 LLY — ▲ LONG | MONITOR | Score: 50/85
+### 🟡 #3 GLD — ▼ SHORT | WATCHLIST | Score: 52/85
 
-**Price Snapshot:** $1380.44 (+7.2%) | **RSI:** 78.0 | **Vol ratio:** 0.75x | **ATR:** 43.9493 | **vs MA20:** above ✅
+**Price Snapshot:** $357.60 (-3.0%) | **RSI:** 27.4 | **Vol ratio:** 0.56x | **ATR:** 5.7336 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `17.3/25` | MarketConf `8.0/20` | RegimeFit `8.5/15` | RelOpp `7.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `15.5/25` | MarketConf `12.0/20` | RegimeFit `13.0/15` | RelOpp `3.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** Eli Lilly earnings beat by $1.88, revenue topped estimates. Headline tone is positive, current regime keeps this in monitor status.
+**What & Why:** Barrick Gold stock falls over 3% as quarterly results miss estimates and downside momentum persists. Headline tone is negative, current regime keeps this in watchlist status.
 
-**Entry Consideration:** Prefer confirmation near $1380.44; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $1327.70; MA20 reference $1232.61.
-**Initial Upside / Downside Case:** Initial target near $1468.33 over 3-5 trading days.
+**Entry Consideration:** Prefer confirmation near $357.60; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $364.48; MA20 reference $375.86.
+**Initial Upside / Downside Case:** Initial target near $346.13 over 3-5 trading days.
 **Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` SHORT | IGNORE | score 43
+- `SPY` SHORT | IGNORE | score 40
 
 ---
 ## 📰 Key News (Last 24h)
 
 **LLY**  ·  earnings
-  ▲ Crushed tech stocks bounce — plus, new doctor survey keeps us positive on Lilly  [CNBC]
-  ▲ Eli Lilly earnings beat by $1.88, revenue topped estimates  [Investing.com Nigeria]
+  ▲ Eli Lilly Stock Jumps on Monster Earnings as Finance Chief Eyes Next Growth Engine  [Barron's]
+  ▲ LLY Stock Jumps as Q3 Earnings Beat Estimates, 2026 Sales View Raised  [Yahoo Finance]
 
-**TSM**  ·  earnings
-  ◆ Beyond NVIDIA: Why TSMC Stock Looks Attractive After Q3 Earnings  [Yahoo Finance]
-
-**MSFT**  ·  earnings
-  ▲ Microsoft stock up over 2% after hours as Azure strength drives FQ1 results beat  [Yahoo Finance Singapore]
-  ▲ Microsoft (MSFT) Beats Q1 Earnings and Revenue Estimates  [Yahoo Finance]
+**GOOGL**  ·  earnings
+  ▼ Alphabet earnings miss reflects first real sign that AI is taking a bite out of search  [CNBC]
+  ▼ Alphabet Earnings: Why Google Stock Is Falling  [Barron's]
 
 **PLTR**  ·  earnings
-  ▼ Palantir Stock Falls After RBC Delivers Fresh Warning Ahead of Earnings  [TradingView]
-  ▲ Palantir’s Revenue Growth Could Set the Stage for Its Next Big Stock Move  [24/7 Wall St.]
+  ▲ Palantir Seen Beating Revenue Estimates, Raising Guidance, Oppenheimer Says  [Yahoo Finance]
 
-**NVDA**  ·  macro
-  ▼ Seaport Reiterates Its ‘Sell’ Rating on Nvidia Stock as Competition Is ‘Mounting’  [Barchart.com]
+**NVDA**  ·  earnings
+  ▼ US Stock Futures Fall As AMZN, INTC Earnings Trigger Tech Sell-Off: NVDA, RDDT, RIVN, SFM In Focus  [Yahoo Finance]
+
+**MSFT**  ·  macro
+  ▲ Microsoft Corp (MSFT) (Q1 2027) Earnings Call Highlights: Cloud Growth Accelerates to 30% as ...  [Yahoo Finance]
+  ▲ Microsoft beats Wall Street estimates as Azure growth hits 48%  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
