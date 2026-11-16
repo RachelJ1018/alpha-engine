@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-11-13
-*Generated: 2026-11-13 14:32*
+# 📊 Daily Research Report — 2026-11-16
+*Generated: 2026-11-16 14:46*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** +0.36%
-**SPY RSI(14):** 47.6
+**SPY:** -0.75%
+**SPY RSI(14):** 40.9
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,89 +17,86 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (3):** `LLY` · `AMZN` · `AAPL`
-**⛔ IGNORE (17):** `META` · `COST` · `GOOGL` · `JPM` · `AMD` · `GS`
+**⛔ IGNORE (20):** `NFLX` · `TSM` · `SOFI` · `WMT` · `META` · `SPY`
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 LLY — ▲ LONG | MONITOR | Score: 52/85
+### ⛔ #1 NFLX — ▼ SHORT | IGNORE | Score: 49/85
 
-**Price Snapshot:** $1432.42 (+0.4%) | **RSI:** 74.1 | **Vol ratio:** 0.02x | **ATR:** 49.4743 | **vs MA20:** above ✅
+**Price Snapshot:** $62.09 (-0.1%) | **RSI:** 48.3 | **Vol ratio:** 0.1x | **ATR:** 1.7468 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `17.6/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** Eli Lilly (LLY) Stock Looks Reasonable After Its Very Large Five Year Run - Simply Wall St News. Headline tone is positive, current regime keeps this in monitor status.
-
-**Entry Consideration:** Prefer confirmation near $1432.42; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $1373.05; MA20 reference $1355.69.
-**Initial Upside / Downside Case:** Initial target near $1531.37 over 3-5 trading days.
-**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
-
-### ⚪ #2 AMZN — ▲ LONG | MONITOR | Score: 51/85
-
-**Price Snapshot:** $267.48 (+0.0%) | **RSI:** 63.2 | **Vol ratio:** 0.05x | **ATR:** 10.5021 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.9/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `14.9/25` | MarketConf `14.0/20` | RegimeFit `10.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** Meta (META) stock is up, what you need to know - StockStory. Headline tone is positive, current regime keeps this in monitor status.
 
-**Entry Consideration:** Prefer confirmation near $267.48; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $254.88; MA20 reference $257.38.
-**Initial Upside / Downside Case:** Initial target near $288.48 over 3-5 trading days.
-**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
+### ⛔ #2 TSM — ▼ SHORT | IGNORE | Score: 49/85
 
-### ⚪ #3 AAPL — ▲ LONG | MONITOR | Score: 51/85
+**Price Snapshot:** $382.28 (-4.1%) | **RSI:** 35.8 | **Vol ratio:** 0.25x | **ATR:** 19.4957 | **vs MA20:** below ⚠️
 
-**Price Snapshot:** $360.55 (+1.6%) | **RSI:** 61.0 | **Vol ratio:** 0.05x | **ATR:** 9.442 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `16.7/25` | MarketConf `14.0/20` | RegimeFit `9.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `18.1/25` | MarketConf `11.0/20` | RegimeFit `10.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** Apple Shares (AAPL) Look Expensive Heading into 2027. Headline tone is positive, current regime keeps this in monitor status.
 
-**Entry Consideration:** Prefer confirmation near $360.55; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $349.22; MA20 reference $346.13.
-**Initial Upside / Downside Case:** Initial target near $379.43 over 3-5 trading days.
-**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
+### ⛔ #3 SOFI — ▼ SHORT | IGNORE | Score: 48/85
 
----
-## 🌍 Macro Watchlist
+**Price Snapshot:** $15.12 (-1.9%) | **RSI:** 40.4 | **Vol ratio:** 0.08x | **ATR:** 0.8481 | **vs MA20:** below ⚠️
 
-- ⛔ `LMT` LONG | IGNORE | score 35 | —
+**Layered Scores:** EventEdge `14.8/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `macro_beta_rebound`
+
+
+### ⛔ #4 WMT — ▲ LONG | IGNORE | Score: 47/85
+
+**Price Snapshot:** $129.18 (+0.8%) | **RSI:** 70.4 | **Vol ratio:** 0.08x | **ATR:** 3.0407 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `15.3/25` | MarketConf `14.0/20` | RegimeFit `6.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
+
+**Strategy Bucket:** `defensive_rotation`
+
+
+### ⛔ #5 META — ▼ SHORT | IGNORE | Score: 46/85
+
+**Price Snapshot:** $632.36 (-1.4%) | **RSI:** 53.6 | **Vol ratio:** 0.06x | **ATR:** 21.0543 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `14.4/25` | MarketConf `12.0/20` | RegimeFit `10.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` LONG | IGNORE | score 41
+- `SPY` SHORT | IGNORE | score 45
+- `QQQ` SHORT | IGNORE | score 43
 
 ---
 ## 📰 Key News (Last 24h)
 
 **NVDA**  ·  earnings
-  ▼ Nvidia stock rises 4% as CEO Huang faces scrutiny over alleged affair  [Cnbc]
-  ▼ 'Icarus' rise and fall': Analyst downgrades Nvidia stock amid Jensen Huang woes, highlights risks  [Finance]
+  ▼ Nvidia gets two more price target cuts from analysts ahead of earnings  [CNBC]
+  ▲ Nvidia stock rebounds, chip stocks surge as CoreWeave earnings boost AI trade  [Yahoo Finance]
 
-**MSFT**  ·  earnings
-  ▲ Microsoft (MSFT) stock price forecast: Wall Street analysts see 22% upside  [Beinsure]
+**GLD**  ·  earnings
+  ▲ Senco Gold raises FY27 guidance, sees higher contribution from north India; Stock down 8%  [CNBC TV18]
+
+**PLTR**  ·  earnings
+  ▲ Phillip Securities raises Palantir stock price target on strong revenue growth  [Investing.com UK]
 
 **META**  ·  earnings
-  ▲ As Meta Platforms Buys Conductor, Here’s How to Play META Stock  [Barchart]
+  ▼ Metaplanet Cuts 2026 Revenue Target 59%: Is the Bitcoin Playbook Running Dry?  [Yahoo Finance]
 
 **COST**  ·  earnings
-  ▲ Costco Wholesale (COST) Stock: Announces $4B Buyback Amid Valuation Concerns  [Blockonomi]
+  ▼ Moderna Issues Cost Outlook Amid Revenue Uncertainty, Stock Falls  [Yahoo Finance]
 
-**ARM**  ·  earnings
-  ▲ Arm Jumps as AI Chip Stocks Rebound and Investors Reassess Recent Results | Quiver Quantitative  [Quiverquant]
+**SOFI**  ·  earnings
+  ◆ SoFi Planned for 2 Rate Cuts This Year and Got a Rate Hike. It Raised Its Guidance Anyway.  [Yahoo Finance]
 
-**AMZN**  ·  earnings
-  ▲ What's Wrong With Amazon.com (AMZN) Stock, and Is It a Buy in November?  [Finance]
-  ▲ Why Amazon (AMZN) stock is up today - StockStory  [Stockstory]
+**AMD**  ·  earnings
+  ▲ MU, AMD, AVGO, Other Chip Stocks Surge As CoreWeave Earnings Reignite AI Trade — Nasdaq-100 Futures Jump  [Yahoo Finance]
 
 ---
 ## 🛡 Research Risk Rules
