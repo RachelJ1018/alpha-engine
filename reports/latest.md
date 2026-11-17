@@ -1,12 +1,14 @@
-# 📊 Daily Research Report — 2026-11-16
-*Generated: 2026-11-16 14:46*
+# 📊 Daily Research Report — 2026-11-17
+*Generated: 2026-11-17 14:35*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.75%
-**SPY RSI(14):** 40.9
+**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
+**SPY:** -0.28%
+**SPY RSI(14):** 36.0
+
+> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
 ---
 ## ⭐ High Conviction Picks
@@ -17,52 +19,52 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `NFLX` · `TSM` · `SOFI` · `WMT` · `META` · `SPY`
+**⛔ IGNORE (20):** `MSFT` · `AMZN` · `AAPL` · `SPY` · `META` · `PLTR`
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 NFLX — ▼ SHORT | IGNORE | Score: 49/85
+### ⛔ #1 MSFT — ▼ SHORT | IGNORE | Score: 46/85
 
-**Price Snapshot:** $62.09 (-0.1%) | **RSI:** 48.3 | **Vol ratio:** 0.1x | **ATR:** 1.7468 | **vs MA20:** below ⚠️
+**Price Snapshot:** $513.85 (-0.8%) | **RSI:** 44.2 | **Vol ratio:** 0.04x | **ATR:** 17.6172 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `14.9/25` | MarketConf `14.0/20` | RegimeFit `10.5/15` | RelOpp `1.4/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 TSM — ▼ SHORT | IGNORE | Score: 49/85
-
-**Price Snapshot:** $382.28 (-4.1%) | **RSI:** 35.8 | **Vol ratio:** 0.25x | **ATR:** 19.4957 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `18.1/25` | MarketConf `11.0/20` | RegimeFit `10.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+**Layered Scores:** EventEdge `17.3/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #3 SOFI — ▼ SHORT | IGNORE | Score: 48/85
+### ⛔ #2 AMZN — ▲ LONG | IGNORE | Score: 45/85
 
-**Price Snapshot:** $15.12 (-1.9%) | **RSI:** 40.4 | **Vol ratio:** 0.08x | **ATR:** 0.8481 | **vs MA20:** below ⚠️
+**Price Snapshot:** $257.97 (+0.1%) | **RSI:** 52.3 | **Vol ratio:** 0.06x | **ATR:** 10.9064 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `14.8/25` | MarketConf `14.0/20` | RegimeFit `9.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `15.9/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
-**Strategy Bucket:** `macro_beta_rebound`
-
-
-### ⛔ #4 WMT — ▲ LONG | IGNORE | Score: 47/85
-
-**Price Snapshot:** $129.18 (+0.8%) | **RSI:** 70.4 | **Vol ratio:** 0.08x | **ATR:** 3.0407 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `15.3/25` | MarketConf `14.0/20` | RegimeFit `6.5/15` | RelOpp `1.0/15` | Freshness `10.0/10` | RiskPenalty `-0.0`
-
-**Strategy Bucket:** `defensive_rotation`
+**Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #5 META — ▼ SHORT | IGNORE | Score: 46/85
+### ⛔ #3 AAPL — ▲ LONG | IGNORE | Score: 44/85
 
-**Price Snapshot:** $632.36 (-1.4%) | **RSI:** 53.6 | **Vol ratio:** 0.06x | **ATR:** 21.0543 | **vs MA20:** below ⚠️
+**Price Snapshot:** $352.22 (-0.2%) | **RSI:** 56.2 | **Vol ratio:** 0.07x | **ATR:** 9.3404 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `14.4/25` | MarketConf `12.0/20` | RegimeFit `10.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `17.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #4 SPY — ▼ SHORT | IGNORE | Score: 44/85
+
+**Price Snapshot:** $737.86 (-0.3%) | **RSI:** 36.0 | **Vol ratio:** 0.06x | **ATR:** 13.3821 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `15.5/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 META — ▼ SHORT | IGNORE | Score: 44/85
+
+**Price Snapshot:** $620.35 (-1.0%) | **RSI:** 52.3 | **Vol ratio:** 0.07x | **ATR:** 21.1336 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `15.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
@@ -70,33 +72,31 @@
 ---
 ## 📈 Market Instruments
 
-- `SPY` SHORT | IGNORE | score 45
-- `QQQ` SHORT | IGNORE | score 43
+- `SPY` SHORT | IGNORE | score 44
+- `QQQ` SHORT | IGNORE | score 41
 
 ---
 ## 📰 Key News (Last 24h)
 
-**NVDA**  ·  earnings
-  ▼ Nvidia gets two more price target cuts from analysts ahead of earnings  [CNBC]
-  ▲ Nvidia stock rebounds, chip stocks surge as CoreWeave earnings boost AI trade  [Yahoo Finance]
-
-**GLD**  ·  earnings
-  ▲ Senco Gold raises FY27 guidance, sees higher contribution from north India; Stock down 8%  [CNBC TV18]
+**AMD**  ·  earnings
+  ▲ We're booking huge profits on a tech winner and making a chip stock swap  [CNBC]
 
 **PLTR**  ·  earnings
   ▲ Phillip Securities raises Palantir stock price target on strong revenue growth  [Investing.com UK]
+  ▼ Cathie Wood Adds Nvidia Stock Before Earnings While Selling Palantir  [Yahoo Finance]
 
-**META**  ·  earnings
-  ▼ Metaplanet Cuts 2026 Revenue Target 59%: Is the Bitcoin Playbook Running Dry?  [Yahoo Finance]
+**NVDA**  ·  earnings
+  ▼ NVDL 2X NVIDIA ETF Sinks 9% as NVIDIA Falls 4% on Jensen Huang Fallout Ahead of Earnings; AMD Drops 5%  [Yahoo Finance]
 
-**COST**  ·  earnings
-  ▼ Moderna Issues Cost Outlook Amid Revenue Uncertainty, Stock Falls  [Yahoo Finance]
+**AVGO**  ·  earnings
+  ▼ Broadcom Stocks Slide 4.76% as Downgrade Keeps AI Financing Fears in Focus  [TradingView]
 
-**SOFI**  ·  earnings
-  ◆ SoFi Planned for 2 Rate Cuts This Year and Got a Rate Hike. It Raised Its Guidance Anyway.  [Yahoo Finance]
+**MU**  ·  earnings
+  ◆ Dow Jones Futures: AMD, Nvidia, Micron Lead AI Trade Lower With Nvidia Earnings On Deck  [Investor's Business Daily]
 
-**AMD**  ·  earnings
-  ▲ MU, AMD, AVGO, Other Chip Stocks Surge As CoreWeave Earnings Reignite AI Trade — Nasdaq-100 Futures Jump  [Yahoo Finance]
+**META**  ·  macro
+  ▲ UBS assumes coverage on Meta stock with buy rating on AI momentum  [Investing]
+  ▼ Meta Stock Plunges After Italy Hits Facebook With $887 Million Fine — TradingView News  [Tradingview]
 
 ---
 ## 🛡 Research Risk Rules
