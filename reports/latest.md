@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-11-17
-*Generated: 2026-11-17 14:35*
+# 📊 Daily Research Report — 2026-11-18
+*Generated: 2026-11-18 14:34*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** -0.28%
-**SPY RSI(14):** 36.0
+**SPY:** +0.29%
+**SPY RSI(14):** 36.4
 
 > ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
 
@@ -19,84 +19,78 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `MSFT` · `AMZN` · `AAPL` · `SPY` · `META` · `PLTR`
+**⛔ IGNORE (20):** `AAPL` · `AVGO` · `NFLX` · `BAC` · `AMZN` · `GS`
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 MSFT — ▼ SHORT | IGNORE | Score: 46/85
+### ⛔ #1 AAPL — ▲ LONG | IGNORE | Score: 50/85
 
-**Price Snapshot:** $513.85 (-0.8%) | **RSI:** 44.2 | **Vol ratio:** 0.04x | **ATR:** 17.6172 | **vs MA20:** below ⚠️
+**Price Snapshot:** $354.44 (+0.7%) | **RSI:** 54.3 | **Vol ratio:** 0.06x | **ATR:** 9.3686 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.3/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 AMZN — ▲ LONG | IGNORE | Score: 45/85
-
-**Price Snapshot:** $257.97 (+0.1%) | **RSI:** 52.3 | **Vol ratio:** 0.06x | **ATR:** 10.9064 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `15.9/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `17.5/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #3 AAPL — ▲ LONG | IGNORE | Score: 44/85
+### ⛔ #2 AVGO — ▲ LONG | IGNORE | Score: 48/85
 
-**Price Snapshot:** $352.22 (-0.2%) | **RSI:** 56.2 | **Vol ratio:** 0.07x | **ATR:** 9.3404 | **vs MA20:** above ✅
+**Price Snapshot:** $348.52 (+2.0%) | **RSI:** 50.9 | **Vol ratio:** 0.05x | **ATR:** 20.5179 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.6/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-3.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #4 SPY — ▼ SHORT | IGNORE | Score: 44/85
-
-**Price Snapshot:** $737.86 (-0.3%) | **RSI:** 36.0 | **Vol ratio:** 0.06x | **ATR:** 13.3821 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `15.5/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `18.6/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
-### ⛔ #5 META — ▼ SHORT | IGNORE | Score: 44/85
+### ⛔ #3 NFLX — ▲ LONG | IGNORE | Score: 48/85
 
-**Price Snapshot:** $620.35 (-1.0%) | **RSI:** 52.3 | **Vol ratio:** 0.07x | **ATR:** 21.1336 | **vs MA20:** below ⚠️
+**Price Snapshot:** $60.08 (+0.7%) | **RSI:** 43.5 | **Vol ratio:** 0.04x | **ATR:** 1.8107 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `15.4/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+**Layered Scores:** EventEdge `17.9/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
 
----
-## 📈 Market Instruments
+### ⛔ #4 BAC — ▼ SHORT | IGNORE | Score: 47/85
 
-- `SPY` SHORT | IGNORE | score 44
-- `QQQ` SHORT | IGNORE | score 41
+**Price Snapshot:** $49.33 (-0.2%) | **RSI:** 40.4 | **Vol ratio:** 0.01x | **ATR:** 1.1986 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `17.4/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.6/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+
+### ⛔ #5 AMZN — ▲ LONG | IGNORE | Score: 47/85
+
+**Price Snapshot:** $262.37 (+1.7%) | **RSI:** 63.7 | **Vol ratio:** 0.05x | **ATR:** 10.6293 | **vs MA20:** above ✅
+
+**Layered Scores:** EventEdge `17.2/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
 
 ---
 ## 📰 Key News (Last 24h)
 
-**AMD**  ·  earnings
-  ▲ We're booking huge profits on a tech winner and making a chip stock swap  [CNBC]
+**NVDA**  ·  earnings
+  ▲ Nvidia beats on Q3 revenue and earnings, stock pops slightly on results  [CNBC]
+  ▼ Ahead Of Nvidia’s Earnings, US Confirms Megaspeed On ‘No-Sell’ List — But Doesn't Mention Jensen Huang  [Yahoo Finance]
+
+**COST**  ·  macro
+  ▲ Wells Fargo raises Procter & Gamble stock price target on easing inflation outlook  [Investing.com]
 
 **PLTR**  ·  earnings
-  ▲ Phillip Securities raises Palantir stock price target on strong revenue growth  [Investing.com UK]
-  ▼ Cathie Wood Adds Nvidia Stock Before Earnings While Selling Palantir  [Yahoo Finance]
+  ▲ Palantir's 148% U.S. Commercial Revenue Surge Signals AI Momentum  [Yahoo Finance]
+  ▲ PLTR Raises 2026 Guidance as Q3 AI Demand Drives 96% Revenue Growth  [Yahoo Finance]
 
-**NVDA**  ·  earnings
-  ▼ NVDL 2X NVIDIA ETF Sinks 9% as NVIDIA Falls 4% on Jensen Huang Fallout Ahead of Earnings; AMD Drops 5%  [Yahoo Finance]
+**COIN**  ·  earnings
+  ◆ Crypto Stocks Rebound As Nvidia’s Earnings Beat Lifts Risk Appetite — Why COIN, CRCL, NXXT Are Moving Today  [Yahoo Finance]
 
-**AVGO**  ·  earnings
-  ▼ Broadcom Stocks Slide 4.76% as Downgrade Keeps AI Financing Fears in Focus  [TradingView]
+**META**  ·  earnings
+  ▲ Meta Platforms (META) Surges as AI Ranking Models Accelerate U.S. Ad Revenue Growth to 31%  [Yahoo Finance]
 
-**MU**  ·  earnings
-  ◆ Dow Jones Futures: AMD, Nvidia, Micron Lead AI Trade Lower With Nvidia Earnings On Deck  [Investor's Business Daily]
-
-**META**  ·  macro
-  ▲ UBS assumes coverage on Meta stock with buy rating on AI momentum  [Investing]
-  ▼ Meta Stock Plunges After Italy Hits Facebook With $887 Million Fine — TradingView News  [Tradingview]
+**MSFT**  ·  earnings
+  ▲ Microsoft Stock (MSFT) Forecast – Mizuho Stays Bullish on Strong Revenue Growth Prospects  [TipRanks]
 
 ---
 ## 🛡 Research Risk Rules
