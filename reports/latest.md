@@ -1,96 +1,104 @@
-# 📊 Daily Research Report — 2026-11-18
-*Generated: 2026-11-18 14:34*
+# 📊 Daily Research Report — 2026-11-19
+*Generated: 2026-11-19 14:34*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 〰 CHOPPY — Directionless and noisy. Avoid chasing; wait for clarity.
-**SPY:** +0.29%
-**SPY RSI(14):** 36.4
+**Regime:** 📈 BULL — Broad market rising. Long setups have better follow-through.
+**SPY:** +1.21%
+**SPY RSI(14):** 43.2
 
-> ⚠️ **Research posture:** Market is noisy. Keep standards high and avoid overtrading.
+> ✅ **Research posture:** Market is supportive. Long ideas have a better chance of follow-through.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
+
+### AMZN  $272.23 (+1.7%)
+**WATCHLIST** · LONG · EE=19 · post earnings drift · score=56
+> 59 Analysts Rate Amazon a Buy. Here’s Where the Stock Could Go. Headline tone is positive, current regime keeps this in watchlist status.
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⛔ IGNORE (20):** `AAPL` · `AVGO` · `NFLX` · `BAC` · `AMZN` · `GS`
+**🟡 WATCHLIST (6):** `AMZN` · `AVGO` · `TSM` · `AAPL` · `META` · `AMD`
+**⛔ IGNORE (14):** `NFLX` · `NVDA` · `LLY` · `TSLA` · `MSFT` · `GOOGL`
+
+---
+## 🏆 Top Trade
+
+**AMZN — LONG | WATCHLIST | Score: 56**
+
+> 59 Analysts Rate Amazon a Buy. Here’s Where the Stock Could Go. Headline tone is positive, current regime keeps this in watchlist status.
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$272.23 | $259.76 (-4.6%) | $297.17 (+9.2%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⛔ #1 AAPL — ▲ LONG | IGNORE | Score: 50/85
+### 🟡 #1 AMZN — ▲ LONG | WATCHLIST | Score: 56/85
 
-**Price Snapshot:** $354.44 (+0.7%) | **RSI:** 54.3 | **Vol ratio:** 0.06x | **ATR:** 9.3686 | **vs MA20:** above ✅
+**Price Snapshot:** $272.23 (+1.7%) | **RSI:** 71.5 | **Vol ratio:** 0.09x | **ATR:** 10.3914 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `17.5/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #2 AVGO — ▲ LONG | IGNORE | Score: 48/85
-
-**Price Snapshot:** $348.52 (+2.0%) | **RSI:** 50.9 | **Vol ratio:** 0.05x | **ATR:** 20.5179 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `18.6/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
+**Layered Scores:** EventEdge `18.5/25` | MarketConf `14.0/20` | RegimeFit `13.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** 59 Analysts Rate Amazon a Buy. Here’s Where the Stock Could Go. Headline tone is positive, current regime keeps this in watchlist status.
 
-### ⛔ #3 NFLX — ▲ LONG | IGNORE | Score: 48/85
+**Entry Consideration:** Prefer confirmation near $272.23; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $259.76; MA20 reference $258.22.
+**Initial Upside / Downside Case:** Initial target near $293.01 over 3-5 trading days.
+**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
 
-**Price Snapshot:** $60.08 (+0.7%) | **RSI:** 43.5 | **Vol ratio:** 0.04x | **ATR:** 1.8107 | **vs MA20:** below ⚠️
+### 🟡 #2 AVGO — ▲ LONG | WATCHLIST | Score: 54/85
 
-**Layered Scores:** EventEdge `17.9/25` | MarketConf `11.0/20` | RegimeFit `7.0/15` | RelOpp `3.0/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Price Snapshot:** $364.56 (+3.0%) | **RSI:** 60.2 | **Vol ratio:** 0.05x | **ATR:** 19.895 | **vs MA20:** above ✅
 
-**Strategy Bucket:** `post_earnings_drift`
-
-
-### ⛔ #4 BAC — ▼ SHORT | IGNORE | Score: 47/85
-
-**Price Snapshot:** $49.33 (-0.2%) | **RSI:** 40.4 | **Vol ratio:** 0.01x | **ATR:** 1.1986 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `17.4/25` | MarketConf `14.0/20` | RegimeFit `7.0/15` | RelOpp `1.6/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+**Layered Scores:** EventEdge `17.6/25` | MarketConf `12.0/20` | RegimeFit `13.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
+**What & Why:** LONG AVGO as it capitalizes on AI revenue guidance beats and sector-wide momentum following Nvidia's earnings [1, 5]. Valuation remains attractive amid increased ETF buying and sustained AI demand [4].
 
-### ⛔ #5 AMZN — ▲ LONG | IGNORE | Score: 47/85
+**Entry Consideration:** Enter on a minor pullback toward $360.00 or consolidation above $364.00.
+**Risk / Invalidation Level:** Daily close below the 50-day moving average ($344.15).
+**Initial Upside / Downside Case:** Initial target of $385.00 within a 3-5 day timeframe.
+**Key Risk:** ❌ Extremely low relative volume (0.05x) suggests the current move may lack institutional follow-through.
 
-**Price Snapshot:** $262.37 (+1.7%) | **RSI:** 63.7 | **Vol ratio:** 0.05x | **ATR:** 10.6293 | **vs MA20:** above ✅
+---
+## 📈 Market Instruments
 
-**Layered Scores:** EventEdge `17.2/25` | MarketConf `12.0/20` | RegimeFit `7.0/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
-
-**Strategy Bucket:** `post_earnings_drift`
-
+- `SPY` LONG | IGNORE | score 47
 
 ---
 ## 📰 Key News (Last 24h)
 
-**NVDA**  ·  earnings
-  ▲ Nvidia beats on Q3 revenue and earnings, stock pops slightly on results  [CNBC]
-  ▼ Ahead Of Nvidia’s Earnings, US Confirms Megaspeed On ‘No-Sell’ List — But Doesn't Mention Jensen Huang  [Yahoo Finance]
+**NVDA**  ·  macro
+  ▲ Tech Stocks Rally Globally After Nvidia Earnings Beat Expectations - WSJ  [Wsj]
+  ▲ Is Nvidia Stock's Trading at 10x Forward Earnings the Bargain of the Century or Dead Money Hiding in Plain Sight?  [Yahoo Finance]
 
-**COST**  ·  macro
-  ▲ Wells Fargo raises Procter & Gamble stock price target on easing inflation outlook  [Investing.com]
+**ARM**  ·  earnings
+  ▲ Arm Holdings beats on earnings and revenue, stock dips slightly in extended trading  [CNBC]
 
-**PLTR**  ·  earnings
-  ▲ Palantir's 148% U.S. Commercial Revenue Surge Signals AI Momentum  [Yahoo Finance]
-  ▲ PLTR Raises 2026 Guidance as Q3 AI Demand Drives 96% Revenue Growth  [Yahoo Finance]
-
-**COIN**  ·  earnings
-  ◆ Crypto Stocks Rebound As Nvidia’s Earnings Beat Lifts Risk Appetite — Why COIN, CRCL, NXXT Are Moving Today  [Yahoo Finance]
+**AMZN**  ·  macro
+  ▲ 59 Analysts Rate Amazon a Buy. Here’s Where the Stock Could Go  [Yahoo Finance]
 
 **META**  ·  earnings
-  ▲ Meta Platforms (META) Surges as AI Ranking Models Accelerate U.S. Ad Revenue Growth to 31%  [Yahoo Finance]
+  ▼ Meta Platforms stock forecast: Seller pressure keeps price below $628.64 resistance  [Traders Union]
 
-**MSFT**  ·  earnings
-  ▲ Microsoft Stock (MSFT) Forecast – Mizuho Stays Bullish on Strong Revenue Growth Prospects  [TipRanks]
+**LLY**  ·  earnings
+  ▲ LLY (NYSE:LLY) Mounjaro and Zepbound Momentum Powers Another Raise to Revenue Goals  [Kalkine Media]
+
+**GOOGL**  ·  earnings
+  ◆ Alphabet Stock Rebounds From Support as Anthropic Stake Pre IPO and Nvidia Earnings Lift GOOG  [FXLeaders]
+
+**GLD**  ·  macro
+  ▼ Is the 3.5% Slide in Gold Toward USD 3,729 a Warning Signal for SPDR Gold Shares (NYSEARCA:GLD) Given Rising Rate Bets?  [kalkine.ca]
 
 ---
 ## 🛡 Research Risk Rules
