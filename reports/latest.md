@@ -1,104 +1,80 @@
-# 📊 Daily Research Report — 2026-11-19
-*Generated: 2026-11-19 14:34*
+# 📊 Daily Research Report — 2026-11-20
+*Generated: 2026-11-20 14:33*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 📈 BULL — Broad market rising. Long setups have better follow-through.
-**SPY:** +1.21%
-**SPY RSI(14):** 43.2
-
-> ✅ **Research posture:** Market is supportive. Long ideas have a better chance of follow-through.
+**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
+**SPY:** -0.50%
+**SPY RSI(14):** 34.5
 
 ---
 ## ⭐ High Conviction Picks
 
 *Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
 
-### AMZN  $272.23 (+1.7%)
-**WATCHLIST** · LONG · EE=19 · post earnings drift · score=56
-> 59 Analysts Rate Amazon a Buy. Here’s Where the Stock Could Go. Headline tone is positive, current regime keeps this in watchlist status.
+### WMT  $129.48 (+2.7%)
+**WATCHLIST** · LONG · EE=20 · post earnings drift · score=53
+> LONG. WMT exhibits relative strength ahead of Q3 earnings as analysts justify a rich valuation based on the CEO's commitment to a 'low price' strategy [1][2].
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (6):** `AMZN` · `AVGO` · `TSM` · `AAPL` · `META` · `AMD`
-**⛔ IGNORE (14):** `NFLX` · `NVDA` · `LLY` · `TSLA` · `MSFT` · `GOOGL`
+**🟡 WATCHLIST (1):** `WMT`
+**⛔ IGNORE (19):** `MSFT` · `PLTR` · `GS` · `TSM` · `IWM` · `GOOGL`
 
 ---
 ## 🏆 Top Trade
 
-**AMZN — LONG | WATCHLIST | Score: 56**
+**WMT — LONG | WATCHLIST | Score: 53**
 
-> 59 Analysts Rate Amazon a Buy. Here’s Where the Stock Could Go. Headline tone is positive, current regime keeps this in watchlist status.
+> LONG. WMT exhibits relative strength ahead of Q3 earnings as analysts justify a rich valuation based on the CEO's commitment to a 'low price' strategy [1][2].
 
 | Entry | Stop | Target | Risk | Reward |
 |-------|------|--------|------|--------|
-| ~$272.23 | $259.76 (-4.6%) | $297.17 (+9.2%) | 1R | 2R |
+| ~$129.48 | $125.77 (-2.9%) | $136.90 (+5.7%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 AMZN — ▲ LONG | WATCHLIST | Score: 56/85
+### 🟡 #1 WMT — ▲ LONG | WATCHLIST | Score: 53/85
 
-**Price Snapshot:** $272.23 (+1.7%) | **RSI:** 71.5 | **Vol ratio:** 0.09x | **ATR:** 10.3914 | **vs MA20:** above ✅
+**Price Snapshot:** $129.48 (+2.7%) | **RSI:** 54.5 | **Vol ratio:** 0.13x | **ATR:** 3.0929 | **vs MA20:** above ✅
 
-**Layered Scores:** EventEdge `18.5/25` | MarketConf `14.0/20` | RegimeFit `13.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.0`
-
-**Strategy Bucket:** `post_earnings_drift`
-
-**What & Why:** 59 Analysts Rate Amazon a Buy. Here’s Where the Stock Could Go. Headline tone is positive, current regime keeps this in watchlist status.
-
-**Entry Consideration:** Prefer confirmation near $272.23; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $259.76; MA20 reference $258.22.
-**Initial Upside / Downside Case:** Initial target near $293.01 over 3-5 trading days.
-**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
-
-### 🟡 #2 AVGO — ▲ LONG | WATCHLIST | Score: 54/85
-
-**Price Snapshot:** $364.56 (+3.0%) | **RSI:** 60.2 | **Vol ratio:** 0.05x | **ATR:** 19.895 | **vs MA20:** above ✅
-
-**Layered Scores:** EventEdge `17.6/25` | MarketConf `12.0/20` | RegimeFit `13.5/15` | RelOpp `2.8/15` | Freshness `10.0/10` | RiskPenalty `-1.5`
+**Layered Scores:** EventEdge `19.9/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG AVGO as it capitalizes on AI revenue guidance beats and sector-wide momentum following Nvidia's earnings [1, 5]. Valuation remains attractive amid increased ETF buying and sustained AI demand [4].
+**What & Why:** LONG. WMT exhibits relative strength ahead of Q3 earnings as analysts justify a rich valuation based on the CEO's commitment to a 'low price' strategy [1][2].
 
-**Entry Consideration:** Enter on a minor pullback toward $360.00 or consolidation above $364.00.
-**Risk / Invalidation Level:** Daily close below the 50-day moving average ($344.15).
-**Initial Upside / Downside Case:** Initial target of $385.00 within a 3-5 day timeframe.
-**Key Risk:** ❌ Extremely low relative volume (0.05x) suggests the current move may lack institutional follow-through.
-
----
-## 📈 Market Instruments
-
-- `SPY` LONG | IGNORE | score 47
+**Entry Consideration:** Enter near $129.48 or on a minor pullback to $128.50 to capture pre-earnings momentum.
+**Risk / Invalidation Level:** Exit on a daily close below the MA20 at $125.40.
+**Initial Upside / Downside Case:** $135.00 targeting a post-earnings volatility expansion.
+**Key Risk:** ❌ Earnings event risk could lead to a 'sell the news' reaction despite positive results.
 
 ---
 ## 📰 Key News (Last 24h)
 
-**NVDA**  ·  macro
-  ▲ Tech Stocks Rally Globally After Nvidia Earnings Beat Expectations - WSJ  [Wsj]
-  ▲ Is Nvidia Stock's Trading at 10x Forward Earnings the Bargain of the Century or Dead Money Hiding in Plain Sight?  [Yahoo Finance]
+**GLD**  ·  earnings
+  ▼ Gold's bad year is getting worse. Why its price keeps falling  [CNBC]
 
-**ARM**  ·  earnings
-  ▲ Arm Holdings beats on earnings and revenue, stock dips slightly in extended trading  [CNBC]
-
-**AMZN**  ·  macro
-  ▲ 59 Analysts Rate Amazon a Buy. Here’s Where the Stock Could Go  [Yahoo Finance]
-
-**META**  ·  earnings
-  ▼ Meta Platforms stock forecast: Seller pressure keeps price below $628.64 resistance  [Traders Union]
-
-**LLY**  ·  earnings
-  ▲ LLY (NYSE:LLY) Mounjaro and Zepbound Momentum Powers Another Raise to Revenue Goals  [Kalkine Media]
+**NVDA**  ·  earnings
+  ▲ Is Nvidia Stock a Once-in-a-Decade Buying Opportunity After Its Latest Earnings?  [The Motley Fool]
 
 **GOOGL**  ·  earnings
-  ◆ Alphabet Stock Rebounds From Support as Anthropic Stake Pre IPO and Nvidia Earnings Lift GOOG  [FXLeaders]
+  ▼ Missed the Anthropic IPO? These 3 Stocks Give You Immediate Exposure.  [The Globe and Mail]
+  ◆ Alphabet Stock GOOGL Rebounds From Support as Anthropic Stake Pre IPO and Nvidia Earnings Lift GOOG  [FXLeaders]
 
-**GLD**  ·  macro
-  ▼ Is the 3.5% Slide in Gold Toward USD 3,729 a Warning Signal for SPDR Gold Shares (NYSEARCA:GLD) Given Rising Rate Bets?  [kalkine.ca]
+**COST**  ·  earnings
+  ▼ INTU Stock Draws Multiple Price Target Cuts After Lowering FY27 Revenue Outlook  [Stocktwits]
+
+**AVGO**  ·  earnings
+  ▲ This Beaten-Down Semiconductor Stock Could Soar in 2027  [The Globe and Mail]
+  ▲ Buy Broadcom Now: Get a $115 Billion AI Giant at Just 18.5x Forward Earnings  [24/7 Wall St.]
+
+**ARM**  ·  earnings
+  ▲ Is Arm Holdings (NASDAQ:ARM) Beating Estimates With Its Chip Plan?  [Kalkine Media]
 
 ---
 ## 🛡 Research Risk Rules
