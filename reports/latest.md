@@ -1,80 +1,73 @@
-# 📊 Daily Research Report — 2026-11-20
-*Generated: 2026-11-20 14:33*
+# 📊 Daily Research Report — 2026-11-23
+*Generated: 2026-11-23 14:33*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** ➡ NEUTRAL — Mixed conditions. Prefer selective, cleaner setups only.
-**SPY:** -0.50%
-**SPY RSI(14):** 34.5
+**Regime:** 📈 BULL — Broad market rising. Long setups have better follow-through.
+**SPY:** +4.50%
+**SPY RSI(14):** 40.7
+
+> ✅ **Research posture:** Market is supportive. Long ideas have a better chance of follow-through.
 
 ---
 ## ⭐ High Conviction Picks
 
-*Eligibility gate: LONG · EventEdge ≥ 15 · Real catalyst · Non-bear · ≤1 per sector*
-
-### WMT  $129.48 (+2.7%)
-**WATCHLIST** · LONG · EE=20 · post earnings drift · score=53
-> LONG. WMT exhibits relative strength ahead of Q3 earnings as analysts justify a rich valuation based on the CEO's commitment to a 'low price' strategy [1][2].
+*No signals meet the high conviction gate today.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `WMT`
-**⛔ IGNORE (19):** `MSFT` · `PLTR` · `GS` · `TSM` · `IWM` · `GOOGL`
-
----
-## 🏆 Top Trade
-
-**WMT — LONG | WATCHLIST | Score: 53**
-
-> LONG. WMT exhibits relative strength ahead of Q3 earnings as analysts justify a rich valuation based on the CEO's commitment to a 'low price' strategy [1][2].
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$129.48 | $125.77 (-2.9%) | $136.90 (+5.7%) | 1R | 2R |
+**⚪ MONITOR (1):** `NVDA`
+**⛔ IGNORE (19):** `LLY` · `JPM` · `NFLX` · `ARM` · `COST` · `AMZN`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 WMT — ▲ LONG | WATCHLIST | Score: 53/85
+### ⚪ #1 NVDA — ▲ LONG | MONITOR | Score: 51/85
 
-**Price Snapshot:** $129.48 (+2.7%) | **RSI:** 54.5 | **Vol ratio:** 0.13x | **ATR:** 3.0929 | **vs MA20:** above ✅
+**Price Snapshot:** $161.38 (+28.6%) | **RSI:** 33.4 | **Vol ratio:** 0.8x | **ATR:** 15.31 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `19.9/25` | MarketConf `14.0/20` | RegimeFit `8.5/15` | RelOpp `1.8/15` | Freshness `10.0/10` | RiskPenalty `-1.0`
+**Layered Scores:** EventEdge `17.4/25` | MarketConf `6.0/20` | RegimeFit `13.5/15` | RelOpp `9.1/15` | Freshness `10.0/10` | RiskPenalty `-5.5`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. WMT exhibits relative strength ahead of Q3 earnings as analysts justify a rich valuation based on the CEO's commitment to a 'low price' strategy [1][2].
+**What & Why:** LONG. NVDA is trading at a decade-low valuation of 15x earnings following a 48% crash, offering a significant margin of safety [1][5]. The return of Jensen Huang as CEO and sustained AI demand provide the catalysts for a mean-reversion bounce [2][4].
 
-**Entry Consideration:** Enter near $129.48 or on a minor pullback to $128.50 to capture pre-earnings momentum.
-**Risk / Invalidation Level:** Exit on a daily close below the MA20 at $125.40.
-**Initial Upside / Downside Case:** $135.00 targeting a post-earnings volatility expansion.
-**Key Risk:** ❌ Earnings event risk could lead to a 'sell the news' reaction despite positive results.
+**Entry Consideration:** Entry near $161.00 or on intraday strength above $162.50 to confirm RSI reversal.
+**Risk / Invalidation Level:** Daily close below $154.00.
+**Initial Upside / Downside Case:** Initial target $178.73 (MA20) within 5-10 trading days.
+**Key Risk:** ❌ Historical data showing founder handoffs underperform the market 55% of the time.
+
+---
+## 📈 Market Instruments
+
+- `SPY` LONG | IGNORE | score 37
+- `QQQ` LONG | IGNORE | score 33
 
 ---
 ## 📰 Key News (Last 24h)
 
-**GLD**  ·  earnings
-  ▼ Gold's bad year is getting worse. Why its price keeps falling  [CNBC]
+**AMD**  ·  earnings
+  ▼ Watch AMD Falls on China Risk; Ross Tumbles on Q4 Guidance | Stock Movers  [Bloomberg.com]
 
-**NVDA**  ·  earnings
-  ▲ Is Nvidia Stock a Once-in-a-Decade Buying Opportunity After Its Latest Earnings?  [The Motley Fool]
+**LLY**  ·  earnings
+  ▼ LLY Stock Price | Eli Lilly & Co. Stock Quote (U.S.: NYSE) | MarketWatch  [Marketwatch]
 
 **GOOGL**  ·  earnings
-  ▼ Missed the Anthropic IPO? These 3 Stocks Give You Immediate Exposure.  [The Globe and Mail]
-  ◆ Alphabet Stock GOOGL Rebounds From Support as Anthropic Stake Pre IPO and Nvidia Earnings Lift GOOG  [FXLeaders]
+  ▲ GOOGL Stock Price | Alphabet Inc. Cl A Stock Quote (U.S.: Nasdaq) | MarketWatch  [Marketwatch]
 
-**COST**  ·  earnings
-  ▼ INTU Stock Draws Multiple Price Target Cuts After Lowering FY27 Revenue Outlook  [Stocktwits]
+**META**  ·  earnings
+  ▲ Meta Stock Faces More Pressure as AI Costs Outpace Revenue Growth  [Investing.com Australia]
+  ▼ Meta Platforms (META) Rethinks 2030 Climate Goals After 45% AI Emissions Jump  [Yahoo Finance]
 
-**AVGO**  ·  earnings
-  ▲ This Beaten-Down Semiconductor Stock Could Soar in 2027  [The Globe and Mail]
-  ▲ Buy Broadcom Now: Get a $115 Billion AI Giant at Just 18.5x Forward Earnings  [24/7 Wall St.]
+**MSFT**  ·  earnings
+  ▼ Nvidia Stock Has Crashed 48% and Now Trades at 15 Times Earnings, Its Cheapest in More Than a Decade and Cheaper Than Microsoft and Broadcom  [24/7 Wall St.]
+  ▼ Trading (MSFT) With Integrated Risk Controls (MSFT:CA)  [Stock Traders Daily]
 
-**ARM**  ·  earnings
-  ▲ Is Arm Holdings (NASDAQ:ARM) Beating Estimates With Its Chip Plan?  [Kalkine Media]
+**NVDA**  ·  earnings
+  ▲ Nvidia Just Brought Jensen Huang Back as CEO. In the 9 Founder Handoffs Before His, the Stock Beat the Market Only 4 Times  [24/7 Wall St.]
 
 ---
 ## 🛡 Research Risk Rules
