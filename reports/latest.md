@@ -1,73 +1,102 @@
-# 📊 Daily Research Report — 2026-11-23
-*Generated: 2026-11-23 14:33*
+# 📊 Daily Research Report — 2026-11-24
+*Generated: 2026-11-24 14:33*
 
 ---
 ## 🌍 Market Context
 
-**Regime:** 📈 BULL — Broad market rising. Long setups have better follow-through.
-**SPY:** +4.50%
-**SPY RSI(14):** 40.7
+**Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
+**SPY:** -1.29%
+**SPY RSI(14):** 34.9
 
-> ✅ **Research posture:** Market is supportive. Long ideas have a better chance of follow-through.
+> ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
 
 ---
 ## ⭐ High Conviction Picks
 
-*No signals meet the high conviction gate today.*
+*No high conviction picks — bear regime, avoiding new LONG exposure.*
 
 ---
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**⚪ MONITOR (1):** `NVDA`
-**⛔ IGNORE (19):** `LLY` · `JPM` · `NFLX` · `ARM` · `COST` · `AMZN`
+**🟡 WATCHLIST (1):** `GS`
+**⚪ MONITOR (1):** `AMZN`
+**⛔ IGNORE (18):** `META` · `GLD` · `IWM` · `TSLA` · `PLTR` · `NVDA`
+
+---
+## 🏆 Top Trade
+
+**GS — SHORT | WATCHLIST | Score: 52**
+
+> GLD | SPDR Gold Shares Overview | MarketWatch. Headline tone is negative, current regime keeps this in watchlist status.
+
+| Entry | Stop | Target | Risk | Reward |
+|-------|------|--------|------|--------|
+| ~$813.33 | $853.78 (-5.0%) | $732.43 (+9.9%) | 1R | 2R |
 
 ---
 ## 🎯 Research Ideas
 
-### ⚪ #1 NVDA — ▲ LONG | MONITOR | Score: 51/85
+### 🟡 #1 GS — ▼ SHORT | WATCHLIST | Score: 52/85
 
-**Price Snapshot:** $161.38 (+28.6%) | **RSI:** 33.4 | **Vol ratio:** 0.8x | **ATR:** 15.31 | **vs MA20:** below ⚠️
+**Price Snapshot:** $813.33 (-1.2%) | **RSI:** 31.4 | **Vol ratio:** 0.07x | **ATR:** 33.7079 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `17.4/25` | MarketConf `6.0/20` | RegimeFit `13.5/15` | RelOpp `9.1/15` | Freshness `10.0/10` | RiskPenalty `-5.5`
+**Layered Scores:** EventEdge `17.0/25` | MarketConf `14.0/20` | RegimeFit `12.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+
+**Strategy Bucket:** `mean_reversion_long`
+
+**What & Why:** GLD | SPDR Gold Shares Overview | MarketWatch. Headline tone is negative, current regime keeps this in watchlist status.
+
+**Entry Consideration:** Prefer confirmation near $813.33; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $853.78; MA20 reference $884.79.
+**Initial Upside / Downside Case:** Initial target near $745.91 over 3-5 trading days.
+**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
+
+### ⚪ #2 AMZN — ▼ SHORT | MONITOR | Score: 50/85
+
+**Price Snapshot:** $252.31 (-1.2%) | **RSI:** 41.0 | **Vol ratio:** 0.05x | **ATR:** 10.78 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `15.5/25` | MarketConf `12.0/20` | RegimeFit `13.0/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** LONG. NVDA is trading at a decade-low valuation of 15x earnings following a 48% crash, offering a significant margin of safety [1][5]. The return of Jensen Huang as CEO and sustained AI demand provide the catalysts for a mean-reversion bounce [2][4].
+**What & Why:** Costco Wholesale Corporation - COST Stock Price Quote & News - M1. Headline tone is negative, current regime keeps this in monitor status.
 
-**Entry Consideration:** Entry near $161.00 or on intraday strength above $162.50 to confirm RSI reversal.
-**Risk / Invalidation Level:** Daily close below $154.00.
-**Initial Upside / Downside Case:** Initial target $178.73 (MA20) within 5-10 trading days.
-**Key Risk:** ❌ Historical data showing founder handoffs underperform the market 55% of the time.
+**Entry Consideration:** Prefer confirmation near $252.31; avoid chasing.
+**Risk / Invalidation Level:** Risk below/above $265.25; MA20 reference $257.70.
+**Initial Upside / Downside Case:** Initial target near $230.75 over 3-5 trading days.
+**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
 
 ---
 ## 📈 Market Instruments
 
-- `SPY` LONG | IGNORE | score 37
-- `QQQ` LONG | IGNORE | score 33
+- `QQQ` SHORT | IGNORE | score 36
+- `SPY` SHORT | IGNORE | score 32
 
 ---
 ## 📰 Key News (Last 24h)
 
+**NVDA**  ·  macro
+  ▲ US Stock Futures Mixed After Nvidia-Led Rally as Investors Assess Federal Reserve Rate Outlook: Dow Jones, S&P, Nasdaq, Wall Street  [Yahoo Finance]
+
 **AMD**  ·  earnings
-  ▼ Watch AMD Falls on China Risk; Ross Tumbles on Q4 Guidance | Stock Movers  [Bloomberg.com]
+  ▲ Bulls Expect AMD Revenues to Grow 80% Next Year on Hyper-Accelerated Data Center Growth, $725 in Sight  [Yahoo Finance]
 
-**LLY**  ·  earnings
-  ▼ LLY Stock Price | Eli Lilly & Co. Stock Quote (U.S.: NYSE) | MarketWatch  [Marketwatch]
-
-**GOOGL**  ·  earnings
-  ▲ GOOGL Stock Price | Alphabet Inc. Cl A Stock Quote (U.S.: Nasdaq) | MarketWatch  [Marketwatch]
-
-**META**  ·  earnings
-  ▲ Meta Stock Faces More Pressure as AI Costs Outpace Revenue Growth  [Investing.com Australia]
-  ▼ Meta Platforms (META) Rethinks 2030 Climate Goals After 45% AI Emissions Jump  [Yahoo Finance]
+**PLTR**  ·  earnings
+  ▲ Palantir quarterly revenue surges: PLTR gains momentum  [Traders Union]
 
 **MSFT**  ·  earnings
-  ▼ Nvidia Stock Has Crashed 48% and Now Trades at 15 Times Earnings, Its Cheapest in More Than a Decade and Cheaper Than Microsoft and Broadcom  [24/7 Wall St.]
-  ▼ Trading (MSFT) With Integrated Risk Controls (MSFT:CA)  [Stock Traders Daily]
+  ▲ Microsoft beats earnings estimates and lifts dividend: Can MSFT sustain gains?  [Traders Union]
 
-**NVDA**  ·  earnings
-  ▲ Nvidia Just Brought Jensen Huang Back as CEO. In the 9 Founder Handoffs Before His, the Stock Beat the Market Only 4 Times  [24/7 Wall St.]
+**LLY**  ·  earnings
+  ▲ Eli Lilly Stock Is Up 18% This Year. Is It Still a Buy Ahead of Earnings?  [Morningstar]
+
+**GOOGL**  ·  earnings
+  ▼ Google Stock Falls 18% Amid Decline in Search Advertising Revenue  [RS Web Solutions]
+  ▲ GOOGL climbs over 6% after reporting 25% revenue growth and 103% jump in cloud sales  [Traders Union]
+
+**GLD**  ·  earnings
+  ▲ Orezone Gold Stock After Earnings Beat Has The Bull Case Changed?  [Simply Wall St]
 
 ---
 ## 🛡 Research Risk Rules
