@@ -1,12 +1,12 @@
-# 📊 Daily Research Report — 2026-11-24
-*Generated: 2026-11-24 14:33*
+# 📊 Daily Research Report — 2026-11-25
+*Generated: 2026-11-25 14:33*
 
 ---
 ## 🌍 Market Context
 
 **Regime:** 📉 BEAR — Market under pressure. Be cautious with longs and size smaller.
-**SPY:** -1.29%
-**SPY RSI(14):** 34.9
+**SPY:** -2.48%
+**SPY RSI(14):** 39.7
 
 > ⚠️ **Research posture:** Market is weak. Favor smaller long exposure and avoid chasing strength.
 
@@ -19,84 +19,78 @@
 ## 📋 Action Summary
 
 **🟢 ACTIONABLE:** None today
-**🟡 WATCHLIST (1):** `GS`
-**⚪ MONITOR (1):** `AMZN`
-**⛔ IGNORE (18):** `META` · `GLD` · `IWM` · `TSLA` · `PLTR` · `NVDA`
-
----
-## 🏆 Top Trade
-
-**GS — SHORT | WATCHLIST | Score: 52**
-
-> GLD | SPDR Gold Shares Overview | MarketWatch. Headline tone is negative, current regime keeps this in watchlist status.
-
-| Entry | Stop | Target | Risk | Reward |
-|-------|------|--------|------|--------|
-| ~$813.33 | $853.78 (-5.0%) | $732.43 (+9.9%) | 1R | 2R |
+**⚪ MONITOR (2):** `META` · `IWM`
+**⛔ IGNORE (18):** `COST` · `AVGO` · `BAC` · `GS` · `LMT` · `XOM`
 
 ---
 ## 🎯 Research Ideas
 
-### 🟡 #1 GS — ▼ SHORT | WATCHLIST | Score: 52/85
+### ⚪ #1 META — ▼ SHORT | MONITOR | Score: 51/85
 
-**Price Snapshot:** $813.33 (-1.2%) | **RSI:** 31.4 | **Vol ratio:** 0.07x | **ATR:** 33.7079 | **vs MA20:** below ⚠️
+**Price Snapshot:** $576.76 (-2.2%) | **RSI:** 43.3 | **Vol ratio:** 0.04x | **ATR:** 22.6536 | **vs MA20:** below ⚠️
 
-**Layered Scores:** EventEdge `17.0/25` | MarketConf `14.0/20` | RegimeFit `12.0/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
-
-**Strategy Bucket:** `mean_reversion_long`
-
-**What & Why:** GLD | SPDR Gold Shares Overview | MarketWatch. Headline tone is negative, current regime keeps this in watchlist status.
-
-**Entry Consideration:** Prefer confirmation near $813.33; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $853.78; MA20 reference $884.79.
-**Initial Upside / Downside Case:** Initial target near $745.91 over 3-5 trading days.
-**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
-
-### ⚪ #2 AMZN — ▼ SHORT | MONITOR | Score: 50/85
-
-**Price Snapshot:** $252.31 (-1.2%) | **RSI:** 41.0 | **Vol ratio:** 0.05x | **ATR:** 10.78 | **vs MA20:** below ⚠️
-
-**Layered Scores:** EventEdge `15.5/25` | MarketConf `12.0/20` | RegimeFit `13.0/15` | RelOpp `2.6/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
+**Layered Scores:** EventEdge `15.2/25` | MarketConf `12.0/20` | RegimeFit `14.5/15` | RelOpp `2.0/15` | Freshness `10.0/10` | RiskPenalty `-3.0`
 
 **Strategy Bucket:** `post_earnings_drift`
 
-**What & Why:** Costco Wholesale Corporation - COST Stock Price Quote & News - M1. Headline tone is negative, current regime keeps this in monitor status.
+**What & Why:** SHORT. META faces downward pressure as rising AI infrastructure costs outpace revenue growth [4], coupled with operational setbacks regarding climate goals due to AI emissions [5]. The stock remains technically weak, trading significantly below its 20-day and 50-day moving averages in a bear market regime.
 
-**Entry Consideration:** Prefer confirmation near $252.31; avoid chasing.
-**Risk / Invalidation Level:** Risk below/above $265.25; MA20 reference $257.70.
-**Initial Upside / Downside Case:** Initial target near $230.75 over 3-5 trading days.
-**Key Risk:** ❌ Thesis fails if regime flips sharply or follow-through absent.
+**Entry Consideration:** Sell on a minor relief bounce toward $585 or a confirmed break below the $575 support level.
+**Risk / Invalidation Level:** Daily close above the $600 psychological level or the 20-day MA at $613.61.
+**Initial Upside / Downside Case:** $550.00 initial target within 1-3 trading sessions.
+**Key Risk:** ❌ Stronger-than-expected ad business demand [1] could provide a fundamental floor and trigger a short squeeze.
+
+### ⚪ #2 IWM — ▼ SHORT | MONITOR | Score: 51/85
+
+**Price Snapshot:** $262.71 (-1.7%) | **RSI:** 43.1 | **Vol ratio:** 0.07x | **ATR:** 5.925 | **vs MA20:** below ⚠️
+
+**Layered Scores:** EventEdge `14.3/25` | MarketConf `12.0/20` | RegimeFit `14.5/15` | RelOpp `2.2/15` | Freshness `10.0/10` | RiskPenalty `-2.5`
+
+**Strategy Bucket:** `post_earnings_drift`
+
+**What & Why:** SHORT. IWM is trending lower within a BEAR regime, trading significantly below its MA20 and MA50 while facing headwinds from potential rate hike concerns [2]. Negative sentiment and broad market weakness suggest further downside momentum as risk-off sentiment prevails.
+
+**Entry Consideration:** Entry on a minor relief rally toward $265.00 or on a break of the current session low.
+**Risk / Invalidation Level:** Close above $270.00, invalidating the immediate bearish momentum and trend alignment.
+**Initial Upside / Downside Case:** Initial target of $255.00 within a 1-3 day timeframe.
+**Key Risk:** ❌ Potential for a short-covering bounce given the RSI is approaching oversold territory at 43.1.
+
+---
+## 🌍 Macro Watchlist
+
+- ⛔ `LMT` SHORT | IGNORE | score 41 | —
+- ⛔ `XOM` SHORT | IGNORE | score 41 | —
+- ⛔ `XLF` SHORT | IGNORE | score 39 | —
+- ⛔ `UNH` SHORT | IGNORE | score 38 | —
+- ⛔ `WMT` SHORT | IGNORE | score 34 | —
 
 ---
 ## 📈 Market Instruments
 
-- `QQQ` SHORT | IGNORE | score 36
-- `SPY` SHORT | IGNORE | score 32
+- `SPY` SHORT | IGNORE | score 35
 
 ---
 ## 📰 Key News (Last 24h)
 
-**NVDA**  ·  macro
-  ▲ US Stock Futures Mixed After Nvidia-Led Rally as Investors Assess Federal Reserve Rate Outlook: Dow Jones, S&P, Nasdaq, Wall Street  [Yahoo Finance]
+**NVDA**  ·  earnings
+  ▲ Nvidia Corp. (NVDA) Has Made Investors a Fortune — Is Now Time to Book Profits?  [Yahoo Finance]
+
+**JPM**  ·  earnings
+  ▲ Can strong earnings drive stocks to fresh highs into 2027? JPM weighs in  [Yahoo Finance Singapore]
+  ▼ J.P. Morgan global market strategist on tech stock selloff  [NBC News]
 
 **AMD**  ·  earnings
-  ▲ Bulls Expect AMD Revenues to Grow 80% Next Year on Hyper-Accelerated Data Center Growth, $725 in Sight  [Yahoo Finance]
-
-**PLTR**  ·  earnings
-  ▲ Palantir quarterly revenue surges: PLTR gains momentum  [Traders Union]
+  ◆ Billionaire David Tepper Dumped Appaloosa's Stake in AMD and Broadcom and Piled Into an Artificial Intelligence (AI) Stock Trading at 44x Forward Adjusted EPS  [Yahoo Finance]
 
 **MSFT**  ·  earnings
-  ▲ Microsoft beats earnings estimates and lifts dividend: Can MSFT sustain gains?  [Traders Union]
+  ▲ Earnings beat and cloud commitment lift Microsoft stock as upward price move continues  [Traders Union]
 
-**LLY**  ·  earnings
-  ▲ Eli Lilly Stock Is Up 18% This Year. Is It Still a Buy Ahead of Earnings?  [Morningstar]
+**META**  ·  earnings
+  ▲ META Rides on Strong Demand in Ad Business: Can It Beat RDDT and SNAP?  [TradingView]
 
-**GOOGL**  ·  earnings
-  ▼ Google Stock Falls 18% Amid Decline in Search Advertising Revenue  [RS Web Solutions]
-  ▲ GOOGL climbs over 6% after reporting 25% revenue growth and 103% jump in cloud sales  [Traders Union]
-
-**GLD**  ·  earnings
-  ▲ Orezone Gold Stock After Earnings Beat Has The Bull Case Changed?  [Simply Wall St]
+**COST**  ·  macro
+  ▼ Rate Hike Concerns Weigh on Silver Prices, Hecla Mining Stock Closes Lower  [NAI500]
+  ▼ Axsome Just Crossed a $1 Billion Revenue Run Rate, but Its Stock Hit a 52-Week Low. Is Wall Street Missing Something?  [The Motley Fool]
 
 ---
 ## 🛡 Research Risk Rules
